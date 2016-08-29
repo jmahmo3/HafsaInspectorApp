@@ -9,5 +9,14 @@
 import UIKit
 
 class HIManager: NSObject {
+    
+    private static var sharedInstance = HIManager()
+    
+    var username: String = ""
+    var chapter: String = ""
+    
+    class func sharedClient() -> HIManager {
+        return sharedInstance
+    }
 
 }

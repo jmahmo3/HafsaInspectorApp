@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Chapter Picker View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HafsaInspectorApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChapterPickerViewController" id="BYZ-38-t0r" customClass="ChapterPickerViewController" customModule="HafsaInspectorApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,67 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaI-a0-VPD">
+                                <rect key="frame" x="54" y="147" width="99" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="GFc-6h-RdO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chapter:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wme-uZ-DOW">
+                                <rect key="frame" x="54" y="257" width="79" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="Jfr-J0-gLS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wpg-BR-QWR">
+                                <rect key="frame" x="54" y="196" width="492" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8QP-OG-BUc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Utm-6B-fQH">
+                                <rect key="frame" x="238" y="499" width="124" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="bdI-eC-FgB"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMj-fU-das">
+                                <rect key="frame" x="54" y="192" width="492" height="216"/>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eMj-fU-das" firstAttribute="top" secondItem="PaI-a0-VPD" secondAttribute="bottom" constant="24" id="1VR-Cm-75g"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Utm-6B-fQH" secondAttribute="bottom" constant="71" id="3TY-ua-nhl"/>
+                            <constraint firstItem="Wme-uZ-DOW" firstAttribute="top" secondItem="Wpg-BR-QWR" secondAttribute="bottom" constant="31" id="3e9-pK-3Kc"/>
+                            <constraint firstItem="Utm-6B-fQH" firstAttribute="centerX" secondItem="Wpg-BR-QWR" secondAttribute="centerX" id="GOE-6e-H1r"/>
+                            <constraint firstItem="PaI-a0-VPD" firstAttribute="leading" secondItem="Wpg-BR-QWR" secondAttribute="leading" id="UBq-kT-zkG"/>
+                            <constraint firstItem="Wpg-BR-QWR" firstAttribute="top" secondItem="PaI-a0-VPD" secondAttribute="bottom" constant="28" id="XTw-ZE-NGf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eMj-fU-das" secondAttribute="trailing" constant="34" id="ceS-C6-hv2"/>
+                            <constraint firstItem="Wme-uZ-DOW" firstAttribute="leading" secondItem="Wpg-BR-QWR" secondAttribute="leading" id="dIO-8e-Oxv"/>
+                            <constraint firstItem="eMj-fU-das" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="m1O-xa-VMZ"/>
+                            <constraint firstItem="Wpg-BR-QWR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q4S-AO-5zG"/>
+                            <constraint firstItem="PaI-a0-VPD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="127" id="uZv-Ju-a9V"/>
+                            <constraint firstItem="PaI-a0-VPD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="w9b-T3-hQH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chapterPickerView" destination="eMj-fU-das" id="HfS-iP-v37"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="299"/>
         </scene>
     </scenes>
 </document>
