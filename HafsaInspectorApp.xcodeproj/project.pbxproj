@@ -12,9 +12,13 @@
 		B367E1BE1D73F8E6008078DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B367E1BC1D73F8E6008078DF /* Main.storyboard */; };
 		B367E1C01D73F8E6008078DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B367E1BF1D73F8E6008078DF /* Assets.xcassets */; };
 		B367E1C31D73F8E6008078DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B367E1C11D73F8E6008078DF /* LaunchScreen.storyboard */; };
+		B367E1D31D73FE5F008078DF /* ChapterPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367E1D21D73FE5F008078DF /* ChapterPickerViewController.swift */; };
+		B367E1D71D740042008078DF /* HIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367E1D61D740042008078DF /* HIManager.swift */; };
+		CBBBFC73DE0B9DDDA18A8576 /* Pods_HafsaInspectorApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB17AB959B7618DD629350D6 /* Pods_HafsaInspectorApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		664B7478F436B1FE0A598A46 /* Pods-HafsaInspectorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HafsaInspectorApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp.release.xcconfig"; sourceTree = "<group>"; };
 		B367E1B51D73F8E6008078DF /* HafsaInspectorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HafsaInspectorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B367E1B81D73F8E6008078DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B367E1BA1D73F8E6008078DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		B367E1BF1D73F8E6008078DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B367E1C21D73F8E6008078DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B367E1C41D73F8E6008078DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B367E1D21D73FE5F008078DF /* ChapterPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterPickerViewController.swift; sourceTree = "<group>"; };
+		B367E1D61D740042008078DF /* HIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIManager.swift; sourceTree = "<group>"; };
+		EAD07BCF679C3DB174AC45F3 /* Pods-HafsaInspectorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HafsaInspectorApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EB17AB959B7618DD629350D6 /* Pods_HafsaInspectorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HafsaInspectorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBBBFC73DE0B9DDDA18A8576 /* Pods_HafsaInspectorApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7DE487148E48F359F8A476F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAD07BCF679C3DB174AC45F3 /* Pods-HafsaInspectorApp.debug.xcconfig */,
+				664B7478F436B1FE0A598A46 /* Pods-HafsaInspectorApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B367E1AC1D73F8E6008078DF = {
 			isa = PBXGroup;
 			children = (
 				B367E1B71D73F8E6008078DF /* HafsaInspectorApp */,
 				B367E1B61D73F8E6008078DF /* Products */,
+				7DE487148E48F359F8A476F3 /* Pods */,
+				F84EDB083BDC52E2386F6382 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +75,79 @@
 			isa = PBXGroup;
 			children = (
 				B367E1B81D73F8E6008078DF /* AppDelegate.swift */,
+				B367E1CA1D73F975008078DF /* UI */,
+				B367E1CC1D73F9A7008078DF /* Data */,
+				B367E1CD1D73F9BF008078DF /* Utilities */,
 				B367E1BA1D73F8E6008078DF /* ViewController.swift */,
-				B367E1BC1D73F8E6008078DF /* Main.storyboard */,
 				B367E1BF1D73F8E6008078DF /* Assets.xcassets */,
 				B367E1C11D73F8E6008078DF /* LaunchScreen.storyboard */,
 				B367E1C41D73F8E6008078DF /* Info.plist */,
 			);
 			path = HafsaInspectorApp;
+			sourceTree = "<group>";
+		};
+		B367E1CA1D73F975008078DF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B367E1CE1D73F9DB008078DF /* Views */,
+				B367E1CF1D73F9E7008078DF /* ViewControllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B367E1CC1D73F9A7008078DF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B367E1CD1D73F9BF008078DF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B367E1D11D73FA0B008078DF /* ThirdParty */,
+				B367E1D01D73F9FC008078DF /* CustomControls */,
+				B367E1D61D740042008078DF /* HIManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B367E1CE1D73F9DB008078DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B367E1BC1D73F8E6008078DF /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B367E1CF1D73F9E7008078DF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B367E1D21D73FE5F008078DF /* ChapterPickerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B367E1D01D73F9FC008078DF /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		B367E1D11D73FA0B008078DF /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		F84EDB083BDC52E2386F6382 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB17AB959B7618DD629350D6 /* Pods_HafsaInspectorApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B367E1C71D73F8E6008078DF /* Build configuration list for PBXNativeTarget "HafsaInspectorApp" */;
 			buildPhases = (
+				281CAF7DAF5374FD91BCFA6B /* [CP] Check Pods Manifest.lock */,
 				B367E1B11D73F8E6008078DF /* Sources */,
 				B367E1B21D73F8E6008078DF /* Frameworks */,
 				B367E1B31D73F8E6008078DF /* Resources */,
+				FAA6B6DFEC4F6168E2059D3E /* [CP] Embed Pods Frameworks */,
+				E2B85EC3200B03B06D6BC903 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +219,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		281CAF7DAF5374FD91BCFA6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2B85EC3200B03B06D6BC903 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAA6B6DFEC4F6168E2059D3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B367E1B11D73F8E6008078DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +274,8 @@
 			files = (
 				B367E1BB1D73F8E6008078DF /* ViewController.swift in Sources */,
 				B367E1B91D73F8E6008078DF /* AppDelegate.swift in Sources */,
+				B367E1D71D740042008078DF /* HIManager.swift in Sources */,
+				B367E1D31D73FE5F008078DF /* ChapterPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +288,7 @@
 				B367E1BD1D73F8E6008078DF /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		B367E1C11D73F8E6008078DF /* LaunchScreen.storyboard */ = {
@@ -247,6 +387,7 @@
 		};
 		B367E1C81D73F8E6008078DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAD07BCF679C3DB174AC45F3 /* Pods-HafsaInspectorApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HafsaInspectorApp/Info.plist;
@@ -258,6 +399,7 @@
 		};
 		B367E1C91D73F8E6008078DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 664B7478F436B1FE0A598A46 /* Pods-HafsaInspectorApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HafsaInspectorApp/Info.plist;
@@ -286,6 +428,7 @@
 				B367E1C91D73F8E6008078DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
