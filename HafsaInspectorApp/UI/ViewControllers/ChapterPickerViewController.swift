@@ -63,8 +63,6 @@ class ChapterPickerViewController: UIViewController, UIPickerViewDelegate, UIPic
             
         }
         
-        print(HImanager.userName)
-        print(HImanager.currentChapter)
     }
     
     func createAlert(error: String) {

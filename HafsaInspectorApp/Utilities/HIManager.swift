@@ -12,9 +12,24 @@ class HIManager: NSObject {
     
     private static var sharedInstance = HIManager()
     
-    var userName: String = ""
-    var currentChapter:String = ""
-    var currentEstablishment: String = ""
+    lazy var userName: String = {
+        if let name =  NSUserDefaults.standardUserDefaults().stringForKey("userName"){
+            return name
+        }else {
+            return ""
+        }
+    }()
+    
+    lazy var currentChapter: String = {
+        if let chapter = NSUserDefaults.standardUserDefaults().stringForKey("currentChapter") {
+            return chapter
+        } else{
+            return ""
+        }
+    }()
+    lazy var currentEstablishment: String = {
+        return NSUserDefaults.standardUserDefaults().stringForKey("currentEstablishment")!
+    }()
     
     //PickerView data
     var chapterArray = ["Chicago", "Detroit", "San Francisco"]

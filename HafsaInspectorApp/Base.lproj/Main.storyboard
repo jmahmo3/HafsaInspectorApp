@@ -55,20 +55,23 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMj-fU-das">
-                                <rect key="frame" x="54" y="192" width="492" height="216"/>
+                                <rect key="frame" x="54" y="261" width="492" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="6Vp-0h-5Zd"/>
+                                </constraints>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eMj-fU-das" firstAttribute="top" secondItem="PaI-a0-VPD" secondAttribute="bottom" constant="24" id="1VR-Cm-75g"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Utm-6B-fQH" secondAttribute="bottom" constant="71" id="3TY-ua-nhl"/>
                             <constraint firstItem="Wme-uZ-DOW" firstAttribute="top" secondItem="Wpg-BR-QWR" secondAttribute="bottom" constant="31" id="3e9-pK-3Kc"/>
+                            <constraint firstItem="eMj-fU-das" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Akm-rR-ebe"/>
                             <constraint firstItem="Utm-6B-fQH" firstAttribute="centerX" secondItem="Wpg-BR-QWR" secondAttribute="centerX" id="GOE-6e-H1r"/>
+                            <constraint firstItem="eMj-fU-das" firstAttribute="leading" secondItem="Wme-uZ-DOW" secondAttribute="leading" id="KnO-0h-SAx"/>
                             <constraint firstItem="PaI-a0-VPD" firstAttribute="leading" secondItem="Wpg-BR-QWR" secondAttribute="leading" id="UBq-kT-zkG"/>
                             <constraint firstItem="Wpg-BR-QWR" firstAttribute="top" secondItem="PaI-a0-VPD" secondAttribute="bottom" constant="28" id="XTw-ZE-NGf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eMj-fU-das" secondAttribute="trailing" constant="34" id="ceS-C6-hv2"/>
+                            <constraint firstItem="eMj-fU-das" firstAttribute="trailing" secondItem="Wpg-BR-QWR" secondAttribute="trailing" id="cep-bN-GbT"/>
                             <constraint firstItem="Wme-uZ-DOW" firstAttribute="leading" secondItem="Wpg-BR-QWR" secondAttribute="leading" id="dIO-8e-Oxv"/>
-                            <constraint firstItem="eMj-fU-das" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="m1O-xa-VMZ"/>
                             <constraint firstItem="Wpg-BR-QWR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q4S-AO-5zG"/>
                             <constraint firstItem="PaI-a0-VPD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="127" id="uZv-Ju-a9V"/>
                             <constraint firstItem="PaI-a0-VPD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="w9b-T3-hQH"/>

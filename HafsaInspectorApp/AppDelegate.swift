@@ -32,7 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Usually this is not overridden. Using the "did finish launching" method is more typical
-        setUpManager()
+        //setUpManager()
+        print(HImanager.currentChapter)
         return true
     }
 
