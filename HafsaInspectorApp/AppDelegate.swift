@@ -12,7 +12,29 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    private let HImanager = HIManager.sharedClient()
 
+
+    func setUpManager() {
+        if let name = NSUserDefaults.standardUserDefaults().stringForKey("userName") {
+            HImanager.userName = name
+        }
+        
+        if let chapter = NSUserDefaults.standardUserDefaults().stringForKey("currentChapter") {
+            HImanager.currentChapter = chapter
+        }
+        
+        if let establishment = NSUserDefaults.standardUserDefaults().stringForKey("currentEstablishment"){
+            HImanager.currentEstablishment = establishment
+        }
+
+    }
+    
+    func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Usually this is not overridden. Using the "did finish launching" method is more typical
+        setUpManager()
+        return true
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.

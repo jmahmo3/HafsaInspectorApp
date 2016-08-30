@@ -12,11 +12,22 @@ class HIManager: NSObject {
     
     private static var sharedInstance = HIManager()
     
-    var username: String = ""
-    var chapter: String = ""
+    var userName: String = ""
+    var currentChapter:String = ""
+    var currentEstablishment: String = ""
     
+    //PickerView data
+    var chapterArray = ["Chicago", "Detroit", "San Francisco"]
+    var establishmentArray = []
+    
+       
     class func sharedClient() -> HIManager {
         return sharedInstance
     }
+    
+    
 
+    
+    
+    
 }

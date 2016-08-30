@@ -13,8 +13,9 @@ import MBProgressHUD
 class ChapterPickerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var chapterPickerView: UIPickerView!
+    @IBOutlet weak var nameTextField: UITextField!
     
-    var pickerData: [String] = [String]()
+    var chapterData: [String] = [String]()
     
     private let HImanager = HIManager.sharedClient()
     
@@ -26,7 +27,7 @@ class ChapterPickerViewController: UIViewController, UIPickerViewDelegate, UIPic
         self.chapterPickerView.dataSource = self
         
         // Input data into the Array:
-        pickerData = ["Chicago", "Detroit", "San Francisco"]
+        chapterData = HImanager.chapterArray
         
         //let loadingNotification = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         //loadingNotification.mode = MBProgressHUDMode.Indeterminate
@@ -39,12 +40,42 @@ class ChapterPickerViewController: UIViewController, UIPickerViewDelegate, UIPic
     
     // The number of rows of data
     func pickerView(chapterPickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerData.count
+        return chapterData.count
     }
     
     // The data to return for the row and component (column) that's being passed in
     func pickerView(chapterPickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerData[row]
+        return chapterData[row]
+        
     }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        HImanager.currentChapter = chapterData[row]
+    }
+    
+    @IBAction func nextButtonPressed(sender: AnyObject) {
+        if nameTextField.text!.isEmpty {
+            createAlert("Please Enter a Name")
+        }else {
+            HImanager.userName = nameTextField.text!
+            NSUserDefaults.standardUserDefaults().setValue(HImanager.userName, forKey: "userName")
+            NSUserDefaults.standardUserDefaults().setValue(HImanager.currentChapter, forKey: "currentChapter")
+            
+        }
+        
+        print(HImanager.userName)
+        print(HImanager.currentChapter)
+    }
+    
+    func createAlert(error: String) {
+        let alert = UIAlertController(title: "Error", message: error, preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+
+    
+    
 }
 
