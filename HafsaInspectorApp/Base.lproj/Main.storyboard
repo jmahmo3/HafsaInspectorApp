@@ -38,6 +38,7 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wpg-BR-QWR">
                                 <rect key="frame" x="54" y="196" width="492" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="8QP-OG-BUc"/>
                                 </constraints>
@@ -56,6 +57,7 @@
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMj-fU-das">
                                 <rect key="frame" x="54" y="261" width="492" height="77"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="6Vp-0h-5Zd"/>
                                 </constraints>
@@ -78,7 +80,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="chapterLabel" destination="Wme-uZ-DOW" id="pNL-nH-bXK"/>
                         <outlet property="chapterPickerView" destination="eMj-fU-das" id="HfS-iP-v37"/>
+                        <outlet property="nameLabel" destination="PaI-a0-VPD" id="XqK-cR-uap"/>
                         <outlet property="nameTextField" destination="Wpg-BR-QWR" id="hx5-bj-uVd"/>
                     </connections>
                 </viewController>

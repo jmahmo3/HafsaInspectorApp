@@ -14,6 +14,8 @@ class ChapterPickerViewController: UIViewController, UIPickerViewDelegate, UIPic
 
     @IBOutlet weak var chapterPickerView: UIPickerView!
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var chapterLabel: UILabel!
     
     var chapterData: [String] = [String]()
     
@@ -22,6 +24,11 @@ class ChapterPickerViewController: UIViewController, UIPickerViewDelegate, UIPic
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = UIColor(red:0.67, green:0.74, blue:0.24, alpha:1.0)
+        nameLabel.font = UIFont(name: "Avenir-Light", size: 18)
+        chapterLabel.font = UIFont(name: "Avenir-Light", size: 18)
+    
+
         // Connect data:
         self.chapterPickerView.delegate = self
         self.chapterPickerView.dataSource = self
@@ -60,9 +67,7 @@ class ChapterPickerViewController: UIViewController, UIPickerViewDelegate, UIPic
             HImanager.userName = nameTextField.text!
             NSUserDefaults.standardUserDefaults().setValue(HImanager.userName, forKey: "userName")
             NSUserDefaults.standardUserDefaults().setValue(HImanager.currentChapter, forKey: "currentChapter")
-            
         }
-        
     }
     
     func createAlert(error: String) {

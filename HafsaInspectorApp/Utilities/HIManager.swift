@@ -13,19 +13,11 @@ class HIManager: NSObject {
     private static var sharedInstance = HIManager()
     
     lazy var userName: String = {
-        if let name =  NSUserDefaults.standardUserDefaults().stringForKey("userName"){
-            return name
-        }else {
-            return ""
-        }
+        return NSUserDefaults.standardUserDefaults().stringForKey("userName")!
     }()
     
     lazy var currentChapter: String = {
-        if let chapter = NSUserDefaults.standardUserDefaults().stringForKey("currentChapter") {
-            return chapter
-        } else{
-            return ""
-        }
+        return NSUserDefaults.standardUserDefaults().stringForKey("currentChapter")!
     }()
     lazy var currentEstablishment: String = {
         return NSUserDefaults.standardUserDefaults().stringForKey("currentEstablishment")!
