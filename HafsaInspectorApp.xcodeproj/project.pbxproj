@@ -14,6 +14,7 @@
 		B367E1C31D73F8E6008078DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B367E1C11D73F8E6008078DF /* LaunchScreen.storyboard */; };
 		B367E1D31D73FE5F008078DF /* ChapterPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367E1D21D73FE5F008078DF /* ChapterPickerViewController.swift */; };
 		B367E1D71D740042008078DF /* HIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367E1D61D740042008078DF /* HIManager.swift */; };
+		B367E1D91D7743E5008078DF /* EstablishmentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367E1D81D7743E5008078DF /* EstablishmentPickerViewController.swift */; };
 		CBBBFC73DE0B9DDDA18A8576 /* Pods_HafsaInspectorApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB17AB959B7618DD629350D6 /* Pods_HafsaInspectorApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		B367E1C41D73F8E6008078DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B367E1D21D73FE5F008078DF /* ChapterPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterPickerViewController.swift; sourceTree = "<group>"; };
 		B367E1D61D740042008078DF /* HIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIManager.swift; sourceTree = "<group>"; };
+		B367E1D81D7743E5008078DF /* EstablishmentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstablishmentPickerViewController.swift; sourceTree = "<group>"; };
 		EAD07BCF679C3DB174AC45F3 /* Pods-HafsaInspectorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HafsaInspectorApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp.debug.xcconfig"; sourceTree = "<group>"; };
 		EB17AB959B7618DD629350D6 /* Pods_HafsaInspectorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HafsaInspectorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				B367E1D21D73FE5F008078DF /* ChapterPickerViewController.swift */,
+				B367E1D81D7743E5008078DF /* EstablishmentPickerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				B367E1B91D73F8E6008078DF /* AppDelegate.swift in Sources */,
 				B367E1D71D740042008078DF /* HIManager.swift in Sources */,
 				B367E1D31D73FE5F008078DF /* ChapterPickerViewController.swift in Sources */,
+				B367E1D91D7743E5008078DF /* EstablishmentPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

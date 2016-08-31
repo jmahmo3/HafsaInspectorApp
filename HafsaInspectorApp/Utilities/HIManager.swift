@@ -25,7 +25,7 @@ class HIManager: NSObject {
     
     //PickerView data
     var chapterArray = ["Chicago", "Detroit", "San Francisco"]
-    var establishmentArray = []
+    var establishmentArray = ["Mr. Broast (Lombard)", "Mr. Broast (Aurora)", "Mr. Broast (Morton Grove)", "Main Stop", "Madinah Market", "Pizza Track", "Jerusalem Cafe", "Al Wahid", "Desi Grill", "Portos Peri Peri (Skokie)", "Portos Peri Peri (Schaumburg)"]
     
        
     class func sharedClient() -> HIManager {
