@@ -53,6 +53,13 @@ class EstablishmentPickerViewController: UIViewController, UIPickerViewDelegate,
     }
 
     @IBAction func nextButtonPressed(sender: AnyObject) {
+        
+        //set establishment
+        let selectedValue = HImanager.establishmentArray[establishmentPicker.selectedRowInComponent(0)]
+        HImanager.currentEstablishment = selectedValue
+        
+        //segue
+
     }
     
 

@@ -15,24 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private let HImanager = HIManager.sharedClient()
 
 
-    func setUpManager() {
-        if let name = NSUserDefaults.standardUserDefaults().stringForKey("userName") {
-            HImanager.userName = name
-        }
-        
-        if let chapter = NSUserDefaults.standardUserDefaults().stringForKey("currentChapter") {
-            HImanager.currentChapter = chapter
-        }
-        
-        if let establishment = NSUserDefaults.standardUserDefaults().stringForKey("currentEstablishment"){
-            HImanager.currentEstablishment = establishment
-        }
-
-    }
     
     func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Usually this is not overridden. Using the "did finish launching" method is more typical
-        //setUpManager()
+        
+        NSUserDefaults.standardUserDefaults().setValue("Junaid Mahmood", forKey: "userName")
+    NSUserDefaults.standardUserDefaults().setValue("Chicago", forKey: "currentChapter")
+        
+
+        
         return true
     }
 

@@ -56,17 +56,21 @@ class ChapterPickerViewController: UIViewController, UIPickerViewDelegate, UIPic
         
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        HImanager.currentChapter = chapterData[row]
-    }
-    
+        
     @IBAction func nextButtonPressed(sender: AnyObject) {
         if nameTextField.text!.isEmpty {
             createAlert("Please Enter a Name")
         }else {
+            //set name
+            NSUserDefaults.standardUserDefaults().setValue(nameTextField.text!, forKey: "userName")
             HImanager.userName = nameTextField.text!
-            NSUserDefaults.standardUserDefaults().setValue(HImanager.userName, forKey: "userName")
-            NSUserDefaults.standardUserDefaults().setValue(HImanager.currentChapter, forKey: "currentChapter")
+            
+            //set chapter
+            let selectedValue = HImanager.chapterArray[chapterPickerView.selectedRowInComponent(0)]
+            NSUserDefaults.standardUserDefaults().setValue(selectedValue, forKey: "currentChapter")
+            HImanager.currentChapter = selectedValue
+            
+            //TODO: segue
         }
     }
     

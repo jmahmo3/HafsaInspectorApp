@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B328CE871D775FD4007075B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B328CE861D775FD4007075B9 /* Main.storyboard */; };
+		B328CE891D77882A007075B9 /* NameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328CE881D77882A007075B9 /* NameTableViewCell.swift */; };
+		B328CE8D1D779EEF007075B9 /* SupplierTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328CE8C1D779EEF007075B9 /* SupplierTableViewCell.swift */; };
+		B328CE8F1D77A78F007075B9 /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328CE8E1D77A78F007075B9 /* FormTableViewController.swift */; };
 		B367E1B91D73F8E6008078DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367E1B81D73F8E6008078DF /* AppDelegate.swift */; };
 		B367E1BB1D73F8E6008078DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367E1BA1D73F8E6008078DF /* ViewController.swift */; };
 		B367E1C01D73F8E6008078DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B367E1BF1D73F8E6008078DF /* Assets.xcassets */; };
@@ -21,6 +24,9 @@
 /* Begin PBXFileReference section */
 		664B7478F436B1FE0A598A46 /* Pods-HafsaInspectorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HafsaInspectorApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp.release.xcconfig"; sourceTree = "<group>"; };
 		B328CE861D775FD4007075B9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B328CE881D77882A007075B9 /* NameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameTableViewCell.swift; sourceTree = "<group>"; };
+		B328CE8C1D779EEF007075B9 /* SupplierTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplierTableViewCell.swift; sourceTree = "<group>"; };
+		B328CE8E1D77A78F007075B9 /* FormTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTableViewController.swift; sourceTree = "<group>"; };
 		B367E1B51D73F8E6008078DF /* HafsaInspectorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HafsaInspectorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B367E1B81D73F8E6008078DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B367E1BA1D73F8E6008078DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				B328CE861D775FD4007075B9 /* Main.storyboard */,
+				B328CE881D77882A007075B9 /* NameTableViewCell.swift */,
+				B328CE8C1D779EEF007075B9 /* SupplierTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,6 +135,7 @@
 			children = (
 				B367E1D21D73FE5F008078DF /* ChapterPickerViewController.swift */,
 				B367E1D81D7743E5008078DF /* EstablishmentPickerViewController.swift */,
+				B328CE8E1D77A78F007075B9 /* FormTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -275,10 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B328CE891D77882A007075B9 /* NameTableViewCell.swift in Sources */,
 				B367E1BB1D73F8E6008078DF /* ViewController.swift in Sources */,
 				B367E1B91D73F8E6008078DF /* AppDelegate.swift in Sources */,
+				B328CE8F1D77A78F007075B9 /* FormTableViewController.swift in Sources */,
 				B367E1D71D740042008078DF /* HIManager.swift in Sources */,
 				B367E1D31D73FE5F008078DF /* ChapterPickerViewController.swift in Sources */,
+				B328CE8D1D779EEF007075B9 /* SupplierTableViewCell.swift in Sources */,
 				B367E1D91D7743E5008078DF /* EstablishmentPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
