@@ -11,8 +11,10 @@
 		B328CE891D77882A007075B9 /* NameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328CE881D77882A007075B9 /* NameTableViewCell.swift */; };
 		B328CE8D1D779EEF007075B9 /* SupplierTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328CE8C1D779EEF007075B9 /* SupplierTableViewCell.swift */; };
 		B328CE8F1D77A78F007075B9 /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328CE8E1D77A78F007075B9 /* FormTableViewController.swift */; };
+		B328CE921D78E62C007075B9 /* DeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328CE911D78E62C007075B9 /* DeviceExtensions.swift */; };
+		B328CE981D78F44F007075B9 /* IPDFCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B328CE951D78F44F007075B9 /* IPDFCameraViewController.m */; };
+		B328CE991D78F44F007075B9 /* IPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = B328CE971D78F44F007075B9 /* IPDFView.m */; };
 		B367E1B91D73F8E6008078DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367E1B81D73F8E6008078DF /* AppDelegate.swift */; };
-		B367E1BB1D73F8E6008078DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367E1BA1D73F8E6008078DF /* ViewController.swift */; };
 		B367E1C01D73F8E6008078DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B367E1BF1D73F8E6008078DF /* Assets.xcassets */; };
 		B367E1C31D73F8E6008078DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B367E1C11D73F8E6008078DF /* LaunchScreen.storyboard */; };
 		B367E1D31D73FE5F008078DF /* ChapterPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367E1D21D73FE5F008078DF /* ChapterPickerViewController.swift */; };
@@ -27,9 +29,14 @@
 		B328CE881D77882A007075B9 /* NameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameTableViewCell.swift; sourceTree = "<group>"; };
 		B328CE8C1D779EEF007075B9 /* SupplierTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplierTableViewCell.swift; sourceTree = "<group>"; };
 		B328CE8E1D77A78F007075B9 /* FormTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTableViewController.swift; sourceTree = "<group>"; };
+		B328CE911D78E62C007075B9 /* DeviceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceExtensions.swift; sourceTree = "<group>"; };
+		B328CE931D78F44B007075B9 /* HafsaInspectorApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HafsaInspectorApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		B328CE941D78F44F007075B9 /* IPDFCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDFCameraViewController.h; sourceTree = "<group>"; };
+		B328CE951D78F44F007075B9 /* IPDFCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPDFCameraViewController.m; sourceTree = "<group>"; };
+		B328CE961D78F44F007075B9 /* IPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDFView.h; sourceTree = "<group>"; };
+		B328CE971D78F44F007075B9 /* IPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPDFView.m; sourceTree = "<group>"; };
 		B367E1B51D73F8E6008078DF /* HafsaInspectorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HafsaInspectorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B367E1B81D73F8E6008078DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B367E1BA1D73F8E6008078DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B367E1BF1D73F8E6008078DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B367E1C21D73F8E6008078DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B367E1C41D73F8E6008078DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +68,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B328CE901D78E5A6007075B9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B328CE911D78E62C007075B9 /* DeviceExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B367E1AC1D73F8E6008078DF = {
 			isa = PBXGroup;
 			children = (
@@ -86,7 +101,6 @@
 				B367E1CA1D73F975008078DF /* UI */,
 				B367E1CC1D73F9A7008078DF /* Data */,
 				B367E1CD1D73F9BF008078DF /* Utilities */,
-				B367E1BA1D73F8E6008078DF /* ViewController.swift */,
 				B367E1BF1D73F8E6008078DF /* Assets.xcassets */,
 				B367E1C11D73F8E6008078DF /* LaunchScreen.storyboard */,
 				B367E1C41D73F8E6008078DF /* Info.plist */,
@@ -113,6 +127,7 @@
 		B367E1CD1D73F9BF008078DF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				B328CE901D78E5A6007075B9 /* Extensions */,
 				B367E1D11D73FA0B008078DF /* ThirdParty */,
 				B367E1D01D73F9FC008078DF /* CustomControls */,
 				B367E1D61D740042008078DF /* HIManager.swift */,
@@ -143,6 +158,11 @@
 		B367E1D01D73F9FC008078DF /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
+				B328CE941D78F44F007075B9 /* IPDFCameraViewController.h */,
+				B328CE951D78F44F007075B9 /* IPDFCameraViewController.m */,
+				B328CE961D78F44F007075B9 /* IPDFView.h */,
+				B328CE971D78F44F007075B9 /* IPDFView.m */,
+				B328CE931D78F44B007075B9 /* HafsaInspectorApp-Bridging-Header.h */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
@@ -197,6 +217,7 @@
 				TargetAttributes = {
 					B367E1B41D73F8E6008078DF = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 43DLT4XN43;
 					};
 				};
 			};
@@ -285,12 +306,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B328CE891D77882A007075B9 /* NameTableViewCell.swift in Sources */,
-				B367E1BB1D73F8E6008078DF /* ViewController.swift in Sources */,
+				B328CE991D78F44F007075B9 /* IPDFView.m in Sources */,
+				B328CE921D78E62C007075B9 /* DeviceExtensions.swift in Sources */,
 				B367E1B91D73F8E6008078DF /* AppDelegate.swift in Sources */,
 				B328CE8F1D77A78F007075B9 /* FormTableViewController.swift in Sources */,
 				B367E1D71D740042008078DF /* HIManager.swift in Sources */,
 				B367E1D31D73FE5F008078DF /* ChapterPickerViewController.swift in Sources */,
 				B328CE8D1D779EEF007075B9 /* SupplierTableViewCell.swift in Sources */,
+				B328CE981D78F44F007075B9 /* IPDFCameraViewController.m in Sources */,
 				B367E1D91D7743E5008078DF /* EstablishmentPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,10 +420,16 @@
 			baseConfigurationReference = EAD07BCF679C3DB174AC45F3 /* Pods-HafsaInspectorApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HafsaInspectorApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Junaid.HafsaInspectorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HafsaInspectorApp/Utilities/CustomControls/HafsaInspectorApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -409,10 +438,15 @@
 			baseConfigurationReference = 664B7478F436B1FE0A598A46 /* Pods-HafsaInspectorApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HafsaInspectorApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Junaid.HafsaInspectorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HafsaInspectorApp/Utilities/CustomControls/HafsaInspectorApp-Bridging-Header.h";
 			};
 			name = Release;
 		};

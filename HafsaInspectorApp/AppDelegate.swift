@@ -12,20 +12,25 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    private let HImanager = HIManager.sharedClient()
-
 
     
     func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Usually this is not overridden. Using the "did finish launching" method is more typical
         
-        NSUserDefaults.standardUserDefaults().setValue("Junaid Mahmood", forKey: "userName")
-    NSUserDefaults.standardUserDefaults().setValue("Chicago", forKey: "currentChapter")
-        
-
-        
+       
+//        let firstUse = NSUserDefaults.standardUserDefaults().boolForKey("firstUse")
+//        if !firstUse {
+//            NSUserDefaults.standardUserDefaults().setBool(true, forKey:"firstUse")
+//        }
+//        else {
+//            let vc = EstablishmentPickerViewController.create()
+//            let nav = UINavigationController.init(rootViewController: vc)
+//            self.window?.rootViewController = nav
+//        }
+//        
         return true
     }
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -53,6 +58,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    
+    
+
 
 
 }

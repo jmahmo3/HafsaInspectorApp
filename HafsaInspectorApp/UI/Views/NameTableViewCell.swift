@@ -21,6 +21,10 @@ class NameTableViewCell: UITableViewCell {
         nameLabel.text = HImanager.userName
         chapterLabel.text = HImanager.currentChapter
         establishmentLabel.text = HImanager.currentEstablishment
-        //datelabel.text = String(NSDate())
+        
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "MM/dd/yy"
+        let dateString = formatter.stringFromDate(NSDate())
+        datelabel.text = dateString
     }
 }
