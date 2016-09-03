@@ -1,0 +1,580 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+- "OE17HafsaInspectorAppCSo8UIScreen6iPhone"
+provides-member:
+- ["CSo7UIColor", ""]
+- ["CSo16UIViewController", ""]
+- ["CSo8UIScreen", ""]
+- ["OE17HafsaInspectorAppCSo8UIScreen6iPhone", ""]
+- ["CSo7UIColor", "HIBackground"]
+- ["CSo16UIViewController", "setNavBarWithSettingsIcon"]
+- ["CSo16UIViewController", "setNavBarWithBackButton"]
+- ["CSo16UIViewController", "backButtonPressed"]
+- ["CSo8UIScreen", "iPhone"]
+- ["CSo8UIScreen", "isiPhone"]
+provides-dynamic-lookup:
+- "backButtonPressed"
+- "setNavBarWithSettingsIcon"
+- "setNavBarWithBackButton"
+- "HIBackground"
+depends-top-level:
+- !private "BooleanLiteralType"
+- !private "UIImage"
+- "UIViewController"
+- "Bool"
+- "UIColor"
+- !private "Selector"
+- !private "max"
+- "UIScreen"
+- !private "StringLiteralType"
+- "=="
+- !private "CGFloat"
+- !private "UIImageView"
+- !private "UIBarButtonItem"
+- "String"
+depends-member:
+- ["Ps9AnyObject", "HIBackground"]
+- !private ["Ps9AnyObject", "Selector"]
+- !private ["Ps9AnyObject", "UIBarButtonItem"]
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UIImage"]
+- !private ["Ps9AnyObject", "UIImageView"]
+- !private ["Ps9AnyObject", "UIScreen"]
+- ["Ps9AnyObject", "backButtonPressed"]
+- !private ["Ps9AnyObject", "barTintColor"]
+- !private ["Ps9AnyObject", "blackColor"]
+- !private ["Ps9AnyObject", "bounds"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "isiPhone"]
+- !private ["Ps9AnyObject", "leftBarButtonItem"]
+- !private ["Ps9AnyObject", "lightGrayColor"]
+- !private ["Ps9AnyObject", "mainScreen"]
+- !private ["Ps9AnyObject", "max"]
+- !private ["Ps9AnyObject", "navigationBar"]
+- !private ["Ps9AnyObject", "navigationController"]
+- !private ["Ps9AnyObject", "navigationItem"]
+- !private ["Ps9AnyObject", "popViewControllerAnimated"]
+- !private ["Ps9AnyObject", "rightBarButtonItem"]
+- ["Ps9AnyObject", "setNavBarWithBackButton"]
+- ["Ps9AnyObject", "setNavBarWithSettingsIcon"]
+- !private ["Ps9AnyObject", "tintColor"]
+- !private ["Ps9AnyObject", "titleView"]
+- !private ["Ps9AnyObject", "whiteColor"]
+- !private ["Ps22BidirectionalIndexType", "hashValue"]
+- !private ["Ps21BitwiseOperationsType", "hashValue"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC6CGRect", "size"]
+- !private ["VSC6CGSize", "height"]
+- !private ["VSC6CGSize", "width"]
+- ["Ps11CVarArgType", "HIBackground"]
+- !private ["Ps11CVarArgType", "Selector"]
+- !private ["Ps11CVarArgType", "UIBarButtonItem"]
+- !private ["Ps11CVarArgType", "UIColor"]
+- !private ["Ps11CVarArgType", "UIImage"]
+- !private ["Ps11CVarArgType", "UIImageView"]
+- !private ["Ps11CVarArgType", "UIScreen"]
+- ["Ps11CVarArgType", "backButtonPressed"]
+- !private ["Ps11CVarArgType", "barTintColor"]
+- !private ["Ps11CVarArgType", "blackColor"]
+- !private ["Ps11CVarArgType", "bounds"]
+- !private ["Ps11CVarArgType", "hashValue"]
+- !private ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "isiPhone"]
+- !private ["Ps11CVarArgType", "leftBarButtonItem"]
+- !private ["Ps11CVarArgType", "lightGrayColor"]
+- !private ["Ps11CVarArgType", "mainScreen"]
+- !private ["Ps11CVarArgType", "max"]
+- !private ["Ps11CVarArgType", "navigationBar"]
+- !private ["Ps11CVarArgType", "navigationController"]
+- !private ["Ps11CVarArgType", "navigationItem"]
+- !private ["Ps11CVarArgType", "popViewControllerAnimated"]
+- !private ["Ps11CVarArgType", "rightBarButtonItem"]
+- ["Ps11CVarArgType", "setNavBarWithBackButton"]
+- ["Ps11CVarArgType", "setNavBarWithSettingsIcon"]
+- !private ["Ps11CVarArgType", "tintColor"]
+- !private ["Ps11CVarArgType", "titleView"]
+- !private ["Ps11CVarArgType", "whiteColor"]
+- !private ["Ps10Comparable", "hashValue"]
+- ["Ps28CustomDebugStringConvertible", "HIBackground"]
+- !private ["Ps28CustomDebugStringConvertible", "Selector"]
+- !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItem"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImageView"]
+- !private ["Ps28CustomDebugStringConvertible", "UIScreen"]
+- ["Ps28CustomDebugStringConvertible", "backButtonPressed"]
+- !private ["Ps28CustomDebugStringConvertible", "barTintColor"]
+- !private ["Ps28CustomDebugStringConvertible", "blackColor"]
+- !private ["Ps28CustomDebugStringConvertible", "bounds"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "isiPhone"]
+- !private ["Ps28CustomDebugStringConvertible", "leftBarButtonItem"]
+- !private ["Ps28CustomDebugStringConvertible", "lightGrayColor"]
+- !private ["Ps28CustomDebugStringConvertible", "mainScreen"]
+- !private ["Ps28CustomDebugStringConvertible", "max"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationBar"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationItem"]
+- !private ["Ps28CustomDebugStringConvertible", "popViewControllerAnimated"]
+- !private ["Ps28CustomDebugStringConvertible", "rightBarButtonItem"]
+- ["Ps28CustomDebugStringConvertible", "setNavBarWithBackButton"]
+- ["Ps28CustomDebugStringConvertible", "setNavBarWithSettingsIcon"]
+- !private ["Ps28CustomDebugStringConvertible", "tintColor"]
+- !private ["Ps28CustomDebugStringConvertible", "titleView"]
+- !private ["Ps28CustomDebugStringConvertible", "whiteColor"]
+- ["Ps23CustomStringConvertible", "HIBackground"]
+- !private ["Ps23CustomStringConvertible", "Selector"]
+- !private ["Ps23CustomStringConvertible", "UIBarButtonItem"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "UIImageView"]
+- !private ["Ps23CustomStringConvertible", "UIScreen"]
+- ["Ps23CustomStringConvertible", "backButtonPressed"]
+- !private ["Ps23CustomStringConvertible", "barTintColor"]
+- !private ["Ps23CustomStringConvertible", "blackColor"]
+- !private ["Ps23CustomStringConvertible", "bounds"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "isiPhone"]
+- !private ["Ps23CustomStringConvertible", "leftBarButtonItem"]
+- !private ["Ps23CustomStringConvertible", "lightGrayColor"]
+- !private ["Ps23CustomStringConvertible", "mainScreen"]
+- !private ["Ps23CustomStringConvertible", "max"]
+- !private ["Ps23CustomStringConvertible", "navigationBar"]
+- !private ["Ps23CustomStringConvertible", "navigationController"]
+- !private ["Ps23CustomStringConvertible", "navigationItem"]
+- !private ["Ps23CustomStringConvertible", "popViewControllerAnimated"]
+- !private ["Ps23CustomStringConvertible", "rightBarButtonItem"]
+- ["Ps23CustomStringConvertible", "setNavBarWithBackButton"]
+- ["Ps23CustomStringConvertible", "setNavBarWithSettingsIcon"]
+- !private ["Ps23CustomStringConvertible", "tintColor"]
+- !private ["Ps23CustomStringConvertible", "titleView"]
+- !private ["Ps23CustomStringConvertible", "whiteColor"]
+- ["Ps9Equatable", "HIBackground"]
+- !private ["Ps9Equatable", "Plain"]
+- !private ["Ps9Equatable", "Selector"]
+- !private ["Ps9Equatable", "UIBarButtonItem"]
+- !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "UIImageView"]
+- !private ["Ps9Equatable", "UIScreen"]
+- ["Ps9Equatable", "backButtonPressed"]
+- !private ["Ps9Equatable", "barTintColor"]
+- !private ["Ps9Equatable", "blackColor"]
+- !private ["Ps9Equatable", "bounds"]
+- ["Ps9Equatable", "hashValue"]
+- !private ["Ps9Equatable", "height"]
+- ["Ps9Equatable", "iPhone5"]
+- ["Ps9Equatable", "iPhone6"]
+- ["Ps9Equatable", "iPhone6P"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "isiPhone"]
+- !private ["Ps9Equatable", "leftBarButtonItem"]
+- !private ["Ps9Equatable", "lightGrayColor"]
+- !private ["Ps9Equatable", "mainScreen"]
+- !private ["Ps9Equatable", "max"]
+- !private ["Ps9Equatable", "navigationBar"]
+- !private ["Ps9Equatable", "navigationController"]
+- !private ["Ps9Equatable", "navigationItem"]
+- !private ["Ps9Equatable", "popViewControllerAnimated"]
+- !private ["Ps9Equatable", "rightBarButtonItem"]
+- ["Ps9Equatable", "setNavBarWithBackButton"]
+- ["Ps9Equatable", "setNavBarWithSettingsIcon"]
+- !private ["Ps9Equatable", "size"]
+- !private ["Ps9Equatable", "tintColor"]
+- !private ["Ps9Equatable", "titleView"]
+- !private ["Ps9Equatable", "whiteColor"]
+- !private ["Ps9Equatable", "width"]
+- ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps16ForwardIndexType", "hashValue"]
+- ["Ps8Hashable", "HIBackground"]
+- !private ["Ps8Hashable", "Plain"]
+- !private ["Ps8Hashable", "Selector"]
+- !private ["Ps8Hashable", "UIBarButtonItem"]
+- !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "UIImageView"]
+- !private ["Ps8Hashable", "UIScreen"]
+- ["Ps8Hashable", "backButtonPressed"]
+- !private ["Ps8Hashable", "barTintColor"]
+- !private ["Ps8Hashable", "blackColor"]
+- !private ["Ps8Hashable", "bounds"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", "iPhone5"]
+- ["Ps8Hashable", "iPhone6"]
+- ["Ps8Hashable", "iPhone6P"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "isiPhone"]
+- !private ["Ps8Hashable", "leftBarButtonItem"]
+- !private ["Ps8Hashable", "lightGrayColor"]
+- !private ["Ps8Hashable", "mainScreen"]
+- !private ["Ps8Hashable", "max"]
+- !private ["Ps8Hashable", "navigationBar"]
+- !private ["Ps8Hashable", "navigationController"]
+- !private ["Ps8Hashable", "navigationItem"]
+- !private ["Ps8Hashable", "popViewControllerAnimated"]
+- !private ["Ps8Hashable", "rightBarButtonItem"]
+- ["Ps8Hashable", "setNavBarWithBackButton"]
+- ["Ps8Hashable", "setNavBarWithSettingsIcon"]
+- !private ["Ps8Hashable", "tintColor"]
+- !private ["Ps8Hashable", "titleView"]
+- !private ["Ps8Hashable", "whiteColor"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "hashValue"]
+- !private ["Ps21IntegerArithmeticType", "hashValue"]
+- !private ["Ps25IntegerLiteralConvertible", "hashValue"]
+- !private ["Ps11IntegerType", "hashValue"]
+- !private ["Ps14MirrorPathType", "hashValue"]
+- !private ["PSo8NSCoding", "Selector"]
+- !private ["PSo8NSCoding", "UIBarButtonItem"]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIImage"]
+- !private ["PSo8NSCoding", "UIImageView"]
+- !private ["PSo8NSCoding", "backButtonPressed"]
+- !private ["PSo8NSCoding", "barTintColor"]
+- !private ["PSo8NSCoding", "blackColor"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "leftBarButtonItem"]
+- !private ["PSo8NSCoding", "lightGrayColor"]
+- !private ["PSo8NSCoding", "navigationBar"]
+- !private ["PSo8NSCoding", "navigationController"]
+- !private ["PSo8NSCoding", "navigationItem"]
+- !private ["PSo8NSCoding", "popViewControllerAnimated"]
+- !private ["PSo8NSCoding", "rightBarButtonItem"]
+- !private ["PSo8NSCoding", "tintColor"]
+- !private ["PSo8NSCoding", "titleView"]
+- !private ["PSo8NSCoding", "whiteColor"]
+- !private ["PSo9NSCopying", "UIColor"]
+- !private ["PSo9NSCopying", "blackColor"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "lightGrayColor"]
+- !private ["PSo9NSCopying", "whiteColor"]
+- !private ["PSo26NSExtensionRequestHandling", "Selector"]
+- !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItem"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImage"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImageView"]
+- !private ["PSo26NSExtensionRequestHandling", "backButtonPressed"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationBar"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationItem"]
+- !private ["PSo26NSExtensionRequestHandling", "popViewControllerAnimated"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "CGFloat"]
+- ["CSo8NSObject", "HIBackground"]
+- !private ["CSo8NSObject", "Selector"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIBarButtonItem"]
+- ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UIImage"]
+- !private ["CSo8NSObject", "UIImageView"]
+- !private ["CSo8NSObject", "UIScreen"]
+- ["CSo8NSObject", "backButtonPressed"]
+- !private ["CSo8NSObject", "barTintColor"]
+- !private ["CSo8NSObject", "blackColor"]
+- !private ["CSo8NSObject", "bounds"]
+- ["CSo8NSObject", "iPhone"]
+- !private ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "isiPhone"]
+- !private ["CSo8NSObject", "leftBarButtonItem"]
+- !private ["CSo8NSObject", "lightGrayColor"]
+- !private ["CSo8NSObject", "mainScreen"]
+- !private ["CSo8NSObject", "max"]
+- !private ["CSo8NSObject", "navigationBar"]
+- !private ["CSo8NSObject", "navigationController"]
+- !private ["CSo8NSObject", "navigationItem"]
+- !private ["CSo8NSObject", "popViewControllerAnimated"]
+- !private ["CSo8NSObject", "rightBarButtonItem"]
+- ["CSo8NSObject", "setNavBarWithBackButton"]
+- ["CSo8NSObject", "setNavBarWithSettingsIcon"]
+- !private ["CSo8NSObject", "tintColor"]
+- !private ["CSo8NSObject", "titleView"]
+- !private ["CSo8NSObject", "whiteColor"]
+- ["PSo16NSObjectProtocol", "HIBackground"]
+- !private ["PSo16NSObjectProtocol", "Selector"]
+- !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "UIImageView"]
+- !private ["PSo16NSObjectProtocol", "UIScreen"]
+- ["PSo16NSObjectProtocol", "backButtonPressed"]
+- !private ["PSo16NSObjectProtocol", "barTintColor"]
+- !private ["PSo16NSObjectProtocol", "blackColor"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "isiPhone"]
+- !private ["PSo16NSObjectProtocol", "leftBarButtonItem"]
+- !private ["PSo16NSObjectProtocol", "lightGrayColor"]
+- !private ["PSo16NSObjectProtocol", "mainScreen"]
+- !private ["PSo16NSObjectProtocol", "max"]
+- !private ["PSo16NSObjectProtocol", "navigationBar"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "navigationItem"]
+- !private ["PSo16NSObjectProtocol", "popViewControllerAnimated"]
+- !private ["PSo16NSObjectProtocol", "rightBarButtonItem"]
+- ["PSo16NSObjectProtocol", "setNavBarWithBackButton"]
+- ["PSo16NSObjectProtocol", "setNavBarWithSettingsIcon"]
+- !private ["PSo16NSObjectProtocol", "tintColor"]
+- !private ["PSo16NSObjectProtocol", "titleView"]
+- !private ["PSo16NSObjectProtocol", "whiteColor"]
+- !private ["PSo14NSSecureCoding", "UIColor"]
+- !private ["PSo14NSSecureCoding", "blackColor"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "lightGrayColor"]
+- !private ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["Ps21NilLiteralConvertible", "init"]
+- !private ["Ps21RandomAccessIndexType", "hashValue"]
+- !private ["Ps16RawRepresentable", "Plain"]
+- !private ["V10ObjectiveC8Selector", "init"]
+- !private ["Ps17SignedIntegerType", "hashValue"]
+- !private ["Ps16SignedNumberType", "hashValue"]
+- !private ["Ps10Strideable", "hashValue"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "barTintColor"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "tintColor"]
+- !private ["PSo12UIAppearance", "barTintColor"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "tintColor"]
+- !private ["PSo21UIAppearanceContainer", "Selector"]
+- !private ["PSo21UIAppearanceContainer", "UIBarButtonItem"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UIImage"]
+- !private ["PSo21UIAppearanceContainer", "UIImageView"]
+- !private ["PSo21UIAppearanceContainer", "backButtonPressed"]
+- !private ["PSo21UIAppearanceContainer", "barTintColor"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "navigationBar"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
+- !private ["PSo21UIAppearanceContainer", "navigationItem"]
+- !private ["PSo21UIAppearanceContainer", "popViewControllerAnimated"]
+- !private ["CSo15UIBarButtonItem", "init"]
+- !private ["CSo15UIBarButtonItem", "tintColor"]
+- !private ["OSC20UIBarButtonItemStyle", "Plain"]
+- !private ["CSo9UIBarItem", "init"]
+- !private ["CSo9UIBarItem", "tintColor"]
+- !private ["PSo16UIBarPositioning", "barTintColor"]
+- ["CSo7UIColor", "HIBackground"]
+- ["CSo7UIColor", "UIColor"]
+- !private ["CSo7UIColor", "blackColor"]
+- !private ["CSo7UIColor", "init"]
+- !private ["CSo7UIColor", "lightGrayColor"]
+- !private ["CSo7UIColor", "whiteColor"]
+- !private ["PSo18UIContentContainer", "Selector"]
+- !private ["PSo18UIContentContainer", "UIBarButtonItem"]
+- !private ["PSo18UIContentContainer", "UIColor"]
+- !private ["PSo18UIContentContainer", "UIImage"]
+- !private ["PSo18UIContentContainer", "UIImageView"]
+- !private ["PSo18UIContentContainer", "backButtonPressed"]
+- !private ["PSo18UIContentContainer", "navigationBar"]
+- !private ["PSo18UIContentContainer", "navigationController"]
+- !private ["PSo18UIContentContainer", "navigationItem"]
+- !private ["PSo18UIContentContainer", "popViewControllerAnimated"]
+- !private ["PSo17UICoordinateSpace", "barTintColor"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo13UIDynamicItem", "barTintColor"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo18UIFocusEnvironment", "Selector"]
+- !private ["PSo18UIFocusEnvironment", "UIBarButtonItem"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "UIImage"]
+- !private ["PSo18UIFocusEnvironment", "UIImageView"]
+- !private ["PSo18UIFocusEnvironment", "backButtonPressed"]
+- !private ["PSo18UIFocusEnvironment", "barTintColor"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "navigationBar"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
+- !private ["PSo18UIFocusEnvironment", "navigationItem"]
+- !private ["PSo18UIFocusEnvironment", "popViewControllerAnimated"]
+- !private ["CSo7UIImage", "init"]
+- !private ["CSo11UIImageView", "init"]
+- !private ["CSo15UINavigationBar", "barTintColor"]
+- !private ["CSo22UINavigationController", "navigationBar"]
+- !private ["CSo22UINavigationController", "popViewControllerAnimated"]
+- !private ["CSo16UINavigationItem", "leftBarButtonItem"]
+- !private ["CSo16UINavigationItem", "rightBarButtonItem"]
+- !private ["CSo16UINavigationItem", "titleView"]
+- !private ["CSo11UIResponder", "Selector"]
+- ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIBarButtonItem"]
+- !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UIImage"]
+- !private ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "backButtonPressed"]
+- !private ["CSo11UIResponder", "barTintColor"]
+- !private ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "navigationBar"]
+- !private ["CSo11UIResponder", "navigationController"]
+- !private ["CSo11UIResponder", "navigationItem"]
+- !private ["CSo11UIResponder", "popViewControllerAnimated"]
+- ["CSo11UIResponder", "setNavBarWithBackButton"]
+- ["CSo11UIResponder", "setNavBarWithSettingsIcon"]
+- ["CSo8UIScreen", "Bool"]
+- !private ["CSo8UIScreen", "CGFloat"]
+- !private ["CSo8UIScreen", "UIScreen"]
+- !private ["CSo8UIScreen", "bounds"]
+- ["CSo8UIScreen", "iPhone"]
+- ["CSo8UIScreen", "isiPhone"]
+- !private ["CSo8UIScreen", "mainScreen"]
+- !private ["CSo8UIScreen", "max"]
+- !private ["PSo16UIStateRestoring", "Selector"]
+- !private ["PSo16UIStateRestoring", "UIBarButtonItem"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
+- !private ["PSo16UIStateRestoring", "UIImage"]
+- !private ["PSo16UIStateRestoring", "UIImageView"]
+- !private ["PSo16UIStateRestoring", "backButtonPressed"]
+- !private ["PSo16UIStateRestoring", "navigationBar"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
+- !private ["PSo16UIStateRestoring", "navigationItem"]
+- !private ["PSo16UIStateRestoring", "popViewControllerAnimated"]
+- !private ["PSo18UITraitEnvironment", "Selector"]
+- !private ["PSo18UITraitEnvironment", "UIBarButtonItem"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UIImage"]
+- !private ["PSo18UITraitEnvironment", "UIImageView"]
+- !private ["PSo18UITraitEnvironment", "UIScreen"]
+- !private ["PSo18UITraitEnvironment", "backButtonPressed"]
+- !private ["PSo18UITraitEnvironment", "barTintColor"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "mainScreen"]
+- !private ["PSo18UITraitEnvironment", "max"]
+- !private ["PSo18UITraitEnvironment", "navigationBar"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
+- !private ["PSo18UITraitEnvironment", "navigationItem"]
+- !private ["PSo18UITraitEnvironment", "popViewControllerAnimated"]
+- !private ["CSo6UIView", "barTintColor"]
+- !private ["CSo6UIView", "init"]
+- !private ["CSo16UIViewController", "Selector"]
+- ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIBarButtonItem"]
+- !private ["CSo16UIViewController", "UIColor"]
+- !private ["CSo16UIViewController", "UIImage"]
+- !private ["CSo16UIViewController", "UIImageView"]
+- ["CSo16UIViewController", "backButtonPressed"]
+- !private ["CSo16UIViewController", "navigationBar"]
+- !private ["CSo16UIViewController", "navigationController"]
+- !private ["CSo16UIViewController", "navigationItem"]
+- !private ["CSo16UIViewController", "popViewControllerAnimated"]
+- ["CSo16UIViewController", "setNavBarWithBackButton"]
+- ["CSo16UIViewController", "setNavBarWithSettingsIcon"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "hashValue"]
+- !private ["Ps24_ColorLiteralConvertible", "UIColor"]
+- !private ["Ps24_ColorLiteralConvertible", "blackColor"]
+- !private ["Ps24_ColorLiteralConvertible", "init"]
+- !private ["Ps24_ColorLiteralConvertible", "lightGrayColor"]
+- !private ["Ps24_ColorLiteralConvertible", "whiteColor"]
+- !private ["Ps24_ImageLiteralConvertible", "init"]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps22_IntegerArithmeticType", "hashValue"]
+- !private ["Ps12_IntegerType", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- !private ["Ps22_RandomAccessAmbiguity", "hashValue"]
+- !private ["Ps12_Reflectable", "barTintColor"]
+- !private ["Ps12_Reflectable", "hashValue"]
+- !private ["Ps12_Reflectable", "height"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "size"]
+- !private ["Ps12_Reflectable", "width"]
+- !private ["Ps18_SignedIntegerType", "hashValue"]
+- ["OE17HafsaInspectorAppCSo8UIScreen6iPhone", "deinit"]
+- ["OE17HafsaInspectorAppCSo8UIScreen6iPhone", "hashValue"]
+- ["OE17HafsaInspectorAppCSo8UIScreen6iPhone", "iPhone5"]
+- ["OE17HafsaInspectorAppCSo8UIScreen6iPhone", "iPhone6"]
+- ["OE17HafsaInspectorAppCSo8UIScreen6iPhone", "iPhone6P"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC6CGRect"
+- !private "VSC6CGSize"
+- "Ps11CVarArgType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps16ForwardIndexType"
+- "Ps8Hashable"
+- !private "Si"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps14MirrorPathType"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "Ps21NilLiteralConvertible"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps16RawRepresentable"
+- !private "V10ObjectiveC8Selector"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Strideable"
+- !private "Ps24StringLiteralConvertible"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "CSo15UIBarButtonItem"
+- !private "OSC20UIBarButtonItemStyle"
+- !private "CSo9UIBarItem"
+- !private "PSo16UIBarPositioning"
+- "CSo7UIColor"
+- !private "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "CSo7UIImage"
+- !private "CSo11UIImageView"
+- !private "CSo15UINavigationBar"
+- !private "CSo22UINavigationController"
+- !private "CSo16UINavigationItem"
+- "CSo11UIResponder"
+- "CSo8UIScreen"
+- !private "PSo16UIStateRestoring"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps24_ColorLiteralConvertible"
+- !private "Ps24_ImageLiteralConvertible"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessAmbiguity"
+- !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+- "OE17HafsaInspectorAppCSo8UIScreen6iPhone"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HafsaInspectorApp-Bridging-Header.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/IPDFView.h"
+- "/Users/sameersiddiqui/Projects/Test Code/SwiftTest/Pods/Google/Headers/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/Material.framework/Modules/Material.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/Material.framework/Headers/Material-Swift.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/Material.framework/Headers/Material-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/Material.framework/Modules/module.modulemap"
+interface-hash: "76def75fa1d3b7bbbfb5356b994a0ab2"

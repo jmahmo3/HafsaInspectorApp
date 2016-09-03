@@ -1,0 +1,256 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["V8Material17MaterialAnimation", ""]
+- ["V8Material17MaterialAnimation", "backgroundColor"]
+- ["V8Material17MaterialAnimation", "cornerRadius"]
+- ["V8Material17MaterialAnimation", "transform"]
+- ["V8Material17MaterialAnimation", "rotate"]
+- ["V8Material17MaterialAnimation", "rotateX"]
+- ["V8Material17MaterialAnimation", "rotateY"]
+- ["V8Material17MaterialAnimation", "rotateZ"]
+- ["V8Material17MaterialAnimation", "scale"]
+- ["V8Material17MaterialAnimation", "scaleX"]
+- ["V8Material17MaterialAnimation", "scaleY"]
+- ["V8Material17MaterialAnimation", "scaleZ"]
+- ["V8Material17MaterialAnimation", "translate"]
+- ["V8Material17MaterialAnimation", "translateX"]
+- ["V8Material17MaterialAnimation", "translateY"]
+- ["V8Material17MaterialAnimation", "translateZ"]
+- ["V8Material17MaterialAnimation", "position"]
+- ["V8Material17MaterialAnimation", "shadowPath"]
+provides-dynamic-lookup:
+depends-top-level:
+- "CGPath"
+- !private "CAMediaTimingFunction"
+- !private "*"
+- "CFTimeInterval"
+- !private "MaterialAnimationFillModeToValue"
+- "CGSize"
+- !private "BooleanLiteralType"
+- "UIColor"
+- !private "NSNumber"
+- !private "NSValue"
+- !private "/"
+- "CGPoint"
+- "CATransform3D"
+- "CGFloat"
+- !private "kCAMediaTimingFunctionEaseInEaseOut"
+- !private "M_PI"
+- !private "StringLiteralType"
+- "MaterialAnimation"
+- "CABasicAnimation"
+depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps9AnyObject", "CGColor"]
+- !private ["Ps9AnyObject", "duration"]
+- !private ["Ps9AnyObject", "fillMode"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "removedOnCompletion"]
+- !private ["Ps9AnyObject", "timingFunction"]
+- !private ["Ps9AnyObject", "toValue"]
+- !private ["PSo8CAAction", "duration"]
+- !private ["PSo8CAAction", "fillMode"]
+- !private ["PSo8CAAction", "init"]
+- !private ["PSo8CAAction", "removedOnCompletion"]
+- !private ["PSo8CAAction", "timingFunction"]
+- !private ["PSo8CAAction", "toValue"]
+- !private ["CSo11CAAnimation", "duration"]
+- !private ["CSo11CAAnimation", "fillMode"]
+- !private ["CSo11CAAnimation", "init"]
+- !private ["CSo11CAAnimation", "removedOnCompletion"]
+- !private ["CSo11CAAnimation", "timingFunction"]
+- !private ["CSo11CAAnimation", "toValue"]
+- !private ["CSo16CABasicAnimation", "duration"]
+- !private ["CSo16CABasicAnimation", "fillMode"]
+- !private ["CSo16CABasicAnimation", "init"]
+- !private ["CSo16CABasicAnimation", "removedOnCompletion"]
+- !private ["CSo16CABasicAnimation", "timingFunction"]
+- !private ["CSo16CABasicAnimation", "toValue"]
+- !private ["PSo13CAMediaTiming", "duration"]
+- !private ["PSo13CAMediaTiming", "fillMode"]
+- !private ["PSo13CAMediaTiming", "init"]
+- !private ["PSo13CAMediaTiming", "removedOnCompletion"]
+- !private ["PSo13CAMediaTiming", "timingFunction"]
+- !private ["PSo13CAMediaTiming", "toValue"]
+- !private ["CSo21CAMediaTimingFunction", "init"]
+- !private ["CSo19CAPropertyAnimation", "duration"]
+- !private ["CSo19CAPropertyAnimation", "fillMode"]
+- !private ["CSo19CAPropertyAnimation", "init"]
+- !private ["CSo19CAPropertyAnimation", "removedOnCompletion"]
+- !private ["CSo19CAPropertyAnimation", "timingFunction"]
+- !private ["CSo19CAPropertyAnimation", "toValue"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["V12CoreGraphics7CGFloat", "init"]
+- !private ["Ps11CVarArgType", "CGColor"]
+- !private ["Ps11CVarArgType", "duration"]
+- !private ["Ps11CVarArgType", "fillMode"]
+- !private ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "removedOnCompletion"]
+- !private ["Ps11CVarArgType", "timingFunction"]
+- !private ["Ps11CVarArgType", "toValue"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "CGColor"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "duration"]
+- !private ["Ps28CustomDebugStringConvertible", "fillMode"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "removedOnCompletion"]
+- !private ["Ps28CustomDebugStringConvertible", "timingFunction"]
+- !private ["Ps28CustomDebugStringConvertible", "toValue"]
+- !private ["Ps23CustomStringConvertible", "CGColor"]
+- !private ["Ps23CustomStringConvertible", "duration"]
+- !private ["Ps23CustomStringConvertible", "fillMode"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "removedOnCompletion"]
+- !private ["Ps23CustomStringConvertible", "timingFunction"]
+- !private ["Ps23CustomStringConvertible", "toValue"]
+- !private ["Ps9Equatable", "CGColor"]
+- !private ["Ps9Equatable", "Forwards"]
+- !private ["Ps9Equatable", "duration"]
+- !private ["Ps9Equatable", "fillMode"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "removedOnCompletion"]
+- !private ["Ps9Equatable", "timingFunction"]
+- !private ["Ps9Equatable", "toValue"]
+- !private ["Ps23FloatLiteralConvertible", "init"]
+- !private ["Ps17FloatingPointType", "init"]
+- !private ["Ps8Hashable", "CGColor"]
+- !private ["Ps8Hashable", "Forwards"]
+- !private ["Ps8Hashable", "duration"]
+- !private ["Ps8Hashable", "fillMode"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "removedOnCompletion"]
+- !private ["Ps8Hashable", "timingFunction"]
+- !private ["Ps8Hashable", "toValue"]
+- !private ["Ps25IntegerLiteralConvertible", "init"]
+- ["V8Material17MaterialAnimation", "CABasicAnimation"]
+- !private ["V8Material17MaterialAnimation", "CAMediaTimingFunction"]
+- ["V8Material17MaterialAnimation", "CATransform3D"]
+- ["V8Material17MaterialAnimation", "CFTimeInterval"]
+- ["V8Material17MaterialAnimation", "CGFloat"]
+- ["V8Material17MaterialAnimation", "CGPath"]
+- ["V8Material17MaterialAnimation", "CGPoint"]
+- ["V8Material17MaterialAnimation", "CGSize"]
+- !private ["V8Material17MaterialAnimation", "M_PI"]
+- !private ["V8Material17MaterialAnimation", "MaterialAnimationFillModeToValue"]
+- !private ["V8Material17MaterialAnimation", "NSNumber"]
+- !private ["V8Material17MaterialAnimation", "NSValue"]
+- ["V8Material17MaterialAnimation", "UIColor"]
+- ["V8Material17MaterialAnimation", "backgroundColor"]
+- ["V8Material17MaterialAnimation", "cornerRadius"]
+- !private ["V8Material17MaterialAnimation", "kCAMediaTimingFunctionEaseInEaseOut"]
+- ["V8Material17MaterialAnimation", "position"]
+- ["V8Material17MaterialAnimation", "rotate"]
+- ["V8Material17MaterialAnimation", "rotateX"]
+- ["V8Material17MaterialAnimation", "rotateY"]
+- ["V8Material17MaterialAnimation", "rotateZ"]
+- ["V8Material17MaterialAnimation", "scale"]
+- ["V8Material17MaterialAnimation", "scaleX"]
+- ["V8Material17MaterialAnimation", "scaleY"]
+- ["V8Material17MaterialAnimation", "scaleZ"]
+- ["V8Material17MaterialAnimation", "shadowPath"]
+- ["V8Material17MaterialAnimation", "transform"]
+- ["V8Material17MaterialAnimation", "translate"]
+- ["V8Material17MaterialAnimation", "translateX"]
+- ["V8Material17MaterialAnimation", "translateY"]
+- ["V8Material17MaterialAnimation", "translateZ"]
+- !private ["O8Material25MaterialAnimationFillMode", "Forwards"]
+- !private ["PSo8NSCoding", "CGColor"]
+- !private ["PSo8NSCoding", "duration"]
+- !private ["PSo8NSCoding", "fillMode"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "removedOnCompletion"]
+- !private ["PSo8NSCoding", "timingFunction"]
+- !private ["PSo8NSCoding", "toValue"]
+- !private ["PSo9NSCopying", "CGColor"]
+- !private ["PSo9NSCopying", "duration"]
+- !private ["PSo9NSCopying", "fillMode"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "removedOnCompletion"]
+- !private ["PSo9NSCopying", "timingFunction"]
+- !private ["PSo9NSCopying", "toValue"]
+- !private ["CSo8NSObject", "CGColor"]
+- !private ["CSo8NSObject", "duration"]
+- !private ["CSo8NSObject", "fillMode"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "removedOnCompletion"]
+- !private ["CSo8NSObject", "timingFunction"]
+- !private ["CSo8NSObject", "toValue"]
+- !private ["PSo16NSObjectProtocol", "CGColor"]
+- !private ["PSo16NSObjectProtocol", "duration"]
+- !private ["PSo16NSObjectProtocol", "fillMode"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "removedOnCompletion"]
+- !private ["PSo16NSObjectProtocol", "timingFunction"]
+- !private ["PSo16NSObjectProtocol", "toValue"]
+- !private ["PSo14NSSecureCoding", "CGColor"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo7NSValue", "init"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16SignedNumberType", "init"]
+- !private ["Ps10Strideable", "init"]
+- !private ["CSo7UIColor", "CGColor"]
+- !private ["Ps19_CVarArgAlignedType", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps24_ColorLiteralConvertible", "CGColor"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "init"]
+depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- !private "Ps9AnyObject"
+- !private "PSo8CAAction"
+- !private "CSo11CAAnimation"
+- !private "CSo16CABasicAnimation"
+- !private "PSo13CAMediaTiming"
+- !private "CSo21CAMediaTimingFunction"
+- !private "CSo19CAPropertyAnimation"
+- !private "V12CoreGraphics7CGFloat"
+- !private "Ps11CVarArgType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps23FloatLiteralConvertible"
+- !private "Ps17FloatingPointType"
+- !private "Ps8Hashable"
+- !private "Ps25IntegerLiteralConvertible"
+- "V8Material17MaterialAnimation"
+- !private "O8Material25MaterialAnimationFillMode"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo7NSValue"
+- "Ps21NilLiteralConvertible"
+- "Sq"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Strideable"
+- !private "CSo7UIColor"
+- !private "Ps19_CVarArgAlignedType"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps24_ColorLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/Test Code/SwiftTest/Pods/Google/Headers/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Target Support Files/Material/Material-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "ba7432a4284adacc1c6eef07d7a42deb"

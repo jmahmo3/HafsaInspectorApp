@@ -13,6 +13,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    
+    func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Usually this is not overridden. Using the "did finish launching" method is more typical
+        
+        let registered = NSUserDefaults.standardUserDefaults().boolForKey("Registered")
+        if registered {
+            let vc = EstablishmentPickerViewController.create()
+            let nav = UINavigationController.init(rootViewController: vc)
+            self.window?.rootViewController = nav
+        }
+        return true
+    }
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -40,6 +53,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    
+    
+
 
 
 }

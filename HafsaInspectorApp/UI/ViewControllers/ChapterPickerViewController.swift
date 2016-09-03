@@ -8,43 +8,135 @@
 
 import UIKit
 import MBProgressHUD
+import Material
 
 
-class ChapterPickerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+protocol ChapterPickerDelegate {
+    func didChangeChapter()
+}
 
-    @IBOutlet weak var chapterPickerView: UIPickerView!
+class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
     
-    var pickerData: [String] = [String]()
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var chapterTextField: HITextField!
+    @IBOutlet weak var nameTextField: HITextField!
+
     
+    var chapterData: [String] = [String]()
     private let HImanager = HIManager.sharedClient()
+    let picker: UIPickerView = UIPickerView()
+    var delegate: ChapterPickerDelegate! = nil
+
+    //MARK: - Lifecycle
+    
+    static func create() -> ChapterPickerViewController {
+        let frameworkBundle = NSBundle.mainBundle()
+        let storyboard = UIStoryboard(name: "Main", bundle: frameworkBundle)
+        let main = storyboard.instantiateViewControllerWithIdentifier("ChapterPickerViewController") as! ChapterPickerViewController
+        return main
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupView()
+    }
+    
+    //MARK: Utils
+    func setupView(){
         
-        // Connect data:
-        self.chapterPickerView.delegate = self
-        self.chapterPickerView.dataSource = self
+        if UIScreen.isiPhone(.iPhone5) {
+//            self.nameLabelToTopConstraint.constant = 150
+        }
         
-        // Input data into the Array:
-        pickerData = ["Chicago", "Detroit", "San Francisco"]
-        
-        //let loadingNotification = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
-        //loadingNotification.mode = MBProgressHUDMode.Indeterminate
+        let firstUse = NSUserDefaults.standardUserDefaults().boolForKey("Registered")
+        if firstUse {
+            self.setNavBarWithBackButton()
+            self.imageView.hidden = true
+            self.nextButton.hidden = true
+            nameTextField.text = HImanager.userName
+            chapterTextField.text = HImanager.currentChapter
 
-    }
-    // The number of columns of data
-    func numberOfComponentsInPickerView(chapterPickerView: UIPickerView) -> Int {
-        return 1
+        }
+        
+        view.backgroundColor = UIColor.HIBackground
+        self.hideKeyboardWhenTappedAround()
+        
+        nameTextField.delegate = self
+        chapterTextField.delegate = self
+
+        nameTextField.placeholder = "Name"
+        chapterTextField.placeholder = "Chapter"
+        chapterTextField.setupChapterPicker()
+        
+        nextButton.backgroundColor = UIColor.whiteColor()
+        nextButton.tintColor = UIColor.blackColor()
+        nextButton.titleLabel?.textColor = UIColor.blackColor()
+        nextButton.titleLabel?.font = UIFont(name: "AvenirNext-Medium", size: 24)
+        nextButton.layer.cornerRadius = 4
+        nextButton.layer.borderWidth = 1
+        nextButton.layer.borderColor = UIColor.whiteColor().CGColor
     }
     
-    // The number of rows of data
-    func pickerView(chapterPickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerData.count
+    func createAlert(error: String) {
+        let alert = UIAlertController(title: "Sorry", message: error, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction((UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:nil)))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
-    // The data to return for the row and component (column) that's being passed in
-    func pickerView(chapterPickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerData[row]
+    //MARK: TextFieldShouldReturn
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        textField.text = ""
+    }
+    
+    //MARK: Actions
+    @IBAction func nextButtonPressed(sender: AnyObject) {
+        self.saveData()
+    }
+    
+    override func backButtonPressed() {
+        self.saveData()
+        self.delegate.didChangeChapter()
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    func saveData() {
+        if nameTextField.text!.isEmpty  {
+            createAlert("Please Enter a Name")
+        }
+        else if chapterTextField.text!.isEmpty{
+            createAlert("Please Select a Chapter")
+        }
+        else {
+            
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "Registered")
+            //set name
+            NSUserDefaults.standardUserDefaults().setValue(nameTextField.text!, forKey: "userName")
+            HImanager.userName = nameTextField.text!
+            
+            //set chapter
+            let selectedValue = chapterTextField.text!
+            NSUserDefaults.standardUserDefaults().setValue(selectedValue, forKey: "currentChapter")
+            HImanager.currentChapter = selectedValue
+            
+        }
     }
 }
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
 
