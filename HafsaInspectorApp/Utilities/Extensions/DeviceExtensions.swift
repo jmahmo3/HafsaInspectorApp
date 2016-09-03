@@ -14,6 +14,47 @@ public extension UIColor {
     }
 }
 
+public extension UIViewController {
+    func setNavBarWithSettingsIcon(selector:String) {
+        self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+        let logo = UIImage(named: "logo")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
+        
+        let settings = UIImage(named:"cog-16")
+        let button = UIBarButtonItem(image: settings, style: .Plain, target: self, action: Selector(selector))
+        button.tintColor = UIColor.lightGrayColor()
+        self.navigationItem.rightBarButtonItem = button
+    }
+    
+    func setNavBarWithBackButton() {
+        self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+        let logo = UIImage(named: "logo")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
+
+        let settings = UIImage(named:"arrow-80-24")
+        let button = UIBarButtonItem(image: settings, style: .Plain, target: self, action:#selector(backButtonPressed))
+        button.tintColor = UIColor.blackColor()
+        self.navigationItem.leftBarButtonItem = button
+
+    }
+    
+//    func setNavBarWithBackButton() {
+//        self.setNavBarWithBackButton("backButtonPressed")
+//    }
+    
+    func backButtonPressed() {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+
+//    func settingsButtonPressed(vc: UIViewController) {
+//        let vc = ChapterPickerViewController.create()
+//        vc.delegate = vc
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
+}
+
 public extension UIScreen {
     
     enum iPhone {

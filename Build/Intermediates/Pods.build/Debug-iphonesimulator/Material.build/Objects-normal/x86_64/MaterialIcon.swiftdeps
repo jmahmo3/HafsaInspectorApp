@@ -1,0 +1,213 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MaterialIcon"
+provides-nominal:
+- "V8Material12MaterialIcon"
+- "VV8Material12MaterialIcon2cm"
+provides-member:
+- ["V8Material12MaterialIcon", ""]
+- ["VV8Material12MaterialIcon2cm", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "NSBundle"
+- "UIImage"
+- "MaterialIcon"
+- !private "=="
+- !private "MaterialView"
+- "String"
+- "StringLiteralType"
+depends-member:
+- !private ["Ps9AnyObject", "URLByAppendingPathComponent"]
+- !private ["Ps9AnyObject", "imageWithRenderingMode"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "resourceURL"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "URLByAppendingPathComponent"]
+- !private ["Ps11CVarArgType", "imageWithRenderingMode"]
+- !private ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "resourceURL"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "URLByAppendingPathComponent"]
+- !private ["Ps28CustomDebugStringConvertible", "imageWithRenderingMode"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "resourceURL"]
+- !private ["Ps23CustomStringConvertible", "URLByAppendingPathComponent"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "imageWithRenderingMode"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "resourceURL"]
+- !private ["Ps9Equatable", "AlwaysTemplate"]
+- !private ["Ps9Equatable", "URLByAppendingPathComponent"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "imageWithRenderingMode"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "resourceURL"]
+- !private ["Ps8Hashable", "AlwaysTemplate"]
+- !private ["Ps8Hashable", "URLByAppendingPathComponent"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "imageWithRenderingMode"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "resourceURL"]
+- ["V8Material12MaterialIcon", "MaterialIcon"]
+- !private ["V8Material12MaterialIcon", "MaterialView"]
+- ["V8Material12MaterialIcon", "NSBundle"]
+- ["V8Material12MaterialIcon", "String"]
+- ["V8Material12MaterialIcon", "UIImage"]
+- ["V8Material12MaterialIcon", "add"]
+- ["V8Material12MaterialIcon", "addCircle"]
+- ["V8Material12MaterialIcon", "addCircleOutline"]
+- ["V8Material12MaterialIcon", "arrowBack"]
+- ["V8Material12MaterialIcon", "arrowDownward"]
+- ["V8Material12MaterialIcon", "audio"]
+- ["V8Material12MaterialIcon", "bell"]
+- ["V8Material12MaterialIcon", "bundle"]
+- ["V8Material12MaterialIcon", "check"]
+- ["V8Material12MaterialIcon", "clear"]
+- ["V8Material12MaterialIcon", "close"]
+- ["V8Material12MaterialIcon", "cm"]
+- ["V8Material12MaterialIcon", "edit"]
+- ["V8Material12MaterialIcon", "favorite"]
+- ["V8Material12MaterialIcon", "favoriteBorder"]
+- ["V8Material12MaterialIcon", "history"]
+- ["V8Material12MaterialIcon", "home"]
+- ["V8Material12MaterialIcon", "icon"]
+- ["V8Material12MaterialIcon", "image"]
+- ["V8Material12MaterialIcon", "init"]
+- !private ["V8Material12MaterialIcon", "internalBundle"]
+- ["V8Material12MaterialIcon", "menu"]
+- ["V8Material12MaterialIcon", "moreHorizontal"]
+- ["V8Material12MaterialIcon", "moreVertical"]
+- ["V8Material12MaterialIcon", "movie"]
+- ["V8Material12MaterialIcon", "pen"]
+- ["V8Material12MaterialIcon", "photoCamera"]
+- ["V8Material12MaterialIcon", "photoLibrary"]
+- ["V8Material12MaterialIcon", "place"]
+- ["V8Material12MaterialIcon", "search"]
+- ["V8Material12MaterialIcon", "settings"]
+- ["V8Material12MaterialIcon", "share"]
+- ["V8Material12MaterialIcon", "star"]
+- ["V8Material12MaterialIcon", "starBorder"]
+- ["V8Material12MaterialIcon", "starHalf"]
+- ["V8Material12MaterialIcon", "videocam"]
+- ["V8Material12MaterialIcon", "visibility"]
+- !private ["CSo8NSBundle", "init"]
+- !private ["CSo8NSBundle", "resourceURL"]
+- !private ["PSo8NSCoding", "URLByAppendingPathComponent"]
+- !private ["PSo8NSCoding", "imageWithRenderingMode"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "URLByAppendingPathComponent"]
+- !private ["CSo8NSObject", "URLByAppendingPathComponent"]
+- !private ["CSo8NSObject", "imageWithRenderingMode"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "resourceURL"]
+- !private ["PSo16NSObjectProtocol", "URLByAppendingPathComponent"]
+- !private ["PSo16NSObjectProtocol", "imageWithRenderingMode"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "resourceURL"]
+- !private ["PSo14NSSecureCoding", "URLByAppendingPathComponent"]
+- !private ["PSo14NSSecureCoding", "imageWithRenderingMode"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo5NSURL", "URLByAppendingPathComponent"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16RawRepresentable", "AlwaysTemplate"]
+- !private ["PSo29UIAccessibilityIdentification", "imageWithRenderingMode"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["CSo7UIImage", "imageWithRenderingMode"]
+- !private ["CSo7UIImage", "init"]
+- !private ["OSC20UIImageRenderingMode", "AlwaysTemplate"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps32_FileReferenceLiteralConvertible", "URLByAppendingPathComponent"]
+- !private ["Ps24_ImageLiteralConvertible", "imageWithRenderingMode"]
+- !private ["Ps24_ImageLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "URLByAppendingPathComponent"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- ["VV8Material12MaterialIcon2cm", "MaterialIcon"]
+- ["VV8Material12MaterialIcon2cm", "UIImage"]
+- ["VV8Material12MaterialIcon2cm", "add"]
+- ["VV8Material12MaterialIcon2cm", "arrowBack"]
+- ["VV8Material12MaterialIcon2cm", "arrowDownward"]
+- ["VV8Material12MaterialIcon2cm", "audio"]
+- ["VV8Material12MaterialIcon2cm", "audioLibrary"]
+- ["VV8Material12MaterialIcon2cm", "bell"]
+- ["VV8Material12MaterialIcon2cm", "check"]
+- ["VV8Material12MaterialIcon2cm", "clear"]
+- ["VV8Material12MaterialIcon2cm", "close"]
+- ["VV8Material12MaterialIcon2cm", "edit"]
+- ["VV8Material12MaterialIcon2cm", "image"]
+- ["VV8Material12MaterialIcon2cm", "init"]
+- ["VV8Material12MaterialIcon2cm", "menu"]
+- ["VV8Material12MaterialIcon2cm", "microphone"]
+- ["VV8Material12MaterialIcon2cm", "moreHorizontal"]
+- ["VV8Material12MaterialIcon2cm", "moreVertical"]
+- ["VV8Material12MaterialIcon2cm", "movie"]
+- ["VV8Material12MaterialIcon2cm", "pause"]
+- ["VV8Material12MaterialIcon2cm", "pen"]
+- ["VV8Material12MaterialIcon2cm", "photoCamera"]
+- ["VV8Material12MaterialIcon2cm", "photoLibrary"]
+- ["VV8Material12MaterialIcon2cm", "play"]
+- ["VV8Material12MaterialIcon2cm", "search"]
+- ["VV8Material12MaterialIcon2cm", "settings"]
+- ["VV8Material12MaterialIcon2cm", "share"]
+- ["VV8Material12MaterialIcon2cm", "shuffle"]
+- ["VV8Material12MaterialIcon2cm", "skipBackward"]
+- ["VV8Material12MaterialIcon2cm", "skipForward"]
+- ["VV8Material12MaterialIcon2cm", "star"]
+- ["VV8Material12MaterialIcon2cm", "videocam"]
+- ["VV8Material12MaterialIcon2cm", "volumeHigh"]
+- ["VV8Material12MaterialIcon2cm", "volumeMedium"]
+- ["VV8Material12MaterialIcon2cm", "volumeOff"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- !private "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps8Hashable"
+- "V8Material12MaterialIcon"
+- !private "CSo8NSBundle"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo5NSURL"
+- "Ps21NilLiteralConvertible"
+- "Sq"
+- !private "Ps16RawRepresentable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "CSo7UIImage"
+- !private "OSC20UIImageRenderingMode"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps32_FileReferenceLiteralConvertible"
+- !private "Ps24_ImageLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- "Ps12_Reflectable"
+- "VV8Material12MaterialIcon2cm"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/Test Code/SwiftTest/Pods/Google/Headers/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Target Support Files/Material/Material-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "65fdbc61b6e43366571711f6482fc004"

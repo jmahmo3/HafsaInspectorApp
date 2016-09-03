@@ -1,0 +1,604 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TextWillProcessEdit"
+- "TextDidProcessEdit"
+- "TextStorage"
+provides-nominal:
+- "C8Material11TextStorage"
+provides-member:
+- ["C8Material11TextStorage", ""]
+provides-dynamic-lookup:
+- "replaceCharactersInRange"
+- "textWillProcessEdit"
+- "processEditing"
+- "store"
+- "expression"
+- "attributesAtIndex"
+- "textDidProcessEdit"
+- "setAttributes"
+- "string"
+depends-top-level:
+- "NSMutableAttributedString"
+- !private "-"
+- "TextDidProcessEdit"
+- !private "NSString"
+- "NSCoder"
+- "TextWillProcessEdit"
+- !private "Array"
+- "NSRange"
+- "NSTextCheckingResult"
+- "NSMatchingFlags"
+- "ObjCBool"
+- "AnyObject"
+- "TextStorage"
+- "String"
+- !private "NSTextStorageEditActions"
+- "NSTextStorage"
+- "NSRangePointer"
+- "Void"
+- "UnsafeMutablePointer"
+- "Int"
+- !private "StringLiteralType"
+- "NSRegularExpression"
+depends-member:
+- !private ["Ps9AnyObject", "NSMutableAttributedString"]
+- !private ["Ps9AnyObject", "NSTextStorageEditActions"]
+- ["Ps9AnyObject", "attributesAtIndex"]
+- !private ["Ps9AnyObject", "edited"]
+- !private ["Ps9AnyObject", "editedRange"]
+- !private ["Ps9AnyObject", "enumerateMatchesInString"]
+- ["Ps9AnyObject", "expression"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "paragraphRangeForRange"]
+- ["Ps9AnyObject", "processEditing"]
+- ["Ps9AnyObject", "replaceCharactersInRange"]
+- ["Ps9AnyObject", "setAttributes"]
+- ["Ps9AnyObject", "store"]
+- ["Ps9AnyObject", "store.storage"]
+- ["Ps9AnyObject", "string"]
+- ["Ps9AnyObject", "textDidProcessEdit"]
+- ["Ps9AnyObject", "textWillProcessEdit"]
+- !private ["Ps9AnyObject", "utf16"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps23ArrayLiteralConvertible", "EditedAttributes"]
+- !private ["Ps23ArrayLiteralConvertible", "EditedCharacters"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps22BidirectionalIndexType", "Distance"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "NSMutableAttributedString"]
+- !private ["Ps11CVarArgType", "NSTextStorageEditActions"]
+- ["Ps11CVarArgType", "attributesAtIndex"]
+- !private ["Ps11CVarArgType", "edited"]
+- !private ["Ps11CVarArgType", "editedRange"]
+- !private ["Ps11CVarArgType", "enumerateMatchesInString"]
+- ["Ps11CVarArgType", "expression"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "paragraphRangeForRange"]
+- ["Ps11CVarArgType", "processEditing"]
+- ["Ps11CVarArgType", "replaceCharactersInRange"]
+- ["Ps11CVarArgType", "setAttributes"]
+- ["Ps11CVarArgType", "store"]
+- ["Ps11CVarArgType", "store.storage"]
+- ["Ps11CVarArgType", "string"]
+- ["Ps11CVarArgType", "textDidProcessEdit"]
+- ["Ps11CVarArgType", "textWillProcessEdit"]
+- !private ["Ps11CVarArgType", "utf16"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "count"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "utf16"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "NSMutableAttributedString"]
+- !private ["Ps28CustomDebugStringConvertible", "NSTextStorageEditActions"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- ["Ps28CustomDebugStringConvertible", "attributesAtIndex"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "edited"]
+- !private ["Ps28CustomDebugStringConvertible", "editedRange"]
+- !private ["Ps28CustomDebugStringConvertible", "enumerateMatchesInString"]
+- ["Ps28CustomDebugStringConvertible", "expression"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "paragraphRangeForRange"]
+- ["Ps28CustomDebugStringConvertible", "processEditing"]
+- ["Ps28CustomDebugStringConvertible", "replaceCharactersInRange"]
+- ["Ps28CustomDebugStringConvertible", "setAttributes"]
+- ["Ps28CustomDebugStringConvertible", "store"]
+- ["Ps28CustomDebugStringConvertible", "store.storage"]
+- ["Ps28CustomDebugStringConvertible", "string"]
+- ["Ps28CustomDebugStringConvertible", "textDidProcessEdit"]
+- ["Ps28CustomDebugStringConvertible", "textWillProcessEdit"]
+- !private ["Ps28CustomDebugStringConvertible", "utf16"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "NSMutableAttributedString"]
+- !private ["Ps23CustomStringConvertible", "NSTextStorageEditActions"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "attributesAtIndex"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "edited"]
+- !private ["Ps23CustomStringConvertible", "editedRange"]
+- !private ["Ps23CustomStringConvertible", "enumerateMatchesInString"]
+- ["Ps23CustomStringConvertible", "expression"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "paragraphRangeForRange"]
+- ["Ps23CustomStringConvertible", "processEditing"]
+- ["Ps23CustomStringConvertible", "replaceCharactersInRange"]
+- ["Ps23CustomStringConvertible", "setAttributes"]
+- ["Ps23CustomStringConvertible", "store"]
+- ["Ps23CustomStringConvertible", "store.storage"]
+- ["Ps23CustomStringConvertible", "string"]
+- ["Ps23CustomStringConvertible", "textDidProcessEdit"]
+- ["Ps23CustomStringConvertible", "textWillProcessEdit"]
+- !private ["Ps23CustomStringConvertible", "utf16"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "EditedAttributes"]
+- !private ["Ps9Equatable", "EditedCharacters"]
+- !private ["Ps9Equatable", "Element"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "NSMutableAttributedString"]
+- !private ["Ps9Equatable", "NSTextStorageEditActions"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "attributesAtIndex"]
+- !private ["Ps9Equatable", "edited"]
+- !private ["Ps9Equatable", "editedRange"]
+- !private ["Ps9Equatable", "enumerateMatchesInString"]
+- ["Ps9Equatable", "expression"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "paragraphRangeForRange"]
+- ["Ps9Equatable", "processEditing"]
+- ["Ps9Equatable", "replaceCharactersInRange"]
+- ["Ps9Equatable", "setAttributes"]
+- ["Ps9Equatable", "store"]
+- ["Ps9Equatable", "store.storage"]
+- ["Ps9Equatable", "string"]
+- ["Ps9Equatable", "textDidProcessEdit"]
+- ["Ps9Equatable", "textWillProcessEdit"]
+- !private ["Ps9Equatable", "utf16"]
+- ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "paragraphRangeForRange"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "utf16"]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "NSMutableAttributedString"]
+- !private ["Ps8Hashable", "NSTextStorageEditActions"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "attributesAtIndex"]
+- !private ["Ps8Hashable", "edited"]
+- !private ["Ps8Hashable", "editedRange"]
+- !private ["Ps8Hashable", "enumerateMatchesInString"]
+- ["Ps8Hashable", "expression"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "paragraphRangeForRange"]
+- ["Ps8Hashable", "processEditing"]
+- ["Ps8Hashable", "replaceCharactersInRange"]
+- ["Ps8Hashable", "setAttributes"]
+- ["Ps8Hashable", "store"]
+- ["Ps8Hashable", "store.storage"]
+- ["Ps8Hashable", "string"]
+- ["Ps8Hashable", "textDidProcessEdit"]
+- ["Ps8Hashable", "textWillProcessEdit"]
+- !private ["Ps8Hashable", "utf16"]
+- ["Ps8Hashable", ""]
+- !private ["VVSS9UTF16View5Index", "Distance"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "count"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "utf16"]
+- ["CSo18NSAttributedString", "AnyObject"]
+- ["CSo18NSAttributedString", "Int"]
+- ["CSo18NSAttributedString", "NSCoder"]
+- !private ["CSo18NSAttributedString", "NSMatchingFlags"]
+- ["CSo18NSAttributedString", "NSMutableAttributedString"]
+- ["CSo18NSAttributedString", "NSRange"]
+- ["CSo18NSAttributedString", "NSRangePointer"]
+- ["CSo18NSAttributedString", "NSRegularExpression"]
+- !private ["CSo18NSAttributedString", "NSString"]
+- !private ["CSo18NSAttributedString", "NSTextCheckingResult"]
+- !private ["CSo18NSAttributedString", "NSTextStorageEditActions"]
+- !private ["CSo18NSAttributedString", "ObjCBool"]
+- ["CSo18NSAttributedString", "String"]
+- ["CSo18NSAttributedString", "TextDidProcessEdit"]
+- ["CSo18NSAttributedString", "TextWillProcessEdit"]
+- !private ["CSo18NSAttributedString", "UnsafeMutablePointer"]
+- !private ["CSo18NSAttributedString", "Void"]
+- ["CSo18NSAttributedString", "attributesAtIndex"]
+- !private ["CSo18NSAttributedString", "edited"]
+- !private ["CSo18NSAttributedString", "editedRange"]
+- ["CSo18NSAttributedString", "expression"]
+- ["CSo18NSAttributedString", "init"]
+- ["CSo18NSAttributedString", "processEditing"]
+- ["CSo18NSAttributedString", "replaceCharactersInRange"]
+- ["CSo18NSAttributedString", "setAttributes"]
+- ["CSo18NSAttributedString", "store"]
+- ["CSo18NSAttributedString", "store.storage"]
+- ["CSo18NSAttributedString", "string"]
+- ["CSo18NSAttributedString", "textDidProcessEdit"]
+- ["CSo18NSAttributedString", "textWillProcessEdit"]
+- !private ["PSo8NSCoding", "NSMutableAttributedString"]
+- !private ["PSo8NSCoding", "NSTextStorageEditActions"]
+- ["PSo8NSCoding", "attributesAtIndex"]
+- !private ["PSo8NSCoding", "edited"]
+- !private ["PSo8NSCoding", "editedRange"]
+- !private ["PSo8NSCoding", "enumerateMatchesInString"]
+- ["PSo8NSCoding", "expression"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "paragraphRangeForRange"]
+- ["PSo8NSCoding", "processEditing"]
+- ["PSo8NSCoding", "replaceCharactersInRange"]
+- ["PSo8NSCoding", "setAttributes"]
+- ["PSo8NSCoding", "store"]
+- ["PSo8NSCoding", "store.storage"]
+- ["PSo8NSCoding", "string"]
+- ["PSo8NSCoding", "textDidProcessEdit"]
+- ["PSo8NSCoding", "textWillProcessEdit"]
+- !private ["PSo8NSCoding", "utf16"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "NSMutableAttributedString"]
+- !private ["PSo9NSCopying", "NSTextStorageEditActions"]
+- ["PSo9NSCopying", "attributesAtIndex"]
+- !private ["PSo9NSCopying", "edited"]
+- !private ["PSo9NSCopying", "editedRange"]
+- !private ["PSo9NSCopying", "enumerateMatchesInString"]
+- ["PSo9NSCopying", "expression"]
+- ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "paragraphRangeForRange"]
+- ["PSo9NSCopying", "processEditing"]
+- ["PSo9NSCopying", "replaceCharactersInRange"]
+- ["PSo9NSCopying", "setAttributes"]
+- ["PSo9NSCopying", "store"]
+- ["PSo9NSCopying", "store.storage"]
+- ["PSo9NSCopying", "string"]
+- ["PSo9NSCopying", "textDidProcessEdit"]
+- ["PSo9NSCopying", "textWillProcessEdit"]
+- !private ["PSo9NSCopying", "utf16"]
+- ["PSo9NSCopying", ""]
+- !private ["VSC17NSMatchingOptions", "Element"]
+- ["CSo25NSMutableAttributedString", "AnyObject"]
+- ["CSo25NSMutableAttributedString", "Int"]
+- ["CSo25NSMutableAttributedString", "NSCoder"]
+- !private ["CSo25NSMutableAttributedString", "NSMatchingFlags"]
+- ["CSo25NSMutableAttributedString", "NSMutableAttributedString"]
+- ["CSo25NSMutableAttributedString", "NSRange"]
+- ["CSo25NSMutableAttributedString", "NSRangePointer"]
+- ["CSo25NSMutableAttributedString", "NSRegularExpression"]
+- !private ["CSo25NSMutableAttributedString", "NSString"]
+- !private ["CSo25NSMutableAttributedString", "NSTextCheckingResult"]
+- !private ["CSo25NSMutableAttributedString", "NSTextStorageEditActions"]
+- !private ["CSo25NSMutableAttributedString", "ObjCBool"]
+- ["CSo25NSMutableAttributedString", "String"]
+- ["CSo25NSMutableAttributedString", "TextDidProcessEdit"]
+- ["CSo25NSMutableAttributedString", "TextWillProcessEdit"]
+- !private ["CSo25NSMutableAttributedString", "UnsafeMutablePointer"]
+- !private ["CSo25NSMutableAttributedString", "Void"]
+- ["CSo25NSMutableAttributedString", "attributesAtIndex"]
+- !private ["CSo25NSMutableAttributedString", "edited"]
+- !private ["CSo25NSMutableAttributedString", "editedRange"]
+- ["CSo25NSMutableAttributedString", "expression"]
+- ["CSo25NSMutableAttributedString", "init"]
+- ["CSo25NSMutableAttributedString", "processEditing"]
+- ["CSo25NSMutableAttributedString", "replaceCharactersInRange"]
+- ["CSo25NSMutableAttributedString", "setAttributes"]
+- ["CSo25NSMutableAttributedString", "store"]
+- ["CSo25NSMutableAttributedString", "store.storage"]
+- ["CSo25NSMutableAttributedString", "string"]
+- ["CSo25NSMutableAttributedString", "textDidProcessEdit"]
+- ["CSo25NSMutableAttributedString", "textWillProcessEdit"]
+- !private ["PSo16NSMutableCopying", "NSMutableAttributedString"]
+- !private ["PSo16NSMutableCopying", "NSTextStorageEditActions"]
+- ["PSo16NSMutableCopying", "attributesAtIndex"]
+- !private ["PSo16NSMutableCopying", "edited"]
+- !private ["PSo16NSMutableCopying", "editedRange"]
+- ["PSo16NSMutableCopying", "expression"]
+- ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "paragraphRangeForRange"]
+- ["PSo16NSMutableCopying", "processEditing"]
+- ["PSo16NSMutableCopying", "replaceCharactersInRange"]
+- ["PSo16NSMutableCopying", "setAttributes"]
+- ["PSo16NSMutableCopying", "store"]
+- ["PSo16NSMutableCopying", "store.storage"]
+- ["PSo16NSMutableCopying", "string"]
+- ["PSo16NSMutableCopying", "textDidProcessEdit"]
+- ["PSo16NSMutableCopying", "textWillProcessEdit"]
+- !private ["PSo16NSMutableCopying", "utf16"]
+- ["PSo16NSMutableCopying", ""]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "NSCoder"]
+- !private ["CSo8NSObject", "NSMatchingFlags"]
+- ["CSo8NSObject", "NSMutableAttributedString"]
+- ["CSo8NSObject", "NSRange"]
+- ["CSo8NSObject", "NSRangePointer"]
+- ["CSo8NSObject", "NSRegularExpression"]
+- !private ["CSo8NSObject", "NSString"]
+- !private ["CSo8NSObject", "NSTextCheckingResult"]
+- !private ["CSo8NSObject", "NSTextStorageEditActions"]
+- !private ["CSo8NSObject", "ObjCBool"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "TextDidProcessEdit"]
+- ["CSo8NSObject", "TextWillProcessEdit"]
+- !private ["CSo8NSObject", "UnsafeMutablePointer"]
+- !private ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "attributesAtIndex"]
+- !private ["CSo8NSObject", "edited"]
+- !private ["CSo8NSObject", "editedRange"]
+- !private ["CSo8NSObject", "enumerateMatchesInString"]
+- ["CSo8NSObject", "expression"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "paragraphRangeForRange"]
+- ["CSo8NSObject", "processEditing"]
+- ["CSo8NSObject", "replaceCharactersInRange"]
+- ["CSo8NSObject", "setAttributes"]
+- ["CSo8NSObject", "store"]
+- ["CSo8NSObject", "store.storage"]
+- ["CSo8NSObject", "string"]
+- ["CSo8NSObject", "textDidProcessEdit"]
+- ["CSo8NSObject", "textWillProcessEdit"]
+- !private ["CSo8NSObject", "utf16"]
+- !private ["PSo16NSObjectProtocol", "NSMutableAttributedString"]
+- !private ["PSo16NSObjectProtocol", "NSTextStorageEditActions"]
+- ["PSo16NSObjectProtocol", "attributesAtIndex"]
+- !private ["PSo16NSObjectProtocol", "edited"]
+- !private ["PSo16NSObjectProtocol", "editedRange"]
+- !private ["PSo16NSObjectProtocol", "enumerateMatchesInString"]
+- ["PSo16NSObjectProtocol", "expression"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "paragraphRangeForRange"]
+- ["PSo16NSObjectProtocol", "processEditing"]
+- ["PSo16NSObjectProtocol", "replaceCharactersInRange"]
+- ["PSo16NSObjectProtocol", "setAttributes"]
+- ["PSo16NSObjectProtocol", "store"]
+- ["PSo16NSObjectProtocol", "store.storage"]
+- ["PSo16NSObjectProtocol", "string"]
+- ["PSo16NSObjectProtocol", "textDidProcessEdit"]
+- ["PSo16NSObjectProtocol", "textWillProcessEdit"]
+- !private ["PSo16NSObjectProtocol", "utf16"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo19NSRegularExpression", "enumerateMatchesInString"]
+- !private ["PSo14NSSecureCoding", "NSMutableAttributedString"]
+- !private ["PSo14NSSecureCoding", "NSTextStorageEditActions"]
+- ["PSo14NSSecureCoding", "attributesAtIndex"]
+- !private ["PSo14NSSecureCoding", "edited"]
+- !private ["PSo14NSSecureCoding", "editedRange"]
+- !private ["PSo14NSSecureCoding", "enumerateMatchesInString"]
+- ["PSo14NSSecureCoding", "expression"]
+- ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "paragraphRangeForRange"]
+- ["PSo14NSSecureCoding", "processEditing"]
+- ["PSo14NSSecureCoding", "replaceCharactersInRange"]
+- ["PSo14NSSecureCoding", "setAttributes"]
+- ["PSo14NSSecureCoding", "store"]
+- ["PSo14NSSecureCoding", "store.storage"]
+- ["PSo14NSSecureCoding", "string"]
+- ["PSo14NSSecureCoding", "textDidProcessEdit"]
+- ["PSo14NSSecureCoding", "textWillProcessEdit"]
+- !private ["PSo14NSSecureCoding", "utf16"]
+- ["PSo14NSSecureCoding", ""]
+- !private ["CSo8NSString", "paragraphRangeForRange"]
+- !private ["CSo8NSString", "utf16"]
+- ["CSo13NSTextStorage", "AnyObject"]
+- ["CSo13NSTextStorage", "Int"]
+- ["CSo13NSTextStorage", "NSCoder"]
+- !private ["CSo13NSTextStorage", "NSMatchingFlags"]
+- ["CSo13NSTextStorage", "NSMutableAttributedString"]
+- ["CSo13NSTextStorage", "NSRange"]
+- ["CSo13NSTextStorage", "NSRangePointer"]
+- ["CSo13NSTextStorage", "NSRegularExpression"]
+- !private ["CSo13NSTextStorage", "NSString"]
+- !private ["CSo13NSTextStorage", "NSTextCheckingResult"]
+- !private ["CSo13NSTextStorage", "NSTextStorageEditActions"]
+- !private ["CSo13NSTextStorage", "ObjCBool"]
+- ["CSo13NSTextStorage", "String"]
+- ["CSo13NSTextStorage", "TextDidProcessEdit"]
+- ["CSo13NSTextStorage", "TextWillProcessEdit"]
+- !private ["CSo13NSTextStorage", "UnsafeMutablePointer"]
+- !private ["CSo13NSTextStorage", "Void"]
+- ["CSo13NSTextStorage", "attributesAtIndex"]
+- !private ["CSo13NSTextStorage", "edited"]
+- !private ["CSo13NSTextStorage", "editedRange"]
+- ["CSo13NSTextStorage", "expression"]
+- ["CSo13NSTextStorage", "init"]
+- ["CSo13NSTextStorage", "processEditing"]
+- ["CSo13NSTextStorage", "replaceCharactersInRange"]
+- ["CSo13NSTextStorage", "setAttributes"]
+- ["CSo13NSTextStorage", "store"]
+- ["CSo13NSTextStorage", "store.storage"]
+- ["CSo13NSTextStorage", "string"]
+- ["CSo13NSTextStorage", "textDidProcessEdit"]
+- ["CSo13NSTextStorage", "textWillProcessEdit"]
+- ["CSo13NSTextStorage", ""]
+- !private ["VSC24NSTextStorageEditActions", "EditedAttributes"]
+- !private ["VSC24NSTextStorageEditActions", "EditedCharacters"]
+- !private ["Ps13OptionSetType", "EditedAttributes"]
+- !private ["Ps13OptionSetType", "EditedCharacters"]
+- !private ["Ps13OptionSetType", "Element"]
+- !private ["Ps16OutputStreamType", "utf16"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps16RawRepresentable", "EditedAttributes"]
+- !private ["Ps16RawRepresentable", "EditedCharacters"]
+- !private ["Ps16RawRepresentable", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "count"]
+- !private ["Ps14SetAlgebraType", "EditedAttributes"]
+- !private ["Ps14SetAlgebraType", "EditedCharacters"]
+- !private ["Ps14SetAlgebraType", "Element"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Vs12StaticString", "deinit"]
+- !private ["Ps10Streamable", "utf16"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["SS", "deinit"]
+- !private ["SS", "utf16"]
+- !private ["Ps30StringInterpolationConvertible", "utf16"]
+- !private ["Ps24StringLiteralConvertible", "paragraphRangeForRange"]
+- !private ["Ps24StringLiteralConvertible", "utf16"]
+- ["C8Material11TextStorage", "AnyObject"]
+- ["C8Material11TextStorage", "Int"]
+- ["C8Material11TextStorage", "NSCoder"]
+- !private ["C8Material11TextStorage", "NSMatchingFlags"]
+- ["C8Material11TextStorage", "NSMutableAttributedString"]
+- ["C8Material11TextStorage", "NSRange"]
+- ["C8Material11TextStorage", "NSRangePointer"]
+- ["C8Material11TextStorage", "NSRegularExpression"]
+- !private ["C8Material11TextStorage", "NSString"]
+- !private ["C8Material11TextStorage", "NSTextCheckingResult"]
+- !private ["C8Material11TextStorage", "NSTextStorageEditActions"]
+- !private ["C8Material11TextStorage", "ObjCBool"]
+- ["C8Material11TextStorage", "String"]
+- ["C8Material11TextStorage", "TextDidProcessEdit"]
+- ["C8Material11TextStorage", "TextWillProcessEdit"]
+- !private ["C8Material11TextStorage", "UnsafeMutablePointer"]
+- !private ["C8Material11TextStorage", "Void"]
+- ["C8Material11TextStorage", "attributesAtIndex"]
+- ["C8Material11TextStorage", "deinit"]
+- !private ["C8Material11TextStorage", "edited"]
+- !private ["C8Material11TextStorage", "editedRange"]
+- ["C8Material11TextStorage", "expression"]
+- ["C8Material11TextStorage", "init"]
+- ["C8Material11TextStorage", "processEditing"]
+- ["C8Material11TextStorage", "replaceCharactersInRange"]
+- ["C8Material11TextStorage", "setAttributes"]
+- ["C8Material11TextStorage", "store"]
+- !private ["C8Material11TextStorage", "store.storage"]
+- ["C8Material11TextStorage", "string"]
+- ["C8Material11TextStorage", "textDidProcessEdit"]
+- ["C8Material11TextStorage", "textWillProcessEdit"]
+- !private ["VSS9UTF16View", "Generator"]
+- !private ["VSS9UTF16View", "Index"]
+- !private ["VSS9UTF16View", "SubSequence"]
+- !private ["VSS9UTF16View", "count"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "paragraphRangeForRange"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "utf16"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "utf16"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "utf16"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "utf16"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "utf16"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["VSC8_NSRange", "length"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "length"]
+- !private ["Ps21_ObjectiveCBridgeable", "utf16"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Generator"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "count"]
+- !private ["Ps12_Reflectable", "length"]
+- !private ["Ps12_Reflectable", "paragraphRangeForRange"]
+- !private ["Ps12_Reflectable", "utf16"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps16ForwardIndexType"
+- "Ps8Hashable"
+- !private "VVSS9UTF16View5Index"
+- !private "Ps9Indexable"
+- !private "Si"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps14MirrorPathType"
+- "CSo18NSAttributedString"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- !private "VSC17NSMatchingOptions"
+- "CSo25NSMutableAttributedString"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo19NSRegularExpression"
+- "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "CSo13NSTextStorage"
+- !private "VSC24NSTextStorageEditActions"
+- !private "Ps13OptionSetType"
+- !private "Ps16OutputStreamType"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps16RawRepresentable"
+- !private "Ps12SequenceType"
+- !private "Ps14SetAlgebraType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Vs12StaticString"
+- !private "Ps10Streamable"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- "C8Material11TextStorage"
+- !private "VSS9UTF16View"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "VSC8_NSRange"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessAmbiguity"
+- !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/Test Code/SwiftTest/Pods/Google/Headers/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Target Support Files/Material/Material-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "8f79c06673eeeb10721ec4ecd6f7dec7"

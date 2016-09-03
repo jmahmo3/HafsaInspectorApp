@@ -17,17 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Usually this is not overridden. Using the "did finish launching" method is more typical
         
-       
-//        let firstUse = NSUserDefaults.standardUserDefaults().boolForKey("firstUse")
-//        if !firstUse {
-//            NSUserDefaults.standardUserDefaults().setBool(true, forKey:"firstUse")
-//        }
-//        else {
-//            let vc = EstablishmentPickerViewController.create()
-//            let nav = UINavigationController.init(rootViewController: vc)
-//            self.window?.rootViewController = nav
-//        }
-//        
+        let registered = NSUserDefaults.standardUserDefaults().boolForKey("Registered")
+        if registered {
+            let vc = EstablishmentPickerViewController.create()
+            let nav = UINavigationController.init(rootViewController: vc)
+            self.window?.rootViewController = nav
+        }
         return true
     }
     

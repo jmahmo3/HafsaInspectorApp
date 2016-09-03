@@ -10,7 +10,8 @@ import UIKit
 
 
 
-class FormTableViewController: UITableViewController, UITextFieldDelegate {
+class FormTableViewController: UITableViewController {
+    
     
     private let HImanager = HIManager.sharedClient()
 
@@ -23,17 +24,8 @@ class FormTableViewController: UITableViewController, UITextFieldDelegate {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.view.backgroundColor = UIColor.HIBackground
+        self.setNavBarWithBackButton()
     }
 
     // MARK: - Table view data source
@@ -50,20 +42,29 @@ class FormTableViewController: UITableViewController, UITextFieldDelegate {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        if indexPath.item == 0 {
+        if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCellWithIdentifier("NameTableViewCell", forIndexPath: indexPath) as! NameTableViewCell
             cell.configureNameCell()
             return cell
         }
         else {
             let cell = tableView.dequeueReusableCellWithIdentifier("SupplierTableViewCell", forIndexPath: indexPath) as! SupplierTableViewCell
-            cell.configureSupplierCell(indexPath.item-1)
+            cell.configureSupplierCell(indexPath.row-1)
             return cell
         }
 
         // Configure the cell...
 
     }
+    
+    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    
     
  
 }

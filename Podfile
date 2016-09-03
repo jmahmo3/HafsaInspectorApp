@@ -7,5 +7,6 @@ target 'HafsaInspectorApp' do
 
   # Pods for HafsaInspectorApp
 pod 'MBProgressHUD', '~> 1.0.0'
+pod 'Material', '~> 1.0'
 
 end

@@ -1,0 +1,120 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MaterialSpacing"
+- "MaterialSpacingToValue"
+provides-nominal:
+- "O8Material15MaterialSpacing"
+provides-member:
+- ["O8Material15MaterialSpacing", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "MaterialSpacingToValue"
+- "=="
+- "CGFloat"
+- "MaterialSpacing"
+depends-member:
+- !private ["Ps22BidirectionalIndexType", "hashValue"]
+- !private ["Ps21BitwiseOperationsType", "hashValue"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["Ps11CVarArgType", "hashValue"]
+- !private ["Ps10Comparable", "hashValue"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- ["Ps9Equatable", "None"]
+- ["Ps9Equatable", "Spacing1"]
+- ["Ps9Equatable", "Spacing2"]
+- ["Ps9Equatable", "Spacing3"]
+- ["Ps9Equatable", "Spacing4"]
+- ["Ps9Equatable", "Spacing5"]
+- ["Ps9Equatable", "Spacing6"]
+- ["Ps9Equatable", "Spacing7"]
+- ["Ps9Equatable", "Spacing8"]
+- ["Ps9Equatable", "Spacing9"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", ""]
+- !private ["Ps16ForwardIndexType", "hashValue"]
+- ["Ps8Hashable", "None"]
+- ["Ps8Hashable", "Spacing1"]
+- ["Ps8Hashable", "Spacing2"]
+- ["Ps8Hashable", "Spacing3"]
+- ["Ps8Hashable", "Spacing4"]
+- ["Ps8Hashable", "Spacing5"]
+- ["Ps8Hashable", "Spacing6"]
+- ["Ps8Hashable", "Spacing7"]
+- ["Ps8Hashable", "Spacing8"]
+- ["Ps8Hashable", "Spacing9"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "hashValue"]
+- !private ["Ps21IntegerArithmeticType", "hashValue"]
+- !private ["Ps25IntegerLiteralConvertible", "hashValue"]
+- !private ["Ps11IntegerType", "hashValue"]
+- ["O8Material15MaterialSpacing", "None"]
+- ["O8Material15MaterialSpacing", "Spacing1"]
+- ["O8Material15MaterialSpacing", "Spacing2"]
+- ["O8Material15MaterialSpacing", "Spacing3"]
+- ["O8Material15MaterialSpacing", "Spacing4"]
+- ["O8Material15MaterialSpacing", "Spacing5"]
+- ["O8Material15MaterialSpacing", "Spacing6"]
+- ["O8Material15MaterialSpacing", "Spacing7"]
+- ["O8Material15MaterialSpacing", "Spacing8"]
+- ["O8Material15MaterialSpacing", "Spacing9"]
+- ["O8Material15MaterialSpacing", "deinit"]
+- ["O8Material15MaterialSpacing", "hashValue"]
+- !private ["Ps14MirrorPathType", "hashValue"]
+- !private ["Ps21RandomAccessIndexType", "hashValue"]
+- !private ["Ps17SignedIntegerType", "hashValue"]
+- !private ["Ps16SignedNumberType", "hashValue"]
+- !private ["Ps10Strideable", "hashValue"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "hashValue"]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps22_IntegerArithmeticType", "hashValue"]
+- !private ["Ps12_IntegerType", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- !private ["Ps22_RandomAccessAmbiguity", "hashValue"]
+- !private ["Ps12_Reflectable", "hashValue"]
+- !private ["Ps18_SignedIntegerType", "hashValue"]
+depends-nominal:
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "V12CoreGraphics7CGFloat"
+- !private "Ps11CVarArgType"
+- !private "Ps10Comparable"
+- !private "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps16ForwardIndexType"
+- "Ps8Hashable"
+- !private "Si"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- "O8Material15MaterialSpacing"
+- !private "Ps14MirrorPathType"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Strideable"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessAmbiguity"
+- !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/Test Code/SwiftTest/Pods/Google/Headers/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Target Support Files/Material/Material-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "2d6a7cd0154853ea1a4c7de671347f8a"

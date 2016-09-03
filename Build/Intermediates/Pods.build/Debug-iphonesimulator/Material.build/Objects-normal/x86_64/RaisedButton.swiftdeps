@@ -1,0 +1,248 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RaisedButton"
+provides-nominal:
+- "C8Material12RaisedButton"
+provides-member:
+- ["C8Material12RaisedButton", ""]
+provides-dynamic-lookup:
+- "prepareView"
+depends-top-level:
+- "RaisedButton"
+- "MaterialButton"
+- !private "MaterialColor"
+depends-member:
+- !private ["Ps9AnyObject", "MaterialColor"]
+- !private ["Ps9AnyObject", "backgroundColor"]
+- !private ["Ps9AnyObject", "contentEdgeInsetsPreset"]
+- !private ["Ps9AnyObject", "cornerRadiusPreset"]
+- !private ["Ps9AnyObject", "depth"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "prepareView"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps11CVarArgType", "MaterialColor"]
+- !private ["Ps11CVarArgType", "backgroundColor"]
+- !private ["Ps11CVarArgType", "contentEdgeInsetsPreset"]
+- !private ["Ps11CVarArgType", "cornerRadiusPreset"]
+- !private ["Ps11CVarArgType", "depth"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "prepareView"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "MaterialColor"]
+- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
+- !private ["Ps28CustomDebugStringConvertible", "contentEdgeInsetsPreset"]
+- !private ["Ps28CustomDebugStringConvertible", "cornerRadiusPreset"]
+- !private ["Ps28CustomDebugStringConvertible", "depth"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "prepareView"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "MaterialColor"]
+- !private ["Ps23CustomStringConvertible", "backgroundColor"]
+- !private ["Ps23CustomStringConvertible", "contentEdgeInsetsPreset"]
+- !private ["Ps23CustomStringConvertible", "cornerRadiusPreset"]
+- !private ["Ps23CustomStringConvertible", "depth"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "prepareView"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Depth1"]
+- !private ["Ps9Equatable", "MaterialColor"]
+- !private ["Ps9Equatable", "Radius1"]
+- !private ["Ps9Equatable", "WideRectangle3"]
+- !private ["Ps9Equatable", "backgroundColor"]
+- !private ["Ps9Equatable", "contentEdgeInsetsPreset"]
+- !private ["Ps9Equatable", "cornerRadiusPreset"]
+- !private ["Ps9Equatable", "depth"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "prepareView"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "Depth1"]
+- !private ["Ps8Hashable", "MaterialColor"]
+- !private ["Ps8Hashable", "Radius1"]
+- !private ["Ps8Hashable", "WideRectangle3"]
+- !private ["Ps8Hashable", "backgroundColor"]
+- !private ["Ps8Hashable", "contentEdgeInsetsPreset"]
+- !private ["Ps8Hashable", "cornerRadiusPreset"]
+- !private ["Ps8Hashable", "depth"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "prepareView"]
+- ["Ps8Hashable", ""]
+- !private ["C8Material14MaterialButton", "MaterialColor"]
+- !private ["C8Material14MaterialButton", "backgroundColor"]
+- !private ["C8Material14MaterialButton", "contentEdgeInsetsPreset"]
+- !private ["C8Material14MaterialButton", "cornerRadiusPreset"]
+- !private ["C8Material14MaterialButton", "depth"]
+- ["C8Material14MaterialButton", "init"]
+- ["C8Material14MaterialButton", "prepareView"]
+- ["C8Material14MaterialButton", ""]
+- !private ["V8Material13MaterialColor", "white"]
+- !private ["O8Material13MaterialDepth", "Depth1"]
+- !private ["O8Material17MaterialEdgeInset", "WideRectangle3"]
+- !private ["O8Material14MaterialRadius", "Radius1"]
+- !private ["PSo8NSCoding", "MaterialColor"]
+- !private ["PSo8NSCoding", "backgroundColor"]
+- !private ["PSo8NSCoding", "contentEdgeInsetsPreset"]
+- !private ["PSo8NSCoding", "cornerRadiusPreset"]
+- !private ["PSo8NSCoding", "depth"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "prepareView"]
+- ["PSo8NSCoding", ""]
+- !private ["CSo8NSObject", "MaterialColor"]
+- !private ["CSo8NSObject", "backgroundColor"]
+- !private ["CSo8NSObject", "contentEdgeInsetsPreset"]
+- !private ["CSo8NSObject", "cornerRadiusPreset"]
+- !private ["CSo8NSObject", "depth"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "prepareView"]
+- !private ["PSo16NSObjectProtocol", "MaterialColor"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- !private ["PSo16NSObjectProtocol", "contentEdgeInsetsPreset"]
+- !private ["PSo16NSObjectProtocol", "cornerRadiusPreset"]
+- !private ["PSo16NSObjectProtocol", "depth"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "prepareView"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["C8Material12RaisedButton", "MaterialColor"]
+- !private ["C8Material12RaisedButton", "backgroundColor"]
+- !private ["C8Material12RaisedButton", "contentEdgeInsetsPreset"]
+- !private ["C8Material12RaisedButton", "cornerRadiusPreset"]
+- ["C8Material12RaisedButton", "deinit"]
+- !private ["C8Material12RaisedButton", "depth"]
+- ["C8Material12RaisedButton", "init"]
+- ["C8Material12RaisedButton", "prepareView"]
+- !private ["PSo29UIAccessibilityIdentification", "MaterialColor"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- !private ["PSo29UIAccessibilityIdentification", "contentEdgeInsetsPreset"]
+- !private ["PSo29UIAccessibilityIdentification", "cornerRadiusPreset"]
+- !private ["PSo29UIAccessibilityIdentification", "depth"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "prepareView"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "MaterialColor"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
+- !private ["PSo12UIAppearance", "contentEdgeInsetsPreset"]
+- !private ["PSo12UIAppearance", "cornerRadiusPreset"]
+- !private ["PSo12UIAppearance", "depth"]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "prepareView"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "MaterialColor"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- !private ["PSo21UIAppearanceContainer", "contentEdgeInsetsPreset"]
+- !private ["PSo21UIAppearanceContainer", "cornerRadiusPreset"]
+- !private ["PSo21UIAppearanceContainer", "depth"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "prepareView"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "MaterialColor"]
+- !private ["CSo8UIButton", "backgroundColor"]
+- !private ["CSo8UIButton", "contentEdgeInsetsPreset"]
+- !private ["CSo8UIButton", "cornerRadiusPreset"]
+- !private ["CSo8UIButton", "depth"]
+- ["CSo8UIButton", "init"]
+- ["CSo8UIButton", "prepareView"]
+- !private ["CSo9UIControl", "MaterialColor"]
+- !private ["CSo9UIControl", "backgroundColor"]
+- !private ["CSo9UIControl", "contentEdgeInsetsPreset"]
+- !private ["CSo9UIControl", "cornerRadiusPreset"]
+- !private ["CSo9UIControl", "depth"]
+- ["CSo9UIControl", "init"]
+- ["CSo9UIControl", "prepareView"]
+- !private ["PSo17UICoordinateSpace", "MaterialColor"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- !private ["PSo17UICoordinateSpace", "contentEdgeInsetsPreset"]
+- !private ["PSo17UICoordinateSpace", "cornerRadiusPreset"]
+- !private ["PSo17UICoordinateSpace", "depth"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "prepareView"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "MaterialColor"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
+- !private ["PSo13UIDynamicItem", "contentEdgeInsetsPreset"]
+- !private ["PSo13UIDynamicItem", "cornerRadiusPreset"]
+- !private ["PSo13UIDynamicItem", "depth"]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "prepareView"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "MaterialColor"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
+- !private ["PSo18UIFocusEnvironment", "contentEdgeInsetsPreset"]
+- !private ["PSo18UIFocusEnvironment", "cornerRadiusPreset"]
+- !private ["PSo18UIFocusEnvironment", "depth"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "prepareView"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo11UIResponder", "MaterialColor"]
+- !private ["CSo11UIResponder", "backgroundColor"]
+- !private ["CSo11UIResponder", "contentEdgeInsetsPreset"]
+- !private ["CSo11UIResponder", "cornerRadiusPreset"]
+- !private ["CSo11UIResponder", "depth"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "prepareView"]
+- !private ["PSo18UITraitEnvironment", "MaterialColor"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- !private ["PSo18UITraitEnvironment", "contentEdgeInsetsPreset"]
+- !private ["PSo18UITraitEnvironment", "cornerRadiusPreset"]
+- !private ["PSo18UITraitEnvironment", "depth"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "prepareView"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "MaterialColor"]
+- !private ["CSo6UIView", "backgroundColor"]
+- !private ["CSo6UIView", "contentEdgeInsetsPreset"]
+- !private ["CSo6UIView", "cornerRadiusPreset"]
+- !private ["CSo6UIView", "depth"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "prepareView"]
+- !private ["Ps12_Reflectable", "MaterialColor"]
+- !private ["Ps12_Reflectable", "backgroundColor"]
+- !private ["Ps12_Reflectable", "contentEdgeInsetsPreset"]
+- !private ["Ps12_Reflectable", "cornerRadiusPreset"]
+- !private ["Ps12_Reflectable", "depth"]
+- ["Ps12_Reflectable", "init"]
+- ["Ps12_Reflectable", "prepareView"]
+- ["Ps12_Reflectable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "C8Material14MaterialButton"
+- !private "V8Material13MaterialColor"
+- !private "O8Material13MaterialDepth"
+- !private "O8Material17MaterialEdgeInset"
+- !private "O8Material14MaterialRadius"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C8Material12RaisedButton"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo8UIButton"
+- "CSo9UIControl"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/Test Code/SwiftTest/Pods/Google/Headers/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Target Support Files/Material/Material-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "a8b577a124fcfe2014d02128fb1ba388"
