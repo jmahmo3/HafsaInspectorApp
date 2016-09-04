@@ -26,6 +26,8 @@ class HIManager: NSObject {
     
     lazy var currentEstablishment: String = ""
     
+    var data = []
+    
     //Data
     var chapterArray = ["","Chicago", "Detroit", "San Francisco"]
     

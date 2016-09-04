@@ -18,7 +18,7 @@ enum HITextFieldType {
 
 class HITextField: TextField, UIPickerViewDelegate, UIPickerViewDataSource {
 
-    var data: [String] = [String]()
+    var data: NSArray = []
     private let HImanager = HIManager.sharedClient()
     let picker: UIPickerView = UIPickerView()
 //    var delegate: ChapterPickerDelegate! = nil
@@ -58,21 +58,46 @@ class HITextField: TextField, UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func setupChapterPicker() {
-        data = HImanager.chapterArray
+        let arr = HImanager.data
+        let chapterArr: NSMutableArray = []
+        for dict in arr {
+            let title = dict.allKeys[0]
+            chapterArr.addObject(title)
+        }
+        data = chapterArr.copy() as! [NSArray]
         self.setupPicker()
     }
     
     func setupEstablishmentPicker() {
-        data = HImanager.establishmentArray
+        
+        let arr = HImanager.data
+        let establishments: NSMutableArray = []
+        for dict in arr {
+            let title = dict.allKeys[0]
+            if title as! String == HImanager.currentChapter {
+                print(dict.objectForKey(title)!)
+                establishments.addObject(dict.objectForKey(title)!)
+            }
+        }
+        if establishments != [] {
+            let est: NSArray = establishments.objectAtIndex(0) as! NSArray
+            data = est
+        }
+        else {
+            data = []
+        }
         self.setupPicker()
     }
     
     //MARK: - Picker
     func donePicker() {
-        let selectedValue = data[picker.selectedRowInComponent(0)]
-        self.text = selectedValue
+        if data.count > 0 {
+            let selectedValue = data[picker.selectedRowInComponent(0)]
+            self.text = selectedValue as? String
+        }
         self.resignFirstResponder()
     }
+    
     // The number of columns of data
     func numberOfComponentsInPickerView(chapterPickerView: UIPickerView) -> Int {
         return 1
@@ -85,13 +110,14 @@ class HITextField: TextField, UIPickerViewDelegate, UIPickerViewDataSource {
     
     // The data to return for the row and component (column) that's being passed in
     func pickerView(chapterPickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return data[row]
+        let value = data.objectAtIndex(row)
+        return value as? String
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let selectedValue = data[picker.selectedRowInComponent(0)]
-        self.text = selectedValue
+        if data.count > 0 {
+            let selectedValue = data[picker.selectedRowInComponent(0)]
+            self.text = selectedValue as? String
+        }
     }
-
-
 }

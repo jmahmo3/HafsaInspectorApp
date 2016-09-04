@@ -32,7 +32,6 @@ class EstablishmentPickerViewController: UIViewController, UITextFieldDelegate, 
         
         
         AppDelegate().window?.rootViewController = self.navigationController
-        
     }
     
     //MARK: Utils
@@ -62,12 +61,6 @@ class EstablishmentPickerViewController: UIViewController, UITextFieldDelegate, 
         establishmentTextField.setupEstablishmentPicker()
  
     }
-    
-    func createAlert(error: String) {
-        let alert = UIAlertController(title: "Error", message: error, preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
-    }
 
     //MARK: Actions
     @IBAction func nextButtonPressed(sender: AnyObject) {
@@ -94,6 +87,16 @@ class EstablishmentPickerViewController: UIViewController, UITextFieldDelegate, 
     func didChangeChapter() {
         nameLabel.text = HImanager.userName
         establishmentLabel.text = HImanager.currentChapter
+        establishmentTextField.text = ""
+        establishmentTextField.setupEstablishmentPicker()
+
     }
+
+    func didGetEstablishmentData(){
+        if establishmentTextField != nil {
+            establishmentTextField.setupEstablishmentPicker()
+        }
+    }
+    
 
 }

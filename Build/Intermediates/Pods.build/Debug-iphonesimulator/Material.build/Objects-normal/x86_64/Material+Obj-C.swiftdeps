@@ -6,13 +6,13 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "AnyObject"
-- "UnsafePointer"
-- "MaterialAssociatedObject"
 - "UInt8"
-- !private "objc_getAssociatedObject"
-- "MaterialAssociateObject"
 - !private "objc_setAssociatedObject"
+- !private "objc_getAssociatedObject"
+- "UnsafePointer"
+- "AnyObject"
+- "MaterialAssociateObject"
+- "MaterialAssociatedObject"
 depends-member:
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps9Equatable", "OBJC_ASSOCIATION_RETAIN"]

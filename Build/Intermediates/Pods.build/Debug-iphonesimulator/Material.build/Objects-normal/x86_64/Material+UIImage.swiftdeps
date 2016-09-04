@@ -7,8 +7,8 @@ provides-member:
 - ["O8Material15ImageFormatType", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "=="
 - "ImageFormatType"
+- "=="
 depends-member:
 - !private ["Ps22BidirectionalIndexType", "hashValue"]
 - !private ["Ps21BitwiseOperationsType", "hashValue"]

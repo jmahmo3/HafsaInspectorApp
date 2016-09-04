@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
 options: "aaccdbf8f741768581a0b757e70951e7"
-build_time: [526190373, 976268000]
+build_time: [526211725, 830562000]
 inputs:
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Material/Sources/iOS/BarView.swift": [526190369, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Material/Sources/iOS/BottomNavigationController.swift": [526190369, 0]

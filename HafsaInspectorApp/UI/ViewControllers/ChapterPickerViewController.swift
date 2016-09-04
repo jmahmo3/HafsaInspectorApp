@@ -45,6 +45,9 @@ class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
     //MARK: Utils
     func setupView(){
         
+        
+        
+        
         if UIScreen.isiPhone(.iPhone5) {
 //            self.nameLabelToTopConstraint.constant = 150
         }
@@ -76,12 +79,7 @@ class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
         nextButton.layer.cornerRadius = 4
         nextButton.layer.borderWidth = 1
         nextButton.layer.borderColor = UIColor.whiteColor().CGColor
-    }
-    
-    func createAlert(error: String) {
-        let alert = UIAlertController(title: "Sorry", message: error, preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction((UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:nil)))
-        self.presentViewController(alert, animated: true, completion: nil)
+        
     }
     
     //MARK: TextFieldShouldReturn
@@ -124,6 +122,12 @@ class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
             NSUserDefaults.standardUserDefaults().setValue(selectedValue, forKey: "currentChapter")
             HImanager.currentChapter = selectedValue
             
+        }
+    }
+    
+    func didGetChapterData() {
+        if self.isOnScreen {
+            self.chapterTextField.setupChapterPicker()
         }
     }
 }

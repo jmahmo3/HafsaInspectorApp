@@ -8,10 +8,10 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "MaterialFontType"
+- "UIFont"
 - "CGFloat"
 - "RobotoFont"
 - !private "MaterialFont"
-- "UIFont"
 - !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "init"]

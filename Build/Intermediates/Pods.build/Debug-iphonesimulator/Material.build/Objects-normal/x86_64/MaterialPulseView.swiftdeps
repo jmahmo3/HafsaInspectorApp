@@ -6,30 +6,30 @@ provides-nominal:
 provides-member:
 - ["C8Material17MaterialPulseView", ""]
 provides-dynamic-lookup:
-- "pulseColor"
 - "pulseOpacity"
 - "pulseLayers"
-- "touchesBegan"
 - "touchesEnded"
+- "touchesBegan"
+- "pulseColor"
 - "touchesCancelled"
 depends-top-level:
-- "UIColor"
-- "CGPoint"
-- "Set"
-- "CGFloat"
-- "UITouch"
-- "PulseAnimation"
 - "CAShapeLayer"
 - "Array"
-- !private "!="
-- "MaterialPulseView"
-- !private "=="
-- !private "MaterialAnimation"
-- "MaterialColor"
+- "CGFloat"
 - !private "/"
+- "PulseAnimation"
+- !private "!="
+- "Set"
 - "UIEvent"
 - "MaterialView"
 - !private "CGPointMake"
+- "MaterialColor"
+- "UIColor"
+- "CGPoint"
+- !private "=="
+- "MaterialPulseView"
+- !private "MaterialAnimation"
+- "UITouch"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "Array"]

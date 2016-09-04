@@ -7,28 +7,36 @@
 //
 
 import UIKit
+import MBProgressHUD
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var vc = EstablishmentPickerViewController.create()
+    var errorCount = 0
 
-    
+
     func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Usually this is not overridden. Using the "did finish launching" method is more typical
-        
+
         let registered = NSUserDefaults.standardUserDefaults().boolForKey("Registered")
         if registered {
-            let vc = EstablishmentPickerViewController.create()
             let nav = UINavigationController.init(rootViewController: vc)
-            self.window?.rootViewController = nav
+            self.window?.rootViewController? = nav
+
         }
+        
+        self.getData()
+        
         return true
     }
     
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
         return true
     }
 
@@ -55,8 +63,51 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-    
+    func getData() {
+        let progess = MBProgressHUD()
+        let view = (self.window?.rootViewController!.view)!
+        progess.label.text = "Retrieving Chapter Data"
+        progess.tintColor = UIColor.blackColor()
+        view.addSubview(progess)
+        progess.center = view.center
+        progess.showAnimated(true)
+        WebService().getChaptersAndEstablishments { (success, error) in
+            progess.hideAnimated(true)
+            if success! {
+                print(HIManager.sharedClient().data)
+                self.vc.didGetEstablishmentData()
+                
+                let myVC = self.window?.visibleViewController
+                if myVC!.isKindOfClass(ChapterPickerViewController) {
+                    let chap = myVC as! ChapterPickerViewController
+                    chap.didGetChapterData()
+                }
+            }
+            else {
+                self.errorCount += 1
+                let alert = UIAlertController(title: "Sorry", message:self.errorCount == 3 ? "Could not retrieve data\nPlease contact admin" : "Could not retrieve data", preferredStyle: UIAlertControllerStyle.Alert)
+                if self.errorCount != 3 {
+                    alert.addAction((UIAlertAction(title: "Retry", style: UIAlertActionStyle.Default,  handler:{
+                        (alert: UIAlertAction!) in self.getData()
+                    })))
+                }
+                
+                let myVC = self.window?.visibleViewController
+                if myVC!.isKindOfClass(ChapterPickerViewController) {
+                    let chap = myVC as! ChapterPickerViewController
+                    chap.presentViewController(alert, animated: true, completion: nil)
+                }
+                else if myVC!.isKindOfClass(EstablishmentPickerViewController) {
+                    self.vc.presentViewController(alert, animated: true, completion: nil)
+                }
+                
+                
+                
+                
+            }
+        }
 
+    }
 
 
 }

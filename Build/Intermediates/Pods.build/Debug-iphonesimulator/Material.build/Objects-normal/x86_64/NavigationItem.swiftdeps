@@ -16,29 +16,29 @@ provides-member:
 - ["CSo16UINavigationItem", "leftControls"]
 - ["CSo16UINavigationItem", "rightControls"]
 provides-dynamic-lookup:
+- "backButton"
+- "detail"
 - "detailLabel"
 - "leftControls"
 - "titleLabel"
 - "rightControls"
-- "backButton"
-- "detail"
 - "contentView"
 depends-top-level:
-- !private "MaterialAssociatedObject"
-- "Bool"
-- "UIView"
-- "IconButton"
-- "UIControl"
-- !private "RobotoFont"
-- "UInt8"
-- "Array"
-- !private "MaterialAssociateObject"
-- "UINavigationItem"
-- "MaterialAssociatedObjectNavigationItem"
-- "String"
 - !private "MaterialAssociatedObjectNavigationItemKey"
+- !private "MaterialAssociatedObject"
+- "UIControl"
+- "Array"
+- "UIView"
+- "Bool"
+- !private "MaterialAssociateObject"
 - "UILabel"
 - "BooleanLiteralType"
+- !private "RobotoFont"
+- "IconButton"
+- "UINavigationItem"
+- "UInt8"
+- "MaterialAssociatedObjectNavigationItem"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "MaterialAssociateObject"]
 - !private ["Ps9AnyObject", "MaterialAssociatedObject"]
