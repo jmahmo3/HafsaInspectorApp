@@ -21,6 +21,7 @@
 		9C718ED71D7A8C2B009F9D79 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C718ED61D7A8C2B009F9D79 /* WebService.swift */; };
 		B328CE981D78F44F007075B9 /* IPDFCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B328CE951D78F44F007075B9 /* IPDFCameraViewController.m */; };
 		B328CE991D78F44F007075B9 /* IPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = B328CE971D78F44F007075B9 /* IPDFView.m */; };
+		B328CE9B1D7BB350007075B9 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328CE9A1D7BB350007075B9 /* ImageTableViewCell.swift */; };
 		B367E1B91D73F8E6008078DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367E1B81D73F8E6008078DF /* AppDelegate.swift */; };
 		CBBBFC73DE0B9DDDA18A8576 /* Pods_HafsaInspectorApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB17AB959B7618DD629350D6 /* Pods_HafsaInspectorApp.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		B328CE951D78F44F007075B9 /* IPDFCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPDFCameraViewController.m; sourceTree = "<group>"; };
 		B328CE961D78F44F007075B9 /* IPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDFView.h; sourceTree = "<group>"; };
 		B328CE971D78F44F007075B9 /* IPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPDFView.m; sourceTree = "<group>"; };
+		B328CE9A1D7BB350007075B9 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		B367E1B51D73F8E6008078DF /* HafsaInspectorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HafsaInspectorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B367E1B81D73F8E6008078DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B367E1C41D73F8E6008078DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			children = (
 				9C718EC51D7A8167009F9D79 /* NameTableViewCell.swift */,
 				9C718EC61D7A8167009F9D79 /* SupplierTableViewCell.swift */,
+				B328CE9A1D7BB350007075B9 /* ImageTableViewCell.swift */,
 			);
 			name = FormCells;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				9C718ECA1D7A8184009F9D79 /* DeviceExtensions.swift in Sources */,
 				9C718ECE1D7A81BA009F9D79 /* HITextField.swift in Sources */,
 				9C718EC71D7A8167009F9D79 /* NameTableViewCell.swift in Sources */,
+				B328CE9B1D7BB350007075B9 /* ImageTableViewCell.swift in Sources */,
 				B328CE981D78F44F007075B9 /* IPDFCameraViewController.m in Sources */,
 				9C718EC81D7A8167009F9D79 /* SupplierTableViewCell.swift in Sources */,
 			);
