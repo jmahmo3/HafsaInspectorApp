@@ -7,8 +7,8 @@ provides-member:
 - ["O8Material13MaterialShape", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "=="
 - "MaterialShape"
+- "=="
 depends-member:
 - !private ["Ps22BidirectionalIndexType", "hashValue"]
 - !private ["Ps21BitwiseOperationsType", "hashValue"]

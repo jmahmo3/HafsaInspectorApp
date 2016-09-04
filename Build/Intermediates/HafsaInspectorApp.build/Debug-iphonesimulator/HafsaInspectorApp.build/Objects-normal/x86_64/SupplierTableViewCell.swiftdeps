@@ -6,36 +6,34 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp21SupplierTableViewCell", ""]
 provides-dynamic-lookup:
-- "poundLabel"
-- "addPoundsPressed"
-- "previousPounds"
 - "configureSupplierCell"
+- "poundLabel"
+- "previousPounds"
 - "configurationTextField"
-- "updatePounds"
 - "addPoundsButton"
 - "supplierNameLabel"
+- "updatePounds"
 - "tField"
+- "addPoundsPressed"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "UIButton"
-- !private "UIKeyboardType"
-- "Int"
 - "Double"
+- !private "dispatch_async"
+- "Int"
+- !private "dispatch_get_main_queue"
+- !private "UIKeyboardType"
+- !private "UIAlertController"
 - !private "UIFont"
+- !private "BooleanLiteralType"
+- !private "+"
+- !private "UIAlertAction"
+- "UIButton"
 - "UILabel"
 - "HIManager"
-- !private "UIAlertAction"
-- "SupplierTableViewCell"
 - "UITextField"
 - "AnyObject"
+- "SupplierTableViewCell"
 - !private "UIColor"
-- !private "UIAlertController"
 - "UITableViewCell"
-- !private "dispatch_async"
-- !private "dispatch_get_main_queue"
-- !private "+"
-- !private "UINavigationController"
-- !private "FormTableViewController"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGColor"]
@@ -66,11 +64,11 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "keyboardType"]
 - !private ["Ps9AnyObject", "layer"]
+- !private ["Ps9AnyObject", "parentViewController"]
 - !private ["Ps9AnyObject", "placeholder"]
 - ["Ps9AnyObject", "poundLabel"]
 - !private ["Ps9AnyObject", "presentViewController"]
 - ["Ps9AnyObject", "previousPounds"]
-- !private ["Ps9AnyObject", "rootViewController"]
 - ["Ps9AnyObject", "sharedClient"]
 - !private ["Ps9AnyObject", "supplierArray"]
 - ["Ps9AnyObject", "supplierNameLabel"]
@@ -80,9 +78,7 @@ depends-member:
 - !private ["Ps9AnyObject", "tintColor"]
 - !private ["Ps9AnyObject", "titleLabel"]
 - ["Ps9AnyObject", "updatePounds"]
-- !private ["Ps9AnyObject", "visibleViewController"]
 - !private ["Ps9AnyObject", "whiteColor"]
-- !private ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]
@@ -93,10 +89,7 @@ depends-member:
 - !private ["Ps23ArrayLiteralConvertible", "Index"]
 - !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
 - !private ["Ps23ArrayLiteralConvertible", "subscript"]
-- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
-- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["CSo7CALayer", "borderColor"]
 - !private ["CSo7CALayer", "borderWidth"]
 - !private ["CSo7CALayer", "cornerRadius"]
@@ -132,11 +125,11 @@ depends-member:
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "keyboardType"]
 - !private ["Ps11CVarArgType", "layer"]
+- !private ["Ps11CVarArgType", "parentViewController"]
 - !private ["Ps11CVarArgType", "placeholder"]
 - ["Ps11CVarArgType", "poundLabel"]
 - !private ["Ps11CVarArgType", "presentViewController"]
 - ["Ps11CVarArgType", "previousPounds"]
-- !private ["Ps11CVarArgType", "rootViewController"]
 - ["Ps11CVarArgType", "sharedClient"]
 - !private ["Ps11CVarArgType", "supplierArray"]
 - ["Ps11CVarArgType", "supplierNameLabel"]
@@ -146,9 +139,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "tintColor"]
 - !private ["Ps11CVarArgType", "titleLabel"]
 - ["Ps11CVarArgType", "updatePounds"]
-- !private ["Ps11CVarArgType", "visibleViewController"]
 - !private ["Ps11CVarArgType", "whiteColor"]
-- !private ["Ps11CVarArgType", "window"]
 - ["Ps11CVarArgType", ""]
 - !private ["Vs9Character", "deinit"]
 - !private ["Ps14CollectionType", "Generator"]
@@ -163,7 +154,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "HIManager"]
 - ["Ps28CustomDebugStringConvertible", "HImanager"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
-- ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
@@ -189,11 +179,11 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "keyboardType"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
+- !private ["Ps28CustomDebugStringConvertible", "parentViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "placeholder"]
 - ["Ps28CustomDebugStringConvertible", "poundLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
 - ["Ps28CustomDebugStringConvertible", "previousPounds"]
-- !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
 - ["Ps28CustomDebugStringConvertible", "sharedClient"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "supplierArray"]
@@ -204,9 +194,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "tintColor"]
 - !private ["Ps28CustomDebugStringConvertible", "titleLabel"]
 - ["Ps28CustomDebugStringConvertible", "updatePounds"]
-- !private ["Ps28CustomDebugStringConvertible", "visibleViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "whiteColor"]
-- !private ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "CGColor"]
 - !private ["Ps23CustomStringConvertible", "Double"]
@@ -220,7 +208,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIFont"]
 - !private ["Ps23CustomStringConvertible", "UIKeyboardType"]
-- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addAction"]
 - ["Ps23CustomStringConvertible", "addPoundsButton"]
 - ["Ps23CustomStringConvertible", "addPoundsPressed"]
@@ -240,11 +227,11 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "keyboardType"]
 - !private ["Ps23CustomStringConvertible", "layer"]
+- !private ["Ps23CustomStringConvertible", "parentViewController"]
 - !private ["Ps23CustomStringConvertible", "placeholder"]
 - ["Ps23CustomStringConvertible", "poundLabel"]
 - !private ["Ps23CustomStringConvertible", "presentViewController"]
 - ["Ps23CustomStringConvertible", "previousPounds"]
-- !private ["Ps23CustomStringConvertible", "rootViewController"]
 - ["Ps23CustomStringConvertible", "sharedClient"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "supplierArray"]
@@ -255,9 +242,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "tintColor"]
 - !private ["Ps23CustomStringConvertible", "titleLabel"]
 - ["Ps23CustomStringConvertible", "updatePounds"]
-- !private ["Ps23CustomStringConvertible", "visibleViewController"]
 - !private ["Ps23CustomStringConvertible", "whiteColor"]
-- !private ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Sd", "deinit"]
 - !private ["Sd", "init"]
@@ -274,7 +259,6 @@ depends-member:
 - !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIFont"]
 - !private ["Ps9Equatable", "UIKeyboardType"]
-- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addAction"]
 - ["Ps9Equatable", "addPoundsButton"]
 - ["Ps9Equatable", "addPoundsPressed"]
@@ -294,11 +278,11 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "keyboardType"]
 - !private ["Ps9Equatable", "layer"]
+- !private ["Ps9Equatable", "parentViewController"]
 - !private ["Ps9Equatable", "placeholder"]
 - ["Ps9Equatable", "poundLabel"]
 - !private ["Ps9Equatable", "presentViewController"]
 - ["Ps9Equatable", "previousPounds"]
-- !private ["Ps9Equatable", "rootViewController"]
 - ["Ps9Equatable", "sharedClient"]
 - !private ["Ps9Equatable", "supplierArray"]
 - ["Ps9Equatable", "supplierNameLabel"]
@@ -308,9 +292,7 @@ depends-member:
 - !private ["Ps9Equatable", "tintColor"]
 - !private ["Ps9Equatable", "titleLabel"]
 - ["Ps9Equatable", "updatePounds"]
-- !private ["Ps9Equatable", "visibleViewController"]
 - !private ["Ps9Equatable", "whiteColor"]
-- !private ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Sf", "deinit"]
@@ -332,7 +314,6 @@ depends-member:
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIFont"]
 - !private ["Ps8Hashable", "UIKeyboardType"]
-- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addAction"]
 - ["Ps8Hashable", "addPoundsButton"]
 - ["Ps8Hashable", "addPoundsPressed"]
@@ -352,11 +333,11 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "keyboardType"]
 - !private ["Ps8Hashable", "layer"]
+- !private ["Ps8Hashable", "parentViewController"]
 - !private ["Ps8Hashable", "placeholder"]
 - ["Ps8Hashable", "poundLabel"]
 - !private ["Ps8Hashable", "presentViewController"]
 - ["Ps8Hashable", "previousPounds"]
-- !private ["Ps8Hashable", "rootViewController"]
 - ["Ps8Hashable", "sharedClient"]
 - !private ["Ps8Hashable", "supplierArray"]
 - ["Ps8Hashable", "supplierNameLabel"]
@@ -366,9 +347,7 @@ depends-member:
 - !private ["Ps8Hashable", "tintColor"]
 - !private ["Ps8Hashable", "titleLabel"]
 - ["Ps8Hashable", "updatePounds"]
-- !private ["Ps8Hashable", "visibleViewController"]
 - !private ["Ps8Hashable", "whiteColor"]
-- !private ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
 - !private ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Generator"]
@@ -424,11 +403,11 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "keyboardType"]
 - !private ["PSo8NSCoding", "layer"]
+- !private ["PSo8NSCoding", "parentViewController"]
 - !private ["PSo8NSCoding", "placeholder"]
 - ["PSo8NSCoding", "poundLabel"]
 - !private ["PSo8NSCoding", "presentViewController"]
 - ["PSo8NSCoding", "previousPounds"]
-- !private ["PSo8NSCoding", "rootViewController"]
 - ["PSo8NSCoding", "supplierNameLabel"]
 - ["PSo8NSCoding", "tField"]
 - !private ["PSo8NSCoding", "text"]
@@ -436,9 +415,7 @@ depends-member:
 - !private ["PSo8NSCoding", "tintColor"]
 - !private ["PSo8NSCoding", "titleLabel"]
 - ["PSo8NSCoding", "updatePounds"]
-- !private ["PSo8NSCoding", "visibleViewController"]
 - !private ["PSo8NSCoding", "whiteColor"]
-- !private ["PSo8NSCoding", "window"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "CGColor"]
 - !private ["PSo9NSCopying", "blackColor"]
@@ -450,12 +427,10 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "addTextFieldWithConfigurationHandler"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
-- !private ["PSo26NSExtensionRequestHandling", "visibleViewController"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "CGColor"]
 - ["CSo8NSObject", "Double"]
-- !private ["CSo8NSObject", "FormTableViewController"]
 - ["CSo8NSObject", "HIManager"]
 - ["CSo8NSObject", "HImanager"]
 - ["CSo8NSObject", "Int"]
@@ -466,7 +441,6 @@ depends-member:
 - !private ["CSo8NSObject", "UIFont"]
 - !private ["CSo8NSObject", "UIKeyboardType"]
 - ["CSo8NSObject", "UILabel"]
-- !private ["CSo8NSObject", "UINavigationController"]
 - ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "addAction"]
 - ["CSo8NSObject", "addPoundsButton"]
@@ -487,11 +461,11 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "keyboardType"]
 - !private ["CSo8NSObject", "layer"]
+- !private ["CSo8NSObject", "parentViewController"]
 - !private ["CSo8NSObject", "placeholder"]
 - ["CSo8NSObject", "poundLabel"]
 - !private ["CSo8NSObject", "presentViewController"]
 - ["CSo8NSObject", "previousPounds"]
-- !private ["CSo8NSObject", "rootViewController"]
 - ["CSo8NSObject", "sharedClient"]
 - !private ["CSo8NSObject", "supplierArray"]
 - ["CSo8NSObject", "supplierNameLabel"]
@@ -501,9 +475,7 @@ depends-member:
 - !private ["CSo8NSObject", "tintColor"]
 - !private ["CSo8NSObject", "titleLabel"]
 - ["CSo8NSObject", "updatePounds"]
-- !private ["CSo8NSObject", "visibleViewController"]
 - !private ["CSo8NSObject", "whiteColor"]
-- !private ["CSo8NSObject", "window"]
 - !private ["PSo16NSObjectProtocol", "CGColor"]
 - !private ["PSo16NSObjectProtocol", "Double"]
 - ["PSo16NSObjectProtocol", "HIManager"]
@@ -532,11 +504,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "keyboardType"]
 - !private ["PSo16NSObjectProtocol", "layer"]
+- !private ["PSo16NSObjectProtocol", "parentViewController"]
 - !private ["PSo16NSObjectProtocol", "placeholder"]
 - ["PSo16NSObjectProtocol", "poundLabel"]
 - !private ["PSo16NSObjectProtocol", "presentViewController"]
 - ["PSo16NSObjectProtocol", "previousPounds"]
-- !private ["PSo16NSObjectProtocol", "rootViewController"]
 - ["PSo16NSObjectProtocol", "sharedClient"]
 - !private ["PSo16NSObjectProtocol", "supplierArray"]
 - ["PSo16NSObjectProtocol", "supplierNameLabel"]
@@ -546,9 +518,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "tintColor"]
 - !private ["PSo16NSObjectProtocol", "titleLabel"]
 - ["PSo16NSObjectProtocol", "updatePounds"]
-- !private ["PSo16NSObjectProtocol", "visibleViewController"]
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
-- !private ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "CGColor"]
 - !private ["PSo14NSSecureCoding", "blackColor"]
@@ -557,8 +527,6 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "whiteColor"]
 - !private ["CSo8NSString", "init"]
-- ["Ps21NilLiteralConvertible", "Some"]
-- ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps30RangeReplaceableCollectionType", "Generator"]
@@ -587,7 +555,6 @@ depends-member:
 - !private ["Ps24StringLiteralConvertible", "init"]
 - ["C17HafsaInspectorApp21SupplierTableViewCell", "AnyObject"]
 - ["C17HafsaInspectorApp21SupplierTableViewCell", "Double"]
-- !private ["C17HafsaInspectorApp21SupplierTableViewCell", "FormTableViewController"]
 - ["C17HafsaInspectorApp21SupplierTableViewCell", "HIManager"]
 - !private ["C17HafsaInspectorApp21SupplierTableViewCell", "HImanager"]
 - ["C17HafsaInspectorApp21SupplierTableViewCell", "Int"]
@@ -598,7 +565,6 @@ depends-member:
 - !private ["C17HafsaInspectorApp21SupplierTableViewCell", "UIFont"]
 - !private ["C17HafsaInspectorApp21SupplierTableViewCell", "UIKeyboardType"]
 - ["C17HafsaInspectorApp21SupplierTableViewCell", "UILabel"]
-- !private ["C17HafsaInspectorApp21SupplierTableViewCell", "UINavigationController"]
 - ["C17HafsaInspectorApp21SupplierTableViewCell", "UITextField"]
 - ["C17HafsaInspectorApp21SupplierTableViewCell", "addPoundsButton"]
 - ["C17HafsaInspectorApp21SupplierTableViewCell", "addPoundsPressed"]
@@ -609,12 +575,12 @@ depends-member:
 - !private ["C17HafsaInspectorApp21SupplierTableViewCell", "dispatch_async"]
 - !private ["C17HafsaInspectorApp21SupplierTableViewCell", "dispatch_get_main_queue"]
 - ["C17HafsaInspectorApp21SupplierTableViewCell", "init"]
+- !private ["C17HafsaInspectorApp21SupplierTableViewCell", "parentViewController"]
 - ["C17HafsaInspectorApp21SupplierTableViewCell", "poundLabel"]
 - ["C17HafsaInspectorApp21SupplierTableViewCell", "previousPounds"]
 - ["C17HafsaInspectorApp21SupplierTableViewCell", "supplierNameLabel"]
 - ["C17HafsaInspectorApp21SupplierTableViewCell", "tField"]
 - ["C17HafsaInspectorApp21SupplierTableViewCell", "updatePounds"]
-- !private ["C17HafsaInspectorApp21SupplierTableViewCell", "window"]
 - !private ["PSo29UIAccessibilityIdentification", "Double"]
 - ["PSo29UIAccessibilityIdentification", "HIManager"]
 - ["PSo29UIAccessibilityIdentification", "HImanager"]
@@ -634,10 +600,10 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "keyboardType"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
+- !private ["PSo29UIAccessibilityIdentification", "parentViewController"]
 - !private ["PSo29UIAccessibilityIdentification", "placeholder"]
 - ["PSo29UIAccessibilityIdentification", "poundLabel"]
 - ["PSo29UIAccessibilityIdentification", "previousPounds"]
-- !private ["PSo29UIAccessibilityIdentification", "rootViewController"]
 - ["PSo29UIAccessibilityIdentification", "supplierNameLabel"]
 - ["PSo29UIAccessibilityIdentification", "tField"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
@@ -645,7 +611,6 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "tintColor"]
 - !private ["PSo29UIAccessibilityIdentification", "titleLabel"]
 - ["PSo29UIAccessibilityIdentification", "updatePounds"]
-- !private ["PSo29UIAccessibilityIdentification", "window"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - !private ["CSo13UIAlertAction", "init"]
 - !private ["OSC18UIAlertActionStyle", "Cancel"]
@@ -673,10 +638,10 @@ depends-member:
 - ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "keyboardType"]
 - !private ["PSo12UIAppearance", "layer"]
+- !private ["PSo12UIAppearance", "parentViewController"]
 - !private ["PSo12UIAppearance", "placeholder"]
 - ["PSo12UIAppearance", "poundLabel"]
 - ["PSo12UIAppearance", "previousPounds"]
-- !private ["PSo12UIAppearance", "rootViewController"]
 - ["PSo12UIAppearance", "supplierNameLabel"]
 - ["PSo12UIAppearance", "tField"]
 - !private ["PSo12UIAppearance", "text"]
@@ -684,7 +649,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "tintColor"]
 - !private ["PSo12UIAppearance", "titleLabel"]
 - ["PSo12UIAppearance", "updatePounds"]
-- !private ["PSo12UIAppearance", "window"]
 - ["PSo12UIAppearance", ""]
 - !private ["PSo21UIAppearanceContainer", "Double"]
 - ["PSo21UIAppearanceContainer", "HIManager"]
@@ -707,11 +671,11 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "keyboardType"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
+- !private ["PSo21UIAppearanceContainer", "parentViewController"]
 - !private ["PSo21UIAppearanceContainer", "placeholder"]
 - ["PSo21UIAppearanceContainer", "poundLabel"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
 - ["PSo21UIAppearanceContainer", "previousPounds"]
-- !private ["PSo21UIAppearanceContainer", "rootViewController"]
 - ["PSo21UIAppearanceContainer", "supplierNameLabel"]
 - ["PSo21UIAppearanceContainer", "tField"]
 - !private ["PSo21UIAppearanceContainer", "text"]
@@ -719,8 +683,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "tintColor"]
 - !private ["PSo21UIAppearanceContainer", "titleLabel"]
 - ["PSo21UIAppearanceContainer", "updatePounds"]
-- !private ["PSo21UIAppearanceContainer", "visibleViewController"]
-- !private ["PSo21UIAppearanceContainer", "window"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo8UIButton", "backgroundColor"]
 - !private ["CSo8UIButton", "layer"]
@@ -735,7 +697,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "addTextFieldWithConfigurationHandler"]
 - !private ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "presentViewController"]
-- !private ["PSo18UIContentContainer", "visibleViewController"]
 - !private ["CSo9UIControl", "backgroundColor"]
 - !private ["CSo9UIControl", "keyboardType"]
 - !private ["CSo9UIControl", "layer"]
@@ -762,10 +723,10 @@ depends-member:
 - ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "keyboardType"]
 - !private ["PSo17UICoordinateSpace", "layer"]
+- !private ["PSo17UICoordinateSpace", "parentViewController"]
 - !private ["PSo17UICoordinateSpace", "placeholder"]
 - ["PSo17UICoordinateSpace", "poundLabel"]
 - ["PSo17UICoordinateSpace", "previousPounds"]
-- !private ["PSo17UICoordinateSpace", "rootViewController"]
 - ["PSo17UICoordinateSpace", "supplierNameLabel"]
 - ["PSo17UICoordinateSpace", "tField"]
 - !private ["PSo17UICoordinateSpace", "text"]
@@ -773,7 +734,6 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "tintColor"]
 - !private ["PSo17UICoordinateSpace", "titleLabel"]
 - ["PSo17UICoordinateSpace", "updatePounds"]
-- !private ["PSo17UICoordinateSpace", "window"]
 - ["PSo17UICoordinateSpace", ""]
 - !private ["PSo13UIDynamicItem", "Double"]
 - ["PSo13UIDynamicItem", "HIManager"]
@@ -794,10 +754,10 @@ depends-member:
 - ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "keyboardType"]
 - !private ["PSo13UIDynamicItem", "layer"]
+- !private ["PSo13UIDynamicItem", "parentViewController"]
 - !private ["PSo13UIDynamicItem", "placeholder"]
 - ["PSo13UIDynamicItem", "poundLabel"]
 - ["PSo13UIDynamicItem", "previousPounds"]
-- !private ["PSo13UIDynamicItem", "rootViewController"]
 - ["PSo13UIDynamicItem", "supplierNameLabel"]
 - ["PSo13UIDynamicItem", "tField"]
 - !private ["PSo13UIDynamicItem", "text"]
@@ -805,7 +765,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "tintColor"]
 - !private ["PSo13UIDynamicItem", "titleLabel"]
 - ["PSo13UIDynamicItem", "updatePounds"]
-- !private ["PSo13UIDynamicItem", "window"]
 - ["PSo13UIDynamicItem", ""]
 - !private ["PSo18UIFocusEnvironment", "Double"]
 - ["PSo18UIFocusEnvironment", "HIManager"]
@@ -828,11 +787,11 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "keyboardType"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
+- !private ["PSo18UIFocusEnvironment", "parentViewController"]
 - !private ["PSo18UIFocusEnvironment", "placeholder"]
 - ["PSo18UIFocusEnvironment", "poundLabel"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
 - ["PSo18UIFocusEnvironment", "previousPounds"]
-- !private ["PSo18UIFocusEnvironment", "rootViewController"]
 - ["PSo18UIFocusEnvironment", "supplierNameLabel"]
 - ["PSo18UIFocusEnvironment", "tField"]
 - !private ["PSo18UIFocusEnvironment", "text"]
@@ -840,8 +799,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "tintColor"]
 - !private ["PSo18UIFocusEnvironment", "titleLabel"]
 - ["PSo18UIFocusEnvironment", "updatePounds"]
-- !private ["PSo18UIFocusEnvironment", "visibleViewController"]
-- !private ["PSo18UIFocusEnvironment", "window"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo6UIFont", "init"]
 - !private ["PSo27UIGestureRecognizerDelegate", "Double"]
@@ -860,12 +817,12 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "dispatch_async"]
 - !private ["PSo27UIGestureRecognizerDelegate", "dispatch_get_main_queue"]
 - ["PSo27UIGestureRecognizerDelegate", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "parentViewController"]
 - ["PSo27UIGestureRecognizerDelegate", "poundLabel"]
 - ["PSo27UIGestureRecognizerDelegate", "previousPounds"]
 - ["PSo27UIGestureRecognizerDelegate", "supplierNameLabel"]
 - ["PSo27UIGestureRecognizerDelegate", "tField"]
 - ["PSo27UIGestureRecognizerDelegate", "updatePounds"]
-- !private ["PSo27UIGestureRecognizerDelegate", "window"]
 - ["PSo27UIGestureRecognizerDelegate", ""]
 - !private ["PSo10UIKeyInput", "keyboardType"]
 - !private ["PSo10UIKeyInput", "placeholder"]
@@ -874,10 +831,8 @@ depends-member:
 - !private ["CSo7UILabel", "font"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textColor"]
-- !private ["CSo22UINavigationController", "visibleViewController"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Double"]
-- !private ["CSo11UIResponder", "FormTableViewController"]
 - ["CSo11UIResponder", "HIManager"]
 - ["CSo11UIResponder", "HImanager"]
 - ["CSo11UIResponder", "Int"]
@@ -888,7 +843,6 @@ depends-member:
 - !private ["CSo11UIResponder", "UIFont"]
 - !private ["CSo11UIResponder", "UIKeyboardType"]
 - ["CSo11UIResponder", "UILabel"]
-- !private ["CSo11UIResponder", "UINavigationController"]
 - ["CSo11UIResponder", "UITextField"]
 - !private ["CSo11UIResponder", "addAction"]
 - ["CSo11UIResponder", "addPoundsButton"]
@@ -903,11 +857,11 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "keyboardType"]
 - !private ["CSo11UIResponder", "layer"]
+- !private ["CSo11UIResponder", "parentViewController"]
 - !private ["CSo11UIResponder", "placeholder"]
 - ["CSo11UIResponder", "poundLabel"]
 - !private ["CSo11UIResponder", "presentViewController"]
 - ["CSo11UIResponder", "previousPounds"]
-- !private ["CSo11UIResponder", "rootViewController"]
 - ["CSo11UIResponder", "supplierNameLabel"]
 - ["CSo11UIResponder", "tField"]
 - !private ["CSo11UIResponder", "text"]
@@ -915,16 +869,12 @@ depends-member:
 - !private ["CSo11UIResponder", "tintColor"]
 - !private ["CSo11UIResponder", "titleLabel"]
 - ["CSo11UIResponder", "updatePounds"]
-- !private ["CSo11UIResponder", "visibleViewController"]
-- !private ["CSo11UIResponder", "window"]
 - !private ["PSo16UIStateRestoring", "addAction"]
 - !private ["PSo16UIStateRestoring", "addTextFieldWithConfigurationHandler"]
 - !private ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "presentViewController"]
-- !private ["PSo16UIStateRestoring", "visibleViewController"]
 - ["CSo15UITableViewCell", "AnyObject"]
 - ["CSo15UITableViewCell", "Double"]
-- !private ["CSo15UITableViewCell", "FormTableViewController"]
 - ["CSo15UITableViewCell", "HIManager"]
 - ["CSo15UITableViewCell", "HImanager"]
 - ["CSo15UITableViewCell", "Int"]
@@ -935,7 +885,6 @@ depends-member:
 - !private ["CSo15UITableViewCell", "UIFont"]
 - !private ["CSo15UITableViewCell", "UIKeyboardType"]
 - ["CSo15UITableViewCell", "UILabel"]
-- !private ["CSo15UITableViewCell", "UINavigationController"]
 - ["CSo15UITableViewCell", "UITextField"]
 - ["CSo15UITableViewCell", "addPoundsButton"]
 - ["CSo15UITableViewCell", "addPoundsPressed"]
@@ -945,12 +894,12 @@ depends-member:
 - !private ["CSo15UITableViewCell", "dispatch_async"]
 - !private ["CSo15UITableViewCell", "dispatch_get_main_queue"]
 - ["CSo15UITableViewCell", "init"]
+- !private ["CSo15UITableViewCell", "parentViewController"]
 - ["CSo15UITableViewCell", "poundLabel"]
 - ["CSo15UITableViewCell", "previousPounds"]
 - ["CSo15UITableViewCell", "supplierNameLabel"]
 - ["CSo15UITableViewCell", "tField"]
 - ["CSo15UITableViewCell", "updatePounds"]
-- !private ["CSo15UITableViewCell", "window"]
 - ["CSo15UITableViewCell", ""]
 - !private ["CSo11UITextField", "keyboardType"]
 - !private ["CSo11UITextField", "placeholder"]
@@ -982,11 +931,11 @@ depends-member:
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "keyboardType"]
 - !private ["PSo18UITraitEnvironment", "layer"]
+- !private ["PSo18UITraitEnvironment", "parentViewController"]
 - !private ["PSo18UITraitEnvironment", "placeholder"]
 - ["PSo18UITraitEnvironment", "poundLabel"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
 - ["PSo18UITraitEnvironment", "previousPounds"]
-- !private ["PSo18UITraitEnvironment", "rootViewController"]
 - ["PSo18UITraitEnvironment", "supplierNameLabel"]
 - ["PSo18UITraitEnvironment", "tField"]
 - !private ["PSo18UITraitEnvironment", "text"]
@@ -994,12 +943,9 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "tintColor"]
 - !private ["PSo18UITraitEnvironment", "titleLabel"]
 - ["PSo18UITraitEnvironment", "updatePounds"]
-- !private ["PSo18UITraitEnvironment", "visibleViewController"]
-- !private ["PSo18UITraitEnvironment", "window"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "AnyObject"]
 - ["CSo6UIView", "Double"]
-- !private ["CSo6UIView", "FormTableViewController"]
 - ["CSo6UIView", "HIManager"]
 - ["CSo6UIView", "HImanager"]
 - ["CSo6UIView", "Int"]
@@ -1010,7 +956,6 @@ depends-member:
 - !private ["CSo6UIView", "UIFont"]
 - !private ["CSo6UIView", "UIKeyboardType"]
 - ["CSo6UIView", "UILabel"]
-- !private ["CSo6UIView", "UINavigationController"]
 - ["CSo6UIView", "UITextField"]
 - ["CSo6UIView", "addPoundsButton"]
 - ["CSo6UIView", "addPoundsPressed"]
@@ -1023,10 +968,10 @@ depends-member:
 - ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "keyboardType"]
 - !private ["CSo6UIView", "layer"]
+- !private ["CSo6UIView", "parentViewController"]
 - !private ["CSo6UIView", "placeholder"]
 - ["CSo6UIView", "poundLabel"]
 - ["CSo6UIView", "previousPounds"]
-- !private ["CSo6UIView", "rootViewController"]
 - ["CSo6UIView", "supplierNameLabel"]
 - ["CSo6UIView", "tField"]
 - !private ["CSo6UIView", "text"]
@@ -1034,13 +979,10 @@ depends-member:
 - !private ["CSo6UIView", "tintColor"]
 - !private ["CSo6UIView", "titleLabel"]
 - ["CSo6UIView", "updatePounds"]
-- !private ["CSo6UIView", "window"]
 - !private ["CSo16UIViewController", "addAction"]
 - !private ["CSo16UIViewController", "addTextFieldWithConfigurationHandler"]
 - !private ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "presentViewController"]
-- !private ["CSo16UIViewController", "visibleViewController"]
-- !private ["CSo8UIWindow", "rootViewController"]
 - !private ["Su", "deinit"]
 - !private ["Vs6UInt16", "deinit"]
 - !private ["Vs6UInt32", "deinit"]
@@ -1048,11 +990,14 @@ depends-member:
 - !private ["Vs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "addAction"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "addTextFieldWithConfigurationHandler"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "init"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "presentViewController"]
 - !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
 - !private ["Ps10_ArrayType", "SubSequence"]
 - !private ["Ps10_ArrayType", "subscript"]
-- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Ps31_BuiltinFloatLiteralConvertible", "init"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
@@ -1073,7 +1018,6 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "Generator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
-- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps12_Reflectable", "Double"]
@@ -1081,14 +1025,12 @@ depends-member:
 - ["Ps12_Reflectable", "HIManager"]
 - ["Ps12_Reflectable", "HImanager"]
 - !private ["Ps12_Reflectable", "Index"]
-- ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "SubSequence"]
 - !private ["Ps12_Reflectable", "UIAlertAction"]
 - !private ["Ps12_Reflectable", "UIAlertController"]
 - !private ["Ps12_Reflectable", "UIColor"]
 - !private ["Ps12_Reflectable", "UIFont"]
 - !private ["Ps12_Reflectable", "UIKeyboardType"]
-- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - ["Ps12_Reflectable", "addPoundsButton"]
 - ["Ps12_Reflectable", "addPoundsPressed"]
 - !private ["Ps12_Reflectable", "backgroundColor"]
@@ -1100,10 +1042,10 @@ depends-member:
 - ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "keyboardType"]
 - !private ["Ps12_Reflectable", "layer"]
+- !private ["Ps12_Reflectable", "parentViewController"]
 - !private ["Ps12_Reflectable", "placeholder"]
 - ["Ps12_Reflectable", "poundLabel"]
 - ["Ps12_Reflectable", "previousPounds"]
-- !private ["Ps12_Reflectable", "rootViewController"]
 - !private ["Ps12_Reflectable", "subscript"]
 - ["Ps12_Reflectable", "supplierNameLabel"]
 - ["Ps12_Reflectable", "tField"]
@@ -1112,7 +1054,6 @@ depends-member:
 - !private ["Ps12_Reflectable", "tintColor"]
 - !private ["Ps12_Reflectable", "titleLabel"]
 - ["Ps12_Reflectable", "updatePounds"]
-- !private ["Ps12_Reflectable", "window"]
 - ["Ps12_Reflectable", ""]
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
@@ -1120,8 +1061,6 @@ depends-nominal:
 - !private "Sa"
 - !private "Ps23ArrayLiteralConvertible"
 - !private "Sb"
-- !private "Ps25BooleanLiteralConvertible"
-- !private "Ps11BooleanType"
 - !private "CSo7CALayer"
 - !private "PSo13CAMediaTiming"
 - !private "V12CoreGraphics7CGFloat"
@@ -1161,8 +1100,7 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
-- "Ps21NilLiteralConvertible"
-- "Sq"
+- !private "Sq"
 - !private "Ps16OutputStreamType"
 - !private "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
@@ -1194,7 +1132,6 @@ depends-nominal:
 - !private "PSo10UIKeyInput"
 - !private "OSC14UIKeyboardType"
 - !private "CSo7UILabel"
-- !private "CSo22UINavigationController"
 - "CSo11UIResponder"
 - !private "PSo16UIStateRestoring"
 - "CSo15UITableViewCell"
@@ -1204,7 +1141,6 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
 - !private "CSo16UIViewController"
-- !private "CSo8UIWindow"
 - !private "Su"
 - !private "Vs6UInt16"
 - !private "Vs6UInt32"
@@ -1212,8 +1148,8 @@ depends-nominal:
 - !private "Vs5UInt8"
 - !private "Sc"
 - !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "P17HafsaInspectorApp23ViewControllerContainer"
 - !private "Ps10_ArrayType"
-- !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
 - !private "Ps31_BuiltinFloatLiteralConvertible"
 - !private "Ps33_BuiltinIntegerLiteralConvertible"

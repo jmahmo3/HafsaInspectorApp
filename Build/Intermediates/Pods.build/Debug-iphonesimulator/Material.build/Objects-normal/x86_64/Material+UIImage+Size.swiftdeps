@@ -6,8 +6,8 @@ provides-member:
 - ["CSo7UIImage", "width"]
 - ["CSo7UIImage", "height"]
 provides-dynamic-lookup:
-- "height"
 - "width"
+- "height"
 depends-top-level:
 - "UIImage"
 - "CGFloat"

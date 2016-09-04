@@ -6,32 +6,32 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp23FormTableViewController", ""]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "create"
 - "numberOfSectionsInTableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 - "viewDidLoad"
+- "create"
 depends-top-level:
-- !private "-"
-- !private "UIStoryboard"
-- "Int"
-- "UITableViewController"
-- "HIManager"
-- "FormTableViewController"
-- "CGFloat"
-- !private "+"
-- "UITableViewCell"
-- !private "SupplierTableViewCell"
-- !private "StringLiteralType"
-- !private "UITableViewAutomaticDimension"
-- !private "NameTableViewCell"
-- !private "UIColor"
-- "NSIndexPath"
 - "UITableView"
+- !private "UIStoryboard"
+- "HIManager"
+- !private "NameTableViewCell"
+- !private "UITableViewAutomaticDimension"
 - !private "=="
+- !private "+"
+- "NSIndexPath"
 - !private "NSBundle"
+- "FormTableViewController"
+- !private "StringLiteralType"
+- "CGFloat"
+- "Int"
+- !private "SupplierTableViewCell"
+- "UITableViewCell"
+- "UITableViewController"
+- !private "UIColor"
+- !private "-"
 depends-member:
 - !private ["Ps9AnyObject", "HIBackground"]
 - ["Ps9AnyObject", "HIManager"]
@@ -607,6 +607,20 @@ depends-member:
 - ["CSo16UIViewController", "tableView"]
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "HIManager"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "HImanager"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "NSBundle"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "UIColor"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "UIStoryboard"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "UITableViewAutomaticDimension"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "create"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "init"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "numberOfSectionsInTableView"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "setNavBarWithBackButton"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "tableView"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "view"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "viewDidLoad"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", ""]
 - !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
 - !private ["Ps10_ArrayType", "SubSequence"]
@@ -714,6 +728,7 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
+- "P17HafsaInspectorApp23ViewControllerContainer"
 - !private "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps33_BuiltinIntegerLiteralConvertible"

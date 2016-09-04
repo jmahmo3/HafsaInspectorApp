@@ -56,15 +56,9 @@ class SupplierTableViewCell: UITableViewCell {
             self.updatePounds(Double(self.tField.text!)!)
         }))
         
-        if let wd = self.window {
-            var vc = wd.rootViewController
-            if(vc is UINavigationController){
-                vc = (vc as! UINavigationController).visibleViewController
-            }
-            if(vc is FormTableViewController){
-                vc?.presentViewController(alert, animated: true, completion:nil)
-            }
-        }
+        let vc = self.parentViewController
+        vc?.presentViewController(alert, animated: true, completion:nil)
+        
     }
     
     func configurationTextField(textField: UITextField!) {

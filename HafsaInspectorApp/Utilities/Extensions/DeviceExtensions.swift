@@ -40,19 +40,47 @@ public extension UIViewController {
 
     }
     
-//    func setNavBarWithBackButton() {
-//        self.setNavBarWithBackButton("backButtonPressed")
-//    }
-    
     func backButtonPressed() {
         self.navigationController?.popViewControllerAnimated(true)
     }
+    
+    public var isVisible: Bool {
+        if isViewLoaded() {
+            return view.window != nil
+        }
+        return false
+    }
+    
+    public var isTopViewController: Bool {
+        if self.navigationController != nil {
+            return self.navigationController?.visibleViewController === self
+        } else if self.tabBarController != nil {
+            return self.tabBarController?.selectedViewController == self && self.presentedViewController == nil
+        } else {
+            return self.presentedViewController == nil && self.isVisible
+        }
+    }
+    
+    var isOnScreen: Bool{
+        return self.isViewLoaded() && view.window != nil
+    }
 
-//    func settingsButtonPressed(vc: UIViewController) {
-//        let vc = ChapterPickerViewController.create()
-//        vc.delegate = vc
-//        self.navigationController?.pushViewController(vc, animated: true)
-//    }
+    func createAlert(error: String) {
+        let alert = UIAlertController(title: "Sorry", message: error, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction((UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:nil)))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func createWebAlertWithTryAgain(error: String, selector:Selector) {
+        let alert = UIAlertController(title: "Sorry", message: error, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction((UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default, handler:{
+            (alert: UIAlertAction!) in self.performSelector(selector)
+        })))
+     
+
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
 }
 
 public extension UIScreen {
@@ -76,5 +104,90 @@ public extension UIScreen {
         case .iPhone6P:
             return screenLength == 736
         }
+    }
+}
+
+public protocol ViewControllerContainer {
+    
+    var topMostViewController: UIViewController? { get }
+}
+
+extension UIViewController: ViewControllerContainer {
+    
+    public var topMostViewController: UIViewController? {
+        
+        if let presentedView = presentedViewController {
+            
+            return recurseViewController(presentedView)
+        }
+        
+        return childViewControllers.last.map(recurseViewController)
+    }
+}
+
+extension UITabBarController {
+    
+    public override var topMostViewController: UIViewController? {
+        
+        return selectedViewController.map(recurseViewController)
+    }
+}
+
+extension UINavigationController {
+    
+    public override var topMostViewController: UIViewController? {
+        
+        return viewControllers.last.map(recurseViewController)
+    }
+}
+
+extension UIWindow: ViewControllerContainer {
+    
+    public var topMostViewController: UIViewController? {
+        
+        return rootViewController.map(recurseViewController)
+    }
+}
+
+func recurseViewController(viewController: UIViewController) -> UIViewController {
+    
+    return viewController.topMostViewController.map(recurseViewController) ?? viewController
+}
+
+
+
+
+
+
+public extension UIWindow {
+    public var visibleViewController: UIViewController? {
+        return UIWindow.getVisibleViewControllerFrom(self.rootViewController)
+    }
+    
+    public static func getVisibleViewControllerFrom(vc: UIViewController?) -> UIViewController? {
+        if let nc = vc as? UINavigationController {
+            return UIWindow.getVisibleViewControllerFrom(nc.visibleViewController)
+        } else if let tc = vc as? UITabBarController {
+            return UIWindow.getVisibleViewControllerFrom(tc.selectedViewController)
+        } else {
+            if let pvc = vc?.presentedViewController {
+                return UIWindow.getVisibleViewControllerFrom(pvc)
+            } else {
+                return vc
+            }
+        }
+    }
+}
+
+extension UIView {
+    public var parentViewController: UIViewController? {
+        var parentResponder: UIResponder? = self
+        while parentResponder != nil {
+            parentResponder = parentResponder!.nextResponder()
+            if let viewController = parentResponder as? UIViewController {
+                return viewController
+            }
+        }
+        return nil
     }
 }

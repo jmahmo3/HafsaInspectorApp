@@ -101,12 +101,15 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIWindow;
+@class EstablishmentPickerViewController;
 @class UIApplication;
 @class NSObject;
 
 SWIFT_CLASS("_TtC17HafsaInspectorApp11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
+@property (nonatomic, strong) EstablishmentPickerViewController * _Nonnull vc;
+@property (nonatomic) NSInteger errorCount;
 - (BOOL)application:(UIApplication * _Nonnull)application willFinishLaunchingWithOptions:(NSDictionary * _Nullable)launchOptions;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary * _Nullable)launchOptions;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
@@ -114,6 +117,7 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp11AppDelegate")
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
+- (void)getData;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -136,12 +140,12 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp27ChapterPickerViewController")
 + (ChapterPickerViewController * _Nonnull)create;
 - (void)viewDidLoad;
 - (void)setupView;
-- (void)createAlert:(NSString * _Nonnull)error;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
 - (void)textFieldDidBeginEditing:(UITextField * _Nonnull)textField;
 - (IBAction)nextButtonPressed:(id _Nonnull)sender;
 - (void)backButtonPressed;
 - (void)saveData;
+- (void)didGetChapterData;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -157,10 +161,10 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp33EstablishmentPickerViewController")
 + (EstablishmentPickerViewController * _Nonnull)create;
 - (void)viewDidLoad;
 - (void)setupView;
-- (void)createAlert:(NSString * _Nonnull)error;
 - (IBAction)nextButtonPressed:(id _Nonnull)sender;
 - (void)settingsButtonPressed;
 - (void)didChangeChapter;
+- (void)didGetEstablishmentData;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -183,12 +187,14 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp23FormTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSArray;
 
 SWIFT_CLASS("_TtC17HafsaInspectorApp9HIManager")
 @interface HIManager : NSObject
 @property (nonatomic, copy) NSString * _Nonnull userName;
 @property (nonatomic, copy) NSString * _Nonnull currentChapter;
 @property (nonatomic, copy) NSString * _Nonnull currentEstablishment;
+@property (nonatomic, strong) NSArray * _Nonnull data;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull chapterArray;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull establishmentArray;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull supplierArray;
@@ -199,7 +205,7 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp9HIManager")
 
 SWIFT_CLASS("_TtC17HafsaInspectorApp11HITextField")
 @interface HITextField : TextField <UIPickerViewDataSource, UIPickerViewDelegate>
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull data;
+@property (nonatomic, strong) NSArray * _Nonnull data;
 @property (nonatomic, readonly, strong) UIPickerView * _Nonnull picker;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)setup;
@@ -247,7 +253,22 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp21SupplierTableViewCell")
 @end
 
 
+@interface UINavigationController (SWIFT_EXTENSION(HafsaInspectorApp))
+@property (nonatomic, readonly, strong) UIViewController * _Nullable topMostViewController;
+@end
+
+
 @interface UIScreen (SWIFT_EXTENSION(HafsaInspectorApp))
+@end
+
+
+@interface UITabBarController (SWIFT_EXTENSION(HafsaInspectorApp))
+@property (nonatomic, readonly, strong) UIViewController * _Nullable topMostViewController;
+@end
+
+
+@interface UIView (SWIFT_EXTENSION(HafsaInspectorApp))
+@property (nonatomic, readonly, strong) UIViewController * _Nullable parentViewController;
 @end
 
 
@@ -258,9 +279,38 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp21SupplierTableViewCell")
 
 
 @interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
+@property (nonatomic, readonly, strong) UIViewController * _Nullable topMostViewController;
+@end
+
+
+@interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
 - (void)setNavBarWithSettingsIcon:(NSString * _Nonnull)selector;
 - (void)setNavBarWithBackButton;
 - (void)backButtonPressed;
+@property (nonatomic, readonly) BOOL isVisible;
+@property (nonatomic, readonly) BOOL isTopViewController;
+@property (nonatomic, readonly) BOOL isOnScreen;
+- (void)createAlert:(NSString * _Nonnull)error;
+- (void)createWebAlertWithTryAgain:(NSString * _Nonnull)error selector:(SEL _Null_unspecified)selector;
+@end
+
+
+@interface UIWindow (SWIFT_EXTENSION(HafsaInspectorApp))
+@property (nonatomic, readonly, strong) UIViewController * _Nullable topMostViewController;
+@end
+
+
+@interface UIWindow (SWIFT_EXTENSION(HafsaInspectorApp))
+@property (nonatomic, readonly, strong) UIViewController * _Nullable visibleViewController;
++ (UIViewController * _Nullable)getVisibleViewControllerFrom:(UIViewController * _Nullable)vc;
+@end
+
+@class NSData;
+
+SWIFT_CLASS("_TtC17HafsaInspectorApp10WebService")
+@interface WebService : NSObject
+- (NSDictionary<NSString *, id> * _Nullable)parseJSON:(NSData * _Nonnull)data;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #pragma clang diagnostic pop

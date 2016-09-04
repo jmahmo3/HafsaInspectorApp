@@ -10,12 +10,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "NSBundle"
-- "UIImage"
-- "MaterialIcon"
 - !private "=="
-- !private "MaterialView"
 - "String"
+- "MaterialIcon"
+- !private "MaterialView"
 - "StringLiteralType"
+- "UIImage"
 depends-member:
 - !private ["Ps9AnyObject", "URLByAppendingPathComponent"]
 - !private ["Ps9AnyObject", "imageWithRenderingMode"]

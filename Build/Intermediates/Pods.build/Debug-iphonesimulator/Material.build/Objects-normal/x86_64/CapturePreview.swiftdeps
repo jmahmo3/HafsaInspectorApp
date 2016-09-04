@@ -6,19 +6,19 @@ provides-nominal:
 provides-member:
 - ["C8Material14CapturePreview", ""]
 provides-dynamic-lookup:
-- "captureDevicePointOfInterestForPoint"
 - "layerClass"
+- "captureDevicePointOfInterestForPoint"
 - "prepareView"
 - "pointForCaptureDevicePointOfInterest"
 depends-top-level:
 - "MaterialView"
-- !private "AVLayerVideoGravityResizeAspectFill"
 - !private "BooleanLiteralType"
 - "CapturePreview"
 - !private "AVCaptureVideoPreviewLayer"
-- "CGPoint"
 - "AnyClass"
 - !private "MaterialColor"
+- "CGPoint"
+- !private "AVLayerVideoGravityResizeAspectFill"
 depends-member:
 - !private ["CSo26AVCaptureVideoPreviewLayer", "captureDevicePointOfInterestForPoint"]
 - !private ["CSo26AVCaptureVideoPreviewLayer", "pointForCaptureDevicePointOfInterest"]

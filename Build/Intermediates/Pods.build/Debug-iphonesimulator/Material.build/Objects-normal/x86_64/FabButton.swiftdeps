@@ -8,9 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 - "prepareView"
 depends-top-level:
-- "FabButton"
-- !private "MaterialColor"
 - "MaterialButton"
+- !private "MaterialColor"
+- "FabButton"
 depends-member:
 - !private ["Ps9AnyObject", "MaterialColor"]
 - !private ["Ps9AnyObject", "backgroundColor"]

@@ -7,19 +7,19 @@ provides-member:
 provides-dynamic-lookup:
 - "crop"
 depends-top-level:
-- !private "Bool"
-- !private ">"
-- "CGFloat"
-- !private "/"
+- !private "-"
+- !private "CGRectMake"
 - !private "CGSize"
 - "UIImage"
-- !private "*"
+- !private ">"
+- "CGFloat"
+- !private "UIGraphicsEndImageContext"
+- !private "Bool"
+- !private "/"
 - !private "UIGraphicsGetImageFromCurrentImageContext"
 - !private "CGSizeMake"
 - !private "UIGraphicsBeginImageContext"
-- !private "UIGraphicsEndImageContext"
-- !private "-"
-- !private "CGRectMake"
+- !private "*"
 depends-member:
 - !private ["Ps9AnyObject", "CGRectMake"]
 - !private ["Ps9AnyObject", "CGSizeMake"]

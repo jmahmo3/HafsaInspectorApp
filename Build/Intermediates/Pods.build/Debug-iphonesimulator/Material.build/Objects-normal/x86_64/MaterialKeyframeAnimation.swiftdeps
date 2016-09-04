@@ -11,18 +11,18 @@ provides-member:
 - ["V8Material17MaterialAnimation", "path"]
 provides-dynamic-lookup:
 depends-top-level:
-- "=="
+- "UIBezierPath"
 - !private "kCAAnimationRotateAutoReverse"
 - "MaterialAnimationRotationMode"
 - "MaterialAnimationRotationModeToValue"
-- !private "StringLiteralType"
-- "MaterialAnimationRotationModeType"
-- "CAKeyframeAnimation"
+- "String"
 - "CFTimeInterval"
 - "MaterialAnimation"
+- "=="
+- "CAKeyframeAnimation"
+- "MaterialAnimationRotationModeType"
 - !private "kCAAnimationRotateAuto"
-- "UIBezierPath"
-- "String"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "CGPath"]
 - !private ["Ps9AnyObject", "duration"]

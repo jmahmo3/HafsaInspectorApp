@@ -7,12 +7,12 @@ provides-member:
 provides-dynamic-lookup:
 - "clearImage"
 depends-top-level:
-- !private "BooleanLiteralType"
+- !private "CGSizeMake"
 - !private "UIGraphicsGetImageFromCurrentImageContext"
 - "UIImage"
 - !private "UIGraphicsEndImageContext"
-- !private "CGSizeMake"
 - !private "UIGraphicsBeginImageContextWithOptions"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "CGSizeMake"]
 - !private ["Ps9AnyObject", "UIGraphicsBeginImageContextWithOptions"]

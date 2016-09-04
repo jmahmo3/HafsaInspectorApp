@@ -7,8 +7,8 @@ provides-member:
 - ["V8Material22MaterialDataSourceItem", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "CGFloat"
 - "AnyObject"
+- "CGFloat"
 - "MaterialDataSourceItem"
 depends-member:
 - ["V8Material22MaterialDataSourceItem", "AnyObject"]

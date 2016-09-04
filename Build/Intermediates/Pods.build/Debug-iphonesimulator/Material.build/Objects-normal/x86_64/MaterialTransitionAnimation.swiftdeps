@@ -16,25 +16,25 @@ provides-member:
 - ["V8Material17MaterialAnimation", "transition"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "kCATransitionPush"
-- "MaterialAnimationTransitionType"
-- !private "kCATransitionFromLeft"
 - "MaterialAnimationTransitionToValue"
+- "String"
+- "MaterialAnimationTransitionSubType"
+- "=="
+- !private "kCATransitionFromLeft"
+- !private "kCATransitionMoveIn"
+- "MaterialAnimationTransition"
 - "MaterialAnimationTransitionSubTypeToValue"
 - "CFTimeInterval"
-- !private "kCATransitionMoveIn"
-- !private "kCATransitionFromRight"
-- "String"
-- "MaterialAnimationTransition"
-- !private "kCATransitionFade"
-- !private "kCATransitionFromTop"
 - "MaterialAnimation"
-- "MaterialAnimationTransitionSubType"
-- "CATransition"
 - "MaterialAnimationTransitionSubTypeType"
+- !private "kCATransitionPush"
+- "MaterialAnimationTransitionType"
 - !private "kCATransitionReveal"
-- "=="
 - !private "kCATransitionFromBottom"
+- !private "kCATransitionFade"
+- "CATransition"
+- !private "kCATransitionFromRight"
+- !private "kCATransitionFromTop"
 depends-member:
 - !private ["Ps9AnyObject", "duration"]
 - !private ["Ps9AnyObject", "init"]

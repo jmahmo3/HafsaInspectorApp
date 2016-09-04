@@ -7,16 +7,16 @@ provides-member:
 provides-dynamic-lookup:
 - "contentsOfURL"
 depends-top-level:
-- !private "NSData"
-- "NSError"
-- "NSURL"
-- !private "NSURLRequest"
 - "UIImage"
-- !private "dispatch_get_main_queue"
-- "Void"
 - !private "dispatch_async"
+- !private "dispatch_get_main_queue"
+- !private "NSURLRequest"
+- "Void"
 - !private "NSURLSession"
+- !private "NSData"
 - !private "NSURLResponse"
+- "NSURL"
+- "NSError"
 depends-member:
 - !private ["Ps9AnyObject", "NSURLRequest"]
 - !private ["Ps9AnyObject", "NSURLSession"]

@@ -8,12 +8,12 @@ provides-member:
 - ["O8Material17MaterialEdgeInset", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UIEdgeInsetsZero"
+- "UIEdgeInsets"
+- !private "UIEdgeInsetsMake"
+- "=="
 - "MaterialEdgeInsetToValue"
 - "MaterialEdgeInset"
-- "UIEdgeInsets"
-- "=="
-- !private "UIEdgeInsetsMake"
+- !private "UIEdgeInsetsZero"
 depends-member:
 - !private ["Ps22BidirectionalIndexType", "hashValue"]
 - !private ["Ps21BitwiseOperationsType", "hashValue"]
