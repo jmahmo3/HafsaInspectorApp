@@ -9,13 +9,13 @@ provides-member:
 - ["VV8Material12MaterialIcon2cm", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "NSBundle"
-- !private "=="
-- "String"
-- "MaterialIcon"
 - !private "MaterialView"
-- "StringLiteralType"
 - "UIImage"
+- "String"
+- !private "=="
+- "MaterialIcon"
+- "NSBundle"
+- "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "URLByAppendingPathComponent"]
 - !private ["Ps9AnyObject", "imageWithRenderingMode"]

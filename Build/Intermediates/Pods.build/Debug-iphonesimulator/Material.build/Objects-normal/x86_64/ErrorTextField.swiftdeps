@@ -9,12 +9,12 @@ provides-dynamic-lookup:
 - "prepareView"
 - "revealError"
 depends-top-level:
-- !private "MaterialColor"
-- "BooleanLiteralType"
-- "TextField"
-- !private "!"
 - "Bool"
 - "ErrorTextField"
+- "TextField"
+- !private "MaterialColor"
+- !private "!"
+- "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "MaterialColor"]
 - !private ["Ps9AnyObject", "detailColor"]

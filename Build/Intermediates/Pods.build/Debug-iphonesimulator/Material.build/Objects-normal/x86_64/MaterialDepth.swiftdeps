@@ -9,14 +9,14 @@ provides-member:
 - ["O8Material13MaterialDepth", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "CGSize"
-- "Float"
-- "MaterialDepth"
-- "=="
 - "CGFloat"
 - !private "CGSizeMake"
+- "CGSize"
 - "MaterialDepthToValue"
+- "=="
 - "MaterialDepthType"
+- "Float"
+- "MaterialDepth"
 depends-member:
 - !private ["Ps22BidirectionalIndexType", "hashValue"]
 - !private ["Ps21BitwiseOperationsType", "hashValue"]

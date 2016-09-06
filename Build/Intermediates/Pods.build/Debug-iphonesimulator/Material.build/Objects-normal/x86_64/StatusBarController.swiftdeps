@@ -8,20 +8,20 @@ provides-member:
 - ["C8Material19StatusBarController", ""]
 - ["CSo16UIViewController", "statusBarController"]
 provides-dynamic-lookup:
+- "layoutSubviews"
 - "prepareView"
 - "statusBarController"
 - "statusBarView"
-- "layoutSubviews"
 depends-top-level:
-- !private "&&"
 - !private "=="
-- !private "MaterialDevice"
-- !private "MaterialColor"
-- "StatusBarController"
+- "RootController"
 - "UIViewController"
+- !private "MaterialColor"
 - "MaterialView"
 - !private "!="
-- "RootController"
+- !private "MaterialDevice"
+- "StatusBarController"
+- !private "&&"
 depends-member:
 - !private ["Ps9AnyObject", "MaterialColor"]
 - !private ["Ps9AnyObject", "MaterialDevice"]

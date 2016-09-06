@@ -7,20 +7,20 @@ provides-member:
 - ["C17HafsaInspectorApp17NameTableViewCell", ""]
 provides-dynamic-lookup:
 - "nameLabel"
-- "establishmentLabel"
-- "configureNameCell"
 - "chapterLabel"
 - "datelabel"
+- "configureNameCell"
+- "establishmentLabel"
 depends-top-level:
+- !private "NSDateFormatter"
+- !private "StringLiteralType"
+- "UITableViewCell"
 - !private "UIFont"
 - !private "NSDate"
-- !private "NSDateFormatter"
-- "UITableViewCell"
-- "HIManager"
-- !private "UIColor"
-- !private "StringLiteralType"
-- "NameTableViewCell"
 - "UILabel"
+- !private "UIColor"
+- "HIManager"
+- "NameTableViewCell"
 depends-member:
 - ["Ps9AnyObject", "HIManager"]
 - ["Ps9AnyObject", "HImanager"]

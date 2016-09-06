@@ -8,10 +8,10 @@ provides-member:
 - ["O8Material15MaterialSpacing", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "CGFloat"
 - "MaterialSpacingToValue"
 - "=="
 - "MaterialSpacing"
-- "CGFloat"
 depends-member:
 - !private ["Ps22BidirectionalIndexType", "hashValue"]
 - !private ["Ps21BitwiseOperationsType", "hashValue"]

@@ -15,14 +15,14 @@ depends-top-level:
 - !private "kCAAnimationRotateAutoReverse"
 - "MaterialAnimationRotationMode"
 - "MaterialAnimationRotationModeToValue"
-- "String"
-- "CFTimeInterval"
-- "MaterialAnimation"
-- "=="
-- "CAKeyframeAnimation"
-- "MaterialAnimationRotationModeType"
-- !private "kCAAnimationRotateAuto"
 - !private "StringLiteralType"
+- "String"
+- "CAKeyframeAnimation"
+- "CFTimeInterval"
+- !private "kCAAnimationRotateAuto"
+- "MaterialAnimation"
+- "MaterialAnimationRotationModeType"
+- "=="
 depends-member:
 - !private ["Ps9AnyObject", "CGPath"]
 - !private ["Ps9AnyObject", "duration"]

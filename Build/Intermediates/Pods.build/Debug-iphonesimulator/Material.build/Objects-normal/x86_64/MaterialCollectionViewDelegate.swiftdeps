@@ -7,9 +7,9 @@ provides-member:
 - ["P8Material30MaterialCollectionViewDelegate", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "MaterialDelegate"
-- "UICollectionViewDelegate"
 - "MaterialCollectionViewDelegate"
+- "UICollectionViewDelegate"
+- "MaterialDelegate"
 depends-member:
 - ["P8Material16MaterialDelegate", ""]
 - ["PSo24UICollectionViewDelegate", ""]

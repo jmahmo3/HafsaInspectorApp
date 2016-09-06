@@ -8,10 +8,10 @@ provides-member:
 - ["O8Material14MaterialBorder", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "MaterialBorderToValue"
 - "=="
-- "MaterialBorder"
+- "MaterialBorderToValue"
 - "CGFloat"
+- "MaterialBorder"
 depends-member:
 - !private ["Ps22BidirectionalIndexType", "hashValue"]
 - !private ["Ps21BitwiseOperationsType", "hashValue"]

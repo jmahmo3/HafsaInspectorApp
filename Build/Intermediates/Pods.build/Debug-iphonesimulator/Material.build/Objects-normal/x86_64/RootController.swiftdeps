@@ -6,30 +6,30 @@ provides-nominal:
 provides-member:
 - ["C8Material14RootController", ""]
 provides-dynamic-lookup:
-- "prepareView"
-- "statusBarStyle"
-- "userInteractionEnabled"
-- "prepareRootViewController"
 - "rootViewController"
-- "viewWillLayoutSubviews"
+- "statusBarStyle"
 - "prepareViewControllerWithinContainer"
 - "transitionFromRootViewController"
+- "userInteractionEnabled"
 - "layoutSubviews"
+- "prepareView"
+- "viewWillLayoutSubviews"
+- "prepareRootViewController"
 depends-top-level:
+- "NSCoder"
+- "RootController"
+- "UIViewController"
 - "UIStatusBarStyle"
 - "BooleanLiteralType"
-- "NSCoder"
 - !private "MaterialDevice"
-- "RootController"
 - "UIView"
-- "Void"
 - "NSTimeInterval"
 - "Bool"
-- "Array"
-- "String"
 - "NSBundle"
 - "UIViewAnimationOptions"
-- "UIViewController"
+- "Array"
+- "Void"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "MaterialDevice"]
 - !private ["Ps9AnyObject", "addChildViewController"]

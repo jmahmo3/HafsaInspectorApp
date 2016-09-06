@@ -8,14 +8,14 @@ provides-dynamic-lookup:
 - "imageWithColor"
 depends-top-level:
 - "UIImage"
-- !private "UIGraphicsGetImageFromCurrentImageContext"
 - "UIColor"
-- !private "UIGraphicsBeginImageContextWithOptions"
-- !private "UIGraphicsEndImageContext"
-- !private "BooleanLiteralType"
-- !private "UIRectFill"
 - !private "CGRectMake"
+- !private "BooleanLiteralType"
 - "CGSize"
+- !private "UIGraphicsEndImageContext"
+- !private "UIGraphicsBeginImageContextWithOptions"
+- !private "UIRectFill"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
 depends-member:
 - !private ["Ps9AnyObject", "CGRectMake"]
 - !private ["Ps9AnyObject", "UIGraphicsBeginImageContextWithOptions"]

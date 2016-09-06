@@ -7,21 +7,21 @@ provides-member:
 provides-dynamic-lookup:
 - "tintWithColor"
 depends-top-level:
-- !private "-"
+- "UIImage"
 - "UIColor"
 - !private "BooleanLiteralType"
 - !private "CGContextTranslateCTM"
-- !private "MaterialDevice"
-- !private "CGContextFillRect"
-- !private "UIGraphicsBeginImageContextWithOptions"
-- "UIImage"
 - !private "UIGraphicsGetCurrentContext"
+- !private "MaterialDevice"
 - !private "UIGraphicsEndImageContext"
 - !private "CGRectMake"
-- !private "CGContextClipToMask"
-- !private "UIGraphicsGetImageFromCurrentImageContext"
-- !private "CGContextScaleCTM"
 - !private "CGContextSetBlendMode"
+- !private "CGContextClipToMask"
+- !private "UIGraphicsBeginImageContextWithOptions"
+- !private "CGContextFillRect"
+- !private "CGContextScaleCTM"
+- !private "-"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
 depends-member:
 - !private ["Ps9AnyObject", "CGContextClipToMask"]
 - !private ["Ps9AnyObject", "CGContextFillRect"]

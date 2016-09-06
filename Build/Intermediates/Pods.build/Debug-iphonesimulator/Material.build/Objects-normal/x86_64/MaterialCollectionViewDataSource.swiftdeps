@@ -7,9 +7,9 @@ provides-member:
 - ["P8Material32MaterialCollectionViewDataSource", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Array"
 - "MaterialCollectionViewDataSource"
 - "UICollectionViewDataSource"
+- "Array"
 - "MaterialDataSourceItem"
 depends-member:
 - ["P8Material32MaterialCollectionViewDataSource", "Array"]

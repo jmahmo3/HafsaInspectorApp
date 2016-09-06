@@ -9,12 +9,12 @@ provides-dynamic-lookup:
 - "prepareView"
 depends-top-level:
 - "CGRect"
-- !private "StringLiteralType"
 - "Array"
+- "UIControl"
 - "NSCoder"
 - "ControlView"
 - "BarView"
-- "UIControl"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "depth"]
 - ["Ps9AnyObject", "init"]

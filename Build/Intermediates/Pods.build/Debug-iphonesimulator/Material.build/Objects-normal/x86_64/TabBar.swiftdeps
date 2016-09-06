@@ -9,29 +9,29 @@ provides-member:
 - ["O8Material19TabBarLineAlignment", ""]
 - ["C8Material6TabBar", ""]
 provides-dynamic-lookup:
-- "layoutSubviews"
-- "handleButton"
 - "line"
 - "buttons"
-- "willRenderView"
+- "layoutSubviews"
+- "handleButton"
 - "prepareView"
+- "willRenderView"
 depends-top-level:
-- "=="
-- !private "UIEdgeInsetsZero"
-- "Array"
 - !private "/"
-- "TabBar"
+- "=="
+- !private "-"
+- !private "Int"
+- !private "MaterialDevice"
+- !private "UIEdgeInsetsZero"
+- !private "<"
 - !private "MaterialColor"
 - "TabBarLineAlignment"
 - "Bool"
-- !private "<"
-- !private "MaterialDevice"
-- !private "Int"
+- "UIButton"
+- "Array"
+- "UIView"
+- "TabBar"
 - "MaterialView"
 - !private "CGRectMake"
-- !private "-"
-- "UIView"
-- "UIButton"
 depends-member:
 - !private ["Ps9AnyObject", "CGRectMake"]
 - !private ["Ps9AnyObject", "MaterialColor"]

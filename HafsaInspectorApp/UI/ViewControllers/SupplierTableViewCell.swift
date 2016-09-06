@@ -53,7 +53,9 @@ class SupplierTableViewCell: UITableViewCell {
         alert.addTextFieldWithConfigurationHandler(configurationTextField)
         alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler:nil))
         alert.addAction(UIAlertAction(title: "Add", style: .Default, handler:{ (UIAlertAction) in
-            self.updatePounds(Double(self.tField.text!)!)
+            if !(self.tField.text?.isEmpty)! {
+                self.updatePounds(Double(self.tField.text!)!)
+            }
         }))
         
         let vc = self.parentViewController

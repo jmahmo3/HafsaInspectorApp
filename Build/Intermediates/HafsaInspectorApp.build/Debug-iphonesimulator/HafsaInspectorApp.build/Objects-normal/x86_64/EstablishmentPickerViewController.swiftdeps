@@ -6,37 +6,37 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp33EstablishmentPickerViewController", ""]
 provides-dynamic-lookup:
-- "nextButtonPressed"
-- "setupView"
-- "nextButton"
-- "settingsButtonPressed"
-- "nameLabel"
-- "didChangeChapter"
-- "viewDidLoad"
 - "didGetEstablishmentData"
+- "viewDidLoad"
+- "setupView"
 - "establishmentTextField"
-- "create"
 - "establishmentLabel"
+- "didChangeChapter"
+- "settingsButtonPressed"
+- "nextButton"
+- "nameLabel"
+- "create"
+- "nextButtonPressed"
 depends-top-level:
-- !private "!="
-- !private "UIFont"
-- "HIManager"
-- "UIButton"
-- "AnyObject"
-- !private "AppDelegate"
-- !private "StringLiteralType"
 - "EstablishmentPickerViewController"
-- "HITextField"
 - "UIViewController"
+- !private "ChapterPickerViewController"
+- !private "UIColor"
+- "UILabel"
+- "UITextFieldDelegate"
+- !private "StringLiteralType"
 - "ChapterPickerDelegate"
 - !private "FormTableViewController"
-- !private "UIColor"
-- "UITextFieldDelegate"
-- "UILabel"
+- "AnyObject"
 - !private "UIStoryboard"
-- !private "ChapterPickerViewController"
+- !private "AppDelegate"
+- "HITextField"
+- !private "!="
 - !private "NSBundle"
+- "HIManager"
+- "UIButton"
 - !private "BooleanLiteralType"
+- !private "UIFont"
 depends-member:
 - !private ["Ps9AnyObject", "AppDelegate"]
 - !private ["Ps9AnyObject", "CGColor"]
@@ -816,6 +816,8 @@ depends-member:
 - !private ["CSo8UIButton", "layer"]
 - !private ["CSo8UIButton", "tintColor"]
 - !private ["CSo8UIButton", "titleLabel"]
+- !private ["PSo26UICollectionViewDataSource", "create"]
+- !private ["PSo24UICollectionViewDelegate", "create"]
 - !private ["CSo7UIColor", "CGColor"]
 - !private ["CSo7UIColor", "blackColor"]
 - !private ["CSo7UIColor", "darkGrayColor"]
@@ -1287,6 +1289,8 @@ depends-nominal:
 - "PSo21UIAppearanceContainer"
 - !private "PSo21UIApplicationDelegate"
 - !private "CSo8UIButton"
+- !private "PSo26UICollectionViewDataSource"
+- !private "PSo24UICollectionViewDelegate"
 - !private "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "CSo9UIControl"

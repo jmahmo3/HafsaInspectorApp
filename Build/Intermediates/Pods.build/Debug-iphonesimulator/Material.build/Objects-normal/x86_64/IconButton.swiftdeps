@@ -8,8 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 - "prepareView"
 depends-top-level:
-- "IconButton"
 - "MaterialButton"
+- "IconButton"
 depends-member:
 - !private ["Ps9AnyObject", "contentEdgeInsetsPreset"]
 - !private ["Ps9AnyObject", "cornerRadiusPreset"]

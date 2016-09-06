@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp9HIManager", ""]
 provides-dynamic-lookup:
-- "currentEstablishment"
-- "userName"
-- "chapterArray"
+- "supplierArray"
 - "currentChapter"
 - "data"
 - "sharedClient"
+- "userName"
+- "chapterArray"
 - "establishmentArray"
-- "supplierArray"
+- "currentEstablishment"
 depends-top-level:
+- "NSObject"
 - "String"
+- "Array"
+- "!="
+- "NSUserDefaults"
 - "HIManager"
 - "StringLiteralType"
-- "!="
-- "NSObject"
-- "Array"
-- "NSUserDefaults"
 depends-member:
 - ["Ps9AnyObject", "Element"]
 - ["Ps9AnyObject", "HIManager"]

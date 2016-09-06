@@ -9,25 +9,25 @@ provides-member:
 - ["P8Material16MenuViewDelegate", ""]
 - ["C8Material8MenuView", ""]
 provides-dynamic-lookup:
+- "close"
 - "prepareView"
-- "hitTest"
 - "open"
 - "menuViewDidTapOutside"
-- "close"
+- "hitTest"
 depends-top-level:
-- "MaterialPulseView"
-- "UIEvent"
-- !private "CGRectContainsPoint"
-- "MenuViewDelegate"
-- !private "BooleanLiteralType"
-- "CGPoint"
-- "MenuView"
-- !private "!"
-- !private "=="
 - "UIView"
 - "MaterialDelegate"
-- "Void"
+- "MaterialPulseView"
+- "MenuView"
+- !private "BooleanLiteralType"
+- "MenuViewDelegate"
+- "UIEvent"
+- !private "!"
+- !private "=="
+- !private "CGRectContainsPoint"
 - "Menu"
+- "Void"
+- "CGPoint"
 depends-member:
 - !private ["Ps9AnyObject", "CGRectContainsPoint"]
 - !private ["Ps9AnyObject", "Menu"]
