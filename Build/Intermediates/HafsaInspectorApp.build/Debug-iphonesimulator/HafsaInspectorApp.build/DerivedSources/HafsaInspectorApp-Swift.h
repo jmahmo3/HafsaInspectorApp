@@ -100,6 +100,16 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class UIImageView;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC17HafsaInspectorApp26AddImageCollectionViewCell")
+@interface AddImageCollectionViewCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified takenImage;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
 @class EstablishmentPickerViewController;
 @class UIApplication;
@@ -124,10 +134,8 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp11AppDelegate")
 @class UIPickerView;
 @class UITextField;
 @class UIButton;
-@class UIImageView;
 @class HITextField;
 @class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC17HafsaInspectorApp27ChapterPickerViewController")
 @interface ChapterPickerViewController : UIViewController <UITextFieldDelegate>
@@ -180,21 +188,11 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp23FormTableViewController")
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)tableView:(UITableView * _Nonnull)tableView willDisplayCell:(UITableViewCell * _Nonnull)cell forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UICollectionView;
-@class UICollectionViewCell;
-
-@interface FormTableViewController (SWIFT_EXTENSION(HafsaInspectorApp)) <UICollectionViewDelegate, UICollectionViewDataSource>
-- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
-- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
 @class NSArray;
@@ -229,11 +227,20 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp11HITextField")
 - (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 @end
 
+@class UICollectionView;
+@class UICollectionViewLayout;
 
 SWIFT_CLASS("_TtC17HafsaInspectorApp18ImageTableViewCell")
-@interface ImageTableViewCell : UITableViewCell
+@interface ImageTableViewCell : UITableViewCell <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified addImageButton;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
+@property (nonatomic, strong) NSArray * _Nonnull imagesArr;
+- (void)layoutSubviews;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (IBAction)addImageButtonPressed:(id _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

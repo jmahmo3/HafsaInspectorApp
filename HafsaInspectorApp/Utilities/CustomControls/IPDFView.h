@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol SaveImageDelegate <NSObject>
+
+- (void)imageSaved:(UIImage *)image;
+
+@end
+
 @interface IPDFView : UIViewController
 - (IPDFView *)create;
+@property (nonatomic, weak) id <SaveImageDelegate> delegate;
 @end
 

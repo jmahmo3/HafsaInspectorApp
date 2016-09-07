@@ -9,8 +9,11 @@
 #import "IPDFView.h"
 
 #import "IPDFCameraViewController.h"
+#import "HafsaInspectorApp-Swift.h"
 
-@interface IPDFView ()
+@import MBProgressHUD;
+
+@interface IPDFView () <EditedImageDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet IPDFCameraViewController *cameraViewController;
@@ -36,7 +39,8 @@
 {
     [super viewDidLoad];
     
-    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+//    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    [self setNavBarWithBackButton];
     
     [self.cameraViewController setupCameraView];
     [self.cameraViewController setEnableBorderDetection:YES];
@@ -136,43 +140,48 @@
 
 - (IBAction)captureButton:(id)sender
 {
-    __weak typeof(self) weakSelf = self;
     
     [self.cameraViewController captureImageWithCompletionHander:^(NSString *imageFilePath)
     {
+        UIImage *capturedImage = [UIImage imageWithContentsOfFile:imageFilePath];
+        EditImageViewController *vc = [EditImageViewController create:YES];
+        vc.image = capturedImage;
+        vc.delegate = self;
+        [self presentViewController:vc animated:YES completion:nil];
         
-        UIImageView *captureImageView = [[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:imageFilePath]];
-        captureImageView.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.7];
-        captureImageView.alpha = 1.0;
-        captureImageView.contentMode = UIViewContentModeScaleAspectFit;
-        captureImageView.userInteractionEnabled = YES;
-        
-//        CapturedImageViewController *vc = [CapturedImageViewController create:imageFilePath];
-//        vc.capturedImageView = captureImageView;
-//        [self.navigationController pushViewController:vc animated:YES];
-        
-      
-//
-        UITapGestureRecognizer *dismissTap = [[UITapGestureRecognizer alloc] initWithTarget:weakSelf action:@selector(dismissPreview:)];
-        [captureImageView addGestureRecognizer:dismissTap];
-        
-        [UIView animateWithDuration:0.7 delay:0.0 usingSpringWithDamping:0.8 initialSpringVelocity:0.7 options:UIViewAnimationOptionAllowUserInteraction animations:^
-        {
-            captureImageView.frame = weakSelf.view.bounds;
-        } completion:nil];
     }];
 }
 
-- (void)dismissPreview:(UITapGestureRecognizer *)dismissTap
-{
-    [UIView animateWithDuration:0.7 delay:0.0 usingSpringWithDamping:0.8 initialSpringVelocity:1.0 options:UIViewAnimationOptionAllowUserInteraction animations:^
-    {
-        dismissTap.view.frame = CGRectOffset(self.view.bounds, 0, self.view.bounds.size.height);
-    }
-    completion:^(BOOL finished)
-    {
-        [dismissTap.view removeFromSuperview];
-    }];
+- (void)showSavedPopup:(BOOL)saved {
+    __weak typeof(self) weakSelf = self;
+
+    MBProgressHUD *hud = [[MBProgressHUD alloc]init];
+    hud.mode = MBProgressHUDModeText;
+    hud.label.text = saved ?  @"Saved" : @"Dismissed";
+    hud.tintColor = [UIColor blackColor];
+    hud.center = self.view.center;
+    [hud removeFromSuperViewOnHide];
+    [weakSelf.view addSubview:hud];
+    [hud showAnimated:YES];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [hud hideAnimated:YES];
+    });
+
+}
+
+- (void)didSaveImage:(UIImage *)image {
+    [self.delegate imageSaved:image];
+    [self showSavedPopup:YES];
+}
+
+- (void)didDiscardImage {
+    [self showSavedPopup:NO];
+}
+
+- (void)backButtonPressed {
+    self.cameraViewController.enableTorch = NO;
+    [self.navigationController popViewControllerAnimated:YES];
+
 }
 
 @end

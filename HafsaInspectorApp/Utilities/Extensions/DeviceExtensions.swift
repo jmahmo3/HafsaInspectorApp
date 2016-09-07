@@ -37,7 +37,6 @@ public extension UIViewController {
         let button = UIBarButtonItem(image: settings, style: .Plain, target: self, action:#selector(backButtonPressed))
         button.tintColor = UIColor.blackColor()
         self.navigationItem.leftBarButtonItem = button
-
     }
     
     func backButtonPressed() {
