@@ -21,6 +21,8 @@ class SupplierTableViewCell: UITableViewCell {
 
 
     func configureSupplierCell(index: Int) {
+        self.selectionStyle = UITableViewCellSelectionStyle.None
+
         supplierNameLabel.text = HImanager.supplierArray[index]
         poundLabel.text = "\(previousPounds) lbs"
         self.backgroundColor = UIColor.clearColor()

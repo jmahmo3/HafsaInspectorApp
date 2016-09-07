@@ -18,7 +18,8 @@ class NameTableViewCell: UITableViewCell {
     private let HImanager = HIManager.sharedClient()
 
     func configureNameCell() {
-        
+        self.selectionStyle = UITableViewCellSelectionStyle.None
+
         self.backgroundColor = UIColor.clearColor()
         
         nameLabel.text = HImanager.userName

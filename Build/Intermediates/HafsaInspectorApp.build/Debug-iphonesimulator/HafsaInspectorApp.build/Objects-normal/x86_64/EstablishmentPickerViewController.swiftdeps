@@ -6,37 +6,37 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp33EstablishmentPickerViewController", ""]
 provides-dynamic-lookup:
-- "didGetEstablishmentData"
-- "viewDidLoad"
-- "setupView"
-- "establishmentTextField"
-- "establishmentLabel"
-- "didChangeChapter"
 - "settingsButtonPressed"
-- "nextButton"
 - "nameLabel"
-- "create"
+- "didGetEstablishmentData"
+- "setupView"
 - "nextButtonPressed"
+- "didChangeChapter"
+- "create"
+- "establishmentLabel"
+- "viewDidLoad"
+- "nextButton"
+- "establishmentTextField"
 depends-top-level:
-- "EstablishmentPickerViewController"
-- "UIViewController"
-- !private "ChapterPickerViewController"
-- !private "UIColor"
 - "UILabel"
+- !private "!="
 - "UITextFieldDelegate"
-- !private "StringLiteralType"
+- !private "NSBundle"
+- !private "UIColor"
+- "UIViewController"
 - "ChapterPickerDelegate"
 - !private "FormTableViewController"
-- "AnyObject"
 - !private "UIStoryboard"
+- !private "StringLiteralType"
 - !private "AppDelegate"
-- "HITextField"
-- !private "!="
-- !private "NSBundle"
+- !private "ChapterPickerViewController"
 - "HIManager"
-- "UIButton"
-- !private "BooleanLiteralType"
+- "AnyObject"
 - !private "UIFont"
+- "EstablishmentPickerViewController"
+- "HITextField"
+- !private "BooleanLiteralType"
+- "UIButton"
 depends-member:
 - !private ["Ps9AnyObject", "AppDelegate"]
 - !private ["Ps9AnyObject", "CGColor"]
@@ -816,8 +816,6 @@ depends-member:
 - !private ["CSo8UIButton", "layer"]
 - !private ["CSo8UIButton", "tintColor"]
 - !private ["CSo8UIButton", "titleLabel"]
-- !private ["PSo26UICollectionViewDataSource", "create"]
-- !private ["PSo24UICollectionViewDelegate", "create"]
 - !private ["CSo7UIColor", "CGColor"]
 - !private ["CSo7UIColor", "blackColor"]
 - !private ["CSo7UIColor", "darkGrayColor"]
@@ -1289,8 +1287,6 @@ depends-nominal:
 - "PSo21UIAppearanceContainer"
 - !private "PSo21UIApplicationDelegate"
 - !private "CSo8UIButton"
-- !private "PSo26UICollectionViewDataSource"
-- !private "PSo24UICollectionViewDelegate"
 - !private "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "CSo9UIControl"

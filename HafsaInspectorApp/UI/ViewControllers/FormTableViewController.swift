@@ -26,7 +26,7 @@ class FormTableViewController: UITableViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.HIBackground
         self.setNavBarWithBackButton()
-
+        
     }
 
     // MARK: - Table view data source
@@ -60,36 +60,10 @@ class FormTableViewController: UITableViewController {
         }
     }
     
-    override func tableView(tableView: UITableView,
-                            willDisplayCell cell: UITableViewCell,
-                                            forRowAtIndexPath indexPath: NSIndexPath) {
-        
-        guard let tableViewCell = cell as? ImageTableViewCell else { return }
-        
-        tableViewCell.setCollectionViewDataSourceDelegate(self, forRow: indexPath.row)
-    }
-    
     override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
-    }
-}
-
-extension FormTableViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2    }
-    
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionViewCell", forIndexPath: indexPath)
-        cell.contentView.backgroundColor = UIColor.cyanColor()
-        //cell.backgroundColor = model[collectionView.tag][indexPath.item]
-        
-        return cell
-    }
-    
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print("Collection view at row \(collectionView.tag) selected index path \(indexPath)")
     }
 }

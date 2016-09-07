@@ -19,6 +19,8 @@
 		9C718ED01D7A81D0009F9D79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C718ECF1D7A81D0009F9D79 /* Assets.xcassets */; };
 		9C718ED31D7A82D3009F9D79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C718ED21D7A82D3009F9D79 /* LaunchScreen.storyboard */; };
 		9C718ED71D7A8C2B009F9D79 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C718ED61D7A8C2B009F9D79 /* WebService.swift */; };
+		9CA9E4111D7F939B00886963 /* AddImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9E4101D7F939B00886963 /* AddImageCollectionViewCell.swift */; };
+		9CA9E4131D7FB54C00886963 /* EditImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9E4121D7FB54C00886963 /* EditImageViewController.swift */; };
 		B328CE981D78F44F007075B9 /* IPDFCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B328CE951D78F44F007075B9 /* IPDFCameraViewController.m */; };
 		B328CE991D78F44F007075B9 /* IPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = B328CE971D78F44F007075B9 /* IPDFView.m */; };
 		B328CE9B1D7BB350007075B9 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328CE9A1D7BB350007075B9 /* ImageTableViewCell.swift */; };
@@ -40,6 +42,8 @@
 		9C718ECF1D7A81D0009F9D79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C718ED21D7A82D3009F9D79 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C718ED61D7A8C2B009F9D79 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebService.swift; path = HafsaInspectorApp/Utilities/WebService.swift; sourceTree = SOURCE_ROOT; };
+		9CA9E4101D7F939B00886963 /* AddImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		9CA9E4121D7FB54C00886963 /* EditImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditImageViewController.swift; sourceTree = "<group>"; };
 		B328CE931D78F44B007075B9 /* HafsaInspectorApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HafsaInspectorApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		B328CE941D78F44F007075B9 /* IPDFCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDFCameraViewController.h; sourceTree = "<group>"; };
 		B328CE951D78F44F007075B9 /* IPDFCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPDFCameraViewController.m; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 				9C718EC51D7A8167009F9D79 /* NameTableViewCell.swift */,
 				9C718EC61D7A8167009F9D79 /* SupplierTableViewCell.swift */,
 				B328CE9A1D7BB350007075B9 /* ImageTableViewCell.swift */,
+				9CA9E4101D7F939B00886963 /* AddImageCollectionViewCell.swift */,
+				9CA9E4121D7FB54C00886963 /* EditImageViewController.swift */,
 			);
 			name = FormCells;
 			sourceTree = "<group>";
@@ -243,7 +249,7 @@
 				TargetAttributes = {
 					B367E1B41D73F8E6008078DF = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 43DLT4XN43;
+						DevelopmentTeam = FKZ3F49442;
 					};
 				};
 			};
@@ -348,11 +354,13 @@
 			files = (
 				9C718EC11D7A8140009F9D79 /* ChapterPickerViewController.swift in Sources */,
 				9C718EC31D7A8140009F9D79 /* FormTableViewController.swift in Sources */,
+				9CA9E4111D7F939B00886963 /* AddImageCollectionViewCell.swift in Sources */,
 				B328CE991D78F44F007075B9 /* IPDFView.m in Sources */,
 				9C718EC21D7A8140009F9D79 /* EstablishmentPickerViewController.swift in Sources */,
 				9C718ECC1D7A819D009F9D79 /* HIManager.swift in Sources */,
 				B367E1B91D73F8E6008078DF /* AppDelegate.swift in Sources */,
 				9C718ED71D7A8C2B009F9D79 /* WebService.swift in Sources */,
+				9CA9E4131D7FB54C00886963 /* EditImageViewController.swift in Sources */,
 				9C718ECA1D7A8184009F9D79 /* DeviceExtensions.swift in Sources */,
 				9C718ECE1D7A81BA009F9D79 /* HITextField.swift in Sources */,
 				9C718EC71D7A8167009F9D79 /* NameTableViewCell.swift in Sources */,
