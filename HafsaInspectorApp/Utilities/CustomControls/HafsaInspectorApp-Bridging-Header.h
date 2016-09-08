@@ -3,3 +3,4 @@
 //
 
 #import "IPDFView.h"
+#import "MMCameraPickerController.h"

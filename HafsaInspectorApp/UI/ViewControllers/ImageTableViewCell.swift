@@ -52,9 +52,13 @@ class ImageTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectio
 //MARK: Actions
     
     @IBAction func addImageButtonPressed(sender: AnyObject) {
-        let vc = IPDFView().create()
-        vc.delegate = self
+//        let vc = IPDFView().create()
+//        vc.delegate = self
+//        parentViewController?.navigationController?.pushViewController(vc, animated: true)
+        let vc = MMCameraPickerController().create()
+//        vc.delegate = self
         parentViewController?.navigationController?.pushViewController(vc, animated: true)
+
     }
     
     
