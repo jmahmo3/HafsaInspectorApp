@@ -1,0 +1,242 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MaterialGravity"
+- "MaterialGravityToValue"
+provides-nominal:
+- "O17HafsaInspectorApp15MaterialGravity"
+provides-member:
+- ["O17HafsaInspectorApp15MaterialGravity", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "kCAGravityLeft"
+- "MaterialGravity"
+- !private "kCAGravityCenter"
+- !private "kCAGravityBottomRight"
+- "String"
+- "Int"
+- !private "kCAGravityResize"
+- !private "kCAGravityTopLeft"
+- "MaterialGravityToValue"
+- !private "kCAGravityResizeAspect"
+- !private "kCAGravityTop"
+- !private "kCAGravityRight"
+- !private "kCAGravityResizeAspectFill"
+- !private "kCAGravityTopRight"
+- !private "~="
+- !private "kCAGravityBottom"
+- !private "kCAGravityBottomLeft"
+- "=="
+depends-member:
+- !private ["Ps17BitwiseOperations", "Stride"]
+- !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "Stride"]
+- !private ["Ps7CVarArg", "hashValue"]
+- !private ["Vs11ClosedRange", "deinit"]
+- !private ["Ps10Comparable", "Stride"]
+- !private ["Ps10Comparable", "hashValue"]
+- !private ["Vs20CountableClosedRange", "deinit"]
+- !private ["Vs14CountableRange", "deinit"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
+- !private ["Ps17CustomReflectable", "Stride"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "hashValue"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- ["Ps9Equatable", "Bottom"]
+- ["Ps9Equatable", "BottomLeft"]
+- ["Ps9Equatable", "BottomRight"]
+- ["Ps9Equatable", "Center"]
+- ["Ps9Equatable", "Left"]
+- ["Ps9Equatable", "RawValue"]
+- ["Ps9Equatable", "Resize"]
+- ["Ps9Equatable", "ResizeAspect"]
+- ["Ps9Equatable", "ResizeAspectFill"]
+- ["Ps9Equatable", "Right"]
+- !private ["Ps9Equatable", "Stride"]
+- ["Ps9Equatable", "Top"]
+- ["Ps9Equatable", "TopLeft"]
+- ["Ps9Equatable", "TopRight"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_toAnyHashable"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "rawValue"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- ["Ps8Hashable", "Bottom"]
+- ["Ps8Hashable", "BottomLeft"]
+- ["Ps8Hashable", "BottomRight"]
+- ["Ps8Hashable", "Center"]
+- ["Ps8Hashable", "Left"]
+- ["Ps8Hashable", "RawValue"]
+- ["Ps8Hashable", "Resize"]
+- ["Ps8Hashable", "ResizeAspect"]
+- ["Ps8Hashable", "ResizeAspectFill"]
+- ["Ps8Hashable", "Right"]
+- !private ["Ps8Hashable", "Stride"]
+- ["Ps8Hashable", "Top"]
+- ["Ps8Hashable", "TopLeft"]
+- ["Ps8Hashable", "TopRight"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_toAnyHashable"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "rawValue"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "Stride"]
+- ["Si", "deinit"]
+- !private ["Si", "hashValue"]
+- !private ["Ps7Integer", "Stride"]
+- !private ["Ps7Integer", "hashValue"]
+- !private ["Ps17IntegerArithmetic", "Stride"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["O17HafsaInspectorApp15MaterialGravity", "Bottom"]
+- ["O17HafsaInspectorApp15MaterialGravity", "BottomLeft"]
+- ["O17HafsaInspectorApp15MaterialGravity", "BottomRight"]
+- ["O17HafsaInspectorApp15MaterialGravity", "Center"]
+- ["O17HafsaInspectorApp15MaterialGravity", "Left"]
+- ["O17HafsaInspectorApp15MaterialGravity", "RawValue"]
+- ["O17HafsaInspectorApp15MaterialGravity", "Resize"]
+- ["O17HafsaInspectorApp15MaterialGravity", "ResizeAspect"]
+- ["O17HafsaInspectorApp15MaterialGravity", "ResizeAspectFill"]
+- ["O17HafsaInspectorApp15MaterialGravity", "Right"]
+- ["O17HafsaInspectorApp15MaterialGravity", "Top"]
+- ["O17HafsaInspectorApp15MaterialGravity", "TopLeft"]
+- ["O17HafsaInspectorApp15MaterialGravity", "TopRight"]
+- ["O17HafsaInspectorApp15MaterialGravity", "_toAnyHashable"]
+- ["O17HafsaInspectorApp15MaterialGravity", "deinit"]
+- ["O17HafsaInspectorApp15MaterialGravity", "hashValue"]
+- ["O17HafsaInspectorApp15MaterialGravity", "init"]
+- ["O17HafsaInspectorApp15MaterialGravity", "rawValue"]
+- !private ["Ps10MirrorPath", "Stride"]
+- !private ["Ps10MirrorPath", "hashValue"]
+- !private ["Vs5Range", "deinit"]
+- ["Ps16RawRepresentable", "Bottom"]
+- ["Ps16RawRepresentable", "BottomLeft"]
+- ["Ps16RawRepresentable", "BottomRight"]
+- ["Ps16RawRepresentable", "Center"]
+- ["Ps16RawRepresentable", "Left"]
+- ["Ps16RawRepresentable", "RawValue"]
+- ["Ps16RawRepresentable", "Resize"]
+- ["Ps16RawRepresentable", "ResizeAspect"]
+- ["Ps16RawRepresentable", "ResizeAspectFill"]
+- ["Ps16RawRepresentable", "Right"]
+- ["Ps16RawRepresentable", "Top"]
+- ["Ps16RawRepresentable", "TopLeft"]
+- ["Ps16RawRepresentable", "TopRight"]
+- ["Ps16RawRepresentable", "_toAnyHashable"]
+- ["Ps16RawRepresentable", "hashValue"]
+- ["Ps16RawRepresentable", "init"]
+- ["Ps16RawRepresentable", "rawValue"]
+- ["Ps16RawRepresentable", ""]
+- !private ["Ps13SignedInteger", "Stride"]
+- !private ["Ps13SignedInteger", "hashValue"]
+- !private ["Ps12SignedNumber", "Stride"]
+- !private ["Ps12SignedNumber", "hashValue"]
+- !private ["Ps10Strideable", "Stride"]
+- !private ["Ps10Strideable", "hashValue"]
+- ["SS", "deinit"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
+- ["Ps9_Hashable", "Bottom"]
+- ["Ps9_Hashable", "BottomLeft"]
+- ["Ps9_Hashable", "BottomRight"]
+- ["Ps9_Hashable", "Center"]
+- ["Ps9_Hashable", "Left"]
+- ["Ps9_Hashable", "RawValue"]
+- ["Ps9_Hashable", "Resize"]
+- ["Ps9_Hashable", "ResizeAspect"]
+- ["Ps9_Hashable", "ResizeAspectFill"]
+- ["Ps9_Hashable", "Right"]
+- !private ["Ps9_Hashable", "Stride"]
+- ["Ps9_Hashable", "Top"]
+- ["Ps9_Hashable", "TopLeft"]
+- ["Ps9_Hashable", "TopRight"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "_toAnyHashable"]
+- ["Ps9_Hashable", "hashValue"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "rawValue"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "Stride"]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps8_Integer", "Stride"]
+- !private ["Ps8_Integer", "hashValue"]
+- !private ["Ps18_IntegerArithmetic", "Stride"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps14_SignedInteger", "Stride"]
+- !private ["Ps14_SignedInteger", "hashValue"]
+- !private ["Ps11_Strideable", "Stride"]
+- !private ["Ps11_Strideable", "hashValue"]
+depends-nominal:
+- !private "Ps17BitwiseOperations"
+- "Sb"
+- !private "Ps7CVarArg"
+- !private "Vs11ClosedRange"
+- !private "Ps10Comparable"
+- !private "Vs20CountableClosedRange"
+- !private "Vs14CountableRange"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- "Ps8Hashable"
+- "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps25LosslessStringConvertible"
+- "O17HafsaInspectorApp15MaterialGravity"
+- !private "Ps10MirrorPath"
+- !private "Vs5Range"
+- "Ps16RawRepresentable"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- "SS"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HafsaInspectorApp-Bridging-Header.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/IPDFView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+interface-hash: "d7aa43d1bac83ff9e2874204a2e6b062"

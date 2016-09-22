@@ -9,21 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Material-io.cosmicmind.material.fonts.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Material-io.cosmicmind.material.icons.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Material.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-HafsaInspectorApp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>04693735BCFA74B873DE04047ECC5FBA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>08C670F14C5E0F92D52B4FD40051294F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1B006392A6DC63E06AC81DE6F08803B1</key>
+		<key>67455818E527C781BA546D5DB8417BA6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>DBA6001481CEA0EBA031CC5C94508FAA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F7F1937F5088510C11D7BC5B89EC7C00</key>
 		<dict>
 			<key>primary</key>
 			<true/>

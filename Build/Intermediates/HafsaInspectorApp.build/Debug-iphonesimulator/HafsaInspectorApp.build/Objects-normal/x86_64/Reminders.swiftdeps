@@ -1,0 +1,773 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RemindersAuthorizationStatus"
+- "RemindersDelegate"
+- "Reminders"
+provides-nominal:
+- "O17HafsaInspectorApp28RemindersAuthorizationStatus"
+- "P17HafsaInspectorApp17RemindersDelegate"
+- "C17HafsaInspectorApp9Reminders"
+provides-member:
+- ["O17HafsaInspectorApp28RemindersAuthorizationStatus", ""]
+- ["P17HafsaInspectorApp17RemindersDelegate", ""]
+- ["C17HafsaInspectorApp9Reminders", ""]
+- ["C17HafsaInspectorApp9Reminders", "create"]
+- ["C17HafsaInspectorApp9Reminders", "delete"]
+- ["C17HafsaInspectorApp9Reminders", "fetchLists"]
+- ["C17HafsaInspectorApp9Reminders", "fetchReminders"]
+- ["C17HafsaInspectorApp9Reminders", "create"]
+- ["C17HafsaInspectorApp9Reminders", "delete"]
+provides-dynamic-lookup:
+- "requestAuthorization"
+- "eventStore"
+- "fetchLists"
+- "create"
+- "create"
+- "delegate"
+- "reminders"
+- "reminders"
+- "reminders"
+- "reminders"
+- "reminders"
+- "reminders"
+- "reminders"
+- "fetchReminders"
+- "delete"
+- "delete"
+- "authorizationStatus"
+depends-top-level:
+- "NSObject"
+- !private "DispatchQueue"
+- "EKEventStore"
+- "String"
+- "Void"
+- "BooleanLiteralType"
+- "RemindersDelegate"
+- "EKReminder"
+- "DateComponents"
+- "Bool"
+- "TernaryPrecedence"
+- "Reminders"
+- "RemindersAuthorizationStatus"
+- "Int"
+- !private "??"
+- !private "!="
+- "EKCalendar"
+- !private "Array"
+- !private "~="
+- "Error"
+- "AssignmentPrecedence"
+- "=="
+depends-member:
+- !private ["Ps9AnyObject", "DispatchQueue"]
+- !private ["Ps9AnyObject", "EKCalendar"]
+- ["Ps9AnyObject", "EKEventStore"]
+- !private ["Ps9AnyObject", "EKReminder"]
+- !private ["Ps9AnyObject", "async"]
+- ["Ps9AnyObject", "authorizationStatus"]
+- !private ["Ps9AnyObject", "calendar"]
+- !private ["Ps9AnyObject", "calendars"]
+- ["Ps9AnyObject", "create"]
+- ["Ps9AnyObject", "delegate"]
+- ["Ps9AnyObject", "delete"]
+- !private ["Ps9AnyObject", "dueDateComponents"]
+- ["Ps9AnyObject", "eventStore"]
+- ["Ps9AnyObject", "eventStore.storage"]
+- ["Ps9AnyObject", "fetchLists"]
+- ["Ps9AnyObject", "fetchReminders"]
+- !private ["Ps9AnyObject", "global"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "main"]
+- !private ["Ps9AnyObject", "predicateForReminders"]
+- !private ["Ps9AnyObject", "remove"]
+- !private ["Ps9AnyObject", "removeCalendar"]
+- !private ["Ps9AnyObject", "requestAccess"]
+- ["Ps9AnyObject", "requestAuthorization"]
+- !private ["Ps9AnyObject", "save"]
+- !private ["Ps9AnyObject", "saveCalendar"]
+- !private ["Ps9AnyObject", "source"]
+- !private ["Ps9AnyObject", "sourceType"]
+- !private ["Ps9AnyObject", "sources"]
+- !private ["Ps9AnyObject", "title"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- ["Sa", "deinit"]
+- !private ["Sa", "init"]
+- !private ["Sa", "last"]
+- !private ["Ps23BidirectionalCollection", "Element"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps23BidirectionalCollection", "last"]
+- !private ["Ps22BidirectionalIndexable", "Element"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "append"]
+- !private ["Ps22BidirectionalIndexable", "init"]
+- !private ["Ps22BidirectionalIndexable", "last"]
+- !private ["Ps17BitwiseOperations", "Stride"]
+- !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "DispatchQueue"]
+- !private ["Ps7CVarArg", "EKCalendar"]
+- ["Ps7CVarArg", "EKEventStore"]
+- !private ["Ps7CVarArg", "EKReminder"]
+- !private ["Ps7CVarArg", "Element"]
+- !private ["Ps7CVarArg", "Iterator"]
+- !private ["Ps7CVarArg", "Stride"]
+- !private ["Ps7CVarArg", "_Element"]
+- !private ["Ps7CVarArg", "append"]
+- !private ["Ps7CVarArg", "async"]
+- ["Ps7CVarArg", "authorizationStatus"]
+- !private ["Ps7CVarArg", "calendar"]
+- !private ["Ps7CVarArg", "calendars"]
+- ["Ps7CVarArg", "create"]
+- ["Ps7CVarArg", "delegate"]
+- ["Ps7CVarArg", "delete"]
+- !private ["Ps7CVarArg", "dueDateComponents"]
+- ["Ps7CVarArg", "eventStore"]
+- ["Ps7CVarArg", "eventStore.storage"]
+- ["Ps7CVarArg", "fetchLists"]
+- ["Ps7CVarArg", "fetchReminders"]
+- !private ["Ps7CVarArg", "global"]
+- !private ["Ps7CVarArg", "hashValue"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "last"]
+- !private ["Ps7CVarArg", "main"]
+- !private ["Ps7CVarArg", "predicateForReminders"]
+- !private ["Ps7CVarArg", "remove"]
+- !private ["Ps7CVarArg", "removeCalendar"]
+- !private ["Ps7CVarArg", "requestAccess"]
+- ["Ps7CVarArg", "requestAuthorization"]
+- !private ["Ps7CVarArg", "save"]
+- !private ["Ps7CVarArg", "saveCalendar"]
+- !private ["Ps7CVarArg", "source"]
+- !private ["Ps7CVarArg", "sourceType"]
+- !private ["Ps7CVarArg", "sources"]
+- !private ["Ps7CVarArg", "title"]
+- ["Ps7CVarArg", ""]
+- !private ["Vs11ClosedRange", "deinit"]
+- !private ["Ps10Collection", "Element"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "init"]
+- !private ["Ps10Collection", "last"]
+- !private ["Ps10Comparable", "Stride"]
+- !private ["Ps10Comparable", "hashValue"]
+- !private ["Vs20CountableClosedRange", "deinit"]
+- !private ["Vs14CountableRange", "deinit"]
+- !private ["Ps28CustomDebugStringConvertible", "DispatchQueue"]
+- !private ["Ps28CustomDebugStringConvertible", "EKCalendar"]
+- ["Ps28CustomDebugStringConvertible", "EKEventStore"]
+- !private ["Ps28CustomDebugStringConvertible", "EKReminder"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "async"]
+- ["Ps28CustomDebugStringConvertible", "authorizationStatus"]
+- !private ["Ps28CustomDebugStringConvertible", "calendar"]
+- !private ["Ps28CustomDebugStringConvertible", "calendars"]
+- ["Ps28CustomDebugStringConvertible", "create"]
+- ["Ps28CustomDebugStringConvertible", "delegate"]
+- ["Ps28CustomDebugStringConvertible", "delete"]
+- !private ["Ps28CustomDebugStringConvertible", "dueDateComponents"]
+- ["Ps28CustomDebugStringConvertible", "eventStore"]
+- ["Ps28CustomDebugStringConvertible", "eventStore.storage"]
+- ["Ps28CustomDebugStringConvertible", "fetchLists"]
+- ["Ps28CustomDebugStringConvertible", "fetchReminders"]
+- !private ["Ps28CustomDebugStringConvertible", "global"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "last"]
+- !private ["Ps28CustomDebugStringConvertible", "main"]
+- !private ["Ps28CustomDebugStringConvertible", "predicateForReminders"]
+- !private ["Ps28CustomDebugStringConvertible", "remove"]
+- !private ["Ps28CustomDebugStringConvertible", "removeCalendar"]
+- !private ["Ps28CustomDebugStringConvertible", "requestAccess"]
+- ["Ps28CustomDebugStringConvertible", "requestAuthorization"]
+- !private ["Ps28CustomDebugStringConvertible", "save"]
+- !private ["Ps28CustomDebugStringConvertible", "saveCalendar"]
+- !private ["Ps28CustomDebugStringConvertible", "some"]
+- !private ["Ps28CustomDebugStringConvertible", "source"]
+- !private ["Ps28CustomDebugStringConvertible", "sourceType"]
+- !private ["Ps28CustomDebugStringConvertible", "sources"]
+- !private ["Ps28CustomDebugStringConvertible", "title"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
+- !private ["Ps17CustomReflectable", "Element"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "Stride"]
+- !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "hashValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "last"]
+- !private ["Ps17CustomReflectable", "some"]
+- !private ["Ps23CustomStringConvertible", "DispatchQueue"]
+- !private ["Ps23CustomStringConvertible", "EKCalendar"]
+- ["Ps23CustomStringConvertible", "EKEventStore"]
+- !private ["Ps23CustomStringConvertible", "EKReminder"]
+- !private ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "async"]
+- ["Ps23CustomStringConvertible", "authorizationStatus"]
+- !private ["Ps23CustomStringConvertible", "calendar"]
+- !private ["Ps23CustomStringConvertible", "calendars"]
+- ["Ps23CustomStringConvertible", "create"]
+- ["Ps23CustomStringConvertible", "delegate"]
+- ["Ps23CustomStringConvertible", "delete"]
+- !private ["Ps23CustomStringConvertible", "dueDateComponents"]
+- ["Ps23CustomStringConvertible", "eventStore"]
+- ["Ps23CustomStringConvertible", "eventStore.storage"]
+- ["Ps23CustomStringConvertible", "fetchLists"]
+- ["Ps23CustomStringConvertible", "fetchReminders"]
+- !private ["Ps23CustomStringConvertible", "global"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "last"]
+- !private ["Ps23CustomStringConvertible", "main"]
+- !private ["Ps23CustomStringConvertible", "predicateForReminders"]
+- !private ["Ps23CustomStringConvertible", "remove"]
+- !private ["Ps23CustomStringConvertible", "removeCalendar"]
+- !private ["Ps23CustomStringConvertible", "requestAccess"]
+- ["Ps23CustomStringConvertible", "requestAuthorization"]
+- !private ["Ps23CustomStringConvertible", "save"]
+- !private ["Ps23CustomStringConvertible", "saveCalendar"]
+- !private ["Ps23CustomStringConvertible", "source"]
+- !private ["Ps23CustomStringConvertible", "sourceType"]
+- !private ["Ps23CustomStringConvertible", "sources"]
+- !private ["Ps23CustomStringConvertible", "title"]
+- ["Ps23CustomStringConvertible", ""]
+- ["V10Foundation14DateComponents", "deinit"]
+- !private ["CSo14DispatchObject", "async"]
+- !private ["CSo14DispatchObject", "global"]
+- !private ["CSo14DispatchObject", "main"]
+- !private ["CSo13DispatchQueue", "async"]
+- ["CSo13DispatchQueue", "deinit"]
+- !private ["CSo13DispatchQueue", "global"]
+- !private ["CSo13DispatchQueue", "main"]
+- !private ["OSC21EKAuthorizationStatus", "RawValue"]
+- !private ["OSC21EKAuthorizationStatus", "authorized"]
+- ["OSC21EKAuthorizationStatus", "deinit"]
+- ["CSo10EKCalendar", "deinit"]
+- !private ["CSo10EKCalendar", "init"]
+- !private ["CSo10EKCalendar", "source"]
+- !private ["CSo10EKCalendar", "title"]
+- !private ["CSo14EKCalendarItem", "calendar"]
+- !private ["CSo14EKCalendarItem", "dueDateComponents"]
+- !private ["CSo14EKCalendarItem", "init"]
+- !private ["CSo14EKCalendarItem", "title"]
+- ["OSC12EKEntityType", "deinit"]
+- !private ["OSC12EKEntityType", "reminder"]
+- !private ["CSo12EKEventStore", "authorizationStatus"]
+- !private ["CSo12EKEventStore", "calendar"]
+- !private ["CSo12EKEventStore", "calendars"]
+- ["CSo12EKEventStore", "deinit"]
+- !private ["CSo12EKEventStore", "fetchReminders"]
+- ["CSo12EKEventStore", "init"]
+- !private ["CSo12EKEventStore", "predicateForReminders"]
+- !private ["CSo12EKEventStore", "remove"]
+- !private ["CSo12EKEventStore", "removeCalendar"]
+- !private ["CSo12EKEventStore", "requestAccess"]
+- !private ["CSo12EKEventStore", "save"]
+- !private ["CSo12EKEventStore", "saveCalendar"]
+- !private ["CSo12EKEventStore", "sources"]
+- !private ["CSo8EKObject", "calendar"]
+- !private ["CSo8EKObject", "dueDateComponents"]
+- !private ["CSo8EKObject", "init"]
+- !private ["CSo8EKObject", "source"]
+- !private ["CSo8EKObject", "sourceType"]
+- !private ["CSo8EKObject", "title"]
+- !private ["CSo10EKReminder", "calendar"]
+- ["CSo10EKReminder", "deinit"]
+- !private ["CSo10EKReminder", "dueDateComponents"]
+- !private ["CSo10EKReminder", "init"]
+- !private ["CSo10EKReminder", "title"]
+- !private ["CSo8EKSource", "deinit"]
+- !private ["CSo8EKSource", "sourceType"]
+- !private ["OSC12EKSourceType", "RawValue"]
+- !private ["OSC12EKSourceType", "deinit"]
+- !private ["OSC12EKSourceType", "local"]
+- !private ["Ps9Equatable", "DispatchQueue"]
+- !private ["Ps9Equatable", "EKCalendar"]
+- ["Ps9Equatable", "EKEventStore"]
+- !private ["Ps9Equatable", "EKReminder"]
+- ["Ps9Equatable", "RawValue"]
+- !private ["Ps9Equatable", "Stride"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_toAnyHashable"]
+- !private ["Ps9Equatable", "async"]
+- ["Ps9Equatable", "authorizationStatus"]
+- !private ["Ps9Equatable", "authorized"]
+- !private ["Ps9Equatable", "calendar"]
+- !private ["Ps9Equatable", "calendars"]
+- ["Ps9Equatable", "create"]
+- !private ["Ps9Equatable", "default"]
+- ["Ps9Equatable", "delegate"]
+- ["Ps9Equatable", "delete"]
+- !private ["Ps9Equatable", "denied"]
+- !private ["Ps9Equatable", "dueDateComponents"]
+- ["Ps9Equatable", "eventStore"]
+- ["Ps9Equatable", "eventStore.storage"]
+- ["Ps9Equatable", "fetchLists"]
+- ["Ps9Equatable", "fetchReminders"]
+- !private ["Ps9Equatable", "global"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "local"]
+- !private ["Ps9Equatable", "main"]
+- !private ["Ps9Equatable", "predicateForReminders"]
+- ["Ps9Equatable", "rawValue"]
+- !private ["Ps9Equatable", "reminder"]
+- !private ["Ps9Equatable", "remove"]
+- !private ["Ps9Equatable", "removeCalendar"]
+- !private ["Ps9Equatable", "requestAccess"]
+- ["Ps9Equatable", "requestAuthorization"]
+- !private ["Ps9Equatable", "save"]
+- !private ["Ps9Equatable", "saveCalendar"]
+- !private ["Ps9Equatable", "source"]
+- !private ["Ps9Equatable", "sourceType"]
+- !private ["Ps9Equatable", "sources"]
+- !private ["Ps9Equatable", "title"]
+- ["Ps9Equatable", ""]
+- ["Ps5Error", "deinit"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps25ExpressibleByArrayLiteral", "last"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- !private ["Ps23ExpressibleByNilLiteral", "some"]
+- !private ["Ps8Hashable", "DispatchQueue"]
+- !private ["Ps8Hashable", "EKCalendar"]
+- ["Ps8Hashable", "EKEventStore"]
+- !private ["Ps8Hashable", "EKReminder"]
+- ["Ps8Hashable", "RawValue"]
+- !private ["Ps8Hashable", "Stride"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_toAnyHashable"]
+- !private ["Ps8Hashable", "async"]
+- ["Ps8Hashable", "authorizationStatus"]
+- !private ["Ps8Hashable", "authorized"]
+- !private ["Ps8Hashable", "calendar"]
+- !private ["Ps8Hashable", "calendars"]
+- ["Ps8Hashable", "create"]
+- !private ["Ps8Hashable", "default"]
+- ["Ps8Hashable", "delegate"]
+- ["Ps8Hashable", "delete"]
+- !private ["Ps8Hashable", "denied"]
+- !private ["Ps8Hashable", "dueDateComponents"]
+- ["Ps8Hashable", "eventStore"]
+- ["Ps8Hashable", "eventStore.storage"]
+- ["Ps8Hashable", "fetchLists"]
+- ["Ps8Hashable", "fetchReminders"]
+- !private ["Ps8Hashable", "global"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "local"]
+- !private ["Ps8Hashable", "main"]
+- !private ["Ps8Hashable", "predicateForReminders"]
+- ["Ps8Hashable", "rawValue"]
+- !private ["Ps8Hashable", "reminder"]
+- !private ["Ps8Hashable", "remove"]
+- !private ["Ps8Hashable", "removeCalendar"]
+- !private ["Ps8Hashable", "requestAccess"]
+- ["Ps8Hashable", "requestAuthorization"]
+- !private ["Ps8Hashable", "save"]
+- !private ["Ps8Hashable", "saveCalendar"]
+- !private ["Ps8Hashable", "source"]
+- !private ["Ps8Hashable", "sourceType"]
+- !private ["Ps8Hashable", "sources"]
+- !private ["Ps8Hashable", "title"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
+- !private ["Ps9Indexable", "init"]
+- !private ["Ps9Indexable", "last"]
+- !private ["Ps13IndexableBase", "Element"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "append"]
+- !private ["Ps13IndexableBase", "init"]
+- !private ["Ps13IndexableBase", "last"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Si", "Stride"]
+- ["Si", "deinit"]
+- !private ["Si", "hashValue"]
+- !private ["Ps7Integer", "Stride"]
+- !private ["Ps7Integer", "hashValue"]
+- !private ["Ps17IntegerArithmetic", "Stride"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps10MirrorPath", "Stride"]
+- !private ["Ps10MirrorPath", "hashValue"]
+- !private ["Ps17MutableCollection", "Element"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "init"]
+- !private ["Ps17MutableCollection", "last"]
+- !private ["Ps16MutableIndexable", "Element"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
+- !private ["Ps16MutableIndexable", "init"]
+- !private ["Ps16MutableIndexable", "last"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "DateComponents"]
+- !private ["CSo8NSObject", "DispatchQueue"]
+- ["CSo8NSObject", "EKCalendar"]
+- ["CSo8NSObject", "EKEventStore"]
+- ["CSo8NSObject", "EKReminder"]
+- ["CSo8NSObject", "Error"]
+- ["CSo8NSObject", "RemindersAuthorizationStatus"]
+- ["CSo8NSObject", "RemindersDelegate"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "async"]
+- ["CSo8NSObject", "authorizationStatus"]
+- !private ["CSo8NSObject", "calendar"]
+- !private ["CSo8NSObject", "calendars"]
+- ["CSo8NSObject", "create"]
+- ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "delegate"]
+- ["CSo8NSObject", "delete"]
+- !private ["CSo8NSObject", "dueDateComponents"]
+- ["CSo8NSObject", "eventStore"]
+- ["CSo8NSObject", "eventStore.storage"]
+- ["CSo8NSObject", "fetchLists"]
+- ["CSo8NSObject", "fetchReminders"]
+- !private ["CSo8NSObject", "global"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "main"]
+- !private ["CSo8NSObject", "predicateForReminders"]
+- !private ["CSo8NSObject", "remove"]
+- !private ["CSo8NSObject", "removeCalendar"]
+- !private ["CSo8NSObject", "requestAccess"]
+- ["CSo8NSObject", "requestAuthorization"]
+- !private ["CSo8NSObject", "save"]
+- !private ["CSo8NSObject", "saveCalendar"]
+- !private ["CSo8NSObject", "source"]
+- !private ["CSo8NSObject", "sourceType"]
+- !private ["CSo8NSObject", "sources"]
+- !private ["CSo8NSObject", "title"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "DispatchQueue"]
+- !private ["PSo16NSObjectProtocol", "EKCalendar"]
+- ["PSo16NSObjectProtocol", "EKEventStore"]
+- !private ["PSo16NSObjectProtocol", "EKReminder"]
+- !private ["PSo16NSObjectProtocol", "async"]
+- ["PSo16NSObjectProtocol", "authorizationStatus"]
+- !private ["PSo16NSObjectProtocol", "calendar"]
+- !private ["PSo16NSObjectProtocol", "calendars"]
+- ["PSo16NSObjectProtocol", "create"]
+- ["PSo16NSObjectProtocol", "delegate"]
+- ["PSo16NSObjectProtocol", "delete"]
+- !private ["PSo16NSObjectProtocol", "dueDateComponents"]
+- ["PSo16NSObjectProtocol", "eventStore"]
+- ["PSo16NSObjectProtocol", "eventStore.storage"]
+- ["PSo16NSObjectProtocol", "fetchLists"]
+- ["PSo16NSObjectProtocol", "fetchReminders"]
+- !private ["PSo16NSObjectProtocol", "global"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "main"]
+- !private ["PSo16NSObjectProtocol", "predicateForReminders"]
+- !private ["PSo16NSObjectProtocol", "remove"]
+- !private ["PSo16NSObjectProtocol", "removeCalendar"]
+- !private ["PSo16NSObjectProtocol", "requestAccess"]
+- ["PSo16NSObjectProtocol", "requestAuthorization"]
+- !private ["PSo16NSObjectProtocol", "save"]
+- !private ["PSo16NSObjectProtocol", "saveCalendar"]
+- !private ["PSo16NSObjectProtocol", "source"]
+- !private ["PSo16NSObjectProtocol", "sourceType"]
+- !private ["PSo16NSObjectProtocol", "sources"]
+- !private ["PSo16NSObjectProtocol", "title"]
+- ["PSo16NSObjectProtocol", ""]
+- ["CSo11NSPredicate", "deinit"]
+- !private ["CSo9OS_object", "async"]
+- !private ["CSo9OS_object", "global"]
+- !private ["CSo9OS_object", "main"]
+- ["Sq", "deinit"]
+- !private ["Sq", "some"]
+- !private ["OV8Dispatch11DispatchQoS8QoSClass", "default"]
+- ["OV8Dispatch11DispatchQoS8QoSClass", "deinit"]
+- !private ["Ps22RandomAccessCollection", "Element"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps22RandomAccessCollection", "last"]
+- !private ["Ps21RandomAccessIndexable", "Element"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "append"]
+- !private ["Ps21RandomAccessIndexable", "init"]
+- !private ["Ps21RandomAccessIndexable", "last"]
+- !private ["Vs5Range", "deinit"]
+- !private ["Ps26RangeReplaceableCollection", "Element"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps26RangeReplaceableCollection", "last"]
+- !private ["Ps25RangeReplaceableIndexable", "Element"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "append"]
+- !private ["Ps25RangeReplaceableIndexable", "init"]
+- !private ["Ps25RangeReplaceableIndexable", "last"]
+- ["Ps16RawRepresentable", "RawValue"]
+- ["Ps16RawRepresentable", "_toAnyHashable"]
+- !private ["Ps16RawRepresentable", "authorized"]
+- !private ["Ps16RawRepresentable", "denied"]
+- ["Ps16RawRepresentable", "hashValue"]
+- ["Ps16RawRepresentable", "init"]
+- !private ["Ps16RawRepresentable", "local"]
+- ["Ps16RawRepresentable", "rawValue"]
+- !private ["Ps16RawRepresentable", "reminder"]
+- ["Ps16RawRepresentable", ""]
+- ["C17HafsaInspectorApp9Reminders", "Bool"]
+- ["C17HafsaInspectorApp9Reminders", "DateComponents"]
+- !private ["C17HafsaInspectorApp9Reminders", "DispatchQueue"]
+- ["C17HafsaInspectorApp9Reminders", "EKCalendar"]
+- ["C17HafsaInspectorApp9Reminders", "EKEventStore"]
+- ["C17HafsaInspectorApp9Reminders", "EKReminder"]
+- ["C17HafsaInspectorApp9Reminders", "Error"]
+- ["C17HafsaInspectorApp9Reminders", "RemindersAuthorizationStatus"]
+- ["C17HafsaInspectorApp9Reminders", "RemindersDelegate"]
+- ["C17HafsaInspectorApp9Reminders", "String"]
+- ["C17HafsaInspectorApp9Reminders", "Void"]
+- ["C17HafsaInspectorApp9Reminders", "authorizationStatus"]
+- ["C17HafsaInspectorApp9Reminders", "create"]
+- ["C17HafsaInspectorApp9Reminders", "deinit"]
+- ["C17HafsaInspectorApp9Reminders", "delegate"]
+- ["C17HafsaInspectorApp9Reminders", "delete"]
+- ["C17HafsaInspectorApp9Reminders", "eventStore"]
+- !private ["C17HafsaInspectorApp9Reminders", "eventStore.storage"]
+- ["C17HafsaInspectorApp9Reminders", "fetchLists"]
+- ["C17HafsaInspectorApp9Reminders", "fetchReminders"]
+- ["C17HafsaInspectorApp9Reminders", "init"]
+- ["C17HafsaInspectorApp9Reminders", "requestAuthorization"]
+- ["O17HafsaInspectorApp28RemindersAuthorizationStatus", "RawValue"]
+- ["O17HafsaInspectorApp28RemindersAuthorizationStatus", "_toAnyHashable"]
+- ["O17HafsaInspectorApp28RemindersAuthorizationStatus", "authorized"]
+- ["O17HafsaInspectorApp28RemindersAuthorizationStatus", "deinit"]
+- ["O17HafsaInspectorApp28RemindersAuthorizationStatus", "denied"]
+- ["O17HafsaInspectorApp28RemindersAuthorizationStatus", "hashValue"]
+- ["O17HafsaInspectorApp28RemindersAuthorizationStatus", "init"]
+- ["O17HafsaInspectorApp28RemindersAuthorizationStatus", "rawValue"]
+- ["P17HafsaInspectorApp17RemindersDelegate", "Bool"]
+- ["P17HafsaInspectorApp17RemindersDelegate", "EKCalendar"]
+- ["P17HafsaInspectorApp17RemindersDelegate", "Reminders"]
+- ["P17HafsaInspectorApp17RemindersDelegate", "RemindersAuthorizationStatus"]
+- ["P17HafsaInspectorApp17RemindersDelegate", "reminders"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "last"]
+- !private ["Ps13SignedInteger", "Stride"]
+- !private ["Ps13SignedInteger", "hashValue"]
+- !private ["Ps12SignedNumber", "Stride"]
+- !private ["Ps12SignedNumber", "hashValue"]
+- !private ["Ps10Strideable", "Stride"]
+- !private ["Ps10Strideable", "hashValue"]
+- ["SS", "deinit"]
+- !private ["Ps14_ArrayProtocol", "Element"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps14_ArrayProtocol", "last"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps24_DestructorSafeContainer", "last"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
+- !private ["Ps9_Hashable", "DispatchQueue"]
+- !private ["Ps9_Hashable", "EKCalendar"]
+- ["Ps9_Hashable", "EKEventStore"]
+- !private ["Ps9_Hashable", "EKReminder"]
+- ["Ps9_Hashable", "RawValue"]
+- !private ["Ps9_Hashable", "Stride"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "_toAnyHashable"]
+- !private ["Ps9_Hashable", "async"]
+- ["Ps9_Hashable", "authorizationStatus"]
+- !private ["Ps9_Hashable", "authorized"]
+- !private ["Ps9_Hashable", "calendar"]
+- !private ["Ps9_Hashable", "calendars"]
+- ["Ps9_Hashable", "create"]
+- !private ["Ps9_Hashable", "default"]
+- ["Ps9_Hashable", "delegate"]
+- ["Ps9_Hashable", "delete"]
+- !private ["Ps9_Hashable", "denied"]
+- !private ["Ps9_Hashable", "dueDateComponents"]
+- ["Ps9_Hashable", "eventStore"]
+- ["Ps9_Hashable", "eventStore.storage"]
+- ["Ps9_Hashable", "fetchLists"]
+- ["Ps9_Hashable", "fetchReminders"]
+- !private ["Ps9_Hashable", "global"]
+- ["Ps9_Hashable", "hashValue"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "local"]
+- !private ["Ps9_Hashable", "main"]
+- !private ["Ps9_Hashable", "predicateForReminders"]
+- ["Ps9_Hashable", "rawValue"]
+- !private ["Ps9_Hashable", "reminder"]
+- !private ["Ps9_Hashable", "remove"]
+- !private ["Ps9_Hashable", "removeCalendar"]
+- !private ["Ps9_Hashable", "requestAccess"]
+- ["Ps9_Hashable", "requestAuthorization"]
+- !private ["Ps9_Hashable", "save"]
+- !private ["Ps9_Hashable", "saveCalendar"]
+- !private ["Ps9_Hashable", "source"]
+- !private ["Ps9_Hashable", "sourceType"]
+- !private ["Ps9_Hashable", "sources"]
+- !private ["Ps9_Hashable", "title"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "Stride"]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps8_Integer", "Stride"]
+- !private ["Ps8_Integer", "hashValue"]
+- !private ["Ps18_IntegerArithmetic", "Stride"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "last"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps14_SignedInteger", "Stride"]
+- !private ["Ps14_SignedInteger", "hashValue"]
+- !private ["Ps11_Strideable", "Stride"]
+- !private ["Ps11_Strideable", "hashValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
+- !private "Ps17BitwiseOperations"
+- "Sb"
+- "Ps7CVarArg"
+- !private "Vs11ClosedRange"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- !private "Vs20CountableClosedRange"
+- !private "Vs14CountableRange"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "V10Foundation14DateComponents"
+- !private "CSo14DispatchObject"
+- "CSo13DispatchQueue"
+- "OSC21EKAuthorizationStatus"
+- "CSo10EKCalendar"
+- !private "CSo14EKCalendarItem"
+- "OSC12EKEntityType"
+- "CSo12EKEventStore"
+- !private "CSo8EKObject"
+- "CSo10EKReminder"
+- !private "CSo8EKSource"
+- !private "OSC12EKSourceType"
+- "Ps9Equatable"
+- "Ps5Error"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps16IteratorProtocol"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "CSo11NSPredicate"
+- !private "CSo9OS_object"
+- "Sq"
+- "OV8Dispatch11DispatchQoS8QoSClass"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Vs5Range"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
+- "Ps16RawRepresentable"
+- "C17HafsaInspectorApp9Reminders"
+- "O17HafsaInspectorApp28RemindersAuthorizationStatus"
+- "P17HafsaInspectorApp17RemindersDelegate"
+- !private "Ps8Sequence"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- "SS"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HafsaInspectorApp-Bridging-Header.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/IPDFView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+interface-hash: "8fdedfef5ee7041dca658633c9c379b0"

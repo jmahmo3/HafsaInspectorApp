@@ -10,7 +10,7 @@ import UIKit
 
 class EstablishmentPickerViewController: UIViewController, UITextFieldDelegate, ChapterPickerDelegate {
     
-    private let HImanager = HIManager.sharedClient()
+    fileprivate let HImanager = HIManager.sharedClient()
 
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var establishmentLabel: UILabel!
@@ -20,9 +20,9 @@ class EstablishmentPickerViewController: UIViewController, UITextFieldDelegate, 
     //MARK: - Lifecycle
 
     static func create() -> EstablishmentPickerViewController {
-        let frameworkBundle = NSBundle.mainBundle()
+        let frameworkBundle = Bundle.main
         let storyboard = UIStoryboard(name: "Main", bundle: frameworkBundle)
-        let main = storyboard.instantiateViewControllerWithIdentifier("EstablishmentPickerViewController") as! EstablishmentPickerViewController
+        let main = storyboard.instantiateViewController(withIdentifier: "EstablishmentPickerViewController") as! EstablishmentPickerViewController
         return main
     }
     
@@ -44,18 +44,18 @@ class EstablishmentPickerViewController: UIViewController, UITextFieldDelegate, 
         
         //font
         nameLabel.font = UIFont(name: "AvenirNext-Medium", size: 16)
-        nameLabel.textColor = UIColor.darkGrayColor()
+        nameLabel.textColor = UIColor.darkGray
         establishmentLabel.font = UIFont(name: "AvenirNext-Medium", size: 16)
-        establishmentLabel.textColor = UIColor.darkGrayColor()
+        establishmentLabel.textColor = UIColor.darkGray
         
         //button
-        nextButton.backgroundColor = UIColor.whiteColor()
-        nextButton.tintColor = UIColor.blackColor()
-        nextButton.titleLabel?.textColor = UIColor.blackColor()
+        nextButton.backgroundColor = UIColor.white
+        nextButton.tintColor = UIColor.black
+        nextButton.titleLabel?.textColor = UIColor.black
         nextButton.titleLabel?.font = UIFont(name: "AvenirNext-Medium", size: 24)
         nextButton.layer.cornerRadius = 4
         nextButton.layer.borderWidth = 1
-        nextButton.layer.borderColor = UIColor.whiteColor().CGColor
+        nextButton.layer.borderColor = UIColor.white.cgColor
 
         establishmentTextField.placeholder = "Establishment"
         establishmentTextField.setupEstablishmentPicker()
@@ -63,7 +63,7 @@ class EstablishmentPickerViewController: UIViewController, UITextFieldDelegate, 
     }
 
     //MARK: Actions
-    @IBAction func nextButtonPressed(sender: AnyObject) {
+    @IBAction func nextButtonPressed(_ sender: AnyObject) {
         
         if establishmentTextField.text!.isEmpty {
             self.createAlert("Please choose an establishment")

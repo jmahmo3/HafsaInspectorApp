@@ -15,59 +15,59 @@ class SupplierTableViewCell: UITableViewCell {
     @IBOutlet weak var poundLabel: UILabel!
     @IBOutlet weak var addPoundsButton: UIButton!
     
-    private let HImanager = HIManager.sharedClient()
+    fileprivate let HImanager = HIManager.sharedClient()
     var previousPounds: Double = 0.0
     var tField: UITextField!
 
 
-    func configureSupplierCell(index: Int) {
-        self.selectionStyle = UITableViewCellSelectionStyle.None
+    func configureSupplierCell(_ index: Int) {
+        self.selectionStyle = UITableViewCellSelectionStyle.none
 
         supplierNameLabel.text = HImanager.supplierArray[index]
         poundLabel.text = "\(previousPounds) lbs"
-        self.backgroundColor = UIColor.clearColor()
+        self.backgroundColor = UIColor.clear
         
         supplierNameLabel.font = UIFont(name: "AvenirNext-Medium", size: 16)
-        supplierNameLabel.textColor = UIColor.darkGrayColor()
+        supplierNameLabel.textColor = UIColor.darkGray
         poundLabel.font = UIFont(name: "AvenirNext-Medium", size: 16)
-        poundLabel.textColor = UIColor.darkGrayColor()
+        poundLabel.textColor = UIColor.darkGray
         
-        addPoundsButton.backgroundColor = UIColor.whiteColor()
-        addPoundsButton.tintColor = UIColor.blackColor()
-        addPoundsButton.titleLabel?.textColor = UIColor.blackColor()
+        addPoundsButton.backgroundColor = UIColor.white
+        addPoundsButton.tintColor = UIColor.black
+        addPoundsButton.titleLabel?.textColor = UIColor.black
         addPoundsButton.titleLabel?.font = UIFont(name: "AvenirNext-Medium", size: 16)
         addPoundsButton.layer.cornerRadius = 4
         addPoundsButton.layer.borderWidth = 1
-        addPoundsButton.layer.borderColor = UIColor.blackColor().CGColor
+        addPoundsButton.layer.borderColor = UIColor.black.cgColor
         
         
     }
     
-    func updatePounds(pounds: Double) {
+    func updatePounds(_ pounds: Double) {
         previousPounds = previousPounds + pounds
-        dispatch_async(dispatch_get_main_queue()) {
+        DispatchQueue.main.async {
             self.poundLabel.text = "\(self.previousPounds) lbs"
         }
     }
     
-    @IBAction func addPoundsPressed(sender: AnyObject) {
-        let alert = UIAlertController(title: "Enter lbs", message: "", preferredStyle: .Alert)
-        alert.addTextFieldWithConfigurationHandler(configurationTextField)
-        alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler:nil))
-        alert.addAction(UIAlertAction(title: "Add", style: .Default, handler:{ (UIAlertAction) in
+    @IBAction func addPoundsPressed(_ sender: AnyObject) {
+        let alert = UIAlertController(title: "Enter lbs", message: "", preferredStyle: .alert)
+        alert.addTextField(configurationHandler: configurationTextField)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler:nil))
+        alert.addAction(UIAlertAction(title: "Add", style: .default, handler:{ (UIAlertAction) in
             if !(self.tField.text?.isEmpty)! {
                 self.updatePounds(Double(self.tField.text!)!)
             }
         }))
         
         let vc = self.parentViewController
-        vc?.presentViewController(alert, animated: true, completion:nil)
+        vc?.present(alert, animated: true, completion:nil)
         
     }
     
-    func configurationTextField(textField: UITextField!) {
+    func configurationTextField(_ textField: UITextField!) {
         textField.placeholder = "Enter a number"
-        textField.keyboardType = UIKeyboardType.DecimalPad
+        textField.keyboardType = UIKeyboardType.decimalPad
         tField = textField
     }
     

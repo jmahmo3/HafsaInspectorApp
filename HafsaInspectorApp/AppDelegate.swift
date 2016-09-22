@@ -18,10 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var errorCount = 0
 
 
-    func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Usually this is not overridden. Using the "did finish launching" method is more typical
 
-        let registered = NSUserDefaults.standardUserDefaults().boolForKey("Registered")
+        let registered = UserDefaults.standard.bool(forKey: "Registered")
         if registered {
             let nav = UINavigationController.init(rootViewController: vc)
             self.window?.rootViewController? = nav
@@ -34,31 +34,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         return true
     }
 
-    func applicationWillResignActive(application: UIApplication) {
+    func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
     }
 
-    func applicationDidEnterBackground(application: UIApplication) {
+    func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
 
-    func applicationWillEnterForeground(application: UIApplication) {
+    func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     }
 
-    func applicationDidBecomeActive(application: UIApplication) {
+    func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
 
-    func applicationWillTerminate(application: UIApplication) {
+    func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
@@ -67,38 +67,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let progess = MBProgressHUD()
         let view = (self.window?.rootViewController!.view)!
         progess.label.text = "Retrieving Chapter Data"
-        progess.tintColor = UIColor.blackColor()
+        progess.tintColor = UIColor.black
         view.addSubview(progess)
         progess.center = view.center
-        progess.showAnimated(true)
+        progess.show(animated: true)
         WebService().getChaptersAndEstablishments { (success, error) in
-            progess.hideAnimated(true)
+            progess.hide(animated: true)
             if success! {
                 print(HIManager.sharedClient().data)
                 self.vc.didGetEstablishmentData()
                 
                 let myVC = self.window?.visibleViewController
-                if myVC!.isKindOfClass(ChapterPickerViewController) {
+                if myVC!.isKind(of: ChapterPickerViewController.self) {
                     let chap = myVC as! ChapterPickerViewController
                     chap.didGetChapterData()
                 }
             }
             else {
                 self.errorCount += 1
-                let alert = UIAlertController(title: "Sorry", message:self.errorCount == 3 ? "Could not retrieve data\nPlease contact admin" : "Could not retrieve data", preferredStyle: UIAlertControllerStyle.Alert)
+                let alert = UIAlertController(title: "Sorry", message:self.errorCount == 3 ? "Could not retrieve data\nPlease contact admin" : "Could not retrieve data", preferredStyle: UIAlertControllerStyle.alert)
                 if self.errorCount != 3 {
-                    alert.addAction((UIAlertAction(title: "Retry", style: UIAlertActionStyle.Default,  handler:{
+                    alert.addAction((UIAlertAction(title: "Retry", style: UIAlertActionStyle.default,  handler:{
                         (alert: UIAlertAction!) in self.getData()
                     })))
                 }
                 
                 let myVC = self.window?.visibleViewController
-                if myVC!.isKindOfClass(ChapterPickerViewController) {
+                if myVC!.isKind(of: ChapterPickerViewController.self) {
                     let chap = myVC as! ChapterPickerViewController
-                    chap.presentViewController(alert, animated: true, completion: nil)
+                    chap.present(alert, animated: true, completion: nil)
                 }
-                else if myVC!.isKindOfClass(EstablishmentPickerViewController) {
-                    self.vc.presentViewController(alert, animated: true, completion: nil)
+                else if myVC!.isKind(of: EstablishmentPickerViewController.self) {
+                    self.vc.present(alert, animated: true, completion: nil)
                 }
                 
                 

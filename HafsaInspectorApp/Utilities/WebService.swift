@@ -16,40 +16,40 @@ import UIKit
 
 
  enum HTTPRequestAuthType {
-    case HTTPBasicAuth
-    case HTTPTokenAuth
+    case httpBasicAuth
+    case httpTokenAuth
 }
 
  enum HTTPRequestContentType {
-    case HTTPJsonContent
-    case HTTPMultipartContent
+    case httpJsonContent
+    case httpMultipartContent
 }
 
  enum HTTPRequestMethod {
-    case GET
-    case POST
-    case PUT
-    case UPLOAD
+    case get
+    case post
+    case put
+    case upload
 }
 
 let chaptersAndEstablishmentsEndpoint = "https://spreadsheets.google.com/feeds/list/1j1-OsdS5av9WFLswdm23s0bkHyv8e73UmKlbT31Eddw/od6/public/basic?alt=json"
 
 
 class WebService: NSObject {
-    typealias CompletionHandler = (Bool!, NSError!) -> Void
+    typealias CompletionHandler = (Bool?, NSError?) -> Void
 
-    func getChaptersAndEstablishments(completion:CompletionHandler) {
-        let url = NSURL(string: chaptersAndEstablishmentsEndpoint)
-        let request: NSMutableURLRequest = NSMutableURLRequest(URL:url!)
-        request.HTTPMethod = "GET"
+    func getChaptersAndEstablishments(_ completion:@escaping CompletionHandler) {
+        let url = URL(string: chaptersAndEstablishmentsEndpoint)
+        let request: NSMutableURLRequest = NSMutableURLRequest(url:url!)
+        request.httpMethod = "GET"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         
-        HTTPHelper().sendRequest(request) { (data:NSData!, error:NSError!) in
+        HTTPHelper().sendRequest(request as URLRequest) { (data:Data?, error:Error?) in
             if let error = error {
                 print("error \(error)")
-                if error.code == -999 { return }
-                completion(false,error)
+//                if error.code == -999 { return }
+                completion(false,error as NSError?)
                 
             } else if let resData = data {
                 
@@ -57,38 +57,38 @@ class WebService: NSObject {
                 let object = result as NSDictionary!
                 
                 let arr: NSMutableArray = []
-                let json = object as NSDictionary
-                let feed = json.objectForKey("feed") as! NSDictionary
-                let entries = feed.objectForKey("entry") as! NSArray
+                let json = object! as NSDictionary
+                let feed = json.object(forKey: "feed") as! NSDictionary
+                let entries = feed.object(forKey: "entry") as! NSArray
                 for dict in entries {
-                    arr.addObject(dict)
+                    arr.add(dict)
                 }
                 
                 let data: NSMutableArray = []
                 for dict in arr {
-                    let titleDict = dict.objectForKey("title") as! NSDictionary
-                    let title = titleDict.objectForKey("$t") as! String
-                    let estDict = dict.objectForKey("content") as! NSDictionary
-                    let ests = estDict.objectForKey("$t") as! NSString!
-                    let establishmentString = ests.stringByReplacingOccurrencesOfString("establishments:", withString: "")
-                    let establishmentsArr = establishmentString.characters.split{$0 == ","}.map(String.init)
-                    data.addObject([title:establishmentsArr])
+                    let titleDict = (dict as AnyObject).object(forKey: "title") as! NSDictionary
+                    let title = titleDict.object(forKey: "$t") as! String
+                    let estDict = (dict as AnyObject).object(forKey: "content") as! NSDictionary
+                    let ests = estDict.object(forKey: "$t") as! NSString!
+                    let establishmentString = ests?.replacingOccurrences(of: "establishments:", with: "")
+                    let establishmentsArr = establishmentString?.characters.split{$0 == ","}.map(String.init)
+                    data.add([title:establishmentsArr])
                     
                 }
-                dispatch_async(dispatch_get_main_queue()) {
+                DispatchQueue.main.async {
                     HIManager.sharedClient().data = data
                     completion(true, nil)
                 }
             }
-        }
+        } //as! (Data?, NSError?) -> Void
     }
     
     
-    func parseJSON(data: NSData) -> [String: AnyObject]? {
+    func parseJSON(_ data: Data) -> [String: AnyObject]? {
         
         do {
             // Try parsing some valid JSON
-            let json = try NSJSONSerialization.JSONObjectWithData(data, options:NSJSONReadingOptions(rawValue: 0)) as? [String: AnyObject]
+            let json = try JSONSerialization.jsonObject(with: data, options:JSONSerialization.ReadingOptions(rawValue: 0)) as? [String: AnyObject]
             return json
         }
         catch let error as NSError {
@@ -124,13 +124,13 @@ class WebService: NSObject {
          
          */
         
-         func sendRequest(request: NSURLRequest, completion:(NSData!, NSError!) -> Void) -> () {
+         func sendRequest(_ request: URLRequest, completion:@escaping (Data?, Error?) -> Void) -> () {
             // Create a NSURLSession task
-            let session = NSURLSession.sharedSession()
+            let session = URLSession.shared
             
-            let task = session.dataTaskWithRequest(request) { (data: NSData?,  response: NSURLResponse?, error: NSError?) in
+            let task = session.dataTask(with: request, completionHandler: { (data: Data?,  response: URLResponse?, error: Error?) in
                 if error != nil {
-                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    DispatchQueue.main.async(execute: { () -> Void in
                         print("sendRequest error")
                         completion(data, error)
                     })
@@ -138,8 +138,8 @@ class WebService: NSObject {
                     return
                 }
                 
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    if let httpResponse = response as? NSHTTPURLResponse {
+                DispatchQueue.main.async(execute: { () -> Void in
+                    if let httpResponse = response as? HTTPURLResponse {
                         if httpResponse.statusCode == 200 || httpResponse.statusCode == 201 {
                             completion(data, nil)
                         } else {
@@ -149,21 +149,21 @@ class WebService: NSObject {
                         }
                     }
                 })
-            }
+            })
             
             // start the task
             task.resume()
         }
         
-         func getErrorMessage(error: NSError) -> NSString {
+         func getErrorMessage(_ error: NSError) -> NSString {
             var errorMessage : NSString
             
             // return correct error message
             if error.domain == "HTTPHelperError" {
                 let userInfo = error.userInfo as NSDictionary!
-                errorMessage = userInfo.valueForKey("message") as! NSString
+                errorMessage = userInfo?.value(forKey: "message") as! NSString
             } else {
-                errorMessage = error.description
+                errorMessage = error.description as NSString
             }
             
             return errorMessage

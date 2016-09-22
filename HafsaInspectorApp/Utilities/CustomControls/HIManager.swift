@@ -10,23 +10,23 @@ import UIKit
 
 class HIManager: NSObject {
     
-    private static var sharedInstance = HIManager()
+    fileprivate static var sharedInstance = HIManager()
     
      var userName: String = {
-        let user = NSUserDefaults.standardUserDefaults().stringForKey("userName")
+        let user = UserDefaults.standard.string(forKey: "userName")
         if user != nil { return user! }
         else{ return ""}
     }()
     
      var currentChapter: String = {
-        let chapter = NSUserDefaults.standardUserDefaults().stringForKey("currentChapter")
+        let chapter = UserDefaults.standard.string(forKey: "currentChapter")
         if chapter != nil { return chapter! }
         else { return "" }
     }()
     
     lazy var currentEstablishment: String = ""
     
-    var data = []
+    var data: NSMutableArray = []
     
     //Data
     var chapterArray = ["","Chicago", "Detroit", "San Francisco"]

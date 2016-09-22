@@ -15,30 +15,30 @@ class NameTableViewCell: UITableViewCell {
     @IBOutlet weak var establishmentLabel: UILabel!
     @IBOutlet weak var datelabel: UILabel!
     
-    private let HImanager = HIManager.sharedClient()
+    fileprivate let HImanager = HIManager.sharedClient()
 
     func configureNameCell() {
-        self.selectionStyle = UITableViewCellSelectionStyle.None
+        self.selectionStyle = UITableViewCellSelectionStyle.none
 
-        self.backgroundColor = UIColor.clearColor()
+        self.backgroundColor = UIColor.clear
         
         nameLabel.text = HImanager.userName
         chapterLabel.text = HImanager.currentChapter
         establishmentLabel.text = HImanager.currentEstablishment
         
-        let formatter = NSDateFormatter()
+        let formatter = DateFormatter()
         formatter.dateFormat = "MM/dd/yy"
-        let dateString = formatter.stringFromDate(NSDate())
+        let dateString = formatter.string(from: Date())
         datelabel.text = dateString
         
         
         nameLabel.font = UIFont(name: "AvenirNext-Medium", size: 16)
-        nameLabel.textColor = UIColor.darkGrayColor()
+        nameLabel.textColor = UIColor.darkGray
         establishmentLabel.font = UIFont(name: "AvenirNext-Medium", size: 16)
-        establishmentLabel.textColor = UIColor.darkGrayColor()
+        establishmentLabel.textColor = UIColor.darkGray
         chapterLabel.font = UIFont(name: "AvenirNext-Medium", size: 16)
-        chapterLabel.textColor = UIColor.darkGrayColor()
+        chapterLabel.textColor = UIColor.darkGray
         datelabel.font = UIFont(name: "AvenirNext-Medium", size: 16)
-        datelabel.textColor = UIColor.darkGrayColor()
+        datelabel.textColor = UIColor.darkGray
     }
 }

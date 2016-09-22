@@ -1,0 +1,426 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RemindersController"
+provides-nominal:
+- "C17HafsaInspectorApp19RemindersController"
+provides-member:
+- ["C17HafsaInspectorApp19RemindersController", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+- "prepare"
+- "reminders"
+depends-top-level:
+- "Reminders"
+- !private "BooleanLiteralType"
+- "RemindersController"
+- "RemindersDelegate"
+- !private "Color"
+- "AssignmentPrecedence"
+- "UIViewController"
+- !private "Device"
+depends-member:
+- !private ["Ps9AnyObject", "Color"]
+- !private ["Ps9AnyObject", "Device"]
+- !private ["Ps9AnyObject", "Reminders"]
+- !private ["Ps9AnyObject", "backgroundColor"]
+- !private ["Ps9AnyObject", "clipsToBounds"]
+- !private ["Ps9AnyObject", "contentScaleFactor"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "prepare"]
+- ["Ps9AnyObject", "prepareReminder"]
+- ["Ps9AnyObject", "reminders"]
+- ["Ps9AnyObject", "reminders.storage"]
+- !private ["Ps9AnyObject", "view"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- !private ["Ps9AnyObject", "white"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "backgroundColor"]
+- !private ["PSo15CALayerDelegate", "clipsToBounds"]
+- !private ["PSo15CALayerDelegate", "contentScaleFactor"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["Ps7CVarArg", "Color"]
+- !private ["Ps7CVarArg", "Device"]
+- !private ["Ps7CVarArg", "Reminders"]
+- !private ["Ps7CVarArg", "backgroundColor"]
+- !private ["Ps7CVarArg", "clipsToBounds"]
+- !private ["Ps7CVarArg", "contentScaleFactor"]
+- !private ["Ps7CVarArg", "delegate"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "prepare"]
+- ["Ps7CVarArg", "prepareReminder"]
+- ["Ps7CVarArg", "reminders"]
+- ["Ps7CVarArg", "reminders.storage"]
+- !private ["Ps7CVarArg", "view"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["C17HafsaInspectorApp5Color", "white"]
+- !private ["Ps28CustomDebugStringConvertible", "Color"]
+- !private ["Ps28CustomDebugStringConvertible", "Device"]
+- !private ["Ps28CustomDebugStringConvertible", "Reminders"]
+- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
+- !private ["Ps28CustomDebugStringConvertible", "clipsToBounds"]
+- !private ["Ps28CustomDebugStringConvertible", "contentScaleFactor"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "prepare"]
+- ["Ps28CustomDebugStringConvertible", "prepareReminder"]
+- ["Ps28CustomDebugStringConvertible", "reminders"]
+- ["Ps28CustomDebugStringConvertible", "reminders.storage"]
+- !private ["Ps28CustomDebugStringConvertible", "view"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "Color"]
+- !private ["Ps23CustomStringConvertible", "Device"]
+- !private ["Ps23CustomStringConvertible", "Reminders"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "backgroundColor"]
+- !private ["Ps23CustomStringConvertible", "clipsToBounds"]
+- !private ["Ps23CustomStringConvertible", "contentScaleFactor"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "prepare"]
+- ["Ps23CustomStringConvertible", "prepareReminder"]
+- ["Ps23CustomStringConvertible", "reminders"]
+- ["Ps23CustomStringConvertible", "reminders.storage"]
+- !private ["Ps23CustomStringConvertible", "view"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["V17HafsaInspectorApp6Device", "scale"]
+- !private ["Ps9Equatable", "Color"]
+- !private ["Ps9Equatable", "Device"]
+- !private ["Ps9Equatable", "Reminders"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "backgroundColor"]
+- !private ["Ps9Equatable", "clipsToBounds"]
+- !private ["Ps9Equatable", "contentScaleFactor"]
+- !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "prepare"]
+- ["Ps9Equatable", "prepareReminder"]
+- ["Ps9Equatable", "reminders"]
+- ["Ps9Equatable", "reminders.storage"]
+- !private ["Ps9Equatable", "view"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "Color"]
+- !private ["Ps8Hashable", "Device"]
+- !private ["Ps8Hashable", "Reminders"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "backgroundColor"]
+- !private ["Ps8Hashable", "clipsToBounds"]
+- !private ["Ps8Hashable", "contentScaleFactor"]
+- !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "prepare"]
+- ["Ps8Hashable", "prepareReminder"]
+- ["Ps8Hashable", "reminders"]
+- ["Ps8Hashable", "reminders.storage"]
+- !private ["Ps8Hashable", "view"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "Color"]
+- !private ["PSo8NSCoding", "Device"]
+- !private ["PSo8NSCoding", "Reminders"]
+- !private ["PSo8NSCoding", "backgroundColor"]
+- !private ["PSo8NSCoding", "clipsToBounds"]
+- !private ["PSo8NSCoding", "contentScaleFactor"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "prepare"]
+- ["PSo8NSCoding", "prepareReminder"]
+- ["PSo8NSCoding", "reminders"]
+- ["PSo8NSCoding", "reminders.storage"]
+- !private ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "Color"]
+- !private ["PSo26NSExtensionRequestHandling", "Device"]
+- !private ["PSo26NSExtensionRequestHandling", "Reminders"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "prepare"]
+- ["PSo26NSExtensionRequestHandling", "prepareReminder"]
+- ["PSo26NSExtensionRequestHandling", "reminders"]
+- ["PSo26NSExtensionRequestHandling", "reminders.storage"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo8NSObject", "Color"]
+- !private ["CSo8NSObject", "Device"]
+- ["CSo8NSObject", "Reminders"]
+- !private ["CSo8NSObject", "backgroundColor"]
+- !private ["CSo8NSObject", "clipsToBounds"]
+- !private ["CSo8NSObject", "contentScaleFactor"]
+- !private ["CSo8NSObject", "delegate"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "prepare"]
+- ["CSo8NSObject", "prepareReminder"]
+- ["CSo8NSObject", "reminders"]
+- ["CSo8NSObject", "reminders.storage"]
+- !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "Color"]
+- !private ["PSo16NSObjectProtocol", "Device"]
+- !private ["PSo16NSObjectProtocol", "Reminders"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- !private ["PSo16NSObjectProtocol", "clipsToBounds"]
+- !private ["PSo16NSObjectProtocol", "contentScaleFactor"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "prepare"]
+- ["PSo16NSObjectProtocol", "prepareReminder"]
+- ["PSo16NSObjectProtocol", "reminders"]
+- ["PSo16NSObjectProtocol", "reminders.storage"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- ["C17HafsaInspectorApp9Reminders", "deinit"]
+- !private ["C17HafsaInspectorApp9Reminders", "delegate"]
+- !private ["C17HafsaInspectorApp9Reminders", "init"]
+- !private ["C17HafsaInspectorApp19RemindersController", "Color"]
+- !private ["C17HafsaInspectorApp19RemindersController", "Device"]
+- ["C17HafsaInspectorApp19RemindersController", "Reminders"]
+- ["C17HafsaInspectorApp19RemindersController", "deinit"]
+- ["C17HafsaInspectorApp19RemindersController", "init"]
+- ["C17HafsaInspectorApp19RemindersController", "prepare"]
+- !private ["C17HafsaInspectorApp19RemindersController", "prepareReminder"]
+- ["C17HafsaInspectorApp19RemindersController", "reminders"]
+- !private ["C17HafsaInspectorApp19RemindersController", "reminders.storage"]
+- !private ["C17HafsaInspectorApp19RemindersController", "view"]
+- ["C17HafsaInspectorApp19RemindersController", "viewDidLoad"]
+- !private ["P17HafsaInspectorApp17RemindersDelegate", "Color"]
+- !private ["P17HafsaInspectorApp17RemindersDelegate", "Device"]
+- !private ["P17HafsaInspectorApp17RemindersDelegate", "Reminders"]
+- !private ["P17HafsaInspectorApp17RemindersDelegate", "prepare"]
+- !private ["P17HafsaInspectorApp17RemindersDelegate", "prepareReminder"]
+- ["P17HafsaInspectorApp17RemindersDelegate", "reminders"]
+- !private ["P17HafsaInspectorApp17RemindersDelegate", "view"]
+- ["P17HafsaInspectorApp17RemindersDelegate", ""]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- !private ["PSo29UIAccessibilityIdentification", "clipsToBounds"]
+- !private ["PSo29UIAccessibilityIdentification", "contentScaleFactor"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
+- !private ["PSo12UIAppearance", "clipsToBounds"]
+- !private ["PSo12UIAppearance", "contentScaleFactor"]
+- !private ["PSo21UIAppearanceContainer", "Color"]
+- !private ["PSo21UIAppearanceContainer", "Device"]
+- !private ["PSo21UIAppearanceContainer", "Reminders"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- !private ["PSo21UIAppearanceContainer", "clipsToBounds"]
+- !private ["PSo21UIAppearanceContainer", "contentScaleFactor"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "prepare"]
+- ["PSo21UIAppearanceContainer", "prepareReminder"]
+- ["PSo21UIAppearanceContainer", "reminders"]
+- ["PSo21UIAppearanceContainer", "reminders.storage"]
+- !private ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["CSo7UIColor", "deinit"]
+- !private ["PSo18UIContentContainer", "Color"]
+- !private ["PSo18UIContentContainer", "Device"]
+- !private ["PSo18UIContentContainer", "Reminders"]
+- !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "prepare"]
+- ["PSo18UIContentContainer", "prepareReminder"]
+- ["PSo18UIContentContainer", "reminders"]
+- ["PSo18UIContentContainer", "reminders.storage"]
+- !private ["PSo18UIContentContainer", "view"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- !private ["PSo17UICoordinateSpace", "clipsToBounds"]
+- !private ["PSo17UICoordinateSpace", "contentScaleFactor"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
+- !private ["PSo13UIDynamicItem", "clipsToBounds"]
+- !private ["PSo13UIDynamicItem", "contentScaleFactor"]
+- !private ["PSo18UIFocusEnvironment", "Color"]
+- !private ["PSo18UIFocusEnvironment", "Device"]
+- !private ["PSo18UIFocusEnvironment", "Reminders"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
+- !private ["PSo18UIFocusEnvironment", "clipsToBounds"]
+- !private ["PSo18UIFocusEnvironment", "contentScaleFactor"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "prepare"]
+- ["PSo18UIFocusEnvironment", "prepareReminder"]
+- ["PSo18UIFocusEnvironment", "reminders"]
+- ["PSo18UIFocusEnvironment", "reminders.storage"]
+- !private ["PSo18UIFocusEnvironment", "view"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "backgroundColor"]
+- !private ["PSo11UIFocusItem", "clipsToBounds"]
+- !private ["PSo11UIFocusItem", "contentScaleFactor"]
+- !private ["CSo11UIResponder", "Color"]
+- !private ["CSo11UIResponder", "Device"]
+- ["CSo11UIResponder", "Reminders"]
+- !private ["CSo11UIResponder", "backgroundColor"]
+- !private ["CSo11UIResponder", "clipsToBounds"]
+- !private ["CSo11UIResponder", "contentScaleFactor"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "prepare"]
+- ["CSo11UIResponder", "prepareReminder"]
+- ["CSo11UIResponder", "reminders"]
+- ["CSo11UIResponder", "reminders.storage"]
+- !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "Color"]
+- !private ["PSo30UIResponderStandardEditActions", "Device"]
+- !private ["PSo30UIResponderStandardEditActions", "Reminders"]
+- !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
+- !private ["PSo30UIResponderStandardEditActions", "clipsToBounds"]
+- !private ["PSo30UIResponderStandardEditActions", "contentScaleFactor"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "prepare"]
+- ["PSo30UIResponderStandardEditActions", "prepareReminder"]
+- ["PSo30UIResponderStandardEditActions", "reminders"]
+- ["PSo30UIResponderStandardEditActions", "reminders.storage"]
+- !private ["PSo30UIResponderStandardEditActions", "view"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "Color"]
+- !private ["PSo16UIStateRestoring", "Device"]
+- !private ["PSo16UIStateRestoring", "Reminders"]
+- !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "prepare"]
+- ["PSo16UIStateRestoring", "prepareReminder"]
+- ["PSo16UIStateRestoring", "reminders"]
+- ["PSo16UIStateRestoring", "reminders.storage"]
+- !private ["PSo16UIStateRestoring", "view"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "Color"]
+- !private ["PSo18UITraitEnvironment", "Device"]
+- !private ["PSo18UITraitEnvironment", "Reminders"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- !private ["PSo18UITraitEnvironment", "clipsToBounds"]
+- !private ["PSo18UITraitEnvironment", "contentScaleFactor"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "prepare"]
+- ["PSo18UITraitEnvironment", "prepareReminder"]
+- ["PSo18UITraitEnvironment", "reminders"]
+- ["PSo18UITraitEnvironment", "reminders.storage"]
+- !private ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "backgroundColor"]
+- !private ["CSo6UIView", "clipsToBounds"]
+- !private ["CSo6UIView", "contentScaleFactor"]
+- !private ["CSo16UIViewController", "Color"]
+- !private ["CSo16UIViewController", "Device"]
+- ["CSo16UIViewController", "Reminders"]
+- ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "prepare"]
+- ["CSo16UIViewController", "prepareReminder"]
+- ["CSo16UIViewController", "reminders"]
+- ["CSo16UIViewController", "reminders.storage"]
+- !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "Color"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "Device"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "Reminders"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "init"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "prepare"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "prepareReminder"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "reminders"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "reminders.storage"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "view"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "viewDidLoad"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", ""]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "clipsToBounds"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "contentScaleFactor"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "Color"]
+- !private ["Ps9_Hashable", "Device"]
+- !private ["Ps9_Hashable", "Reminders"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "backgroundColor"]
+- !private ["Ps9_Hashable", "clipsToBounds"]
+- !private ["Ps9_Hashable", "contentScaleFactor"]
+- !private ["Ps9_Hashable", "delegate"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "prepare"]
+- ["Ps9_Hashable", "prepareReminder"]
+- ["Ps9_Hashable", "reminders"]
+- ["Ps9_Hashable", "reminders.storage"]
+- !private ["Ps9_Hashable", "view"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- !private "PSo15CALayerDelegate"
+- "V12CoreGraphics7CGFloat"
+- "Ps7CVarArg"
+- !private "C17HafsaInspectorApp5Color"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "V17HafsaInspectorApp6Device"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- "C17HafsaInspectorApp9Reminders"
+- "C17HafsaInspectorApp19RemindersController"
+- "P17HafsaInspectorApp17RemindersDelegate"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo7UIColor"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- "P17HafsaInspectorApp23ViewControllerContainer"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HafsaInspectorApp-Bridging-Header.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/IPDFView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+interface-hash: "f6397fb06804791058d9aa214a3bec29"

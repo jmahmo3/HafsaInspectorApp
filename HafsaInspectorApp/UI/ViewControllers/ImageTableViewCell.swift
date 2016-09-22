@@ -15,63 +15,63 @@ class ImageTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectio
     var imagesArr: NSMutableArray = []
         
     override func layoutSubviews() {
-        self.selectionStyle = UITableViewCellSelectionStyle.None
+        self.selectionStyle = UITableViewCellSelectionStyle.none
 
-        addImageButton.backgroundColor = UIColor.whiteColor()
-        addImageButton.tintColor = UIColor.blackColor()
-        addImageButton.titleLabel?.textColor = UIColor.blackColor()
+        addImageButton.backgroundColor = UIColor.white
+        addImageButton.tintColor = UIColor.black
+        addImageButton.titleLabel?.textColor = UIColor.black
         addImageButton.titleLabel?.font = UIFont(name: "AvenirNext-Medium", size: 16)
         addImageButton.layer.cornerRadius = 4
         addImageButton.layer.borderWidth = 1
-        addImageButton.layer.borderColor = UIColor.blackColor().CGColor
+        addImageButton.layer.borderColor = UIColor.black.cgColor
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return imagesArr.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionViewCell", forIndexPath: indexPath) as! AddImageCollectionViewCell
-        cell.takenImage.image = imagesArr.objectAtIndex(indexPath.row) as? UIImage
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! AddImageCollectionViewCell
+        cell.takenImage.image = imagesArr.object(at: (indexPath as NSIndexPath).row) as? UIImage
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = EditImageViewController.create(false)
         vc.delegate = self
-        vc.image = (self.imagesArr.objectAtIndex(indexPath.row) as? UIImage)!
-        parentViewController?.presentViewController(vc, animated: true, completion: nil)
+        vc.image = (self.imagesArr.object(at: (indexPath as NSIndexPath).row) as? UIImage)!
+        parentViewController?.present(vc, animated: true, completion: nil)
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSizeMake(40, 50)
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 40, height: 50)
     }
 
 //MARK: Actions
     
-    @IBAction func addImageButtonPressed(sender: AnyObject) {
+    @IBAction func addImageButtonPressed(_ sender: AnyObject) {
         let vc = IPDFView().create()
-        vc.delegate = self
-        parentViewController?.navigationController?.pushViewController(vc, animated: true)
+        vc?.delegate = self
+        parentViewController?.navigationController?.pushViewController(vc!, animated: true)
     }
     
     
     //Delegate method when coming from camera
-    func imageSaved(image: UIImage!) {
-        imagesArr.addObject(image)
-        dispatch_async(dispatch_get_main_queue()) {
+    func imageSaved(_ image: UIImage!) {
+        imagesArr.add(image)
+        DispatchQueue.main.async {
             self.collectionView.reloadData()
         }
     }
     
     //Delegate method when coming from cell
-    func deleteImage(image: UIImage) {
+    func deleteImage(_ image: UIImage) {
         for pic in imagesArr {
             if pic as! UIImage == image {
-                imagesArr.removeObject(pic)
-                dispatch_async(dispatch_get_main_queue()) {
+                imagesArr.remove(pic)
+                DispatchQueue.main.async {
                     self.collectionView.reloadData()
                 }
             }
