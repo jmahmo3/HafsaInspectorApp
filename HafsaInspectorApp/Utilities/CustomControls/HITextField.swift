@@ -74,7 +74,8 @@ class HITextField: TextField, UIPickerViewDelegate, UIPickerViewDataSource {
         let establishments: NSMutableArray = []
         for dict in arr {
             let title = (dict as AnyObject).allKeys[0]
-            if title as! String == HImanager.currentChapter {
+            let trimmedString = HImanager.currentChapter.trimmingCharacters(in: .whitespaces)
+            if title as! String == trimmedString {
                 print((dict as AnyObject).object(forKey: title)!)
                 establishments.add((dict as AnyObject).object(forKey: title)!)
             }
