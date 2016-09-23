@@ -19,6 +19,8 @@ provides-member:
 - ["CSo8UIWindow", ""]
 - ["CSo6UIView", ""]
 - ["CSo7UIColor", "HIBackground"]
+- ["CSo16UIViewController", "hideKeyboardWhenTappedAround"]
+- ["CSo16UIViewController", "dismissKeyboard"]
 - ["CSo16UIViewController", "setNavBarWithSettingsIcon"]
 - ["CSo16UIViewController", "setNavBarWithBackButton"]
 - ["CSo16UIViewController", "backButtonPressed"]
@@ -35,54 +37,57 @@ provides-member:
 - ["CSo8UIWindow", "getVisibleViewControllerFrom"]
 - ["CSo6UIView", "parentViewController"]
 provides-dynamic-lookup:
-- "createAlert"
-- "isVisible"
+- "backButtonPressed"
+- "topMostViewController"
+- "topMostViewController"
+- "topMostViewController"
+- "topMostViewController"
 - "setNavBarWithBackButton"
-- "isTopViewController"
-- "HIBackground"
 - "visibleViewController"
 - "setNavBarWithSettingsIcon"
-- "isOnScreen"
-- "topMostViewController"
-- "topMostViewController"
-- "topMostViewController"
-- "topMostViewController"
+- "isTopViewController"
+- "createAlert"
+- "hideKeyboardWhenTappedAround"
 - "createWebAlertWithTryAgain"
-- "parentViewController"
-- "backButtonPressed"
+- "dismissKeyboard"
+- "HIBackground"
 - "getVisibleViewControllerFrom"
+- "isVisible"
+- "parentViewController"
+- "isOnScreen"
 depends-top-level:
-- "UIWindow"
-- !private "UIBarButtonItem"
-- !private "??"
-- "Selector"
-- "String"
-- "UITabBarController"
-- !private "StringLiteralType"
-- !private "!="
-- !private "UIImageView"
-- !private "BooleanLiteralType"
-- "Bool"
-- !private "UIAlertActionStyle"
-- "ViewControllerContainer"
-- !private "UIImage"
-- !private "==="
-- "UIScreen"
-- !private "UIAlertAction"
-- !private "max"
 - "UIViewController"
-- "UIColor"
-- !private "UIAlertController"
-- !private "&&"
-- "UIView"
-- !private "UIAlertControllerStyle"
 - "UINavigationController"
-- "recurseViewController"
 - !private "UIResponder"
-- "AssignmentPrecedence"
-- "=="
-- "CastingPrecedence"
 - !private "CGFloat"
+- "UIColor"
+- "UIScreen"
+- "ViewControllerContainer"
+- !private "!="
+- "String"
+- !private "UIAlertControllerStyle"
+- !private "UIAlertAction"
+- "recurseViewController"
+- !private "max"
+- "UIWindow"
+- "UIView"
+- "=="
+- "Bool"
+- "UITabBarController"
+- "Selector"
+- "AssignmentPrecedence"
+- !private "UIImage"
+- "CastingPrecedence"
+- !private "UITapGestureRecognizer"
+- !private "StringLiteralType"
+- !private "??"
+- !private "UIBarButtonItem"
+- !private "&&"
+- !private "BooleanLiteralType"
+- !private "UIAlertController"
+- !private "UIAlertActionStyle"
+- !private "UIImageView"
+- !private "==="
 depends-member:
 - ["Ps9AnyObject", "HIBackground"]
 - !private ["Ps9AnyObject", "Selector"]
@@ -95,8 +100,11 @@ depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "UIImageView"]
 - !private ["Ps9AnyObject", "UIScreen"]
+- !private ["Ps9AnyObject", "UITapGestureRecognizer"]
+- !private ["Ps9AnyObject", "UIViewController"]
 - !private ["Ps9AnyObject", "UIWindow"]
 - !private ["Ps9AnyObject", "addAction"]
+- !private ["Ps9AnyObject", "addGestureRecognizer"]
 - ["Ps9AnyObject", "backButtonPressed"]
 - !private ["Ps9AnyObject", "barTintColor"]
 - !private ["Ps9AnyObject", "black"]
@@ -104,7 +112,10 @@ depends-member:
 - !private ["Ps9AnyObject", "childViewControllers"]
 - ["Ps9AnyObject", "createAlert"]
 - ["Ps9AnyObject", "createWebAlertWithTryAgain"]
+- ["Ps9AnyObject", "dismissKeyboard"]
+- !private ["Ps9AnyObject", "endEditing"]
 - ["Ps9AnyObject", "getVisibleViewControllerFrom"]
+- ["Ps9AnyObject", "hideKeyboardWhenTappedAround"]
 - !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "isOnScreen"]
 - ["Ps9AnyObject", "isTopViewController"]
@@ -153,7 +164,9 @@ depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "UIWindow"]
+- !private ["PSo15CALayerDelegate", "addGestureRecognizer"]
 - !private ["PSo15CALayerDelegate", "barTintColor"]
+- !private ["PSo15CALayerDelegate", "endEditing"]
 - ["PSo15CALayerDelegate", "getVisibleViewControllerFrom"]
 - !private ["PSo15CALayerDelegate", "init"]
 - !private ["PSo15CALayerDelegate", "recurseViewController"]
@@ -179,9 +192,12 @@ depends-member:
 - !private ["Ps7CVarArg", "UIImage"]
 - !private ["Ps7CVarArg", "UIImageView"]
 - !private ["Ps7CVarArg", "UIScreen"]
+- !private ["Ps7CVarArg", "UITapGestureRecognizer"]
+- !private ["Ps7CVarArg", "UIViewController"]
 - !private ["Ps7CVarArg", "UIWindow"]
 - !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "addAction"]
+- !private ["Ps7CVarArg", "addGestureRecognizer"]
 - ["Ps7CVarArg", "backButtonPressed"]
 - !private ["Ps7CVarArg", "barTintColor"]
 - !private ["Ps7CVarArg", "black"]
@@ -189,8 +205,11 @@ depends-member:
 - !private ["Ps7CVarArg", "childViewControllers"]
 - ["Ps7CVarArg", "createAlert"]
 - ["Ps7CVarArg", "createWebAlertWithTryAgain"]
+- ["Ps7CVarArg", "dismissKeyboard"]
+- !private ["Ps7CVarArg", "endEditing"]
 - ["Ps7CVarArg", "getVisibleViewControllerFrom"]
 - !private ["Ps7CVarArg", "hashValue"]
+- ["Ps7CVarArg", "hideKeyboardWhenTappedAround"]
 - !private ["Ps7CVarArg", "init"]
 - ["Ps7CVarArg", "isOnScreen"]
 - ["Ps7CVarArg", "isTopViewController"]
@@ -243,9 +262,12 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImageView"]
 - !private ["Ps28CustomDebugStringConvertible", "UIScreen"]
+- !private ["Ps28CustomDebugStringConvertible", "UITapGestureRecognizer"]
+- !private ["Ps28CustomDebugStringConvertible", "UIViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "UIWindow"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
+- !private ["Ps28CustomDebugStringConvertible", "addGestureRecognizer"]
 - ["Ps28CustomDebugStringConvertible", "backButtonPressed"]
 - !private ["Ps28CustomDebugStringConvertible", "barTintColor"]
 - !private ["Ps28CustomDebugStringConvertible", "black"]
@@ -253,8 +275,11 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "childViewControllers"]
 - ["Ps28CustomDebugStringConvertible", "createAlert"]
 - ["Ps28CustomDebugStringConvertible", "createWebAlertWithTryAgain"]
+- ["Ps28CustomDebugStringConvertible", "dismissKeyboard"]
+- !private ["Ps28CustomDebugStringConvertible", "endEditing"]
 - ["Ps28CustomDebugStringConvertible", "getVisibleViewControllerFrom"]
 - !private ["Ps28CustomDebugStringConvertible", "height"]
+- ["Ps28CustomDebugStringConvertible", "hideKeyboardWhenTappedAround"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "isOnScreen"]
 - ["Ps28CustomDebugStringConvertible", "isTopViewController"]
@@ -323,10 +348,13 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "UIImageView"]
 - !private ["Ps23CustomStringConvertible", "UIScreen"]
+- !private ["Ps23CustomStringConvertible", "UITapGestureRecognizer"]
+- !private ["Ps23CustomStringConvertible", "UIViewController"]
 - !private ["Ps23CustomStringConvertible", "UIWindow"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addAction"]
+- !private ["Ps23CustomStringConvertible", "addGestureRecognizer"]
 - ["Ps23CustomStringConvertible", "backButtonPressed"]
 - !private ["Ps23CustomStringConvertible", "barTintColor"]
 - !private ["Ps23CustomStringConvertible", "black"]
@@ -334,8 +362,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "childViewControllers"]
 - ["Ps23CustomStringConvertible", "createAlert"]
 - ["Ps23CustomStringConvertible", "createWebAlertWithTryAgain"]
+- ["Ps23CustomStringConvertible", "dismissKeyboard"]
+- !private ["Ps23CustomStringConvertible", "endEditing"]
 - ["Ps23CustomStringConvertible", "getVisibleViewControllerFrom"]
 - !private ["Ps23CustomStringConvertible", "hashValue"]
+- ["Ps23CustomStringConvertible", "hideKeyboardWhenTappedAround"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "isOnScreen"]
 - ["Ps23CustomStringConvertible", "isTopViewController"]
@@ -382,10 +413,13 @@ depends-member:
 - !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "UIImageView"]
 - !private ["Ps9Equatable", "UIScreen"]
+- !private ["Ps9Equatable", "UITapGestureRecognizer"]
+- !private ["Ps9Equatable", "UIViewController"]
 - !private ["Ps9Equatable", "UIWindow"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "_toAnyHashable"]
 - !private ["Ps9Equatable", "addAction"]
+- !private ["Ps9Equatable", "addGestureRecognizer"]
 - !private ["Ps9Equatable", "alert"]
 - ["Ps9Equatable", "backButtonPressed"]
 - !private ["Ps9Equatable", "barTintColor"]
@@ -395,9 +429,12 @@ depends-member:
 - ["Ps9Equatable", "createAlert"]
 - ["Ps9Equatable", "createWebAlertWithTryAgain"]
 - !private ["Ps9Equatable", "default"]
+- ["Ps9Equatable", "dismissKeyboard"]
+- !private ["Ps9Equatable", "endEditing"]
 - ["Ps9Equatable", "getVisibleViewControllerFrom"]
 - ["Ps9Equatable", "hashValue"]
 - !private ["Ps9Equatable", "height"]
+- ["Ps9Equatable", "hideKeyboardWhenTappedAround"]
 - ["Ps9Equatable", "iPhone5"]
 - ["Ps9Equatable", "iPhone6"]
 - ["Ps9Equatable", "iPhone6P"]
@@ -461,10 +498,13 @@ depends-member:
 - !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "UIImageView"]
 - !private ["Ps8Hashable", "UIScreen"]
+- !private ["Ps8Hashable", "UITapGestureRecognizer"]
+- !private ["Ps8Hashable", "UIViewController"]
 - !private ["Ps8Hashable", "UIWindow"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "_toAnyHashable"]
 - !private ["Ps8Hashable", "addAction"]
+- !private ["Ps8Hashable", "addGestureRecognizer"]
 - !private ["Ps8Hashable", "alert"]
 - ["Ps8Hashable", "backButtonPressed"]
 - !private ["Ps8Hashable", "barTintColor"]
@@ -474,8 +514,11 @@ depends-member:
 - ["Ps8Hashable", "createAlert"]
 - ["Ps8Hashable", "createWebAlertWithTryAgain"]
 - !private ["Ps8Hashable", "default"]
+- ["Ps8Hashable", "dismissKeyboard"]
+- !private ["Ps8Hashable", "endEditing"]
 - ["Ps8Hashable", "getVisibleViewControllerFrom"]
 - ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", "hideKeyboardWhenTappedAround"]
 - ["Ps8Hashable", "iPhone5"]
 - ["Ps8Hashable", "iPhone6"]
 - ["Ps8Hashable", "iPhone6P"]
@@ -547,12 +590,17 @@ depends-member:
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UIImageView"]
+- !private ["PSo8NSCoding", "UITapGestureRecognizer"]
+- !private ["PSo8NSCoding", "UIViewController"]
 - !private ["PSo8NSCoding", "UIWindow"]
 - !private ["PSo8NSCoding", "addAction"]
+- !private ["PSo8NSCoding", "addGestureRecognizer"]
 - !private ["PSo8NSCoding", "backButtonPressed"]
 - !private ["PSo8NSCoding", "barTintColor"]
 - !private ["PSo8NSCoding", "black"]
 - !private ["PSo8NSCoding", "childViewControllers"]
+- !private ["PSo8NSCoding", "dismissKeyboard"]
+- !private ["PSo8NSCoding", "endEditing"]
 - ["PSo8NSCoding", "getVisibleViewControllerFrom"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "isViewLoaded"]
@@ -593,9 +641,12 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImageView"]
+- !private ["PSo26NSExtensionRequestHandling", "UITapGestureRecognizer"]
+- !private ["PSo26NSExtensionRequestHandling", "UIViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "addAction"]
 - !private ["PSo26NSExtensionRequestHandling", "backButtonPressed"]
 - !private ["PSo26NSExtensionRequestHandling", "childViewControllers"]
+- !private ["PSo26NSExtensionRequestHandling", "dismissKeyboard"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "isViewLoaded"]
 - !private ["PSo26NSExtensionRequestHandling", "isVisible"]
@@ -631,9 +682,11 @@ depends-member:
 - !private ["CSo8NSObject", "UIResponder"]
 - !private ["CSo8NSObject", "UIScreen"]
 - !private ["CSo8NSObject", "UITabBarController"]
+- !private ["CSo8NSObject", "UITapGestureRecognizer"]
 - ["CSo8NSObject", "UIViewController"]
 - !private ["CSo8NSObject", "UIWindow"]
 - !private ["CSo8NSObject", "addAction"]
+- !private ["CSo8NSObject", "addGestureRecognizer"]
 - ["CSo8NSObject", "backButtonPressed"]
 - !private ["CSo8NSObject", "barTintColor"]
 - !private ["CSo8NSObject", "black"]
@@ -642,7 +695,10 @@ depends-member:
 - ["CSo8NSObject", "createAlert"]
 - ["CSo8NSObject", "createWebAlertWithTryAgain"]
 - !private ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "dismissKeyboard"]
+- !private ["CSo8NSObject", "endEditing"]
 - ["CSo8NSObject", "getVisibleViewControllerFrom"]
+- ["CSo8NSObject", "hideKeyboardWhenTappedAround"]
 - ["CSo8NSObject", "iPhone"]
 - !private ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "isOnScreen"]
@@ -689,8 +745,11 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UIImageView"]
 - !private ["PSo16NSObjectProtocol", "UIScreen"]
+- !private ["PSo16NSObjectProtocol", "UITapGestureRecognizer"]
+- !private ["PSo16NSObjectProtocol", "UIViewController"]
 - !private ["PSo16NSObjectProtocol", "UIWindow"]
 - !private ["PSo16NSObjectProtocol", "addAction"]
+- !private ["PSo16NSObjectProtocol", "addGestureRecognizer"]
 - ["PSo16NSObjectProtocol", "backButtonPressed"]
 - !private ["PSo16NSObjectProtocol", "barTintColor"]
 - !private ["PSo16NSObjectProtocol", "black"]
@@ -698,7 +757,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "childViewControllers"]
 - ["PSo16NSObjectProtocol", "createAlert"]
 - ["PSo16NSObjectProtocol", "createWebAlertWithTryAgain"]
+- ["PSo16NSObjectProtocol", "dismissKeyboard"]
+- !private ["PSo16NSObjectProtocol", "endEditing"]
 - ["PSo16NSObjectProtocol", "getVisibleViewControllerFrom"]
+- ["PSo16NSObjectProtocol", "hideKeyboardWhenTappedAround"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "isOnScreen"]
 - ["PSo16NSObjectProtocol", "isTopViewController"]
@@ -771,7 +833,9 @@ depends-member:
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "UIWindow"]
+- !private ["PSo29UIAccessibilityIdentification", "addGestureRecognizer"]
 - !private ["PSo29UIAccessibilityIdentification", "barTintColor"]
+- !private ["PSo29UIAccessibilityIdentification", "endEditing"]
 - ["PSo29UIAccessibilityIdentification", "getVisibleViewControllerFrom"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "recurseViewController"]
@@ -790,7 +854,9 @@ depends-member:
 - !private ["OSC22UIAlertControllerStyle", "alert"]
 - ["OSC22UIAlertControllerStyle", "deinit"]
 - !private ["PSo12UIAppearance", "UIWindow"]
+- !private ["PSo12UIAppearance", "addGestureRecognizer"]
 - !private ["PSo12UIAppearance", "barTintColor"]
+- !private ["PSo12UIAppearance", "endEditing"]
 - ["PSo12UIAppearance", "getVisibleViewControllerFrom"]
 - !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "recurseViewController"]
@@ -808,11 +874,16 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UIImageView"]
+- !private ["PSo21UIAppearanceContainer", "UITapGestureRecognizer"]
+- !private ["PSo21UIAppearanceContainer", "UIViewController"]
 - !private ["PSo21UIAppearanceContainer", "UIWindow"]
 - !private ["PSo21UIAppearanceContainer", "addAction"]
+- !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
 - !private ["PSo21UIAppearanceContainer", "backButtonPressed"]
 - !private ["PSo21UIAppearanceContainer", "barTintColor"]
 - !private ["PSo21UIAppearanceContainer", "childViewControllers"]
+- !private ["PSo21UIAppearanceContainer", "dismissKeyboard"]
+- !private ["PSo21UIAppearanceContainer", "endEditing"]
 - ["PSo21UIAppearanceContainer", "getVisibleViewControllerFrom"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "isViewLoaded"]
@@ -857,9 +928,12 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UIImageView"]
+- !private ["PSo18UIContentContainer", "UITapGestureRecognizer"]
+- !private ["PSo18UIContentContainer", "UIViewController"]
 - !private ["PSo18UIContentContainer", "addAction"]
 - !private ["PSo18UIContentContainer", "backButtonPressed"]
 - !private ["PSo18UIContentContainer", "childViewControllers"]
+- !private ["PSo18UIContentContainer", "dismissKeyboard"]
 - !private ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "isViewLoaded"]
 - !private ["PSo18UIContentContainer", "isVisible"]
@@ -878,7 +952,9 @@ depends-member:
 - !private ["PSo18UIContentContainer", "viewControllers"]
 - !private ["PSo18UIContentContainer", "visibleViewController"]
 - !private ["PSo17UICoordinateSpace", "UIWindow"]
+- !private ["PSo17UICoordinateSpace", "addGestureRecognizer"]
 - !private ["PSo17UICoordinateSpace", "barTintColor"]
+- !private ["PSo17UICoordinateSpace", "endEditing"]
 - ["PSo17UICoordinateSpace", "getVisibleViewControllerFrom"]
 - !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "recurseViewController"]
@@ -887,7 +963,9 @@ depends-member:
 - ["PSo17UICoordinateSpace", "visibleViewController"]
 - !private ["PSo17UICoordinateSpace", "window"]
 - !private ["PSo13UIDynamicItem", "UIWindow"]
+- !private ["PSo13UIDynamicItem", "addGestureRecognizer"]
 - !private ["PSo13UIDynamicItem", "barTintColor"]
+- !private ["PSo13UIDynamicItem", "endEditing"]
 - ["PSo13UIDynamicItem", "getVisibleViewControllerFrom"]
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "recurseViewController"]
@@ -904,11 +982,16 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UIImageView"]
+- !private ["PSo18UIFocusEnvironment", "UITapGestureRecognizer"]
+- !private ["PSo18UIFocusEnvironment", "UIViewController"]
 - !private ["PSo18UIFocusEnvironment", "UIWindow"]
 - !private ["PSo18UIFocusEnvironment", "addAction"]
+- !private ["PSo18UIFocusEnvironment", "addGestureRecognizer"]
 - !private ["PSo18UIFocusEnvironment", "backButtonPressed"]
 - !private ["PSo18UIFocusEnvironment", "barTintColor"]
 - !private ["PSo18UIFocusEnvironment", "childViewControllers"]
+- !private ["PSo18UIFocusEnvironment", "dismissKeyboard"]
+- !private ["PSo18UIFocusEnvironment", "endEditing"]
 - ["PSo18UIFocusEnvironment", "getVisibleViewControllerFrom"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "isViewLoaded"]
@@ -930,7 +1013,9 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "visibleViewController"]
 - !private ["PSo18UIFocusEnvironment", "window"]
 - !private ["PSo11UIFocusItem", "UIWindow"]
+- !private ["PSo11UIFocusItem", "addGestureRecognizer"]
 - !private ["PSo11UIFocusItem", "barTintColor"]
+- !private ["PSo11UIFocusItem", "endEditing"]
 - ["PSo11UIFocusItem", "getVisibleViewControllerFrom"]
 - !private ["PSo11UIFocusItem", "init"]
 - !private ["PSo11UIFocusItem", "recurseViewController"]
@@ -938,6 +1023,7 @@ depends-member:
 - ["PSo11UIFocusItem", "topMostViewController"]
 - ["PSo11UIFocusItem", "visibleViewController"]
 - !private ["PSo11UIFocusItem", "window"]
+- !private ["CSo19UIGestureRecognizer", "init"]
 - !private ["CSo7UIImage", "init"]
 - ["CSo11UIImageView", "deinit"]
 - !private ["CSo11UIImageView", "init"]
@@ -969,16 +1055,21 @@ depends-member:
 - !private ["CSo11UIResponder", "UINavigationController"]
 - !private ["CSo11UIResponder", "UIResponder"]
 - !private ["CSo11UIResponder", "UITabBarController"]
+- !private ["CSo11UIResponder", "UITapGestureRecognizer"]
 - ["CSo11UIResponder", "UIViewController"]
 - !private ["CSo11UIResponder", "UIWindow"]
 - !private ["CSo11UIResponder", "addAction"]
+- !private ["CSo11UIResponder", "addGestureRecognizer"]
 - ["CSo11UIResponder", "backButtonPressed"]
 - !private ["CSo11UIResponder", "barTintColor"]
 - !private ["CSo11UIResponder", "childViewControllers"]
 - ["CSo11UIResponder", "createAlert"]
 - ["CSo11UIResponder", "createWebAlertWithTryAgain"]
 - !private ["CSo11UIResponder", "deinit"]
+- ["CSo11UIResponder", "dismissKeyboard"]
+- !private ["CSo11UIResponder", "endEditing"]
 - ["CSo11UIResponder", "getVisibleViewControllerFrom"]
+- ["CSo11UIResponder", "hideKeyboardWhenTappedAround"]
 - !private ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "isOnScreen"]
 - ["CSo11UIResponder", "isTopViewController"]
@@ -1013,14 +1104,20 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImageView"]
+- !private ["PSo30UIResponderStandardEditActions", "UITapGestureRecognizer"]
+- !private ["PSo30UIResponderStandardEditActions", "UIViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "UIWindow"]
 - !private ["PSo30UIResponderStandardEditActions", "addAction"]
+- !private ["PSo30UIResponderStandardEditActions", "addGestureRecognizer"]
 - ["PSo30UIResponderStandardEditActions", "backButtonPressed"]
 - !private ["PSo30UIResponderStandardEditActions", "barTintColor"]
 - !private ["PSo30UIResponderStandardEditActions", "childViewControllers"]
 - ["PSo30UIResponderStandardEditActions", "createAlert"]
 - ["PSo30UIResponderStandardEditActions", "createWebAlertWithTryAgain"]
+- ["PSo30UIResponderStandardEditActions", "dismissKeyboard"]
+- !private ["PSo30UIResponderStandardEditActions", "endEditing"]
 - ["PSo30UIResponderStandardEditActions", "getVisibleViewControllerFrom"]
+- ["PSo30UIResponderStandardEditActions", "hideKeyboardWhenTappedAround"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", "isOnScreen"]
 - ["PSo30UIResponderStandardEditActions", "isTopViewController"]
@@ -1064,9 +1161,12 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UIImageView"]
+- !private ["PSo16UIStateRestoring", "UITapGestureRecognizer"]
+- !private ["PSo16UIStateRestoring", "UIViewController"]
 - !private ["PSo16UIStateRestoring", "addAction"]
 - !private ["PSo16UIStateRestoring", "backButtonPressed"]
 - !private ["PSo16UIStateRestoring", "childViewControllers"]
+- !private ["PSo16UIStateRestoring", "dismissKeyboard"]
 - !private ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "isViewLoaded"]
 - !private ["PSo16UIStateRestoring", "isVisible"]
@@ -1091,6 +1191,8 @@ depends-member:
 - ["CSo18UITabBarController", "topMostViewController"]
 - !private ["PSo16UITabBarDelegate", "recurseViewController"]
 - !private ["PSo16UITabBarDelegate", "selectedViewController"]
+- ["CSo22UITapGestureRecognizer", "deinit"]
+- !private ["CSo22UITapGestureRecognizer", "init"]
 - !private ["PSo18UITraitEnvironment", "Selector"]
 - !private ["PSo18UITraitEnvironment", "UIAlertAction"]
 - !private ["PSo18UITraitEnvironment", "UIAlertActionStyle"]
@@ -1101,12 +1203,17 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UIImageView"]
 - !private ["PSo18UITraitEnvironment", "UIScreen"]
+- !private ["PSo18UITraitEnvironment", "UITapGestureRecognizer"]
+- !private ["PSo18UITraitEnvironment", "UIViewController"]
 - !private ["PSo18UITraitEnvironment", "UIWindow"]
 - !private ["PSo18UITraitEnvironment", "addAction"]
+- !private ["PSo18UITraitEnvironment", "addGestureRecognizer"]
 - !private ["PSo18UITraitEnvironment", "backButtonPressed"]
 - !private ["PSo18UITraitEnvironment", "barTintColor"]
 - !private ["PSo18UITraitEnvironment", "bounds"]
 - !private ["PSo18UITraitEnvironment", "childViewControllers"]
+- !private ["PSo18UITraitEnvironment", "dismissKeyboard"]
+- !private ["PSo18UITraitEnvironment", "endEditing"]
 - ["PSo18UITraitEnvironment", "getVisibleViewControllerFrom"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "isViewLoaded"]
@@ -1134,8 +1241,10 @@ depends-member:
 - !private ["CSo6UIView", "UITabBarController"]
 - ["CSo6UIView", "UIViewController"]
 - !private ["CSo6UIView", "UIWindow"]
+- !private ["CSo6UIView", "addGestureRecognizer"]
 - !private ["CSo6UIView", "barTintColor"]
 - ["CSo6UIView", "deinit"]
+- !private ["CSo6UIView", "endEditing"]
 - ["CSo6UIView", "getVisibleViewControllerFrom"]
 - !private ["CSo6UIView", "init"]
 - ["CSo6UIView", "parentViewController"]
@@ -1155,6 +1264,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIImage"]
 - !private ["CSo16UIViewController", "UIImageView"]
+- !private ["CSo16UIViewController", "UITapGestureRecognizer"]
 - ["CSo16UIViewController", "UIViewController"]
 - !private ["CSo16UIViewController", "addAction"]
 - ["CSo16UIViewController", "backButtonPressed"]
@@ -1162,6 +1272,8 @@ depends-member:
 - ["CSo16UIViewController", "createAlert"]
 - ["CSo16UIViewController", "createWebAlertWithTryAgain"]
 - ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "dismissKeyboard"]
+- ["CSo16UIViewController", "hideKeyboardWhenTappedAround"]
 - !private ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "isOnScreen"]
 - ["CSo16UIViewController", "isTopViewController"]
@@ -1202,11 +1314,13 @@ depends-member:
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "UIColor"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "UIImage"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "UIImageView"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "UITapGestureRecognizer"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "UIViewController"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "UIWindow"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "addAction"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "backButtonPressed"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "childViewControllers"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "dismissKeyboard"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "getVisibleViewControllerFrom"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "init"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "isViewLoaded"]
@@ -1231,7 +1345,9 @@ depends-member:
 - !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "last"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIWindow"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addGestureRecognizer"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "barTintColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "endEditing"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "getVisibleViewControllerFrom"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "recurseViewController"]
@@ -1266,10 +1382,13 @@ depends-member:
 - !private ["Ps9_Hashable", "UIImage"]
 - !private ["Ps9_Hashable", "UIImageView"]
 - !private ["Ps9_Hashable", "UIScreen"]
+- !private ["Ps9_Hashable", "UITapGestureRecognizer"]
+- !private ["Ps9_Hashable", "UIViewController"]
 - !private ["Ps9_Hashable", "UIWindow"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "_toAnyHashable"]
 - !private ["Ps9_Hashable", "addAction"]
+- !private ["Ps9_Hashable", "addGestureRecognizer"]
 - !private ["Ps9_Hashable", "alert"]
 - ["Ps9_Hashable", "backButtonPressed"]
 - !private ["Ps9_Hashable", "barTintColor"]
@@ -1279,8 +1398,11 @@ depends-member:
 - ["Ps9_Hashable", "createAlert"]
 - ["Ps9_Hashable", "createWebAlertWithTryAgain"]
 - !private ["Ps9_Hashable", "default"]
+- ["Ps9_Hashable", "dismissKeyboard"]
+- !private ["Ps9_Hashable", "endEditing"]
 - ["Ps9_Hashable", "getVisibleViewControllerFrom"]
 - ["Ps9_Hashable", "hashValue"]
+- ["Ps9_Hashable", "hideKeyboardWhenTappedAround"]
 - ["Ps9_Hashable", "iPhone5"]
 - ["Ps9_Hashable", "iPhone6"]
 - ["Ps9_Hashable", "iPhone6P"]
@@ -1418,6 +1540,7 @@ depends-nominal:
 - "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - "PSo11UIFocusItem"
+- !private "CSo19UIGestureRecognizer"
 - !private "CSo7UIImage"
 - "CSo11UIImageView"
 - "CSo15UINavigationBar"
@@ -1429,6 +1552,7 @@ depends-nominal:
 - "PSo16UIStateRestoring"
 - "CSo18UITabBarController"
 - !private "PSo16UITabBarDelegate"
+- "CSo22UITapGestureRecognizer"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
 - "CSo16UIViewController"
@@ -1467,13 +1591,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderTextView.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
-interface-hash: "819fa2d91cacb63adbbf1eb2a2b8fd4c"
+interface-hash: "070d51a6d871cdaadf9ac3112136912c"
