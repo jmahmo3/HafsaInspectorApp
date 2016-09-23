@@ -15,6 +15,20 @@ public extension UIColor {
 }
 
 public extension UIViewController {
+    
+    
+    
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    
     func setNavBarWithSettingsIcon(_ selector:String) {
         self.navigationController?.navigationBar.barTintColor = UIColor.white
         let logo = UIImage(named: "logo")
@@ -40,7 +54,7 @@ public extension UIViewController {
     }
     
     func backButtonPressed() {
-        self.navigationController?.popViewController(animated: true)
+        _ = self.navigationController?.popViewController(animated: true)
     }
     
     public var isVisible: Bool {

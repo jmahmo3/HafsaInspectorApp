@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C0D44AE1D94A51C00DF0FC3 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D44AD1D94A51C00DF0FC3 /* CommentTableViewCell.swift */; };
+		9C0D44B31D94A53800DF0FC3 /* RPFloatingPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D44B21D94A53800DF0FC3 /* RPFloatingPlaceholderTextView.m */; };
 		9C4254E81D942FC600DCFA91 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4254921D942FC600DCFA91 /* Animation.swift */; };
 		9C4254E91D942FC600DCFA91 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4254931D942FC600DCFA91 /* Bar.swift */; };
 		9C4254EA1D942FC600DCFA91 /* BasicAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4254941D942FC600DCFA91 /* BasicAnimation.swift */; };
@@ -116,6 +118,10 @@
 
 /* Begin PBXFileReference section */
 		664B7478F436B1FE0A598A46 /* Pods-HafsaInspectorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HafsaInspectorApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp.release.xcconfig"; sourceTree = "<group>"; };
+		9C0D44AD1D94A51C00DF0FC3 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		9C0D44B01D94A53800DF0FC3 /* RPFloatingPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderTextView.h; sourceTree = "<group>"; };
+		9C0D44B11D94A53800DF0FC3 /* RPFloatingPlaceholderConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderConstants.h; sourceTree = "<group>"; };
+		9C0D44B21D94A53800DF0FC3 /* RPFloatingPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPFloatingPlaceholderTextView.m; sourceTree = "<group>"; };
 		9C4254921D942FC600DCFA91 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = SOURCE_ROOT; };
 		9C4254931D942FC600DCFA91 /* Bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = SOURCE_ROOT; };
 		9C4254941D942FC600DCFA91 /* BasicAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicAnimation.swift; sourceTree = SOURCE_ROOT; };
@@ -250,6 +256,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9C0D44AF1D94A52600DF0FC3 /* RPFloating */ = {
+			isa = PBXGroup;
+			children = (
+				9C0D44B01D94A53800DF0FC3 /* RPFloatingPlaceholderTextView.h */,
+				9C0D44B11D94A53800DF0FC3 /* RPFloatingPlaceholderConstants.h */,
+				9C0D44B21D94A53800DF0FC3 /* RPFloatingPlaceholderTextView.m */,
+			);
+			name = RPFloating;
+			sourceTree = "<group>";
+		};
 		9C4254911D942FB900DCFA91 /* Material */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +362,7 @@
 		9C718EC41D7A8147009F9D79 /* FormCells */ = {
 			isa = PBXGroup;
 			children = (
+				9C0D44AD1D94A51C00DF0FC3 /* CommentTableViewCell.swift */,
 				9C718EC51D7A8167009F9D79 /* NameTableViewCell.swift */,
 				9C718EC61D7A8167009F9D79 /* SupplierTableViewCell.swift */,
 				B328CE9A1D7BB350007075B9 /* ImageTableViewCell.swift */,
@@ -455,6 +472,7 @@
 		B367E1D01D73F9FC008078DF /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
+				9C0D44AF1D94A52600DF0FC3 /* RPFloating */,
 				9C718ED11D7A82A8009F9D79 /* Camera */,
 				9C718ECB1D7A819D009F9D79 /* HIManager.swift */,
 				9C718ECD1D7A81BA009F9D79 /* HITextField.swift */,
@@ -664,6 +682,7 @@
 				9C718ECA1D7A8184009F9D79 /* DeviceExtensions.swift in Sources */,
 				9C4254E81D942FC600DCFA91 /* Animation.swift in Sources */,
 				9C4255261D942FC600DCFA91 /* PulseAnimation.swift in Sources */,
+				9C0D44B31D94A53800DF0FC3 /* RPFloatingPlaceholderTextView.m in Sources */,
 				9C42550C1D942FC600DCFA91 /* JSON.swift in Sources */,
 				9C4255061D942FC600DCFA91 /* Font.swift in Sources */,
 				9C4254F21D942FC600DCFA91 /* Card.swift in Sources */,
@@ -710,6 +729,7 @@
 				9C4255241D942FC600DCFA91 /* PhotoLibrary.swift in Sources */,
 				9C42550E1D942FC600DCFA91 /* Label.swift in Sources */,
 				9C4255251D942FC600DCFA91 /* PhotoLibraryController.swift in Sources */,
+				9C0D44AE1D94A51C00DF0FC3 /* CommentTableViewCell.swift in Sources */,
 				9C4255351D942FC600DCFA91 /* TableViewCell.swift in Sources */,
 				9C4255311D942FC600DCFA91 /* SnackbarController.swift in Sources */,
 				9C4255111D942FC600DCFA91 /* Material+Array.swift in Sources */,

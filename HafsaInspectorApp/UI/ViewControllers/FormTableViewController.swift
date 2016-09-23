@@ -10,7 +10,7 @@ import UIKit
 
 
 
-class FormTableViewController: UITableViewController {
+class FormTableViewController: UITableViewController, UITextViewDelegate {
     
     
     fileprivate let HImanager = HIManager.sharedClient()
@@ -38,25 +38,32 @@ class FormTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return HImanager.supplierArray.count + 2
+        return HImanager.supplierArray.count + 3
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if (indexPath as NSIndexPath).row == 0 {
+        if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "NameTableViewCell", for: indexPath) as! NameTableViewCell
             cell.configureNameCell()
             return cell
         }
-        if (indexPath as NSIndexPath).row > 0 && (indexPath as NSIndexPath).row <= HImanager.supplierArray.count{
+        if indexPath.row > 0 && indexPath.row <= HImanager.supplierArray.count{
             let cell = tableView.dequeueReusableCell(withIdentifier: "SupplierTableViewCell", for: indexPath) as! SupplierTableViewCell
-            cell.configureSupplierCell((indexPath as NSIndexPath).row-1)
+            cell.configureSupplierCell(indexPath.row-1)
             return cell
         }
-        else {
+        if indexPath.row == HImanager.supplierArray.count+1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ImageTableViewCell", for: indexPath) as! ImageTableViewCell
             
             return cell
+        }
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CommentTableViewCell", for: indexPath) as! CommentTableViewCell
+            cell.configureCommentTableViewCell()
+            cell.textView.delegate = self
+            return cell
+            
         }
     }
     

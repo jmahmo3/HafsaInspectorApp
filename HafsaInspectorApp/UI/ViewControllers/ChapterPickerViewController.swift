@@ -100,7 +100,7 @@ class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
     override func backButtonPressed() {
         self.saveData()
         self.delegate.didChangeChapter()
-        self.navigationController?.popViewController(animated: true)
+        _ = self.navigationController?.popViewController(animated: true)
     }
     
     func saveData() {
@@ -132,15 +132,5 @@ class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
     }
 }
 
-extension UIViewController {
-    func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        view.addGestureRecognizer(tap)
-    }
-    
-    func dismissKeyboard() {
-        view.endEditing(true)
-    }
-}
 
 
