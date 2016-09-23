@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Material
+//import Material
 
 enum HITextFieldType {
     case standard
@@ -19,7 +19,7 @@ enum HITextFieldType {
 class HITextField: TextField, UIPickerViewDelegate, UIPickerViewDataSource {
 
     var data: NSArray = []
-    private let HImanager = HIManager.sharedClient()
+    fileprivate let HImanager = HIManager.sharedClient()
     let picker: UIPickerView = UIPickerView()
 //    var delegate: ChapterPickerDelegate! = nil
     
@@ -30,7 +30,7 @@ class HITextField: TextField, UIPickerViewDelegate, UIPickerViewDataSource {
     
     func setup(){
         self.dividerHeight = 2.0
-        self.dividerColor = UIColor.blackColor()
+        self.dividerColor = UIColor.black
         self.font = UIFont(name: "AvenirNext-Medium", size: 24)
         self.dividerActiveColor = UIColor(red: 57/255, green: 155/255, blue: 82/255, alpha: 1)
         self.placeholderActiveColor = UIColor(red: 57/255, green: 155/255, blue: 82/255, alpha: 1)
@@ -38,21 +38,21 @@ class HITextField: TextField, UIPickerViewDelegate, UIPickerViewDataSource {
     
     func setupPicker() {
         let height: CGFloat = UIScreen.isiPhone(.iPhone5) ? 220 : 253
-        picker.frame = CGRectMake(0, 0,UIScreen.mainScreen().bounds.size.width, height)
+        picker.frame = CGRect(x: 0, y: 0,width: UIScreen.main.bounds.size.width, height: height)
         picker.delegate = self
         picker.dataSource = self
         self.inputView = picker
         
         //Add done button
         let toolBar = UIToolbar()
-        toolBar.barStyle = UIBarStyle.Default
-        toolBar.translucent = true
+        toolBar.barStyle = UIBarStyle.default
+        toolBar.isTranslucent = true
         toolBar.tintColor = UIColor(red: 76/255, green: 217/255, blue: 100/255, alpha: 1)
         toolBar.sizeToFit()
-        let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
-        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(self.donePicker))
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.donePicker))
         toolBar.setItems([flexSpace,doneButton], animated: false)
-        toolBar.userInteractionEnabled = true
+        toolBar.isUserInteractionEnabled = true
         self.inputAccessoryView = toolBar
         
     }
@@ -61,10 +61,10 @@ class HITextField: TextField, UIPickerViewDelegate, UIPickerViewDataSource {
         let arr = HImanager.data
         let chapterArr: NSMutableArray = []
         for dict in arr {
-            let title = dict.allKeys[0]
-            chapterArr.addObject(title)
+            let title = (dict as AnyObject).allKeys[0]
+            chapterArr.add(title)
         }
-        data = chapterArr.copy() as! [NSArray]
+        data = chapterArr.copy() as! [NSArray] as NSArray
         self.setupPicker()
     }
     
@@ -73,14 +73,14 @@ class HITextField: TextField, UIPickerViewDelegate, UIPickerViewDataSource {
         let arr = HImanager.data
         let establishments: NSMutableArray = []
         for dict in arr {
-            let title = dict.allKeys[0]
+            let title = (dict as AnyObject).allKeys[0]
             if title as! String == HImanager.currentChapter {
-                print(dict.objectForKey(title)!)
-                establishments.addObject(dict.objectForKey(title)!)
+                print((dict as AnyObject).object(forKey: title)!)
+                establishments.add((dict as AnyObject).object(forKey: title)!)
             }
         }
         if establishments != [] {
-            let est: NSArray = establishments.objectAtIndex(0) as! NSArray
+            let est: NSArray = establishments.object(at: 0) as! NSArray
             data = est
         }
         else {
@@ -92,31 +92,31 @@ class HITextField: TextField, UIPickerViewDelegate, UIPickerViewDataSource {
     //MARK: - Picker
     func donePicker() {
         if data.count > 0 {
-            let selectedValue = data[picker.selectedRowInComponent(0)]
+            let selectedValue = data[picker.selectedRow(inComponent: 0)]
             self.text = selectedValue as? String
         }
         self.resignFirstResponder()
     }
     
     // The number of columns of data
-    func numberOfComponentsInPickerView(chapterPickerView: UIPickerView) -> Int {
+    func numberOfComponents(in chapterPickerView: UIPickerView) -> Int {
         return 1
     }
     
     // The number of rows of data
-    func pickerView(chapterPickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ chapterPickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return data.count
     }
     
     // The data to return for the row and component (column) that's being passed in
-    func pickerView(chapterPickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        let value = data.objectAtIndex(row)
+    func pickerView(_ chapterPickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        let value = data.object(at: row)
         return value as? String
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if data.count > 0 {
-            let selectedValue = data[picker.selectedRowInComponent(0)]
+            let selectedValue = data[picker.selectedRow(inComponent: 0)]
             self.text = selectedValue as? String
         }
     }

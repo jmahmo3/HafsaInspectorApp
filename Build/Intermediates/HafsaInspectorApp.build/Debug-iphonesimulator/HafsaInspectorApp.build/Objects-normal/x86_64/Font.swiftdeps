@@ -1,0 +1,393 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FontType"
+- "Font"
+provides-nominal:
+- "P17HafsaInspectorApp8FontType"
+- "V17HafsaInspectorApp4Font"
+provides-member:
+- ["P17HafsaInspectorApp8FontType", ""]
+- ["V17HafsaInspectorApp4Font", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "NSData"
+- !private "Dictionary"
+- !private "CGFont"
+- !private "StringLiteralType"
+- !private "BooleanLiteralType"
+- !private "CGDataProvider"
+- "FontType"
+- !private "FontLoader"
+- !private "NSException"
+- !private "Error"
+- !private "CFErrorCopyDescription"
+- !private "Bundle"
+- "TernaryPrecedence"
+- !private "Unmanaged"
+- !private "URL"
+- !private "NSUnderlyingErrorKey"
+- !private "CFError"
+- "UIFont"
+- !private "!"
+- "AssignmentPrecedence"
+- "Font"
+- !private "=="
+- "CastingPrecedence"
+- !private "&&"
+- "CGFloat"
+- "String"
+- !private "CTFontManagerRegisterGraphicsFont"
+depends-member:
+- !private ["Ps9AnyObject", "Bundle"]
+- !private ["Ps9AnyObject", "CFErrorCopyDescription"]
+- !private ["Ps9AnyObject", "CGDataProvider"]
+- !private ["Ps9AnyObject", "CGFont"]
+- !private ["Ps9AnyObject", "CTFontManagerRegisterGraphicsFont"]
+- !private ["Ps9AnyObject", "Dictionary"]
+- !private ["Ps9AnyObject", "FontLoader"]
+- !private ["Ps9AnyObject", "NSData"]
+- !private ["Ps9AnyObject", "NSException"]
+- !private ["Ps9AnyObject", "NSUnderlyingErrorKey"]
+- !private ["Ps9AnyObject", "UIFont"]
+- !private ["Ps9AnyObject", "boldSystemFont"]
+- !private ["Ps9AnyObject", "bundleIdentifier"]
+- !private ["Ps9AnyObject", "hasPrefix"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "italicSystemFont"]
+- !private ["Ps9AnyObject", "loadFontIfNeeded"]
+- !private ["Ps9AnyObject", "loadedFonts"]
+- !private ["Ps9AnyObject", "raise"]
+- !private ["Ps9AnyObject", "systemFont"]
+- !private ["Ps9AnyObject", "url"]
+- !private ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["CSo6Bundle", "bundleIdentifier"]
+- ["CSo6Bundle", "deinit"]
+- !private ["CSo6Bundle", "init"]
+- !private ["CSo6Bundle", "url"]
+- ["CSo7CFError", "deinit"]
+- ["CSo14CGDataProvider", "deinit"]
+- !private ["CSo14CGDataProvider", "init"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- ["CSo6CGFont", "deinit"]
+- !private ["CSo6CGFont", "init"]
+- !private ["Ps7CVarArg", "Key"]
+- !private ["Ps7CVarArg", "Value"]
+- !private ["Ps7CVarArg", "boldSystemFont"]
+- !private ["Ps7CVarArg", "bundleIdentifier"]
+- !private ["Ps7CVarArg", "hasPrefix"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "italicSystemFont"]
+- !private ["Ps7CVarArg", "raise"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps7CVarArg", "systemFont"]
+- !private ["Ps7CVarArg", "url"]
+- !private ["Ps10Collection", "Index"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "Key"]
+- !private ["Ps10Collection", "SubSequence"]
+- !private ["Ps10Collection", "Value"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "init"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "hasPrefix"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "internalInconsistencyException"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "boldSystemFont"]
+- !private ["Ps28CustomDebugStringConvertible", "bundleIdentifier"]
+- !private ["Ps28CustomDebugStringConvertible", "hasPrefix"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "italicSystemFont"]
+- !private ["Ps28CustomDebugStringConvertible", "raise"]
+- ["Ps28CustomDebugStringConvertible", "some"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "systemFont"]
+- !private ["Ps28CustomDebugStringConvertible", "url"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hasPrefix"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Key"]
+- !private ["Ps17CustomReflectable", "Value"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "hasPrefix"]
+- !private ["Ps17CustomReflectable", "init"]
+- ["Ps17CustomReflectable", "some"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "boldSystemFont"]
+- !private ["Ps23CustomStringConvertible", "bundleIdentifier"]
+- !private ["Ps23CustomStringConvertible", "hasPrefix"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "italicSystemFont"]
+- !private ["Ps23CustomStringConvertible", "raise"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "systemFont"]
+- !private ["Ps23CustomStringConvertible", "url"]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "init"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "boldSystemFont"]
+- !private ["Ps9Equatable", "bundleIdentifier"]
+- !private ["Ps9Equatable", "hasPrefix"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "internalInconsistencyException"]
+- !private ["Ps9Equatable", "italicSystemFont"]
+- !private ["Ps9Equatable", "raise"]
+- !private ["Ps9Equatable", "systemFont"]
+- !private ["Ps9Equatable", "url"]
+- ["Ps5Error", "deinit"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "init"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "hasPrefix"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps23ExpressibleByNilLiteral", "some"]
+- !private ["Ps32ExpressibleByStringInterpolation", "hasPrefix"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "hasPrefix"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "hasPrefix"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["V17HafsaInspectorApp4Font", "CGFloat"]
+- !private ["V17HafsaInspectorApp4Font", "FontLoader"]
+- ["V17HafsaInspectorApp4Font", "String"]
+- ["V17HafsaInspectorApp4Font", "UIFont"]
+- ["V17HafsaInspectorApp4Font", "boldSystemFontWithSize"]
+- ["V17HafsaInspectorApp4Font", "deinit"]
+- ["V17HafsaInspectorApp4Font", "init"]
+- ["V17HafsaInspectorApp4Font", "italicSystemFontWithSize"]
+- ["V17HafsaInspectorApp4Font", "loadFontIfNeeded"]
+- ["V17HafsaInspectorApp4Font", "pointSize"]
+- ["V17HafsaInspectorApp4Font", "systemFontWithSize"]
+- !private ["P17HafsaInspectorApp8FontType", "FontLoader"]
+- !private ["P17HafsaInspectorApp8FontType", "UIFont"]
+- ["P17HafsaInspectorApp8FontType", ""]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "boldSystemFont"]
+- !private ["Ps8Hashable", "bundleIdentifier"]
+- !private ["Ps8Hashable", "hasPrefix"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "internalInconsistencyException"]
+- !private ["Ps8Hashable", "italicSystemFont"]
+- !private ["Ps8Hashable", "raise"]
+- !private ["Ps8Hashable", "systemFont"]
+- !private ["Ps8Hashable", "url"]
+- ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "init"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Ps13IndexableBase", "Index"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "Key"]
+- !private ["Ps13IndexableBase", "SubSequence"]
+- !private ["Ps13IndexableBase", "Value"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "init"]
+- !private ["Ps13IndexableBase", "subscript"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "hasPrefix"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "hasPrefix"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "hasPrefix"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "raise"]
+- !private ["PSo9NSCopying", "boldSystemFont"]
+- !private ["PSo9NSCopying", "hasPrefix"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "italicSystemFont"]
+- !private ["PSo9NSCopying", "raise"]
+- !private ["PSo9NSCopying", "systemFont"]
+- ["CSo6NSData", "deinit"]
+- !private ["CSo6NSData", "init"]
+- ["CSo11NSException", "deinit"]
+- !private ["CSo11NSException", "init"]
+- !private ["CSo11NSException", "raise"]
+- ["VSC15NSExceptionName", "deinit"]
+- !private ["VSC15NSExceptionName", "internalInconsistencyException"]
+- !private ["PSo16NSMutableCopying", "hasPrefix"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "boldSystemFont"]
+- !private ["CSo8NSObject", "bundleIdentifier"]
+- !private ["CSo8NSObject", "hasPrefix"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "italicSystemFont"]
+- !private ["CSo8NSObject", "raise"]
+- !private ["CSo8NSObject", "systemFont"]
+- !private ["CSo8NSObject", "url"]
+- !private ["PSo16NSObjectProtocol", "boldSystemFont"]
+- !private ["PSo16NSObjectProtocol", "bundleIdentifier"]
+- !private ["PSo16NSObjectProtocol", "hasPrefix"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "italicSystemFont"]
+- !private ["PSo16NSObjectProtocol", "raise"]
+- !private ["PSo16NSObjectProtocol", "systemFont"]
+- !private ["PSo16NSObjectProtocol", "url"]
+- !private ["PSo14NSSecureCoding", "hasPrefix"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "hasPrefix"]
+- !private ["CSo8NSString", "init"]
+- ["Sq", "deinit"]
+- ["Sq", "some"]
+- !private ["Ps16RawRepresentable", "internalInconsistencyException"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Index"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "Key"]
+- !private ["Ps8Sequence", "SubSequence"]
+- !private ["Ps8Sequence", "Value"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "Iterator"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- ["SS", "deinit"]
+- !private ["SS", "hasPrefix"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "hasPrefix"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "hasPrefix"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["CSo6UIFont", "boldSystemFont"]
+- ["CSo6UIFont", "deinit"]
+- !private ["CSo6UIFont", "init"]
+- !private ["CSo6UIFont", "italicSystemFont"]
+- !private ["CSo6UIFont", "systemFont"]
+- ["V10Foundation3URL", "deinit"]
+- !private ["Vs9Unmanaged", "takeUnretainedValue"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "hasPrefix"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "hasPrefix"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "hasPrefix"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "hasPrefix"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "hasPrefix"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "boldSystemFont"]
+- !private ["Ps9_Hashable", "bundleIdentifier"]
+- !private ["Ps9_Hashable", "hasPrefix"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "internalInconsistencyException"]
+- !private ["Ps9_Hashable", "italicSystemFont"]
+- !private ["Ps9_Hashable", "raise"]
+- !private ["Ps9_Hashable", "systemFont"]
+- !private ["Ps9_Hashable", "url"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "hasPrefix"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "internalInconsistencyException"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps20_SwiftNewtypeWrapper", "internalInconsistencyException"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- "Sb"
+- "CSo6Bundle"
+- "CSo7CFError"
+- "CSo14CGDataProvider"
+- "V12CoreGraphics7CGFloat"
+- "CSo6CGFont"
+- !private "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- "Vs10Dictionary"
+- !private "Ps9Equatable"
+- "Ps5Error"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps23ExpressibleByNilLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "V17HafsaInspectorApp4Font"
+- "P17HafsaInspectorApp8FontType"
+- !private "Ps8Hashable"
+- "SQ"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- !private "Ps16IteratorProtocol"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "CSo6NSData"
+- "CSo11NSException"
+- "VSC15NSExceptionName"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Sq"
+- !private "Ps16RawRepresentable"
+- !private "Ps8Sequence"
+- !private "Vs5Slice"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- "CSo6UIFont"
+- "V10Foundation3URL"
+- !private "Vs9Unmanaged"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- !private "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps20_SwiftNewtypeWrapper"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HafsaInspectorApp-Bridging-Header.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/IPDFView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+interface-hash: "4353d40db444c9dd63c95ebde47301b1"

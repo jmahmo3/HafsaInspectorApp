@@ -15,36 +15,50 @@ public extension UIColor {
 }
 
 public extension UIViewController {
-    func setNavBarWithSettingsIcon(selector:String) {
-        self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+    
+    
+    
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    
+    func setNavBarWithSettingsIcon(_ selector:String) {
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
         let logo = UIImage(named: "logo")
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
         
         let settings = UIImage(named:"cog-16")
-        let button = UIBarButtonItem(image: settings, style: .Plain, target: self, action: Selector(selector))
-        button.tintColor = UIColor.lightGrayColor()
+        let button = UIBarButtonItem(image: settings, style: .plain, target: self, action: Selector(selector))
+        button.tintColor = UIColor.lightGray
         self.navigationItem.rightBarButtonItem = button
     }
     
     func setNavBarWithBackButton() {
-        self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
         let logo = UIImage(named: "logo")
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
 
         let settings = UIImage(named:"arrow-80-24")
-        let button = UIBarButtonItem(image: settings, style: .Plain, target: self, action:#selector(backButtonPressed))
-        button.tintColor = UIColor.blackColor()
+        let button = UIBarButtonItem(image: settings, style: .plain, target: self, action:#selector(backButtonPressed))
+        button.tintColor = UIColor.black
         self.navigationItem.leftBarButtonItem = button
     }
     
     func backButtonPressed() {
-        self.navigationController?.popViewControllerAnimated(true)
+        _ = self.navigationController?.popViewController(animated: true)
     }
     
     public var isVisible: Bool {
-        if isViewLoaded() {
+        if isViewLoaded {
             return view.window != nil
         }
         return false
@@ -61,23 +75,23 @@ public extension UIViewController {
     }
     
     var isOnScreen: Bool{
-        return self.isViewLoaded() && view.window != nil
+        return self.isViewLoaded && view.window != nil
     }
 
-    func createAlert(error: String) {
-        let alert = UIAlertController(title: "Sorry", message: error, preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction((UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:nil)))
-        self.presentViewController(alert, animated: true, completion: nil)
+    func createAlert(_ error: String) {
+        let alert = UIAlertController(title: "Sorry", message: error, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction((UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:nil)))
+        self.present(alert, animated: true, completion: nil)
     }
     
-    func createWebAlertWithTryAgain(error: String, selector:Selector) {
-        let alert = UIAlertController(title: "Sorry", message: error, preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction((UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default, handler:{
-            (alert: UIAlertAction!) in self.performSelector(selector)
+    func createWebAlertWithTryAgain(_ error: String, selector:Selector) {
+        let alert = UIAlertController(title: "Sorry", message: error, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction((UIAlertAction(title: "Try Again", style: UIAlertActionStyle.default, handler:{
+            (alert: UIAlertAction!) in self.perform(selector)
         })))
      
 
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
     }
     
 }
@@ -90,9 +104,9 @@ public extension UIScreen {
         case iPhone6P
     }
     
-    static func isiPhone(iphone:iPhone) -> Bool {
-        let width: CGFloat = UIScreen.mainScreen().bounds.size.width
-        let height: CGFloat = UIScreen.mainScreen().bounds.size.height
+    static func isiPhone(_ iphone:iPhone) -> Bool {
+        let width: CGFloat = UIScreen.main.bounds.size.width
+        let height: CGFloat = UIScreen.main.bounds.size.height
         let screenLength: CGFloat = max(width, height)
         
         switch iphone {
@@ -148,7 +162,7 @@ extension UIWindow: ViewControllerContainer {
     }
 }
 
-func recurseViewController(viewController: UIViewController) -> UIViewController {
+func recurseViewController(_ viewController: UIViewController) -> UIViewController {
     
     return viewController.topMostViewController.map(recurseViewController) ?? viewController
 }
@@ -163,7 +177,7 @@ public extension UIWindow {
         return UIWindow.getVisibleViewControllerFrom(self.rootViewController)
     }
     
-    public static func getVisibleViewControllerFrom(vc: UIViewController?) -> UIViewController? {
+    public static func getVisibleViewControllerFrom(_ vc: UIViewController?) -> UIViewController? {
         if let nc = vc as? UINavigationController {
             return UIWindow.getVisibleViewControllerFrom(nc.visibleViewController)
         } else if let tc = vc as? UITabBarController {
@@ -182,7 +196,7 @@ extension UIView {
     public var parentViewController: UIViewController? {
         var parentResponder: UIResponder? = self
         while parentResponder != nil {
-            parentResponder = parentResponder!.nextResponder()
+            parentResponder = parentResponder!.next
             if let viewController = parentResponder as? UIViewController {
                 return viewController
             }

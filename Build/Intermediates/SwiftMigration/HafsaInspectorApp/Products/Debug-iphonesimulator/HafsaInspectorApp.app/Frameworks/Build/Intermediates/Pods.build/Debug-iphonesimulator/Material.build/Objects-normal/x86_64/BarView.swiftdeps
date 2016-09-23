@@ -1,0 +1,172 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "BarView"
+provides-nominal:
+- "C8Material7BarView"
+provides-member:
+- ["C8Material7BarView", ""]
+provides-dynamic-lookup:
+- "prepareView"
+depends-top-level:
+- "CGRect"
+- "Array"
+- "UIControl"
+- "NSCoder"
+- "ControlView"
+- "BarView"
+- !private "StringLiteralType"
+depends-member:
+- !private ["Ps9AnyObject", "depth"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "prepareView"]
+- ["Ps9AnyObject", ""]
+- ["C8Material7BarView", "Array"]
+- ["C8Material7BarView", "CGRect"]
+- ["C8Material7BarView", "NSCoder"]
+- ["C8Material7BarView", "UIControl"]
+- ["C8Material7BarView", "deinit"]
+- !private ["C8Material7BarView", "depth"]
+- ["C8Material7BarView", "init"]
+- ["C8Material7BarView", "prepareView"]
+- !private ["Ps11CVarArgType", "depth"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "prepareView"]
+- ["Ps11CVarArgType", ""]
+- ["C8Material11ControlView", "Array"]
+- ["C8Material11ControlView", "CGRect"]
+- ["C8Material11ControlView", "NSCoder"]
+- ["C8Material11ControlView", "UIControl"]
+- !private ["C8Material11ControlView", "depth"]
+- ["C8Material11ControlView", "init"]
+- ["C8Material11ControlView", "prepareView"]
+- ["C8Material11ControlView", ""]
+- !private ["Ps28CustomDebugStringConvertible", "depth"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "prepareView"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "depth"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "prepareView"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Depth1"]
+- !private ["Ps9Equatable", "depth"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "prepareView"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "Depth1"]
+- !private ["Ps8Hashable", "depth"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "prepareView"]
+- ["Ps8Hashable", ""]
+- !private ["O8Material13MaterialDepth", "Depth1"]
+- ["C8Material12MaterialView", "Array"]
+- ["C8Material12MaterialView", "CGRect"]
+- ["C8Material12MaterialView", "NSCoder"]
+- ["C8Material12MaterialView", "UIControl"]
+- !private ["C8Material12MaterialView", "depth"]
+- ["C8Material12MaterialView", "init"]
+- ["C8Material12MaterialView", "prepareView"]
+- !private ["PSo8NSCoding", "depth"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "prepareView"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "Array"]
+- ["CSo8NSObject", "CGRect"]
+- ["CSo8NSObject", "NSCoder"]
+- ["CSo8NSObject", "UIControl"]
+- !private ["CSo8NSObject", "depth"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "prepareView"]
+- !private ["PSo16NSObjectProtocol", "depth"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "prepareView"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Vs12StaticString", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "depth"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "prepareView"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "depth"]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "prepareView"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "depth"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "prepareView"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo17UICoordinateSpace", "depth"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "prepareView"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "depth"]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "prepareView"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "depth"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "prepareView"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "Array"]
+- ["CSo11UIResponder", "CGRect"]
+- ["CSo11UIResponder", "NSCoder"]
+- ["CSo11UIResponder", "UIControl"]
+- !private ["CSo11UIResponder", "depth"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "prepareView"]
+- !private ["PSo18UITraitEnvironment", "depth"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "prepareView"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "Array"]
+- ["CSo6UIView", "CGRect"]
+- ["CSo6UIView", "NSCoder"]
+- ["CSo6UIView", "UIControl"]
+- !private ["CSo6UIView", "depth"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "prepareView"]
+- !private ["Ps12_Reflectable", "depth"]
+- ["Ps12_Reflectable", "init"]
+- ["Ps12_Reflectable", "prepareView"]
+- ["Ps12_Reflectable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "C8Material7BarView"
+- "Ps11CVarArgType"
+- "C8Material11ControlView"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- !private "O8Material13MaterialDepth"
+- "C8Material12MaterialView"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Vs12StaticString"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/Test Code/SwiftTest/Pods/Google/Headers/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Target Support Files/Material/Material-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "f6f7b0aad30c1dd41c4c0230c422deca"

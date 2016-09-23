@@ -1,0 +1,187 @@
+[
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 245,
+  "text": "file",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 378,
+  "remove": 3,
+  "text": " ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 391,
+  "remove": 9,
+  "text": "n",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 533,
+  "remove": 1,
+  "text": "(w",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 547,
+  "remove": 1,
+  "text": ": ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 885,
+  "remove": 12,
+  "text": "(in ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 1059,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 1285,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 1320,
+  "remove": 10,
+  "text": "t",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 1341,
+  "remove": 3,
+  "text": " ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 1396,
+  "text": "(",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 1405,
+  "text": " as NSIndexPath)",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 1469,
+  "remove": 1,
+  "text": "(w",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 1483,
+  "remove": 1,
+  "text": ": ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 1507,
+  "remove": 10,
+  "text": "r",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 1634,
+  "text": "(",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 1643,
+  "text": " as NSIndexPath)",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 1655,
+  "text": "(",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 1664,
+  "text": " as NSIndexPath)",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 1755,
+  "remove": 1,
+  "text": "(w",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 1769,
+  "remove": 1,
+  "text": ": ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 1797,
+  "remove": 10,
+  "text": "r",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 1885,
+  "text": "(",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 1894,
+  "text": " as NSIndexPath)",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 2003,
+  "remove": 1,
+  "text": "(w",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 2017,
+  "remove": 1,
+  "text": ": ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 2042,
+  "remove": 10,
+  "text": "r",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 2174,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 2220,
+  "remove": 10,
+  "text": "t",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 2241,
+  "remove": 3,
+  "text": " ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 2347,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 2384,
+  "remove": 10,
+  "text": "t",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift",
+  "offset": 2405,
+  "remove": 3,
+  "text": " ",
+ }
+]

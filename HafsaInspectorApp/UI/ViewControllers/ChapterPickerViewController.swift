@@ -8,7 +8,7 @@
 
 import UIKit
 import MBProgressHUD
-import Material
+//import Material
 
 
 protocol ChapterPickerDelegate {
@@ -24,16 +24,16 @@ class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
 
     
     var chapterData: [String] = [String]()
-    private let HImanager = HIManager.sharedClient()
+    fileprivate let HImanager = HIManager.sharedClient()
     let picker: UIPickerView = UIPickerView()
     var delegate: ChapterPickerDelegate! = nil
 
     //MARK: - Lifecycle
     
     static func create() -> ChapterPickerViewController {
-        let frameworkBundle = NSBundle.mainBundle()
+        let frameworkBundle = Bundle.main
         let storyboard = UIStoryboard(name: "Main", bundle: frameworkBundle)
-        let main = storyboard.instantiateViewControllerWithIdentifier("ChapterPickerViewController") as! ChapterPickerViewController
+        let main = storyboard.instantiateViewController(withIdentifier: "ChapterPickerViewController") as! ChapterPickerViewController
         return main
     }
     
@@ -52,11 +52,11 @@ class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
 //            self.nameLabelToTopConstraint.constant = 150
         }
         
-        let firstUse = NSUserDefaults.standardUserDefaults().boolForKey("Registered")
+        let firstUse = UserDefaults.standard.bool(forKey: "Registered")
         if firstUse {
             self.setNavBarWithBackButton()
-            self.imageView.hidden = true
-            self.nextButton.hidden = true
+            self.imageView.isHidden = true
+            self.nextButton.isHidden = true
             nameTextField.text = HImanager.userName
             chapterTextField.text = HImanager.currentChapter
 
@@ -72,35 +72,35 @@ class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
         chapterTextField.placeholder = "Chapter"
         chapterTextField.setupChapterPicker()
         
-        nextButton.backgroundColor = UIColor.whiteColor()
-        nextButton.tintColor = UIColor.blackColor()
-        nextButton.titleLabel?.textColor = UIColor.blackColor()
+        nextButton.backgroundColor = UIColor.white
+        nextButton.tintColor = UIColor.black
+        nextButton.titleLabel?.textColor = UIColor.black
         nextButton.titleLabel?.font = UIFont(name: "AvenirNext-Medium", size: 24)
         nextButton.layer.cornerRadius = 4
         nextButton.layer.borderWidth = 1
-        nextButton.layer.borderColor = UIColor.whiteColor().CGColor
+        nextButton.layer.borderColor = UIColor.white.cgColor
         
     }
     
     //MARK: TextFieldShouldReturn
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
     }
     
-    func textFieldDidBeginEditing(textField: UITextField) {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.text = ""
     }
     
     //MARK: Actions
-    @IBAction func nextButtonPressed(sender: AnyObject) {
+    @IBAction func nextButtonPressed(_ sender: AnyObject) {
         self.saveData()
     }
     
     override func backButtonPressed() {
         self.saveData()
         self.delegate.didChangeChapter()
-        self.navigationController?.popViewControllerAnimated(true)
+        _ = self.navigationController?.popViewController(animated: true)
     }
     
     func saveData() {
@@ -112,14 +112,14 @@ class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
         }
         else {
             
-            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "Registered")
+            UserDefaults.standard.set(true, forKey: "Registered")
             //set name
-            NSUserDefaults.standardUserDefaults().setValue(nameTextField.text!, forKey: "userName")
+            UserDefaults.standard.setValue(nameTextField.text!, forKey: "userName")
             HImanager.userName = nameTextField.text!
             
             //set chapter
             let selectedValue = chapterTextField.text!
-            NSUserDefaults.standardUserDefaults().setValue(selectedValue, forKey: "currentChapter")
+            UserDefaults.standard.setValue(selectedValue, forKey: "currentChapter")
             HImanager.currentChapter = selectedValue
             
         }
@@ -132,15 +132,5 @@ class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
     }
 }
 
-extension UIViewController {
-    func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        view.addGestureRecognizer(tap)
-    }
-    
-    func dismissKeyboard() {
-        view.endEditing(true)
-    }
-}
 
 

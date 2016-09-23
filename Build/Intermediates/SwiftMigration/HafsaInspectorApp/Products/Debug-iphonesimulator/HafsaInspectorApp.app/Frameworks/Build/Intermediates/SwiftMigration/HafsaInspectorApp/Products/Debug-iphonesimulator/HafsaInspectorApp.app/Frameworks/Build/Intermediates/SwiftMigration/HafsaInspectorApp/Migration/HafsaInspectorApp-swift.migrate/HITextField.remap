@@ -1,0 +1,197 @@
+[
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 384,
+  "text": "file",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 1140,
+  "remove": 5,
+  "text": "(x: ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 1148,
+  "text": "y: ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 1150,
+  "text": "width: ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 1162,
+  "remove": 9,
+  "text": "n",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 1197,
+  "text": ": height",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 1402,
+  "remove": 1,
+  "text": "d",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 1426,
+  "remove": 1,
+  "text": "isT",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 1646,
+  "remove": 1,
+  "text": "f",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 1771,
+  "remove": 1,
+  "text": "p",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 1910,
+  "remove": 2,
+  "text": "isUs",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 2161,
+  "text": "(",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 2165,
+  "text": " as AnyObject)",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 2202,
+  "remove": 7,
+  "text": "d",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 2273,
+  "text": " as NSArray",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 2490,
+  "text": "(",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 2494,
+  "text": " as AnyObject)",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 2590,
+  "text": "(",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 2594,
+  "text": " as AnyObject)",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 2601,
+  "remove": 1,
+  "text": "(f",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 2607,
+  "remove": 1,
+  "text": ": ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 2651,
+  "text": "((dict as Any",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 2657,
+  "remove": 5,
+  "text": ")",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 2669,
+  "remove": 1,
+  "text": "(f",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 2675,
+  "remove": 1,
+  "text": ": ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 2795,
+  "remove": 8,
+  "text": "(at: ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 3064,
+  "remove": 1,
+  "text": "(i",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 3075,
+  "remove": 1,
+  "text": ": ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 3250,
+  "remove": 14,
+  "text": "(in c",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 3387,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 3610,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 3738,
+  "remove": 8,
+  "text": "(at: ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 3814,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 3976,
+  "remove": 1,
+  "text": "(i",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift",
+  "offset": 3987,
+  "remove": 1,
+  "text": ": ",
+ }
+]

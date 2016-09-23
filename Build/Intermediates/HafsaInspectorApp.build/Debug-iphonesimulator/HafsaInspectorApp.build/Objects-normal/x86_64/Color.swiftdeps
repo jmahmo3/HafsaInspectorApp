@@ -1,0 +1,859 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ColorPalette"
+- "Color"
+provides-nominal:
+- "P17HafsaInspectorApp12ColorPalette"
+- "C17HafsaInspectorApp5Color"
+- "CC17HafsaInspectorApp5Color8darkText"
+- "CC17HafsaInspectorApp5Color9lightText"
+- "CC17HafsaInspectorApp5Color3red"
+- "CC17HafsaInspectorApp5Color4pink"
+- "CC17HafsaInspectorApp5Color6purple"
+- "CC17HafsaInspectorApp5Color10deepPurple"
+- "CC17HafsaInspectorApp5Color6indigo"
+- "CC17HafsaInspectorApp5Color4blue"
+- "CC17HafsaInspectorApp5Color9lightBlue"
+- "CC17HafsaInspectorApp5Color4cyan"
+- "CC17HafsaInspectorApp5Color4teal"
+- "CC17HafsaInspectorApp5Color5green"
+- "CC17HafsaInspectorApp5Color10lightGreen"
+- "CC17HafsaInspectorApp5Color4lime"
+- "CC17HafsaInspectorApp5Color6yellow"
+- "CC17HafsaInspectorApp5Color5amber"
+- "CC17HafsaInspectorApp5Color6orange"
+- "CC17HafsaInspectorApp5Color10deepOrange"
+- "CC17HafsaInspectorApp5Color5brown"
+- "CC17HafsaInspectorApp5Color4grey"
+- "CC17HafsaInspectorApp5Color8blueGrey"
+provides-member:
+- ["P17HafsaInspectorApp12ColorPalette", ""]
+- ["C17HafsaInspectorApp5Color", ""]
+- ["CC17HafsaInspectorApp5Color8darkText", ""]
+- ["CC17HafsaInspectorApp5Color9lightText", ""]
+- ["CC17HafsaInspectorApp5Color3red", ""]
+- ["CC17HafsaInspectorApp5Color4pink", ""]
+- ["CC17HafsaInspectorApp5Color6purple", ""]
+- ["CC17HafsaInspectorApp5Color10deepPurple", ""]
+- ["CC17HafsaInspectorApp5Color6indigo", ""]
+- ["CC17HafsaInspectorApp5Color4blue", ""]
+- ["CC17HafsaInspectorApp5Color9lightBlue", ""]
+- ["CC17HafsaInspectorApp5Color4cyan", ""]
+- ["CC17HafsaInspectorApp5Color4teal", ""]
+- ["CC17HafsaInspectorApp5Color5green", ""]
+- ["CC17HafsaInspectorApp5Color10lightGreen", ""]
+- ["CC17HafsaInspectorApp5Color4lime", ""]
+- ["CC17HafsaInspectorApp5Color6yellow", ""]
+- ["CC17HafsaInspectorApp5Color5amber", ""]
+- ["CC17HafsaInspectorApp5Color6orange", ""]
+- ["CC17HafsaInspectorApp5Color10deepOrange", ""]
+- ["CC17HafsaInspectorApp5Color5brown", ""]
+- ["CC17HafsaInspectorApp5Color4grey", ""]
+- ["CC17HafsaInspectorApp5Color8blueGrey", ""]
+provides-dynamic-lookup:
+- "lighten5"
+- "lighten5"
+- "lighten5"
+- "lighten5"
+- "lighten5"
+- "lighten5"
+- "lighten5"
+- "lighten5"
+- "lighten5"
+- "lighten5"
+- "lighten5"
+- "lighten5"
+- "lighten5"
+- "lighten5"
+- "lighten5"
+- "lighten5"
+- "lighten5"
+- "lighten5"
+- "lighten5"
+- "lighten5"
+- "lighten1"
+- "lighten1"
+- "lighten1"
+- "lighten1"
+- "lighten1"
+- "lighten1"
+- "lighten1"
+- "lighten1"
+- "lighten1"
+- "lighten1"
+- "lighten1"
+- "lighten1"
+- "lighten1"
+- "lighten1"
+- "lighten1"
+- "lighten1"
+- "lighten1"
+- "lighten1"
+- "lighten1"
+- "lighten1"
+- "darken4"
+- "darken4"
+- "darken4"
+- "darken4"
+- "darken4"
+- "darken4"
+- "darken4"
+- "darken4"
+- "darken4"
+- "darken4"
+- "darken4"
+- "darken4"
+- "darken4"
+- "darken4"
+- "darken4"
+- "darken4"
+- "darken4"
+- "darken4"
+- "darken4"
+- "darken4"
+- "base"
+- "base"
+- "base"
+- "base"
+- "base"
+- "base"
+- "base"
+- "base"
+- "base"
+- "base"
+- "base"
+- "base"
+- "base"
+- "base"
+- "base"
+- "base"
+- "base"
+- "base"
+- "base"
+- "base"
+- "darken2"
+- "darken2"
+- "darken2"
+- "darken2"
+- "darken2"
+- "darken2"
+- "darken2"
+- "darken2"
+- "darken2"
+- "darken2"
+- "darken2"
+- "darken2"
+- "darken2"
+- "darken2"
+- "darken2"
+- "darken2"
+- "darken2"
+- "darken2"
+- "darken2"
+- "darken2"
+- "accent2"
+- "accent2"
+- "accent2"
+- "accent2"
+- "accent2"
+- "accent2"
+- "accent2"
+- "accent2"
+- "accent2"
+- "accent2"
+- "accent2"
+- "accent2"
+- "accent2"
+- "accent2"
+- "accent2"
+- "accent2"
+- "accent2"
+- "accent3"
+- "accent3"
+- "accent3"
+- "accent3"
+- "accent3"
+- "accent3"
+- "accent3"
+- "accent3"
+- "accent3"
+- "accent3"
+- "accent3"
+- "accent3"
+- "accent3"
+- "accent3"
+- "accent3"
+- "accent3"
+- "accent3"
+- "darken1"
+- "darken1"
+- "darken1"
+- "darken1"
+- "darken1"
+- "darken1"
+- "darken1"
+- "darken1"
+- "darken1"
+- "darken1"
+- "darken1"
+- "darken1"
+- "darken1"
+- "darken1"
+- "darken1"
+- "darken1"
+- "darken1"
+- "darken1"
+- "darken1"
+- "darken1"
+- "lighten2"
+- "lighten2"
+- "lighten2"
+- "lighten2"
+- "lighten2"
+- "lighten2"
+- "lighten2"
+- "lighten2"
+- "lighten2"
+- "lighten2"
+- "lighten2"
+- "lighten2"
+- "lighten2"
+- "lighten2"
+- "lighten2"
+- "lighten2"
+- "lighten2"
+- "lighten2"
+- "lighten2"
+- "lighten2"
+- "accent4"
+- "accent4"
+- "accent4"
+- "accent4"
+- "accent4"
+- "accent4"
+- "accent4"
+- "accent4"
+- "accent4"
+- "accent4"
+- "accent4"
+- "accent4"
+- "accent4"
+- "accent4"
+- "accent4"
+- "accent4"
+- "accent4"
+- "accent1"
+- "accent1"
+- "accent1"
+- "accent1"
+- "accent1"
+- "accent1"
+- "accent1"
+- "accent1"
+- "accent1"
+- "accent1"
+- "accent1"
+- "accent1"
+- "accent1"
+- "accent1"
+- "accent1"
+- "accent1"
+- "accent1"
+- "lighten3"
+- "lighten3"
+- "lighten3"
+- "lighten3"
+- "lighten3"
+- "lighten3"
+- "lighten3"
+- "lighten3"
+- "lighten3"
+- "lighten3"
+- "lighten3"
+- "lighten3"
+- "lighten3"
+- "lighten3"
+- "lighten3"
+- "lighten3"
+- "lighten3"
+- "lighten3"
+- "lighten3"
+- "lighten3"
+- "darken3"
+- "darken3"
+- "darken3"
+- "darken3"
+- "darken3"
+- "darken3"
+- "darken3"
+- "darken3"
+- "darken3"
+- "darken3"
+- "darken3"
+- "darken3"
+- "darken3"
+- "darken3"
+- "darken3"
+- "darken3"
+- "darken3"
+- "darken3"
+- "darken3"
+- "darken3"
+- "lighten4"
+- "lighten4"
+- "lighten4"
+- "lighten4"
+- "lighten4"
+- "lighten4"
+- "lighten4"
+- "lighten4"
+- "lighten4"
+- "lighten4"
+- "lighten4"
+- "lighten4"
+- "lighten4"
+- "lighten4"
+- "lighten4"
+- "lighten4"
+- "lighten4"
+- "lighten4"
+- "lighten4"
+- "lighten4"
+depends-top-level:
+- "UIColor"
+- "Color"
+- "ColorPalette"
+- "/"
+depends-member:
+- ["Ps9AnyObject", "Color"]
+- ["Ps9AnyObject", "UIColor"]
+- ["Ps9AnyObject", "accent1"]
+- ["Ps9AnyObject", "accent2"]
+- ["Ps9AnyObject", "accent3"]
+- ["Ps9AnyObject", "accent4"]
+- ["Ps9AnyObject", "base"]
+- ["Ps9AnyObject", "black"]
+- ["Ps9AnyObject", "clear"]
+- ["Ps9AnyObject", "darken1"]
+- ["Ps9AnyObject", "darken2"]
+- ["Ps9AnyObject", "darken3"]
+- ["Ps9AnyObject", "darken4"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "lighten1"]
+- ["Ps9AnyObject", "lighten2"]
+- ["Ps9AnyObject", "lighten3"]
+- ["Ps9AnyObject", "lighten4"]
+- ["Ps9AnyObject", "lighten5"]
+- ["Ps9AnyObject", "white"]
+- ["Ps9AnyObject", "withAlphaComponent"]
+- ["Ps9AnyObject", ""]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- ["Ps7CVarArg", "black"]
+- ["Ps7CVarArg", "clear"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "white"]
+- ["Ps7CVarArg", "withAlphaComponent"]
+- ["C17HafsaInspectorApp5Color", "Color"]
+- ["C17HafsaInspectorApp5Color", "ColorPalette"]
+- ["C17HafsaInspectorApp5Color", "UIColor"]
+- ["C17HafsaInspectorApp5Color", "amber"]
+- ["C17HafsaInspectorApp5Color", "black"]
+- ["C17HafsaInspectorApp5Color", "blue"]
+- ["C17HafsaInspectorApp5Color", "blueGrey"]
+- ["C17HafsaInspectorApp5Color", "brown"]
+- ["C17HafsaInspectorApp5Color", "clear"]
+- ["C17HafsaInspectorApp5Color", "cyan"]
+- ["C17HafsaInspectorApp5Color", "darkText"]
+- ["C17HafsaInspectorApp5Color", "deepOrange"]
+- ["C17HafsaInspectorApp5Color", "deepPurple"]
+- ["C17HafsaInspectorApp5Color", "deinit"]
+- ["C17HafsaInspectorApp5Color", "green"]
+- ["C17HafsaInspectorApp5Color", "grey"]
+- ["C17HafsaInspectorApp5Color", "indigo"]
+- ["C17HafsaInspectorApp5Color", "init"]
+- ["C17HafsaInspectorApp5Color", "lightBlue"]
+- ["C17HafsaInspectorApp5Color", "lightGreen"]
+- ["C17HafsaInspectorApp5Color", "lightText"]
+- ["C17HafsaInspectorApp5Color", "lime"]
+- ["C17HafsaInspectorApp5Color", "orange"]
+- ["C17HafsaInspectorApp5Color", "pink"]
+- ["C17HafsaInspectorApp5Color", "purple"]
+- ["C17HafsaInspectorApp5Color", "red"]
+- ["C17HafsaInspectorApp5Color", "teal"]
+- ["C17HafsaInspectorApp5Color", "white"]
+- ["C17HafsaInspectorApp5Color", "yellow"]
+- ["P17HafsaInspectorApp12ColorPalette", "UIColor"]
+- ["P17HafsaInspectorApp12ColorPalette", "accent1"]
+- ["P17HafsaInspectorApp12ColorPalette", "accent2"]
+- ["P17HafsaInspectorApp12ColorPalette", "accent3"]
+- ["P17HafsaInspectorApp12ColorPalette", "accent4"]
+- ["P17HafsaInspectorApp12ColorPalette", "base"]
+- ["P17HafsaInspectorApp12ColorPalette", "darken1"]
+- ["P17HafsaInspectorApp12ColorPalette", "darken2"]
+- ["P17HafsaInspectorApp12ColorPalette", "darken3"]
+- ["P17HafsaInspectorApp12ColorPalette", "darken4"]
+- ["P17HafsaInspectorApp12ColorPalette", "lighten1"]
+- ["P17HafsaInspectorApp12ColorPalette", "lighten2"]
+- ["P17HafsaInspectorApp12ColorPalette", "lighten3"]
+- ["P17HafsaInspectorApp12ColorPalette", "lighten4"]
+- ["P17HafsaInspectorApp12ColorPalette", "lighten5"]
+- ["P17HafsaInspectorApp12ColorPalette", ""]
+- ["Ps28CustomDebugStringConvertible", "black"]
+- ["Ps28CustomDebugStringConvertible", "clear"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "white"]
+- ["Ps28CustomDebugStringConvertible", "withAlphaComponent"]
+- ["Ps23CustomStringConvertible", "black"]
+- ["Ps23CustomStringConvertible", "clear"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "white"]
+- ["Ps23CustomStringConvertible", "withAlphaComponent"]
+- ["Ps9Equatable", "black"]
+- ["Ps9Equatable", "clear"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "white"]
+- ["Ps9Equatable", "withAlphaComponent"]
+- ["Ps8Hashable", "black"]
+- ["Ps8Hashable", "clear"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "white"]
+- ["Ps8Hashable", "withAlphaComponent"]
+- ["PSo8NSCoding", "black"]
+- ["PSo8NSCoding", "clear"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "white"]
+- ["PSo8NSCoding", "withAlphaComponent"]
+- ["PSo9NSCopying", "black"]
+- ["PSo9NSCopying", "clear"]
+- ["PSo9NSCopying", "init"]
+- ["PSo9NSCopying", "white"]
+- ["PSo9NSCopying", "withAlphaComponent"]
+- ["CSo8NSObject", "black"]
+- ["CSo8NSObject", "clear"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "white"]
+- ["CSo8NSObject", "withAlphaComponent"]
+- ["PSo16NSObjectProtocol", "black"]
+- ["PSo16NSObjectProtocol", "clear"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "white"]
+- ["PSo16NSObjectProtocol", "withAlphaComponent"]
+- ["PSo14NSSecureCoding", "black"]
+- ["PSo14NSSecureCoding", "clear"]
+- ["PSo14NSSecureCoding", "init"]
+- ["PSo14NSSecureCoding", "white"]
+- ["PSo14NSSecureCoding", "withAlphaComponent"]
+- ["CSo7UIColor", "black"]
+- ["CSo7UIColor", "clear"]
+- ["CSo7UIColor", "deinit"]
+- ["CSo7UIColor", "init"]
+- ["CSo7UIColor", "white"]
+- ["CSo7UIColor", "withAlphaComponent"]
+- ["Ps26_ExpressibleByColorLiteral", "black"]
+- ["Ps26_ExpressibleByColorLiteral", "clear"]
+- ["Ps26_ExpressibleByColorLiteral", "init"]
+- ["Ps26_ExpressibleByColorLiteral", "white"]
+- ["Ps26_ExpressibleByColorLiteral", "withAlphaComponent"]
+- ["Ps9_Hashable", "black"]
+- ["Ps9_Hashable", "clear"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "white"]
+- ["Ps9_Hashable", "withAlphaComponent"]
+- ["CC17HafsaInspectorApp5Color5amber", "UIColor"]
+- ["CC17HafsaInspectorApp5Color5amber", "accent1"]
+- ["CC17HafsaInspectorApp5Color5amber", "accent2"]
+- ["CC17HafsaInspectorApp5Color5amber", "accent3"]
+- ["CC17HafsaInspectorApp5Color5amber", "accent4"]
+- ["CC17HafsaInspectorApp5Color5amber", "base"]
+- ["CC17HafsaInspectorApp5Color5amber", "darken1"]
+- ["CC17HafsaInspectorApp5Color5amber", "darken2"]
+- ["CC17HafsaInspectorApp5Color5amber", "darken3"]
+- ["CC17HafsaInspectorApp5Color5amber", "darken4"]
+- ["CC17HafsaInspectorApp5Color5amber", "deinit"]
+- ["CC17HafsaInspectorApp5Color5amber", "init"]
+- ["CC17HafsaInspectorApp5Color5amber", "lighten1"]
+- ["CC17HafsaInspectorApp5Color5amber", "lighten2"]
+- ["CC17HafsaInspectorApp5Color5amber", "lighten3"]
+- ["CC17HafsaInspectorApp5Color5amber", "lighten4"]
+- ["CC17HafsaInspectorApp5Color5amber", "lighten5"]
+- ["CC17HafsaInspectorApp5Color4blue", "UIColor"]
+- ["CC17HafsaInspectorApp5Color4blue", "accent1"]
+- ["CC17HafsaInspectorApp5Color4blue", "accent2"]
+- ["CC17HafsaInspectorApp5Color4blue", "accent3"]
+- ["CC17HafsaInspectorApp5Color4blue", "accent4"]
+- ["CC17HafsaInspectorApp5Color4blue", "base"]
+- ["CC17HafsaInspectorApp5Color4blue", "darken1"]
+- ["CC17HafsaInspectorApp5Color4blue", "darken2"]
+- ["CC17HafsaInspectorApp5Color4blue", "darken3"]
+- ["CC17HafsaInspectorApp5Color4blue", "darken4"]
+- ["CC17HafsaInspectorApp5Color4blue", "deinit"]
+- ["CC17HafsaInspectorApp5Color4blue", "init"]
+- ["CC17HafsaInspectorApp5Color4blue", "lighten1"]
+- ["CC17HafsaInspectorApp5Color4blue", "lighten2"]
+- ["CC17HafsaInspectorApp5Color4blue", "lighten3"]
+- ["CC17HafsaInspectorApp5Color4blue", "lighten4"]
+- ["CC17HafsaInspectorApp5Color4blue", "lighten5"]
+- ["CC17HafsaInspectorApp5Color8blueGrey", "UIColor"]
+- ["CC17HafsaInspectorApp5Color8blueGrey", "accent1"]
+- ["CC17HafsaInspectorApp5Color8blueGrey", "accent2"]
+- ["CC17HafsaInspectorApp5Color8blueGrey", "accent3"]
+- ["CC17HafsaInspectorApp5Color8blueGrey", "accent4"]
+- ["CC17HafsaInspectorApp5Color8blueGrey", "base"]
+- ["CC17HafsaInspectorApp5Color8blueGrey", "darken1"]
+- ["CC17HafsaInspectorApp5Color8blueGrey", "darken2"]
+- ["CC17HafsaInspectorApp5Color8blueGrey", "darken3"]
+- ["CC17HafsaInspectorApp5Color8blueGrey", "darken4"]
+- ["CC17HafsaInspectorApp5Color8blueGrey", "deinit"]
+- ["CC17HafsaInspectorApp5Color8blueGrey", "init"]
+- ["CC17HafsaInspectorApp5Color8blueGrey", "lighten1"]
+- ["CC17HafsaInspectorApp5Color8blueGrey", "lighten2"]
+- ["CC17HafsaInspectorApp5Color8blueGrey", "lighten3"]
+- ["CC17HafsaInspectorApp5Color8blueGrey", "lighten4"]
+- ["CC17HafsaInspectorApp5Color8blueGrey", "lighten5"]
+- ["CC17HafsaInspectorApp5Color5brown", "UIColor"]
+- ["CC17HafsaInspectorApp5Color5brown", "accent1"]
+- ["CC17HafsaInspectorApp5Color5brown", "accent2"]
+- ["CC17HafsaInspectorApp5Color5brown", "accent3"]
+- ["CC17HafsaInspectorApp5Color5brown", "accent4"]
+- ["CC17HafsaInspectorApp5Color5brown", "base"]
+- ["CC17HafsaInspectorApp5Color5brown", "darken1"]
+- ["CC17HafsaInspectorApp5Color5brown", "darken2"]
+- ["CC17HafsaInspectorApp5Color5brown", "darken3"]
+- ["CC17HafsaInspectorApp5Color5brown", "darken4"]
+- ["CC17HafsaInspectorApp5Color5brown", "deinit"]
+- ["CC17HafsaInspectorApp5Color5brown", "init"]
+- ["CC17HafsaInspectorApp5Color5brown", "lighten1"]
+- ["CC17HafsaInspectorApp5Color5brown", "lighten2"]
+- ["CC17HafsaInspectorApp5Color5brown", "lighten3"]
+- ["CC17HafsaInspectorApp5Color5brown", "lighten4"]
+- ["CC17HafsaInspectorApp5Color5brown", "lighten5"]
+- ["CC17HafsaInspectorApp5Color4cyan", "UIColor"]
+- ["CC17HafsaInspectorApp5Color4cyan", "accent1"]
+- ["CC17HafsaInspectorApp5Color4cyan", "accent2"]
+- ["CC17HafsaInspectorApp5Color4cyan", "accent3"]
+- ["CC17HafsaInspectorApp5Color4cyan", "accent4"]
+- ["CC17HafsaInspectorApp5Color4cyan", "base"]
+- ["CC17HafsaInspectorApp5Color4cyan", "darken1"]
+- ["CC17HafsaInspectorApp5Color4cyan", "darken2"]
+- ["CC17HafsaInspectorApp5Color4cyan", "darken3"]
+- ["CC17HafsaInspectorApp5Color4cyan", "darken4"]
+- ["CC17HafsaInspectorApp5Color4cyan", "deinit"]
+- ["CC17HafsaInspectorApp5Color4cyan", "init"]
+- ["CC17HafsaInspectorApp5Color4cyan", "lighten1"]
+- ["CC17HafsaInspectorApp5Color4cyan", "lighten2"]
+- ["CC17HafsaInspectorApp5Color4cyan", "lighten3"]
+- ["CC17HafsaInspectorApp5Color4cyan", "lighten4"]
+- ["CC17HafsaInspectorApp5Color4cyan", "lighten5"]
+- ["CC17HafsaInspectorApp5Color8darkText", "Color"]
+- ["CC17HafsaInspectorApp5Color8darkText", "deinit"]
+- ["CC17HafsaInspectorApp5Color8darkText", "dividers"]
+- ["CC17HafsaInspectorApp5Color8darkText", "init"]
+- ["CC17HafsaInspectorApp5Color8darkText", "others"]
+- ["CC17HafsaInspectorApp5Color8darkText", "primary"]
+- ["CC17HafsaInspectorApp5Color8darkText", "secondary"]
+- ["CC17HafsaInspectorApp5Color10deepOrange", "UIColor"]
+- ["CC17HafsaInspectorApp5Color10deepOrange", "accent1"]
+- ["CC17HafsaInspectorApp5Color10deepOrange", "accent2"]
+- ["CC17HafsaInspectorApp5Color10deepOrange", "accent3"]
+- ["CC17HafsaInspectorApp5Color10deepOrange", "accent4"]
+- ["CC17HafsaInspectorApp5Color10deepOrange", "base"]
+- ["CC17HafsaInspectorApp5Color10deepOrange", "darken1"]
+- ["CC17HafsaInspectorApp5Color10deepOrange", "darken2"]
+- ["CC17HafsaInspectorApp5Color10deepOrange", "darken3"]
+- ["CC17HafsaInspectorApp5Color10deepOrange", "darken4"]
+- ["CC17HafsaInspectorApp5Color10deepOrange", "deinit"]
+- ["CC17HafsaInspectorApp5Color10deepOrange", "init"]
+- ["CC17HafsaInspectorApp5Color10deepOrange", "lighten1"]
+- ["CC17HafsaInspectorApp5Color10deepOrange", "lighten2"]
+- ["CC17HafsaInspectorApp5Color10deepOrange", "lighten3"]
+- ["CC17HafsaInspectorApp5Color10deepOrange", "lighten4"]
+- ["CC17HafsaInspectorApp5Color10deepOrange", "lighten5"]
+- ["CC17HafsaInspectorApp5Color10deepPurple", "UIColor"]
+- ["CC17HafsaInspectorApp5Color10deepPurple", "accent1"]
+- ["CC17HafsaInspectorApp5Color10deepPurple", "accent2"]
+- ["CC17HafsaInspectorApp5Color10deepPurple", "accent3"]
+- ["CC17HafsaInspectorApp5Color10deepPurple", "accent4"]
+- ["CC17HafsaInspectorApp5Color10deepPurple", "base"]
+- ["CC17HafsaInspectorApp5Color10deepPurple", "darken1"]
+- ["CC17HafsaInspectorApp5Color10deepPurple", "darken2"]
+- ["CC17HafsaInspectorApp5Color10deepPurple", "darken3"]
+- ["CC17HafsaInspectorApp5Color10deepPurple", "darken4"]
+- ["CC17HafsaInspectorApp5Color10deepPurple", "deinit"]
+- ["CC17HafsaInspectorApp5Color10deepPurple", "init"]
+- ["CC17HafsaInspectorApp5Color10deepPurple", "lighten1"]
+- ["CC17HafsaInspectorApp5Color10deepPurple", "lighten2"]
+- ["CC17HafsaInspectorApp5Color10deepPurple", "lighten3"]
+- ["CC17HafsaInspectorApp5Color10deepPurple", "lighten4"]
+- ["CC17HafsaInspectorApp5Color10deepPurple", "lighten5"]
+- ["CC17HafsaInspectorApp5Color5green", "UIColor"]
+- ["CC17HafsaInspectorApp5Color5green", "accent1"]
+- ["CC17HafsaInspectorApp5Color5green", "accent2"]
+- ["CC17HafsaInspectorApp5Color5green", "accent3"]
+- ["CC17HafsaInspectorApp5Color5green", "accent4"]
+- ["CC17HafsaInspectorApp5Color5green", "base"]
+- ["CC17HafsaInspectorApp5Color5green", "darken1"]
+- ["CC17HafsaInspectorApp5Color5green", "darken2"]
+- ["CC17HafsaInspectorApp5Color5green", "darken3"]
+- ["CC17HafsaInspectorApp5Color5green", "darken4"]
+- ["CC17HafsaInspectorApp5Color5green", "deinit"]
+- ["CC17HafsaInspectorApp5Color5green", "init"]
+- ["CC17HafsaInspectorApp5Color5green", "lighten1"]
+- ["CC17HafsaInspectorApp5Color5green", "lighten2"]
+- ["CC17HafsaInspectorApp5Color5green", "lighten3"]
+- ["CC17HafsaInspectorApp5Color5green", "lighten4"]
+- ["CC17HafsaInspectorApp5Color5green", "lighten5"]
+- ["CC17HafsaInspectorApp5Color4grey", "UIColor"]
+- ["CC17HafsaInspectorApp5Color4grey", "accent1"]
+- ["CC17HafsaInspectorApp5Color4grey", "accent2"]
+- ["CC17HafsaInspectorApp5Color4grey", "accent3"]
+- ["CC17HafsaInspectorApp5Color4grey", "accent4"]
+- ["CC17HafsaInspectorApp5Color4grey", "base"]
+- ["CC17HafsaInspectorApp5Color4grey", "darken1"]
+- ["CC17HafsaInspectorApp5Color4grey", "darken2"]
+- ["CC17HafsaInspectorApp5Color4grey", "darken3"]
+- ["CC17HafsaInspectorApp5Color4grey", "darken4"]
+- ["CC17HafsaInspectorApp5Color4grey", "deinit"]
+- ["CC17HafsaInspectorApp5Color4grey", "init"]
+- ["CC17HafsaInspectorApp5Color4grey", "lighten1"]
+- ["CC17HafsaInspectorApp5Color4grey", "lighten2"]
+- ["CC17HafsaInspectorApp5Color4grey", "lighten3"]
+- ["CC17HafsaInspectorApp5Color4grey", "lighten4"]
+- ["CC17HafsaInspectorApp5Color4grey", "lighten5"]
+- ["CC17HafsaInspectorApp5Color6indigo", "UIColor"]
+- ["CC17HafsaInspectorApp5Color6indigo", "accent1"]
+- ["CC17HafsaInspectorApp5Color6indigo", "accent2"]
+- ["CC17HafsaInspectorApp5Color6indigo", "accent3"]
+- ["CC17HafsaInspectorApp5Color6indigo", "accent4"]
+- ["CC17HafsaInspectorApp5Color6indigo", "base"]
+- ["CC17HafsaInspectorApp5Color6indigo", "darken1"]
+- ["CC17HafsaInspectorApp5Color6indigo", "darken2"]
+- ["CC17HafsaInspectorApp5Color6indigo", "darken3"]
+- ["CC17HafsaInspectorApp5Color6indigo", "darken4"]
+- ["CC17HafsaInspectorApp5Color6indigo", "deinit"]
+- ["CC17HafsaInspectorApp5Color6indigo", "init"]
+- ["CC17HafsaInspectorApp5Color6indigo", "lighten1"]
+- ["CC17HafsaInspectorApp5Color6indigo", "lighten2"]
+- ["CC17HafsaInspectorApp5Color6indigo", "lighten3"]
+- ["CC17HafsaInspectorApp5Color6indigo", "lighten4"]
+- ["CC17HafsaInspectorApp5Color6indigo", "lighten5"]
+- ["CC17HafsaInspectorApp5Color9lightBlue", "UIColor"]
+- ["CC17HafsaInspectorApp5Color9lightBlue", "accent1"]
+- ["CC17HafsaInspectorApp5Color9lightBlue", "accent2"]
+- ["CC17HafsaInspectorApp5Color9lightBlue", "accent3"]
+- ["CC17HafsaInspectorApp5Color9lightBlue", "accent4"]
+- ["CC17HafsaInspectorApp5Color9lightBlue", "base"]
+- ["CC17HafsaInspectorApp5Color9lightBlue", "darken1"]
+- ["CC17HafsaInspectorApp5Color9lightBlue", "darken2"]
+- ["CC17HafsaInspectorApp5Color9lightBlue", "darken3"]
+- ["CC17HafsaInspectorApp5Color9lightBlue", "darken4"]
+- ["CC17HafsaInspectorApp5Color9lightBlue", "deinit"]
+- ["CC17HafsaInspectorApp5Color9lightBlue", "init"]
+- ["CC17HafsaInspectorApp5Color9lightBlue", "lighten1"]
+- ["CC17HafsaInspectorApp5Color9lightBlue", "lighten2"]
+- ["CC17HafsaInspectorApp5Color9lightBlue", "lighten3"]
+- ["CC17HafsaInspectorApp5Color9lightBlue", "lighten4"]
+- ["CC17HafsaInspectorApp5Color9lightBlue", "lighten5"]
+- ["CC17HafsaInspectorApp5Color10lightGreen", "UIColor"]
+- ["CC17HafsaInspectorApp5Color10lightGreen", "accent1"]
+- ["CC17HafsaInspectorApp5Color10lightGreen", "accent2"]
+- ["CC17HafsaInspectorApp5Color10lightGreen", "accent3"]
+- ["CC17HafsaInspectorApp5Color10lightGreen", "accent4"]
+- ["CC17HafsaInspectorApp5Color10lightGreen", "base"]
+- ["CC17HafsaInspectorApp5Color10lightGreen", "darken1"]
+- ["CC17HafsaInspectorApp5Color10lightGreen", "darken2"]
+- ["CC17HafsaInspectorApp5Color10lightGreen", "darken3"]
+- ["CC17HafsaInspectorApp5Color10lightGreen", "darken4"]
+- ["CC17HafsaInspectorApp5Color10lightGreen", "deinit"]
+- ["CC17HafsaInspectorApp5Color10lightGreen", "init"]
+- ["CC17HafsaInspectorApp5Color10lightGreen", "lighten1"]
+- ["CC17HafsaInspectorApp5Color10lightGreen", "lighten2"]
+- ["CC17HafsaInspectorApp5Color10lightGreen", "lighten3"]
+- ["CC17HafsaInspectorApp5Color10lightGreen", "lighten4"]
+- ["CC17HafsaInspectorApp5Color10lightGreen", "lighten5"]
+- ["CC17HafsaInspectorApp5Color9lightText", "Color"]
+- ["CC17HafsaInspectorApp5Color9lightText", "deinit"]
+- ["CC17HafsaInspectorApp5Color9lightText", "dividers"]
+- ["CC17HafsaInspectorApp5Color9lightText", "init"]
+- ["CC17HafsaInspectorApp5Color9lightText", "others"]
+- ["CC17HafsaInspectorApp5Color9lightText", "primary"]
+- ["CC17HafsaInspectorApp5Color9lightText", "secondary"]
+- ["CC17HafsaInspectorApp5Color4lime", "UIColor"]
+- ["CC17HafsaInspectorApp5Color4lime", "accent1"]
+- ["CC17HafsaInspectorApp5Color4lime", "accent2"]
+- ["CC17HafsaInspectorApp5Color4lime", "accent3"]
+- ["CC17HafsaInspectorApp5Color4lime", "accent4"]
+- ["CC17HafsaInspectorApp5Color4lime", "base"]
+- ["CC17HafsaInspectorApp5Color4lime", "darken1"]
+- ["CC17HafsaInspectorApp5Color4lime", "darken2"]
+- ["CC17HafsaInspectorApp5Color4lime", "darken3"]
+- ["CC17HafsaInspectorApp5Color4lime", "darken4"]
+- ["CC17HafsaInspectorApp5Color4lime", "deinit"]
+- ["CC17HafsaInspectorApp5Color4lime", "init"]
+- ["CC17HafsaInspectorApp5Color4lime", "lighten1"]
+- ["CC17HafsaInspectorApp5Color4lime", "lighten2"]
+- ["CC17HafsaInspectorApp5Color4lime", "lighten3"]
+- ["CC17HafsaInspectorApp5Color4lime", "lighten4"]
+- ["CC17HafsaInspectorApp5Color4lime", "lighten5"]
+- ["CC17HafsaInspectorApp5Color6orange", "UIColor"]
+- ["CC17HafsaInspectorApp5Color6orange", "accent1"]
+- ["CC17HafsaInspectorApp5Color6orange", "accent2"]
+- ["CC17HafsaInspectorApp5Color6orange", "accent3"]
+- ["CC17HafsaInspectorApp5Color6orange", "accent4"]
+- ["CC17HafsaInspectorApp5Color6orange", "base"]
+- ["CC17HafsaInspectorApp5Color6orange", "darken1"]
+- ["CC17HafsaInspectorApp5Color6orange", "darken2"]
+- ["CC17HafsaInspectorApp5Color6orange", "darken3"]
+- ["CC17HafsaInspectorApp5Color6orange", "darken4"]
+- ["CC17HafsaInspectorApp5Color6orange", "deinit"]
+- ["CC17HafsaInspectorApp5Color6orange", "init"]
+- ["CC17HafsaInspectorApp5Color6orange", "lighten1"]
+- ["CC17HafsaInspectorApp5Color6orange", "lighten2"]
+- ["CC17HafsaInspectorApp5Color6orange", "lighten3"]
+- ["CC17HafsaInspectorApp5Color6orange", "lighten4"]
+- ["CC17HafsaInspectorApp5Color6orange", "lighten5"]
+- ["CC17HafsaInspectorApp5Color4pink", "UIColor"]
+- ["CC17HafsaInspectorApp5Color4pink", "accent1"]
+- ["CC17HafsaInspectorApp5Color4pink", "accent2"]
+- ["CC17HafsaInspectorApp5Color4pink", "accent3"]
+- ["CC17HafsaInspectorApp5Color4pink", "accent4"]
+- ["CC17HafsaInspectorApp5Color4pink", "base"]
+- ["CC17HafsaInspectorApp5Color4pink", "darken1"]
+- ["CC17HafsaInspectorApp5Color4pink", "darken2"]
+- ["CC17HafsaInspectorApp5Color4pink", "darken3"]
+- ["CC17HafsaInspectorApp5Color4pink", "darken4"]
+- ["CC17HafsaInspectorApp5Color4pink", "deinit"]
+- ["CC17HafsaInspectorApp5Color4pink", "init"]
+- ["CC17HafsaInspectorApp5Color4pink", "lighten1"]
+- ["CC17HafsaInspectorApp5Color4pink", "lighten2"]
+- ["CC17HafsaInspectorApp5Color4pink", "lighten3"]
+- ["CC17HafsaInspectorApp5Color4pink", "lighten4"]
+- ["CC17HafsaInspectorApp5Color4pink", "lighten5"]
+- ["CC17HafsaInspectorApp5Color6purple", "UIColor"]
+- ["CC17HafsaInspectorApp5Color6purple", "accent1"]
+- ["CC17HafsaInspectorApp5Color6purple", "accent2"]
+- ["CC17HafsaInspectorApp5Color6purple", "accent3"]
+- ["CC17HafsaInspectorApp5Color6purple", "accent4"]
+- ["CC17HafsaInspectorApp5Color6purple", "base"]
+- ["CC17HafsaInspectorApp5Color6purple", "darken1"]
+- ["CC17HafsaInspectorApp5Color6purple", "darken2"]
+- ["CC17HafsaInspectorApp5Color6purple", "darken3"]
+- ["CC17HafsaInspectorApp5Color6purple", "darken4"]
+- ["CC17HafsaInspectorApp5Color6purple", "deinit"]
+- ["CC17HafsaInspectorApp5Color6purple", "init"]
+- ["CC17HafsaInspectorApp5Color6purple", "lighten1"]
+- ["CC17HafsaInspectorApp5Color6purple", "lighten2"]
+- ["CC17HafsaInspectorApp5Color6purple", "lighten3"]
+- ["CC17HafsaInspectorApp5Color6purple", "lighten4"]
+- ["CC17HafsaInspectorApp5Color6purple", "lighten5"]
+- ["CC17HafsaInspectorApp5Color3red", "UIColor"]
+- ["CC17HafsaInspectorApp5Color3red", "accent1"]
+- ["CC17HafsaInspectorApp5Color3red", "accent2"]
+- ["CC17HafsaInspectorApp5Color3red", "accent3"]
+- ["CC17HafsaInspectorApp5Color3red", "accent4"]
+- ["CC17HafsaInspectorApp5Color3red", "base"]
+- ["CC17HafsaInspectorApp5Color3red", "darken1"]
+- ["CC17HafsaInspectorApp5Color3red", "darken2"]
+- ["CC17HafsaInspectorApp5Color3red", "darken3"]
+- ["CC17HafsaInspectorApp5Color3red", "darken4"]
+- ["CC17HafsaInspectorApp5Color3red", "deinit"]
+- ["CC17HafsaInspectorApp5Color3red", "init"]
+- ["CC17HafsaInspectorApp5Color3red", "lighten1"]
+- ["CC17HafsaInspectorApp5Color3red", "lighten2"]
+- ["CC17HafsaInspectorApp5Color3red", "lighten3"]
+- ["CC17HafsaInspectorApp5Color3red", "lighten4"]
+- ["CC17HafsaInspectorApp5Color3red", "lighten5"]
+- ["CC17HafsaInspectorApp5Color4teal", "UIColor"]
+- ["CC17HafsaInspectorApp5Color4teal", "accent1"]
+- ["CC17HafsaInspectorApp5Color4teal", "accent2"]
+- ["CC17HafsaInspectorApp5Color4teal", "accent3"]
+- ["CC17HafsaInspectorApp5Color4teal", "accent4"]
+- ["CC17HafsaInspectorApp5Color4teal", "base"]
+- ["CC17HafsaInspectorApp5Color4teal", "darken1"]
+- ["CC17HafsaInspectorApp5Color4teal", "darken2"]
+- ["CC17HafsaInspectorApp5Color4teal", "darken3"]
+- ["CC17HafsaInspectorApp5Color4teal", "darken4"]
+- ["CC17HafsaInspectorApp5Color4teal", "deinit"]
+- ["CC17HafsaInspectorApp5Color4teal", "init"]
+- ["CC17HafsaInspectorApp5Color4teal", "lighten1"]
+- ["CC17HafsaInspectorApp5Color4teal", "lighten2"]
+- ["CC17HafsaInspectorApp5Color4teal", "lighten3"]
+- ["CC17HafsaInspectorApp5Color4teal", "lighten4"]
+- ["CC17HafsaInspectorApp5Color4teal", "lighten5"]
+- ["CC17HafsaInspectorApp5Color6yellow", "UIColor"]
+- ["CC17HafsaInspectorApp5Color6yellow", "accent1"]
+- ["CC17HafsaInspectorApp5Color6yellow", "accent2"]
+- ["CC17HafsaInspectorApp5Color6yellow", "accent3"]
+- ["CC17HafsaInspectorApp5Color6yellow", "accent4"]
+- ["CC17HafsaInspectorApp5Color6yellow", "base"]
+- ["CC17HafsaInspectorApp5Color6yellow", "darken1"]
+- ["CC17HafsaInspectorApp5Color6yellow", "darken2"]
+- ["CC17HafsaInspectorApp5Color6yellow", "darken3"]
+- ["CC17HafsaInspectorApp5Color6yellow", "darken4"]
+- ["CC17HafsaInspectorApp5Color6yellow", "deinit"]
+- ["CC17HafsaInspectorApp5Color6yellow", "init"]
+- ["CC17HafsaInspectorApp5Color6yellow", "lighten1"]
+- ["CC17HafsaInspectorApp5Color6yellow", "lighten2"]
+- ["CC17HafsaInspectorApp5Color6yellow", "lighten3"]
+- ["CC17HafsaInspectorApp5Color6yellow", "lighten4"]
+- ["CC17HafsaInspectorApp5Color6yellow", "lighten5"]
+depends-nominal:
+- "Ps9AnyObject"
+- "V12CoreGraphics7CGFloat"
+- "Ps7CVarArg"
+- "C17HafsaInspectorApp5Color"
+- "P17HafsaInspectorApp12ColorPalette"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo7UIColor"
+- "Ps26_ExpressibleByColorLiteral"
+- "Ps9_Hashable"
+- "CC17HafsaInspectorApp5Color5amber"
+- "CC17HafsaInspectorApp5Color4blue"
+- "CC17HafsaInspectorApp5Color8blueGrey"
+- "CC17HafsaInspectorApp5Color5brown"
+- "CC17HafsaInspectorApp5Color4cyan"
+- "CC17HafsaInspectorApp5Color8darkText"
+- "CC17HafsaInspectorApp5Color10deepOrange"
+- "CC17HafsaInspectorApp5Color10deepPurple"
+- "CC17HafsaInspectorApp5Color5green"
+- "CC17HafsaInspectorApp5Color4grey"
+- "CC17HafsaInspectorApp5Color6indigo"
+- "CC17HafsaInspectorApp5Color9lightBlue"
+- "CC17HafsaInspectorApp5Color10lightGreen"
+- "CC17HafsaInspectorApp5Color9lightText"
+- "CC17HafsaInspectorApp5Color4lime"
+- "CC17HafsaInspectorApp5Color6orange"
+- "CC17HafsaInspectorApp5Color4pink"
+- "CC17HafsaInspectorApp5Color6purple"
+- "CC17HafsaInspectorApp5Color3red"
+- "CC17HafsaInspectorApp5Color4teal"
+- "CC17HafsaInspectorApp5Color6yellow"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HafsaInspectorApp-Bridging-Header.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/IPDFView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+interface-hash: "da470362b357bc026e4dd3babcacc9e0"

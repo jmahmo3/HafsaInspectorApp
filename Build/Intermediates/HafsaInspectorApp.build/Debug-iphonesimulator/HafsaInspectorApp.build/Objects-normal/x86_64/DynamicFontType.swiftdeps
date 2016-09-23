@@ -1,0 +1,197 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DynamicFontTypeDelegate"
+- "DynamicFontType"
+provides-nominal:
+- "P17HafsaInspectorApp23DynamicFontTypeDelegate"
+- "C17HafsaInspectorApp15DynamicFontType"
+provides-member:
+- ["P17HafsaInspectorApp23DynamicFontTypeDelegate", ""]
+- ["C17HafsaInspectorApp15DynamicFontType", ""]
+provides-dynamic-lookup:
+- "handleContentSizeChange"
+- "delegate"
+- "dynamicFontType"
+depends-top-level:
+- !private "NotificationCenter"
+- "DynamicFontTypeDelegate"
+- "NSObject"
+- "DynamicFontType"
+- !private "NSNotification"
+depends-member:
+- !private ["Ps9AnyObject", "NSNotification"]
+- !private ["Ps9AnyObject", "Name"]
+- !private ["Ps9AnyObject", "NotificationCenter"]
+- !private ["Ps9AnyObject", "addObserver"]
+- !private ["Ps9AnyObject", "default"]
+- ["Ps9AnyObject", "delegate"]
+- ["Ps9AnyObject", "handleContentSizeChange"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "prepare"]
+- ["Ps9AnyObject", "prepareContentSizeObservation"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps7CVarArg", "NSNotification"]
+- !private ["Ps7CVarArg", "Name"]
+- !private ["Ps7CVarArg", "NotificationCenter"]
+- !private ["Ps7CVarArg", "addObserver"]
+- !private ["Ps7CVarArg", "default"]
+- ["Ps7CVarArg", "delegate"]
+- ["Ps7CVarArg", "handleContentSizeChange"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "prepare"]
+- ["Ps7CVarArg", "prepareContentSizeObservation"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "UIContentSizeCategoryDidChange"]
+- !private ["Ps28CustomDebugStringConvertible", "NSNotification"]
+- !private ["Ps28CustomDebugStringConvertible", "Name"]
+- !private ["Ps28CustomDebugStringConvertible", "NotificationCenter"]
+- !private ["Ps28CustomDebugStringConvertible", "addObserver"]
+- !private ["Ps28CustomDebugStringConvertible", "default"]
+- ["Ps28CustomDebugStringConvertible", "delegate"]
+- ["Ps28CustomDebugStringConvertible", "handleContentSizeChange"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "prepare"]
+- ["Ps28CustomDebugStringConvertible", "prepareContentSizeObservation"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "NSNotification"]
+- !private ["Ps23CustomStringConvertible", "Name"]
+- !private ["Ps23CustomStringConvertible", "NotificationCenter"]
+- !private ["Ps23CustomStringConvertible", "addObserver"]
+- !private ["Ps23CustomStringConvertible", "default"]
+- ["Ps23CustomStringConvertible", "delegate"]
+- ["Ps23CustomStringConvertible", "handleContentSizeChange"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "prepare"]
+- ["Ps23CustomStringConvertible", "prepareContentSizeObservation"]
+- ["Ps23CustomStringConvertible", ""]
+- ["C17HafsaInspectorApp15DynamicFontType", "DynamicFontTypeDelegate"]
+- !private ["C17HafsaInspectorApp15DynamicFontType", "NSNotification"]
+- !private ["C17HafsaInspectorApp15DynamicFontType", "NotificationCenter"]
+- ["C17HafsaInspectorApp15DynamicFontType", "deinit"]
+- ["C17HafsaInspectorApp15DynamicFontType", "delegate"]
+- ["C17HafsaInspectorApp15DynamicFontType", "handleContentSizeChange"]
+- ["C17HafsaInspectorApp15DynamicFontType", "init"]
+- !private ["C17HafsaInspectorApp15DynamicFontType", "prepare"]
+- !private ["C17HafsaInspectorApp15DynamicFontType", "prepareContentSizeObservation"]
+- ["P17HafsaInspectorApp23DynamicFontTypeDelegate", "DynamicFontType"]
+- ["P17HafsaInspectorApp23DynamicFontTypeDelegate", "dynamicFontType"]
+- !private ["Ps9Equatable", "NSNotification"]
+- !private ["Ps9Equatable", "Name"]
+- !private ["Ps9Equatable", "NotificationCenter"]
+- !private ["Ps9Equatable", "UIContentSizeCategoryDidChange"]
+- !private ["Ps9Equatable", "addObserver"]
+- !private ["Ps9Equatable", "default"]
+- ["Ps9Equatable", "delegate"]
+- ["Ps9Equatable", "handleContentSizeChange"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "prepare"]
+- ["Ps9Equatable", "prepareContentSizeObservation"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "NSNotification"]
+- !private ["Ps8Hashable", "Name"]
+- !private ["Ps8Hashable", "NotificationCenter"]
+- !private ["Ps8Hashable", "UIContentSizeCategoryDidChange"]
+- !private ["Ps8Hashable", "addObserver"]
+- !private ["Ps8Hashable", "default"]
+- ["Ps8Hashable", "delegate"]
+- ["Ps8Hashable", "handleContentSizeChange"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "prepare"]
+- ["Ps8Hashable", "prepareContentSizeObservation"]
+- ["Ps8Hashable", ""]
+- !private ["PSo8NSCoding", "Name"]
+- !private ["PSo9NSCopying", "Name"]
+- !private ["CSo14NSNotification", "Name"]
+- ["CSo8NSObject", "DynamicFontTypeDelegate"]
+- !private ["CSo8NSObject", "NSNotification"]
+- !private ["CSo8NSObject", "Name"]
+- !private ["CSo8NSObject", "NotificationCenter"]
+- !private ["CSo8NSObject", "addObserver"]
+- !private ["CSo8NSObject", "default"]
+- ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "delegate"]
+- ["CSo8NSObject", "handleContentSizeChange"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "prepare"]
+- ["CSo8NSObject", "prepareContentSizeObservation"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "NSNotification"]
+- !private ["PSo16NSObjectProtocol", "Name"]
+- !private ["PSo16NSObjectProtocol", "NotificationCenter"]
+- !private ["PSo16NSObjectProtocol", "addObserver"]
+- !private ["PSo16NSObjectProtocol", "default"]
+- ["PSo16NSObjectProtocol", "delegate"]
+- ["PSo16NSObjectProtocol", "handleContentSizeChange"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "prepare"]
+- ["PSo16NSObjectProtocol", "prepareContentSizeObservation"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["VCSo14NSNotification4Name", "UIContentSizeCategoryDidChange"]
+- !private ["VCSo14NSNotification4Name", "deinit"]
+- !private ["CSo18NotificationCenter", "addObserver"]
+- !private ["CSo18NotificationCenter", "default"]
+- !private ["CSo18NotificationCenter", "deinit"]
+- ["Sq", "deinit"]
+- !private ["Ps16RawRepresentable", "UIContentSizeCategoryDidChange"]
+- !private ["V10ObjectiveC8Selector", "deinit"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "Name"]
+- !private ["Ps9_Hashable", "NSNotification"]
+- !private ["Ps9_Hashable", "Name"]
+- !private ["Ps9_Hashable", "NotificationCenter"]
+- !private ["Ps9_Hashable", "UIContentSizeCategoryDidChange"]
+- !private ["Ps9_Hashable", "addObserver"]
+- !private ["Ps9_Hashable", "default"]
+- ["Ps9_Hashable", "delegate"]
+- ["Ps9_Hashable", "handleContentSizeChange"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "prepare"]
+- ["Ps9_Hashable", "prepareContentSizeObservation"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "UIContentSizeCategoryDidChange"]
+- !private ["Ps20_SwiftNewtypeWrapper", "UIContentSizeCategoryDidChange"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "C17HafsaInspectorApp15DynamicFontType"
+- "P17HafsaInspectorApp23DynamicFontTypeDelegate"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo14NSNotification"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "VCSo14NSNotification4Name"
+- !private "CSo18NotificationCenter"
+- "Sq"
+- !private "Ps16RawRepresentable"
+- !private "V10ObjectiveC8Selector"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps20_SwiftNewtypeWrapper"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HafsaInspectorApp-Bridging-Header.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/IPDFView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+interface-hash: "ff637b1fdc8b03ddc9b6c40e07d0c6a6"

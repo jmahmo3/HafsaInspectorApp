@@ -1,0 +1,429 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PhotoLibraryController"
+provides-nominal:
+- "C17HafsaInspectorApp22PhotoLibraryController"
+provides-member:
+- ["C17HafsaInspectorApp22PhotoLibraryController", ""]
+provides-dynamic-lookup:
+- "photoLibrary"
+- "prepare"
+- "viewDidLoad"
+depends-top-level:
+- !private "BooleanLiteralType"
+- "PhotoLibraryDelegate"
+- !private "Device"
+- "PhotoLibrary"
+- "PhotoLibraryController"
+- "AssignmentPrecedence"
+- !private "Color"
+- "UIViewController"
+depends-member:
+- !private ["Ps9AnyObject", "Color"]
+- !private ["Ps9AnyObject", "Device"]
+- !private ["Ps9AnyObject", "PhotoLibrary"]
+- !private ["Ps9AnyObject", "backgroundColor"]
+- !private ["Ps9AnyObject", "clipsToBounds"]
+- !private ["Ps9AnyObject", "contentScaleFactor"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "photoLibrary"]
+- ["Ps9AnyObject", "photoLibrary.storage"]
+- ["Ps9AnyObject", "prepare"]
+- ["Ps9AnyObject", "preparePhotoLibrary"]
+- !private ["Ps9AnyObject", "view"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- !private ["Ps9AnyObject", "white"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "backgroundColor"]
+- !private ["PSo15CALayerDelegate", "clipsToBounds"]
+- !private ["PSo15CALayerDelegate", "contentScaleFactor"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["Ps7CVarArg", "Color"]
+- !private ["Ps7CVarArg", "Device"]
+- !private ["Ps7CVarArg", "PhotoLibrary"]
+- !private ["Ps7CVarArg", "backgroundColor"]
+- !private ["Ps7CVarArg", "clipsToBounds"]
+- !private ["Ps7CVarArg", "contentScaleFactor"]
+- !private ["Ps7CVarArg", "delegate"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "photoLibrary"]
+- ["Ps7CVarArg", "photoLibrary.storage"]
+- ["Ps7CVarArg", "prepare"]
+- ["Ps7CVarArg", "preparePhotoLibrary"]
+- !private ["Ps7CVarArg", "view"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["C17HafsaInspectorApp5Color", "white"]
+- !private ["Ps28CustomDebugStringConvertible", "Color"]
+- !private ["Ps28CustomDebugStringConvertible", "Device"]
+- !private ["Ps28CustomDebugStringConvertible", "PhotoLibrary"]
+- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
+- !private ["Ps28CustomDebugStringConvertible", "clipsToBounds"]
+- !private ["Ps28CustomDebugStringConvertible", "contentScaleFactor"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "photoLibrary"]
+- ["Ps28CustomDebugStringConvertible", "photoLibrary.storage"]
+- ["Ps28CustomDebugStringConvertible", "prepare"]
+- ["Ps28CustomDebugStringConvertible", "preparePhotoLibrary"]
+- !private ["Ps28CustomDebugStringConvertible", "view"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "Color"]
+- !private ["Ps23CustomStringConvertible", "Device"]
+- !private ["Ps23CustomStringConvertible", "PhotoLibrary"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "backgroundColor"]
+- !private ["Ps23CustomStringConvertible", "clipsToBounds"]
+- !private ["Ps23CustomStringConvertible", "contentScaleFactor"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "photoLibrary"]
+- ["Ps23CustomStringConvertible", "photoLibrary.storage"]
+- ["Ps23CustomStringConvertible", "prepare"]
+- ["Ps23CustomStringConvertible", "preparePhotoLibrary"]
+- !private ["Ps23CustomStringConvertible", "view"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["V17HafsaInspectorApp6Device", "scale"]
+- !private ["Ps9Equatable", "Color"]
+- !private ["Ps9Equatable", "Device"]
+- !private ["Ps9Equatable", "PhotoLibrary"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "backgroundColor"]
+- !private ["Ps9Equatable", "clipsToBounds"]
+- !private ["Ps9Equatable", "contentScaleFactor"]
+- !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "photoLibrary"]
+- ["Ps9Equatable", "photoLibrary.storage"]
+- ["Ps9Equatable", "prepare"]
+- ["Ps9Equatable", "preparePhotoLibrary"]
+- !private ["Ps9Equatable", "view"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "Color"]
+- !private ["Ps8Hashable", "Device"]
+- !private ["Ps8Hashable", "PhotoLibrary"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "backgroundColor"]
+- !private ["Ps8Hashable", "clipsToBounds"]
+- !private ["Ps8Hashable", "contentScaleFactor"]
+- !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "photoLibrary"]
+- ["Ps8Hashable", "photoLibrary.storage"]
+- ["Ps8Hashable", "prepare"]
+- ["Ps8Hashable", "preparePhotoLibrary"]
+- !private ["Ps8Hashable", "view"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "Color"]
+- !private ["PSo8NSCoding", "Device"]
+- !private ["PSo8NSCoding", "PhotoLibrary"]
+- !private ["PSo8NSCoding", "backgroundColor"]
+- !private ["PSo8NSCoding", "clipsToBounds"]
+- !private ["PSo8NSCoding", "contentScaleFactor"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "photoLibrary"]
+- ["PSo8NSCoding", "photoLibrary.storage"]
+- ["PSo8NSCoding", "prepare"]
+- ["PSo8NSCoding", "preparePhotoLibrary"]
+- !private ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "Color"]
+- !private ["PSo26NSExtensionRequestHandling", "Device"]
+- !private ["PSo26NSExtensionRequestHandling", "PhotoLibrary"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "photoLibrary"]
+- ["PSo26NSExtensionRequestHandling", "photoLibrary.storage"]
+- ["PSo26NSExtensionRequestHandling", "prepare"]
+- ["PSo26NSExtensionRequestHandling", "preparePhotoLibrary"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo8NSObject", "Color"]
+- !private ["CSo8NSObject", "Device"]
+- ["CSo8NSObject", "PhotoLibrary"]
+- !private ["CSo8NSObject", "backgroundColor"]
+- !private ["CSo8NSObject", "clipsToBounds"]
+- !private ["CSo8NSObject", "contentScaleFactor"]
+- !private ["CSo8NSObject", "delegate"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "photoLibrary"]
+- ["CSo8NSObject", "photoLibrary.storage"]
+- ["CSo8NSObject", "prepare"]
+- ["CSo8NSObject", "preparePhotoLibrary"]
+- !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "Color"]
+- !private ["PSo16NSObjectProtocol", "Device"]
+- !private ["PSo16NSObjectProtocol", "PhotoLibrary"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- !private ["PSo16NSObjectProtocol", "clipsToBounds"]
+- !private ["PSo16NSObjectProtocol", "contentScaleFactor"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "photoLibrary"]
+- ["PSo16NSObjectProtocol", "photoLibrary.storage"]
+- ["PSo16NSObjectProtocol", "prepare"]
+- ["PSo16NSObjectProtocol", "preparePhotoLibrary"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- !private ["PSo28PHPhotoLibraryChangeObserver", "delegate"]
+- !private ["PSo28PHPhotoLibraryChangeObserver", "init"]
+- ["C17HafsaInspectorApp12PhotoLibrary", "deinit"]
+- !private ["C17HafsaInspectorApp12PhotoLibrary", "delegate"]
+- !private ["C17HafsaInspectorApp12PhotoLibrary", "init"]
+- !private ["C17HafsaInspectorApp22PhotoLibraryController", "Color"]
+- !private ["C17HafsaInspectorApp22PhotoLibraryController", "Device"]
+- ["C17HafsaInspectorApp22PhotoLibraryController", "PhotoLibrary"]
+- ["C17HafsaInspectorApp22PhotoLibraryController", "deinit"]
+- ["C17HafsaInspectorApp22PhotoLibraryController", "init"]
+- ["C17HafsaInspectorApp22PhotoLibraryController", "photoLibrary"]
+- !private ["C17HafsaInspectorApp22PhotoLibraryController", "photoLibrary.storage"]
+- ["C17HafsaInspectorApp22PhotoLibraryController", "prepare"]
+- !private ["C17HafsaInspectorApp22PhotoLibraryController", "preparePhotoLibrary"]
+- !private ["C17HafsaInspectorApp22PhotoLibraryController", "view"]
+- ["C17HafsaInspectorApp22PhotoLibraryController", "viewDidLoad"]
+- !private ["P17HafsaInspectorApp20PhotoLibraryDelegate", "Color"]
+- !private ["P17HafsaInspectorApp20PhotoLibraryDelegate", "Device"]
+- !private ["P17HafsaInspectorApp20PhotoLibraryDelegate", "PhotoLibrary"]
+- ["P17HafsaInspectorApp20PhotoLibraryDelegate", "photoLibrary"]
+- !private ["P17HafsaInspectorApp20PhotoLibraryDelegate", "prepare"]
+- !private ["P17HafsaInspectorApp20PhotoLibraryDelegate", "preparePhotoLibrary"]
+- !private ["P17HafsaInspectorApp20PhotoLibraryDelegate", "view"]
+- ["P17HafsaInspectorApp20PhotoLibraryDelegate", ""]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- !private ["PSo29UIAccessibilityIdentification", "clipsToBounds"]
+- !private ["PSo29UIAccessibilityIdentification", "contentScaleFactor"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
+- !private ["PSo12UIAppearance", "clipsToBounds"]
+- !private ["PSo12UIAppearance", "contentScaleFactor"]
+- !private ["PSo21UIAppearanceContainer", "Color"]
+- !private ["PSo21UIAppearanceContainer", "Device"]
+- !private ["PSo21UIAppearanceContainer", "PhotoLibrary"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- !private ["PSo21UIAppearanceContainer", "clipsToBounds"]
+- !private ["PSo21UIAppearanceContainer", "contentScaleFactor"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "photoLibrary"]
+- ["PSo21UIAppearanceContainer", "photoLibrary.storage"]
+- ["PSo21UIAppearanceContainer", "prepare"]
+- ["PSo21UIAppearanceContainer", "preparePhotoLibrary"]
+- !private ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["CSo7UIColor", "deinit"]
+- !private ["PSo18UIContentContainer", "Color"]
+- !private ["PSo18UIContentContainer", "Device"]
+- !private ["PSo18UIContentContainer", "PhotoLibrary"]
+- !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "photoLibrary"]
+- ["PSo18UIContentContainer", "photoLibrary.storage"]
+- ["PSo18UIContentContainer", "prepare"]
+- ["PSo18UIContentContainer", "preparePhotoLibrary"]
+- !private ["PSo18UIContentContainer", "view"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- !private ["PSo17UICoordinateSpace", "clipsToBounds"]
+- !private ["PSo17UICoordinateSpace", "contentScaleFactor"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
+- !private ["PSo13UIDynamicItem", "clipsToBounds"]
+- !private ["PSo13UIDynamicItem", "contentScaleFactor"]
+- !private ["PSo18UIFocusEnvironment", "Color"]
+- !private ["PSo18UIFocusEnvironment", "Device"]
+- !private ["PSo18UIFocusEnvironment", "PhotoLibrary"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
+- !private ["PSo18UIFocusEnvironment", "clipsToBounds"]
+- !private ["PSo18UIFocusEnvironment", "contentScaleFactor"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "photoLibrary"]
+- ["PSo18UIFocusEnvironment", "photoLibrary.storage"]
+- ["PSo18UIFocusEnvironment", "prepare"]
+- ["PSo18UIFocusEnvironment", "preparePhotoLibrary"]
+- !private ["PSo18UIFocusEnvironment", "view"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "backgroundColor"]
+- !private ["PSo11UIFocusItem", "clipsToBounds"]
+- !private ["PSo11UIFocusItem", "contentScaleFactor"]
+- !private ["CSo11UIResponder", "Color"]
+- !private ["CSo11UIResponder", "Device"]
+- ["CSo11UIResponder", "PhotoLibrary"]
+- !private ["CSo11UIResponder", "backgroundColor"]
+- !private ["CSo11UIResponder", "clipsToBounds"]
+- !private ["CSo11UIResponder", "contentScaleFactor"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "photoLibrary"]
+- ["CSo11UIResponder", "photoLibrary.storage"]
+- ["CSo11UIResponder", "prepare"]
+- ["CSo11UIResponder", "preparePhotoLibrary"]
+- !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "Color"]
+- !private ["PSo30UIResponderStandardEditActions", "Device"]
+- !private ["PSo30UIResponderStandardEditActions", "PhotoLibrary"]
+- !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
+- !private ["PSo30UIResponderStandardEditActions", "clipsToBounds"]
+- !private ["PSo30UIResponderStandardEditActions", "contentScaleFactor"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "photoLibrary"]
+- ["PSo30UIResponderStandardEditActions", "photoLibrary.storage"]
+- ["PSo30UIResponderStandardEditActions", "prepare"]
+- ["PSo30UIResponderStandardEditActions", "preparePhotoLibrary"]
+- !private ["PSo30UIResponderStandardEditActions", "view"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "Color"]
+- !private ["PSo16UIStateRestoring", "Device"]
+- !private ["PSo16UIStateRestoring", "PhotoLibrary"]
+- !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "photoLibrary"]
+- ["PSo16UIStateRestoring", "photoLibrary.storage"]
+- ["PSo16UIStateRestoring", "prepare"]
+- ["PSo16UIStateRestoring", "preparePhotoLibrary"]
+- !private ["PSo16UIStateRestoring", "view"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "Color"]
+- !private ["PSo18UITraitEnvironment", "Device"]
+- !private ["PSo18UITraitEnvironment", "PhotoLibrary"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- !private ["PSo18UITraitEnvironment", "clipsToBounds"]
+- !private ["PSo18UITraitEnvironment", "contentScaleFactor"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "photoLibrary"]
+- ["PSo18UITraitEnvironment", "photoLibrary.storage"]
+- ["PSo18UITraitEnvironment", "prepare"]
+- ["PSo18UITraitEnvironment", "preparePhotoLibrary"]
+- !private ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "backgroundColor"]
+- !private ["CSo6UIView", "clipsToBounds"]
+- !private ["CSo6UIView", "contentScaleFactor"]
+- !private ["CSo16UIViewController", "Color"]
+- !private ["CSo16UIViewController", "Device"]
+- ["CSo16UIViewController", "PhotoLibrary"]
+- ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "photoLibrary"]
+- ["CSo16UIViewController", "photoLibrary.storage"]
+- ["CSo16UIViewController", "prepare"]
+- ["CSo16UIViewController", "preparePhotoLibrary"]
+- !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "Color"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "Device"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "PhotoLibrary"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "init"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "photoLibrary"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "photoLibrary.storage"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "prepare"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "preparePhotoLibrary"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "view"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "viewDidLoad"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", ""]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "clipsToBounds"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "contentScaleFactor"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "Color"]
+- !private ["Ps9_Hashable", "Device"]
+- !private ["Ps9_Hashable", "PhotoLibrary"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "backgroundColor"]
+- !private ["Ps9_Hashable", "clipsToBounds"]
+- !private ["Ps9_Hashable", "contentScaleFactor"]
+- !private ["Ps9_Hashable", "delegate"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "photoLibrary"]
+- ["Ps9_Hashable", "photoLibrary.storage"]
+- ["Ps9_Hashable", "prepare"]
+- ["Ps9_Hashable", "preparePhotoLibrary"]
+- !private ["Ps9_Hashable", "view"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- !private "PSo15CALayerDelegate"
+- "V12CoreGraphics7CGFloat"
+- "Ps7CVarArg"
+- !private "C17HafsaInspectorApp5Color"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "V17HafsaInspectorApp6Device"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- !private "PSo28PHPhotoLibraryChangeObserver"
+- "C17HafsaInspectorApp12PhotoLibrary"
+- "C17HafsaInspectorApp22PhotoLibraryController"
+- "P17HafsaInspectorApp20PhotoLibraryDelegate"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo7UIColor"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- "P17HafsaInspectorApp23ViewControllerContainer"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HafsaInspectorApp-Bridging-Header.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/IPDFView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+interface-hash: "28d0e677c4d21a76665436ce8e2aba21"

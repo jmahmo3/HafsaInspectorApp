@@ -1,0 +1,326 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AnimationTransitionType"
+- "AnimationTransitionSubTypeType"
+- "AnimationTransition"
+- "AnimationTransitionSubType"
+- "AnimationTransitionToValue"
+- "AnimationTransitionSubTypeToValue"
+provides-nominal:
+- "O17HafsaInspectorApp19AnimationTransition"
+- "O17HafsaInspectorApp26AnimationTransitionSubType"
+provides-member:
+- ["O17HafsaInspectorApp19AnimationTransition", ""]
+- ["O17HafsaInspectorApp26AnimationTransitionSubType", ""]
+- ["V17HafsaInspectorApp9Animation", ""]
+- ["V17HafsaInspectorApp9Animation", "transition"]
+provides-dynamic-lookup:
+depends-top-level:
+- "String"
+- "AnimationTransition"
+- !private "kCATransitionFade"
+- !private "kCATransitionReveal"
+- !private "kCATransitionFromTop"
+- "Animation"
+- "AnimationTransitionSubType"
+- !private "kCATransitionFromBottom"
+- "AnimationTransitionSubTypeType"
+- !private "kCATransitionPush"
+- !private "kCATransitionFromLeft"
+- "AnimationTransitionSubTypeToValue"
+- !private "kCATransitionMoveIn"
+- "CFTimeInterval"
+- "CATransition"
+- "Int"
+- "AnimationTransitionToValue"
+- !private "~="
+- !private "kCATransitionFromRight"
+- "=="
+- "AssignmentPrecedence"
+- "AnimationTransitionType"
+depends-member:
+- ["V17HafsaInspectorApp9Animation", "AnimationTransition"]
+- ["V17HafsaInspectorApp9Animation", "AnimationTransitionSubType"]
+- !private ["V17HafsaInspectorApp9Animation", "AnimationTransitionSubTypeToValue"]
+- !private ["V17HafsaInspectorApp9Animation", "AnimationTransitionToValue"]
+- ["V17HafsaInspectorApp9Animation", "CATransition"]
+- ["V17HafsaInspectorApp9Animation", "CFTimeInterval"]
+- ["V17HafsaInspectorApp9Animation", "transition"]
+- ["O17HafsaInspectorApp19AnimationTransition", "Fade"]
+- ["O17HafsaInspectorApp19AnimationTransition", "MoveIn"]
+- ["O17HafsaInspectorApp19AnimationTransition", "Push"]
+- ["O17HafsaInspectorApp19AnimationTransition", "RawValue"]
+- ["O17HafsaInspectorApp19AnimationTransition", "Reveal"]
+- ["O17HafsaInspectorApp19AnimationTransition", "_toAnyHashable"]
+- ["O17HafsaInspectorApp19AnimationTransition", "deinit"]
+- ["O17HafsaInspectorApp19AnimationTransition", "hashValue"]
+- ["O17HafsaInspectorApp19AnimationTransition", "init"]
+- ["O17HafsaInspectorApp19AnimationTransition", "rawValue"]
+- ["O17HafsaInspectorApp26AnimationTransitionSubType", "Bottom"]
+- ["O17HafsaInspectorApp26AnimationTransitionSubType", "Left"]
+- ["O17HafsaInspectorApp26AnimationTransitionSubType", "RawValue"]
+- ["O17HafsaInspectorApp26AnimationTransitionSubType", "Right"]
+- ["O17HafsaInspectorApp26AnimationTransitionSubType", "Top"]
+- ["O17HafsaInspectorApp26AnimationTransitionSubType", "_toAnyHashable"]
+- ["O17HafsaInspectorApp26AnimationTransitionSubType", "deinit"]
+- ["O17HafsaInspectorApp26AnimationTransitionSubType", "hashValue"]
+- ["O17HafsaInspectorApp26AnimationTransitionSubType", "init"]
+- ["O17HafsaInspectorApp26AnimationTransitionSubType", "rawValue"]
+- !private ["Ps9AnyObject", "duration"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "subtype"]
+- !private ["Ps9AnyObject", "type"]
+- !private ["Ps17BitwiseOperations", "Stride"]
+- !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["PSo8CAAction", "duration"]
+- !private ["PSo8CAAction", "init"]
+- !private ["PSo8CAAction", "subtype"]
+- !private ["PSo8CAAction", "type"]
+- !private ["CSo11CAAnimation", "duration"]
+- !private ["CSo11CAAnimation", "init"]
+- !private ["CSo11CAAnimation", "subtype"]
+- !private ["CSo11CAAnimation", "type"]
+- !private ["PSo13CAMediaTiming", "duration"]
+- !private ["PSo13CAMediaTiming", "init"]
+- !private ["PSo13CAMediaTiming", "subtype"]
+- !private ["PSo13CAMediaTiming", "type"]
+- ["CSo12CATransition", "deinit"]
+- !private ["CSo12CATransition", "duration"]
+- !private ["CSo12CATransition", "init"]
+- !private ["CSo12CATransition", "subtype"]
+- !private ["CSo12CATransition", "type"]
+- !private ["Ps7CVarArg", "Stride"]
+- !private ["Ps7CVarArg", "duration"]
+- !private ["Ps7CVarArg", "hashValue"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "subtype"]
+- !private ["Ps7CVarArg", "type"]
+- !private ["Vs11ClosedRange", "deinit"]
+- !private ["Ps10Comparable", "Stride"]
+- !private ["Ps10Comparable", "hashValue"]
+- !private ["Vs20CountableClosedRange", "deinit"]
+- !private ["Vs14CountableRange", "deinit"]
+- !private ["Ps28CustomDebugStringConvertible", "duration"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "some"]
+- !private ["Ps28CustomDebugStringConvertible", "subtype"]
+- !private ["Ps28CustomDebugStringConvertible", "type"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
+- !private ["Ps17CustomReflectable", "Stride"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "hashValue"]
+- ["Ps17CustomReflectable", "some"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "duration"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "subtype"]
+- !private ["Ps23CustomStringConvertible", "type"]
+- ["Sd", "deinit"]
+- ["Ps9Equatable", "Bottom"]
+- ["Ps9Equatable", "Fade"]
+- ["Ps9Equatable", "Left"]
+- ["Ps9Equatable", "MoveIn"]
+- ["Ps9Equatable", "Push"]
+- ["Ps9Equatable", "RawValue"]
+- ["Ps9Equatable", "Reveal"]
+- ["Ps9Equatable", "Right"]
+- !private ["Ps9Equatable", "Stride"]
+- ["Ps9Equatable", "Top"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_toAnyHashable"]
+- !private ["Ps9Equatable", "duration"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "rawValue"]
+- !private ["Ps9Equatable", "subtype"]
+- !private ["Ps9Equatable", "type"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- ["Ps23ExpressibleByNilLiteral", "some"]
+- ["Ps8Hashable", "Bottom"]
+- ["Ps8Hashable", "Fade"]
+- ["Ps8Hashable", "Left"]
+- ["Ps8Hashable", "MoveIn"]
+- ["Ps8Hashable", "Push"]
+- ["Ps8Hashable", "RawValue"]
+- ["Ps8Hashable", "Reveal"]
+- ["Ps8Hashable", "Right"]
+- !private ["Ps8Hashable", "Stride"]
+- ["Ps8Hashable", "Top"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_toAnyHashable"]
+- !private ["Ps8Hashable", "duration"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "rawValue"]
+- !private ["Ps8Hashable", "subtype"]
+- !private ["Ps8Hashable", "type"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "Stride"]
+- ["Si", "deinit"]
+- !private ["Si", "hashValue"]
+- !private ["Ps7Integer", "Stride"]
+- !private ["Ps7Integer", "hashValue"]
+- !private ["Ps17IntegerArithmetic", "Stride"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps10MirrorPath", "Stride"]
+- !private ["Ps10MirrorPath", "hashValue"]
+- !private ["PSo8NSCoding", "duration"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "subtype"]
+- !private ["PSo8NSCoding", "type"]
+- !private ["PSo9NSCopying", "duration"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "subtype"]
+- !private ["PSo9NSCopying", "type"]
+- !private ["CSo8NSObject", "duration"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "subtype"]
+- !private ["CSo8NSObject", "type"]
+- !private ["PSo16NSObjectProtocol", "duration"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "subtype"]
+- !private ["PSo16NSObjectProtocol", "type"]
+- ["Sq", "deinit"]
+- ["Sq", "some"]
+- !private ["Vs5Range", "deinit"]
+- ["Ps16RawRepresentable", "Bottom"]
+- ["Ps16RawRepresentable", "Fade"]
+- ["Ps16RawRepresentable", "Left"]
+- ["Ps16RawRepresentable", "MoveIn"]
+- ["Ps16RawRepresentable", "Push"]
+- ["Ps16RawRepresentable", "RawValue"]
+- ["Ps16RawRepresentable", "Reveal"]
+- ["Ps16RawRepresentable", "Right"]
+- ["Ps16RawRepresentable", "Top"]
+- ["Ps16RawRepresentable", "_toAnyHashable"]
+- ["Ps16RawRepresentable", "hashValue"]
+- ["Ps16RawRepresentable", "init"]
+- ["Ps16RawRepresentable", "rawValue"]
+- ["Ps16RawRepresentable", ""]
+- !private ["Ps13SignedInteger", "Stride"]
+- !private ["Ps13SignedInteger", "hashValue"]
+- !private ["Ps12SignedNumber", "Stride"]
+- !private ["Ps12SignedNumber", "hashValue"]
+- !private ["Ps10Strideable", "Stride"]
+- !private ["Ps10Strideable", "hashValue"]
+- ["SS", "deinit"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
+- ["Ps9_Hashable", "Bottom"]
+- ["Ps9_Hashable", "Fade"]
+- ["Ps9_Hashable", "Left"]
+- ["Ps9_Hashable", "MoveIn"]
+- ["Ps9_Hashable", "Push"]
+- ["Ps9_Hashable", "RawValue"]
+- ["Ps9_Hashable", "Reveal"]
+- ["Ps9_Hashable", "Right"]
+- !private ["Ps9_Hashable", "Stride"]
+- ["Ps9_Hashable", "Top"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "_toAnyHashable"]
+- !private ["Ps9_Hashable", "duration"]
+- ["Ps9_Hashable", "hashValue"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "rawValue"]
+- !private ["Ps9_Hashable", "subtype"]
+- !private ["Ps9_Hashable", "type"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "Stride"]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps8_Integer", "Stride"]
+- !private ["Ps8_Integer", "hashValue"]
+- !private ["Ps18_IntegerArithmetic", "Stride"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps14_SignedInteger", "Stride"]
+- !private ["Ps14_SignedInteger", "hashValue"]
+- !private ["Ps11_Strideable", "Stride"]
+- !private ["Ps11_Strideable", "hashValue"]
+depends-nominal:
+- "V17HafsaInspectorApp9Animation"
+- "O17HafsaInspectorApp19AnimationTransition"
+- "O17HafsaInspectorApp26AnimationTransitionSubType"
+- !private "Ps9AnyObject"
+- !private "Ps17BitwiseOperations"
+- "Sb"
+- !private "PSo8CAAction"
+- !private "CSo11CAAnimation"
+- !private "PSo13CAMediaTiming"
+- "CSo12CATransition"
+- !private "Ps7CVarArg"
+- !private "Vs11ClosedRange"
+- !private "Ps10Comparable"
+- !private "Vs20CountableClosedRange"
+- !private "Vs14CountableRange"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- "Sd"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- "Ps23ExpressibleByNilLiteral"
+- "Ps8Hashable"
+- "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- "Sq"
+- !private "Vs5Range"
+- "Ps16RawRepresentable"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- "SS"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HafsaInspectorApp-Bridging-Header.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/IPDFView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+interface-hash: "522d372d7db3e3f58804b50ba41ef89e"

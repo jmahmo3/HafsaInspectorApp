@@ -10,15 +10,15 @@ import UIKit
 
 
 
-class FormTableViewController: UITableViewController {
+class FormTableViewController: UITableViewController, UITextViewDelegate {
     
     
-    private let HImanager = HIManager.sharedClient()
+    fileprivate let HImanager = HIManager.sharedClient()
 
     static func create() -> FormTableViewController {
-        let frameworkBundle = NSBundle.mainBundle()
+        let frameworkBundle = Bundle.main
         let storyboard = UIStoryboard(name: "Main", bundle: frameworkBundle)
-        let main = storyboard.instantiateViewControllerWithIdentifier("FormTableViewController") as! FormTableViewController
+        let main = storyboard.instantiateViewController(withIdentifier: "FormTableViewController") as! FormTableViewController
         return main
     }
         
@@ -31,39 +31,46 @@ class FormTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return HImanager.supplierArray.count + 2
+        return HImanager.supplierArray.count + 3
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCellWithIdentifier("NameTableViewCell", forIndexPath: indexPath) as! NameTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "NameTableViewCell", for: indexPath) as! NameTableViewCell
             cell.configureNameCell()
             return cell
         }
         if indexPath.row > 0 && indexPath.row <= HImanager.supplierArray.count{
-            let cell = tableView.dequeueReusableCellWithIdentifier("SupplierTableViewCell", forIndexPath: indexPath) as! SupplierTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SupplierTableViewCell", for: indexPath) as! SupplierTableViewCell
             cell.configureSupplierCell(indexPath.row-1)
             return cell
         }
-        else {
-            let cell = tableView.dequeueReusableCellWithIdentifier("ImageTableViewCell", forIndexPath: indexPath) as! ImageTableViewCell
+        if indexPath.row == HImanager.supplierArray.count+1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ImageTableViewCell", for: indexPath) as! ImageTableViewCell
             
             return cell
         }
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CommentTableViewCell", for: indexPath) as! CommentTableViewCell
+            cell.configureCommentTableViewCell()
+            cell.textView.delegate = self
+            return cell
+            
+        }
     }
     
-    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
 }

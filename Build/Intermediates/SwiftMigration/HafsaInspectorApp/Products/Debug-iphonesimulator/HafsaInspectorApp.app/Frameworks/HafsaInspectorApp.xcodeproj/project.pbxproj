@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C718EBD1D7A8111009F9D79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C718EBC1D7A8111009F9D79 /* Main.storyboard */; };
+		9C718EC11D7A8140009F9D79 /* ChapterPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C718EBE1D7A8140009F9D79 /* ChapterPickerViewController.swift */; };
+		9C718EC21D7A8140009F9D79 /* EstablishmentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C718EBF1D7A8140009F9D79 /* EstablishmentPickerViewController.swift */; };
+		9C718EC31D7A8140009F9D79 /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C718EC01D7A8140009F9D79 /* FormTableViewController.swift */; };
+		9C718EC71D7A8167009F9D79 /* NameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C718EC51D7A8167009F9D79 /* NameTableViewCell.swift */; };
+		9C718EC81D7A8167009F9D79 /* SupplierTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C718EC61D7A8167009F9D79 /* SupplierTableViewCell.swift */; };
+		9C718ECA1D7A8184009F9D79 /* DeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C718EC91D7A8184009F9D79 /* DeviceExtensions.swift */; };
+		9C718ECC1D7A819D009F9D79 /* HIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C718ECB1D7A819D009F9D79 /* HIManager.swift */; };
+		9C718ECE1D7A81BA009F9D79 /* HITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C718ECD1D7A81BA009F9D79 /* HITextField.swift */; };
+		9C718ED01D7A81D0009F9D79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C718ECF1D7A81D0009F9D79 /* Assets.xcassets */; };
+		9C718ED31D7A82D3009F9D79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C718ED21D7A82D3009F9D79 /* LaunchScreen.storyboard */; };
+		9C718ED71D7A8C2B009F9D79 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C718ED61D7A8C2B009F9D79 /* WebService.swift */; };
+		9CA9E4111D7F939B00886963 /* AddImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9E4101D7F939B00886963 /* AddImageCollectionViewCell.swift */; };
+		9CA9E4131D7FB54C00886963 /* EditImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9E4121D7FB54C00886963 /* EditImageViewController.swift */; };
+		B328CE981D78F44F007075B9 /* IPDFCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B328CE951D78F44F007075B9 /* IPDFCameraViewController.m */; };
+		B328CE991D78F44F007075B9 /* IPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = B328CE971D78F44F007075B9 /* IPDFView.m */; };
+		B328CE9B1D7BB350007075B9 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328CE9A1D7BB350007075B9 /* ImageTableViewCell.swift */; };
+		B367E1B91D73F8E6008078DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367E1B81D73F8E6008078DF /* AppDelegate.swift */; };
+		CBBBFC73DE0B9DDDA18A8576 /* Pods_HafsaInspectorApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB17AB959B7618DD629350D6 /* Pods_HafsaInspectorApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		664B7478F436B1FE0A598A46 /* Pods-HafsaInspectorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HafsaInspectorApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp.release.xcconfig"; sourceTree = "<group>"; };
+		9C718EBC1D7A8111009F9D79 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9C718EBE1D7A8140009F9D79 /* ChapterPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterPickerViewController.swift; sourceTree = "<group>"; };
+		9C718EBF1D7A8140009F9D79 /* EstablishmentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstablishmentPickerViewController.swift; sourceTree = "<group>"; };
+		9C718EC01D7A8140009F9D79 /* FormTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTableViewController.swift; sourceTree = "<group>"; };
+		9C718EC51D7A8167009F9D79 /* NameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameTableViewCell.swift; sourceTree = "<group>"; };
+		9C718EC61D7A8167009F9D79 /* SupplierTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplierTableViewCell.swift; sourceTree = "<group>"; };
+		9C718EC91D7A8184009F9D79 /* DeviceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceExtensions.swift; sourceTree = "<group>"; };
+		9C718ECB1D7A819D009F9D79 /* HIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIManager.swift; sourceTree = "<group>"; };
+		9C718ECD1D7A81BA009F9D79 /* HITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HITextField.swift; sourceTree = "<group>"; };
+		9C718ECF1D7A81D0009F9D79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C718ED21D7A82D3009F9D79 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C718ED61D7A8C2B009F9D79 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebService.swift; path = HafsaInspectorApp/Utilities/WebService.swift; sourceTree = SOURCE_ROOT; };
+		9CA9E4101D7F939B00886963 /* AddImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		9CA9E4121D7FB54C00886963 /* EditImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditImageViewController.swift; sourceTree = "<group>"; };
+		B328CE931D78F44B007075B9 /* HafsaInspectorApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HafsaInspectorApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		B328CE941D78F44F007075B9 /* IPDFCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDFCameraViewController.h; sourceTree = "<group>"; };
+		B328CE951D78F44F007075B9 /* IPDFCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPDFCameraViewController.m; sourceTree = "<group>"; };
+		B328CE961D78F44F007075B9 /* IPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDFView.h; sourceTree = "<group>"; };
+		B328CE971D78F44F007075B9 /* IPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPDFView.m; sourceTree = "<group>"; };
+		B328CE9A1D7BB350007075B9 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		B367E1B51D73F8E6008078DF /* HafsaInspectorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HafsaInspectorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B367E1B81D73F8E6008078DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B367E1C41D73F8E6008078DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAD07BCF679C3DB174AC45F3 /* Pods-HafsaInspectorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HafsaInspectorApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EB17AB959B7618DD629350D6 /* Pods_HafsaInspectorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HafsaInspectorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B367E1B21D73F8E6008078DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBBFC73DE0B9DDDA18A8576 /* Pods_HafsaInspectorApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DE487148E48F359F8A476F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAD07BCF679C3DB174AC45F3 /* Pods-HafsaInspectorApp.debug.xcconfig */,
+				664B7478F436B1FE0A598A46 /* Pods-HafsaInspectorApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C718EC41D7A8147009F9D79 /* FormCells */ = {
+			isa = PBXGroup;
+			children = (
+				9C718EC51D7A8167009F9D79 /* NameTableViewCell.swift */,
+				9C718EC61D7A8167009F9D79 /* SupplierTableViewCell.swift */,
+				B328CE9A1D7BB350007075B9 /* ImageTableViewCell.swift */,
+				9CA9E4101D7F939B00886963 /* AddImageCollectionViewCell.swift */,
+				9CA9E4121D7FB54C00886963 /* EditImageViewController.swift */,
+			);
+			name = FormCells;
+			sourceTree = "<group>";
+		};
+		9C718ED11D7A82A8009F9D79 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B328CE941D78F44F007075B9 /* IPDFCameraViewController.h */,
+				B328CE951D78F44F007075B9 /* IPDFCameraViewController.m */,
+				B328CE961D78F44F007075B9 /* IPDFView.h */,
+				B328CE971D78F44F007075B9 /* IPDFView.m */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		B328CE901D78E5A6007075B9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C718EC91D7A8184009F9D79 /* DeviceExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B367E1AC1D73F8E6008078DF = {
+			isa = PBXGroup;
+			children = (
+				B367E1B71D73F8E6008078DF /* HafsaInspectorApp */,
+				B367E1B61D73F8E6008078DF /* Products */,
+				7DE487148E48F359F8A476F3 /* Pods */,
+				F84EDB083BDC52E2386F6382 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B367E1B61D73F8E6008078DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B367E1B51D73F8E6008078DF /* HafsaInspectorApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B367E1B71D73F8E6008078DF /* HafsaInspectorApp */ = {
+			isa = PBXGroup;
+			children = (
+				B367E1CA1D73F975008078DF /* UI */,
+				B367E1CC1D73F9A7008078DF /* Data */,
+				B367E1CD1D73F9BF008078DF /* Utilities */,
+				B367E1B81D73F8E6008078DF /* AppDelegate.swift */,
+				9C718ECF1D7A81D0009F9D79 /* Assets.xcassets */,
+				9C718ED21D7A82D3009F9D79 /* LaunchScreen.storyboard */,
+				B367E1C41D73F8E6008078DF /* Info.plist */,
+			);
+			path = HafsaInspectorApp;
+			sourceTree = "<group>";
+		};
+		B367E1CA1D73F975008078DF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B367E1CE1D73F9DB008078DF /* Views */,
+				B367E1CF1D73F9E7008078DF /* ViewControllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B367E1CC1D73F9A7008078DF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9C718ED61D7A8C2B009F9D79 /* WebService.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B367E1CD1D73F9BF008078DF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B328CE901D78E5A6007075B9 /* Extensions */,
+				B367E1D11D73FA0B008078DF /* ThirdParty */,
+				B367E1D01D73F9FC008078DF /* CustomControls */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B367E1CE1D73F9DB008078DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C718EBC1D7A8111009F9D79 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B367E1CF1D73F9E7008078DF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9C718EC41D7A8147009F9D79 /* FormCells */,
+				9C718EBE1D7A8140009F9D79 /* ChapterPickerViewController.swift */,
+				9C718EBF1D7A8140009F9D79 /* EstablishmentPickerViewController.swift */,
+				9C718EC01D7A8140009F9D79 /* FormTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B367E1D01D73F9FC008078DF /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				9C718ED11D7A82A8009F9D79 /* Camera */,
+				9C718ECB1D7A819D009F9D79 /* HIManager.swift */,
+				9C718ECD1D7A81BA009F9D79 /* HITextField.swift */,
+				B328CE931D78F44B007075B9 /* HafsaInspectorApp-Bridging-Header.h */,
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		B367E1D11D73FA0B008078DF /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		F84EDB083BDC52E2386F6382 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB17AB959B7618DD629350D6 /* Pods_HafsaInspectorApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B367E1B41D73F8E6008078DF /* HafsaInspectorApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B367E1C71D73F8E6008078DF /* Build configuration list for PBXNativeTarget "HafsaInspectorApp" */;
+			buildPhases = (
+				281CAF7DAF5374FD91BCFA6B /* [CP] Check Pods Manifest.lock */,
+				B367E1B11D73F8E6008078DF /* Sources */,
+				B367E1B21D73F8E6008078DF /* Frameworks */,
+				B367E1B31D73F8E6008078DF /* Resources */,
+				FAA6B6DFEC4F6168E2059D3E /* [CP] Embed Pods Frameworks */,
+				E2B85EC3200B03B06D6BC903 /* [CP] Copy Pods Resources */,
+				C8CAE1767C034B22ACBC8680 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HafsaInspectorApp;
+			productName = HafsaInspectorApp;
+			productReference = B367E1B51D73F8E6008078DF /* HafsaInspectorApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B367E1AD1D73F8E6008078DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Mahmood;
+				TargetAttributes = {
+					B367E1B41D73F8E6008078DF = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = FKZ3F49442;
+					};
+				};
+			};
+			buildConfigurationList = B367E1B01D73F8E6008078DF /* Build configuration list for PBXProject "HafsaInspectorApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B367E1AC1D73F8E6008078DF;
+			productRefGroup = B367E1B61D73F8E6008078DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B367E1B41D73F8E6008078DF /* HafsaInspectorApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B367E1B31D73F8E6008078DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C718ED31D7A82D3009F9D79 /* LaunchScreen.storyboard in Resources */,
+				9C718EBD1D7A8111009F9D79 /* Main.storyboard in Resources */,
+				9C718ED01D7A81D0009F9D79 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		281CAF7DAF5374FD91BCFA6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8CAE1767C034B22ACBC8680 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2B85EC3200B03B06D6BC903 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAA6B6DFEC4F6168E2059D3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B367E1B11D73F8E6008078DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C718EC11D7A8140009F9D79 /* ChapterPickerViewController.swift in Sources */,
+				9C718EC31D7A8140009F9D79 /* FormTableViewController.swift in Sources */,
+				9CA9E4111D7F939B00886963 /* AddImageCollectionViewCell.swift in Sources */,
+				B328CE991D78F44F007075B9 /* IPDFView.m in Sources */,
+				9C718EC21D7A8140009F9D79 /* EstablishmentPickerViewController.swift in Sources */,
+				9C718ECC1D7A819D009F9D79 /* HIManager.swift in Sources */,
+				B367E1B91D73F8E6008078DF /* AppDelegate.swift in Sources */,
+				9C718ED71D7A8C2B009F9D79 /* WebService.swift in Sources */,
+				9CA9E4131D7FB54C00886963 /* EditImageViewController.swift in Sources */,
+				9C718ECA1D7A8184009F9D79 /* DeviceExtensions.swift in Sources */,
+				9C718ECE1D7A81BA009F9D79 /* HITextField.swift in Sources */,
+				9C718EC71D7A8167009F9D79 /* NameTableViewCell.swift in Sources */,
+				B328CE9B1D7BB350007075B9 /* ImageTableViewCell.swift in Sources */,
+				B328CE981D78F44F007075B9 /* IPDFCameraViewController.m in Sources */,
+				9C718EC81D7A8167009F9D79 /* SupplierTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B367E1C51D73F8E6008078DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B367E1C61D73F8E6008078DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B367E1C81D73F8E6008078DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAD07BCF679C3DB174AC45F3 /* Pods-HafsaInspectorApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = HafsaInspectorApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Junaid.HafsaInspectorApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HafsaInspectorApp/Utilities/CustomControls/HafsaInspectorApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B367E1C91D73F8E6008078DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 664B7478F436B1FE0A598A46 /* Pods-HafsaInspectorApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = HafsaInspectorApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Junaid.HafsaInspectorApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HafsaInspectorApp/Utilities/CustomControls/HafsaInspectorApp-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B367E1B01D73F8E6008078DF /* Build configuration list for PBXProject "HafsaInspectorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B367E1C51D73F8E6008078DF /* Debug */,
+				B367E1C61D73F8E6008078DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B367E1C71D73F8E6008078DF /* Build configuration list for PBXNativeTarget "HafsaInspectorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B367E1C81D73F8E6008078DF /* Debug */,
+				B367E1C91D73F8E6008078DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B367E1AD1D73F8E6008078DF /* Project object */;
+}

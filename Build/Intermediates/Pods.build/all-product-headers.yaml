@@ -4,12 +4,12 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphoneos/MBProgressHUD.framework/Headers",
+      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "MBProgressHUD-Swift.h",
-          'external-contents': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphoneos/MBProgressHUD.framework/Headers/MBProgressHUD-Swift.h"
+          'external-contents': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-Swift.h"
         },
         {
           'type': 'file',
@@ -25,45 +25,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphoneos/MBProgressHUD.framework/Modules",
+      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Intermediates/Pods.build/Debug-iphoneos/MBProgressHUD.build/module.modulemap"
+          'external-contents': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/MBProgressHUD.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphoneos/Material.framework/Headers",
-      'contents': [
-        {
-          'type': 'file',
-          'name': "Material-Swift.h",
-          'external-contents': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphoneos/Material.framework/Headers/Material-Swift.h"
-        },
-        {
-          'type': 'file',
-          'name': "Material-umbrella.h",
-          'external-contents': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Target Support Files/Material/Material-umbrella.h"
-        }
-      ]
-    },
-    {
-      'type': 'directory',
-      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphoneos/Material.framework/Modules",
-      'contents': [
-        {
-          'type': 'file',
-          'name': "module.modulemap",
-          'external-contents': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Intermediates/Pods.build/Debug-iphoneos/Material.build/module.modulemap"
-        }
-      ]
-    },
-    {
-      'type': 'directory',
-      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphoneos/Pods_HafsaInspectorApp.framework/Headers",
+      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/Pods_HafsaInspectorApp.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -73,18 +46,18 @@
         {
           'type': 'file',
           'name': "Pods_HafsaInspectorApp-Swift.h",
-          'external-contents': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphoneos/Pods_HafsaInspectorApp.framework/Headers/Pods_HafsaInspectorApp-Swift.h"
+          'external-contents': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/Pods_HafsaInspectorApp.framework/Headers/Pods_HafsaInspectorApp-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphoneos/Pods_HafsaInspectorApp.framework/Modules",
+      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/Pods_HafsaInspectorApp.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-HafsaInspectorApp.build/module.modulemap"
+          'external-contents': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-HafsaInspectorApp.build/module.modulemap"
         }
       ]
     }
