@@ -1,0 +1,13 @@
+PODS:
+  - Material (1.42.9)
+  - MBProgressHUD (1.0.0)
+
+DEPENDENCIES:
+  - Material (~> 1.0)
+  - MBProgressHUD (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  Material: a84ed893b7785f0d3c8d568e88c055f82b436473
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+
+COCOAPODS: 0.39.0

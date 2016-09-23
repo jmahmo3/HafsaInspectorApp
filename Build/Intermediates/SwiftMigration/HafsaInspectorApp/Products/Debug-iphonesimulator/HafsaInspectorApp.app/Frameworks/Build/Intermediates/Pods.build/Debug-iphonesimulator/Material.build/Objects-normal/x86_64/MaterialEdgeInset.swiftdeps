@@ -1,0 +1,176 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MaterialEdgeInset"
+- "MaterialEdgeInsetToValue"
+provides-nominal:
+- "O8Material17MaterialEdgeInset"
+provides-member:
+- ["O8Material17MaterialEdgeInset", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "MaterialEdgeInsetToValue"
+- !private "UIEdgeInsetsMake"
+- "MaterialEdgeInset"
+- !private "UIEdgeInsetsZero"
+- "UIEdgeInsets"
+- "=="
+depends-member:
+- !private ["Ps22BidirectionalIndexType", "hashValue"]
+- !private ["Ps21BitwiseOperationsType", "hashValue"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["Ps11CVarArgType", "hashValue"]
+- !private ["Ps10Comparable", "hashValue"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- ["Ps9Equatable", "None"]
+- ["Ps9Equatable", "Square1"]
+- ["Ps9Equatable", "Square2"]
+- ["Ps9Equatable", "Square3"]
+- ["Ps9Equatable", "Square4"]
+- ["Ps9Equatable", "Square5"]
+- ["Ps9Equatable", "Square6"]
+- ["Ps9Equatable", "Square7"]
+- ["Ps9Equatable", "Square8"]
+- ["Ps9Equatable", "Square9"]
+- ["Ps9Equatable", "TallRectangle1"]
+- ["Ps9Equatable", "TallRectangle2"]
+- ["Ps9Equatable", "TallRectangle3"]
+- ["Ps9Equatable", "TallRectangle4"]
+- ["Ps9Equatable", "TallRectangle5"]
+- ["Ps9Equatable", "TallRectangle6"]
+- ["Ps9Equatable", "TallRectangle7"]
+- ["Ps9Equatable", "TallRectangle8"]
+- ["Ps9Equatable", "TallRectangle9"]
+- ["Ps9Equatable", "WideRectangle1"]
+- ["Ps9Equatable", "WideRectangle2"]
+- ["Ps9Equatable", "WideRectangle3"]
+- ["Ps9Equatable", "WideRectangle4"]
+- ["Ps9Equatable", "WideRectangle5"]
+- ["Ps9Equatable", "WideRectangle6"]
+- ["Ps9Equatable", "WideRectangle7"]
+- ["Ps9Equatable", "WideRectangle8"]
+- ["Ps9Equatable", "WideRectangle9"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", ""]
+- !private ["Ps16ForwardIndexType", "hashValue"]
+- ["Ps8Hashable", "None"]
+- ["Ps8Hashable", "Square1"]
+- ["Ps8Hashable", "Square2"]
+- ["Ps8Hashable", "Square3"]
+- ["Ps8Hashable", "Square4"]
+- ["Ps8Hashable", "Square5"]
+- ["Ps8Hashable", "Square6"]
+- ["Ps8Hashable", "Square7"]
+- ["Ps8Hashable", "Square8"]
+- ["Ps8Hashable", "Square9"]
+- ["Ps8Hashable", "TallRectangle1"]
+- ["Ps8Hashable", "TallRectangle2"]
+- ["Ps8Hashable", "TallRectangle3"]
+- ["Ps8Hashable", "TallRectangle4"]
+- ["Ps8Hashable", "TallRectangle5"]
+- ["Ps8Hashable", "TallRectangle6"]
+- ["Ps8Hashable", "TallRectangle7"]
+- ["Ps8Hashable", "TallRectangle8"]
+- ["Ps8Hashable", "TallRectangle9"]
+- ["Ps8Hashable", "WideRectangle1"]
+- ["Ps8Hashable", "WideRectangle2"]
+- ["Ps8Hashable", "WideRectangle3"]
+- ["Ps8Hashable", "WideRectangle4"]
+- ["Ps8Hashable", "WideRectangle5"]
+- ["Ps8Hashable", "WideRectangle6"]
+- ["Ps8Hashable", "WideRectangle7"]
+- ["Ps8Hashable", "WideRectangle8"]
+- ["Ps8Hashable", "WideRectangle9"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "hashValue"]
+- !private ["Ps21IntegerArithmeticType", "hashValue"]
+- !private ["Ps25IntegerLiteralConvertible", "hashValue"]
+- !private ["Ps11IntegerType", "hashValue"]
+- ["O8Material17MaterialEdgeInset", "None"]
+- ["O8Material17MaterialEdgeInset", "Square1"]
+- ["O8Material17MaterialEdgeInset", "Square2"]
+- ["O8Material17MaterialEdgeInset", "Square3"]
+- ["O8Material17MaterialEdgeInset", "Square4"]
+- ["O8Material17MaterialEdgeInset", "Square5"]
+- ["O8Material17MaterialEdgeInset", "Square6"]
+- ["O8Material17MaterialEdgeInset", "Square7"]
+- ["O8Material17MaterialEdgeInset", "Square8"]
+- ["O8Material17MaterialEdgeInset", "Square9"]
+- ["O8Material17MaterialEdgeInset", "TallRectangle1"]
+- ["O8Material17MaterialEdgeInset", "TallRectangle2"]
+- ["O8Material17MaterialEdgeInset", "TallRectangle3"]
+- ["O8Material17MaterialEdgeInset", "TallRectangle4"]
+- ["O8Material17MaterialEdgeInset", "TallRectangle5"]
+- ["O8Material17MaterialEdgeInset", "TallRectangle6"]
+- ["O8Material17MaterialEdgeInset", "TallRectangle7"]
+- ["O8Material17MaterialEdgeInset", "TallRectangle8"]
+- ["O8Material17MaterialEdgeInset", "TallRectangle9"]
+- ["O8Material17MaterialEdgeInset", "WideRectangle1"]
+- ["O8Material17MaterialEdgeInset", "WideRectangle2"]
+- ["O8Material17MaterialEdgeInset", "WideRectangle3"]
+- ["O8Material17MaterialEdgeInset", "WideRectangle4"]
+- ["O8Material17MaterialEdgeInset", "WideRectangle5"]
+- ["O8Material17MaterialEdgeInset", "WideRectangle6"]
+- ["O8Material17MaterialEdgeInset", "WideRectangle7"]
+- ["O8Material17MaterialEdgeInset", "WideRectangle8"]
+- ["O8Material17MaterialEdgeInset", "WideRectangle9"]
+- ["O8Material17MaterialEdgeInset", "deinit"]
+- ["O8Material17MaterialEdgeInset", "hashValue"]
+- !private ["Ps14MirrorPathType", "hashValue"]
+- !private ["Ps21RandomAccessIndexType", "hashValue"]
+- !private ["Ps17SignedIntegerType", "hashValue"]
+- !private ["Ps16SignedNumberType", "hashValue"]
+- !private ["Ps10Strideable", "hashValue"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "hashValue"]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps22_IntegerArithmeticType", "hashValue"]
+- !private ["Ps12_IntegerType", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- !private ["Ps22_RandomAccessAmbiguity", "hashValue"]
+- !private ["Ps12_Reflectable", "hashValue"]
+- !private ["Ps18_SignedIntegerType", "hashValue"]
+depends-nominal:
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "V12CoreGraphics7CGFloat"
+- !private "Ps11CVarArgType"
+- !private "Ps10Comparable"
+- !private "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps16ForwardIndexType"
+- "Ps8Hashable"
+- !private "Si"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- "O8Material17MaterialEdgeInset"
+- !private "Ps14MirrorPathType"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Strideable"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessAmbiguity"
+- !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/Test Code/SwiftTest/Pods/Google/Headers/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Target Support Files/Material/Material-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "d34e4b5c2276904a9779ce8e6153caca"

@@ -1,0 +1,66 @@
+[
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/NameTableViewCell.swift",
+  "offset": 450,
+  "text": "file",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/NameTableViewCell.swift",
+  "offset": 591,
+  "remove": 1,
+  "text": "n",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/NameTableViewCell.swift",
+  "offset": 640,
+  "remove": 8,
+  "text": "r",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/NameTableViewCell.swift",
+  "offset": 852,
+  "remove": 3,
+  "text": " ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/NameTableViewCell.swift",
+  "offset": 954,
+  "remove": 1,
+  "text": "(f",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/NameTableViewCell.swift",
+  "offset": 958,
+  "text": ": ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/NameTableViewCell.swift",
+  "offset": 962,
+  "remove": 8,
+  "text": "(",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/NameTableViewCell.swift",
+  "offset": 1141,
+  "remove": 8,
+  "text": "y",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/NameTableViewCell.swift",
+  "offset": 1282,
+  "remove": 8,
+  "text": "y",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/NameTableViewCell.swift",
+  "offset": 1411,
+  "remove": 8,
+  "text": "y",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/NameTableViewCell.swift",
+  "offset": 1534,
+  "remove": 8,
+  "text": "y",
+ }
+]

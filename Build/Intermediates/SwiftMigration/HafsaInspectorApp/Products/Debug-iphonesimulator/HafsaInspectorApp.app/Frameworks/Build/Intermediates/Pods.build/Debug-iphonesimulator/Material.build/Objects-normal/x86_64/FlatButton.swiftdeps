@@ -1,0 +1,172 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FlatButton"
+provides-nominal:
+- "C8Material10FlatButton"
+provides-member:
+- ["C8Material10FlatButton", ""]
+provides-dynamic-lookup:
+- "prepareView"
+depends-top-level:
+- "FlatButton"
+- "MaterialButton"
+depends-member:
+- !private ["Ps9AnyObject", "contentEdgeInsetsPreset"]
+- !private ["Ps9AnyObject", "cornerRadiusPreset"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "prepareView"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps11CVarArgType", "contentEdgeInsetsPreset"]
+- !private ["Ps11CVarArgType", "cornerRadiusPreset"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "prepareView"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "contentEdgeInsetsPreset"]
+- !private ["Ps28CustomDebugStringConvertible", "cornerRadiusPreset"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "prepareView"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "contentEdgeInsetsPreset"]
+- !private ["Ps23CustomStringConvertible", "cornerRadiusPreset"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "prepareView"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Radius1"]
+- !private ["Ps9Equatable", "WideRectangle3"]
+- !private ["Ps9Equatable", "contentEdgeInsetsPreset"]
+- !private ["Ps9Equatable", "cornerRadiusPreset"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "prepareView"]
+- ["Ps9Equatable", ""]
+- !private ["C8Material10FlatButton", "contentEdgeInsetsPreset"]
+- !private ["C8Material10FlatButton", "cornerRadiusPreset"]
+- ["C8Material10FlatButton", "deinit"]
+- ["C8Material10FlatButton", "init"]
+- ["C8Material10FlatButton", "prepareView"]
+- !private ["Ps8Hashable", "Radius1"]
+- !private ["Ps8Hashable", "WideRectangle3"]
+- !private ["Ps8Hashable", "contentEdgeInsetsPreset"]
+- !private ["Ps8Hashable", "cornerRadiusPreset"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "prepareView"]
+- ["Ps8Hashable", ""]
+- !private ["C8Material14MaterialButton", "contentEdgeInsetsPreset"]
+- !private ["C8Material14MaterialButton", "cornerRadiusPreset"]
+- ["C8Material14MaterialButton", "init"]
+- ["C8Material14MaterialButton", "prepareView"]
+- ["C8Material14MaterialButton", ""]
+- !private ["O8Material17MaterialEdgeInset", "WideRectangle3"]
+- !private ["O8Material14MaterialRadius", "Radius1"]
+- !private ["PSo8NSCoding", "contentEdgeInsetsPreset"]
+- !private ["PSo8NSCoding", "cornerRadiusPreset"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "prepareView"]
+- ["PSo8NSCoding", ""]
+- !private ["CSo8NSObject", "contentEdgeInsetsPreset"]
+- !private ["CSo8NSObject", "cornerRadiusPreset"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "prepareView"]
+- !private ["PSo16NSObjectProtocol", "contentEdgeInsetsPreset"]
+- !private ["PSo16NSObjectProtocol", "cornerRadiusPreset"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "prepareView"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo29UIAccessibilityIdentification", "contentEdgeInsetsPreset"]
+- !private ["PSo29UIAccessibilityIdentification", "cornerRadiusPreset"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "prepareView"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "contentEdgeInsetsPreset"]
+- !private ["PSo12UIAppearance", "cornerRadiusPreset"]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "prepareView"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "contentEdgeInsetsPreset"]
+- !private ["PSo21UIAppearanceContainer", "cornerRadiusPreset"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "prepareView"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "contentEdgeInsetsPreset"]
+- !private ["CSo8UIButton", "cornerRadiusPreset"]
+- ["CSo8UIButton", "init"]
+- ["CSo8UIButton", "prepareView"]
+- !private ["CSo9UIControl", "contentEdgeInsetsPreset"]
+- !private ["CSo9UIControl", "cornerRadiusPreset"]
+- ["CSo9UIControl", "init"]
+- ["CSo9UIControl", "prepareView"]
+- !private ["PSo17UICoordinateSpace", "contentEdgeInsetsPreset"]
+- !private ["PSo17UICoordinateSpace", "cornerRadiusPreset"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "prepareView"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "contentEdgeInsetsPreset"]
+- !private ["PSo13UIDynamicItem", "cornerRadiusPreset"]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "prepareView"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "contentEdgeInsetsPreset"]
+- !private ["PSo18UIFocusEnvironment", "cornerRadiusPreset"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "prepareView"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo11UIResponder", "contentEdgeInsetsPreset"]
+- !private ["CSo11UIResponder", "cornerRadiusPreset"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "prepareView"]
+- !private ["PSo18UITraitEnvironment", "contentEdgeInsetsPreset"]
+- !private ["PSo18UITraitEnvironment", "cornerRadiusPreset"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "prepareView"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "contentEdgeInsetsPreset"]
+- !private ["CSo6UIView", "cornerRadiusPreset"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "prepareView"]
+- !private ["Ps12_Reflectable", "contentEdgeInsetsPreset"]
+- !private ["Ps12_Reflectable", "cornerRadiusPreset"]
+- ["Ps12_Reflectable", "init"]
+- ["Ps12_Reflectable", "prepareView"]
+- ["Ps12_Reflectable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "C8Material10FlatButton"
+- "Ps8Hashable"
+- "C8Material14MaterialButton"
+- !private "O8Material17MaterialEdgeInset"
+- !private "O8Material14MaterialRadius"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo8UIButton"
+- "CSo9UIControl"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/Test Code/SwiftTest/Pods/Google/Headers/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Target Support Files/Material/Material-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "ed1b42842cb796e72a5214fdbf5ba0b7"

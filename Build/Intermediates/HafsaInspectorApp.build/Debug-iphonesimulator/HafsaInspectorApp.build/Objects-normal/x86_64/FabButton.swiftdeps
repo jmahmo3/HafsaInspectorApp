@@ -1,0 +1,371 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FabButton"
+provides-nominal:
+- "C17HafsaInspectorApp9FabButton"
+provides-member:
+- ["C17HafsaInspectorApp9FabButton", ""]
+provides-dynamic-lookup:
+- "prepare"
+depends-top-level:
+- "FabButton"
+- !private "Color"
+- "Button"
+- "AssignmentPrecedence"
+depends-member:
+- !private ["Ps9AnyObject", "Color"]
+- !private ["Ps9AnyObject", "backgroundColor"]
+- !private ["Ps9AnyObject", "base"]
+- !private ["Ps9AnyObject", "depthPreset"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "prepare"]
+- !private ["Ps9AnyObject", "pulseAnimation"]
+- !private ["Ps9AnyObject", "pulseColor"]
+- !private ["Ps9AnyObject", "red"]
+- !private ["Ps9AnyObject", "shapePreset"]
+- !private ["Ps9AnyObject", "tintColor"]
+- !private ["Ps9AnyObject", "white"]
+- ["Ps9AnyObject", ""]
+- !private ["C17HafsaInspectorApp6Button", "Color"]
+- !private ["C17HafsaInspectorApp6Button", "backgroundColor"]
+- ["C17HafsaInspectorApp6Button", "deinit"]
+- !private ["C17HafsaInspectorApp6Button", "depthPreset"]
+- ["C17HafsaInspectorApp6Button", "init"]
+- ["C17HafsaInspectorApp6Button", "prepare"]
+- !private ["C17HafsaInspectorApp6Button", "pulseAnimation"]
+- !private ["C17HafsaInspectorApp6Button", "pulseColor"]
+- !private ["C17HafsaInspectorApp6Button", "shapePreset"]
+- !private ["C17HafsaInspectorApp6Button", "tintColor"]
+- ["C17HafsaInspectorApp6Button", ""]
+- !private ["PSo15CALayerDelegate", "Color"]
+- !private ["PSo15CALayerDelegate", "backgroundColor"]
+- !private ["PSo15CALayerDelegate", "depthPreset"]
+- !private ["PSo15CALayerDelegate", "init"]
+- ["PSo15CALayerDelegate", "prepare"]
+- !private ["PSo15CALayerDelegate", "pulseAnimation"]
+- !private ["PSo15CALayerDelegate", "pulseColor"]
+- !private ["PSo15CALayerDelegate", "shapePreset"]
+- !private ["PSo15CALayerDelegate", "tintColor"]
+- ["PSo15CALayerDelegate", ""]
+- ["VSC6CGRect", "deinit"]
+- !private ["Ps7CVarArg", "Color"]
+- !private ["Ps7CVarArg", "backgroundColor"]
+- !private ["Ps7CVarArg", "depthPreset"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "prepare"]
+- !private ["Ps7CVarArg", "pulseAnimation"]
+- !private ["Ps7CVarArg", "pulseColor"]
+- !private ["Ps7CVarArg", "shapePreset"]
+- !private ["Ps7CVarArg", "tintColor"]
+- ["Ps7CVarArg", ""]
+- !private ["C17HafsaInspectorApp5Color", "red"]
+- !private ["C17HafsaInspectorApp5Color", "white"]
+- !private ["P17HafsaInspectorApp12ColorPalette", "base"]
+- !private ["Ps28CustomDebugStringConvertible", "Color"]
+- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
+- !private ["Ps28CustomDebugStringConvertible", "depthPreset"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "prepare"]
+- !private ["Ps28CustomDebugStringConvertible", "pulseAnimation"]
+- !private ["Ps28CustomDebugStringConvertible", "pulseColor"]
+- !private ["Ps28CustomDebugStringConvertible", "shapePreset"]
+- !private ["Ps28CustomDebugStringConvertible", "tintColor"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Color"]
+- !private ["Ps23CustomStringConvertible", "backgroundColor"]
+- !private ["Ps23CustomStringConvertible", "depthPreset"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "prepare"]
+- !private ["Ps23CustomStringConvertible", "pulseAnimation"]
+- !private ["Ps23CustomStringConvertible", "pulseColor"]
+- !private ["Ps23CustomStringConvertible", "shapePreset"]
+- !private ["Ps23CustomStringConvertible", "tintColor"]
+- ["Ps23CustomStringConvertible", ""]
+- ["O17HafsaInspectorApp11DepthPreset", "deinit"]
+- !private ["O17HafsaInspectorApp11DepthPreset", "depth1"]
+- !private ["Ps9Equatable", "Color"]
+- !private ["Ps9Equatable", "backgroundColor"]
+- !private ["Ps9Equatable", "centerWithBacking"]
+- !private ["Ps9Equatable", "circle"]
+- !private ["Ps9Equatable", "depth1"]
+- !private ["Ps9Equatable", "depthPreset"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "prepare"]
+- !private ["Ps9Equatable", "pulseAnimation"]
+- !private ["Ps9Equatable", "pulseColor"]
+- !private ["Ps9Equatable", "shapePreset"]
+- !private ["Ps9Equatable", "tintColor"]
+- ["Ps9Equatable", ""]
+- !private ["C17HafsaInspectorApp9FabButton", "Color"]
+- !private ["C17HafsaInspectorApp9FabButton", "backgroundColor"]
+- ["C17HafsaInspectorApp9FabButton", "deinit"]
+- !private ["C17HafsaInspectorApp9FabButton", "depthPreset"]
+- ["C17HafsaInspectorApp9FabButton", "init"]
+- ["C17HafsaInspectorApp9FabButton", "prepare"]
+- !private ["C17HafsaInspectorApp9FabButton", "pulseAnimation"]
+- !private ["C17HafsaInspectorApp9FabButton", "pulseColor"]
+- !private ["C17HafsaInspectorApp9FabButton", "shapePreset"]
+- !private ["C17HafsaInspectorApp9FabButton", "tintColor"]
+- !private ["Ps8Hashable", "Color"]
+- !private ["Ps8Hashable", "backgroundColor"]
+- !private ["Ps8Hashable", "centerWithBacking"]
+- !private ["Ps8Hashable", "circle"]
+- !private ["Ps8Hashable", "depth1"]
+- !private ["Ps8Hashable", "depthPreset"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "prepare"]
+- !private ["Ps8Hashable", "pulseAnimation"]
+- !private ["Ps8Hashable", "pulseColor"]
+- !private ["Ps8Hashable", "shapePreset"]
+- !private ["Ps8Hashable", "tintColor"]
+- ["Ps8Hashable", ""]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "Color"]
+- !private ["PSo8NSCoding", "backgroundColor"]
+- !private ["PSo8NSCoding", "depthPreset"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "prepare"]
+- !private ["PSo8NSCoding", "pulseAnimation"]
+- !private ["PSo8NSCoding", "pulseColor"]
+- !private ["PSo8NSCoding", "shapePreset"]
+- !private ["PSo8NSCoding", "tintColor"]
+- ["PSo8NSCoding", ""]
+- !private ["CSo8NSObject", "Color"]
+- !private ["CSo8NSObject", "backgroundColor"]
+- !private ["CSo8NSObject", "depthPreset"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "prepare"]
+- !private ["CSo8NSObject", "pulseAnimation"]
+- !private ["CSo8NSObject", "pulseColor"]
+- !private ["CSo8NSObject", "shapePreset"]
+- !private ["CSo8NSObject", "tintColor"]
+- !private ["PSo16NSObjectProtocol", "Color"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- !private ["PSo16NSObjectProtocol", "depthPreset"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "prepare"]
+- !private ["PSo16NSObjectProtocol", "pulseAnimation"]
+- !private ["PSo16NSObjectProtocol", "pulseColor"]
+- !private ["PSo16NSObjectProtocol", "shapePreset"]
+- !private ["PSo16NSObjectProtocol", "tintColor"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- !private ["O17HafsaInspectorApp14PulseAnimation", "centerWithBacking"]
+- ["O17HafsaInspectorApp14PulseAnimation", "deinit"]
+- !private ["Ps16RawRepresentable", "centerWithBacking"]
+- !private ["Ps16RawRepresentable", "circle"]
+- !private ["Ps16RawRepresentable", "depth1"]
+- !private ["O17HafsaInspectorApp11ShapePreset", "circle"]
+- ["O17HafsaInspectorApp11ShapePreset", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "Color"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- !private ["PSo29UIAccessibilityIdentification", "depthPreset"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "prepare"]
+- !private ["PSo29UIAccessibilityIdentification", "pulseAnimation"]
+- !private ["PSo29UIAccessibilityIdentification", "pulseColor"]
+- !private ["PSo29UIAccessibilityIdentification", "shapePreset"]
+- !private ["PSo29UIAccessibilityIdentification", "tintColor"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "Color"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
+- !private ["PSo12UIAppearance", "depthPreset"]
+- !private ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "prepare"]
+- !private ["PSo12UIAppearance", "pulseAnimation"]
+- !private ["PSo12UIAppearance", "pulseColor"]
+- !private ["PSo12UIAppearance", "shapePreset"]
+- !private ["PSo12UIAppearance", "tintColor"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "Color"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- !private ["PSo21UIAppearanceContainer", "depthPreset"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "prepare"]
+- !private ["PSo21UIAppearanceContainer", "pulseAnimation"]
+- !private ["PSo21UIAppearanceContainer", "pulseColor"]
+- !private ["PSo21UIAppearanceContainer", "shapePreset"]
+- !private ["PSo21UIAppearanceContainer", "tintColor"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "Color"]
+- !private ["CSo8UIButton", "backgroundColor"]
+- !private ["CSo8UIButton", "depthPreset"]
+- ["CSo8UIButton", "init"]
+- ["CSo8UIButton", "prepare"]
+- !private ["CSo8UIButton", "pulseAnimation"]
+- !private ["CSo8UIButton", "pulseColor"]
+- !private ["CSo8UIButton", "shapePreset"]
+- !private ["CSo8UIButton", "tintColor"]
+- ["CSo7UIColor", "deinit"]
+- !private ["CSo9UIControl", "Color"]
+- !private ["CSo9UIControl", "backgroundColor"]
+- !private ["CSo9UIControl", "depthPreset"]
+- ["CSo9UIControl", "init"]
+- ["CSo9UIControl", "prepare"]
+- !private ["CSo9UIControl", "pulseAnimation"]
+- !private ["CSo9UIControl", "pulseColor"]
+- !private ["CSo9UIControl", "shapePreset"]
+- !private ["CSo9UIControl", "tintColor"]
+- !private ["PSo17UICoordinateSpace", "Color"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- !private ["PSo17UICoordinateSpace", "depthPreset"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "prepare"]
+- !private ["PSo17UICoordinateSpace", "pulseAnimation"]
+- !private ["PSo17UICoordinateSpace", "pulseColor"]
+- !private ["PSo17UICoordinateSpace", "shapePreset"]
+- !private ["PSo17UICoordinateSpace", "tintColor"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "Color"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
+- !private ["PSo13UIDynamicItem", "depthPreset"]
+- !private ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "prepare"]
+- !private ["PSo13UIDynamicItem", "pulseAnimation"]
+- !private ["PSo13UIDynamicItem", "pulseColor"]
+- !private ["PSo13UIDynamicItem", "shapePreset"]
+- !private ["PSo13UIDynamicItem", "tintColor"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "Color"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
+- !private ["PSo18UIFocusEnvironment", "depthPreset"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "prepare"]
+- !private ["PSo18UIFocusEnvironment", "pulseAnimation"]
+- !private ["PSo18UIFocusEnvironment", "pulseColor"]
+- !private ["PSo18UIFocusEnvironment", "shapePreset"]
+- !private ["PSo18UIFocusEnvironment", "tintColor"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "Color"]
+- !private ["PSo11UIFocusItem", "backgroundColor"]
+- !private ["PSo11UIFocusItem", "depthPreset"]
+- !private ["PSo11UIFocusItem", "init"]
+- ["PSo11UIFocusItem", "prepare"]
+- !private ["PSo11UIFocusItem", "pulseAnimation"]
+- !private ["PSo11UIFocusItem", "pulseColor"]
+- !private ["PSo11UIFocusItem", "shapePreset"]
+- !private ["PSo11UIFocusItem", "tintColor"]
+- ["PSo11UIFocusItem", ""]
+- !private ["CSo11UIResponder", "Color"]
+- !private ["CSo11UIResponder", "backgroundColor"]
+- !private ["CSo11UIResponder", "depthPreset"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "prepare"]
+- !private ["CSo11UIResponder", "pulseAnimation"]
+- !private ["CSo11UIResponder", "pulseColor"]
+- !private ["CSo11UIResponder", "shapePreset"]
+- !private ["CSo11UIResponder", "tintColor"]
+- !private ["PSo30UIResponderStandardEditActions", "Color"]
+- !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
+- !private ["PSo30UIResponderStandardEditActions", "depthPreset"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "prepare"]
+- !private ["PSo30UIResponderStandardEditActions", "pulseAnimation"]
+- !private ["PSo30UIResponderStandardEditActions", "pulseColor"]
+- !private ["PSo30UIResponderStandardEditActions", "shapePreset"]
+- !private ["PSo30UIResponderStandardEditActions", "tintColor"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo18UITraitEnvironment", "Color"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- !private ["PSo18UITraitEnvironment", "depthPreset"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "prepare"]
+- !private ["PSo18UITraitEnvironment", "pulseAnimation"]
+- !private ["PSo18UITraitEnvironment", "pulseColor"]
+- !private ["PSo18UITraitEnvironment", "shapePreset"]
+- !private ["PSo18UITraitEnvironment", "tintColor"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "Color"]
+- !private ["CSo6UIView", "backgroundColor"]
+- !private ["CSo6UIView", "depthPreset"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "prepare"]
+- !private ["CSo6UIView", "pulseAnimation"]
+- !private ["CSo6UIView", "pulseColor"]
+- !private ["CSo6UIView", "shapePreset"]
+- !private ["CSo6UIView", "tintColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "Color"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "depthPreset"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "prepare"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "pulseAnimation"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "pulseColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "shapePreset"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "tintColor"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- !private ["Ps9_Hashable", "Color"]
+- !private ["Ps9_Hashable", "backgroundColor"]
+- !private ["Ps9_Hashable", "centerWithBacking"]
+- !private ["Ps9_Hashable", "circle"]
+- !private ["Ps9_Hashable", "depth1"]
+- !private ["Ps9_Hashable", "depthPreset"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "prepare"]
+- !private ["Ps9_Hashable", "pulseAnimation"]
+- !private ["Ps9_Hashable", "pulseColor"]
+- !private ["Ps9_Hashable", "shapePreset"]
+- !private ["Ps9_Hashable", "tintColor"]
+- ["Ps9_Hashable", ""]
+- !private ["CC17HafsaInspectorApp5Color3red", "base"]
+depends-nominal:
+- "Ps9AnyObject"
+- "C17HafsaInspectorApp6Button"
+- "PSo15CALayerDelegate"
+- "VSC6CGRect"
+- "Ps7CVarArg"
+- !private "C17HafsaInspectorApp5Color"
+- !private "P17HafsaInspectorApp12ColorPalette"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "O17HafsaInspectorApp11DepthPreset"
+- "Ps9Equatable"
+- "C17HafsaInspectorApp9FabButton"
+- "Ps8Hashable"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- "O17HafsaInspectorApp14PulseAnimation"
+- !private "Ps16RawRepresentable"
+- "O17HafsaInspectorApp11ShapePreset"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo8UIButton"
+- "CSo7UIColor"
+- "CSo9UIControl"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps9_Hashable"
+- !private "CC17HafsaInspectorApp5Color3red"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HafsaInspectorApp-Bridging-Header.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/IPDFView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+interface-hash: "48e89eee508ab70bdc1f7daa7d15b927"

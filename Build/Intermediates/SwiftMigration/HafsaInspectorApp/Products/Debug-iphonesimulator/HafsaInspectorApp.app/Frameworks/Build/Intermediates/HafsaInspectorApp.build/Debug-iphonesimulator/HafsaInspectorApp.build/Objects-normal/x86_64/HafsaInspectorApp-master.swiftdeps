@@ -1,0 +1,16 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "6b1e3d7650f0cc778601253e493d2ac7"
+build_time: [526526715, 584950000]
+inputs:
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/ChapterPickerViewController.swift": [526510967, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/FormTableViewController.swift": [526523513, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/AddImageCollectionViewCell.swift": [526522790, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/EstablishmentPickerViewController.swift": [526510967, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HIManager.swift": [526510967, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift": [526510967, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/WebService.swift": [526510967, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/Extensions/DeviceExtensions.swift": [526526678, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HITextField.swift": [526510967, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/NameTableViewCell.swift": [526510967, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/ImageTableViewCell.swift": [526523683, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/SupplierTableViewCell.swift": [526511101, 0]

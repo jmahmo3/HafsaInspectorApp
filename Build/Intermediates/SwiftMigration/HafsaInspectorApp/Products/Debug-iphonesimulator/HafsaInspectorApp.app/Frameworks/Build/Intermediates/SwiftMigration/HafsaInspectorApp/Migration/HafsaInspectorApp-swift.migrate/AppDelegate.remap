@@ -1,0 +1,172 @@
+[
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 388,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 463,
+  "remove": 8,
+  "text": "UIApplicationLaunchOptionsKey",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 475,
+  "remove": 7,
+  "text": "y",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 620,
+  "remove": 3,
+  "text": " ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 643,
+  "remove": 15,
+  "text": "d",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 663,
+  "remove": 1,
+  "text": "(f",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 669,
+  "remove": 1,
+  "text": ": ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 938,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 1012,
+  "remove": 8,
+  "text": "UIApplicationLaunchOptionsKey",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 1024,
+  "remove": 7,
+  "text": "y",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 1188,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 1706,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 2144,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 2375,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 2641,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 3030,
+  "remove": 8,
+  "text": "k",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 3129,
+  "remove": 1,
+  "text": "(a",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 3137,
+  "remove": 1,
+  "text": ": ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 3240,
+  "remove": 1,
+  "text": "(a",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 3248,
+  "remove": 1,
+  "text": ": ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 3494,
+  "remove": 9,
+  "text": "(of: C",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 3529,
+  "text": ".self",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 3943,
+  "remove": 1,
+  "text": "a",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 4085,
+  "remove": 1,
+  "text": "d",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 4324,
+  "remove": 9,
+  "text": "(of: C",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 4359,
+  "text": ".self",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 4462,
+  "remove": 15,
+  "text": "t",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 4572,
+  "remove": 8,
+  "text": "(of: ",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 4613,
+  "text": ".self",
+ },
+ {
+  "file": "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/AppDelegate.swift",
+  "offset": 4651,
+  "remove": 15,
+  "text": "t",
+ }
+]

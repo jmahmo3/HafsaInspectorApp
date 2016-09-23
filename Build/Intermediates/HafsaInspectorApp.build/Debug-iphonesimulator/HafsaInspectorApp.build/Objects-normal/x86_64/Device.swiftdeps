@@ -1,0 +1,388 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Device"
+provides-nominal:
+- "V17HafsaInspectorApp6Device"
+provides-member:
+- ["V17HafsaInspectorApp6Device", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "CastingPrecedence"
+- "AssignmentPrecedence"
+- !private "utsname"
+- "UIStatusBarStyle"
+- !private "UInt8"
+- "UIUserInterfaceIdiom"
+- !private "UIApplication"
+- !private "~="
+- !private "UnicodeScalar"
+- !private "UIDevice"
+- !private "Int8"
+- !private "!"
+- "Bool"
+- "CGFloat"
+- "String"
+- "CGRect"
+- !private "Mirror"
+- !private "StringLiteralType"
+- "UIInterfaceOrientation"
+- "Device"
+- !private "uname"
+- !private "UIScreen"
+- !private "!="
+- !private "+"
+depends-member:
+- !private ["Vs13AnyCollection", "Iterator"]
+- ["Vs13AnyCollection", "deinit"]
+- !private ["Vs13AnyCollection", "reduce"]
+- !private ["Vs11AnyIterator", "Element"]
+- !private ["Ps9AnyObject", "bounds"]
+- !private ["Ps9AnyObject", "current"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isStatusBarHidden"]
+- !private ["Ps9AnyObject", "main"]
+- !private ["Ps9AnyObject", "scale"]
+- !private ["Ps9AnyObject", "shared"]
+- !private ["Ps9AnyObject", "statusBarOrientation"]
+- !private ["Ps9AnyObject", "statusBarStyle"]
+- !private ["Ps9AnyObject", "userInterfaceIdiom"]
+- !private ["Ps17BitwiseOperations", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- ["VSC6CGRect", "deinit"]
+- !private ["VSC6CGRect", "height"]
+- !private ["VSC6CGRect", "width"]
+- !private ["Ps7CVarArg", "bounds"]
+- !private ["Ps7CVarArg", "current"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isStatusBarHidden"]
+- !private ["Ps7CVarArg", "main"]
+- !private ["Ps7CVarArg", "scale"]
+- !private ["Ps7CVarArg", "shared"]
+- !private ["Ps7CVarArg", "statusBarOrientation"]
+- !private ["Ps7CVarArg", "statusBarStyle"]
+- !private ["Ps7CVarArg", "userInterfaceIdiom"]
+- !private ["Vs11ClosedRange", "deinit"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "reduce"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Vs20CountableClosedRange", "deinit"]
+- !private ["Vs14CountableRange", "deinit"]
+- !private ["Ps28CustomDebugStringConvertible", "bounds"]
+- !private ["Ps28CustomDebugStringConvertible", "current"]
+- !private ["Ps28CustomDebugStringConvertible", "height"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isStatusBarHidden"]
+- !private ["Ps28CustomDebugStringConvertible", "main"]
+- !private ["Ps28CustomDebugStringConvertible", "scale"]
+- !private ["Ps28CustomDebugStringConvertible", "shared"]
+- !private ["Ps28CustomDebugStringConvertible", "some"]
+- !private ["Ps28CustomDebugStringConvertible", "statusBarOrientation"]
+- !private ["Ps28CustomDebugStringConvertible", "statusBarStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "userInterfaceIdiom"]
+- !private ["Ps28CustomDebugStringConvertible", "width"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "height"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "width"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "children"]
+- !private ["Ps17CustomReflectable", "height"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "some"]
+- !private ["Ps17CustomReflectable", "width"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "bounds"]
+- !private ["Ps23CustomStringConvertible", "children"]
+- !private ["Ps23CustomStringConvertible", "current"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isStatusBarHidden"]
+- !private ["Ps23CustomStringConvertible", "main"]
+- !private ["Ps23CustomStringConvertible", "scale"]
+- !private ["Ps23CustomStringConvertible", "shared"]
+- !private ["Ps23CustomStringConvertible", "statusBarOrientation"]
+- !private ["Ps23CustomStringConvertible", "statusBarStyle"]
+- !private ["Ps23CustomStringConvertible", "userInterfaceIdiom"]
+- ["V17HafsaInspectorApp6Device", "Bool"]
+- ["V17HafsaInspectorApp6Device", "CGFloat"]
+- ["V17HafsaInspectorApp6Device", "CGRect"]
+- !private ["V17HafsaInspectorApp6Device", "Int8"]
+- !private ["V17HafsaInspectorApp6Device", "Mirror"]
+- ["V17HafsaInspectorApp6Device", "String"]
+- !private ["V17HafsaInspectorApp6Device", "UIApplication"]
+- !private ["V17HafsaInspectorApp6Device", "UIDevice"]
+- ["V17HafsaInspectorApp6Device", "UIInterfaceOrientation"]
+- !private ["V17HafsaInspectorApp6Device", "UIScreen"]
+- ["V17HafsaInspectorApp6Device", "UIStatusBarStyle"]
+- ["V17HafsaInspectorApp6Device", "UIUserInterfaceIdiom"]
+- !private ["V17HafsaInspectorApp6Device", "UInt8"]
+- !private ["V17HafsaInspectorApp6Device", "UnicodeScalar"]
+- ["V17HafsaInspectorApp6Device", "bounds"]
+- ["V17HafsaInspectorApp6Device", "height"]
+- ["V17HafsaInspectorApp6Device", "init"]
+- ["V17HafsaInspectorApp6Device", "isLandscape"]
+- ["V17HafsaInspectorApp6Device", "isPortrait"]
+- ["V17HafsaInspectorApp6Device", "isStatusBarHidden"]
+- ["V17HafsaInspectorApp6Device", "model"]
+- ["V17HafsaInspectorApp6Device", "orientation"]
+- ["V17HafsaInspectorApp6Device", "scale"]
+- ["V17HafsaInspectorApp6Device", "statusBarStyle"]
+- !private ["V17HafsaInspectorApp6Device", "uname"]
+- ["V17HafsaInspectorApp6Device", "userInterfaceIdiom"]
+- !private ["V17HafsaInspectorApp6Device", "utsname"]
+- ["V17HafsaInspectorApp6Device", "width"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "bounds"]
+- !private ["Ps9Equatable", "current"]
+- !private ["Ps9Equatable", "height"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isLandscape"]
+- !private ["Ps9Equatable", "isStatusBarHidden"]
+- !private ["Ps9Equatable", "main"]
+- !private ["Ps9Equatable", "scale"]
+- !private ["Ps9Equatable", "shared"]
+- !private ["Ps9Equatable", "statusBarOrientation"]
+- !private ["Ps9Equatable", "statusBarStyle"]
+- !private ["Ps9Equatable", "userInterfaceIdiom"]
+- !private ["Ps9Equatable", "width"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps23ExpressibleByNilLiteral", "some"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "bounds"]
+- !private ["Ps8Hashable", "current"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isLandscape"]
+- !private ["Ps8Hashable", "isStatusBarHidden"]
+- !private ["Ps8Hashable", "main"]
+- !private ["Ps8Hashable", "scale"]
+- !private ["Ps8Hashable", "shared"]
+- !private ["Ps8Hashable", "statusBarOrientation"]
+- !private ["Ps8Hashable", "statusBarStyle"]
+- !private ["Ps8Hashable", "userInterfaceIdiom"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "reduce"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "reduce"]
+- ["Vs5Int32", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps7Integer", "init"]
+- !private ["Ps17IntegerArithmetic", "init"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Vs6Mirror", "children"]
+- ["Vs6Mirror", "deinit"]
+- !private ["Vs6Mirror", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "bounds"]
+- !private ["CSo8NSObject", "current"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isStatusBarHidden"]
+- !private ["CSo8NSObject", "main"]
+- !private ["CSo8NSObject", "scale"]
+- !private ["CSo8NSObject", "shared"]
+- !private ["CSo8NSObject", "statusBarOrientation"]
+- !private ["CSo8NSObject", "statusBarStyle"]
+- !private ["CSo8NSObject", "userInterfaceIdiom"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- !private ["PSo16NSObjectProtocol", "current"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isStatusBarHidden"]
+- !private ["PSo16NSObjectProtocol", "main"]
+- !private ["PSo16NSObjectProtocol", "scale"]
+- !private ["PSo16NSObjectProtocol", "shared"]
+- !private ["PSo16NSObjectProtocol", "statusBarOrientation"]
+- !private ["PSo16NSObjectProtocol", "statusBarStyle"]
+- !private ["PSo16NSObjectProtocol", "userInterfaceIdiom"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["Sq", "deinit"]
+- !private ["Sq", "some"]
+- !private ["Vs5Range", "deinit"]
+- !private ["Ps16RawRepresentable", "isLandscape"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "reduce"]
+- !private ["Ps10Strideable", "init"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- ["CSo13UIApplication", "deinit"]
+- !private ["CSo13UIApplication", "isStatusBarHidden"]
+- !private ["CSo13UIApplication", "shared"]
+- !private ["CSo13UIApplication", "statusBarOrientation"]
+- !private ["CSo13UIApplication", "statusBarStyle"]
+- !private ["CSo8UIDevice", "current"]
+- ["CSo8UIDevice", "deinit"]
+- !private ["CSo8UIDevice", "userInterfaceIdiom"]
+- !private ["OSC22UIInterfaceOrientation", "isLandscape"]
+- !private ["CSo11UIResponder", "isStatusBarHidden"]
+- !private ["CSo11UIResponder", "shared"]
+- !private ["CSo11UIResponder", "statusBarOrientation"]
+- !private ["CSo11UIResponder", "statusBarStyle"]
+- !private ["PSo30UIResponderStandardEditActions", "isStatusBarHidden"]
+- !private ["PSo30UIResponderStandardEditActions", "shared"]
+- !private ["PSo30UIResponderStandardEditActions", "statusBarOrientation"]
+- !private ["PSo30UIResponderStandardEditActions", "statusBarStyle"]
+- !private ["CSo8UIScreen", "bounds"]
+- ["CSo8UIScreen", "deinit"]
+- !private ["CSo8UIScreen", "main"]
+- !private ["CSo8UIScreen", "scale"]
+- ["OSC16UIStatusBarStyle", "deinit"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
+- !private ["PSo18UITraitEnvironment", "main"]
+- !private ["PSo18UITraitEnvironment", "scale"]
+- ["OSC20UIUserInterfaceIdiom", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Vs5UInt8", "init"]
+- !private ["Sc", "deinit"]
+- !private ["Sc", "init"]
+- !private ["Ps15UnsignedInteger", "init"]
+- !private ["Ps22_AnyCollectionProtocol", "Iterator"]
+- !private ["Ps22_AnyCollectionProtocol", "reduce"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "init"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "bounds"]
+- !private ["Ps9_Hashable", "current"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isLandscape"]
+- !private ["Ps9_Hashable", "isStatusBarHidden"]
+- !private ["Ps9_Hashable", "main"]
+- !private ["Ps9_Hashable", "scale"]
+- !private ["Ps9_Hashable", "shared"]
+- !private ["Ps9_Hashable", "statusBarOrientation"]
+- !private ["Ps9_Hashable", "statusBarStyle"]
+- !private ["Ps9_Hashable", "userInterfaceIdiom"]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps8_Integer", "init"]
+- !private ["Ps18_IntegerArithmetic", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps11_Strideable", "init"]
+- !private ["Ps14_StringElement", "init"]
+- ["VSC7utsname", "deinit"]
+- !private ["VSC7utsname", "init"]
+- !private ["VSC7utsname", "machine"]
+depends-nominal:
+- "Vs13AnyCollection"
+- !private "Vs11AnyIterator"
+- !private "Ps9AnyObject"
+- !private "Ps17BitwiseOperations"
+- "Sb"
+- "V12CoreGraphics7CGFloat"
+- "VSC6CGRect"
+- !private "Ps7CVarArg"
+- !private "Vs11ClosedRange"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- !private "Vs20CountableClosedRange"
+- !private "Vs14CountableRange"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- "V17HafsaInspectorApp6Device"
+- !private "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- "Vs5Int32"
+- !private "Vs4Int8"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps16IteratorProtocol"
+- !private "Ps25LosslessStringConvertible"
+- "Vs6Mirror"
+- !private "Ps10MirrorPath"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Sq"
+- !private "Vs5Range"
+- !private "Ps16RawRepresentable"
+- !private "Ps8Sequence"
+- !private "Ps10Strideable"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- "CSo13UIApplication"
+- "CSo8UIDevice"
+- !private "OSC22UIInterfaceOrientation"
+- !private "CSo11UIResponder"
+- !private "PSo30UIResponderStandardEditActions"
+- "CSo8UIScreen"
+- "OSC16UIStatusBarStyle"
+- !private "PSo18UITraitEnvironment"
+- "OSC20UIUserInterfaceIdiom"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps15UnsignedInteger"
+- !private "Ps22_AnyCollectionProtocol"
+- !private "Ps28_DisallowMixedSignArithmetic"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- !private "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps11_Strideable"
+- !private "Ps14_StringElement"
+- "VSC7utsname"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HafsaInspectorApp-Bridging-Header.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/IPDFView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+interface-hash: "1606fd3da2006537bcec3d98ec2db888"

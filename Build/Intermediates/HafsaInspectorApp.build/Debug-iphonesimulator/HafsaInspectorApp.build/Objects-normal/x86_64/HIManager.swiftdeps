@@ -1,0 +1,347 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "HIManager"
+provides-nominal:
+- "C17HafsaInspectorApp9HIManager"
+provides-member:
+- ["C17HafsaInspectorApp9HIManager", ""]
+provides-dynamic-lookup:
+- "sharedClient"
+- "chapterArray"
+- "currentEstablishment"
+- "currentChapter"
+- "supplierArray"
+- "data"
+- "userName"
+- "establishmentArray"
+depends-top-level:
+- "HIManager"
+- "StringLiteralType"
+- "Array"
+- "String"
+- "!="
+- "NSObject"
+- "NSMutableArray"
+- "UserDefaults"
+depends-member:
+- ["Ps9AnyObject", "Element"]
+- ["Ps9AnyObject", "HIManager"]
+- ["Ps9AnyObject", "UserDefaults"]
+- ["Ps9AnyObject", "chapterArray"]
+- ["Ps9AnyObject", "currentChapter"]
+- ["Ps9AnyObject", "currentEstablishment"]
+- ["Ps9AnyObject", "currentEstablishment.storage"]
+- ["Ps9AnyObject", "data"]
+- ["Ps9AnyObject", "establishmentArray"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "sharedClient"]
+- ["Ps9AnyObject", "sharedInstance"]
+- ["Ps9AnyObject", "standard"]
+- ["Ps9AnyObject", "string"]
+- ["Ps9AnyObject", "supplierArray"]
+- ["Ps9AnyObject", "userName"]
+- ["Ps9AnyObject", ""]
+- ["Sa", "Element"]
+- ["Sa", "deinit"]
+- ["Ps23BidirectionalCollection", "Element"]
+- ["Ps22BidirectionalIndexable", "Element"]
+- ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- ["Ps7CVarArg", "Element"]
+- ["Ps7CVarArg", "HIManager"]
+- ["Ps7CVarArg", "UserDefaults"]
+- ["Ps7CVarArg", "chapterArray"]
+- ["Ps7CVarArg", "currentChapter"]
+- ["Ps7CVarArg", "currentEstablishment"]
+- ["Ps7CVarArg", "currentEstablishment.storage"]
+- ["Ps7CVarArg", "data"]
+- ["Ps7CVarArg", "establishmentArray"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "sharedClient"]
+- ["Ps7CVarArg", "sharedInstance"]
+- ["Ps7CVarArg", "standard"]
+- ["Ps7CVarArg", "string"]
+- ["Ps7CVarArg", "supplierArray"]
+- ["Ps7CVarArg", "userName"]
+- ["Ps7CVarArg", ""]
+- ["Ps10Collection", "Element"]
+- ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "Element"]
+- ["Ps28CustomDebugStringConvertible", "HIManager"]
+- ["Ps28CustomDebugStringConvertible", "UserDefaults"]
+- ["Ps28CustomDebugStringConvertible", "chapterArray"]
+- ["Ps28CustomDebugStringConvertible", "currentChapter"]
+- ["Ps28CustomDebugStringConvertible", "currentEstablishment"]
+- ["Ps28CustomDebugStringConvertible", "currentEstablishment.storage"]
+- ["Ps28CustomDebugStringConvertible", "data"]
+- ["Ps28CustomDebugStringConvertible", "establishmentArray"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "sharedClient"]
+- ["Ps28CustomDebugStringConvertible", "sharedInstance"]
+- ["Ps28CustomDebugStringConvertible", "standard"]
+- ["Ps28CustomDebugStringConvertible", "string"]
+- ["Ps28CustomDebugStringConvertible", "supplierArray"]
+- ["Ps28CustomDebugStringConvertible", "userName"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- ["Ps17CustomReflectable", "Element"]
+- ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- ["Ps17CustomReflectable", "init"]
+- ["Ps23CustomStringConvertible", "Element"]
+- ["Ps23CustomStringConvertible", "HIManager"]
+- ["Ps23CustomStringConvertible", "UserDefaults"]
+- ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "chapterArray"]
+- ["Ps23CustomStringConvertible", "currentChapter"]
+- ["Ps23CustomStringConvertible", "currentEstablishment"]
+- ["Ps23CustomStringConvertible", "currentEstablishment.storage"]
+- ["Ps23CustomStringConvertible", "data"]
+- ["Ps23CustomStringConvertible", "establishmentArray"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "sharedClient"]
+- ["Ps23CustomStringConvertible", "sharedInstance"]
+- ["Ps23CustomStringConvertible", "standard"]
+- ["Ps23CustomStringConvertible", "string"]
+- ["Ps23CustomStringConvertible", "supplierArray"]
+- ["Ps23CustomStringConvertible", "userName"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "Element"]
+- ["Ps9Equatable", "HIManager"]
+- ["Ps9Equatable", "UserDefaults"]
+- ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "chapterArray"]
+- ["Ps9Equatable", "currentChapter"]
+- ["Ps9Equatable", "currentEstablishment"]
+- ["Ps9Equatable", "currentEstablishment.storage"]
+- ["Ps9Equatable", "data"]
+- ["Ps9Equatable", "establishmentArray"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "sharedClient"]
+- ["Ps9Equatable", "sharedInstance"]
+- ["Ps9Equatable", "standard"]
+- ["Ps9Equatable", "string"]
+- ["Ps9Equatable", "supplierArray"]
+- ["Ps9Equatable", "userName"]
+- ["Ps9Equatable", ""]
+- ["Ps25ExpressibleByArrayLiteral", "Element"]
+- ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["C17HafsaInspectorApp9HIManager", "HIManager"]
+- ["C17HafsaInspectorApp9HIManager", "NSMutableArray"]
+- ["C17HafsaInspectorApp9HIManager", "String"]
+- ["C17HafsaInspectorApp9HIManager", "UserDefaults"]
+- ["C17HafsaInspectorApp9HIManager", "chapterArray"]
+- ["C17HafsaInspectorApp9HIManager", "currentChapter"]
+- ["C17HafsaInspectorApp9HIManager", "currentEstablishment"]
+- !private ["C17HafsaInspectorApp9HIManager", "currentEstablishment.storage"]
+- ["C17HafsaInspectorApp9HIManager", "data"]
+- ["C17HafsaInspectorApp9HIManager", "deinit"]
+- ["C17HafsaInspectorApp9HIManager", "establishmentArray"]
+- ["C17HafsaInspectorApp9HIManager", "init"]
+- ["C17HafsaInspectorApp9HIManager", "sharedClient"]
+- !private ["C17HafsaInspectorApp9HIManager", "sharedInstance"]
+- ["C17HafsaInspectorApp9HIManager", "supplierArray"]
+- ["C17HafsaInspectorApp9HIManager", "userName"]
+- ["Ps8Hashable", "Element"]
+- ["Ps8Hashable", "HIManager"]
+- ["Ps8Hashable", "UserDefaults"]
+- ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "chapterArray"]
+- ["Ps8Hashable", "currentChapter"]
+- ["Ps8Hashable", "currentEstablishment"]
+- ["Ps8Hashable", "currentEstablishment.storage"]
+- ["Ps8Hashable", "data"]
+- ["Ps8Hashable", "establishmentArray"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "sharedClient"]
+- ["Ps8Hashable", "sharedInstance"]
+- ["Ps8Hashable", "standard"]
+- ["Ps8Hashable", "string"]
+- ["Ps8Hashable", "supplierArray"]
+- ["Ps8Hashable", "userName"]
+- ["Ps8Hashable", ""]
+- ["Ps9Indexable", "Element"]
+- ["Ps13IndexableBase", "Element"]
+- ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps25LosslessStringConvertible", "init"]
+- ["Ps10MirrorPath", "init"]
+- ["Ps17MutableCollection", "Element"]
+- ["Ps16MutableIndexable", "Element"]
+- ["CSo7NSArray", "Element"]
+- ["PSo8NSCoding", "Element"]
+- ["PSo8NSCoding", "init"]
+- ["PSo9NSCopying", "Element"]
+- ["PSo9NSCopying", "init"]
+- ["PSo17NSFastEnumeration", "Element"]
+- ["CSo14NSMutableArray", "Element"]
+- ["CSo14NSMutableArray", "deinit"]
+- ["PSo16NSMutableCopying", "Element"]
+- ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Element"]
+- ["CSo8NSObject", "HIManager"]
+- ["CSo8NSObject", "NSMutableArray"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UserDefaults"]
+- ["CSo8NSObject", "chapterArray"]
+- ["CSo8NSObject", "currentChapter"]
+- ["CSo8NSObject", "currentEstablishment"]
+- ["CSo8NSObject", "currentEstablishment.storage"]
+- ["CSo8NSObject", "data"]
+- ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "establishmentArray"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "sharedClient"]
+- ["CSo8NSObject", "sharedInstance"]
+- ["CSo8NSObject", "standard"]
+- ["CSo8NSObject", "string"]
+- ["CSo8NSObject", "supplierArray"]
+- ["CSo8NSObject", "userName"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "Element"]
+- ["PSo16NSObjectProtocol", "HIManager"]
+- ["PSo16NSObjectProtocol", "UserDefaults"]
+- ["PSo16NSObjectProtocol", "chapterArray"]
+- ["PSo16NSObjectProtocol", "currentChapter"]
+- ["PSo16NSObjectProtocol", "currentEstablishment"]
+- ["PSo16NSObjectProtocol", "currentEstablishment.storage"]
+- ["PSo16NSObjectProtocol", "data"]
+- ["PSo16NSObjectProtocol", "establishmentArray"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "sharedClient"]
+- ["PSo16NSObjectProtocol", "sharedInstance"]
+- ["PSo16NSObjectProtocol", "standard"]
+- ["PSo16NSObjectProtocol", "string"]
+- ["PSo16NSObjectProtocol", "supplierArray"]
+- ["PSo16NSObjectProtocol", "userName"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo14NSSecureCoding", "Element"]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- ["Sq", "deinit"]
+- ["Ps22RandomAccessCollection", "Element"]
+- ["Ps21RandomAccessIndexable", "Element"]
+- ["Ps26RangeReplaceableCollection", "Element"]
+- ["Ps25RangeReplaceableIndexable", "Element"]
+- ["Ps8Sequence", "Element"]
+- ["SS", "deinit"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- ["CSo12UserDefaults", "deinit"]
+- ["CSo12UserDefaults", "standard"]
+- ["CSo12UserDefaults", "string"]
+- ["Ps14_ArrayProtocol", "Element"]
+- ["Ps24_DestructorSafeContainer", "Element"]
+- ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- ["Ps9_Hashable", "Element"]
+- ["Ps9_Hashable", "HIManager"]
+- ["Ps9_Hashable", "UserDefaults"]
+- ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "chapterArray"]
+- ["Ps9_Hashable", "currentChapter"]
+- ["Ps9_Hashable", "currentEstablishment"]
+- ["Ps9_Hashable", "currentEstablishment.storage"]
+- ["Ps9_Hashable", "data"]
+- ["Ps9_Hashable", "establishmentArray"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "sharedClient"]
+- ["Ps9_Hashable", "sharedInstance"]
+- ["Ps9_Hashable", "standard"]
+- ["Ps9_Hashable", "string"]
+- ["Ps9_Hashable", "supplierArray"]
+- ["Ps9_Hashable", "userName"]
+- ["Ps9_Hashable", ""]
+- ["Ps21_ObjectiveCBridgeable", "Element"]
+- ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- ["Vs26_OptionalNilComparisonType", "deinit"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- "Ps23BidirectionalCollection"
+- "Ps22BidirectionalIndexable"
+- "Sb"
+- "Ps7CVarArg"
+- "Ps10Collection"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps25ExpressibleByArrayLiteral"
+- "Ps27ExpressibleByBooleanLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "C17HafsaInspectorApp9HIManager"
+- "Ps8Hashable"
+- "Ps9Indexable"
+- "Ps13IndexableBase"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "Ps17MutableCollection"
+- "Ps16MutableIndexable"
+- "CSo7NSArray"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo17NSFastEnumeration"
+- "CSo14NSMutableArray"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- "Sq"
+- "Ps22RandomAccessCollection"
+- "Ps21RandomAccessIndexable"
+- "Ps26RangeReplaceableCollection"
+- "Ps25RangeReplaceableIndexable"
+- "Ps8Sequence"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- "CSo12UserDefaults"
+- "Ps14_ArrayProtocol"
+- "Ps24_DestructorSafeContainer"
+- "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- "Ps21_ObjectiveCBridgeable"
+- "Vs26_OptionalNilComparisonType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HafsaInspectorApp-Bridging-Header.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/IPDFView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+interface-hash: "3b7ccc15f8ff71e4caa8bc9fd133c2ca"
