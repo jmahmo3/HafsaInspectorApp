@@ -6,32 +6,32 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp14RootController", ""]
 provides-dynamic-lookup:
-- "prepare"
-- "prepare"
 - "isUserInteractionEnabled"
-- "statusBarStyle"
-- "transition"
 - "layoutSubviews"
+- "statusBarStyle"
 - "prepareRootViewController"
-- "viewWillLayoutSubviews"
 - "rootViewController"
+- "prepare"
+- "prepare"
+- "viewWillLayoutSubviews"
+- "transition"
 depends-top-level:
 - "RootController"
+- "Bool"
+- "UIViewController"
+- "UIStatusBarStyle"
+- "UIView"
+- "Bundle"
 - "UIViewAnimationOptions"
-- "BooleanLiteralType"
-- !private "Color"
+- "Array"
+- "TimeInterval"
+- "AssignmentPrecedence"
 - "Void"
 - !private "Device"
-- "UIView"
-- "Array"
 - "String"
-- "TimeInterval"
-- "Bundle"
-- "UIViewController"
+- !private "Color"
+- "BooleanLiteralType"
 - "NSCoder"
-- "UIStatusBarStyle"
-- "AssignmentPrecedence"
-- "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "Color"]
 - !private ["Ps9AnyObject", "Device"]
@@ -588,7 +588,7 @@ depends-member:
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "Device"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "addChildViewController"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "didMove"]
-- !private ["P17HafsaInspectorApp23ViewControllerContainer", "init"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "init"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "isUserInteractionEnabled"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "layoutSubviews"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "prepare"]
@@ -693,13 +693,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderTextView.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
 interface-hash: "4f4e1e7e6a9c1c06727f45d2535fbdfd"

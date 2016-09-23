@@ -8,52 +8,46 @@ provides-nominal:
 provides-member:
 - ["P17HafsaInspectorApp21ChapterPickerDelegate", ""]
 - ["C17HafsaInspectorApp27ChapterPickerViewController", ""]
-- ["CSo16UIViewController", ""]
-- ["CSo16UIViewController", "hideKeyboardWhenTappedAround"]
-- ["CSo16UIViewController", "dismissKeyboard"]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "nextButtonPressed"
-- "chapterTextField"
-- "didGetChapterData"
-- "saveData"
-- "setupView"
-- "create"
 - "nextButton"
-- "hideKeyboardWhenTappedAround"
-- "dismissKeyboard"
+- "viewDidLoad"
+- "chapterTextField"
 - "backButtonPressed"
-- "imageView"
+- "didGetChapterData"
+- "setupView"
 - "nameTextField"
+- "create"
 - "textFieldShouldReturn"
+- "imageView"
+- "nextButtonPressed"
 - "picker"
 - "chapterData"
 - "textFieldDidBeginEditing"
+- "saveData"
 depends-top-level:
-- "AnyObject"
-- !private "UserDefaults"
-- "UIButton"
+- "Bool"
 - "String"
-- "UITextFieldDelegate"
+- "UIButton"
+- !private "UserDefaults"
+- "HITextField"
 - "UIPickerView"
+- "UITextFieldDelegate"
+- "UIImageView"
+- "UITextField"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- !private "UIFont"
+- !private "UIScreen"
+- !private "UIStoryboard"
+- "HIManager"
+- "UIViewController"
+- "ChapterPickerViewController"
+- !private "UIColor"
+- !private "StringLiteralType"
+- "AnyObject"
 - !private "BooleanLiteralType"
 - !private "Bundle"
-- "UIViewController"
-- !private "StringLiteralType"
-- !private "UIColor"
-- "HITextField"
-- !private "UIScreen"
-- "Bool"
-- "UIImageView"
-- "HIManager"
-- "UITextField"
-- !private "UIFont"
-- !private "UIStoryboard"
-- "ChapterPickerViewController"
-- !private "UITapGestureRecognizer"
 - "ChapterPickerDelegate"
-- "AssignmentPrecedence"
-- "CastingPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "Bundle"]
 - !private ["Ps9AnyObject", "HIBackground"]
@@ -65,10 +59,7 @@ depends-member:
 - ["Ps9AnyObject", "UIPickerView"]
 - !private ["Ps9AnyObject", "UIScreen"]
 - !private ["Ps9AnyObject", "UIStoryboard"]
-- !private ["Ps9AnyObject", "UITapGestureRecognizer"]
-- !private ["Ps9AnyObject", "UIViewController"]
 - !private ["Ps9AnyObject", "UserDefaults"]
-- !private ["Ps9AnyObject", "addGestureRecognizer"]
 - ["Ps9AnyObject", "backButtonPressed"]
 - !private ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "black"]
@@ -84,10 +75,9 @@ depends-member:
 - !private ["Ps9AnyObject", "currentChapter"]
 - ["Ps9AnyObject", "delegate"]
 - ["Ps9AnyObject", "didGetChapterData"]
-- ["Ps9AnyObject", "dismissKeyboard"]
 - !private ["Ps9AnyObject", "endEditing"]
 - !private ["Ps9AnyObject", "font"]
-- ["Ps9AnyObject", "hideKeyboardWhenTappedAround"]
+- !private ["Ps9AnyObject", "hideKeyboardWhenTappedAround"]
 - ["Ps9AnyObject", "imageView"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instantiateViewController"]
@@ -140,7 +130,6 @@ depends-member:
 - !private ["CSo7CALayer", "borderWidth"]
 - !private ["CSo7CALayer", "cornerRadius"]
 - ["CSo7CALayer", "deinit"]
-- !private ["PSo15CALayerDelegate", "addGestureRecognizer"]
 - !private ["PSo15CALayerDelegate", "backgroundColor"]
 - !private ["PSo15CALayerDelegate", "delegate"]
 - !private ["PSo15CALayerDelegate", "endEditing"]
@@ -169,10 +158,7 @@ depends-member:
 - ["Ps7CVarArg", "UIPickerView"]
 - !private ["Ps7CVarArg", "UIScreen"]
 - !private ["Ps7CVarArg", "UIStoryboard"]
-- !private ["Ps7CVarArg", "UITapGestureRecognizer"]
-- !private ["Ps7CVarArg", "UIViewController"]
 - !private ["Ps7CVarArg", "UserDefaults"]
-- !private ["Ps7CVarArg", "addGestureRecognizer"]
 - ["Ps7CVarArg", "backButtonPressed"]
 - !private ["Ps7CVarArg", "backgroundColor"]
 - !private ["Ps7CVarArg", "black"]
@@ -188,10 +174,9 @@ depends-member:
 - !private ["Ps7CVarArg", "currentChapter"]
 - ["Ps7CVarArg", "delegate"]
 - ["Ps7CVarArg", "didGetChapterData"]
-- ["Ps7CVarArg", "dismissKeyboard"]
 - !private ["Ps7CVarArg", "endEditing"]
 - !private ["Ps7CVarArg", "font"]
-- ["Ps7CVarArg", "hideKeyboardWhenTappedAround"]
+- !private ["Ps7CVarArg", "hideKeyboardWhenTappedAround"]
 - ["Ps7CVarArg", "imageView"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "instantiateViewController"]
@@ -293,10 +278,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "UIPickerView"]
 - !private ["Ps28CustomDebugStringConvertible", "UIScreen"]
 - !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
-- !private ["Ps28CustomDebugStringConvertible", "UITapGestureRecognizer"]
-- !private ["Ps28CustomDebugStringConvertible", "UIViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "UserDefaults"]
-- !private ["Ps28CustomDebugStringConvertible", "addGestureRecognizer"]
 - ["Ps28CustomDebugStringConvertible", "backButtonPressed"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "black"]
@@ -312,10 +294,9 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "currentChapter"]
 - ["Ps28CustomDebugStringConvertible", "delegate"]
 - ["Ps28CustomDebugStringConvertible", "didGetChapterData"]
-- ["Ps28CustomDebugStringConvertible", "dismissKeyboard"]
 - !private ["Ps28CustomDebugStringConvertible", "endEditing"]
 - !private ["Ps28CustomDebugStringConvertible", "font"]
-- ["Ps28CustomDebugStringConvertible", "hideKeyboardWhenTappedAround"]
+- !private ["Ps28CustomDebugStringConvertible", "hideKeyboardWhenTappedAround"]
 - ["Ps28CustomDebugStringConvertible", "imageView"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
@@ -372,11 +353,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", "UIPickerView"]
 - !private ["Ps23CustomStringConvertible", "UIScreen"]
 - !private ["Ps23CustomStringConvertible", "UIStoryboard"]
-- !private ["Ps23CustomStringConvertible", "UITapGestureRecognizer"]
-- !private ["Ps23CustomStringConvertible", "UIViewController"]
 - !private ["Ps23CustomStringConvertible", "UserDefaults"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps23CustomStringConvertible", "addGestureRecognizer"]
 - ["Ps23CustomStringConvertible", "backButtonPressed"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "black"]
@@ -392,10 +370,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "currentChapter"]
 - ["Ps23CustomStringConvertible", "delegate"]
 - ["Ps23CustomStringConvertible", "didGetChapterData"]
-- ["Ps23CustomStringConvertible", "dismissKeyboard"]
 - !private ["Ps23CustomStringConvertible", "endEditing"]
 - !private ["Ps23CustomStringConvertible", "font"]
-- ["Ps23CustomStringConvertible", "hideKeyboardWhenTappedAround"]
+- !private ["Ps23CustomStringConvertible", "hideKeyboardWhenTappedAround"]
 - ["Ps23CustomStringConvertible", "imageView"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instantiateViewController"]
@@ -447,11 +424,8 @@ depends-member:
 - ["Ps9Equatable", "UIPickerView"]
 - !private ["Ps9Equatable", "UIScreen"]
 - !private ["Ps9Equatable", "UIStoryboard"]
-- !private ["Ps9Equatable", "UITapGestureRecognizer"]
-- !private ["Ps9Equatable", "UIViewController"]
 - !private ["Ps9Equatable", "UserDefaults"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
-- !private ["Ps9Equatable", "addGestureRecognizer"]
 - ["Ps9Equatable", "backButtonPressed"]
 - !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "black"]
@@ -467,10 +441,9 @@ depends-member:
 - !private ["Ps9Equatable", "currentChapter"]
 - ["Ps9Equatable", "delegate"]
 - ["Ps9Equatable", "didGetChapterData"]
-- ["Ps9Equatable", "dismissKeyboard"]
 - !private ["Ps9Equatable", "endEditing"]
 - !private ["Ps9Equatable", "font"]
-- ["Ps9Equatable", "hideKeyboardWhenTappedAround"]
+- !private ["Ps9Equatable", "hideKeyboardWhenTappedAround"]
 - !private ["Ps9Equatable", "iPhone5"]
 - ["Ps9Equatable", "imageView"]
 - ["Ps9Equatable", "init"]
@@ -542,11 +515,8 @@ depends-member:
 - ["Ps8Hashable", "UIPickerView"]
 - !private ["Ps8Hashable", "UIScreen"]
 - !private ["Ps8Hashable", "UIStoryboard"]
-- !private ["Ps8Hashable", "UITapGestureRecognizer"]
-- !private ["Ps8Hashable", "UIViewController"]
 - !private ["Ps8Hashable", "UserDefaults"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
-- !private ["Ps8Hashable", "addGestureRecognizer"]
 - ["Ps8Hashable", "backButtonPressed"]
 - !private ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "black"]
@@ -562,10 +532,9 @@ depends-member:
 - !private ["Ps8Hashable", "currentChapter"]
 - ["Ps8Hashable", "delegate"]
 - ["Ps8Hashable", "didGetChapterData"]
-- ["Ps8Hashable", "dismissKeyboard"]
 - !private ["Ps8Hashable", "endEditing"]
 - !private ["Ps8Hashable", "font"]
-- ["Ps8Hashable", "hideKeyboardWhenTappedAround"]
+- !private ["Ps8Hashable", "hideKeyboardWhenTappedAround"]
 - !private ["Ps8Hashable", "iPhone5"]
 - ["Ps8Hashable", "imageView"]
 - ["Ps8Hashable", "init"]
@@ -629,10 +598,7 @@ depends-member:
 - ["PSo8NSCoding", "UIPickerView"]
 - !private ["PSo8NSCoding", "UIScreen"]
 - !private ["PSo8NSCoding", "UIStoryboard"]
-- !private ["PSo8NSCoding", "UITapGestureRecognizer"]
-- !private ["PSo8NSCoding", "UIViewController"]
 - !private ["PSo8NSCoding", "UserDefaults"]
-- !private ["PSo8NSCoding", "addGestureRecognizer"]
 - ["PSo8NSCoding", "backButtonPressed"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "black"]
@@ -646,7 +612,6 @@ depends-member:
 - !private ["PSo8NSCoding", "createAlert"]
 - ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "didGetChapterData"]
-- !private ["PSo8NSCoding", "dismissKeyboard"]
 - !private ["PSo8NSCoding", "endEditing"]
 - !private ["PSo8NSCoding", "font"]
 - !private ["PSo8NSCoding", "hideKeyboardWhenTappedAround"]
@@ -697,8 +662,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "UIPickerView"]
 - !private ["PSo26NSExtensionRequestHandling", "UIScreen"]
 - !private ["PSo26NSExtensionRequestHandling", "UIStoryboard"]
-- !private ["PSo26NSExtensionRequestHandling", "UITapGestureRecognizer"]
-- !private ["PSo26NSExtensionRequestHandling", "UIViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "UserDefaults"]
 - ["PSo26NSExtensionRequestHandling", "backButtonPressed"]
 - ["PSo26NSExtensionRequestHandling", "chapterData"]
@@ -707,7 +670,6 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "createAlert"]
 - ["PSo26NSExtensionRequestHandling", "delegate"]
 - ["PSo26NSExtensionRequestHandling", "didGetChapterData"]
-- !private ["PSo26NSExtensionRequestHandling", "dismissKeyboard"]
 - !private ["PSo26NSExtensionRequestHandling", "hideKeyboardWhenTappedAround"]
 - ["PSo26NSExtensionRequestHandling", "imageView"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
@@ -750,11 +712,8 @@ depends-member:
 - ["CSo8NSObject", "UIPickerView"]
 - !private ["CSo8NSObject", "UIScreen"]
 - !private ["CSo8NSObject", "UIStoryboard"]
-- !private ["CSo8NSObject", "UITapGestureRecognizer"]
 - ["CSo8NSObject", "UITextField"]
-- !private ["CSo8NSObject", "UIViewController"]
 - !private ["CSo8NSObject", "UserDefaults"]
-- !private ["CSo8NSObject", "addGestureRecognizer"]
 - ["CSo8NSObject", "backButtonPressed"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "black"]
@@ -770,10 +729,9 @@ depends-member:
 - !private ["CSo8NSObject", "currentChapter"]
 - ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "didGetChapterData"]
-- ["CSo8NSObject", "dismissKeyboard"]
 - !private ["CSo8NSObject", "endEditing"]
 - !private ["CSo8NSObject", "font"]
-- ["CSo8NSObject", "hideKeyboardWhenTappedAround"]
+- !private ["CSo8NSObject", "hideKeyboardWhenTappedAround"]
 - ["CSo8NSObject", "imageView"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiateViewController"]
@@ -823,10 +781,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "UIPickerView"]
 - !private ["PSo16NSObjectProtocol", "UIScreen"]
 - !private ["PSo16NSObjectProtocol", "UIStoryboard"]
-- !private ["PSo16NSObjectProtocol", "UITapGestureRecognizer"]
-- !private ["PSo16NSObjectProtocol", "UIViewController"]
 - !private ["PSo16NSObjectProtocol", "UserDefaults"]
-- !private ["PSo16NSObjectProtocol", "addGestureRecognizer"]
 - ["PSo16NSObjectProtocol", "backButtonPressed"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "black"]
@@ -842,10 +797,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "currentChapter"]
 - ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "didGetChapterData"]
-- ["PSo16NSObjectProtocol", "dismissKeyboard"]
 - !private ["PSo16NSObjectProtocol", "endEditing"]
 - !private ["PSo16NSObjectProtocol", "font"]
-- ["PSo16NSObjectProtocol", "hideKeyboardWhenTappedAround"]
+- !private ["PSo16NSObjectProtocol", "hideKeyboardWhenTappedAround"]
 - ["PSo16NSObjectProtocol", "imageView"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instantiateViewController"]
@@ -899,7 +853,6 @@ depends-member:
 - ["Ps21RandomAccessIndexable", "init"]
 - ["Ps26RangeReplaceableCollection", "init"]
 - ["Ps25RangeReplaceableIndexable", "init"]
-- ["V10ObjectiveC8Selector", "deinit"]
 - ["Ps8Sequence", "init"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
@@ -912,7 +865,6 @@ depends-member:
 - !private ["Ps16TextOutputStream", "isEmpty"]
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["Ps20TextOutputStreamable", "isEmpty"]
-- !private ["PSo29UIAccessibilityIdentification", "addGestureRecognizer"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "endEditing"]
@@ -926,7 +878,6 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "textColor"]
 - !private ["PSo29UIAccessibilityIdentification", "tintColor"]
 - !private ["PSo29UIAccessibilityIdentification", "titleLabel"]
-- !private ["PSo12UIAppearance", "addGestureRecognizer"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "endEditing"]
@@ -949,10 +900,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "UIPickerView"]
 - !private ["PSo21UIAppearanceContainer", "UIScreen"]
 - !private ["PSo21UIAppearanceContainer", "UIStoryboard"]
-- !private ["PSo21UIAppearanceContainer", "UITapGestureRecognizer"]
-- !private ["PSo21UIAppearanceContainer", "UIViewController"]
 - !private ["PSo21UIAppearanceContainer", "UserDefaults"]
-- !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
 - ["PSo21UIAppearanceContainer", "backButtonPressed"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - ["PSo21UIAppearanceContainer", "chapterData"]
@@ -961,7 +909,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "createAlert"]
 - ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "didGetChapterData"]
-- !private ["PSo21UIAppearanceContainer", "dismissKeyboard"]
 - !private ["PSo21UIAppearanceContainer", "endEditing"]
 - !private ["PSo21UIAppearanceContainer", "font"]
 - !private ["PSo21UIAppearanceContainer", "hideKeyboardWhenTappedAround"]
@@ -1014,8 +961,6 @@ depends-member:
 - ["PSo18UIContentContainer", "UIPickerView"]
 - !private ["PSo18UIContentContainer", "UIScreen"]
 - !private ["PSo18UIContentContainer", "UIStoryboard"]
-- !private ["PSo18UIContentContainer", "UITapGestureRecognizer"]
-- !private ["PSo18UIContentContainer", "UIViewController"]
 - !private ["PSo18UIContentContainer", "UserDefaults"]
 - ["PSo18UIContentContainer", "backButtonPressed"]
 - ["PSo18UIContentContainer", "chapterData"]
@@ -1024,7 +969,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "createAlert"]
 - ["PSo18UIContentContainer", "delegate"]
 - ["PSo18UIContentContainer", "didGetChapterData"]
-- !private ["PSo18UIContentContainer", "dismissKeyboard"]
 - !private ["PSo18UIContentContainer", "hideKeyboardWhenTappedAround"]
 - ["PSo18UIContentContainer", "imageView"]
 - !private ["PSo18UIContentContainer", "init"]
@@ -1063,7 +1007,6 @@ depends-member:
 - !private ["CSo9UIControl", "text"]
 - !private ["CSo9UIControl", "tintColor"]
 - !private ["CSo9UIControl", "titleLabel"]
-- !private ["PSo17UICoordinateSpace", "addGestureRecognizer"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "endEditing"]
@@ -1077,7 +1020,6 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "textColor"]
 - !private ["PSo17UICoordinateSpace", "tintColor"]
 - !private ["PSo17UICoordinateSpace", "titleLabel"]
-- !private ["PSo13UIDynamicItem", "addGestureRecognizer"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "endEditing"]
@@ -1100,10 +1042,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "UIPickerView"]
 - !private ["PSo18UIFocusEnvironment", "UIScreen"]
 - !private ["PSo18UIFocusEnvironment", "UIStoryboard"]
-- !private ["PSo18UIFocusEnvironment", "UITapGestureRecognizer"]
-- !private ["PSo18UIFocusEnvironment", "UIViewController"]
 - !private ["PSo18UIFocusEnvironment", "UserDefaults"]
-- !private ["PSo18UIFocusEnvironment", "addGestureRecognizer"]
 - ["PSo18UIFocusEnvironment", "backButtonPressed"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - ["PSo18UIFocusEnvironment", "chapterData"]
@@ -1112,7 +1051,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "createAlert"]
 - ["PSo18UIFocusEnvironment", "delegate"]
 - ["PSo18UIFocusEnvironment", "didGetChapterData"]
-- !private ["PSo18UIFocusEnvironment", "dismissKeyboard"]
 - !private ["PSo18UIFocusEnvironment", "endEditing"]
 - !private ["PSo18UIFocusEnvironment", "font"]
 - !private ["PSo18UIFocusEnvironment", "hideKeyboardWhenTappedAround"]
@@ -1146,7 +1084,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
-- !private ["PSo11UIFocusItem", "addGestureRecognizer"]
 - !private ["PSo11UIFocusItem", "backgroundColor"]
 - !private ["PSo11UIFocusItem", "delegate"]
 - !private ["PSo11UIFocusItem", "endEditing"]
@@ -1161,7 +1098,6 @@ depends-member:
 - !private ["PSo11UIFocusItem", "tintColor"]
 - !private ["PSo11UIFocusItem", "titleLabel"]
 - !private ["CSo6UIFont", "init"]
-- !private ["CSo19UIGestureRecognizer", "init"]
 - !private ["CSo11UIImageView", "isHidden"]
 - !private ["PSo10UIKeyInput", "delegate"]
 - !private ["PSo10UIKeyInput", "placeholder"]
@@ -1198,11 +1134,8 @@ depends-member:
 - ["CSo11UIResponder", "UIPickerView"]
 - !private ["CSo11UIResponder", "UIScreen"]
 - !private ["CSo11UIResponder", "UIStoryboard"]
-- !private ["CSo11UIResponder", "UITapGestureRecognizer"]
 - ["CSo11UIResponder", "UITextField"]
-- !private ["CSo11UIResponder", "UIViewController"]
 - !private ["CSo11UIResponder", "UserDefaults"]
-- !private ["CSo11UIResponder", "addGestureRecognizer"]
 - ["CSo11UIResponder", "backButtonPressed"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - ["CSo11UIResponder", "chapterData"]
@@ -1211,10 +1144,9 @@ depends-member:
 - !private ["CSo11UIResponder", "createAlert"]
 - ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "didGetChapterData"]
-- ["CSo11UIResponder", "dismissKeyboard"]
 - !private ["CSo11UIResponder", "endEditing"]
 - !private ["CSo11UIResponder", "font"]
-- ["CSo11UIResponder", "hideKeyboardWhenTappedAround"]
+- !private ["CSo11UIResponder", "hideKeyboardWhenTappedAround"]
 - ["CSo11UIResponder", "imageView"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "isHidden"]
@@ -1253,10 +1185,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "UIPickerView"]
 - !private ["PSo30UIResponderStandardEditActions", "UIScreen"]
 - !private ["PSo30UIResponderStandardEditActions", "UIStoryboard"]
-- !private ["PSo30UIResponderStandardEditActions", "UITapGestureRecognizer"]
-- !private ["PSo30UIResponderStandardEditActions", "UIViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "UserDefaults"]
-- !private ["PSo30UIResponderStandardEditActions", "addGestureRecognizer"]
 - ["PSo30UIResponderStandardEditActions", "backButtonPressed"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
 - ["PSo30UIResponderStandardEditActions", "chapterData"]
@@ -1265,10 +1194,9 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "createAlert"]
 - ["PSo30UIResponderStandardEditActions", "delegate"]
 - ["PSo30UIResponderStandardEditActions", "didGetChapterData"]
-- ["PSo30UIResponderStandardEditActions", "dismissKeyboard"]
 - !private ["PSo30UIResponderStandardEditActions", "endEditing"]
 - !private ["PSo30UIResponderStandardEditActions", "font"]
-- ["PSo30UIResponderStandardEditActions", "hideKeyboardWhenTappedAround"]
+- !private ["PSo30UIResponderStandardEditActions", "hideKeyboardWhenTappedAround"]
 - ["PSo30UIResponderStandardEditActions", "imageView"]
 - ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "isHidden"]
@@ -1309,8 +1237,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "UIPickerView"]
 - !private ["PSo16UIStateRestoring", "UIScreen"]
 - !private ["PSo16UIStateRestoring", "UIStoryboard"]
-- !private ["PSo16UIStateRestoring", "UITapGestureRecognizer"]
-- !private ["PSo16UIStateRestoring", "UIViewController"]
 - !private ["PSo16UIStateRestoring", "UserDefaults"]
 - ["PSo16UIStateRestoring", "backButtonPressed"]
 - ["PSo16UIStateRestoring", "chapterData"]
@@ -1319,7 +1245,6 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "createAlert"]
 - ["PSo16UIStateRestoring", "delegate"]
 - ["PSo16UIStateRestoring", "didGetChapterData"]
-- !private ["PSo16UIStateRestoring", "dismissKeyboard"]
 - !private ["PSo16UIStateRestoring", "hideKeyboardWhenTappedAround"]
 - ["PSo16UIStateRestoring", "imageView"]
 - !private ["PSo16UIStateRestoring", "init"]
@@ -1346,8 +1271,6 @@ depends-member:
 - ["CSo12UIStoryboard", "deinit"]
 - !private ["CSo12UIStoryboard", "init"]
 - !private ["CSo12UIStoryboard", "instantiateViewController"]
-- ["CSo22UITapGestureRecognizer", "deinit"]
-- !private ["CSo22UITapGestureRecognizer", "init"]
 - ["CSo11UITextField", "deinit"]
 - !private ["CSo11UITextField", "delegate"]
 - !private ["CSo11UITextField", "placeholder"]
@@ -1401,10 +1324,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "UIPickerView"]
 - !private ["PSo18UITraitEnvironment", "UIScreen"]
 - !private ["PSo18UITraitEnvironment", "UIStoryboard"]
-- !private ["PSo18UITraitEnvironment", "UITapGestureRecognizer"]
-- !private ["PSo18UITraitEnvironment", "UIViewController"]
 - !private ["PSo18UITraitEnvironment", "UserDefaults"]
-- !private ["PSo18UITraitEnvironment", "addGestureRecognizer"]
 - ["PSo18UITraitEnvironment", "backButtonPressed"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - ["PSo18UITraitEnvironment", "chapterData"]
@@ -1413,7 +1333,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "createAlert"]
 - ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "didGetChapterData"]
-- !private ["PSo18UITraitEnvironment", "dismissKeyboard"]
 - !private ["PSo18UITraitEnvironment", "endEditing"]
 - !private ["PSo18UITraitEnvironment", "font"]
 - !private ["PSo18UITraitEnvironment", "hideKeyboardWhenTappedAround"]
@@ -1448,7 +1367,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
-- !private ["CSo6UIView", "addGestureRecognizer"]
 - !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "endEditing"]
@@ -1478,9 +1396,7 @@ depends-member:
 - ["CSo16UIViewController", "UIPickerView"]
 - !private ["CSo16UIViewController", "UIScreen"]
 - !private ["CSo16UIViewController", "UIStoryboard"]
-- !private ["CSo16UIViewController", "UITapGestureRecognizer"]
 - ["CSo16UIViewController", "UITextField"]
-- !private ["CSo16UIViewController", "UIViewController"]
 - !private ["CSo16UIViewController", "UserDefaults"]
 - ["CSo16UIViewController", "backButtonPressed"]
 - ["CSo16UIViewController", "chapterData"]
@@ -1490,8 +1406,7 @@ depends-member:
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "delegate"]
 - ["CSo16UIViewController", "didGetChapterData"]
-- ["CSo16UIViewController", "dismissKeyboard"]
-- ["CSo16UIViewController", "hideKeyboardWhenTappedAround"]
+- !private ["CSo16UIViewController", "hideKeyboardWhenTappedAround"]
 - ["CSo16UIViewController", "imageView"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "isOnScreen"]
@@ -1529,8 +1444,6 @@ depends-member:
 - ["P17HafsaInspectorApp23ViewControllerContainer", "UIPickerView"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "UIScreen"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "UIStoryboard"]
-- !private ["P17HafsaInspectorApp23ViewControllerContainer", "UITapGestureRecognizer"]
-- !private ["P17HafsaInspectorApp23ViewControllerContainer", "UIViewController"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "UserDefaults"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "backButtonPressed"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "chapterData"]
@@ -1539,7 +1452,6 @@ depends-member:
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "createAlert"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "delegate"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "didGetChapterData"]
-- !private ["P17HafsaInspectorApp23ViewControllerContainer", "dismissKeyboard"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "hideKeyboardWhenTappedAround"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "imageView"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "init"]
@@ -1564,7 +1476,6 @@ depends-member:
 - ["P17HafsaInspectorApp23ViewControllerContainer", "viewDidLoad"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", ""]
 - ["Ps14_ArrayProtocol", "init"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addGestureRecognizer"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "delegate"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "endEditing"]
@@ -1604,11 +1515,8 @@ depends-member:
 - ["Ps9_Hashable", "UIPickerView"]
 - !private ["Ps9_Hashable", "UIScreen"]
 - !private ["Ps9_Hashable", "UIStoryboard"]
-- !private ["Ps9_Hashable", "UITapGestureRecognizer"]
-- !private ["Ps9_Hashable", "UIViewController"]
 - !private ["Ps9_Hashable", "UserDefaults"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
-- !private ["Ps9_Hashable", "addGestureRecognizer"]
 - ["Ps9_Hashable", "backButtonPressed"]
 - !private ["Ps9_Hashable", "backgroundColor"]
 - !private ["Ps9_Hashable", "black"]
@@ -1624,10 +1532,9 @@ depends-member:
 - !private ["Ps9_Hashable", "currentChapter"]
 - ["Ps9_Hashable", "delegate"]
 - ["Ps9_Hashable", "didGetChapterData"]
-- ["Ps9_Hashable", "dismissKeyboard"]
 - !private ["Ps9_Hashable", "endEditing"]
 - !private ["Ps9_Hashable", "font"]
-- ["Ps9_Hashable", "hideKeyboardWhenTappedAround"]
+- !private ["Ps9_Hashable", "hideKeyboardWhenTappedAround"]
 - !private ["Ps9_Hashable", "iPhone5"]
 - ["Ps9_Hashable", "imageView"]
 - ["Ps9_Hashable", "init"]
@@ -1729,7 +1636,6 @@ depends-nominal:
 - "Ps21RandomAccessIndexable"
 - "Ps26RangeReplaceableCollection"
 - "Ps25RangeReplaceableIndexable"
-- "V10ObjectiveC8Selector"
 - "Ps8Sequence"
 - "SS"
 - !private "C17HafsaInspectorApp9TextField"
@@ -1748,7 +1654,6 @@ depends-nominal:
 - "PSo18UIFocusEnvironment"
 - "PSo11UIFocusItem"
 - !private "CSo6UIFont"
-- !private "CSo19UIGestureRecognizer"
 - !private "CSo11UIImageView"
 - !private "PSo10UIKeyInput"
 - "CSo7UILabel"
@@ -1761,7 +1666,6 @@ depends-nominal:
 - !private "CSo8UIScreen"
 - "PSo16UIStateRestoring"
 - "CSo12UIStoryboard"
-- "CSo22UITapGestureRecognizer"
 - "CSo11UITextField"
 - "PSo19UITextFieldDelegate"
 - !private "PSo11UITextInput"
@@ -1797,13 +1701,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderTextView.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
-interface-hash: "66751b14c7e319cf723a6a78b957efe8"
+interface-hash: "3430bbc0b88d973a206a5c20b48677fc"

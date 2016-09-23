@@ -1889,6 +1889,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
 + (UIColor * _Nonnull)accent4;
 @end
 
+@class RPFloatingPlaceholderTextView;
+
+SWIFT_CLASS("_TtC17HafsaInspectorApp20CommentTableViewCell")
+@interface CommentTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet RPFloatingPlaceholderTextView * _Null_unspecified textView;
+- (void)configureCommentTableViewCell;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC17HafsaInspectorApp11ContentCard")
 @interface ContentCard : PulseView
@@ -2336,10 +2346,9 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp10FlatButton")
 @end
 
 @class UITableView;
-@class UITableViewCell;
 
 SWIFT_CLASS("_TtC17HafsaInspectorApp23FormTableViewController")
-@interface FormTableViewController : UITableViewController
+@interface FormTableViewController : UITableViewController <UITextViewDelegate>
 + (FormTableViewController * _Nonnull)create;
 - (void)viewDidLoad;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
@@ -3955,6 +3964,22 @@ SWIFT_CLASS_NAMED("PhotoLibrary")
 
 @interface PhotoLibrary (SWIFT_EXTENSION(HafsaInspectorApp))
 /**
+  A method to request authorization from the user to enable photo library access. In order
+  for this to work, set the “Privacy - Photo Library Usage Description” value in the
+  application’s info.plist.
+  <ul>
+    <li>
+      _ completion: A completion block that passes in a PHAuthorizationStatus
+      enum that describes the response for the authorization request.
+    </li>
+  </ul>
+*/
+- (void)requestAuthorization:(void (^ _Nullable)(PHAuthorizationStatus))completion;
+@end
+
+
+@interface PhotoLibrary (SWIFT_EXTENSION(HafsaInspectorApp))
+/**
   Performes an asynchronous change to the PHPhotoLibrary database.
   <ul>
     <li>
@@ -3967,22 +3992,6 @@ SWIFT_CLASS_NAMED("PhotoLibrary")
 
 */
 - (void)performChanges:(void (^ _Nonnull)(void))block completion:(void (^ _Nullable)(BOOL, NSError * _Nullable))completion;
-@end
-
-
-@interface PhotoLibrary (SWIFT_EXTENSION(HafsaInspectorApp))
-/**
-  A method to request authorization from the user to enable photo library access. In order
-  for this to work, set the “Privacy - Photo Library Usage Description” value in the
-  application’s info.plist.
-  <ul>
-    <li>
-      _ completion: A completion block that passes in a PHAuthorizationStatus
-      enum that describes the response for the authorization request.
-    </li>
-  </ul>
-*/
-- (void)requestAuthorization:(void (^ _Nullable)(PHAuthorizationStatus))completion;
 @end
 
 
@@ -4034,6 +4043,77 @@ SWIFT_CLASS_NAMED("PhotoLibrary")
 @end
 
 @class PHAssetCollection;
+@class PHAsset;
+
+@interface PhotoLibrary (SWIFT_EXTENSION(HafsaInspectorApp))
+/**
+  Fetch asset collections of a single type matching the provided
+  local identifiers (type is inferred from the local identifiers).
+  \param withLocalIdentifiers identifiers An Array of Strings.
+
+  \param options An optional PHFetchOptions object.
+
+  \param completion A completion block.
+
+*/
+- (NSArray<PHAssetCollection *> * _Nonnull)fetchAssetCollectionsWithLocalIdentifiers:(NSArray<NSString *> * _Nonnull)identifiers options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
+/**
+  Fetch asset collections of a single type and subtype provided
+  (use PHAssetCollectionSubtypeAny to match all subtypes).
+  \param with type A PHAssetCollectionType.
+
+  \param subtype A PHAssetCollectionSubtype.
+
+  \param options An optional PHFetchOptions object.
+
+  \param completion A completion block.
+
+*/
+- (NSArray<PHAssetCollection *> * _Nonnull)fetchAssetCollectionsWith:(PHAssetCollectionType)type subtype:(PHAssetCollectionSubtype)subtype options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
+/**
+  Smart Albums are not supported, only Albums and Moments.
+  \param asset A PHAsset.
+
+  \param with type A PHAssetCollectionType.
+
+  \param options An optional PHFetchOptions object.
+
+  \param completion A completion block.
+
+*/
+- (NSArray<PHAssetCollection *> * _Nonnull)fetchAssetCollectionsContaining:(PHAsset * _Nonnull)asset with:(PHAssetCollectionType)type options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
+/**
+  AssetGroupURLs are URLs retrieved from ALAssetGroup’s
+  ALAssetsGroupPropertyURL.
+  \param withALAssetGroupURLs assetGroupURLs An Array
+  of URLs.
+
+  \param options An optional PHFetchOptions object.
+
+  \param completion A completion block.
+
+*/
+- (NSArray<PHAssetCollection *> * _Nonnull)fetchAssetCollectionsWithALAssetGroupURLs:(NSArray<NSURL *> * _Nonnull)assetGroupURLs options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
+/**
+  Fetches moments in a given moment list.
+  \param inMomentList momentList A PHCollectionList.
+
+  \param options An optional PHFetchOptions object.
+
+  \param completion A completion block.
+
+*/
+- (NSArray<PHAssetCollection *> * _Nonnull)fetchMomentsInMomentList:(PHCollectionList * _Nonnull)momentList options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
+/**
+  Fetches moments.
+  \param with options An optional PHFetchOptions object.
+
+  \param completion A completion block.
+
+*/
+- (NSArray<PHAssetCollection *> * _Nonnull)fetchMomentsWith:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
+@end
+
 
 @interface PhotoLibrary (SWIFT_EXTENSION(HafsaInspectorApp))
 /**
@@ -4113,156 +4193,6 @@ SWIFT_CLASS_NAMED("PhotoLibrary")
 
 */
 - (NSArray<PHCollectionList *> * _Nonnull)fetchMomentListsWith:(PHCollectionListSubtype)momentListSubtype options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHCollectionList *> * _Nonnull, PHFetchResult<PHCollectionList *> * _Nonnull))completion;
-@end
-
-@class PHAsset;
-
-@interface PhotoLibrary (SWIFT_EXTENSION(HafsaInspectorApp))
-/**
-  Fetch asset collections of a single type matching the provided
-  local identifiers (type is inferred from the local identifiers).
-  \param withLocalIdentifiers identifiers An Array of Strings.
-
-  \param options An optional PHFetchOptions object.
-
-  \param completion A completion block.
-
-*/
-- (NSArray<PHAssetCollection *> * _Nonnull)fetchAssetCollectionsWithLocalIdentifiers:(NSArray<NSString *> * _Nonnull)identifiers options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
-/**
-  Fetch asset collections of a single type and subtype provided
-  (use PHAssetCollectionSubtypeAny to match all subtypes).
-  \param with type A PHAssetCollectionType.
-
-  \param subtype A PHAssetCollectionSubtype.
-
-  \param options An optional PHFetchOptions object.
-
-  \param completion A completion block.
-
-*/
-- (NSArray<PHAssetCollection *> * _Nonnull)fetchAssetCollectionsWith:(PHAssetCollectionType)type subtype:(PHAssetCollectionSubtype)subtype options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
-/**
-  Smart Albums are not supported, only Albums and Moments.
-  \param asset A PHAsset.
-
-  \param with type A PHAssetCollectionType.
-
-  \param options An optional PHFetchOptions object.
-
-  \param completion A completion block.
-
-*/
-- (NSArray<PHAssetCollection *> * _Nonnull)fetchAssetCollectionsContaining:(PHAsset * _Nonnull)asset with:(PHAssetCollectionType)type options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
-/**
-  AssetGroupURLs are URLs retrieved from ALAssetGroup’s
-  ALAssetsGroupPropertyURL.
-  \param withALAssetGroupURLs assetGroupURLs An Array
-  of URLs.
-
-  \param options An optional PHFetchOptions object.
-
-  \param completion A completion block.
-
-*/
-- (NSArray<PHAssetCollection *> * _Nonnull)fetchAssetCollectionsWithALAssetGroupURLs:(NSArray<NSURL *> * _Nonnull)assetGroupURLs options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
-/**
-  Fetches moments in a given moment list.
-  \param inMomentList momentList A PHCollectionList.
-
-  \param options An optional PHFetchOptions object.
-
-  \param completion A completion block.
-
-*/
-- (NSArray<PHAssetCollection *> * _Nonnull)fetchMomentsInMomentList:(PHCollectionList * _Nonnull)momentList options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
-/**
-  Fetches moments.
-  \param with options An optional PHFetchOptions object.
-
-  \param completion A completion block.
-
-*/
-- (NSArray<PHAssetCollection *> * _Nonnull)fetchMomentsWith:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
-@end
-
-
-@interface PhotoLibrary (SWIFT_EXTENSION(HafsaInspectorApp))
-/**
-  Fetch the PHAssets in a given PHAssetCollection.
-  \param in assetCollection A PHAssetCollection.
-
-  \param options An optional PHFetchOptions object.
-
-  \param completion A completion block.
-
-*/
-- (NSArray<PHAsset *> * _Nonnull)fetchAssetsIn:(PHAssetCollection * _Nonnull)assetCollection options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAsset *> * _Nonnull, PHFetchResult<PHAsset *> * _Nonnull))completion;
-/**
-  Fetch the PHAssets with a given Array of identifiers.
-  \param withLocalIdentifiers identifiers A Array of
-  String identifiers.
-
-  \param options An optional PHFetchOptions object.
-
-  \param completion A completion block.
-
-*/
-- (NSArray<PHAsset *> * _Nonnull)fetchAssetsWithLocalIdentifiers:(NSArray<NSString *> * _Nonnull)identifiers options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAsset *> * _Nonnull, PHFetchResult<PHAsset *> * _Nonnull))completion;
-/**
-  Fetch key assets.
-  \param in assetCollection A PHAssetCollection.
-
-  \param options An optional PHFetchOptions object.
-
-  \param completion A completion block.
-
-
-  returns:
-  An optional PHFetchResult<PHAsset> object.
-*/
-- (PHFetchResult<PHAsset *> * _Nullable)fetchKeyAssetsIn:(PHAssetCollection * _Nonnull)assetCollection options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAsset *> * _Nonnull, PHFetchResult<PHAsset *> * _Nonnull))completion;
-/**
-  Fetch a burst asset with a given burst identifier.
-  \param withBurstIdentifier burstIdentifier A
-  PHAssetCollection.
-
-  \param options An optional PHFetchOptions object.
-
-  \param completion A completion block.
-
-*/
-- (NSArray<PHAsset *> * _Nonnull)fetchAssetsWithBurstIdentifier:(NSString * _Nonnull)burstIdentifier options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAsset *> * _Nonnull, PHFetchResult<PHAsset *> * _Nonnull))completion;
-/**
-  Fetches PHAssetSourceTypeUserLibrary assets by default (use
-  includeAssetSourceTypes option to override).
-  \param with options An optional PHFetchOptions object.
-
-  \param completion A completion block.
-
-*/
-- (NSArray<PHAsset *> * _Nonnull)fetchAssetsWith:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAsset *> * _Nonnull, PHFetchResult<PHAsset *> * _Nonnull))completion;
-/**
-  Fetch the PHAssets with a given media type.
-  \param in mediaType A PHAssetMediaType.
-
-  \param options An optional PHFetchOptions object.
-
-  \param completion A completion block.
-
-*/
-- (NSArray<PHAsset *> * _Nonnull)fetchAssetsWith:(PHAssetMediaType)mediaType options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAsset *> * _Nonnull, PHFetchResult<PHAsset *> * _Nonnull))completion;
-/**
-  AssetURLs are URLs retrieved from ALAsset’s
-  ALAssetPropertyAssetURL.
-  \param withALAssetURLs assetURLs An Array of URLs.
-
-  \param options An optional PHFetchOptions object.
-
-  \param completion A completion block.
-
-*/
-- (NSArray<PHAsset *> * _Nonnull)fetchAssetsWithALAssetURLs:(NSArray<NSURL *> * _Nonnull)assetURLs options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAsset *> * _Nonnull, PHFetchResult<PHAsset *> * _Nonnull))completion;
 @end
 
 @class PHImageRequestOptions;
@@ -4374,6 +4304,85 @@ SWIFT_CLASS_NAMED("PhotoLibrary")
   A PHImageRequestID.
 */
 - (PHImageRequestID)requestAVAssetForVideo:(PHAsset * _Nonnull)asset options:(PHVideoRequestOptions * _Nullable)options completion:(void (^ _Nonnull)(AVAsset * _Nullable, AVAudioMix * _Nullable, NSDictionary * _Nullable))completion;
+@end
+
+
+@interface PhotoLibrary (SWIFT_EXTENSION(HafsaInspectorApp))
+/**
+  Fetch the PHAssets in a given PHAssetCollection.
+  \param in assetCollection A PHAssetCollection.
+
+  \param options An optional PHFetchOptions object.
+
+  \param completion A completion block.
+
+*/
+- (NSArray<PHAsset *> * _Nonnull)fetchAssetsIn:(PHAssetCollection * _Nonnull)assetCollection options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAsset *> * _Nonnull, PHFetchResult<PHAsset *> * _Nonnull))completion;
+/**
+  Fetch the PHAssets with a given Array of identifiers.
+  \param withLocalIdentifiers identifiers A Array of
+  String identifiers.
+
+  \param options An optional PHFetchOptions object.
+
+  \param completion A completion block.
+
+*/
+- (NSArray<PHAsset *> * _Nonnull)fetchAssetsWithLocalIdentifiers:(NSArray<NSString *> * _Nonnull)identifiers options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAsset *> * _Nonnull, PHFetchResult<PHAsset *> * _Nonnull))completion;
+/**
+  Fetch key assets.
+  \param in assetCollection A PHAssetCollection.
+
+  \param options An optional PHFetchOptions object.
+
+  \param completion A completion block.
+
+
+  returns:
+  An optional PHFetchResult<PHAsset> object.
+*/
+- (PHFetchResult<PHAsset *> * _Nullable)fetchKeyAssetsIn:(PHAssetCollection * _Nonnull)assetCollection options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAsset *> * _Nonnull, PHFetchResult<PHAsset *> * _Nonnull))completion;
+/**
+  Fetch a burst asset with a given burst identifier.
+  \param withBurstIdentifier burstIdentifier A
+  PHAssetCollection.
+
+  \param options An optional PHFetchOptions object.
+
+  \param completion A completion block.
+
+*/
+- (NSArray<PHAsset *> * _Nonnull)fetchAssetsWithBurstIdentifier:(NSString * _Nonnull)burstIdentifier options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAsset *> * _Nonnull, PHFetchResult<PHAsset *> * _Nonnull))completion;
+/**
+  Fetches PHAssetSourceTypeUserLibrary assets by default (use
+  includeAssetSourceTypes option to override).
+  \param with options An optional PHFetchOptions object.
+
+  \param completion A completion block.
+
+*/
+- (NSArray<PHAsset *> * _Nonnull)fetchAssetsWith:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAsset *> * _Nonnull, PHFetchResult<PHAsset *> * _Nonnull))completion;
+/**
+  Fetch the PHAssets with a given media type.
+  \param in mediaType A PHAssetMediaType.
+
+  \param options An optional PHFetchOptions object.
+
+  \param completion A completion block.
+
+*/
+- (NSArray<PHAsset *> * _Nonnull)fetchAssetsWith:(PHAssetMediaType)mediaType options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAsset *> * _Nonnull, PHFetchResult<PHAsset *> * _Nonnull))completion;
+/**
+  AssetURLs are URLs retrieved from ALAsset’s
+  ALAssetPropertyAssetURL.
+  \param withALAssetURLs assetURLs An Array of URLs.
+
+  \param options An optional PHFetchOptions object.
+
+  \param completion A completion block.
+
+*/
+- (NSArray<PHAsset *> * _Nonnull)fetchAssetsWithALAssetURLs:(NSArray<NSURL *> * _Nonnull)assetURLs options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAsset *> * _Nonnull, PHFetchResult<PHAsset *> * _Nonnull))completion;
 @end
 
 
@@ -5704,14 +5713,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
 
 @interface UIImage (SWIFT_EXTENSION(HafsaInspectorApp))
 /**
-  Adjusts the orientation of the image from the capture orientation.
-  This is an issue when taking images, the capture orientation is not set correctly
-  when using Portrait.
+  Asynchronously load images with a completion block.
+  \param URL A URL destination to fetch the image from.
 
-  returns:
-  An optional UIImage if successful.
+  \param completion A completion block that is executed once the image
+  has been retrieved.
+
 */
-- (UIImage * _Nullable)adjustOrientation;
++ (void)contentsOfURLWithUrl:(NSURL * _Nonnull)url completion:(void (^ _Nonnull)(UIImage * _Nullable, NSError * _Nullable))completion;
 @end
 
 
@@ -5771,14 +5780,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
 
 @interface UIImage (SWIFT_EXTENSION(HafsaInspectorApp))
 /**
-  Asynchronously load images with a completion block.
-  \param URL A URL destination to fetch the image from.
+  Adjusts the orientation of the image from the capture orientation.
+  This is an issue when taking images, the capture orientation is not set correctly
+  when using Portrait.
 
-  \param completion A completion block that is executed once the image
-  has been retrieved.
-
+  returns:
+  An optional UIImage if successful.
 */
-+ (void)contentsOfURLWithUrl:(NSURL * _Nonnull)url completion:(void (^ _Nonnull)(UIImage * _Nullable, NSError * _Nullable))completion;
+- (UIImage * _Nullable)adjustOrientation;
 @end
 
 
@@ -6012,32 +6021,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
 
 
 @interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
-- (void)hideKeyboardWhenTappedAround;
-- (void)dismissKeyboard;
-@end
-
-
-@interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
-/**
-  A convenience property that provides access to the NavigationDrawerController.
-  This is the recommended method of accessing the NavigationDrawerController
-  through child UIViewControllers.
-*/
-@property (nonatomic, readonly, strong) NavigationDrawerController * _Nullable navigationDrawerController;
-@end
-
-
-@interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
-/**
-  A convenience property that provides access to the StatusBarController.
-  This is the recommended method of accessing the StatusBarController
-  through child UIViewControllers.
-*/
-@property (nonatomic, readonly, strong) StatusBarController * _Nullable statusBarController;
-@end
-
-
-@interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
 /**
   A convenience property that provides access to the PageTabBarController.
   This is the recommended method of accessing the PageTabBarController
@@ -6069,11 +6052,31 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
 
 @interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
 /**
+  A convenience property that provides access to the StatusBarController.
+  This is the recommended method of accessing the StatusBarController
+  through child UIViewControllers.
+*/
+@property (nonatomic, readonly, strong) StatusBarController * _Nullable statusBarController;
+@end
+
+
+@interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
+/**
   A convenience property that provides access to the ToolbarController.
   This is the recommended method of accessing the ToolbarController
   through child UIViewControllers.
 */
 @property (nonatomic, readonly, strong) ToolbarController * _Nullable toolbarController;
+@end
+
+
+@interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
+/**
+  A convenience property that provides access to the NavigationDrawerController.
+  This is the recommended method of accessing the NavigationDrawerController
+  through child UIViewControllers.
+*/
+@property (nonatomic, readonly, strong) NavigationDrawerController * _Nullable navigationDrawerController;
 @end
 
 
@@ -6101,6 +6104,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
 
 
 @interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
+- (void)hideKeyboardWhenTappedAround;
+- (void)dismissKeyboard;
 - (void)setNavBarWithSettingsIcon:(NSString * _Nonnull)selector;
 - (void)setNavBarWithBackButton;
 - (void)backButtonPressed;
