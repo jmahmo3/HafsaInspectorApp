@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		9C0D44AE1D94A51C00DF0FC3 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D44AD1D94A51C00DF0FC3 /* CommentTableViewCell.swift */; };
 		9C0D44B31D94A53800DF0FC3 /* RPFloatingPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D44B21D94A53800DF0FC3 /* RPFloatingPlaceholderTextView.m */; };
+		9C25F4CB1D973D08000BE929 /* MTGeometry.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C25F4B61D973D08000BE929 /* MTGeometry.c */; };
+		9C25F4CC1D973D08000BE929 /* MMCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C25F4B91D973D08000BE929 /* MMCropView.m */; };
+		9C25F4CD1D973D08000BE929 /* MMOpenCVHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9C25F4BB1D973D08000BE929 /* MMOpenCVHelper.mm */; };
+		9C25F4CE1D973D08000BE929 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C25F4BC1D973D08000BE929 /* ProgressHUD.bundle */; };
+		9C25F4CF1D973D08000BE929 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C25F4BE1D973D08000BE929 /* ProgressHUD.m */; };
+		9C25F4D01D973D08000BE929 /* UIColor+HexRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C25F4C01D973D08000BE929 /* UIColor+HexRepresentation.m */; };
+		9C25F4D11D973D08000BE929 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C25F4C21D973D08000BE929 /* UIImage+fixOrientation.m */; };
+		9C25F4D21D973D08000BE929 /* UIImageView+ContentFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C25F4C41D973D08000BE929 /* UIImageView+ContentFrame.m */; };
+		9C25F4D31D973D08000BE929 /* CropViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9C25F4C61D973D08000BE929 /* CropViewController.mm */; };
+		9C25F4D41D973D08000BE929 /* CameraFocusSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C25F4C81D973D08000BE929 /* CameraFocusSquare.m */; };
+		9C25F4D51D973D08000BE929 /* MMCameraPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C25F4CA1D973D08000BE929 /* MMCameraPickerController.m */; };
+		9C25F4D71D97460C000BE929 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9C25F4D61D97460C000BE929 /* .gitignore */; };
 		9C718EBD1D7A8111009F9D79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C718EBC1D7A8111009F9D79 /* Main.storyboard */; };
 		9C718EC11D7A8140009F9D79 /* ChapterPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C718EBE1D7A8140009F9D79 /* ChapterPickerViewController.swift */; };
 		9C718EC21D7A8140009F9D79 /* EstablishmentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C718EBF1D7A8140009F9D79 /* EstablishmentPickerViewController.swift */; };
@@ -122,6 +134,28 @@
 		9C0D44B01D94A53800DF0FC3 /* RPFloatingPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderTextView.h; sourceTree = "<group>"; };
 		9C0D44B11D94A53800DF0FC3 /* RPFloatingPlaceholderConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderConstants.h; sourceTree = "<group>"; };
 		9C0D44B21D94A53800DF0FC3 /* RPFloatingPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPFloatingPlaceholderTextView.m; sourceTree = "<group>"; };
+		9C25F4B61D973D08000BE929 /* MTGeometry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MTGeometry.c; sourceTree = "<group>"; };
+		9C25F4B71D973D08000BE929 /* MTGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTGeometry.h; sourceTree = "<group>"; };
+		9C25F4B81D973D08000BE929 /* MMCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCropView.h; sourceTree = "<group>"; };
+		9C25F4B91D973D08000BE929 /* MMCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCropView.m; sourceTree = "<group>"; };
+		9C25F4BA1D973D08000BE929 /* MMOpenCVHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMOpenCVHelper.h; sourceTree = "<group>"; };
+		9C25F4BB1D973D08000BE929 /* MMOpenCVHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MMOpenCVHelper.mm; sourceTree = "<group>"; };
+		9C25F4BC1D973D08000BE929 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		9C25F4BD1D973D08000BE929 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		9C25F4BE1D973D08000BE929 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		9C25F4BF1D973D08000BE929 /* UIColor+HexRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexRepresentation.h"; sourceTree = "<group>"; };
+		9C25F4C01D973D08000BE929 /* UIColor+HexRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexRepresentation.m"; sourceTree = "<group>"; };
+		9C25F4C11D973D08000BE929 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
+		9C25F4C21D973D08000BE929 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
+		9C25F4C31D973D08000BE929 /* UIImageView+ContentFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ContentFrame.h"; sourceTree = "<group>"; };
+		9C25F4C41D973D08000BE929 /* UIImageView+ContentFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ContentFrame.m"; sourceTree = "<group>"; };
+		9C25F4C51D973D08000BE929 /* CropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropViewController.h; sourceTree = "<group>"; };
+		9C25F4C61D973D08000BE929 /* CropViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CropViewController.mm; sourceTree = "<group>"; };
+		9C25F4C71D973D08000BE929 /* CameraFocusSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraFocusSquare.h; sourceTree = "<group>"; };
+		9C25F4C81D973D08000BE929 /* CameraFocusSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraFocusSquare.m; sourceTree = "<group>"; };
+		9C25F4C91D973D08000BE929 /* MMCameraPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCameraPickerController.h; sourceTree = "<group>"; };
+		9C25F4CA1D973D08000BE929 /* MMCameraPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCameraPickerController.m; sourceTree = "<group>"; };
+		9C25F4D61D97460C000BE929 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		9C718EBC1D7A8111009F9D79 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9C718EBE1D7A8140009F9D79 /* ChapterPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterPickerViewController.swift; sourceTree = "<group>"; };
 		9C718EBF1D7A8140009F9D79 /* EstablishmentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstablishmentPickerViewController.swift; sourceTree = "<group>"; };
@@ -266,6 +300,34 @@
 			name = RPFloating;
 			sourceTree = "<group>";
 		};
+		9C25F4B51D973CEA000BE929 /* MMCamera */ = {
+			isa = PBXGroup;
+			children = (
+				9C25F4B61D973D08000BE929 /* MTGeometry.c */,
+				9C25F4B71D973D08000BE929 /* MTGeometry.h */,
+				9C25F4B81D973D08000BE929 /* MMCropView.h */,
+				9C25F4B91D973D08000BE929 /* MMCropView.m */,
+				9C25F4BA1D973D08000BE929 /* MMOpenCVHelper.h */,
+				9C25F4BB1D973D08000BE929 /* MMOpenCVHelper.mm */,
+				9C25F4BC1D973D08000BE929 /* ProgressHUD.bundle */,
+				9C25F4BD1D973D08000BE929 /* ProgressHUD.h */,
+				9C25F4BE1D973D08000BE929 /* ProgressHUD.m */,
+				9C25F4BF1D973D08000BE929 /* UIColor+HexRepresentation.h */,
+				9C25F4C01D973D08000BE929 /* UIColor+HexRepresentation.m */,
+				9C25F4C11D973D08000BE929 /* UIImage+fixOrientation.h */,
+				9C25F4C21D973D08000BE929 /* UIImage+fixOrientation.m */,
+				9C25F4C31D973D08000BE929 /* UIImageView+ContentFrame.h */,
+				9C25F4C41D973D08000BE929 /* UIImageView+ContentFrame.m */,
+				9C25F4C51D973D08000BE929 /* CropViewController.h */,
+				9C25F4C61D973D08000BE929 /* CropViewController.mm */,
+				9C25F4C71D973D08000BE929 /* CameraFocusSquare.h */,
+				9C25F4C81D973D08000BE929 /* CameraFocusSquare.m */,
+				9C25F4C91D973D08000BE929 /* MMCameraPickerController.h */,
+				9C25F4CA1D973D08000BE929 /* MMCameraPickerController.m */,
+			);
+			path = MMCamera;
+			sourceTree = "<group>";
+		};
 		9C4254911D942FB900DCFA91 /* Material */ = {
 			isa = PBXGroup;
 			children = (
@@ -394,6 +456,7 @@
 		B367E1AC1D73F8E6008078DF = {
 			isa = PBXGroup;
 			children = (
+				9C25F4D61D97460C000BE929 /* .gitignore */,
 				B367E1B71D73F8E6008078DF /* HafsaInspectorApp */,
 				B367E1B61D73F8E6008078DF /* Products */,
 				7DE487148E48F359F8A476F3 /* Pods */,
@@ -484,6 +547,7 @@
 		B367E1D11D73FA0B008078DF /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				9C25F4B51D973CEA000BE929 /* MMCamera */,
 				9C4254911D942FB900DCFA91 /* Material */,
 			);
 			path = ThirdParty;
@@ -561,6 +625,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C25F4D71D97460C000BE929 /* .gitignore in Resources */,
+				9C25F4CE1D973D08000BE929 /* ProgressHUD.bundle in Resources */,
 				9C718ED31D7A82D3009F9D79 /* LaunchScreen.storyboard in Resources */,
 				9C718EBD1D7A8111009F9D79 /* Main.storyboard in Resources */,
 				9C718ED01D7A81D0009F9D79 /* Assets.xcassets in Resources */,
@@ -645,18 +711,21 @@
 				9CF8EBFC1D95C45F00639E91 /* SnackbarController.swift in Sources */,
 				9C718EC11D7A8140009F9D79 /* ChapterPickerViewController.swift in Sources */,
 				9CF8EBCB1D95C45F00639E91 /* Divider.swift in Sources */,
+				9C25F4D41D973D08000BE929 /* CameraFocusSquare.m in Sources */,
 				9CF8EC031D95C45F00639E91 /* TextStorage.swift in Sources */,
 				9C718EC31D7A8140009F9D79 /* FormTableViewController.swift in Sources */,
 				9CF8EBF11D95C45F00639E91 /* PulseAnimation.swift in Sources */,
 				9CF8EC011D95C45F00639E91 /* Text.swift in Sources */,
 				9CF8EBF61D95C45F00639E91 /* RobotoFont.swift in Sources */,
 				9CF8EBF01D95C45F00639E91 /* PhotoLibraryController.swift in Sources */,
+				9C25F4D01D973D08000BE929 /* UIColor+HexRepresentation.m in Sources */,
 				9CA9E4111D7F939B00886963 /* AddImageCollectionViewCell.swift in Sources */,
 				9CF8EBDE1D95C45F00639E91 /* Material+Obj-C.swift in Sources */,
 				B328CE991D78F44F007075B9 /* IPDFView.m in Sources */,
 				9CF8EBE41D95C45F00639E91 /* MaterialGravity.swift in Sources */,
 				9CF8EBF71D95C45F00639E91 /* RootController.swift in Sources */,
 				9CF8EBC51D95C45F00639E91 /* CollectionViewLayout.swift in Sources */,
+				9C25F4CD1D973D08000BE929 /* MMOpenCVHelper.mm in Sources */,
 				9C718EC21D7A8140009F9D79 /* EstablishmentPickerViewController.swift in Sources */,
 				9CF8EBE11D95C45F00639E91 /* Material+UIImage.swift in Sources */,
 				9C718ECC1D7A819D009F9D79 /* HIManager.swift in Sources */,
@@ -667,6 +736,7 @@
 				9CF8EC051D95C45F00639E91 /* Toolbar.swift in Sources */,
 				9CF8EBE21D95C45F00639E91 /* Material+UIView.swift in Sources */,
 				9CF8EBC31D95C45F00639E91 /* CollectionViewDataSource.swift in Sources */,
+				9C25F4D31D973D08000BE929 /* CropViewController.mm in Sources */,
 				9CF8EBCD1D95C45F00639E91 /* EdgeInsets.swift in Sources */,
 				9CF8EBDC1D95C45F00639E91 /* Material+Array.swift in Sources */,
 				B367E1B91D73F8E6008078DF /* AppDelegate.swift in Sources */,
@@ -675,6 +745,7 @@
 				9CF8EBB81D95C45F00639E91 /* BottomTabBar.swift in Sources */,
 				9CF8EBE31D95C45F00639E91 /* Material+UIWindow.swift in Sources */,
 				9CA9E4131D7FB54C00886963 /* EditImageViewController.swift in Sources */,
+				9C25F4CC1D973D08000BE929 /* MMCropView.m in Sources */,
 				9CF8EBDF1D95C45F00639E91 /* Material+String.swift in Sources */,
 				9CF8EBF51D95C45F00639E91 /* RemindersController.swift in Sources */,
 				9CF8EBFB1D95C45F00639E91 /* Snackbar.swift in Sources */,
@@ -705,6 +776,7 @@
 				9CF8EBC81D95C45F00639E91 /* CornerRadius.swift in Sources */,
 				9CF8EBCA1D95C45F00639E91 /* Device.swift in Sources */,
 				9CF8EBC11D95C45F00639E91 /* CollectionView.swift in Sources */,
+				9C25F4D11D973D08000BE929 /* UIImage+fixOrientation.m in Sources */,
 				B328CE981D78F44F007075B9 /* IPDFCameraViewController.m in Sources */,
 				9CF8EBCC1D95C45F00639E91 /* DynamicFontType.swift in Sources */,
 				9CF8EBEE1D95C45F00639E91 /* PageTabBarController.swift in Sources */,
@@ -719,6 +791,7 @@
 				9CF8EC041D95C45F00639E91 /* TextView.swift in Sources */,
 				9CF8EBFF1D95C45F00639E91 /* TabBar.swift in Sources */,
 				9CF8EBD21D95C45F00639E91 /* Grid.swift in Sources */,
+				9C25F4D51D973D08000BE929 /* MMCameraPickerController.m in Sources */,
 				9CF8EBE51D95C45F00639E91 /* MaterialTextLayer.swift in Sources */,
 				9CF8EBBF1D95C45F00639E91 /* CollectionDataSourceItem.swift in Sources */,
 				9CF8EBE91D95C45F00639E91 /* NavigationBar.swift in Sources */,
@@ -726,7 +799,9 @@
 				9CF8EBB51D95C45F00639E91 /* BasicAnimation.swift in Sources */,
 				9CF8EBF91D95C45F00639E91 /* SearchBarController.swift in Sources */,
 				9CF8EBB31D95C45F00639E91 /* Animation.swift in Sources */,
+				9C25F4CF1D973D08000BE929 /* ProgressHUD.m in Sources */,
 				9CF8EC071D95C45F00639E91 /* TransitionAnimation.swift in Sources */,
+				9C25F4CB1D973D08000BE929 /* MTGeometry.c in Sources */,
 				9CF8EC0A1D95C4A300639E91 /* WebService.swift in Sources */,
 				9C0D44AE1D94A51C00DF0FC3 /* CommentTableViewCell.swift in Sources */,
 				9CF8EBE61D95C45F00639E91 /* Menu.swift in Sources */,
@@ -739,6 +814,7 @@
 				9CF8EBBC1D95C45F00639E91 /* CaptureSession.swift in Sources */,
 				9CF8EBEA1D95C45F00639E91 /* NavigationController.swift in Sources */,
 				9CF8EBD91D95C45F00639E91 /* Label.swift in Sources */,
+				9C25F4D21D973D08000BE929 /* UIImageView+ContentFrame.m in Sources */,
 				9CF8EBC21D95C45F00639E91 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -843,6 +919,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = HafsaInspectorApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Junaid.HafsaInspectorApp;
@@ -863,6 +940,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = HafsaInspectorApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Junaid.HafsaInspectorApp;

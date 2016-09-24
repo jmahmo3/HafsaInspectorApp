@@ -4,3 +4,4 @@
 
 #import "IPDFView.h"
 #import "RPFloatingPlaceholderTextView.h"
+#import "MMCameraPickerController.h"

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D3AB0AA54BF5FA0C4E873DDF'
+               BlueprintIdentifier = '7C973352F9731EF6FEF77138'
                BlueprintName = 'Pods-HafsaInspectorApp'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_HafsaInspectorApp.framework'>
