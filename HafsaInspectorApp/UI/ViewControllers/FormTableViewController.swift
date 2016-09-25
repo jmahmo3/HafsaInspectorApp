@@ -26,7 +26,7 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.HIBackground
         self.setNavBarWithBackButton()
-        
+        self.hideKeyboardWhenTappedAround()
     }
 
     // MARK: - Table view data source
