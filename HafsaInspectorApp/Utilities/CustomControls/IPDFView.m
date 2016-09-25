@@ -148,6 +148,7 @@
         vc.image = capturedImage;
         vc.delegate = self;
         [self presentViewController:vc animated:YES completion:nil];
+//        [self gotoCropWithImage:capturedImage];
         
     }];
 }
@@ -182,6 +183,13 @@
     self.cameraViewController.enableTorch = NO;
     [self.navigationController popViewControllerAnimated:YES];
 
+}
+
+- (void)gotoCropWithImage:(UIImage *)image {
+    CropViewController *vc = [CropViewController create];
+    vc.adjustedImage=image;
+    [self presentViewController:vc animated:YES completion:nil];
+    
 }
 
 @end

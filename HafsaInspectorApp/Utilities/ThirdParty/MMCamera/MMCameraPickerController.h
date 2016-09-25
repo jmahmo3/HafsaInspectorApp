@@ -24,13 +24,10 @@
     BOOL toogleFlash,toggleCamera;
     
 }
-@property (weak, nonatomic) IBOutlet UIButton *backBut;
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
 @property (weak, nonatomic) IBOutlet UIButton *flashBut;
-@property (weak, nonatomic) IBOutlet UIButton *switchCameraBut;
 @property (weak, nonatomic) IBOutlet UIButton *retakeBut;
 @property (weak, nonatomic) IBOutlet UIButton *captureBut;
-@property (weak, nonatomic) IBOutlet UIButton *doneBut;
 @property (weak, nonatomic) id <MMCameraDelegate> camdelegate;
 - (IBAction)capturePhoto:(id)sender;
 - (IBAction)retakeAction:(id)sender;

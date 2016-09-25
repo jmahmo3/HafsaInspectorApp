@@ -21,6 +21,7 @@
 		9C25F4D41D973D08000BE929 /* CameraFocusSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C25F4C81D973D08000BE929 /* CameraFocusSquare.m */; };
 		9C25F4D51D973D08000BE929 /* MMCameraPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C25F4CA1D973D08000BE929 /* MMCameraPickerController.m */; };
 		9C25F4D71D97460C000BE929 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9C25F4D61D97460C000BE929 /* .gitignore */; };
+		9C4173871D97C83D00FAAF76 /* IPDFCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4173861D97C83D00FAAF76 /* IPDFCameraViewController.m */; };
 		9C718EBD1D7A8111009F9D79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C718EBC1D7A8111009F9D79 /* Main.storyboard */; };
 		9C718EC11D7A8140009F9D79 /* ChapterPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C718EBE1D7A8140009F9D79 /* ChapterPickerViewController.swift */; };
 		9C718EC21D7A8140009F9D79 /* EstablishmentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C718EBF1D7A8140009F9D79 /* EstablishmentPickerViewController.swift */; };
@@ -121,7 +122,6 @@
 		9CF8EC071D95C45F00639E91 /* TransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8EBB11D95C45F00639E91 /* TransitionAnimation.swift */; };
 		9CF8EC081D95C45F00639E91 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8EBB21D95C45F00639E91 /* View.swift */; };
 		9CF8EC0A1D95C4A300639E91 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8EC091D95C4A300639E91 /* WebService.swift */; };
-		B328CE981D78F44F007075B9 /* IPDFCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B328CE951D78F44F007075B9 /* IPDFCameraViewController.m */; };
 		B328CE991D78F44F007075B9 /* IPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = B328CE971D78F44F007075B9 /* IPDFView.m */; };
 		B328CE9B1D7BB350007075B9 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328CE9A1D7BB350007075B9 /* ImageTableViewCell.swift */; };
 		B367E1B91D73F8E6008078DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367E1B81D73F8E6008078DF /* AppDelegate.swift */; };
@@ -156,6 +156,8 @@
 		9C25F4C91D973D08000BE929 /* MMCameraPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCameraPickerController.h; sourceTree = "<group>"; };
 		9C25F4CA1D973D08000BE929 /* MMCameraPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCameraPickerController.m; sourceTree = "<group>"; };
 		9C25F4D61D97460C000BE929 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9C4173851D97C83D00FAAF76 /* IPDFCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDFCameraViewController.h; sourceTree = "<group>"; };
+		9C4173861D97C83D00FAAF76 /* IPDFCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPDFCameraViewController.m; sourceTree = "<group>"; };
 		9C718EBC1D7A8111009F9D79 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9C718EBE1D7A8140009F9D79 /* ChapterPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterPickerViewController.swift; sourceTree = "<group>"; };
 		9C718EBF1D7A8140009F9D79 /* EstablishmentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstablishmentPickerViewController.swift; sourceTree = "<group>"; };
@@ -257,8 +259,6 @@
 		9CF8EBB21D95C45F00639E91 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		9CF8EC091D95C4A300639E91 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		B328CE931D78F44B007075B9 /* HafsaInspectorApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HafsaInspectorApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		B328CE941D78F44F007075B9 /* IPDFCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDFCameraViewController.h; sourceTree = "<group>"; };
-		B328CE951D78F44F007075B9 /* IPDFCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPDFCameraViewController.m; sourceTree = "<group>"; };
 		B328CE961D78F44F007075B9 /* IPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDFView.h; sourceTree = "<group>"; };
 		B328CE971D78F44F007075B9 /* IPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPDFView.m; sourceTree = "<group>"; };
 		B328CE9A1D7BB350007075B9 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
@@ -437,8 +437,8 @@
 		9C718ED11D7A82A8009F9D79 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				B328CE941D78F44F007075B9 /* IPDFCameraViewController.h */,
-				B328CE951D78F44F007075B9 /* IPDFCameraViewController.m */,
+				9C4173851D97C83D00FAAF76 /* IPDFCameraViewController.h */,
+				9C4173861D97C83D00FAAF76 /* IPDFCameraViewController.m */,
 				B328CE961D78F44F007075B9 /* IPDFView.h */,
 				B328CE971D78F44F007075B9 /* IPDFView.m */,
 			);
@@ -769,6 +769,7 @@
 				9CF8EBBE1D95C45F00639E91 /* Checkbox.swift in Sources */,
 				9CF8EC081D95C45F00639E91 /* View.swift in Sources */,
 				9CF8EBF21D95C45F00639E91 /* PulseView.swift in Sources */,
+				9C4173871D97C83D00FAAF76 /* IPDFCameraViewController.m in Sources */,
 				B328CE9B1D7BB350007075B9 /* ImageTableViewCell.swift in Sources */,
 				9CF8EBFD1D95C45F00639E91 /* StatusBarController.swift in Sources */,
 				9CF8EBF31D95C45F00639E91 /* RaisedButton.swift in Sources */,
@@ -777,7 +778,6 @@
 				9CF8EBCA1D95C45F00639E91 /* Device.swift in Sources */,
 				9CF8EBC11D95C45F00639E91 /* CollectionView.swift in Sources */,
 				9C25F4D11D973D08000BE929 /* UIImage+fixOrientation.m in Sources */,
-				B328CE981D78F44F007075B9 /* IPDFCameraViewController.m in Sources */,
 				9CF8EBCC1D95C45F00639E91 /* DynamicFontType.swift in Sources */,
 				9CF8EBEE1D95C45F00639E91 /* PageTabBarController.swift in Sources */,
 				9CF8EBB91D95C45F00639E91 /* Button.swift in Sources */,

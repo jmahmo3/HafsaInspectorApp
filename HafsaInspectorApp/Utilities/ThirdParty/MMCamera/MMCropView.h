@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MTGeometry.h"
+
 @interface MMCropView : UIView
 {
     CGPoint touchOffset;

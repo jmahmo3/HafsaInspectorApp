@@ -8,6 +8,10 @@
 
 #import "MMCameraPickerController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "HafsaInspectorApp-Swift.h"
+#import "CropViewController.h"
+
+
 #define backgroundHex @"2196f3"
 @interface MMCameraPickerController ()<UIGestureRecognizerDelegate>{
     // Measurements
@@ -31,11 +35,15 @@
 @property (strong, nonatomic) AVCaptureStillImageOutput *stillImageOutput;
 @property (strong, nonatomic) AVCaptureDevice * myDevice;
 @property (strong, nonatomic) AVCaptureVideoPreviewLayer * captureVideoPreviewLayer;
+@property (weak, nonatomic) IBOutlet UIButton *doneButton;
 
 // View Properties
 @property (strong, nonatomic) UIView * imageStreamV;
 @property (strong, nonatomic) UIImageView * capturedImageV;
+@property (strong, nonatomic) UIImage * cap;
+
 @property (strong,nonatomic) CameraFocusSquare *camFocus;
+- (IBAction)doneButtonPressed:(id)sender;
 
 @end
 
@@ -63,13 +71,13 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setNavBarWithBackButton];
+
     effectiveScale=1;
     [self setUI];
     [UIView animateWithDuration:0.3 animations:^{
-        self.switchCameraBut.alpha=1;
         self.flashBut.alpha=1;
         self.retakeBut.alpha=0;
-        self.doneBut.alpha=0;
     }];
 
     
@@ -119,7 +127,6 @@
         }
     }
     [self.view bringSubviewToFront:self.bottomView];
-    [self.view bringSubviewToFront:self.backBut];
     
 }
 
@@ -127,53 +134,40 @@
 -(void)setUI{
     
     //Flash But
-    self.flashBut.tintColor=[UIColor whiteColor];
-    self.flashBut.backgroundColor=[UIColor colorWithHexString:backgroundHex];
-    self.flashBut.layer.cornerRadius = self.flashBut.frame.size.width / 2;
-    self.flashBut.clipsToBounds=YES;
+//    self.flashBut.tintColor=[UIColor whiteColor];
+//    self.flashBut.backgroundColor=[UIColor colorWithHexString:backgroundHex];
+//    self.flashBut.layer.cornerRadius = self.flashBut.frame.size.width / 2;
+//    self.flashBut.clipsToBounds=YES;
     
-    [self.flashBut setImage:[UIImage renderImage:@"CameraFlashOff"] forState:UIControlStateNormal];
+//    [self.flashBut setImage:[UIImage renderImage:@"CameraFlashOff"] forState:UIControlStateNormal];
     
-    //Camera Switch
-    self.switchCameraBut.tintColor=[UIColor whiteColor];
-    self.switchCameraBut.backgroundColor=[UIColor colorWithHexString:backgroundHex];
-    self.switchCameraBut.layer.cornerRadius = self.switchCameraBut.frame.size.width / 2;
-    self.switchCameraBut.clipsToBounds=YES;
-    
-    [self.switchCameraBut setImage:[UIImage renderImage:@"Switch"] forState:UIControlStateNormal];
-    
-    //Done
-    self.doneBut.tintColor=[UIColor whiteColor];
-    self.doneBut.backgroundColor=[UIColor colorWithHexString:backgroundHex];
-    self.doneBut.layer.cornerRadius = self.doneBut.frame.size.width / 2;
-    self.doneBut.clipsToBounds=YES;
-    
-    [self.doneBut setImage:[UIImage renderImage:@"Done"] forState:UIControlStateNormal];
-
+    self.zoomSlider.tintColor = [UIColor colorWithHexString:@"399B52"];
     
     //Capture
-    self.captureBut.tintColor=[UIColor whiteColor];
-    self.captureBut.backgroundColor=[UIColor colorWithHexString:backgroundHex];
+    self.captureBut.tintColor=[UIColor colorWithHexString:@"399B52"];
+    self.captureBut.backgroundColor=[UIColor colorWithHexString:@"399B52"];
     self.captureBut.layer.cornerRadius = self.captureBut.frame.size.width / 2;
-    self.captureBut.clipsToBounds=YES;
-    
-    [self.captureBut setImage:[UIImage renderImage:@"CameraCapture"] forState:UIControlStateNormal];
-    
+//    self.captureBut.clipsToBounds=YES;
+//
+    [self.captureBut setImage:[UIImage renderImage:@"Camera"] forState:UIControlStateNormal];
+//
     //Retake
-    self.retakeBut.tintColor=[UIColor whiteColor];
-    self.retakeBut.backgroundColor=[UIColor colorWithHexString:backgroundHex];
+    self.retakeBut.tintColor=[UIColor colorWithHexString:@"399B52"];
+    self.retakeBut.backgroundColor=[UIColor colorWithHexString:@"399B52"];
     self.retakeBut.layer.cornerRadius = self.retakeBut.frame.size.width / 2;
-    self.retakeBut.clipsToBounds=YES;
+//    self.retakeBut.clipsToBounds=YES;
     
-    [self.retakeBut setImage:[UIImage renderImage:@"Retake"] forState:UIControlStateNormal];
+    [self.retakeBut setImage:[UIImage renderImage:@"retake"] forState:UIControlStateNormal];
     
-    //Back
-    self.backBut.tintColor=[UIColor whiteColor];
-    self.backBut.backgroundColor=[UIColor colorWithHexString:backgroundHex];
-    self.backBut.layer.cornerRadius = self.backBut.frame.size.width / 2;
-    self.backBut.clipsToBounds=YES;
+   
+    self.doneButton.tintColor=[UIColor colorWithHexString:@"399B52"];
+    self.doneButton.backgroundColor=[UIColor colorWithHexString:@"399B52"];
+    self.doneButton.layer.cornerRadius = self.retakeBut.frame.size.width / 2;
+    //    self.retakeBut.clipsToBounds=YES;
     
-    [self.backBut setImage:[UIImage renderImage:@"Back"] forState:UIControlStateNormal];
+    [self.doneButton setImage:[UIImage renderImage:@"Done"] forState:UIControlStateNormal];
+    
+
     
     
 }
@@ -379,7 +373,6 @@
        [videoConnection setVideoScaleAndCropFactor:effectiveScale];
     }
    
-    
     [_stillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler: ^(CMSampleBufferRef imageSampleBuffer, NSError *error)
      {
          if(!CMSampleBufferIsValid(imageSampleBuffer))
@@ -389,12 +382,16 @@
          NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageSampleBuffer];
          
          UIImage * capturedImage = [[UIImage alloc]initWithData:imageData scale:1];
+//         [self gotoCropWithImage:capturedImage];
          NSLog(@"%lu",(unsigned long)UIImageJPEGRepresentation(capturedImage, 1.0).length);
          if (_myDevice == [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo][0]) {
              // rear camera active
 //             CGImageRef cgRef = capturedImage.CGImage;
              capturedImage = capturedImage;
-         }
+             _cap = capturedImage;
+
+
+                     }
          else if (_myDevice == [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo][1]) {
              // front camera active
              
@@ -412,8 +409,13 @@
          isCapturingImage = NO;
          [[NSOperationQueue mainQueue] addOperationWithBlock:^{
              _capturedImageV.image = capturedImage;
+//             _cap = capturedImage;
              
          }];
+        
+//         [self.camdelegate didFinishCaptureImage:_capturedImageV.image withMMCam:self];
+         
+         
          
          imageData = nil;
          
@@ -422,8 +424,17 @@
 //         // If we have disabled the photo preview directly fire the delegate callback, otherwise, show user a preview//take photo immediatelty
 //         _disablePhotoPreview ? [self photoCaptured] : [self drawControls];
      }];
+//    [self gotoCropWithImage:_cap];
+    
 }
 
+
+- (void)gotoCropWithImage:(UIImage *)image {
+    CropViewController *vc = [CropViewController create];
+    vc.adjustedImage=image;
+    [self presentViewController:vc animated:YES completion:nil];
+
+}
 
 - (IBAction)capturePhoto:(id)sender {
     
@@ -431,10 +442,8 @@
     [self capturePhoto];
     [_mySesh stopRunning];
     [UIView animateWithDuration:0.3 animations:^{
-        self.switchCameraBut.alpha=0;
         self.flashBut.alpha=0;
         self.retakeBut.alpha=1;
-        self.doneBut.alpha=1;
         
     }];
 }
@@ -446,10 +455,8 @@
     [_mySesh startRunning];
      _capturedImageV.image=nil;
     [UIView animateWithDuration:0.3 animations:^{
-        self.switchCameraBut.alpha=1;
         self.flashBut.alpha=1;
         self.retakeBut.alpha=0;
-        self.doneBut.alpha=0;
         
     }];
 
@@ -701,4 +708,8 @@
     return image;
 }
 
+- (IBAction)doneButtonPressed:(id)sender {
+    
+    [self gotoCropWithImage:_capturedImageV.image];
+}
 @end

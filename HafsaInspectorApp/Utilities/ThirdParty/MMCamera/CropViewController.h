@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "UIImage+fixOrientation.h"
 #import "UIImageView+ContentFrame.h"
+//#import "HafsaInspectorApp-Swift.h"
 
 #import "ProgressHUD.h"
 @class CropViewController;
@@ -35,7 +36,7 @@
 - (IBAction)dismissAction:(id)sender;
 - (IBAction)rightRotateAction:(id)sender;
 - (IBAction)leftRotateAction:(id)sender;
-
++ (CropViewController *)create;
 //Detect Edges
 -(void)detectEdges;
 - (void) closeWithCompletion:(void (^)(void))completion ;

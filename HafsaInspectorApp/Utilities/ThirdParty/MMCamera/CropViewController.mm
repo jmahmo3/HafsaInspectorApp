@@ -7,6 +7,8 @@
 //
 
 #import "CropViewController.h"
+//#import "HafsaInspectorApp-Swift.h"
+
 #include <vector>
 #import "MMOpenCVHelper.h"
 #define backgroundHex @"2196f3"
@@ -16,7 +18,8 @@
 
 
 
-@interface CropViewController (){
+
+@interface CropViewController () {
     UIScrollView *scrollView;
    
 }
@@ -27,6 +30,13 @@
 -(BOOL)prefersStatusBarHidden{
     return YES;
 }
+
++ (CropViewController *)create {
+    NSBundle *frameworkBundle = [NSBundle bundleForClass:[self class]];
+    CropViewController *main = [[UIStoryboard storyboardWithName:@"Main" bundle:frameworkBundle] instantiateViewControllerWithIdentifier:NSStringFromClass([CropViewController class])];
+    return main;
+}
+
 
 
 -(void)viewDidLoad{
@@ -39,7 +49,7 @@
     [self initCropFrame];
 //    [self adjustPossition];
     
-    CGRect cropFrame=CGRectMake(_sourceImageView.contentFrame.origin.x,_sourceImageView.contentFrame.origin.y+64,_sourceImageView.contentFrame.size.width,_sourceImageView.contentFrame.size.height);
+    CGRect cropFrame=CGRectMake((int)_sourceImageView.frame.origin.x,(int)_sourceImageView.frame.origin.y+64,(int)_sourceImageView.frame.size.width,(int)_sourceImageView.frame.size.height);
     _cropRect= [[MMCropView alloc] initWithFrame:cropFrame];
     [self.view addSubview:_cropRect];
     
@@ -565,7 +575,14 @@ cv::Mat debugSquares( std::vector<std::vector<cv::Point> > squares, cv::Mat imag
 
 - (IBAction)dismissAction:(id)sender {
 //   [self.cropdelegate didFinishCropping:[UIImage imageWithData:UIImageJPEGRepresentation(_sourceImageView.image, 0.0)] from:self];
-       [self.cropdelegate didFinishCropping:_sourceImageView.image from:self];
+//       [self.cropdelegate didFinishCropping:_sourceImageView.image from:self];
+//    [self didSaveImage:_sourceImageView.image];
+//            EditImageViewController *vc = [EditImageViewController create:YES];
+//            vc.image = _sourceImageView.image;
+//            vc.delegate = self;
+//            [self presentViewController:vc animated:YES completion:nil];
+//    [self removeFromParentViewController];
+
 
 //    NSLog(@"%d",UIImagePNGRepresentation(_sourceImageView.image).length);
 //    NSLog(@"Size of Image %d",UIImageJPEGRepresentation(_sourceImageView.image, 0.5).length);
