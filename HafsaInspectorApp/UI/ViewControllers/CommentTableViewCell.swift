@@ -21,8 +21,6 @@ class CommentTableViewCell: UITableViewCell {
         textView.floatingLabelInactiveTextColor = UIColor.gray
         textView.floatingLabel.font = UIFont(name: "AvenirNext-Medium", size: 16)
         textView.animationDirection = RPFloatingPlaceholderAnimationOptions.animateUpward
-//        self.parentViewController!.hideKeyboardWhenTappedAround()
-        self.superview?.parentViewController?.hideKeyboardWhenTappedAround()
     }
    
     

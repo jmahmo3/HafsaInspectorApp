@@ -26,10 +26,7 @@ class NameTableViewCell: UITableViewCell {
         chapterLabel.text = HImanager.currentChapter
         establishmentLabel.text = HImanager.currentEstablishment
         
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MM/dd/yy"
-        let dateString = formatter.string(from: Date())
-        datelabel.text = dateString
+        datelabel.text = HImanager.currentDate
         
         
         nameLabel.font = UIFont(name: "AvenirNext-Medium", size: 16)

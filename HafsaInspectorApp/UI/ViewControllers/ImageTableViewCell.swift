@@ -61,6 +61,7 @@ class ImageTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectio
     //Delegate method when coming from camera
     func imageSaved(_ image: UIImage!) {
         imagesArr.add(image)
+        HIManager.sharedClient().images = imagesArr.mutableCopy() as! NSMutableArray
         DispatchQueue.main.async {
             self.collectionView.reloadData()
         }
@@ -71,6 +72,7 @@ class ImageTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectio
         for pic in imagesArr {
             if pic as! UIImage == image {
                 imagesArr.remove(pic)
+                HIManager.sharedClient().images = imagesArr.mutableCopy() as! NSMutableArray
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
                 }
