@@ -46,6 +46,11 @@ class CurrentUser: NSObject {
             self.adminAccess = admin
             completion(self, nil)
             
+            UserDefaults.standard.setValue(username, forKey: "userName")
+            UserDefaults.standard.set(admin, forKey: "isAdmin")
+
+
+            
         }) { (error) in
             completion(nil, error as NSError?)
             print(error.localizedDescription)
