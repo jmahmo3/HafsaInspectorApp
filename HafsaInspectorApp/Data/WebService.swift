@@ -86,17 +86,23 @@ class WebService: NSObject {
             
             let value = snapshot.value as? NSDictionary
             if value != nil {
-                
+                let chapters: NSArray = (value!.allKeys as NSArray)
+                DispatchQueue.main.async {
+                    HIManager.sharedClient().chapters = chapters.mutableCopy() as! NSMutableArray
+                    HIManager.sharedClient().chaptersData = value!
+                    completion(true, nil)
+                }
+    
             print(value)
             }
             else {
                 let err = NSError(domain: "Could not retrieve user", code: 401, userInfo: nil)
-                completion(nil, err)
+                completion(false, err)
             }
             
             
         }) { (error) in
-            completion(nil, error as NSError?)
+            completion(false, error as NSError?)
             print(error.localizedDescription)
         }
         

@@ -41,16 +41,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController? = vc
         }
         
-        self.getData()
-        
         //Firebase
         FIRApp.configure()
         FIRDatabase.database().persistenceEnabled = true
-
-
-//        WebService().getChaptersAndEstablishmentsFromDatabase { (success, error) in
         
-//        }
+
+        self.getData()
+        
+       
         
         return true
     }
@@ -86,10 +84,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         view.addSubview(progess)
         progess.center = view.center
         progess.show(animated: true)
-        WebService().getChaptersAndEstablishments { (success, error) in
+        WebService().getChaptersAndEstablishmentsFromDatabase{ (success, error) in
             progess.hide(animated: true)
             if success! {
-                print(HIManager.sharedClient().data)
+//                print(HIManager.sharedClient().data)
                 self.vc.didGetEstablishmentData()
                 
                 let myVC = self.window?.visibleViewController
