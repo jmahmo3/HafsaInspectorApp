@@ -6,41 +6,41 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp11ContentCard", ""]
 provides-dynamic-lookup:
-- "titleBar"
+- "contentView"
 - "contentEdgeInsets"
+- "prepare"
 - "interimSpace"
 - "interimSpacePreset"
-- "contentEdgeInsetsPreset"
-- "willLayout"
 - "gridFactor"
-- "layoutSubviews"
-- "prepare"
-- "contentView"
+- "willLayout"
 - "bottomBar"
+- "layoutSubviews"
+- "contentEdgeInsetsPreset"
+- "titleBar"
 depends-top-level:
+- "CGFloat"
+- "Bool"
+- "PulseView"
+- !private "!="
+- !private "<"
+- !private "String"
+- !private "Array"
 - "InterimSpace"
 - "UIView"
-- "CGFloat"
-- !private "<"
-- "EdgeInsets"
-- "Toolbar"
-- !private "!="
-- !private "assert"
-- "PulseView"
-- "Bar"
-- "EdgeInsetsPreset"
-- "AssignmentPrecedence"
-- !private "&&"
 - "ContentCard"
-- !private "StringLiteralType"
-- !private "+="
 - !private "Layout"
-- !private "UnicodeScalarType"
-- "Bool"
-- !private "String"
-- !private "InterimSpacePresetToValue"
+- "AssignmentPrecedence"
+- "EdgeInsets"
 - "InterimSpacePreset"
-- !private "Array"
+- !private "assert"
+- !private "UnicodeScalarType"
+- !private "StringLiteralType"
+- "Bar"
+- !private "&&"
+- !private "InterimSpacePresetToValue"
+- "EdgeInsetsPreset"
+- "Toolbar"
+- !private "+="
 depends-member:
 - ["Ps9AnyObject", "InterimSpacePreset"]
 - !private ["Ps9AnyObject", "InterimSpacePresetToValue"]
@@ -310,6 +310,7 @@ depends-member:
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["P12PDFGenerator19FilePathConvertible", "init"]
 - !private ["Sf", "deinit"]
 - !private ["C17HafsaInspectorApp4Grid", "contentEdgeInsets"]
 - !private ["C17HafsaInspectorApp4Grid", "contentEdgeInsetsPreset"]
@@ -480,6 +481,35 @@ depends-member:
 - !private ["Ps9OptionSet", "Element"]
 - ["Sq", "deinit"]
 - ["Sq", "some"]
+- ["P12PDFGenerator17PDFPageRenderable", "InterimSpacePreset"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "InterimSpacePresetToValue"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "Layout"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "String"]
+- ["P12PDFGenerator17PDFPageRenderable", "UIView"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "addConstraints"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "assert"]
+- ["P12PDFGenerator17PDFPageRenderable", "bottomBar"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "constraints"]
+- ["P12PDFGenerator17PDFPageRenderable", "contentEdgeInsets"]
+- ["P12PDFGenerator17PDFPageRenderable", "contentEdgeInsetsPreset"]
+- ["P12PDFGenerator17PDFPageRenderable", "contentView"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "grid"]
+- ["P12PDFGenerator17PDFPageRenderable", "gridFactor"]
+- ["P12PDFGenerator17PDFPageRenderable", "init"]
+- ["P12PDFGenerator17PDFPageRenderable", "interimSpace"]
+- ["P12PDFGenerator17PDFPageRenderable", "interimSpacePreset"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "layout"]
+- ["P12PDFGenerator17PDFPageRenderable", "layoutSubviews"]
+- ["P12PDFGenerator17PDFPageRenderable", "prepare"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "pulseAnimation"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "removeConstraints"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "removeFromSuperview"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "subviews"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "superview"]
+- ["P12PDFGenerator17PDFPageRenderable", "titleBar"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "width"]
+- ["P12PDFGenerator17PDFPageRenderable", "willLayout"]
+- ["P12PDFGenerator17PDFPageRenderable", ""]
 - ["O17HafsaInspectorApp14PulseAnimation", "deinit"]
 - !private ["O17HafsaInspectorApp14PulseAnimation", "none"]
 - ["C17HafsaInspectorApp9PulseView", "Bar"]
@@ -751,6 +781,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "width"]
 - ["PSo11UIFocusItem", "willLayout"]
 - ["PSo11UIFocusItem", ""]
+- !private ["P12PDFGenerator18UIImageConvertible", "init"]
 - ["CSo11UIResponder", "Bar"]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGFloat"]
@@ -1026,6 +1057,7 @@ depends-nominal:
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "P12PDFGenerator19FilePathConvertible"
 - !private "Sf"
 - "C17HafsaInspectorApp4Grid"
 - "Ps8Hashable"
@@ -1055,6 +1087,7 @@ depends-nominal:
 - !private "CSo8NSString"
 - !private "Ps9OptionSet"
 - "Sq"
+- "P12PDFGenerator17PDFPageRenderable"
 - "O17HafsaInspectorApp14PulseAnimation"
 - "C17HafsaInspectorApp9PulseView"
 - !private "Ps22RandomAccessCollection"
@@ -1078,6 +1111,7 @@ depends-nominal:
 - "VSC12UIEdgeInsets"
 - "PSo18UIFocusEnvironment"
 - "PSo11UIFocusItem"
+- !private "P12PDFGenerator18UIImageConvertible"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo18UITraitEnvironment"
@@ -1117,8 +1151,46 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTaskSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageUploadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageMetadata.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageObservableTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageDownloadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRMutableData.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/Firebase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/PDFGenerator.swiftmodule/x86_64.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"

@@ -26,6 +26,12 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
         self.view.backgroundColor = UIColor.HIBackground
         self.setNavBarWithBackButton()
         self.hideKeyboardWhenTappedAround()
+        
+        
+        
+        
+        
+        
     }
 
     override func backButtonPressed() {

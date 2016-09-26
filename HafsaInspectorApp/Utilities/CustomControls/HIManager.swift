@@ -41,6 +41,8 @@ class HIManager: NSObject {
     
     var supplierValues: NSMutableArray = []
     
+    var password: String = "halal"
+    
     //Data
     var chapterArray = ["","Chicago", "Detroit", "San Francisco"]
     

@@ -80,7 +80,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HafsaInspectorApp/Utilities/ThirdParty/MMCamera/UIImageView+ContentFrame.m"
@@ -218,6 +218,22 @@
             startingLineNumber = "442"
             endingLineNumber = "442"
             landmarkName = "-capturePhoto:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HafsaInspectorApp/Data/WebService.swift"
+            timestampString = "496614323.249863"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "getChaptersAndEstablishmentsFromDatabase(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

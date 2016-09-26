@@ -23,8 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Usually this is not overridden. Using the "did finish launching" method is more typical
-
-        
         return true
     }
     
@@ -32,10 +30,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let registered = UserDefaults.standard.bool(forKey: "Registered")
-        if registered {
+        let firstUseDone = UserDefaults.standard.bool(forKey: "FirstUseDone")
+
+        if registered && firstUseDone {
             let nav = UINavigationController.init(rootViewController: vc)
             self.window?.rootViewController? = nav
-            
+        }
+        else if registered && !firstUseDone {
+            let vc = ChapterPickerViewController.create()
+            self.window?.rootViewController? = vc
         }
         
         self.getData()
@@ -44,16 +47,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FIRApp.configure()
         FIRDatabase.database().persistenceEnabled = true
 
-        
-        let user = CurrentUser.sharedClient()
-        user.signin("Sameer") { (user, error) in
-            if !(error != nil) {
-                print(user!.username)
-            }
-        }
-        
-      
 
+//        WebService().getChaptersAndEstablishmentsFromDatabase { (success, error) in
+        
+//        }
+        
         return true
     }
 

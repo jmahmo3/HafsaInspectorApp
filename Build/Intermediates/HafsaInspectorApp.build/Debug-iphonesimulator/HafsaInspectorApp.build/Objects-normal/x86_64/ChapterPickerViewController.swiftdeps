@@ -9,45 +9,45 @@ provides-member:
 - ["P17HafsaInspectorApp21ChapterPickerDelegate", ""]
 - ["C17HafsaInspectorApp27ChapterPickerViewController", ""]
 provides-dynamic-lookup:
-- "nextButton"
-- "viewDidLoad"
-- "chapterTextField"
 - "backButtonPressed"
-- "didGetChapterData"
-- "setupView"
-- "nameTextField"
-- "create"
+- "chapterTextField"
 - "textFieldShouldReturn"
-- "imageView"
-- "nextButtonPressed"
 - "picker"
+- "viewDidLoad"
 - "chapterData"
 - "textFieldDidBeginEditing"
 - "saveData"
+- "setupView"
+- "chapterLabel"
+- "nextButtonPressed"
+- "didGetChapterData"
+- "create"
+- "nextButton"
 depends-top-level:
-- "Bool"
-- "String"
-- "UIButton"
-- !private "UserDefaults"
 - "HITextField"
-- "UIPickerView"
-- "UITextFieldDelegate"
-- "UIImageView"
-- "UITextField"
+- "String"
+- !private "&&"
+- "UIButton"
+- !private "UIStoryboard"
 - "CastingPrecedence"
 - "AssignmentPrecedence"
-- !private "UIFont"
-- !private "UIScreen"
-- !private "UIStoryboard"
-- "HIManager"
-- "UIViewController"
+- !private "!"
 - "ChapterPickerViewController"
+- "UIViewController"
+- "Bool"
 - !private "UIColor"
+- !private "UserDefaults"
+- "UITextFieldDelegate"
+- "ChapterPickerDelegate"
 - !private "StringLiteralType"
 - "AnyObject"
-- !private "BooleanLiteralType"
 - !private "Bundle"
-- "ChapterPickerDelegate"
+- "UITextField"
+- !private "UIFont"
+- !private "BooleanLiteralType"
+- "UIPickerView"
+- "UILabel"
+- "HIManager"
 depends-member:
 - !private ["Ps9AnyObject", "Bundle"]
 - !private ["Ps9AnyObject", "HIBackground"]
@@ -57,7 +57,6 @@ depends-member:
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIFont"]
 - ["Ps9AnyObject", "UIPickerView"]
-- !private ["Ps9AnyObject", "UIScreen"]
 - !private ["Ps9AnyObject", "UIStoryboard"]
 - !private ["Ps9AnyObject", "UserDefaults"]
 - ["Ps9AnyObject", "backButtonPressed"]
@@ -68,6 +67,7 @@ depends-member:
 - !private ["Ps9AnyObject", "borderWidth"]
 - !private ["Ps9AnyObject", "cgColor"]
 - ["Ps9AnyObject", "chapterData"]
+- ["Ps9AnyObject", "chapterLabel"]
 - ["Ps9AnyObject", "chapterTextField"]
 - !private ["Ps9AnyObject", "cornerRadius"]
 - ["Ps9AnyObject", "create"]
@@ -78,16 +78,13 @@ depends-member:
 - !private ["Ps9AnyObject", "endEditing"]
 - !private ["Ps9AnyObject", "font"]
 - !private ["Ps9AnyObject", "hideKeyboardWhenTappedAround"]
-- ["Ps9AnyObject", "imageView"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instantiateViewController"]
 - !private ["Ps9AnyObject", "isEmpty"]
 - !private ["Ps9AnyObject", "isHidden"]
 - !private ["Ps9AnyObject", "isOnScreen"]
-- !private ["Ps9AnyObject", "isiPhone"]
 - !private ["Ps9AnyObject", "layer"]
 - !private ["Ps9AnyObject", "main"]
-- ["Ps9AnyObject", "nameTextField"]
 - !private ["Ps9AnyObject", "navigationController"]
 - ["Ps9AnyObject", "nextButton"]
 - ["Ps9AnyObject", "nextButtonPressed"]
@@ -156,7 +153,6 @@ depends-member:
 - !private ["Ps7CVarArg", "UIColor"]
 - !private ["Ps7CVarArg", "UIFont"]
 - ["Ps7CVarArg", "UIPickerView"]
-- !private ["Ps7CVarArg", "UIScreen"]
 - !private ["Ps7CVarArg", "UIStoryboard"]
 - !private ["Ps7CVarArg", "UserDefaults"]
 - ["Ps7CVarArg", "backButtonPressed"]
@@ -167,6 +163,7 @@ depends-member:
 - !private ["Ps7CVarArg", "borderWidth"]
 - !private ["Ps7CVarArg", "cgColor"]
 - ["Ps7CVarArg", "chapterData"]
+- ["Ps7CVarArg", "chapterLabel"]
 - ["Ps7CVarArg", "chapterTextField"]
 - !private ["Ps7CVarArg", "cornerRadius"]
 - ["Ps7CVarArg", "create"]
@@ -177,16 +174,13 @@ depends-member:
 - !private ["Ps7CVarArg", "endEditing"]
 - !private ["Ps7CVarArg", "font"]
 - !private ["Ps7CVarArg", "hideKeyboardWhenTappedAround"]
-- ["Ps7CVarArg", "imageView"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "instantiateViewController"]
 - !private ["Ps7CVarArg", "isEmpty"]
 - !private ["Ps7CVarArg", "isHidden"]
 - !private ["Ps7CVarArg", "isOnScreen"]
-- !private ["Ps7CVarArg", "isiPhone"]
 - !private ["Ps7CVarArg", "layer"]
 - !private ["Ps7CVarArg", "main"]
-- ["Ps7CVarArg", "nameTextField"]
 - !private ["Ps7CVarArg", "navigationController"]
 - ["Ps7CVarArg", "nextButton"]
 - ["Ps7CVarArg", "nextButtonPressed"]
@@ -230,14 +224,14 @@ depends-member:
 - ["C17HafsaInspectorApp27ChapterPickerViewController", "UIButton"]
 - !private ["C17HafsaInspectorApp27ChapterPickerViewController", "UIColor"]
 - !private ["C17HafsaInspectorApp27ChapterPickerViewController", "UIFont"]
-- ["C17HafsaInspectorApp27ChapterPickerViewController", "UIImageView"]
+- ["C17HafsaInspectorApp27ChapterPickerViewController", "UILabel"]
 - ["C17HafsaInspectorApp27ChapterPickerViewController", "UIPickerView"]
-- !private ["C17HafsaInspectorApp27ChapterPickerViewController", "UIScreen"]
 - !private ["C17HafsaInspectorApp27ChapterPickerViewController", "UIStoryboard"]
 - ["C17HafsaInspectorApp27ChapterPickerViewController", "UITextField"]
 - !private ["C17HafsaInspectorApp27ChapterPickerViewController", "UserDefaults"]
 - ["C17HafsaInspectorApp27ChapterPickerViewController", "backButtonPressed"]
 - ["C17HafsaInspectorApp27ChapterPickerViewController", "chapterData"]
+- ["C17HafsaInspectorApp27ChapterPickerViewController", "chapterLabel"]
 - ["C17HafsaInspectorApp27ChapterPickerViewController", "chapterTextField"]
 - ["C17HafsaInspectorApp27ChapterPickerViewController", "create"]
 - !private ["C17HafsaInspectorApp27ChapterPickerViewController", "createAlert"]
@@ -245,10 +239,8 @@ depends-member:
 - ["C17HafsaInspectorApp27ChapterPickerViewController", "delegate"]
 - ["C17HafsaInspectorApp27ChapterPickerViewController", "didGetChapterData"]
 - !private ["C17HafsaInspectorApp27ChapterPickerViewController", "hideKeyboardWhenTappedAround"]
-- ["C17HafsaInspectorApp27ChapterPickerViewController", "imageView"]
 - ["C17HafsaInspectorApp27ChapterPickerViewController", "init"]
 - !private ["C17HafsaInspectorApp27ChapterPickerViewController", "isOnScreen"]
-- ["C17HafsaInspectorApp27ChapterPickerViewController", "nameTextField"]
 - !private ["C17HafsaInspectorApp27ChapterPickerViewController", "navigationController"]
 - ["C17HafsaInspectorApp27ChapterPickerViewController", "nextButton"]
 - ["C17HafsaInspectorApp27ChapterPickerViewController", "nextButtonPressed"]
@@ -265,6 +257,7 @@ depends-member:
 - ["C17HafsaInspectorApp27ChapterPickerViewController", "textFieldShouldReturn"]
 - !private ["C17HafsaInspectorApp27ChapterPickerViewController", "view"]
 - ["C17HafsaInspectorApp27ChapterPickerViewController", "viewDidLoad"]
+- !private ["Vs9Character", "deinit"]
 - ["Ps10Collection", "init"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "isEmpty"]
@@ -276,7 +269,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - ["Ps28CustomDebugStringConvertible", "UIPickerView"]
-- !private ["Ps28CustomDebugStringConvertible", "UIScreen"]
 - !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
 - !private ["Ps28CustomDebugStringConvertible", "UserDefaults"]
 - ["Ps28CustomDebugStringConvertible", "backButtonPressed"]
@@ -287,6 +279,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "borderWidth"]
 - !private ["Ps28CustomDebugStringConvertible", "cgColor"]
 - ["Ps28CustomDebugStringConvertible", "chapterData"]
+- ["Ps28CustomDebugStringConvertible", "chapterLabel"]
 - ["Ps28CustomDebugStringConvertible", "chapterTextField"]
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
 - ["Ps28CustomDebugStringConvertible", "create"]
@@ -297,16 +290,13 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "endEditing"]
 - !private ["Ps28CustomDebugStringConvertible", "font"]
 - !private ["Ps28CustomDebugStringConvertible", "hideKeyboardWhenTappedAround"]
-- ["Ps28CustomDebugStringConvertible", "imageView"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "isEmpty"]
 - !private ["Ps28CustomDebugStringConvertible", "isHidden"]
 - !private ["Ps28CustomDebugStringConvertible", "isOnScreen"]
-- !private ["Ps28CustomDebugStringConvertible", "isiPhone"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
 - !private ["Ps28CustomDebugStringConvertible", "main"]
-- ["Ps28CustomDebugStringConvertible", "nameTextField"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
 - ["Ps28CustomDebugStringConvertible", "nextButton"]
 - ["Ps28CustomDebugStringConvertible", "nextButtonPressed"]
@@ -351,7 +341,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIFont"]
 - ["Ps23CustomStringConvertible", "UIPickerView"]
-- !private ["Ps23CustomStringConvertible", "UIScreen"]
 - !private ["Ps23CustomStringConvertible", "UIStoryboard"]
 - !private ["Ps23CustomStringConvertible", "UserDefaults"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
@@ -363,6 +352,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "borderWidth"]
 - !private ["Ps23CustomStringConvertible", "cgColor"]
 - ["Ps23CustomStringConvertible", "chapterData"]
+- ["Ps23CustomStringConvertible", "chapterLabel"]
 - ["Ps23CustomStringConvertible", "chapterTextField"]
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
 - ["Ps23CustomStringConvertible", "create"]
@@ -373,16 +363,13 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "endEditing"]
 - !private ["Ps23CustomStringConvertible", "font"]
 - !private ["Ps23CustomStringConvertible", "hideKeyboardWhenTappedAround"]
-- ["Ps23CustomStringConvertible", "imageView"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instantiateViewController"]
 - !private ["Ps23CustomStringConvertible", "isEmpty"]
 - !private ["Ps23CustomStringConvertible", "isHidden"]
 - !private ["Ps23CustomStringConvertible", "isOnScreen"]
-- !private ["Ps23CustomStringConvertible", "isiPhone"]
 - !private ["Ps23CustomStringConvertible", "layer"]
 - !private ["Ps23CustomStringConvertible", "main"]
-- ["Ps23CustomStringConvertible", "nameTextField"]
 - !private ["Ps23CustomStringConvertible", "navigationController"]
 - ["Ps23CustomStringConvertible", "nextButton"]
 - ["Ps23CustomStringConvertible", "nextButtonPressed"]
@@ -422,7 +409,6 @@ depends-member:
 - !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIFont"]
 - ["Ps9Equatable", "UIPickerView"]
-- !private ["Ps9Equatable", "UIScreen"]
 - !private ["Ps9Equatable", "UIStoryboard"]
 - !private ["Ps9Equatable", "UserDefaults"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
@@ -434,6 +420,7 @@ depends-member:
 - !private ["Ps9Equatable", "borderWidth"]
 - !private ["Ps9Equatable", "cgColor"]
 - ["Ps9Equatable", "chapterData"]
+- ["Ps9Equatable", "chapterLabel"]
 - ["Ps9Equatable", "chapterTextField"]
 - !private ["Ps9Equatable", "cornerRadius"]
 - ["Ps9Equatable", "create"]
@@ -444,17 +431,13 @@ depends-member:
 - !private ["Ps9Equatable", "endEditing"]
 - !private ["Ps9Equatable", "font"]
 - !private ["Ps9Equatable", "hideKeyboardWhenTappedAround"]
-- !private ["Ps9Equatable", "iPhone5"]
-- ["Ps9Equatable", "imageView"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instantiateViewController"]
 - !private ["Ps9Equatable", "isEmpty"]
 - !private ["Ps9Equatable", "isHidden"]
 - !private ["Ps9Equatable", "isOnScreen"]
-- !private ["Ps9Equatable", "isiPhone"]
 - !private ["Ps9Equatable", "layer"]
 - !private ["Ps9Equatable", "main"]
-- ["Ps9Equatable", "nameTextField"]
 - !private ["Ps9Equatable", "navigationController"]
 - ["Ps9Equatable", "nextButton"]
 - ["Ps9Equatable", "nextButtonPressed"]
@@ -495,6 +478,8 @@ depends-member:
 - !private ["Ps26ExpressibleByStringLiteral", "isEmpty"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "isEmpty"]
+- !private ["P12PDFGenerator19FilePathConvertible", "init"]
+- !private ["P12PDFGenerator19FilePathConvertible", "isEmpty"]
 - !private ["Sf", "deinit"]
 - !private ["C17HafsaInspectorApp9HIManager", "currentChapter"]
 - ["C17HafsaInspectorApp9HIManager", "deinit"]
@@ -513,7 +498,6 @@ depends-member:
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIFont"]
 - ["Ps8Hashable", "UIPickerView"]
-- !private ["Ps8Hashable", "UIScreen"]
 - !private ["Ps8Hashable", "UIStoryboard"]
 - !private ["Ps8Hashable", "UserDefaults"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
@@ -525,6 +509,7 @@ depends-member:
 - !private ["Ps8Hashable", "borderWidth"]
 - !private ["Ps8Hashable", "cgColor"]
 - ["Ps8Hashable", "chapterData"]
+- ["Ps8Hashable", "chapterLabel"]
 - ["Ps8Hashable", "chapterTextField"]
 - !private ["Ps8Hashable", "cornerRadius"]
 - ["Ps8Hashable", "create"]
@@ -535,17 +520,13 @@ depends-member:
 - !private ["Ps8Hashable", "endEditing"]
 - !private ["Ps8Hashable", "font"]
 - !private ["Ps8Hashable", "hideKeyboardWhenTappedAround"]
-- !private ["Ps8Hashable", "iPhone5"]
-- ["Ps8Hashable", "imageView"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instantiateViewController"]
 - !private ["Ps8Hashable", "isEmpty"]
 - !private ["Ps8Hashable", "isHidden"]
 - !private ["Ps8Hashable", "isOnScreen"]
-- !private ["Ps8Hashable", "isiPhone"]
 - !private ["Ps8Hashable", "layer"]
 - !private ["Ps8Hashable", "main"]
-- ["Ps8Hashable", "nameTextField"]
 - !private ["Ps8Hashable", "navigationController"]
 - ["Ps8Hashable", "nextButton"]
 - ["Ps8Hashable", "nextButtonPressed"]
@@ -580,6 +561,10 @@ depends-member:
 - ["Ps9Indexable", "init"]
 - ["Ps13IndexableBase", "init"]
 - !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps25LosslessStringConvertible", "isEmpty"]
@@ -596,7 +581,6 @@ depends-member:
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIFont"]
 - ["PSo8NSCoding", "UIPickerView"]
-- !private ["PSo8NSCoding", "UIScreen"]
 - !private ["PSo8NSCoding", "UIStoryboard"]
 - !private ["PSo8NSCoding", "UserDefaults"]
 - ["PSo8NSCoding", "backButtonPressed"]
@@ -606,6 +590,7 @@ depends-member:
 - !private ["PSo8NSCoding", "borderWidth"]
 - !private ["PSo8NSCoding", "cgColor"]
 - ["PSo8NSCoding", "chapterData"]
+- ["PSo8NSCoding", "chapterLabel"]
 - ["PSo8NSCoding", "chapterTextField"]
 - !private ["PSo8NSCoding", "cornerRadius"]
 - ["PSo8NSCoding", "create"]
@@ -615,13 +600,11 @@ depends-member:
 - !private ["PSo8NSCoding", "endEditing"]
 - !private ["PSo8NSCoding", "font"]
 - !private ["PSo8NSCoding", "hideKeyboardWhenTappedAround"]
-- ["PSo8NSCoding", "imageView"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "isEmpty"]
 - !private ["PSo8NSCoding", "isHidden"]
 - !private ["PSo8NSCoding", "isOnScreen"]
 - !private ["PSo8NSCoding", "layer"]
-- ["PSo8NSCoding", "nameTextField"]
 - !private ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "nextButton"]
 - ["PSo8NSCoding", "nextButtonPressed"]
@@ -660,21 +643,19 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - ["PSo26NSExtensionRequestHandling", "UIPickerView"]
-- !private ["PSo26NSExtensionRequestHandling", "UIScreen"]
 - !private ["PSo26NSExtensionRequestHandling", "UIStoryboard"]
 - !private ["PSo26NSExtensionRequestHandling", "UserDefaults"]
 - ["PSo26NSExtensionRequestHandling", "backButtonPressed"]
 - ["PSo26NSExtensionRequestHandling", "chapterData"]
+- ["PSo26NSExtensionRequestHandling", "chapterLabel"]
 - ["PSo26NSExtensionRequestHandling", "chapterTextField"]
 - ["PSo26NSExtensionRequestHandling", "create"]
 - !private ["PSo26NSExtensionRequestHandling", "createAlert"]
 - ["PSo26NSExtensionRequestHandling", "delegate"]
 - ["PSo26NSExtensionRequestHandling", "didGetChapterData"]
 - !private ["PSo26NSExtensionRequestHandling", "hideKeyboardWhenTappedAround"]
-- ["PSo26NSExtensionRequestHandling", "imageView"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "isOnScreen"]
-- ["PSo26NSExtensionRequestHandling", "nameTextField"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "nextButton"]
 - ["PSo26NSExtensionRequestHandling", "nextButtonPressed"]
@@ -708,9 +689,8 @@ depends-member:
 - ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIFont"]
-- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UIPickerView"]
-- !private ["CSo8NSObject", "UIScreen"]
 - !private ["CSo8NSObject", "UIStoryboard"]
 - ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "UserDefaults"]
@@ -722,6 +702,7 @@ depends-member:
 - !private ["CSo8NSObject", "borderWidth"]
 - !private ["CSo8NSObject", "cgColor"]
 - ["CSo8NSObject", "chapterData"]
+- ["CSo8NSObject", "chapterLabel"]
 - ["CSo8NSObject", "chapterTextField"]
 - !private ["CSo8NSObject", "cornerRadius"]
 - ["CSo8NSObject", "create"]
@@ -732,16 +713,13 @@ depends-member:
 - !private ["CSo8NSObject", "endEditing"]
 - !private ["CSo8NSObject", "font"]
 - !private ["CSo8NSObject", "hideKeyboardWhenTappedAround"]
-- ["CSo8NSObject", "imageView"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiateViewController"]
 - !private ["CSo8NSObject", "isEmpty"]
 - !private ["CSo8NSObject", "isHidden"]
 - !private ["CSo8NSObject", "isOnScreen"]
-- !private ["CSo8NSObject", "isiPhone"]
 - !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "main"]
-- ["CSo8NSObject", "nameTextField"]
 - !private ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "nextButton"]
 - ["CSo8NSObject", "nextButtonPressed"]
@@ -779,7 +757,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - ["PSo16NSObjectProtocol", "UIPickerView"]
-- !private ["PSo16NSObjectProtocol", "UIScreen"]
 - !private ["PSo16NSObjectProtocol", "UIStoryboard"]
 - !private ["PSo16NSObjectProtocol", "UserDefaults"]
 - ["PSo16NSObjectProtocol", "backButtonPressed"]
@@ -790,6 +767,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "borderWidth"]
 - !private ["PSo16NSObjectProtocol", "cgColor"]
 - ["PSo16NSObjectProtocol", "chapterData"]
+- ["PSo16NSObjectProtocol", "chapterLabel"]
 - ["PSo16NSObjectProtocol", "chapterTextField"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - ["PSo16NSObjectProtocol", "create"]
@@ -800,16 +778,13 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "endEditing"]
 - !private ["PSo16NSObjectProtocol", "font"]
 - !private ["PSo16NSObjectProtocol", "hideKeyboardWhenTappedAround"]
-- ["PSo16NSObjectProtocol", "imageView"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instantiateViewController"]
 - !private ["PSo16NSObjectProtocol", "isEmpty"]
 - !private ["PSo16NSObjectProtocol", "isHidden"]
 - !private ["PSo16NSObjectProtocol", "isOnScreen"]
-- !private ["PSo16NSObjectProtocol", "isiPhone"]
 - !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "main"]
-- ["PSo16NSObjectProtocol", "nameTextField"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "nextButton"]
 - ["PSo16NSObjectProtocol", "nextButtonPressed"]
@@ -849,6 +824,19 @@ depends-member:
 - !private ["CSo8NSString", "init"]
 - !private ["CSo8NSString", "isEmpty"]
 - ["Sq", "deinit"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "backgroundColor"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "delegate"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "endEditing"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "font"]
+- ["P12PDFGenerator17PDFPageRenderable", "init"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "isHidden"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "layer"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "placeholder"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "setupChapterPicker"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "text"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "textColor"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "tintColor"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "titleLabel"]
 - ["Ps22RandomAccessCollection", "init"]
 - ["Ps21RandomAccessIndexable", "init"]
 - ["Ps26RangeReplaceableCollection", "init"]
@@ -898,12 +886,12 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - ["PSo21UIAppearanceContainer", "UIPickerView"]
-- !private ["PSo21UIAppearanceContainer", "UIScreen"]
 - !private ["PSo21UIAppearanceContainer", "UIStoryboard"]
 - !private ["PSo21UIAppearanceContainer", "UserDefaults"]
 - ["PSo21UIAppearanceContainer", "backButtonPressed"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - ["PSo21UIAppearanceContainer", "chapterData"]
+- ["PSo21UIAppearanceContainer", "chapterLabel"]
 - ["PSo21UIAppearanceContainer", "chapterTextField"]
 - ["PSo21UIAppearanceContainer", "create"]
 - !private ["PSo21UIAppearanceContainer", "createAlert"]
@@ -912,12 +900,10 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "endEditing"]
 - !private ["PSo21UIAppearanceContainer", "font"]
 - !private ["PSo21UIAppearanceContainer", "hideKeyboardWhenTappedAround"]
-- ["PSo21UIAppearanceContainer", "imageView"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "isHidden"]
 - !private ["PSo21UIAppearanceContainer", "isOnScreen"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
-- ["PSo21UIAppearanceContainer", "nameTextField"]
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "nextButton"]
 - ["PSo21UIAppearanceContainer", "nextButtonPressed"]
@@ -959,21 +945,19 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIFont"]
 - ["PSo18UIContentContainer", "UIPickerView"]
-- !private ["PSo18UIContentContainer", "UIScreen"]
 - !private ["PSo18UIContentContainer", "UIStoryboard"]
 - !private ["PSo18UIContentContainer", "UserDefaults"]
 - ["PSo18UIContentContainer", "backButtonPressed"]
 - ["PSo18UIContentContainer", "chapterData"]
+- ["PSo18UIContentContainer", "chapterLabel"]
 - ["PSo18UIContentContainer", "chapterTextField"]
 - ["PSo18UIContentContainer", "create"]
 - !private ["PSo18UIContentContainer", "createAlert"]
 - ["PSo18UIContentContainer", "delegate"]
 - ["PSo18UIContentContainer", "didGetChapterData"]
 - !private ["PSo18UIContentContainer", "hideKeyboardWhenTappedAround"]
-- ["PSo18UIContentContainer", "imageView"]
 - !private ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "isOnScreen"]
-- ["PSo18UIContentContainer", "nameTextField"]
 - !private ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "nextButton"]
 - ["PSo18UIContentContainer", "nextButtonPressed"]
@@ -1040,12 +1024,12 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
 - ["PSo18UIFocusEnvironment", "UIPickerView"]
-- !private ["PSo18UIFocusEnvironment", "UIScreen"]
 - !private ["PSo18UIFocusEnvironment", "UIStoryboard"]
 - !private ["PSo18UIFocusEnvironment", "UserDefaults"]
 - ["PSo18UIFocusEnvironment", "backButtonPressed"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - ["PSo18UIFocusEnvironment", "chapterData"]
+- ["PSo18UIFocusEnvironment", "chapterLabel"]
 - ["PSo18UIFocusEnvironment", "chapterTextField"]
 - ["PSo18UIFocusEnvironment", "create"]
 - !private ["PSo18UIFocusEnvironment", "createAlert"]
@@ -1054,12 +1038,10 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "endEditing"]
 - !private ["PSo18UIFocusEnvironment", "font"]
 - !private ["PSo18UIFocusEnvironment", "hideKeyboardWhenTappedAround"]
-- ["PSo18UIFocusEnvironment", "imageView"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "isHidden"]
 - !private ["PSo18UIFocusEnvironment", "isOnScreen"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
-- ["PSo18UIFocusEnvironment", "nameTextField"]
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "nextButton"]
 - ["PSo18UIFocusEnvironment", "nextButtonPressed"]
@@ -1098,13 +1080,15 @@ depends-member:
 - !private ["PSo11UIFocusItem", "tintColor"]
 - !private ["PSo11UIFocusItem", "titleLabel"]
 - !private ["CSo6UIFont", "init"]
-- !private ["CSo11UIImageView", "isHidden"]
+- !private ["P12PDFGenerator18UIImageConvertible", "init"]
+- !private ["P12PDFGenerator18UIImageConvertible", "isEmpty"]
 - !private ["PSo10UIKeyInput", "delegate"]
 - !private ["PSo10UIKeyInput", "placeholder"]
 - !private ["PSo10UIKeyInput", "setupChapterPicker"]
 - !private ["PSo10UIKeyInput", "text"]
 - ["CSo7UILabel", "deinit"]
 - !private ["CSo7UILabel", "font"]
+- !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textColor"]
 - ["CSo22UINavigationController", "deinit"]
 - !private ["CSo22UINavigationController", "popViewController"]
@@ -1130,15 +1114,15 @@ depends-member:
 - ["CSo11UIResponder", "UIButton"]
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIFont"]
-- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UIPickerView"]
-- !private ["CSo11UIResponder", "UIScreen"]
 - !private ["CSo11UIResponder", "UIStoryboard"]
 - ["CSo11UIResponder", "UITextField"]
 - !private ["CSo11UIResponder", "UserDefaults"]
 - ["CSo11UIResponder", "backButtonPressed"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - ["CSo11UIResponder", "chapterData"]
+- ["CSo11UIResponder", "chapterLabel"]
 - ["CSo11UIResponder", "chapterTextField"]
 - ["CSo11UIResponder", "create"]
 - !private ["CSo11UIResponder", "createAlert"]
@@ -1147,12 +1131,10 @@ depends-member:
 - !private ["CSo11UIResponder", "endEditing"]
 - !private ["CSo11UIResponder", "font"]
 - !private ["CSo11UIResponder", "hideKeyboardWhenTappedAround"]
-- ["CSo11UIResponder", "imageView"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "isHidden"]
 - !private ["CSo11UIResponder", "isOnScreen"]
 - !private ["CSo11UIResponder", "layer"]
-- ["CSo11UIResponder", "nameTextField"]
 - !private ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "nextButton"]
 - ["CSo11UIResponder", "nextButtonPressed"]
@@ -1183,12 +1165,12 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "UIFont"]
 - ["PSo30UIResponderStandardEditActions", "UIPickerView"]
-- !private ["PSo30UIResponderStandardEditActions", "UIScreen"]
 - !private ["PSo30UIResponderStandardEditActions", "UIStoryboard"]
 - !private ["PSo30UIResponderStandardEditActions", "UserDefaults"]
 - ["PSo30UIResponderStandardEditActions", "backButtonPressed"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
 - ["PSo30UIResponderStandardEditActions", "chapterData"]
+- ["PSo30UIResponderStandardEditActions", "chapterLabel"]
 - ["PSo30UIResponderStandardEditActions", "chapterTextField"]
 - ["PSo30UIResponderStandardEditActions", "create"]
 - !private ["PSo30UIResponderStandardEditActions", "createAlert"]
@@ -1197,12 +1179,10 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "endEditing"]
 - !private ["PSo30UIResponderStandardEditActions", "font"]
 - !private ["PSo30UIResponderStandardEditActions", "hideKeyboardWhenTappedAround"]
-- ["PSo30UIResponderStandardEditActions", "imageView"]
 - ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "isHidden"]
 - !private ["PSo30UIResponderStandardEditActions", "isOnScreen"]
 - !private ["PSo30UIResponderStandardEditActions", "layer"]
-- ["PSo30UIResponderStandardEditActions", "nameTextField"]
 - !private ["PSo30UIResponderStandardEditActions", "navigationController"]
 - ["PSo30UIResponderStandardEditActions", "nextButton"]
 - ["PSo30UIResponderStandardEditActions", "nextButtonPressed"]
@@ -1227,7 +1207,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "view"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
-- !private ["CSo8UIScreen", "isiPhone"]
 - !private ["PSo16UIStateRestoring", "Bundle"]
 - ["PSo16UIStateRestoring", "HIManager"]
 - ["PSo16UIStateRestoring", "HImanager"]
@@ -1235,21 +1214,19 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
 - ["PSo16UIStateRestoring", "UIPickerView"]
-- !private ["PSo16UIStateRestoring", "UIScreen"]
 - !private ["PSo16UIStateRestoring", "UIStoryboard"]
 - !private ["PSo16UIStateRestoring", "UserDefaults"]
 - ["PSo16UIStateRestoring", "backButtonPressed"]
 - ["PSo16UIStateRestoring", "chapterData"]
+- ["PSo16UIStateRestoring", "chapterLabel"]
 - ["PSo16UIStateRestoring", "chapterTextField"]
 - ["PSo16UIStateRestoring", "create"]
 - !private ["PSo16UIStateRestoring", "createAlert"]
 - ["PSo16UIStateRestoring", "delegate"]
 - ["PSo16UIStateRestoring", "didGetChapterData"]
 - !private ["PSo16UIStateRestoring", "hideKeyboardWhenTappedAround"]
-- ["PSo16UIStateRestoring", "imageView"]
 - !private ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "isOnScreen"]
-- ["PSo16UIStateRestoring", "nameTextField"]
 - !private ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "nextButton"]
 - ["PSo16UIStateRestoring", "nextButtonPressed"]
@@ -1283,16 +1260,14 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "UIColor"]
 - !private ["PSo19UITextFieldDelegate", "UIFont"]
 - ["PSo19UITextFieldDelegate", "UIPickerView"]
-- !private ["PSo19UITextFieldDelegate", "UIScreen"]
 - !private ["PSo19UITextFieldDelegate", "UIStoryboard"]
 - !private ["PSo19UITextFieldDelegate", "UserDefaults"]
+- !private ["PSo19UITextFieldDelegate", "chapterLabel"]
 - !private ["PSo19UITextFieldDelegate", "chapterTextField"]
 - !private ["PSo19UITextFieldDelegate", "createAlert"]
 - !private ["PSo19UITextFieldDelegate", "delegate"]
 - !private ["PSo19UITextFieldDelegate", "hideKeyboardWhenTappedAround"]
-- !private ["PSo19UITextFieldDelegate", "imageView"]
 - !private ["PSo19UITextFieldDelegate", "isOnScreen"]
-- !private ["PSo19UITextFieldDelegate", "nameTextField"]
 - !private ["PSo19UITextFieldDelegate", "navigationController"]
 - !private ["PSo19UITextFieldDelegate", "nextButton"]
 - !private ["PSo19UITextFieldDelegate", "saveData"]
@@ -1322,12 +1297,12 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - ["PSo18UITraitEnvironment", "UIPickerView"]
-- !private ["PSo18UITraitEnvironment", "UIScreen"]
 - !private ["PSo18UITraitEnvironment", "UIStoryboard"]
 - !private ["PSo18UITraitEnvironment", "UserDefaults"]
 - ["PSo18UITraitEnvironment", "backButtonPressed"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - ["PSo18UITraitEnvironment", "chapterData"]
+- ["PSo18UITraitEnvironment", "chapterLabel"]
 - ["PSo18UITraitEnvironment", "chapterTextField"]
 - ["PSo18UITraitEnvironment", "create"]
 - !private ["PSo18UITraitEnvironment", "createAlert"]
@@ -1336,13 +1311,10 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "endEditing"]
 - !private ["PSo18UITraitEnvironment", "font"]
 - !private ["PSo18UITraitEnvironment", "hideKeyboardWhenTappedAround"]
-- ["PSo18UITraitEnvironment", "imageView"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "isHidden"]
 - !private ["PSo18UITraitEnvironment", "isOnScreen"]
-- !private ["PSo18UITraitEnvironment", "isiPhone"]
 - !private ["PSo18UITraitEnvironment", "layer"]
-- ["PSo18UITraitEnvironment", "nameTextField"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "nextButton"]
 - ["PSo18UITraitEnvironment", "nextButtonPressed"]
@@ -1392,14 +1364,14 @@ depends-member:
 - ["CSo16UIViewController", "UIButton"]
 - !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIFont"]
-- ["CSo16UIViewController", "UIImageView"]
+- ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UIPickerView"]
-- !private ["CSo16UIViewController", "UIScreen"]
 - !private ["CSo16UIViewController", "UIStoryboard"]
 - ["CSo16UIViewController", "UITextField"]
 - !private ["CSo16UIViewController", "UserDefaults"]
 - ["CSo16UIViewController", "backButtonPressed"]
 - ["CSo16UIViewController", "chapterData"]
+- ["CSo16UIViewController", "chapterLabel"]
 - ["CSo16UIViewController", "chapterTextField"]
 - ["CSo16UIViewController", "create"]
 - !private ["CSo16UIViewController", "createAlert"]
@@ -1407,10 +1379,8 @@ depends-member:
 - ["CSo16UIViewController", "delegate"]
 - ["CSo16UIViewController", "didGetChapterData"]
 - !private ["CSo16UIViewController", "hideKeyboardWhenTappedAround"]
-- ["CSo16UIViewController", "imageView"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "isOnScreen"]
-- ["CSo16UIViewController", "nameTextField"]
 - !private ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "nextButton"]
 - ["CSo16UIViewController", "nextButtonPressed"]
@@ -1429,7 +1399,13 @@ depends-member:
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
 - !private ["V10Foundation3URL", "deinit"]
+- !private ["Sc", "deinit"]
 - !private ["CSo12UserDefaults", "bool"]
 - ["CSo12UserDefaults", "deinit"]
 - !private ["CSo12UserDefaults", "set"]
@@ -1442,21 +1418,19 @@ depends-member:
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "UIColor"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "UIFont"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "UIPickerView"]
-- !private ["P17HafsaInspectorApp23ViewControllerContainer", "UIScreen"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "UIStoryboard"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "UserDefaults"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "backButtonPressed"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "chapterData"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "chapterLabel"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "chapterTextField"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "create"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "createAlert"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "delegate"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "didGetChapterData"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "hideKeyboardWhenTappedAround"]
-- ["P17HafsaInspectorApp23ViewControllerContainer", "imageView"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "init"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "isOnScreen"]
-- ["P17HafsaInspectorApp23ViewControllerContainer", "nameTextField"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "navigationController"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "nextButton"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "nextButtonPressed"]
@@ -1513,7 +1487,6 @@ depends-member:
 - !private ["Ps9_Hashable", "UIColor"]
 - !private ["Ps9_Hashable", "UIFont"]
 - ["Ps9_Hashable", "UIPickerView"]
-- !private ["Ps9_Hashable", "UIScreen"]
 - !private ["Ps9_Hashable", "UIStoryboard"]
 - !private ["Ps9_Hashable", "UserDefaults"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
@@ -1525,6 +1498,7 @@ depends-member:
 - !private ["Ps9_Hashable", "borderWidth"]
 - !private ["Ps9_Hashable", "cgColor"]
 - ["Ps9_Hashable", "chapterData"]
+- ["Ps9_Hashable", "chapterLabel"]
 - ["Ps9_Hashable", "chapterTextField"]
 - !private ["Ps9_Hashable", "cornerRadius"]
 - ["Ps9_Hashable", "create"]
@@ -1535,17 +1509,13 @@ depends-member:
 - !private ["Ps9_Hashable", "endEditing"]
 - !private ["Ps9_Hashable", "font"]
 - !private ["Ps9_Hashable", "hideKeyboardWhenTappedAround"]
-- !private ["Ps9_Hashable", "iPhone5"]
-- ["Ps9_Hashable", "imageView"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "instantiateViewController"]
 - !private ["Ps9_Hashable", "isEmpty"]
 - !private ["Ps9_Hashable", "isHidden"]
 - !private ["Ps9_Hashable", "isOnScreen"]
-- !private ["Ps9_Hashable", "isiPhone"]
 - !private ["Ps9_Hashable", "layer"]
 - !private ["Ps9_Hashable", "main"]
-- ["Ps9_Hashable", "nameTextField"]
 - !private ["Ps9_Hashable", "navigationController"]
 - ["Ps9_Hashable", "nextButton"]
 - ["Ps9_Hashable", "nextButtonPressed"]
@@ -1579,8 +1549,6 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "isEmpty"]
-- ["OE17HafsaInspectorAppCSo8UIScreen6iPhone", "deinit"]
-- !private ["OE17HafsaInspectorAppCSo8UIScreen6iPhone", "iPhone5"]
 depends-nominal:
 - "Ps9AnyObject"
 - "Sa"
@@ -1596,6 +1564,7 @@ depends-nominal:
 - "Ps7CVarArg"
 - "P17HafsaInspectorApp21ChapterPickerDelegate"
 - "C17HafsaInspectorApp27ChapterPickerViewController"
+- !private "Vs9Character"
 - "Ps10Collection"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
@@ -1610,6 +1579,7 @@ depends-nominal:
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "P12PDFGenerator19FilePathConvertible"
 - !private "Sf"
 - "C17HafsaInspectorApp9HIManager"
 - !private "C17HafsaInspectorApp11HITextField"
@@ -1618,6 +1588,10 @@ depends-nominal:
 - "Ps9Indexable"
 - "Ps13IndexableBase"
 - !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
 - "Ps17MutableCollection"
@@ -1632,6 +1606,7 @@ depends-nominal:
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - "Sq"
+- "P12PDFGenerator17PDFPageRenderable"
 - "Ps22RandomAccessCollection"
 - "Ps21RandomAccessIndexable"
 - "Ps26RangeReplaceableCollection"
@@ -1654,7 +1629,7 @@ depends-nominal:
 - "PSo18UIFocusEnvironment"
 - "PSo11UIFocusItem"
 - !private "CSo6UIFont"
-- !private "CSo11UIImageView"
+- !private "P12PDFGenerator18UIImageConvertible"
 - !private "PSo10UIKeyInput"
 - "CSo7UILabel"
 - "CSo22UINavigationController"
@@ -1663,7 +1638,6 @@ depends-nominal:
 - !private "PSo20UIPickerViewDelegate"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
-- !private "CSo8UIScreen"
 - "PSo16UIStateRestoring"
 - "CSo12UIStoryboard"
 - "CSo11UITextField"
@@ -1673,7 +1647,13 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
 - "CSo16UIViewController"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
 - !private "V10Foundation3URL"
+- !private "Sc"
 - "CSo12UserDefaults"
 - "P17HafsaInspectorApp23ViewControllerContainer"
 - "Ps14_ArrayProtocol"
@@ -1688,7 +1668,6 @@ depends-nominal:
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - "Ps21_ObjectiveCBridgeable"
-- "OE17HafsaInspectorAppCSo8UIScreen6iPhone"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -1705,11 +1684,49 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTaskSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageUploadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageMetadata.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageObservableTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageDownloadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRMutableData.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/Firebase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/PDFGenerator.swiftmodule/x86_64.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "3430bbc0b88d973a206a5c20b48677fc"
+interface-hash: "b5098ddcac5fa51bee4ba0ce40a287b7"

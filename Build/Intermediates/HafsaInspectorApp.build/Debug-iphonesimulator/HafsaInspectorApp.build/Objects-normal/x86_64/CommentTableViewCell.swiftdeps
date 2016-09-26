@@ -6,18 +6,18 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp20CommentTableViewCell", ""]
 provides-dynamic-lookup:
-- "configureCommentTableViewCell"
 - "textView"
+- "configureCommentTableViewCell"
 depends-top-level:
-- "UITableViewCell"
-- !private "UIColor"
 - "CommentTableViewCell"
+- "UITableViewCell"
 - "AssignmentPrecedence"
+- !private "UIColor"
 - !private "/"
-- !private "StringLiteralType"
 - !private "RPFloatingPlaceholderAnimationOptions"
-- "RPFloatingPlaceholderTextView"
+- !private "StringLiteralType"
 - !private "UIFont"
+- "RPFloatingPlaceholderTextView"
 depends-member:
 - !private ["Ps9AnyObject", "RPFloatingPlaceholderAnimationOptions"]
 - !private ["Ps9AnyObject", "UIColor"]
@@ -31,9 +31,7 @@ depends-member:
 - !private ["Ps9AnyObject", "floatingLabelInactiveTextColor"]
 - !private ["Ps9AnyObject", "font"]
 - !private ["Ps9AnyObject", "gray"]
-- !private ["Ps9AnyObject", "hideKeyboardWhenTappedAround"]
 - !private ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "parentViewController"]
 - !private ["Ps9AnyObject", "placeholder"]
 - ["Ps9AnyObject", "textView"]
 - ["Ps9AnyObject", ""]
@@ -48,7 +46,6 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "floatingLabelInactiveTextColor"]
 - !private ["PSo15CALayerDelegate", "font"]
 - !private ["PSo15CALayerDelegate", "init"]
-- !private ["PSo15CALayerDelegate", "parentViewController"]
 - !private ["PSo15CALayerDelegate", "placeholder"]
 - ["PSo15CALayerDelegate", "textView"]
 - ["PSo15CALayerDelegate", ""]
@@ -65,9 +62,7 @@ depends-member:
 - !private ["Ps7CVarArg", "floatingLabelInactiveTextColor"]
 - !private ["Ps7CVarArg", "font"]
 - !private ["Ps7CVarArg", "gray"]
-- !private ["Ps7CVarArg", "hideKeyboardWhenTappedAround"]
 - !private ["Ps7CVarArg", "init"]
-- !private ["Ps7CVarArg", "parentViewController"]
 - !private ["Ps7CVarArg", "placeholder"]
 - ["Ps7CVarArg", "textView"]
 - ["Ps7CVarArg", ""]
@@ -78,7 +73,6 @@ depends-member:
 - ["C17HafsaInspectorApp20CommentTableViewCell", "configureCommentTableViewCell"]
 - ["C17HafsaInspectorApp20CommentTableViewCell", "deinit"]
 - ["C17HafsaInspectorApp20CommentTableViewCell", "init"]
-- !private ["C17HafsaInspectorApp20CommentTableViewCell", "parentViewController"]
 - ["C17HafsaInspectorApp20CommentTableViewCell", "textView"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "RPFloatingPlaceholderAnimationOptions"]
@@ -93,9 +87,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "floatingLabelInactiveTextColor"]
 - !private ["Ps28CustomDebugStringConvertible", "font"]
 - !private ["Ps28CustomDebugStringConvertible", "gray"]
-- !private ["Ps28CustomDebugStringConvertible", "hideKeyboardWhenTappedAround"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "parentViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "placeholder"]
 - ["Ps28CustomDebugStringConvertible", "textView"]
 - ["Ps28CustomDebugStringConvertible", ""]
@@ -113,9 +105,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "floatingLabelInactiveTextColor"]
 - !private ["Ps23CustomStringConvertible", "font"]
 - !private ["Ps23CustomStringConvertible", "gray"]
-- !private ["Ps23CustomStringConvertible", "hideKeyboardWhenTappedAround"]
 - !private ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "parentViewController"]
 - !private ["Ps23CustomStringConvertible", "placeholder"]
 - ["Ps23CustomStringConvertible", "textView"]
 - ["Ps23CustomStringConvertible", ""]
@@ -132,9 +122,7 @@ depends-member:
 - !private ["Ps9Equatable", "floatingLabelInactiveTextColor"]
 - !private ["Ps9Equatable", "font"]
 - !private ["Ps9Equatable", "gray"]
-- !private ["Ps9Equatable", "hideKeyboardWhenTappedAround"]
 - !private ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "parentViewController"]
 - !private ["Ps9Equatable", "placeholder"]
 - ["Ps9Equatable", "textView"]
 - ["Ps9Equatable", ""]
@@ -142,6 +130,7 @@ depends-member:
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["P12PDFGenerator19FilePathConvertible", "init"]
 - !private ["Ps8Hashable", "RPFloatingPlaceholderAnimationOptions"]
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIFont"]
@@ -155,9 +144,7 @@ depends-member:
 - !private ["Ps8Hashable", "floatingLabelInactiveTextColor"]
 - !private ["Ps8Hashable", "font"]
 - !private ["Ps8Hashable", "gray"]
-- !private ["Ps8Hashable", "hideKeyboardWhenTappedAround"]
 - !private ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "parentViewController"]
 - !private ["Ps8Hashable", "placeholder"]
 - ["Ps8Hashable", "textView"]
 - ["Ps8Hashable", ""]
@@ -177,16 +164,13 @@ depends-member:
 - !private ["PSo8NSCoding", "floatingLabelInactiveTextColor"]
 - !private ["PSo8NSCoding", "font"]
 - !private ["PSo8NSCoding", "gray"]
-- !private ["PSo8NSCoding", "hideKeyboardWhenTappedAround"]
 - !private ["PSo8NSCoding", "init"]
-- !private ["PSo8NSCoding", "parentViewController"]
 - !private ["PSo8NSCoding", "placeholder"]
 - ["PSo8NSCoding", "textView"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "black"]
 - !private ["PSo9NSCopying", "gray"]
 - !private ["PSo9NSCopying", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "hideKeyboardWhenTappedAround"]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "RPFloatingPlaceholderAnimationOptions"]
 - ["CSo8NSObject", "RPFloatingPlaceholderTextView"]
@@ -201,9 +185,7 @@ depends-member:
 - !private ["CSo8NSObject", "floatingLabelInactiveTextColor"]
 - !private ["CSo8NSObject", "font"]
 - !private ["CSo8NSObject", "gray"]
-- !private ["CSo8NSObject", "hideKeyboardWhenTappedAround"]
 - ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "parentViewController"]
 - !private ["CSo8NSObject", "placeholder"]
 - ["CSo8NSObject", "textView"]
 - !private ["PSo16NSObjectProtocol", "RPFloatingPlaceholderAnimationOptions"]
@@ -218,9 +200,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "floatingLabelInactiveTextColor"]
 - !private ["PSo16NSObjectProtocol", "font"]
 - !private ["PSo16NSObjectProtocol", "gray"]
-- !private ["PSo16NSObjectProtocol", "hideKeyboardWhenTappedAround"]
 - !private ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "parentViewController"]
 - !private ["PSo16NSObjectProtocol", "placeholder"]
 - ["PSo16NSObjectProtocol", "textView"]
 - ["PSo16NSObjectProtocol", ""]
@@ -229,6 +209,20 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "RPFloatingPlaceholderAnimationOptions"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "UIColor"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "UIFont"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "animationDirection"]
+- ["P12PDFGenerator17PDFPageRenderable", "configureCommentTableViewCell"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "defaultPlaceholderColor"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "floatingLabel"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "floatingLabelActiveTextColor"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "floatingLabelInactiveTextColor"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "font"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "init"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "placeholder"]
+- ["P12PDFGenerator17PDFPageRenderable", "textView"]
+- ["P12PDFGenerator17PDFPageRenderable", ""]
 - !private ["OSC37RPFloatingPlaceholderAnimationOptions", "animateUpward"]
 - ["OSC37RPFloatingPlaceholderAnimationOptions", "deinit"]
 - !private ["CSo29RPFloatingPlaceholderTextView", "animationDirection"]
@@ -254,7 +248,6 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "floatingLabelInactiveTextColor"]
 - !private ["PSo29UIAccessibilityIdentification", "font"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
-- !private ["PSo29UIAccessibilityIdentification", "parentViewController"]
 - !private ["PSo29UIAccessibilityIdentification", "placeholder"]
 - ["PSo29UIAccessibilityIdentification", "textView"]
 - ["PSo29UIAccessibilityIdentification", ""]
@@ -269,7 +262,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "floatingLabelInactiveTextColor"]
 - !private ["PSo12UIAppearance", "font"]
 - !private ["PSo12UIAppearance", "init"]
-- !private ["PSo12UIAppearance", "parentViewController"]
 - !private ["PSo12UIAppearance", "placeholder"]
 - ["PSo12UIAppearance", "textView"]
 - ["PSo12UIAppearance", ""]
@@ -283,9 +275,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "floatingLabelActiveTextColor"]
 - !private ["PSo21UIAppearanceContainer", "floatingLabelInactiveTextColor"]
 - !private ["PSo21UIAppearanceContainer", "font"]
-- !private ["PSo21UIAppearanceContainer", "hideKeyboardWhenTappedAround"]
 - !private ["PSo21UIAppearanceContainer", "init"]
-- !private ["PSo21UIAppearanceContainer", "parentViewController"]
 - !private ["PSo21UIAppearanceContainer", "placeholder"]
 - ["PSo21UIAppearanceContainer", "textView"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -293,7 +283,6 @@ depends-member:
 - ["CSo7UIColor", "deinit"]
 - !private ["CSo7UIColor", "gray"]
 - !private ["CSo7UIColor", "init"]
-- !private ["PSo18UIContentContainer", "hideKeyboardWhenTappedAround"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "animationDirection"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "defaultPlaceholderColor"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "floatingLabel"]
@@ -312,7 +301,6 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "floatingLabelInactiveTextColor"]
 - !private ["PSo17UICoordinateSpace", "font"]
 - !private ["PSo17UICoordinateSpace", "init"]
-- !private ["PSo17UICoordinateSpace", "parentViewController"]
 - !private ["PSo17UICoordinateSpace", "placeholder"]
 - ["PSo17UICoordinateSpace", "textView"]
 - ["PSo17UICoordinateSpace", ""]
@@ -327,7 +315,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "floatingLabelInactiveTextColor"]
 - !private ["PSo13UIDynamicItem", "font"]
 - !private ["PSo13UIDynamicItem", "init"]
-- !private ["PSo13UIDynamicItem", "parentViewController"]
 - !private ["PSo13UIDynamicItem", "placeholder"]
 - ["PSo13UIDynamicItem", "textView"]
 - ["PSo13UIDynamicItem", ""]
@@ -341,9 +328,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "floatingLabelActiveTextColor"]
 - !private ["PSo18UIFocusEnvironment", "floatingLabelInactiveTextColor"]
 - !private ["PSo18UIFocusEnvironment", "font"]
-- !private ["PSo18UIFocusEnvironment", "hideKeyboardWhenTappedAround"]
 - !private ["PSo18UIFocusEnvironment", "init"]
-- !private ["PSo18UIFocusEnvironment", "parentViewController"]
 - !private ["PSo18UIFocusEnvironment", "placeholder"]
 - ["PSo18UIFocusEnvironment", "textView"]
 - ["PSo18UIFocusEnvironment", ""]
@@ -358,7 +343,6 @@ depends-member:
 - !private ["PSo11UIFocusItem", "floatingLabelInactiveTextColor"]
 - !private ["PSo11UIFocusItem", "font"]
 - !private ["PSo11UIFocusItem", "init"]
-- !private ["PSo11UIFocusItem", "parentViewController"]
 - !private ["PSo11UIFocusItem", "placeholder"]
 - ["PSo11UIFocusItem", "textView"]
 - ["PSo11UIFocusItem", ""]
@@ -368,9 +352,9 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "UIFont"]
 - ["PSo27UIGestureRecognizerDelegate", "configureCommentTableViewCell"]
 - !private ["PSo27UIGestureRecognizerDelegate", "init"]
-- !private ["PSo27UIGestureRecognizerDelegate", "parentViewController"]
 - ["PSo27UIGestureRecognizerDelegate", "textView"]
 - ["PSo27UIGestureRecognizerDelegate", ""]
+- !private ["P12PDFGenerator18UIImageConvertible", "init"]
 - !private ["PSo10UIKeyInput", "animationDirection"]
 - !private ["PSo10UIKeyInput", "defaultPlaceholderColor"]
 - !private ["PSo10UIKeyInput", "floatingLabel"]
@@ -390,9 +374,7 @@ depends-member:
 - !private ["CSo11UIResponder", "floatingLabelActiveTextColor"]
 - !private ["CSo11UIResponder", "floatingLabelInactiveTextColor"]
 - !private ["CSo11UIResponder", "font"]
-- !private ["CSo11UIResponder", "hideKeyboardWhenTappedAround"]
 - ["CSo11UIResponder", "init"]
-- !private ["CSo11UIResponder", "parentViewController"]
 - !private ["CSo11UIResponder", "placeholder"]
 - ["CSo11UIResponder", "textView"]
 - !private ["PSo30UIResponderStandardEditActions", "RPFloatingPlaceholderAnimationOptions"]
@@ -405,9 +387,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "floatingLabelActiveTextColor"]
 - !private ["PSo30UIResponderStandardEditActions", "floatingLabelInactiveTextColor"]
 - !private ["PSo30UIResponderStandardEditActions", "font"]
-- !private ["PSo30UIResponderStandardEditActions", "hideKeyboardWhenTappedAround"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
-- !private ["PSo30UIResponderStandardEditActions", "parentViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "placeholder"]
 - ["PSo30UIResponderStandardEditActions", "textView"]
 - ["PSo30UIResponderStandardEditActions", ""]
@@ -418,7 +398,6 @@ depends-member:
 - !private ["CSo12UIScrollView", "floatingLabelInactiveTextColor"]
 - !private ["CSo12UIScrollView", "font"]
 - !private ["CSo12UIScrollView", "placeholder"]
-- !private ["PSo16UIStateRestoring", "hideKeyboardWhenTappedAround"]
 - !private ["CSo15UITableViewCell", "RPFloatingPlaceholderAnimationOptions"]
 - ["CSo15UITableViewCell", "RPFloatingPlaceholderTextView"]
 - !private ["CSo15UITableViewCell", "UIColor"]
@@ -426,7 +405,6 @@ depends-member:
 - ["CSo15UITableViewCell", "configureCommentTableViewCell"]
 - ["CSo15UITableViewCell", "deinit"]
 - ["CSo15UITableViewCell", "init"]
-- !private ["CSo15UITableViewCell", "parentViewController"]
 - ["CSo15UITableViewCell", "textView"]
 - ["CSo15UITableViewCell", ""]
 - ["OSC20UITableViewCellStyle", "deinit"]
@@ -461,9 +439,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "floatingLabelActiveTextColor"]
 - !private ["PSo18UITraitEnvironment", "floatingLabelInactiveTextColor"]
 - !private ["PSo18UITraitEnvironment", "font"]
-- !private ["PSo18UITraitEnvironment", "hideKeyboardWhenTappedAround"]
 - !private ["PSo18UITraitEnvironment", "init"]
-- !private ["PSo18UITraitEnvironment", "parentViewController"]
 - !private ["PSo18UITraitEnvironment", "placeholder"]
 - ["PSo18UITraitEnvironment", "textView"]
 - ["PSo18UITraitEnvironment", ""]
@@ -479,12 +455,8 @@ depends-member:
 - !private ["CSo6UIView", "floatingLabelInactiveTextColor"]
 - !private ["CSo6UIView", "font"]
 - ["CSo6UIView", "init"]
-- !private ["CSo6UIView", "parentViewController"]
 - !private ["CSo6UIView", "placeholder"]
 - ["CSo6UIView", "textView"]
-- ["CSo16UIViewController", "deinit"]
-- !private ["CSo16UIViewController", "hideKeyboardWhenTappedAround"]
-- !private ["P17HafsaInspectorApp23ViewControllerContainer", "hideKeyboardWhenTappedAround"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "RPFloatingPlaceholderAnimationOptions"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIFont"]
@@ -496,7 +468,6 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "floatingLabelInactiveTextColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "font"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "parentViewController"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "placeholder"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "textView"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
@@ -521,9 +492,7 @@ depends-member:
 - !private ["Ps9_Hashable", "floatingLabelInactiveTextColor"]
 - !private ["Ps9_Hashable", "font"]
 - !private ["Ps9_Hashable", "gray"]
-- !private ["Ps9_Hashable", "hideKeyboardWhenTappedAround"]
 - !private ["Ps9_Hashable", "init"]
-- !private ["Ps9_Hashable", "parentViewController"]
 - !private ["Ps9_Hashable", "placeholder"]
 - ["Ps9_Hashable", "textView"]
 - ["Ps9_Hashable", ""]
@@ -544,6 +513,7 @@ depends-nominal:
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "P12PDFGenerator19FilePathConvertible"
 - "Ps8Hashable"
 - "SQ"
 - !private "Ps25LosslessStringConvertible"
@@ -551,13 +521,13 @@ depends-nominal:
 - "CSo7NSCoder"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
-- !private "PSo26NSExtensionRequestHandling"
 - !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - "Sq"
+- "P12PDFGenerator17PDFPageRenderable"
 - "OSC37RPFloatingPlaceholderAnimationOptions"
 - !private "CSo29RPFloatingPlaceholderTextView"
 - !private "Ps16RawRepresentable"
@@ -568,7 +538,6 @@ depends-nominal:
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - "CSo7UIColor"
-- !private "PSo18UIContentContainer"
 - !private "PSo30UIContentSizeCategoryAdjusting"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
@@ -576,12 +545,12 @@ depends-nominal:
 - "PSo11UIFocusItem"
 - !private "CSo6UIFont"
 - "PSo27UIGestureRecognizerDelegate"
+- !private "P12PDFGenerator18UIImageConvertible"
 - !private "PSo10UIKeyInput"
 - !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - !private "CSo12UIScrollView"
-- !private "PSo16UIStateRestoring"
 - "CSo15UITableViewCell"
 - "OSC20UITableViewCellStyle"
 - !private "PSo11UITextInput"
@@ -589,8 +558,6 @@ depends-nominal:
 - !private "CSo10UITextView"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
-- "CSo16UIViewController"
-- !private "P17HafsaInspectorApp23ViewControllerContainer"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
@@ -616,8 +583,46 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTaskSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageUploadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageMetadata.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageObservableTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageDownloadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRMutableData.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/Firebase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/PDFGenerator.swiftmodule/x86_64.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"

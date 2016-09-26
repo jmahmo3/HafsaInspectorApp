@@ -12,85 +12,85 @@ provides-member:
 - ["P17HafsaInspectorApp15CaptureDelegate", ""]
 - ["C17HafsaInspectorApp7Capture", ""]
 provides-dynamic-lookup:
-- "updateTimer"
-- "enableTapToReset"
-- "previewView"
-- "captureDidPressCameraButton"
-- "handleFlashButton"
-- "handleCameraButton"
-- "captureDidPressSwitchCamerasButton"
-- "layoutSubviews"
-- "handleTapToExposeGesture"
-- "captureDidTapToFocusAtPoint"
-- "reloadView"
 - "stopTimer"
-- "captureDidTapToResetAtPoint"
-- "captureDidStartRecordTimer"
-- "contentInset"
-- "captureMode"
-- "handleSwitchCamerasButton"
-- "flashButton"
-- "handleTapToFocusGesture"
-- "enableTapToExpose"
 - "focusLayer"
-- "captureDidPressCaptureButton"
-- "handleVideoButton"
-- "captureDidUpdateRecordTimer"
-- "enableTapToFocus"
-- "switchCamerasButton"
-- "captureDidPressFlashButton"
-- "captureDidPressVideoButton"
-- "startTimer"
-- "contentEdgeInsetsPreset"
-- "captureDidTapToExposeAtPoint"
+- "captureDidPressSwitchCamerasButton"
 - "delegate"
-- "captureSession"
-- "videoButton"
-- "handleCaptureButton"
+- "previewView"
+- "layoutSubviews"
+- "captureDidTapToFocusAtPoint"
+- "handleFlashButton"
+- "captureDidTapToResetAtPoint"
+- "enableTapToReset"
+- "contentEdgeInsetsPreset"
 - "handleTapToResetGesture"
+- "handleTapToExposeGesture"
+- "captureDidStartRecordTimer"
+- "captureMode"
+- "handleTapToFocusGesture"
+- "startTimer"
+- "handleVideoButton"
+- "flashButton"
+- "captureDidPressCaptureButton"
+- "enableTapToExpose"
+- "handleSwitchCamerasButton"
+- "contentInset"
+- "enableTapToFocus"
+- "captureDidPressVideoButton"
+- "captureDidPressFlashButton"
+- "captureDidTapToExposeAtPoint"
+- "videoButton"
+- "captureDidUpdateRecordTimer"
+- "handleCaptureButton"
+- "switchCamerasButton"
 - "prepare"
-- "exposureLayer"
-- "captureDidStopRecordTimer"
-- "resetLayer"
-- "cameraButton"
+- "handleCameraButton"
+- "captureSession"
 - "captureButton"
+- "reloadView"
+- "resetLayer"
+- "updateTimer"
+- "exposureLayer"
+- "cameraButton"
+- "captureDidStopRecordTimer"
+- "captureDidPressCameraButton"
 depends-top-level:
-- !private "Color"
-- "CapturePreview"
-- !private "-"
-- !private "AVCaptureVideoPreviewLayer"
-- "UIButton"
-- !private "/"
-- "Layer"
-- "EdgeInsetsPreset"
-- !private "CMTime"
-- "Timer"
-- !private "~="
-- "Capture"
-- "UIGestureRecognizerDelegate"
-- !private "CGRect"
-- !private "Animation"
-- "CastingPrecedence"
-- "=="
-- "AssignmentPrecedence"
-- !private "Selector"
-- !private "RunLoop"
-- "CaptureDelegate"
-- "CaptureSession"
-- !private "CATransform3DIdentity"
 - !private "AVCaptureConnection"
-- "Int"
-- "CaptureMode"
-- "CGPoint"
-- "View"
-- "UITapGestureRecognizer"
-- !private "Double"
-- "BooleanLiteralType"
 - "EdgeInsetsPresetToValue"
-- !private "CMTimeGetSeconds"
-- !private "UIGestureRecognizer"
-- !private "CATransform3DMakeScale"
+- "Layer"
 - !private "&&"
+- "Timer"
+- !private "UIGestureRecognizer"
+- "EdgeInsetsPreset"
+- "Capture"
+- !private "RunLoop"
+- "CapturePreview"
+- "UIGestureRecognizerDelegate"
+- !private "~="
+- !private "CATransform3DIdentity"
+- !private "AVCaptureVideoPreviewLayer"
+- !private "-"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- "=="
+- !private "CMTime"
+- !private "Animation"
+- "CaptureSession"
+- !private "/"
+- "CaptureDelegate"
+- !private "CMTimeGetSeconds"
+- !private "Selector"
+- "CGPoint"
+- !private "CATransform3DMakeScale"
+- "Int"
+- !private "Double"
+- "UITapGestureRecognizer"
+- !private "CGRect"
+- "UIButton"
+- "CaptureMode"
+- "View"
+- "BooleanLiteralType"
+- !private "Color"
 depends-member:
 - ["CSo19AVCaptureConnection", "deinit"]
 - !private ["CSo19AVCaptureConnection", "videoOrientation"]
@@ -1486,6 +1486,83 @@ depends-member:
 - !private ["Ps9OptionSet", "touchUpInside"]
 - ["Sq", "deinit"]
 - ["Sq", "some"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "Animation"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "CATransform3DIdentity"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "CATransform3DMakeScale"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "CGPoint"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "CGRect"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "CMTimeGetSeconds"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "CapturePreview"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "CaptureSession"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "Color"]
+- ["P12PDFGenerator17PDFPageRenderable", "EdgeInsetsPresetToValue"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "Int"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "Layer"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "RunLoop"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "Timer"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "UITapGestureRecognizer"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "addGestureRecognizer"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "addTarget"]
+- ["P12PDFGenerator17PDFPageRenderable", "animateTapLayer"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "backgroundColor"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "bounds"]
+- ["P12PDFGenerator17PDFPageRenderable", "cameraButton"]
+- ["P12PDFGenerator17PDFPageRenderable", "captureButton"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "captureDevicePointOfInterestForPoint"]
+- ["P12PDFGenerator17PDFPageRenderable", "captureMode"]
+- ["P12PDFGenerator17PDFPageRenderable", "captureMode.storage"]
+- ["P12PDFGenerator17PDFPageRenderable", "captureSession"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "constraints"]
+- ["P12PDFGenerator17PDFPageRenderable", "contentEdgeInsetsPreset"]
+- ["P12PDFGenerator17PDFPageRenderable", "contentInset"]
+- ["P12PDFGenerator17PDFPageRenderable", "delegate"]
+- ["P12PDFGenerator17PDFPageRenderable", "enableTapToExpose"]
+- ["P12PDFGenerator17PDFPageRenderable", "enableTapToFocus"]
+- ["P12PDFGenerator17PDFPageRenderable", "enableTapToReset"]
+- ["P12PDFGenerator17PDFPageRenderable", "exposureLayer"]
+- ["P12PDFGenerator17PDFPageRenderable", "flashButton"]
+- ["P12PDFGenerator17PDFPageRenderable", "focusLayer"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "frame"]
+- ["P12PDFGenerator17PDFPageRenderable", "gestureRecognizer"]
+- ["P12PDFGenerator17PDFPageRenderable", "gestureRecognizerShouldBegin"]
+- ["P12PDFGenerator17PDFPageRenderable", "handleCameraButton"]
+- ["P12PDFGenerator17PDFPageRenderable", "handleCaptureButton"]
+- ["P12PDFGenerator17PDFPageRenderable", "handleFlashButton"]
+- ["P12PDFGenerator17PDFPageRenderable", "handleSwitchCamerasButton"]
+- ["P12PDFGenerator17PDFPageRenderable", "handleTapToExposeGesture"]
+- ["P12PDFGenerator17PDFPageRenderable", "handleTapToFocusGesture"]
+- ["P12PDFGenerator17PDFPageRenderable", "handleTapToResetGesture"]
+- ["P12PDFGenerator17PDFPageRenderable", "handleVideoButton"]
+- ["P12PDFGenerator17PDFPageRenderable", "init"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "insertSubview"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "layer"]
+- ["P12PDFGenerator17PDFPageRenderable", "layoutSubviews"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "pointForCaptureDevicePointOfInterest"]
+- ["P12PDFGenerator17PDFPageRenderable", "prepare"]
+- ["P12PDFGenerator17PDFPageRenderable", "prepareCaptureSession"]
+- ["P12PDFGenerator17PDFPageRenderable", "prepareExposureLayer"]
+- ["P12PDFGenerator17PDFPageRenderable", "prepareFocusLayer"]
+- ["P12PDFGenerator17PDFPageRenderable", "preparePreviewView"]
+- ["P12PDFGenerator17PDFPageRenderable", "prepareResetLayer"]
+- ["P12PDFGenerator17PDFPageRenderable", "prepareTapGesture"]
+- ["P12PDFGenerator17PDFPageRenderable", "previewView"]
+- ["P12PDFGenerator17PDFPageRenderable", "reloadView"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "removeConstraints"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "removeFromSuperview"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "removeGestureRecognizer"]
+- ["P12PDFGenerator17PDFPageRenderable", "removeTapGesture"]
+- ["P12PDFGenerator17PDFPageRenderable", "resetLayer"]
+- ["P12PDFGenerator17PDFPageRenderable", "startTimer"]
+- ["P12PDFGenerator17PDFPageRenderable", "stopTimer"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "subviews"]
+- ["P12PDFGenerator17PDFPageRenderable", "switchCamerasButton"]
+- ["P12PDFGenerator17PDFPageRenderable", "tapToExposeGesture"]
+- ["P12PDFGenerator17PDFPageRenderable", "tapToFocusGesture"]
+- ["P12PDFGenerator17PDFPageRenderable", "tapToResetGesture"]
+- ["P12PDFGenerator17PDFPageRenderable", "timer"]
+- ["P12PDFGenerator17PDFPageRenderable", "updateTimer"]
+- ["P12PDFGenerator17PDFPageRenderable", "videoButton"]
+- ["P12PDFGenerator17PDFPageRenderable", ""]
 - !private ["Ps22RandomAccessCollection", "Iterator"]
 - !private ["Ps22RandomAccessCollection", "_Element"]
 - !private ["Ps21RandomAccessIndexable", "Iterator"]
@@ -2891,6 +2968,7 @@ depends-nominal:
 - !private "PSo14NSSecureCoding"
 - !private "Ps9OptionSet"
 - "Sq"
+- "P12PDFGenerator17PDFPageRenderable"
 - !private "Ps22RandomAccessCollection"
 - !private "Ps21RandomAccessIndexable"
 - !private "Vs5Range"
@@ -2963,8 +3041,46 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTaskSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageUploadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageMetadata.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageObservableTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageDownloadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRMutableData.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/Firebase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/PDFGenerator.swiftmodule/x86_64.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"

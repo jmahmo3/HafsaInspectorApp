@@ -38,7 +38,7 @@ class EstablishmentPickerViewController: UIViewController, UITextFieldDelegate, 
     func setupView() {
         self.hideKeyboardWhenTappedAround()
         self.setNavBarWithSettingsIcon("settingsButtonPressed")
-        nameLabel.text = HImanager.userName
+        nameLabel.text = HIManager().userName
         establishmentLabel.text = HImanager.currentChapter
         view.backgroundColor = UIColor(red:0.87, green:0.89, blue:0.75, alpha:1.0)//UIColor(red:0.67, green:0.74, blue:0.24, alpha:1.0)
         
