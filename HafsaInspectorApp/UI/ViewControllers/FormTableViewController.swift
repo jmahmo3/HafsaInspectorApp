@@ -8,7 +8,7 @@
 
 import UIKit
 import PDFGenerator
-
+import Firebase
 class FormTableViewController: UITableViewController, UITextViewDelegate {
     
     
@@ -72,6 +72,12 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
             cell.textView.delegate = self
             return cell
             
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 4{
+            self.generatePDF()
         }
     }
     
@@ -140,7 +146,11 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
             pages.append(page)
         }
         
-        let dst = URL(fileURLWithPath: NSTemporaryDirectory().appending("temp.pdf"))
+        let trimmedChapter = HImanager.currentChapter.trimmingCharacters(in: .whitespaces)
+        let trimmedEstablishment = HImanager.currentEstablishment.trimmingCharacters(in: .whitespaces)
+        let pdfname = "\(trimmedChapter)_\(trimmedEstablishment)_\(HImanager.userName).pdf"
+        
+        let dst = URL(fileURLWithPath: NSTemporaryDirectory().appending(pdfname))
         // outputs as Data
         do {
             let data = try PDFGenerator.generated(by: pages)
@@ -149,10 +159,24 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
             print(error)
         }
         
-        let req = NSURLRequest(url: dst)
-        let webView = UIWebView(frame: CGRect(x: 0.0,y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
-        webView.loadRequest(req as URLRequest)
-        self.view.addSubview(webView)
+        let storage = FIRStorage.storage()
+
+        // File located on disk
+        let storageRef = storage.reference()
+
+        // Create a reference to the file you want to upload
+        let riversRef = storageRef.child("\(HImanager.currentChapter)/\(pdfname)")
+        
+        // Upload the file to the path "images/rivers.jpg"
+        let uploadTask = riversRef.putFile(dst, metadata: nil) { metadata, error in
+            if (error != nil) {
+                // Uh-oh, an error occurred!
+            } else {
+                // Metadata contains file metadata such as size, content-type, and download URL.
+//                let downloadURL = metadata!.downloadURL
+            }
+        }
+        uploadTask.resume()
 
     }
     
