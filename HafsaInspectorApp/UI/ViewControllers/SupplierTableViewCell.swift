@@ -48,6 +48,14 @@ class SupplierTableViewCell: UITableViewCell {
         DispatchQueue.main.async {
             self.poundLabel.text = "\(self.previousPounds) lbs"
         }
+
+        for supplier in HImanager.supplierValues {
+            let sup = supplier as! NSDictionary
+            if (sup.allKeys[0] as! String) == supplierNameLabel.text {
+                HImanager.supplierValues.remove(supplier)
+            }
+        }
+                HImanager.supplierValues.add([supplierNameLabel.text:"\(self.previousPounds) lbs"] as NSDictionary)
     }
     
     @IBAction func addPoundsPressed(_ sender: AnyObject) {

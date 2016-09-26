@@ -1,10 +1,13 @@
 PODS:
   - MBProgressHUD (1.0.0)
+  - PDFGenerator (2.0.1)
 
 DEPENDENCIES:
   - MBProgressHUD (~> 1.0.0)
+  - PDFGenerator (~> 2.0.1)
 
 SPEC CHECKSUMS:
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  PDFGenerator: 69cf0787767d501a10b6b85492b1f27fd23b00e8
 
 COCOAPODS: 0.39.0

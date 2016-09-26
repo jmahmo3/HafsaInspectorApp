@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PDFGenerator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-HafsaInspectorApp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,17 +22,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>306A19757FD81943B08328DF896D1B13</key>
+		<key>D301D28BAD88C5032542477007FC841B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>67455818E527C781BA546D5DB8417BA6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AE091EA1C832BC36C3243EB5C55DFA29</key>
+		<key>D6372E9A14F373E0EDB6DE2320A42F8C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

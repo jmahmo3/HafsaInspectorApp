@@ -24,9 +24,22 @@ class HIManager: NSObject {
         else { return "" }
     }()
     
+    var currentDate: String = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/dd/yy"
+        let dateString = formatter.string(from: Date())
+        return dateString
+    }()
+    
     lazy var currentEstablishment: String = ""
     
+    lazy var comments: String = ""
+
     var data: NSMutableArray = []
+    
+    var images: NSMutableArray = []
+    
+    var supplierValues: NSMutableArray = []
     
     //Data
     var chapterArray = ["","Chicago", "Detroit", "San Francisco"]

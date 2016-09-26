@@ -7,8 +7,7 @@
 //
 
 import UIKit
-
-
+import PDFGenerator
 
 class FormTableViewController: UITableViewController, UITextViewDelegate {
     
@@ -29,6 +28,15 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
         self.hideKeyboardWhenTappedAround()
     }
 
+    override func backButtonPressed() {
+        _ = self.navigationController?.popViewController(animated: true)
+        HImanager.supplierValues = []
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        HImanager.comments = textView.text
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -73,4 +81,79 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
+    
+    //MARK: - PDF 
+ 
+    func generatePDF() {
+        let v1 = UIView(frame: CGRect(x: 0.0,y: 0, width: 516, height: 729))
+
+        let banner = UIImageView(frame: CGRect(x: 10, y: 10, width: 200, height: 140))
+        banner.image = UIImage(named:"haa-logo")
+        banner.contentMode = .scaleAspectFit
+        v1.addSubview(banner)
+        
+        let info = UILabel(frame:CGRect(x: 516-160, y: 10, width: 150, height: 150))
+        info.text = "\(HImanager.currentDate)\n\(HImanager.userName)\n\(HImanager.currentChapter)\n\(HImanager.currentEstablishment)"
+        info.font = UIFont(name: "AvenirNext-Medium", size: 14)
+        info.numberOfLines = 5
+        info.textAlignment = .right
+        v1.addSubview(info)
+        
+        let imageInfo = UILabel(frame:CGRect(x: 516/2 - 200, y: 709, width: 400, height: 20))
+        imageInfo.text = "Images on subsequent pages"
+        imageInfo.font = UIFont(name: "AvenirNext-Medium", size: 14)
+        imageInfo.textAlignment = .center
+        v1.addSubview(imageInfo)
+        
+        let inspect = UILabel(frame:CGRect(x: 10, y: 165, width: 400, height: 20))
+        inspect.text = "Inspection Notes:"
+        inspect.font = UIFont(name: "AvenirNext-Bold", size: 16)
+        v1.addSubview(inspect)
+        
+        for i in 0..<HImanager.supplierValues.count {
+            let supplierInfo = UILabel(frame:CGRect(x: 10, y: 190 + (i*20), width: 400, height:20))
+            let supplier: NSDictionary = HImanager.supplierValues.object(at: i) as! NSDictionary
+            let key = supplier.allKeys[0] as! String
+            let value = supplier.allValues[0] as! String
+            supplierInfo.text = "\(key) : \(value)"
+            supplierInfo.font = UIFont(name: "AvenirNext-Medium", size: 14)
+            v1.addSubview(supplierInfo)
+        }
+        
+        let comments = UILabel(frame:CGRect(x: 10, y: 210 + (HImanager.supplierValues.count*20), width: 490, height: 100))
+        comments.text = "Comments and Concerns : \n\(HImanager.comments)"
+        comments.font = UIFont(name: "AvenirNext-Medium", size: 14)
+        comments.numberOfLines = 6
+        v1.addSubview(comments)
+        
+        let page1 = PDFPage.view(v1)
+        
+        var pages = [page1]
+        for image in HIManager.sharedClient().images {
+            
+            let view = UIView(frame: CGRect(x: 0,y: 0, width: 516, height: 729))
+            let imageView = UIImageView(frame:CGRect(x: 0,y: 0, width: 516, height: 729))
+            imageView.image = image as? UIImage
+            imageView.contentMode = .scaleAspectFit
+            view.addSubview(imageView)
+            let page = PDFPage.view(view)
+            pages.append(page)
+        }
+        
+        let dst = URL(fileURLWithPath: NSTemporaryDirectory().appending("temp.pdf"))
+        // outputs as Data
+        do {
+            let data = try PDFGenerator.generated(by: pages)
+            try data.write(to: dst, options: .atomic)
+        } catch (let error) {
+            print(error)
+        }
+        
+        let req = NSURLRequest(url: dst)
+        let webView = UIWebView(frame: CGRect(x: 0.0,y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
+        webView.loadRequest(req as URLRequest)
+        self.view.addSubview(webView)
+
+    }
+    
 }
