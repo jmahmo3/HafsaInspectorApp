@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var vc = EstablishmentPickerViewController.create()
     var errorCount = 0
+    var ref: FIRDatabaseReference!
+
 
 
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -40,7 +42,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Firebase
         FIRApp.configure()
+        FIRDatabase.database().persistenceEnabled = true
+
         
+        let user = CurrentUser.sharedClient()
+        user.signin("Sameer") { (user, error) in
+            if !(error != nil) {
+                print(user!.username)
+            }
+        }
+        
+      
 
         return true
     }

@@ -9,6 +9,7 @@
 import UIKit
 import MBProgressHUD
 //import Material
+import Firebase
 
 
 protocol ChapterPickerDelegate {
@@ -27,6 +28,7 @@ class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
     fileprivate let HImanager = HIManager.sharedClient()
     let picker: UIPickerView = UIPickerView()
     var delegate: ChapterPickerDelegate! = nil
+
 
     //MARK: - Lifecycle
     
@@ -124,6 +126,8 @@ class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
             
         }
     }
+    
+ 
     
     func didGetChapterData() {
         if self.isOnScreen {

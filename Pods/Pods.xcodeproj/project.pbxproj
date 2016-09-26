@@ -10,26 +10,26 @@
 		031726A9E343E95D4122E9CBB5782C5E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF066FF331DAF505396EF194ED56FA83 /* CoreGraphics.framework */; };
 		14EDE6BC5B7C0D91461781863C6CB990 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2720DB65E9C8213030B563A9A9350D1 /* Foundation.framework */; };
 		193AA1A2920035869753B4EA41FA3D24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2720DB65E9C8213030B563A9A9350D1 /* Foundation.framework */; };
-		1C7E0676139A0FB8416DE771F7B47066 /* PDFPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781F9A1C654F1F8509CE9821DC7D0ACB /* PDFPassword.swift */; };
-		1DC27568F9FD2E93B4A4AC3CDE3A0790 /* PDFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38971F372FD97E9E1EB01DC3B4856CB0 /* PDFGenerator.swift */; };
+		1C7E0676139A0FB8416DE771F7B47066 /* PDFPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093EE7C5D840A7ADB4FFD76EDAA465D6 /* PDFPassword.swift */; };
+		1DC27568F9FD2E93B4A4AC3CDE3A0790 /* PDFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B0796A0CC56DF16856C59DCA3988B9 /* PDFGenerator.swift */; };
 		1FBD05C9D1D623EA617EC8F473B148EB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E70E525AE50AEE2C5E8D126A6930900 /* WebKit.framework */; };
-		2CB14116A356AE9096E24DF70FC17C8E /* PDFPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD8AD291BB0B6AFFE60A31E62FC01D1 /* PDFPage.swift */; };
-		31FC94E0E7FE933E2219939A21633F42 /* PDFGenerator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6247B1450A6A6C9E1D58D4618CD0EC4E /* PDFGenerator-dummy.m */; };
-		49DDA0471083C4907DBB165D227524C0 /* DPIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD77FDAAE45BA30FF6BCFE1EA2C09EB /* DPIType.swift */; };
-		5C8AACF0073FD8116895480A52962E77 /* PDFGenerateError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3DD70C85669684F07AFE192569147E /* PDFGenerateError.swift */; };
-		675C7AAA1F2639A855565A918937F92B /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = E62F71C737B3DD935AF405C067C00D62 /* Info.plist */; };
+		2CB14116A356AE9096E24DF70FC17C8E /* PDFPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95912155A45870E92B8345DD9939840F /* PDFPage.swift */; };
+		31FC94E0E7FE933E2219939A21633F42 /* PDFGenerator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCD3517D1F6EB9645B0879B0EC5B088 /* PDFGenerator-dummy.m */; };
+		49DDA0471083C4907DBB165D227524C0 /* DPIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061F0EF641629344D1CBCDFF14A01818 /* DPIType.swift */; };
+		5C8AACF0073FD8116895480A52962E77 /* PDFGenerateError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF6F24418E7E93CB3C2BCB17A05DDF8 /* PDFGenerateError.swift */; };
+		675C7AAA1F2639A855565A918937F92B /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 816A72E49A2E429642301FA1EC240008 /* Info.plist */; };
 		7740F6E53E3DF9DA7E28BFC58E5C24E6 /* Pods-HafsaInspectorApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8493934F38F8464E15811846B7EECCAE /* Pods-HafsaInspectorApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7942EC40A15E9BEA3FA939FBE86BB785 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924A187F50F1508E2A5868EDD2468333 /* QuartzCore.framework */; };
-		81AADA5ADE8535AD6F7678C6F3A06E89 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A300EC9EA439A973D5EEFABD1EDCEE75 /* MBProgressHUD.m */; };
-		AE2590EB143BF38586CFABEC8351E926 /* PDFGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F35F5442FB204462EB98DA0B7A9FA73 /* PDFGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81AADA5ADE8535AD6F7678C6F3A06E89 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A4931D3ADAC034C1402B555ECEC5E236 /* MBProgressHUD.m */; };
+		AE2590EB143BF38586CFABEC8351E926 /* PDFGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CFF10EBA1911F5844C7D390A88D1D9E /* PDFGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5F8E87F5B794FDC2E56B0B086EDE216 /* Pods-HafsaInspectorApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27941B2728DC3079CE6C5C80518FF217 /* Pods-HafsaInspectorApp-dummy.m */; };
-		B9472F1817EBD7EC1CB42E290D0C2430 /* PDFPageRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA8265952554966B24FD9FD5312C2E /* PDFPageRenderable.swift */; };
-		BD2C73E54761A838D181F002A65FDC1A /* FilePathConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965D8732551CACC03F2D024C65991728 /* FilePathConvertible.swift */; };
+		B9472F1817EBD7EC1CB42E290D0C2430 /* PDFPageRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA3866C363A8248882A74DCDF9A646C /* PDFPageRenderable.swift */; };
+		BD2C73E54761A838D181F002A65FDC1A /* FilePathConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC3732B85481C623DEBBFAD2C3E6C7B /* FilePathConvertible.swift */; };
 		C5AC47826ED14DB9E88EB250DAAA4A80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2720DB65E9C8213030B563A9A9350D1 /* Foundation.framework */; };
-		D6ABDFF81E566FFECF367E42C6333D79 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD024C8A2AB6F76718692D55C85BA82 /* MBProgressHUD-dummy.m */; };
-		D711EBBB664A6ED7779B62B8710FB875 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7E9A89F308D256DBAF7415EBE45B58 /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EAF4063C5D3C8C1AE3C7513759BA9D0B /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 69F7377B705584E14E0A7F32E7E9B71B /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9411216B5B463D14D072C177B8C3BC1 /* PDFGenerator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D21581DAFD0428853CBDA00992F957E /* PDFGenerator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6ABDFF81E566FFECF367E42C6333D79 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF128BAAF40CA1844161A056BB5F841 /* MBProgressHUD-dummy.m */; };
+		D711EBBB664A6ED7779B62B8710FB875 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C2D5DE3AAC4FC4319969B38E1617CC /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAF4063C5D3C8C1AE3C7513759BA9D0B /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A88E7C44667FFB964179903D554BC0 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9411216B5B463D14D072C177B8C3BC1 /* PDFGenerator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1CAF965F84759F371C627B8BBB073F0 /* PDFGenerator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,55 +50,56 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		002EE38EFCCA53B55A890493F1599E49 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
-		07BEDB0A80B3A6DEBCE48DE3FE14107D /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		086A53797085C2500C3DEF91E1B8A463 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		061F0EF641629344D1CBCDFF14A01818 /* DPIType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPIType.swift; path = PDFGenerator/DPIType.swift; sourceTree = "<group>"; };
+		093EE7C5D840A7ADB4FFD76EDAA465D6 /* PDFPassword.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPassword.swift; path = PDFGenerator/PDFPassword.swift; sourceTree = "<group>"; };
+		0C15FC294C7E5164073EFA220BD68B33 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		0FC3732B85481C623DEBBFAD2C3E6C7B /* FilePathConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilePathConvertible.swift; path = PDFGenerator/FilePathConvertible.swift; sourceTree = "<group>"; };
+		1001C3DAECB1544AC4AFB7C9B1D74A41 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
 		1261BE05844B299F028ABF3A5467C53C /* Pods-HafsaInspectorApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HafsaInspectorApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1C7E9A89F308D256DBAF7415EBE45B58 /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		1DE589401FA47C983CEB22EFB8BC9C4A /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		1C11711AD33D9D9DA3CF4812E526BF67 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
 		27941B2728DC3079CE6C5C80518FF217 /* Pods-HafsaInspectorApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HafsaInspectorApp-dummy.m"; sourceTree = "<group>"; };
-		29BA1D843149D800238B497384DC6DC3 /* PDFGenerator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDFGenerator.xcconfig; sourceTree = "<group>"; };
-		3024F360700C09CB736608141A6FB578 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
-		304E2672D7B2450E85BFFC44C3A2F117 /* PDFGenerator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PDFGenerator.modulemap; sourceTree = "<group>"; };
-		38971F372FD97E9E1EB01DC3B4856CB0 /* PDFGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFGenerator.swift; path = PDFGenerator/PDFGenerator.swift; sourceTree = "<group>"; };
+		28B77A09987BBF066D55C617F6C09098 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		467754DFAA9D344DA78BB62FCD156D5A /* Pods-HafsaInspectorApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HafsaInspectorApp.modulemap"; sourceTree = "<group>"; };
-		4D771C3E5BE0906D28B261434B359A15 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Analytics/Sources/Firebase.h; sourceTree = "<group>"; };
-		526F7FB71EA206E8010286F368C0DC76 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
 		5CF21305EF0B9E4A32DAE152D7534FAC /* Pods-HafsaInspectorApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HafsaInspectorApp-frameworks.sh"; sourceTree = "<group>"; };
-		61F062F5232F06CB40FD7D5E0BBDEF8D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		61F771804E1DE6F13E8DF7D08D1C3FC1 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
-		6247B1450A6A6C9E1D58D4618CD0EC4E /* PDFGenerator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PDFGenerator-dummy.m"; sourceTree = "<group>"; };
+		63A62C94E23DA1BBC106C93939EB4159 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		6491E216752751A6C6A7B89BD681C705 /* Pods-HafsaInspectorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HafsaInspectorApp.release.xcconfig"; sourceTree = "<group>"; };
-		69F7377B705584E14E0A7F32E7E9B71B /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		6A3DD70C85669684F07AFE192569147E /* PDFGenerateError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFGenerateError.swift; path = PDFGenerator/PDFGenerateError.swift; sourceTree = "<group>"; };
 		6F85A9D5247A60D008B69FFAA9E4A2B4 /* PDFGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PDFGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		781F9A1C654F1F8509CE9821DC7D0ACB /* PDFPassword.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPassword.swift; path = PDFGenerator/PDFPassword.swift; sourceTree = "<group>"; };
-		7887D68FE719B0B7EBF01FE2D68E3369 /* PDFGenerator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDFGenerator-prefix.pch"; sourceTree = "<group>"; };
-		7D21581DAFD0428853CBDA00992F957E /* PDFGenerator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDFGenerator-umbrella.h"; sourceTree = "<group>"; };
-		7D44B8A255C444A4CCFBE0F92F8C7619 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		70C151AD5AFEBDA31A89F0B613040664 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		74D02C42F6469D43FF1C0E820504DC35 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		79C2D5DE3AAC4FC4319969B38E1617CC /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		8004CC1CE47C12BFF9FDF224AF708165 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8099688EC822FE576AC03240C23052C6 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		816A72E49A2E429642301FA1EC240008 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = PDFGenerator/Info.plist; sourceTree = "<group>"; };
 		8493934F38F8464E15811846B7EECCAE /* Pods-HafsaInspectorApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HafsaInspectorApp-umbrella.h"; sourceTree = "<group>"; };
 		889479E9B05CCAA4F90039887511F7F3 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8999C00459771EB799702B355F01DF19 /* Pods-HafsaInspectorApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HafsaInspectorApp-resources.sh"; sourceTree = "<group>"; };
 		8E70E525AE50AEE2C5E8D126A6930900 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
-		8FD024C8A2AB6F76718692D55C85BA82 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		924A187F50F1508E2A5868EDD2468333 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		965D8732551CACC03F2D024C65991728 /* FilePathConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilePathConvertible.swift; path = PDFGenerator/FilePathConvertible.swift; sourceTree = "<group>"; };
-		9CA2B66F572DFFB7DC1BA143F857C891 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		9DD8AD291BB0B6AFFE60A31E62FC01D1 /* PDFPage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPage.swift; path = PDFGenerator/PDFPage.swift; sourceTree = "<group>"; };
-		9F35F5442FB204462EB98DA0B7A9FA73 /* PDFGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PDFGenerator.h; path = PDFGenerator/PDFGenerator.h; sourceTree = "<group>"; };
-		A2B22C200B4A97640F24DBA6493427F8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A300EC9EA439A973D5EEFABD1EDCEE75 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		95912155A45870E92B8345DD9939840F /* PDFPage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPage.swift; path = PDFGenerator/PDFPage.swift; sourceTree = "<group>"; };
+		96B0796A0CC56DF16856C59DCA3988B9 /* PDFGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFGenerator.swift; path = PDFGenerator/PDFGenerator.swift; sourceTree = "<group>"; };
+		98A39420045C87522CD7B0793672A05B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BCD3517D1F6EB9645B0879B0EC5B088 /* PDFGenerator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PDFGenerator-dummy.m"; sourceTree = "<group>"; };
+		9CFF10EBA1911F5844C7D390A88D1D9E /* PDFGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PDFGenerator.h; path = PDFGenerator/PDFGenerator.h; sourceTree = "<group>"; };
+		9FE4E4F59763D199AAD8AEDC3B6DF657 /* PDFGenerator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDFGenerator.xcconfig; sourceTree = "<group>"; };
+		A4931D3ADAC034C1402B555ECEC5E236 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		A94380705DCA39F660BF11F5D0688BE5 /* PDFGenerator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PDFGenerator.modulemap; sourceTree = "<group>"; };
+		AA80476489DFC721379B3BE163EE762E /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		AAD84C7455B30B7D544E9B68AAD7E6B1 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		B3C96E465B1108F065B789169D63DF13 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		B8A19B0FC13DDE8BE5C65C39B3072DA8 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Analytics/Sources/Firebase.h; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BBD77FDAAE45BA30FF6BCFE1EA2C09EB /* DPIType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPIType.swift; path = PDFGenerator/DPIType.swift; sourceTree = "<group>"; };
 		C2720DB65E9C8213030B563A9A9350D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		C7094C67539F2E07B50310F5471671FA /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
 		CAEBAD1CA88CFB9E8F262E1095762039 /* Pods-HafsaInspectorApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HafsaInspectorApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		E2CA8265952554966B24FD9FD5312C2E /* PDFPageRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPageRenderable.swift; path = PDFGenerator/PDFPageRenderable.swift; sourceTree = "<group>"; };
-		E62F71C737B3DD935AF405C067C00D62 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = PDFGenerator/Info.plist; sourceTree = "<group>"; };
+		CDA3866C363A8248882A74DCDF9A646C /* PDFPageRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPageRenderable.swift; path = PDFGenerator/PDFPageRenderable.swift; sourceTree = "<group>"; };
+		D15D7DA780557C5B0C13C4A027F78B06 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		D9A88E7C44667FFB964179903D554BC0 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		DBF128BAAF40CA1844161A056BB5F841 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		DBF6F24418E7E93CB3C2BCB17A05DDF8 /* PDFGenerateError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFGenerateError.swift; path = PDFGenerator/PDFGenerateError.swift; sourceTree = "<group>"; };
+		DE695CB42B1EE0E85FDEABF0610EBDFC /* PDFGenerator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDFGenerator-prefix.pch"; sourceTree = "<group>"; };
+		DEE82601131734A765D2BB97B2E5A63D /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		F1CAF965F84759F371C627B8BBB073F0 /* PDFGenerator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDFGenerator-umbrella.h"; sourceTree = "<group>"; };
 		F6233019D72A9C2B88ED7B3FC5E13E73 /* Pods-HafsaInspectorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HafsaInspectorApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FB4EB9D88DB1BDB22CADD06BD3963666 /* Pods_HafsaInspectorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HafsaInspectorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD293315F35CFD31D7E16781BED480DC /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
 		FF066FF331DAF505396EF194ED56FA83 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -133,22 +134,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B92641B281F2A05341A342CD2C738EE /* GoogleInterchangeUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				3AFE88E5BC96DB94D2DD773244465E12 /* Frameworks */,
-			);
-			path = GoogleInterchangeUtilities;
-			sourceTree = "<group>";
-		};
-		109234549C90C8188666AB2F8F97151E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				07BEDB0A80B3A6DEBCE48DE3FE14107D /* FirebaseInstanceID.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		12C39C85BD869C30E83AA157603E18B5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,87 +178,98 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		26C950736F901DE131FA3B407FB164A4 /* Frameworks */ = {
+		18B47EC8B1E2AA0E548A3FD8318D1255 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				526F7FB71EA206E8010286F368C0DC76 /* GoogleUtilities.framework */,
+				70C151AD5AFEBDA31A89F0B613040664 /* FirebaseDatabase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		31144CBE5E62BDBB289C5FAD5A6EF2C1 /* MBProgressHUD */ = {
+		18EC56250551F2E078457B9BF0689B71 /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				69F7377B705584E14E0A7F32E7E9B71B /* MBProgressHUD.h */,
-				A300EC9EA439A973D5EEFABD1EDCEE75 /* MBProgressHUD.m */,
-				88CB617650FC851BA72B3A700FC61D85 /* Support Files */,
+				DEE82601131734A765D2BB97B2E5A63D /* FIRInstanceID.h */,
+				575D7452021026F2408DD58291B94697 /* Frameworks */,
 			);
-			path = MBProgressHUD;
+			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
-		3AFE88E5BC96DB94D2DD773244465E12 /* Frameworks */ = {
+		28A52FEEF69364A78DFD87CACC4C7451 /* GoogleNetworkingUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				1DE589401FA47C983CEB22EFB8BC9C4A /* GoogleInterchangeUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		48D3AB91FDCCBBB09733C4DD2E4649FE /* PDFGenerator */ = {
-			isa = PBXGroup;
-			children = (
-				BBD77FDAAE45BA30FF6BCFE1EA2C09EB /* DPIType.swift */,
-				965D8732551CACC03F2D024C65991728 /* FilePathConvertible.swift */,
-				E62F71C737B3DD935AF405C067C00D62 /* Info.plist */,
-				6A3DD70C85669684F07AFE192569147E /* PDFGenerateError.swift */,
-				9F35F5442FB204462EB98DA0B7A9FA73 /* PDFGenerator.h */,
-				38971F372FD97E9E1EB01DC3B4856CB0 /* PDFGenerator.swift */,
-				9DD8AD291BB0B6AFFE60A31E62FC01D1 /* PDFPage.swift */,
-				E2CA8265952554966B24FD9FD5312C2E /* PDFPageRenderable.swift */,
-				781F9A1C654F1F8509CE9821DC7D0ACB /* PDFPassword.swift */,
-				D17C993E3D48BF2B76FE5336FFE923AB /* Support Files */,
-			);
-			path = PDFGenerator;
-			sourceTree = "<group>";
-		};
-		4E3B13BD64DFC949494EF6C18A61C258 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3024F360700C09CB736608141A6FB578 /* GoogleNetworkingUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		50F2CFF50CCE8E674B7026E1BE5A20DF /* FirebaseStorage */ = {
-			isa = PBXGroup;
-			children = (
-				C18633D45DF630E31873D0D9F0671594 /* Frameworks */,
-			);
-			path = FirebaseStorage;
-			sourceTree = "<group>";
-		};
-		56B00445EDBE6F221F4C93F8D1558FD2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7D44B8A255C444A4CCFBE0F92F8C7619 /* FirebaseAnalytics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		605F93AE940D3FDEC28D281E44F82483 /* GoogleNetworkingUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				4E3B13BD64DFC949494EF6C18A61C258 /* Frameworks */,
+				B7A0F28BDD9A36F20846BC7621012B9B /* Frameworks */,
 			);
 			path = GoogleNetworkingUtilities;
 			sourceTree = "<group>";
 		};
-		7C921BBD9DF010DBE317FB0294E6C5B7 /* GoogleSymbolUtilities */ = {
+		293D059D932A17FEFAB5D51FE8820C3F /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				F9D3F88A231AA88EF2A2169E895EDA2D /* Frameworks */,
+				D9A88E7C44667FFB964179903D554BC0 /* MBProgressHUD.h */,
+				A4931D3ADAC034C1402B555ECEC5E236 /* MBProgressHUD.m */,
+				F5197F31A41CE6762848513EE3CFF644 /* Support Files */,
 			);
-			path = GoogleSymbolUtilities;
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		465D831C93A88F481F63092AEFCDAB74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D15D7DA780557C5B0C13C4A027F78B06 /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4AC74D4A7640694BD67BD3739319B988 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAD84C7455B30B7D544E9B68AAD7E6B1 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		575D7452021026F2408DD58291B94697 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74D02C42F6469D43FF1C0E820504DC35 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		579F0D81FDFB8D4939AE9F1E1069EADF /* PDFGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				061F0EF641629344D1CBCDFF14A01818 /* DPIType.swift */,
+				0FC3732B85481C623DEBBFAD2C3E6C7B /* FilePathConvertible.swift */,
+				816A72E49A2E429642301FA1EC240008 /* Info.plist */,
+				DBF6F24418E7E93CB3C2BCB17A05DDF8 /* PDFGenerateError.swift */,
+				9CFF10EBA1911F5844C7D390A88D1D9E /* PDFGenerator.h */,
+				96B0796A0CC56DF16856C59DCA3988B9 /* PDFGenerator.swift */,
+				95912155A45870E92B8345DD9939840F /* PDFPage.swift */,
+				CDA3866C363A8248882A74DCDF9A646C /* PDFPageRenderable.swift */,
+				093EE7C5D840A7ADB4FFD76EDAA465D6 /* PDFPassword.swift */,
+				8BE8D6B16147E664BB37396B83B10093 /* Support Files */,
+			);
+			path = PDFGenerator;
+			sourceTree = "<group>";
+		};
+		60779FAFD8A24B4D681B14B28C0B2179 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6401593D72E6701BB6A7F3F7B4B4AF0 /* Firebase */,
+				D56790B050298A375E2E05B98D179CA7 /* FirebaseAnalytics */,
+				9BA58FBCBCC1301C8713031045D4EAE8 /* FirebaseDatabase */,
+				18EC56250551F2E078457B9BF0689B71 /* FirebaseInstanceID */,
+				D19879EA68D239662C33F0A074CEA744 /* FirebaseStorage */,
+				EABBE3210F85C380E256A03623FA44B0 /* GoogleInterchangeUtilities */,
+				28A52FEEF69364A78DFD87CACC4C7451 /* GoogleNetworkingUtilities */,
+				8E68292BBE81E00D5645B8A04DEDF04D /* GoogleSymbolUtilities */,
+				A11263E7DDCF3C740072A61D961AFED4 /* GoogleUtilities */,
+				293D059D932A17FEFAB5D51FE8820C3F /* MBProgressHUD */,
+				579F0D81FDFB8D4939AE9F1E1069EADF /* PDFGenerator */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -281,81 +277,72 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				A051F0593BECC09253961F75D8B604A0 /* Pods */,
+				60779FAFD8A24B4D681B14B28C0B2179 /* Pods */,
 				12C39C85BD869C30E83AA157603E18B5 /* Products */,
 				12C5A16A306E9991CDC2838C2E328B45 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		800C04BBF538571CB60BDED6E9EFD9FE /* Firebase */ = {
+		8BE8D6B16147E664BB37396B83B10093 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A8B2AAC9C2FEEB83FEF5C9CCF4BCA088 /* Analytics */,
-			);
-			path = Firebase;
-			sourceTree = "<group>";
-		};
-		88CB617650FC851BA72B3A700FC61D85 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				61F062F5232F06CB40FD7D5E0BBDEF8D /* Info.plist */,
-				8099688EC822FE576AC03240C23052C6 /* MBProgressHUD.modulemap */,
-				C7094C67539F2E07B50310F5471671FA /* MBProgressHUD.xcconfig */,
-				8FD024C8A2AB6F76718692D55C85BA82 /* MBProgressHUD-dummy.m */,
-				9CA2B66F572DFFB7DC1BA143F857C891 /* MBProgressHUD-prefix.pch */,
-				1C7E9A89F308D256DBAF7415EBE45B58 /* MBProgressHUD-umbrella.h */,
+				28B77A09987BBF066D55C617F6C09098 /* Info.plist */,
+				A94380705DCA39F660BF11F5D0688BE5 /* PDFGenerator.modulemap */,
+				9FE4E4F59763D199AAD8AEDC3B6DF657 /* PDFGenerator.xcconfig */,
+				9BCD3517D1F6EB9645B0879B0EC5B088 /* PDFGenerator-dummy.m */,
+				DE695CB42B1EE0E85FDEABF0610EBDFC /* PDFGenerator-prefix.pch */,
+				F1CAF965F84759F371C627B8BBB073F0 /* PDFGenerator-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MBProgressHUD";
+			path = "../Target Support Files/PDFGenerator";
 			sourceTree = "<group>";
 		};
-		900960E1507888C3C5C862C04929E9C9 /* GoogleUtilities */ = {
+		8E68292BBE81E00D5645B8A04DEDF04D /* GoogleSymbolUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				26C950736F901DE131FA3B407FB164A4 /* Frameworks */,
+				F14EB878860B5496623472D012542F2C /* Frameworks */,
 			);
-			path = GoogleUtilities;
+			path = GoogleSymbolUtilities;
 			sourceTree = "<group>";
 		};
-		A051F0593BECC09253961F75D8B604A0 /* Pods */ = {
+		8F39462B70376696B6DE23D2DF906F33 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				800C04BBF538571CB60BDED6E9EFD9FE /* Firebase */,
-				CA88B016C747431738905B289099A304 /* FirebaseAnalytics */,
-				EE12F0950A11D5B212F9734CD320E016 /* FirebaseInstanceID */,
-				50F2CFF50CCE8E674B7026E1BE5A20DF /* FirebaseStorage */,
-				0B92641B281F2A05341A342CD2C738EE /* GoogleInterchangeUtilities */,
-				605F93AE940D3FDEC28D281E44F82483 /* GoogleNetworkingUtilities */,
-				7C921BBD9DF010DBE317FB0294E6C5B7 /* GoogleSymbolUtilities */,
-				900960E1507888C3C5C862C04929E9C9 /* GoogleUtilities */,
-				31144CBE5E62BDBB289C5FAD5A6EF2C1 /* MBProgressHUD */,
-				48D3AB91FDCCBBB09733C4DD2E4649FE /* PDFGenerator */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		A8B2AAC9C2FEEB83FEF5C9CCF4BCA088 /* Analytics */ = {
-			isa = PBXGroup;
-			children = (
-				4D771C3E5BE0906D28B261434B359A15 /* Firebase.h */,
+				B8A19B0FC13DDE8BE5C65C39B3072DA8 /* Firebase.h */,
 			);
 			name = Analytics;
 			sourceTree = "<group>";
 		};
-		C18633D45DF630E31873D0D9F0671594 /* Frameworks */ = {
+		9BA58FBCBCC1301C8713031045D4EAE8 /* FirebaseDatabase */ = {
 			isa = PBXGroup;
 			children = (
-				61F771804E1DE6F13E8DF7D08D1C3FC1 /* FirebaseStorage.framework */,
+				18B47EC8B1E2AA0E548A3FD8318D1255 /* Frameworks */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		A11263E7DDCF3C740072A61D961AFED4 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				465D831C93A88F481F63092AEFCDAB74 /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		B7A0F28BDD9A36F20846BC7621012B9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3C96E465B1108F065B789169D63DF13 /* GoogleNetworkingUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CA88B016C747431738905B289099A304 /* FirebaseAnalytics */ = {
+		C6401593D72E6701BB6A7F3F7B4B4AF0 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				56B00445EDBE6F221F4C93F8D1558FD2 /* Frameworks */,
+				8F39462B70376696B6DE23D2DF906F33 /* Analytics */,
 			);
-			path = FirebaseAnalytics;
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 		CD302ECD3C7BEE1DA43255459B727C6F /* iOS */ = {
@@ -369,33 +356,64 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		D17C993E3D48BF2B76FE5336FFE923AB /* Support Files */ = {
+		D19879EA68D239662C33F0A074CEA744 /* FirebaseStorage */ = {
 			isa = PBXGroup;
 			children = (
-				A2B22C200B4A97640F24DBA6493427F8 /* Info.plist */,
-				304E2672D7B2450E85BFFC44C3A2F117 /* PDFGenerator.modulemap */,
-				29BA1D843149D800238B497384DC6DC3 /* PDFGenerator.xcconfig */,
-				6247B1450A6A6C9E1D58D4618CD0EC4E /* PDFGenerator-dummy.m */,
-				7887D68FE719B0B7EBF01FE2D68E3369 /* PDFGenerator-prefix.pch */,
-				7D21581DAFD0428853CBDA00992F957E /* PDFGenerator-umbrella.h */,
+				DF40F33743105EE8CE3A41A828B5F179 /* Frameworks */,
+			);
+			path = FirebaseStorage;
+			sourceTree = "<group>";
+		};
+		D56790B050298A375E2E05B98D179CA7 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				4AC74D4A7640694BD67BD3739319B988 /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		DF40F33743105EE8CE3A41A828B5F179 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1001C3DAECB1544AC4AFB7C9B1D74A41 /* FirebaseStorage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EABBE3210F85C380E256A03623FA44B0 /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				F65E3EC7712BFB42DC9F4ED34CA77167 /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		F14EB878860B5496623472D012542F2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD293315F35CFD31D7E16781BED480DC /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5197F31A41CE6762848513EE3CFF644 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				98A39420045C87522CD7B0793672A05B /* Info.plist */,
+				AA80476489DFC721379B3BE163EE762E /* MBProgressHUD.modulemap */,
+				0C15FC294C7E5164073EFA220BD68B33 /* MBProgressHUD.xcconfig */,
+				DBF128BAAF40CA1844161A056BB5F841 /* MBProgressHUD-dummy.m */,
+				63A62C94E23DA1BBC106C93939EB4159 /* MBProgressHUD-prefix.pch */,
+				79C2D5DE3AAC4FC4319969B38E1617CC /* MBProgressHUD-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/PDFGenerator";
+			path = "../Target Support Files/MBProgressHUD";
 			sourceTree = "<group>";
 		};
-		EE12F0950A11D5B212F9734CD320E016 /* FirebaseInstanceID */ = {
+		F65E3EC7712BFB42DC9F4ED34CA77167 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				086A53797085C2500C3DEF91E1B8A463 /* FIRInstanceID.h */,
-				109234549C90C8188666AB2F8F97151E /* Frameworks */,
-			);
-			path = FirebaseInstanceID;
-			sourceTree = "<group>";
-		};
-		F9D3F88A231AA88EF2A2169E895EDA2D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				002EE38EFCCA53B55A890493F1599E49 /* GoogleSymbolUtilities.framework */,
+				1C11711AD33D9D9DA3CF4812E526BF67 /* GoogleInterchangeUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -667,7 +685,7 @@
 		};
 		341FBAA5D27612DAE899465B49A11403 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29BA1D843149D800238B497384DC6DC3 /* PDFGenerator.xcconfig */;
+			baseConfigurationReference = 9FE4E4F59763D199AAD8AEDC3B6DF657 /* PDFGenerator.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -730,7 +748,7 @@
 		};
 		71AD1A39201C6795966BB2977C419DC8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7094C67539F2E07B50310F5471671FA /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 0C15FC294C7E5164073EFA220BD68B33 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -757,7 +775,7 @@
 		};
 		7A43E0EC919449F20A4E130E36BA70B3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29BA1D843149D800238B497384DC6DC3 /* PDFGenerator.xcconfig */;
+			baseConfigurationReference = 9FE4E4F59763D199AAD8AEDC3B6DF657 /* PDFGenerator.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -785,7 +803,7 @@
 		};
 		9DACC23FA0A1D3380D52044D1FD43C60 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7094C67539F2E07B50310F5471671FA /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 0C15FC294C7E5164073EFA220BD68B33 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;

@@ -167,7 +167,6 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
         // Create a reference to the file you want to upload
         let riversRef = storageRef.child("\(HImanager.currentChapter)/\(pdfname)")
         
-        // Upload the file to the path "images/rivers.jpg"
         let uploadTask = riversRef.putFile(dst, metadata: nil) { metadata, error in
             if (error != nil) {
                 // Uh-oh, an error occurred!
