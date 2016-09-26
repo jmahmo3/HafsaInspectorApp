@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9C0D44AE1D94A51C00DF0FC3 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D44AD1D94A51C00DF0FC3 /* CommentTableViewCell.swift */; };
 		9C0D44B31D94A53800DF0FC3 /* RPFloatingPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D44B21D94A53800DF0FC3 /* RPFloatingPlaceholderTextView.m */; };
+		9C29201A1D98B88800B3F745 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C2920191D98B88800B3F745 /* GoogleService-Info.plist */; };
 		9C41738A1D97CB1800FAAF76 /* IPDFCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4173891D97CB1800FAAF76 /* IPDFCameraViewController.m */; };
 		9C718EBD1D7A8111009F9D79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C718EBC1D7A8111009F9D79 /* Main.storyboard */; };
 		9C718EC11D7A8140009F9D79 /* ChapterPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C718EBE1D7A8140009F9D79 /* ChapterPickerViewController.swift */; };
@@ -122,6 +123,7 @@
 		9C0D44B01D94A53800DF0FC3 /* RPFloatingPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderTextView.h; sourceTree = "<group>"; };
 		9C0D44B11D94A53800DF0FC3 /* RPFloatingPlaceholderConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderConstants.h; sourceTree = "<group>"; };
 		9C0D44B21D94A53800DF0FC3 /* RPFloatingPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPFloatingPlaceholderTextView.m; sourceTree = "<group>"; };
+		9C2920191D98B88800B3F745 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9C4173881D97CB1800FAAF76 /* IPDFCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDFCameraViewController.h; sourceTree = "<group>"; };
 		9C4173891D97CB1800FAAF76 /* IPDFCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPDFCameraViewController.m; sourceTree = "<group>"; };
 		9C718EBC1D7A8111009F9D79 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -419,6 +421,7 @@
 				9C718ECF1D7A81D0009F9D79 /* Assets.xcassets */,
 				9C718ED21D7A82D3009F9D79 /* LaunchScreen.storyboard */,
 				B367E1C41D73F8E6008078DF /* Info.plist */,
+				9C2920191D98B88800B3F745 /* GoogleService-Info.plist */,
 			);
 			path = HafsaInspectorApp;
 			sourceTree = "<group>";
@@ -562,6 +565,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C718ED31D7A82D3009F9D79 /* LaunchScreen.storyboard in Resources */,
+				9C29201A1D98B88800B3F745 /* GoogleService-Info.plist in Resources */,
 				9C718EBD1D7A8111009F9D79 /* Main.storyboard in Resources */,
 				9C718ED01D7A81D0009F9D79 /* Assets.xcassets in Resources */,
 			);

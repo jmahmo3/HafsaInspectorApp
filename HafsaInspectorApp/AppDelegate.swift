@@ -8,6 +8,7 @@
 
 import UIKit
 import MBProgressHUD
+import Firebase
 
 
 @UIApplicationMain
@@ -21,14 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Usually this is not overridden. Using the "did finish launching" method is more typical
 
-        let registered = UserDefaults.standard.bool(forKey: "Registered")
-        if registered {
-            let nav = UINavigationController.init(rootViewController: vc)
-            self.window?.rootViewController? = nav
-
-        }
-        
-        self.getData()
         
         return true
     }
@@ -36,7 +29,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let registered = UserDefaults.standard.bool(forKey: "Registered")
+        if registered {
+            let nav = UINavigationController.init(rootViewController: vc)
+            self.window?.rootViewController? = nav
+            
+        }
         
+        self.getData()
+        
+        //Firebase
+        FIRApp.configure()
+        
+
         return true
     }
 
