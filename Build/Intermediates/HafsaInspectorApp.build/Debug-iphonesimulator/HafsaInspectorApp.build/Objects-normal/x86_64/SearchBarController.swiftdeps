@@ -9,23 +9,23 @@ provides-member:
 - ["CSo16UIViewController", "searchBarController"]
 provides-dynamic-lookup:
 - "layoutSubviews"
+- "searchBar"
 - "prepare"
 - "searchBarController"
-- "searchBar"
 depends-top-level:
-- !private "Device"
-- "TernaryPrecedence"
-- "RootController"
 - "CastingPrecedence"
+- !private "&&"
+- "UIViewController"
 - !private "!="
-- "AssignmentPrecedence"
-- "SearchBarController"
-- !private "=="
 - !private "+"
 - !private "-"
-- "UIViewController"
+- !private "Device"
 - "SearchBar"
-- !private "&&"
+- "TernaryPrecedence"
+- "RootController"
+- !private "=="
+- "AssignmentPrecedence"
+- "SearchBarController"
 depends-member:
 - !private ["Ps9AnyObject", "Device"]
 - !private ["Ps9AnyObject", "SearchBar"]

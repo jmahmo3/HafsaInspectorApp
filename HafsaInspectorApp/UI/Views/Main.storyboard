@@ -88,7 +88,7 @@ next</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="127"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pDT-XK-Svd" id="QFk-dL-1qv">
-                                    <frame key="frameInset" width="375" height="127"/>
+                                    <frame key="frameInset" width="375" height="126"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haa-cropped" translatesAutoresizingMaskIntoConstraints="NO" id="bxD-7J-0Ry">
@@ -143,7 +143,7 @@ next</string>
                                 <rect key="frame" x="0.0" y="155" width="375" height="99"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8zg-GU-Afa" id="dcs-hK-O7e">
-                                    <frame key="frameInset" width="375" height="99"/>
+                                    <frame key="frameInset" width="375" height="98"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQz-5D-lup">
@@ -183,7 +183,7 @@ next</string>
                                 <rect key="frame" x="0.0" y="254" width="375" height="127"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rht-ce-V3J" id="vaZ-iA-TJz">
-                                    <frame key="frameInset" width="375" height="127"/>
+                                    <frame key="frameInset" width="375" height="126"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tk7-Mc-7Rv">
@@ -264,7 +264,7 @@ next</string>
                                 <rect key="frame" x="0.0" y="381" width="375" height="127"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JlA-cN-XLl" id="dYk-dj-X97">
-                                    <frame key="frameInset" width="375" height="127"/>
+                                    <frame key="frameInset" width="375" height="126"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nK4-wQ-8Kf" customClass="RPFloatingPlaceholderTextView">
@@ -525,6 +525,38 @@ next</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z4H-1G-7UY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4917.6000000000004" y="303.59820089955025"/>
+        </scene>
+        <!--Web View View Controller-->
+        <scene sceneID="ox4-D3-4QT">
+            <objects>
+                <viewController storyboardIdentifier="WebViewViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="n6B-EL-HYy" customClass="WebViewViewController" customModule="HafsaInspectorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i2Z-9B-sPq"/>
+                        <viewControllerLayoutGuide type="bottom" id="kH0-Tu-qaT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="awG-TL-Gbl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F6X-vc-gk3">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kH0-Tu-qaT" firstAttribute="top" secondItem="F6X-vc-gk3" secondAttribute="bottom" id="0oV-0Q-Rwx"/>
+                            <constraint firstItem="F6X-vc-gk3" firstAttribute="top" secondItem="awG-TL-Gbl" secondAttribute="top" constant="64" id="Ell-eC-SKW"/>
+                            <constraint firstAttribute="trailing" secondItem="F6X-vc-gk3" secondAttribute="trailing" id="ZSo-pl-ZxI"/>
+                            <constraint firstItem="F6X-vc-gk3" firstAttribute="leading" secondItem="awG-TL-Gbl" secondAttribute="leading" id="a0R-Zt-qF2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="F6X-vc-gk3" id="hNe-aS-Jgb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l6E-08-o5O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5672.8000000000002" y="296.40179910044981"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="4CI-Y5-UGb">

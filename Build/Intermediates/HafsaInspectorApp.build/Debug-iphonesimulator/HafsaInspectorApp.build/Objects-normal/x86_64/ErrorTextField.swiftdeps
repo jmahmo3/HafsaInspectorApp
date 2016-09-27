@@ -6,15 +6,15 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp14ErrorTextField", ""]
 provides-dynamic-lookup:
-- "revealError"
 - "prepare"
+- "revealError"
 depends-top-level:
-- "AssignmentPrecedence"
+- !private "!"
 - "Bool"
+- "AssignmentPrecedence"
 - "TextField"
 - "ErrorTextField"
 - "BooleanLiteralType"
-- !private "!"
 - !private "Color"
 depends-member:
 - !private ["Ps9AnyObject", "Color"]

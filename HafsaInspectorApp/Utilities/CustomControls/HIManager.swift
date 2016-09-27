@@ -31,7 +31,11 @@ class HIManager: NSObject {
         return dateString
     }()
     
-    lazy var currentEstablishment: String = ""
+    var currentEstablishment: String = {
+        let chapter = UserDefaults.standard.string(forKey: "currentEstablishment")
+        if chapter != nil { return chapter! }
+        else { return "" }
+    }()
     
     lazy var comments: String = ""
 

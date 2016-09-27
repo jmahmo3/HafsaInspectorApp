@@ -9,11 +9,11 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "CGFloat"
-- "BorderWidthPresetToValue"
 - !private "~="
 - "=="
-- "BorderWidthPreset"
+- "BorderWidthPresetToValue"
 - "Int"
+- "BorderWidthPreset"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

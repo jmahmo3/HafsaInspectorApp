@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp14CapturePreview", ""]
 provides-dynamic-lookup:
+- "captureDevicePointOfInterestForPoint"
 - "pointForCaptureDevicePointOfInterest"
 - "prepare"
 - "layerClass"
-- "captureDevicePointOfInterestForPoint"
 depends-top-level:
-- "View"
-- !private "AVLayerVideoGravityResizeAspectFill"
-- "CastingPrecedence"
-- !private "AssignmentPrecedence"
-- "CGPoint"
-- "CapturePreview"
-- !private "BooleanLiteralType"
 - "AnyClass"
 - !private "Color"
 - !private "AVCaptureVideoPreviewLayer"
+- "CGPoint"
+- "CastingPrecedence"
+- !private "AssignmentPrecedence"
+- "View"
+- "CapturePreview"
+- !private "AVLayerVideoGravityResizeAspectFill"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["CSo26AVCaptureVideoPreviewLayer", "captureDevicePointOfInterest"]
 - ["CSo26AVCaptureVideoPreviewLayer", "deinit"]

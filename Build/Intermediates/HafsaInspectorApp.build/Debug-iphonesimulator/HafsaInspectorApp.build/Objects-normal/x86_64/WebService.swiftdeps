@@ -23,46 +23,46 @@ provides-member:
 provides-dynamic-lookup:
 - "parseJSON"
 depends-top-level:
-- "AnyObject"
+- "HTTPRequestContentType"
+- "NSObject"
 - !private "FIRDatabase"
+- "Void"
+- !private "HIManager"
+- "Error"
+- "BooleanLiteralType"
+- "Bool"
+- !private "NSMutableArray"
+- !private "NSDictionary"
+- !private "||"
+- "NSError"
+- "ExtendedGraphemeClusterType"
+- !private "URLSession"
+- "Array"
+- !private "NSArray"
+- !private "!="
+- "StringLiteralType"
+- !private "URLResponse"
+- "Dictionary"
+- "AnyObject"
+- "Data"
 - "NSString"
 - !private "HTTPURLResponse"
-- !private "JSONSerialization"
-- !private "NSMutableArray"
+- "WebService"
+- "HTTPRequestAuthType"
+- "=="
 - "HTTPRequestMethod"
-- !private "HIManager"
 - "chaptersAndEstablishmentsEndpoint"
-- "Bool"
 - "CastingPrecedence"
 - "URLRequest"
-- "AssignmentPrecedence"
-- "=="
-- "ExtendedGraphemeClusterType"
-- "NSObject"
-- !private "||"
-- "WebService"
-- "HTTPRequestContentType"
-- "StringLiteralType"
-- "Error"
-- "Void"
-- !private "NSDictionary"
-- !private "URLSession"
-- "NSError"
-- !private "print"
-- "Dictionary"
-- !private "!="
-- "String"
-- "Data"
-- "UnicodeScalarType"
-- "BooleanLiteralType"
+- !private "JSONSerialization"
 - !private "NSMutableURLRequest"
-- !private "NSArray"
-- "Array"
-- "HTTPRequestAuthType"
-- !private "FIRDatabaseReference"
+- "AssignmentPrecedence"
+- "UnicodeScalarType"
+- !private "print"
+- "String"
 - !private "URL"
-- !private "URLResponse"
 - !private "DispatchQueue"
+- !private "FIRDatabaseReference"
 depends-member:
 - !private ["Vs11AnyIterator", "Element"]
 - !private ["Ps9AnyObject", "DispatchQueue"]
@@ -80,8 +80,11 @@ depends-member:
 - !private ["Ps9AnyObject", "URLSession"]
 - !private ["Ps9AnyObject", "add"]
 - !private ["Ps9AnyObject", "addValue"]
+- !private ["Ps9AnyObject", "allKeys"]
 - !private ["Ps9AnyObject", "async"]
+- !private ["Ps9AnyObject", "chapters"]
 - !private ["Ps9AnyObject", "chaptersAndEstablishmentsEndpoint"]
+- !private ["Ps9AnyObject", "chaptersData"]
 - !private ["Ps9AnyObject", "characters"]
 - !private ["Ps9AnyObject", "child"]
 - !private ["Ps9AnyObject", "data"]
@@ -96,6 +99,7 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "jsonObject"]
 - !private ["Ps9AnyObject", "main"]
+- !private ["Ps9AnyObject", "mutableCopy"]
 - !private ["Ps9AnyObject", "object"]
 - !private ["Ps9AnyObject", "observe"]
 - ["Ps9AnyObject", "parseJSON"]
@@ -146,8 +150,11 @@ depends-member:
 - !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "add"]
 - !private ["Ps7CVarArg", "addValue"]
+- !private ["Ps7CVarArg", "allKeys"]
 - !private ["Ps7CVarArg", "async"]
+- !private ["Ps7CVarArg", "chapters"]
 - !private ["Ps7CVarArg", "chaptersAndEstablishmentsEndpoint"]
+- !private ["Ps7CVarArg", "chaptersData"]
 - !private ["Ps7CVarArg", "characters"]
 - !private ["Ps7CVarArg", "child"]
 - !private ["Ps7CVarArg", "data"]
@@ -163,6 +170,7 @@ depends-member:
 - !private ["Ps7CVarArg", "jsonObject"]
 - !private ["Ps7CVarArg", "main"]
 - !private ["Ps7CVarArg", "map"]
+- !private ["Ps7CVarArg", "mutableCopy"]
 - !private ["Ps7CVarArg", "object"]
 - !private ["Ps7CVarArg", "observe"]
 - ["Ps7CVarArg", "parseJSON"]
@@ -211,8 +219,11 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "add"]
 - !private ["Ps28CustomDebugStringConvertible", "addValue"]
+- !private ["Ps28CustomDebugStringConvertible", "allKeys"]
 - !private ["Ps28CustomDebugStringConvertible", "async"]
+- !private ["Ps28CustomDebugStringConvertible", "chapters"]
 - !private ["Ps28CustomDebugStringConvertible", "chaptersAndEstablishmentsEndpoint"]
+- !private ["Ps28CustomDebugStringConvertible", "chaptersData"]
 - !private ["Ps28CustomDebugStringConvertible", "characters"]
 - !private ["Ps28CustomDebugStringConvertible", "child"]
 - !private ["Ps28CustomDebugStringConvertible", "data"]
@@ -227,6 +238,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "jsonObject"]
 - !private ["Ps28CustomDebugStringConvertible", "main"]
 - !private ["Ps28CustomDebugStringConvertible", "map"]
+- !private ["Ps28CustomDebugStringConvertible", "mutableCopy"]
 - !private ["Ps28CustomDebugStringConvertible", "object"]
 - !private ["Ps28CustomDebugStringConvertible", "observe"]
 - ["Ps28CustomDebugStringConvertible", "parseJSON"]
@@ -253,10 +265,12 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "add"]
+- !private ["Ps17CustomReflectable", "allKeys"]
 - !private ["Ps17CustomReflectable", "characters"]
 - !private ["Ps17CustomReflectable", "hashValue"]
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "map"]
+- !private ["Ps17CustomReflectable", "mutableCopy"]
 - !private ["Ps17CustomReflectable", "object"]
 - !private ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "value"]
@@ -279,8 +293,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "add"]
 - !private ["Ps23CustomStringConvertible", "addValue"]
+- !private ["Ps23CustomStringConvertible", "allKeys"]
 - !private ["Ps23CustomStringConvertible", "async"]
+- !private ["Ps23CustomStringConvertible", "chapters"]
 - !private ["Ps23CustomStringConvertible", "chaptersAndEstablishmentsEndpoint"]
+- !private ["Ps23CustomStringConvertible", "chaptersData"]
 - !private ["Ps23CustomStringConvertible", "characters"]
 - !private ["Ps23CustomStringConvertible", "child"]
 - !private ["Ps23CustomStringConvertible", "data"]
@@ -296,6 +313,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "jsonObject"]
 - !private ["Ps23CustomStringConvertible", "main"]
 - !private ["Ps23CustomStringConvertible", "map"]
+- !private ["Ps23CustomStringConvertible", "mutableCopy"]
 - !private ["Ps23CustomStringConvertible", "object"]
 - !private ["Ps23CustomStringConvertible", "observe"]
 - ["Ps23CustomStringConvertible", "parseJSON"]
@@ -336,8 +354,11 @@ depends-member:
 - ["Ps9Equatable", "_toAnyHashable"]
 - !private ["Ps9Equatable", "add"]
 - !private ["Ps9Equatable", "addValue"]
+- !private ["Ps9Equatable", "allKeys"]
 - !private ["Ps9Equatable", "async"]
+- !private ["Ps9Equatable", "chapters"]
 - !private ["Ps9Equatable", "chaptersAndEstablishmentsEndpoint"]
+- !private ["Ps9Equatable", "chaptersData"]
 - !private ["Ps9Equatable", "characters"]
 - !private ["Ps9Equatable", "child"]
 - !private ["Ps9Equatable", "data"]
@@ -352,6 +373,7 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "jsonObject"]
 - !private ["Ps9Equatable", "main"]
+- !private ["Ps9Equatable", "mutableCopy"]
 - !private ["Ps9Equatable", "object"]
 - !private ["Ps9Equatable", "observe"]
 - ["Ps9Equatable", "parseJSON"]
@@ -377,9 +399,11 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "add"]
 - !private ["Ps25ExpressibleByArrayLiteral", "init"]
 - !private ["Ps25ExpressibleByArrayLiteral", "map"]
+- !private ["Ps25ExpressibleByArrayLiteral", "mutableCopy"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "allKeys"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "object"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "value"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "characters"]
@@ -410,6 +434,8 @@ depends-member:
 - !private ["P12PDFGenerator19FilePathConvertible", "characters"]
 - ["P12PDFGenerator19FilePathConvertible", "init"]
 - !private ["Sf", "deinit"]
+- !private ["C17HafsaInspectorApp9HIManager", "chapters"]
+- !private ["C17HafsaInspectorApp9HIManager", "chaptersData"]
 - !private ["C17HafsaInspectorApp9HIManager", "data"]
 - !private ["C17HafsaInspectorApp9HIManager", "deinit"]
 - !private ["C17HafsaInspectorApp9HIManager", "sharedClient"]
@@ -468,8 +494,11 @@ depends-member:
 - ["Ps8Hashable", "_toAnyHashable"]
 - !private ["Ps8Hashable", "add"]
 - !private ["Ps8Hashable", "addValue"]
+- !private ["Ps8Hashable", "allKeys"]
 - !private ["Ps8Hashable", "async"]
+- !private ["Ps8Hashable", "chapters"]
 - !private ["Ps8Hashable", "chaptersAndEstablishmentsEndpoint"]
+- !private ["Ps8Hashable", "chaptersData"]
 - !private ["Ps8Hashable", "characters"]
 - !private ["Ps8Hashable", "child"]
 - !private ["Ps8Hashable", "data"]
@@ -484,6 +513,7 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "jsonObject"]
 - !private ["Ps8Hashable", "main"]
+- !private ["Ps8Hashable", "mutableCopy"]
 - !private ["Ps8Hashable", "object"]
 - !private ["Ps8Hashable", "observe"]
 - ["Ps8Hashable", "parseJSON"]
@@ -541,15 +571,18 @@ depends-member:
 - !private ["CSo7NSArray", "Iterator"]
 - !private ["CSo7NSArray", "add"]
 - !private ["CSo7NSArray", "deinit"]
+- !private ["CSo7NSArray", "mutableCopy"]
 - !private ["PSo8NSCoding", "Element"]
 - !private ["PSo8NSCoding", "Iterator"]
 - !private ["PSo8NSCoding", "add"]
 - !private ["PSo8NSCoding", "addValue"]
+- !private ["PSo8NSCoding", "allKeys"]
 - !private ["PSo8NSCoding", "characters"]
 - !private ["PSo8NSCoding", "description"]
 - !private ["PSo8NSCoding", "domain"]
 - !private ["PSo8NSCoding", "httpMethod"]
 - ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "mutableCopy"]
 - !private ["PSo8NSCoding", "object"]
 - !private ["PSo8NSCoding", "replacingOccurrences"]
 - !private ["PSo8NSCoding", "statusCode"]
@@ -559,17 +592,20 @@ depends-member:
 - !private ["PSo9NSCopying", "Iterator"]
 - !private ["PSo9NSCopying", "add"]
 - !private ["PSo9NSCopying", "addValue"]
+- !private ["PSo9NSCopying", "allKeys"]
 - !private ["PSo9NSCopying", "characters"]
 - !private ["PSo9NSCopying", "description"]
 - !private ["PSo9NSCopying", "domain"]
 - !private ["PSo9NSCopying", "httpMethod"]
 - ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "mutableCopy"]
 - !private ["PSo9NSCopying", "object"]
 - !private ["PSo9NSCopying", "replacingOccurrences"]
 - !private ["PSo9NSCopying", "resume"]
 - !private ["PSo9NSCopying", "statusCode"]
 - !private ["PSo9NSCopying", "userInfo"]
 - !private ["PSo9NSCopying", "value"]
+- !private ["CSo12NSDictionary", "allKeys"]
 - ["CSo12NSDictionary", "deinit"]
 - !private ["CSo12NSDictionary", "object"]
 - !private ["CSo12NSDictionary", "value"]
@@ -581,6 +617,8 @@ depends-member:
 - !private ["PSo17NSFastEnumeration", "Element"]
 - !private ["PSo17NSFastEnumeration", "Iterator"]
 - !private ["PSo17NSFastEnumeration", "add"]
+- !private ["PSo17NSFastEnumeration", "allKeys"]
+- !private ["PSo17NSFastEnumeration", "mutableCopy"]
 - !private ["PSo17NSFastEnumeration", "object"]
 - !private ["PSo17NSFastEnumeration", "value"]
 - !private ["C10Foundation25NSFastEnumerationIterator", "Element"]
@@ -592,9 +630,11 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "Iterator"]
 - !private ["PSo16NSMutableCopying", "add"]
 - !private ["PSo16NSMutableCopying", "addValue"]
+- !private ["PSo16NSMutableCopying", "allKeys"]
 - !private ["PSo16NSMutableCopying", "characters"]
 - !private ["PSo16NSMutableCopying", "httpMethod"]
 - ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "mutableCopy"]
 - !private ["PSo16NSMutableCopying", "object"]
 - !private ["PSo16NSMutableCopying", "replacingOccurrences"]
 - !private ["PSo16NSMutableCopying", "value"]
@@ -631,8 +671,11 @@ depends-member:
 - ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "add"]
 - !private ["CSo8NSObject", "addValue"]
+- !private ["CSo8NSObject", "allKeys"]
 - !private ["CSo8NSObject", "async"]
+- !private ["CSo8NSObject", "chapters"]
 - !private ["CSo8NSObject", "chaptersAndEstablishmentsEndpoint"]
+- !private ["CSo8NSObject", "chaptersData"]
 - !private ["CSo8NSObject", "characters"]
 - !private ["CSo8NSObject", "child"]
 - !private ["CSo8NSObject", "data"]
@@ -647,6 +690,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "jsonObject"]
 - !private ["CSo8NSObject", "main"]
+- !private ["CSo8NSObject", "mutableCopy"]
 - !private ["CSo8NSObject", "object"]
 - !private ["CSo8NSObject", "observe"]
 - ["CSo8NSObject", "parseJSON"]
@@ -675,8 +719,11 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "URLSession"]
 - !private ["PSo16NSObjectProtocol", "add"]
 - !private ["PSo16NSObjectProtocol", "addValue"]
+- !private ["PSo16NSObjectProtocol", "allKeys"]
 - !private ["PSo16NSObjectProtocol", "async"]
+- !private ["PSo16NSObjectProtocol", "chapters"]
 - !private ["PSo16NSObjectProtocol", "chaptersAndEstablishmentsEndpoint"]
+- !private ["PSo16NSObjectProtocol", "chaptersData"]
 - !private ["PSo16NSObjectProtocol", "characters"]
 - !private ["PSo16NSObjectProtocol", "child"]
 - !private ["PSo16NSObjectProtocol", "data"]
@@ -690,6 +737,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "jsonObject"]
 - !private ["PSo16NSObjectProtocol", "main"]
+- !private ["PSo16NSObjectProtocol", "mutableCopy"]
 - !private ["PSo16NSObjectProtocol", "object"]
 - !private ["PSo16NSObjectProtocol", "observe"]
 - ["PSo16NSObjectProtocol", "parseJSON"]
@@ -707,11 +755,13 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "Iterator"]
 - !private ["PSo14NSSecureCoding", "add"]
 - !private ["PSo14NSSecureCoding", "addValue"]
+- !private ["PSo14NSSecureCoding", "allKeys"]
 - !private ["PSo14NSSecureCoding", "characters"]
 - !private ["PSo14NSSecureCoding", "description"]
 - !private ["PSo14NSSecureCoding", "domain"]
 - !private ["PSo14NSSecureCoding", "httpMethod"]
 - ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "mutableCopy"]
 - !private ["PSo14NSSecureCoding", "object"]
 - !private ["PSo14NSSecureCoding", "replacingOccurrences"]
 - !private ["PSo14NSSecureCoding", "statusCode"]
@@ -757,7 +807,9 @@ depends-member:
 - !private ["Ps8Sequence", "Value"]
 - !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "add"]
+- !private ["Ps8Sequence", "allKeys"]
 - !private ["Ps8Sequence", "map"]
+- !private ["Ps8Sequence", "mutableCopy"]
 - !private ["Ps8Sequence", "object"]
 - !private ["Ps8Sequence", "split"]
 - !private ["Ps8Sequence", "value"]
@@ -860,8 +912,11 @@ depends-member:
 - ["Ps9_Hashable", "_toAnyHashable"]
 - !private ["Ps9_Hashable", "add"]
 - !private ["Ps9_Hashable", "addValue"]
+- !private ["Ps9_Hashable", "allKeys"]
 - !private ["Ps9_Hashable", "async"]
+- !private ["Ps9_Hashable", "chapters"]
 - !private ["Ps9_Hashable", "chaptersAndEstablishmentsEndpoint"]
+- !private ["Ps9_Hashable", "chaptersData"]
 - !private ["Ps9_Hashable", "characters"]
 - !private ["Ps9_Hashable", "child"]
 - !private ["Ps9_Hashable", "data"]
@@ -876,6 +931,7 @@ depends-member:
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "jsonObject"]
 - !private ["Ps9_Hashable", "main"]
+- !private ["Ps9_Hashable", "mutableCopy"]
 - !private ["Ps9_Hashable", "object"]
 - !private ["Ps9_Hashable", "observe"]
 - ["Ps9_Hashable", "parseJSON"]

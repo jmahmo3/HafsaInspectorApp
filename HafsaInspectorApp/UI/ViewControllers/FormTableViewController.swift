@@ -152,9 +152,10 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
             pages.append(page)
         }
         
-        let trimmedChapter = HImanager.currentChapter.trimmingCharacters(in: .whitespaces)
-        let trimmedEstablishment = HImanager.currentEstablishment.trimmingCharacters(in: .whitespaces)
-        let pdfname = "\(trimmedChapter)_\(trimmedEstablishment)_\(HImanager.userName).pdf"
+        let trimmedChapter = (HIManager().currentChapter as NSString).replacingOccurrences(of: " ", with: "_")
+        let trimmedEstablishment = (HIManager().currentEstablishment as NSString).replacingOccurrences(of: " ", with: "_").replacingOccurrences(of: ".", with: "_")
+        let trimmedUserName = (HIManager().userName as NSString).replacingOccurrences(of: " ", with: "_")
+        let pdfname = "\(trimmedChapter)_\(trimmedEstablishment)_\(trimmedUserName).pdf"
         
         let dst = URL(fileURLWithPath: NSTemporaryDirectory().appending(pdfname))
         // outputs as Data
@@ -177,6 +178,17 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
             if (error != nil) {
                 // Uh-oh, an error occurred!
             } else {
+                let date = Date()
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "MM-dd-yyyy_hh_mm_ss"
+                let dateString: NSString = dateFormatter.string(from: date) as NSString
+        
+                let dict: NSDictionary = [dateString:(metadata!.name)!]
+                let ref: FIRDatabaseReference =  FIRDatabase.database().reference()
+                ref.child("metadata").child(trimmedChapter).childByAutoId().setValue(dict)
+//                ref.child("metadata").child(trimmedChapter).setValue(dict, withCompletionBlock: { (error, databaseref) in
+                
+//                })
                 print(metadata?.path)
                 // Metadata contains file metadata such as size, content-type, and download URL.
 //                let downloadURL = metadata!.downloadURL

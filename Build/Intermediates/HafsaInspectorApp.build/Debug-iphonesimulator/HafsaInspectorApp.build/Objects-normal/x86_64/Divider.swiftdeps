@@ -10,17 +10,17 @@ provides-member:
 - ["C17HafsaInspectorApp7Divider", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "Divider"
+- "CGFloat"
+- "DividerAlignment"
 - "UIView"
+- !private "~="
+- !private "-"
+- "UIColor"
+- "AssignmentPrecedence"
+- "=="
 - !private "CGRect"
 - "Int"
-- "CGFloat"
-- !private "-"
-- !private "~="
-- "DividerAlignment"
-- "UIColor"
-- "=="
-- "AssignmentPrecedence"
-- "Divider"
 depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - ["Ps9AnyObject", "DividerAlignment"]

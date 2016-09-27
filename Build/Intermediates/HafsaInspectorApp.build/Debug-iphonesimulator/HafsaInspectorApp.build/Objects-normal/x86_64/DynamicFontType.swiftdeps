@@ -9,15 +9,15 @@ provides-member:
 - ["P17HafsaInspectorApp23DynamicFontTypeDelegate", ""]
 - ["C17HafsaInspectorApp15DynamicFontType", ""]
 provides-dynamic-lookup:
+- "handleContentSizeChange"
 - "dynamicFontType"
 - "delegate"
-- "handleContentSizeChange"
 depends-top-level:
-- "NSObject"
-- !private "NotificationCenter"
-- "DynamicFontTypeDelegate"
 - !private "NSNotification"
+- !private "NotificationCenter"
 - "DynamicFontType"
+- "DynamicFontTypeDelegate"
+- "NSObject"
 depends-member:
 - !private ["Ps9AnyObject", "NSNotification"]
 - !private ["Ps9AnyObject", "Name"]

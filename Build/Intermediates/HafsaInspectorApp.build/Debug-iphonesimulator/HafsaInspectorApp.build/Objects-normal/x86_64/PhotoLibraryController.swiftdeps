@@ -6,18 +6,18 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp22PhotoLibraryController", ""]
 provides-dynamic-lookup:
-- "prepare"
 - "photoLibrary"
 - "viewDidLoad"
+- "prepare"
 depends-top-level:
-- "PhotoLibraryController"
-- "AssignmentPrecedence"
-- !private "Color"
-- !private "Device"
-- "UIViewController"
-- !private "BooleanLiteralType"
 - "PhotoLibrary"
+- !private "Color"
+- !private "BooleanLiteralType"
+- "UIViewController"
+- "PhotoLibraryController"
+- !private "Device"
 - "PhotoLibraryDelegate"
+- "AssignmentPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "Color"]
 - !private ["Ps9AnyObject", "Device"]

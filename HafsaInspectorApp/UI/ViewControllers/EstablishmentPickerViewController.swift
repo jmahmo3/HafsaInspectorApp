@@ -71,6 +71,8 @@ class EstablishmentPickerViewController: UIViewController, UITextFieldDelegate, 
         else {
             //set establishment
             HImanager.currentEstablishment = establishmentTextField.text!
+            UserDefaults.standard.setValue(establishmentTextField.text!, forKey: "currentEstablishment")
+
             //segue
             let vc = FormTableViewController.create()
             self.navigationController?.pushViewController(vc, animated: true)
@@ -81,7 +83,7 @@ class EstablishmentPickerViewController: UIViewController, UITextFieldDelegate, 
 //        let vc = ChapterPickerViewController.create()
 //        vc.delegate = self
 //        self.navigationController?.pushViewController(vc, animated: true)
-        let vc = SettingsViewController.create(false)
+        let vc = SettingsViewController.create(.Settings)
 //        vc.delegate = self
         self.navigationController?.pushViewController(vc, animated: true)
     }

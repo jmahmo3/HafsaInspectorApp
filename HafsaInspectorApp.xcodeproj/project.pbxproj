@@ -14,6 +14,7 @@
 		9C29201F1D9A0CA200B3F745 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C29201E1D9A0CA200B3F745 /* SettingsViewController.swift */; };
 		9C2920211D9A1A0100B3F745 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2920201D9A1A0100B3F745 /* CreateUserViewController.swift */; };
 		9C41738A1D97CB1800FAAF76 /* IPDFCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4173891D97CB1800FAAF76 /* IPDFCameraViewController.m */; };
+		9C4CDAAB1D9AFDA8005BAD5D /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4CDAAA1D9AFDA8005BAD5D /* WebViewViewController.swift */; };
 		9C718EBD1D7A8111009F9D79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C718EBC1D7A8111009F9D79 /* Main.storyboard */; };
 		9C718EC11D7A8140009F9D79 /* ChapterPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C718EBE1D7A8140009F9D79 /* ChapterPickerViewController.swift */; };
 		9C718EC21D7A8140009F9D79 /* EstablishmentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C718EBF1D7A8140009F9D79 /* EstablishmentPickerViewController.swift */; };
@@ -133,6 +134,7 @@
 		9C2920201D9A1A0100B3F745 /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		9C4173881D97CB1800FAAF76 /* IPDFCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDFCameraViewController.h; sourceTree = "<group>"; };
 		9C4173891D97CB1800FAAF76 /* IPDFCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPDFCameraViewController.m; sourceTree = "<group>"; };
+		9C4CDAAA1D9AFDA8005BAD5D /* WebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		9C718EBC1D7A8111009F9D79 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9C718EBE1D7A8140009F9D79 /* ChapterPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterPickerViewController.swift; sourceTree = "<group>"; };
 		9C718EBF1D7A8140009F9D79 /* EstablishmentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstablishmentPickerViewController.swift; sourceTree = "<group>"; };
@@ -481,6 +483,7 @@
 				9C88A84D1D99A3C900254B59 /* LoginViewController.swift */,
 				9C29201E1D9A0CA200B3F745 /* SettingsViewController.swift */,
 				9C2920201D9A1A0100B3F745 /* CreateUserViewController.swift */,
+				9C4CDAAA1D9AFDA8005BAD5D /* WebViewViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -723,6 +726,7 @@
 				9CF8EBF31D95C45F00639E91 /* RaisedButton.swift in Sources */,
 				9CF8EBBA1D95C45F00639E91 /* Capture.swift in Sources */,
 				9CF8EBC81D95C45F00639E91 /* CornerRadius.swift in Sources */,
+				9C4CDAAB1D9AFDA8005BAD5D /* WebViewViewController.swift in Sources */,
 				9CF8EBCA1D95C45F00639E91 /* Device.swift in Sources */,
 				9CF8EBC11D95C45F00639E91 /* CollectionView.swift in Sources */,
 				9C2920211D9A1A0100B3F745 /* CreateUserViewController.swift in Sources */,

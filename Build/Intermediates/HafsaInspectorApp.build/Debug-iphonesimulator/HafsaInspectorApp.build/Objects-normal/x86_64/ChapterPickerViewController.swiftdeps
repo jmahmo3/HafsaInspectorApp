@@ -9,45 +9,45 @@ provides-member:
 - ["P17HafsaInspectorApp21ChapterPickerDelegate", ""]
 - ["C17HafsaInspectorApp27ChapterPickerViewController", ""]
 provides-dynamic-lookup:
-- "backButtonPressed"
-- "chapterTextField"
-- "textFieldShouldReturn"
-- "picker"
-- "viewDidLoad"
-- "chapterData"
-- "textFieldDidBeginEditing"
-- "saveData"
-- "setupView"
-- "chapterLabel"
-- "nextButtonPressed"
-- "didGetChapterData"
-- "create"
 - "nextButton"
+- "textFieldDidBeginEditing"
+- "nextButtonPressed"
+- "chapterLabel"
+- "viewDidLoad"
+- "didGetChapterData"
+- "textFieldShouldReturn"
+- "backButtonPressed"
+- "picker"
+- "setupView"
+- "chapterData"
+- "create"
+- "saveData"
+- "chapterTextField"
 depends-top-level:
+- !private "Bundle"
+- !private "UIFont"
+- "UITextField"
+- "HIManager"
+- !private "StringLiteralType"
+- !private "UserDefaults"
+- "ChapterPickerDelegate"
+- "UIPickerView"
+- "AnyObject"
+- !private "BooleanLiteralType"
+- "UITextFieldDelegate"
+- "UILabel"
+- "ChapterPickerViewController"
 - "HITextField"
-- "String"
-- !private "&&"
 - "UIButton"
 - !private "UIStoryboard"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
 - !private "!"
-- "ChapterPickerViewController"
 - "UIViewController"
 - "Bool"
 - !private "UIColor"
-- !private "UserDefaults"
-- "UITextFieldDelegate"
-- "ChapterPickerDelegate"
-- !private "StringLiteralType"
-- "AnyObject"
-- !private "Bundle"
-- "UITextField"
-- !private "UIFont"
-- !private "BooleanLiteralType"
-- "UIPickerView"
-- "UILabel"
-- "HIManager"
+- "String"
+- "AssignmentPrecedence"
+- !private "&&"
+- "CastingPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "Bundle"]
 - !private ["Ps9AnyObject", "HIBackground"]
@@ -483,6 +483,7 @@ depends-member:
 - !private ["Sf", "deinit"]
 - !private ["C17HafsaInspectorApp9HIManager", "currentChapter"]
 - ["C17HafsaInspectorApp9HIManager", "deinit"]
+- !private ["C17HafsaInspectorApp9HIManager", "init"]
 - ["C17HafsaInspectorApp9HIManager", "sharedClient"]
 - !private ["C17HafsaInspectorApp9HIManager", "userName"]
 - !private ["C17HafsaInspectorApp11HITextField", "deinit"]
@@ -1265,7 +1266,6 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "chapterLabel"]
 - !private ["PSo19UITextFieldDelegate", "chapterTextField"]
 - !private ["PSo19UITextFieldDelegate", "createAlert"]
-- !private ["PSo19UITextFieldDelegate", "delegate"]
 - !private ["PSo19UITextFieldDelegate", "hideKeyboardWhenTappedAround"]
 - !private ["PSo19UITextFieldDelegate", "isOnScreen"]
 - !private ["PSo19UITextFieldDelegate", "navigationController"]

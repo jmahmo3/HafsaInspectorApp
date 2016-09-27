@@ -11,9 +11,9 @@ provides-member:
 - ["SS", "trim"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "CharacterSet"
 - "String"
 - "UnicodeScalarType"
+- !private "CharacterSet"
 - "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "components"]
