@@ -1975,13 +1975,10 @@ typedef SWIFT_ENUM_NAMED(NSInteger, CornerRadiusPreset, "CornerRadiusPreset") {
 SWIFT_CLASS("_TtC17HafsaInspectorApp24CreateUserViewController")
 @interface CreateUserViewController : UIViewController <UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified createButton;
-@property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified sanfranAdmin;
-@property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified chicagoAdmin;
 @property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified admin;
 @property (nonatomic, weak) IBOutlet HITextField * _Null_unspecified fullname;
 @property (nonatomic, weak) IBOutlet HITextField * _Null_unspecified username;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified chicagoLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified sanfranLabel;
+@property (nonatomic, weak) IBOutlet HITextField * _Null_unspecified chapterPicker;
 + (CreateUserViewController * _Nonnull)create;
 - (void)viewDidLoad;
 - (void)switchChanged;
@@ -2411,6 +2408,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, GridAxisDirection, "GridAxisDirection") {
 
 SWIFT_CLASS("_TtC17HafsaInspectorApp9HIManager")
 @interface HIManager : NSObject
++ (HIManager * _Nonnull)sharedClient;
 @property (nonatomic, copy) NSString * _Nonnull userName;
 @property (nonatomic, copy) NSString * _Nonnull currentChapter;
 @property (nonatomic, copy) NSString * _Nonnull currentDate;
@@ -2425,7 +2423,6 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp9HIManager")
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull chapterArray;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull establishmentArray;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull supplierArray;
-+ (HIManager * _Nonnull)sharedClient;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2796,7 +2793,6 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp19LoginViewController")
 @property (nonatomic, weak) IBOutlet HITextField * _Null_unspecified password;
 @property (nonatomic, weak) IBOutlet HITextField * _Null_unspecified username;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
 - (IBAction)loginButtonPressed:(id _Nonnull)sender;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

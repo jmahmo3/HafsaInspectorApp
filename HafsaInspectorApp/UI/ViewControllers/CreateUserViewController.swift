@@ -12,15 +12,11 @@ import Firebase
 class CreateUserViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var createButton: UIButton!
-    @IBOutlet weak var sanfranAdmin: UISwitch!
-    @IBOutlet weak var chicagoAdmin: UISwitch!
     @IBOutlet weak var admin: UISwitch!
     @IBOutlet weak var fullname: HITextField!
     @IBOutlet weak var username: HITextField!
     
-    @IBOutlet weak var chicagoLabel: UILabel!
-    @IBOutlet weak var sanfranLabel: UILabel!
-    
+    @IBOutlet weak var chapterPicker: HITextField!
     
     static func create() -> CreateUserViewController {
         let frameworkBundle = Bundle.main
@@ -49,18 +45,17 @@ class CreateUserViewController: UIViewController, UITextFieldDelegate {
         username.placeholder = "Username"
         fullname.placeholder = "Full Name"
         
-        self.sanfranAdmin.alpha = 0
-        self.chicagoAdmin.alpha = 0
-        self.chicagoLabel.alpha = 0
-        self.sanfranLabel.alpha = 0
-        self.sanfranAdmin.isHidden = true
-        self.chicagoAdmin.isHidden = true
+        chapterPicker.delegate = self
         
+        chapterPicker.placeholder = "Select Chapter to set Admin"
+        chapterPicker.setupChapterPicker()
+        chapterPicker.alpha = 0
+        chapterPicker.isHidden = true
+
         username.autocorrectionType = .no
         fullname.autocorrectionType = .no
         
         self.admin.addTarget(self, action:#selector(switchChanged) , for: .valueChanged)
-        
         
     }
     
@@ -69,25 +64,14 @@ class CreateUserViewController: UIViewController, UITextFieldDelegate {
             
             UIView.animate(withDuration: 0.3, delay: 0.0, options: [], animations: { () -> Void in
                 if self.admin.isOn {
-                    
-                    self.sanfranAdmin.alpha = 1
-                    self.chicagoAdmin.alpha = 1
-                    self.chicagoLabel.alpha = 1
-                    self.sanfranLabel.alpha = 1
-                    self.sanfranAdmin.isHidden = false
-                    self.chicagoAdmin.isHidden = false
+                    self.chapterPicker.alpha = 1
+                    self.chapterPicker.isHidden = false
                 }
                 else {
-                    self.sanfranAdmin.alpha = 0
-                    self.chicagoAdmin.alpha = 0
-                    self.chicagoLabel.alpha = 0
-                    self.sanfranLabel.alpha = 0
-                    self.sanfranAdmin.isHidden = true
-                    self.chicagoAdmin.isHidden = true
+                    self.chapterPicker.alpha = 0
+                    self.chapterPicker.isHidden = true
                 }
                 }, completion: { (finished: Bool) -> Void in
-                    
-                    // you can do this in a shorter, more concise way by setting the value to its opposite, NOT value
             })
         }
         
@@ -105,9 +89,23 @@ class CreateUserViewController: UIViewController, UITextFieldDelegate {
         }
         if !username.text!.isEmpty && !fullname.text!.isEmpty {
             let adminvalue = self.admin.isOn ? 1 : 0
-            let chicagoAdminValue = self.chicagoAdmin.isOn ? 1 : 0
-            let sanfranAdminValue = self.sanfranAdmin.isOn ? 1 : 0
-            let dict: Dictionary = ["admin":"\(adminvalue)", "chicagoChapterAdmin":"\(chicagoAdminValue)", "sanfranChapterAdmin":"\(sanfranAdminValue)", "name":fullname.text!]
+            var chapterAdmin = ""
+            if adminvalue == 1 {
+                if chapterPicker.text!.isEmpty {
+                    createAlert("Please select a chapter the user is an admin of")
+                }
+                else {
+                    let chapter = chapterPicker.text!.replacingOccurrences(of: " ", with: "").lowercased()
+                    chapterAdmin = "\(chapter)ChapterAdmin"
+                }
+            }
+            var dict: NSDictionary = [:]
+            if adminvalue == 1 {
+                dict = ["admin":"\(adminvalue)", chapterAdmin:"1", "name":fullname.text!]
+            }
+            else {
+                dict = ["admin":"\(adminvalue)", "name":fullname.text!]
+            }
             ref.child("users").child(username.text!).setValue(dict, withCompletionBlock: { (error, ref) in
                 if !(error != nil) {
                     let alert = UIAlertController(title:"", message: "User created Successfully", preferredStyle: UIAlertControllerStyle.alert)
@@ -123,13 +121,8 @@ class CreateUserViewController: UIViewController, UITextFieldDelegate {
                     self.createAlert("Could not create user\nPlease try again")
                 }
             })
-
         }
-
     }
-    
-    
-    
     
     //MARK: TextFieldShouldReturn
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

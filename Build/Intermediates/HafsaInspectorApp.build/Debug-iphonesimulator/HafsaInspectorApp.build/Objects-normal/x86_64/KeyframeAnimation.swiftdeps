@@ -11,19 +11,19 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Int"
+- !private "StringLiteralType"
+- "AnimationRotationMode"
+- "CAKeyframeAnimation"
 - !private "kCAAnimationRotateAuto"
 - "AnimationRotationModeToValue"
-- "String"
-- "AnimationRotationMode"
-- !private "StringLiteralType"
-- "CAKeyframeAnimation"
-- "UIBezierPath"
 - "Animation"
+- !private "~="
 - "CFTimeInterval"
 - !private "kCAAnimationRotateAutoReverse"
-- !private "~="
 - "=="
 - "AssignmentPrecedence"
+- "UIBezierPath"
+- "String"
 depends-member:
 - ["V17HafsaInspectorApp9Animation", "AnimationRotationMode"]
 - !private ["V17HafsaInspectorApp9Animation", "AnimationRotationModeToValue"]

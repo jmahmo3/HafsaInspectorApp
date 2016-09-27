@@ -21,7 +21,7 @@ enum SettingsType {
 class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
-    
+
     var progess = MBProgressHUD()
     var type: SettingsType = .Settings
     var isAdmin: Bool = false

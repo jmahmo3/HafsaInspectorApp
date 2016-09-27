@@ -17,8 +17,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
         view.backgroundColor = UIColor.HIBackground
         self.hideKeyboardWhenTappedAround()
@@ -32,8 +30,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         username.autocorrectionType = .no
         password.autocorrectionType = .no
         password.isSecureTextEntry = true
-
-
         
         loginButton.backgroundColor = UIColor.white
         loginButton.tintColor = UIColor.black
@@ -42,11 +38,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         loginButton.layer.cornerRadius = 4
         loginButton.layer.borderWidth = 1
         loginButton.layer.borderColor = UIColor.white.cgColor
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func loginButtonPressed(_ sender: AnyObject) {
@@ -81,25 +72,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 }
             })
         }
-        
-        
     }
 
-    
     //MARK: TextFieldShouldReturn
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

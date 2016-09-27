@@ -9,10 +9,10 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "CornerRadiusPreset"
-- "CornerRadiusPresetToValue"
 - "CGFloat"
-- !private "~="
 - "Int"
+- "CornerRadiusPresetToValue"
+- !private "~="
 - "=="
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]

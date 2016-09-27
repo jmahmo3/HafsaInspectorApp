@@ -11,7 +11,6 @@ import PDFGenerator
 import Firebase
 class FormTableViewController: UITableViewController, UITextViewDelegate {
     
-    
     fileprivate let HImanager = HIManager.sharedClient()
 
     static func create() -> FormTableViewController {
@@ -26,12 +25,6 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
         self.view.backgroundColor = UIColor.HIBackground
         self.setNavBarWithBackButton()
         self.hideKeyboardWhenTappedAround()
-        
-        
-        
-        
-        
-        
     }
 
     override func backButtonPressed() {
@@ -44,14 +37,11 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
     }
     
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return HImanager.supplierArray.count + 3
     }
 
@@ -172,9 +162,9 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
         let storageRef = storage.reference()
 
         // Create a reference to the file you want to upload
-        let riversRef = storageRef.child("\(HImanager.currentChapter)/\(pdfname)")
+        let pdfRef = storageRef.child("\(HImanager.currentChapter)/\(pdfname)")
         
-        let uploadTask = riversRef.putFile(dst, metadata: nil) { metadata, error in
+        let uploadTask = pdfRef.putFile(dst, metadata: nil) { metadata, error in
             if (error != nil) {
                 // Uh-oh, an error occurred!
             } else {
@@ -185,13 +175,10 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
         
                 let dict: NSDictionary = [dateString:(metadata!.name)!]
                 let ref: FIRDatabaseReference =  FIRDatabase.database().reference()
-                ref.child("metadata").child(trimmedChapter).childByAutoId().setValue(dict)
-//                ref.child("metadata").child(trimmedChapter).setValue(dict, withCompletionBlock: { (error, databaseref) in
+                ref.child("metadata").child(trimmedChapter).childByAutoId().setValue(dict, withCompletionBlock: { (error, databaseref) in
                 
-//                })
+                })
                 print(metadata?.path)
-                // Metadata contains file metadata such as size, content-type, and download URL.
-//                let downloadURL = metadata!.downloadURL
             }
         }
         uploadTask.resume()

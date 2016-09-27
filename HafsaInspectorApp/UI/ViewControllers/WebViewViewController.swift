@@ -15,7 +15,6 @@ class WebViewViewController: UIViewController, UIWebViewDelegate {
     var url: String = ""
     var progess = MBProgressHUD()
 
-    
     static func create(_ url: String) -> WebViewViewController {
         let frameworkBundle = Bundle.main
         let storyboard = UIStoryboard(name: "Main", bundle: frameworkBundle)
@@ -23,7 +22,6 @@ class WebViewViewController: UIViewController, UIWebViewDelegate {
         main.url = url
         return main
     }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +29,6 @@ class WebViewViewController: UIViewController, UIWebViewDelegate {
         webView.loadRequest(NSURLRequest(url: open as URL) as URLRequest)
         self.setNavBarWithBackButton()
         self.webView.delegate = self
-        // Do any additional setup after loading the view.
     }
 
     func webViewDidStartLoad(_ webView: UIWebView) {
@@ -60,7 +57,6 @@ class WebViewViewController: UIViewController, UIWebViewDelegate {
                 _ = self.navigationController?.popViewController(animated: true)
             }
         })))
-
     }
-
+    
 }
