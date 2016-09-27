@@ -6,39 +6,56 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp9HIManager", ""]
 provides-dynamic-lookup:
+- "supplierArray"
 - "establishmentArray"
 - "currentEstablishment"
-- "supplierArray"
+- "password"
+- "currentDate"
+- "comments"
+- "images"
+- "supplierValues"
+- "sharedClient"
 - "userName"
+- "currentChapter"
 - "chapterArray"
 - "data"
-- "sharedClient"
-- "currentChapter"
 depends-top-level:
-- "NSObject"
-- "String"
-- "UserDefaults"
+- "AssignmentPrecedence"
 - "NSMutableArray"
-- "!="
-- "Array"
+- "NSObject"
+- "DateFormatter"
+- "Date"
+- "String"
 - "StringLiteralType"
+- "!="
 - "HIManager"
+- "Array"
+- "UserDefaults"
 depends-member:
+- ["Ps9AnyObject", "Date"]
+- ["Ps9AnyObject", "DateFormatter"]
 - ["Ps9AnyObject", "Element"]
 - ["Ps9AnyObject", "HIManager"]
 - ["Ps9AnyObject", "UserDefaults"]
 - ["Ps9AnyObject", "chapterArray"]
+- ["Ps9AnyObject", "comments"]
+- ["Ps9AnyObject", "comments.storage"]
 - ["Ps9AnyObject", "currentChapter"]
+- ["Ps9AnyObject", "currentDate"]
 - ["Ps9AnyObject", "currentEstablishment"]
 - ["Ps9AnyObject", "currentEstablishment.storage"]
 - ["Ps9AnyObject", "data"]
+- ["Ps9AnyObject", "dateFormat"]
 - ["Ps9AnyObject", "establishmentArray"]
+- ["Ps9AnyObject", "images"]
 - ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "password"]
 - ["Ps9AnyObject", "sharedClient"]
 - ["Ps9AnyObject", "sharedInstance"]
 - ["Ps9AnyObject", "standard"]
 - ["Ps9AnyObject", "string"]
 - ["Ps9AnyObject", "supplierArray"]
+- ["Ps9AnyObject", "supplierValues"]
 - ["Ps9AnyObject", "userName"]
 - ["Ps9AnyObject", ""]
 - ["Sa", "Element"]
@@ -47,40 +64,58 @@ depends-member:
 - ["Ps22BidirectionalIndexable", "Element"]
 - ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
+- ["Ps7CVarArg", "Date"]
+- ["Ps7CVarArg", "DateFormatter"]
 - ["Ps7CVarArg", "Element"]
 - ["Ps7CVarArg", "HIManager"]
 - ["Ps7CVarArg", "UserDefaults"]
 - ["Ps7CVarArg", "chapterArray"]
+- ["Ps7CVarArg", "comments"]
+- ["Ps7CVarArg", "comments.storage"]
 - ["Ps7CVarArg", "currentChapter"]
+- ["Ps7CVarArg", "currentDate"]
 - ["Ps7CVarArg", "currentEstablishment"]
 - ["Ps7CVarArg", "currentEstablishment.storage"]
 - ["Ps7CVarArg", "data"]
+- ["Ps7CVarArg", "dateFormat"]
 - ["Ps7CVarArg", "establishmentArray"]
+- ["Ps7CVarArg", "images"]
 - ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "password"]
 - ["Ps7CVarArg", "sharedClient"]
 - ["Ps7CVarArg", "sharedInstance"]
 - ["Ps7CVarArg", "standard"]
 - ["Ps7CVarArg", "string"]
 - ["Ps7CVarArg", "supplierArray"]
+- ["Ps7CVarArg", "supplierValues"]
 - ["Ps7CVarArg", "userName"]
 - ["Ps7CVarArg", ""]
 - ["Ps10Collection", "Element"]
 - ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "Date"]
+- ["Ps28CustomDebugStringConvertible", "DateFormatter"]
 - ["Ps28CustomDebugStringConvertible", "Element"]
 - ["Ps28CustomDebugStringConvertible", "HIManager"]
 - ["Ps28CustomDebugStringConvertible", "UserDefaults"]
 - ["Ps28CustomDebugStringConvertible", "chapterArray"]
+- ["Ps28CustomDebugStringConvertible", "comments"]
+- ["Ps28CustomDebugStringConvertible", "comments.storage"]
 - ["Ps28CustomDebugStringConvertible", "currentChapter"]
+- ["Ps28CustomDebugStringConvertible", "currentDate"]
 - ["Ps28CustomDebugStringConvertible", "currentEstablishment"]
 - ["Ps28CustomDebugStringConvertible", "currentEstablishment.storage"]
 - ["Ps28CustomDebugStringConvertible", "data"]
+- ["Ps28CustomDebugStringConvertible", "dateFormat"]
 - ["Ps28CustomDebugStringConvertible", "establishmentArray"]
+- ["Ps28CustomDebugStringConvertible", "images"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "password"]
 - ["Ps28CustomDebugStringConvertible", "sharedClient"]
 - ["Ps28CustomDebugStringConvertible", "sharedInstance"]
 - ["Ps28CustomDebugStringConvertible", "standard"]
 - ["Ps28CustomDebugStringConvertible", "string"]
 - ["Ps28CustomDebugStringConvertible", "supplierArray"]
+- ["Ps28CustomDebugStringConvertible", "supplierValues"]
 - ["Ps28CustomDebugStringConvertible", "userName"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
@@ -88,40 +123,64 @@ depends-member:
 - ["Ps17CustomReflectable", "Element"]
 - ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - ["Ps17CustomReflectable", "init"]
+- ["Ps23CustomStringConvertible", "Date"]
+- ["Ps23CustomStringConvertible", "DateFormatter"]
 - ["Ps23CustomStringConvertible", "Element"]
 - ["Ps23CustomStringConvertible", "HIManager"]
 - ["Ps23CustomStringConvertible", "UserDefaults"]
 - ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps23CustomStringConvertible", "chapterArray"]
+- ["Ps23CustomStringConvertible", "comments"]
+- ["Ps23CustomStringConvertible", "comments.storage"]
 - ["Ps23CustomStringConvertible", "currentChapter"]
+- ["Ps23CustomStringConvertible", "currentDate"]
 - ["Ps23CustomStringConvertible", "currentEstablishment"]
 - ["Ps23CustomStringConvertible", "currentEstablishment.storage"]
 - ["Ps23CustomStringConvertible", "data"]
+- ["Ps23CustomStringConvertible", "dateFormat"]
 - ["Ps23CustomStringConvertible", "establishmentArray"]
+- ["Ps23CustomStringConvertible", "images"]
 - ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "password"]
 - ["Ps23CustomStringConvertible", "sharedClient"]
 - ["Ps23CustomStringConvertible", "sharedInstance"]
 - ["Ps23CustomStringConvertible", "standard"]
 - ["Ps23CustomStringConvertible", "string"]
 - ["Ps23CustomStringConvertible", "supplierArray"]
+- ["Ps23CustomStringConvertible", "supplierValues"]
 - ["Ps23CustomStringConvertible", "userName"]
 - ["Ps23CustomStringConvertible", ""]
+- ["V10Foundation4Date", "deinit"]
+- ["V10Foundation4Date", "init"]
+- ["CSo13DateFormatter", "dateFormat"]
+- ["CSo13DateFormatter", "deinit"]
+- ["CSo13DateFormatter", "init"]
+- ["CSo13DateFormatter", "string"]
+- ["Ps9Equatable", "Date"]
+- ["Ps9Equatable", "DateFormatter"]
 - ["Ps9Equatable", "Element"]
 - ["Ps9Equatable", "HIManager"]
 - ["Ps9Equatable", "UserDefaults"]
 - ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "chapterArray"]
+- ["Ps9Equatable", "comments"]
+- ["Ps9Equatable", "comments.storage"]
 - ["Ps9Equatable", "currentChapter"]
+- ["Ps9Equatable", "currentDate"]
 - ["Ps9Equatable", "currentEstablishment"]
 - ["Ps9Equatable", "currentEstablishment.storage"]
 - ["Ps9Equatable", "data"]
+- ["Ps9Equatable", "dateFormat"]
 - ["Ps9Equatable", "establishmentArray"]
+- ["Ps9Equatable", "images"]
 - ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "password"]
 - ["Ps9Equatable", "sharedClient"]
 - ["Ps9Equatable", "sharedInstance"]
 - ["Ps9Equatable", "standard"]
 - ["Ps9Equatable", "string"]
 - ["Ps9Equatable", "supplierArray"]
+- ["Ps9Equatable", "supplierValues"]
 - ["Ps9Equatable", "userName"]
 - ["Ps9Equatable", ""]
 - ["Ps25ExpressibleByArrayLiteral", "Element"]
@@ -130,40 +189,62 @@ depends-member:
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["P12PDFGenerator19FilePathConvertible", "init"]
+- ["CSo9Formatter", "dateFormat"]
+- ["CSo9Formatter", "init"]
+- ["CSo9Formatter", "string"]
+- ["C17HafsaInspectorApp9HIManager", "Date"]
+- ["C17HafsaInspectorApp9HIManager", "DateFormatter"]
 - ["C17HafsaInspectorApp9HIManager", "HIManager"]
 - ["C17HafsaInspectorApp9HIManager", "NSMutableArray"]
 - ["C17HafsaInspectorApp9HIManager", "String"]
 - ["C17HafsaInspectorApp9HIManager", "UserDefaults"]
 - ["C17HafsaInspectorApp9HIManager", "chapterArray"]
+- ["C17HafsaInspectorApp9HIManager", "comments"]
+- !private ["C17HafsaInspectorApp9HIManager", "comments.storage"]
 - ["C17HafsaInspectorApp9HIManager", "currentChapter"]
+- ["C17HafsaInspectorApp9HIManager", "currentDate"]
 - ["C17HafsaInspectorApp9HIManager", "currentEstablishment"]
 - !private ["C17HafsaInspectorApp9HIManager", "currentEstablishment.storage"]
 - ["C17HafsaInspectorApp9HIManager", "data"]
 - ["C17HafsaInspectorApp9HIManager", "deinit"]
 - ["C17HafsaInspectorApp9HIManager", "establishmentArray"]
+- ["C17HafsaInspectorApp9HIManager", "images"]
 - ["C17HafsaInspectorApp9HIManager", "init"]
+- ["C17HafsaInspectorApp9HIManager", "password"]
 - ["C17HafsaInspectorApp9HIManager", "sharedClient"]
 - !private ["C17HafsaInspectorApp9HIManager", "sharedInstance"]
 - ["C17HafsaInspectorApp9HIManager", "supplierArray"]
+- ["C17HafsaInspectorApp9HIManager", "supplierValues"]
 - ["C17HafsaInspectorApp9HIManager", "userName"]
+- ["Ps8Hashable", "Date"]
+- ["Ps8Hashable", "DateFormatter"]
 - ["Ps8Hashable", "Element"]
 - ["Ps8Hashable", "HIManager"]
 - ["Ps8Hashable", "UserDefaults"]
 - ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "chapterArray"]
+- ["Ps8Hashable", "comments"]
+- ["Ps8Hashable", "comments.storage"]
 - ["Ps8Hashable", "currentChapter"]
+- ["Ps8Hashable", "currentDate"]
 - ["Ps8Hashable", "currentEstablishment"]
 - ["Ps8Hashable", "currentEstablishment.storage"]
 - ["Ps8Hashable", "data"]
+- ["Ps8Hashable", "dateFormat"]
 - ["Ps8Hashable", "establishmentArray"]
+- ["Ps8Hashable", "images"]
 - ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "password"]
 - ["Ps8Hashable", "sharedClient"]
 - ["Ps8Hashable", "sharedInstance"]
 - ["Ps8Hashable", "standard"]
 - ["Ps8Hashable", "string"]
 - ["Ps8Hashable", "supplierArray"]
+- ["Ps8Hashable", "supplierValues"]
 - ["Ps8Hashable", "userName"]
 - ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
 - ["Ps9Indexable", "Element"]
 - ["Ps13IndexableBase", "Element"]
 - ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
@@ -173,49 +254,71 @@ depends-member:
 - ["Ps16MutableIndexable", "Element"]
 - ["CSo7NSArray", "Element"]
 - ["PSo8NSCoding", "Element"]
+- ["PSo8NSCoding", "dateFormat"]
 - ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "string"]
 - ["PSo9NSCopying", "Element"]
+- ["PSo9NSCopying", "dateFormat"]
 - ["PSo9NSCopying", "init"]
+- ["PSo9NSCopying", "string"]
 - ["PSo17NSFastEnumeration", "Element"]
 - ["CSo14NSMutableArray", "Element"]
 - ["CSo14NSMutableArray", "deinit"]
 - ["PSo16NSMutableCopying", "Element"]
 - ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Date"]
+- ["CSo8NSObject", "DateFormatter"]
 - ["CSo8NSObject", "Element"]
 - ["CSo8NSObject", "HIManager"]
 - ["CSo8NSObject", "NSMutableArray"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UserDefaults"]
 - ["CSo8NSObject", "chapterArray"]
+- ["CSo8NSObject", "comments"]
+- ["CSo8NSObject", "comments.storage"]
 - ["CSo8NSObject", "currentChapter"]
+- ["CSo8NSObject", "currentDate"]
 - ["CSo8NSObject", "currentEstablishment"]
 - ["CSo8NSObject", "currentEstablishment.storage"]
 - ["CSo8NSObject", "data"]
+- ["CSo8NSObject", "dateFormat"]
 - ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "establishmentArray"]
+- ["CSo8NSObject", "images"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "password"]
 - ["CSo8NSObject", "sharedClient"]
 - ["CSo8NSObject", "sharedInstance"]
 - ["CSo8NSObject", "standard"]
 - ["CSo8NSObject", "string"]
 - ["CSo8NSObject", "supplierArray"]
+- ["CSo8NSObject", "supplierValues"]
 - ["CSo8NSObject", "userName"]
 - ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "Date"]
+- ["PSo16NSObjectProtocol", "DateFormatter"]
 - ["PSo16NSObjectProtocol", "Element"]
 - ["PSo16NSObjectProtocol", "HIManager"]
 - ["PSo16NSObjectProtocol", "UserDefaults"]
 - ["PSo16NSObjectProtocol", "chapterArray"]
+- ["PSo16NSObjectProtocol", "comments"]
+- ["PSo16NSObjectProtocol", "comments.storage"]
 - ["PSo16NSObjectProtocol", "currentChapter"]
+- ["PSo16NSObjectProtocol", "currentDate"]
 - ["PSo16NSObjectProtocol", "currentEstablishment"]
 - ["PSo16NSObjectProtocol", "currentEstablishment.storage"]
 - ["PSo16NSObjectProtocol", "data"]
+- ["PSo16NSObjectProtocol", "dateFormat"]
 - ["PSo16NSObjectProtocol", "establishmentArray"]
+- ["PSo16NSObjectProtocol", "images"]
 - ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "password"]
 - ["PSo16NSObjectProtocol", "sharedClient"]
 - ["PSo16NSObjectProtocol", "sharedInstance"]
 - ["PSo16NSObjectProtocol", "standard"]
 - ["PSo16NSObjectProtocol", "string"]
 - ["PSo16NSObjectProtocol", "supplierArray"]
+- ["PSo16NSObjectProtocol", "supplierValues"]
 - ["PSo16NSObjectProtocol", "userName"]
 - ["PSo16NSObjectProtocol", ""]
 - ["PSo14NSSecureCoding", "Element"]
@@ -226,11 +329,13 @@ depends-member:
 - ["Ps21RandomAccessIndexable", "Element"]
 - ["Ps26RangeReplaceableCollection", "Element"]
 - ["Ps25RangeReplaceableIndexable", "Element"]
+- ["P10Foundation20ReferenceConvertible", "init"]
 - ["Ps8Sequence", "Element"]
 - ["SS", "deinit"]
 - ["SS", "init"]
 - ["Ps16TextOutputStream", "init"]
 - ["Ps20TextOutputStreamable", "init"]
+- ["P12PDFGenerator18UIImageConvertible", "init"]
 - ["CSo12UserDefaults", "deinit"]
 - ["CSo12UserDefaults", "standard"]
 - ["CSo12UserDefaults", "string"]
@@ -242,22 +347,31 @@ depends-member:
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- ["Ps9_Hashable", "Date"]
+- ["Ps9_Hashable", "DateFormatter"]
 - ["Ps9_Hashable", "Element"]
 - ["Ps9_Hashable", "HIManager"]
 - ["Ps9_Hashable", "UserDefaults"]
 - ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "chapterArray"]
+- ["Ps9_Hashable", "comments"]
+- ["Ps9_Hashable", "comments.storage"]
 - ["Ps9_Hashable", "currentChapter"]
+- ["Ps9_Hashable", "currentDate"]
 - ["Ps9_Hashable", "currentEstablishment"]
 - ["Ps9_Hashable", "currentEstablishment.storage"]
 - ["Ps9_Hashable", "data"]
+- ["Ps9_Hashable", "dateFormat"]
 - ["Ps9_Hashable", "establishmentArray"]
+- ["Ps9_Hashable", "images"]
 - ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "password"]
 - ["Ps9_Hashable", "sharedClient"]
 - ["Ps9_Hashable", "sharedInstance"]
 - ["Ps9_Hashable", "standard"]
 - ["Ps9_Hashable", "string"]
 - ["Ps9_Hashable", "supplierArray"]
+- ["Ps9_Hashable", "supplierValues"]
 - ["Ps9_Hashable", "userName"]
 - ["Ps9_Hashable", ""]
 - ["Ps21_ObjectiveCBridgeable", "Element"]
@@ -277,6 +391,8 @@ depends-nominal:
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
+- "V10Foundation4Date"
+- "CSo13DateFormatter"
 - "Ps9Equatable"
 - "Ps25ExpressibleByArrayLiteral"
 - "Ps27ExpressibleByBooleanLiteral"
@@ -284,8 +400,11 @@ depends-nominal:
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
+- "P12PDFGenerator19FilePathConvertible"
+- "CSo9Formatter"
 - "C17HafsaInspectorApp9HIManager"
 - "Ps8Hashable"
+- "SQ"
 - "Ps9Indexable"
 - "Ps13IndexableBase"
 - "Ps25LosslessStringConvertible"
@@ -307,10 +426,12 @@ depends-nominal:
 - "Ps21RandomAccessIndexable"
 - "Ps26RangeReplaceableCollection"
 - "Ps25RangeReplaceableIndexable"
+- "P10Foundation20ReferenceConvertible"
 - "Ps8Sequence"
 - "SS"
 - "Ps16TextOutputStream"
 - "Ps20TextOutputStreamable"
+- "P12PDFGenerator18UIImageConvertible"
 - "CSo12UserDefaults"
 - "Ps14_ArrayProtocol"
 - "Ps24_DestructorSafeContainer"
@@ -339,11 +460,49 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTaskSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageUploadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageMetadata.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageObservableTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageDownloadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRMutableData.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/Firebase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/PDFGenerator.swiftmodule/x86_64.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "3b7ccc15f8ff71e4caa8bc9fd133c2ca"
+interface-hash: "f0fc2378f2a229749532b78e4fdb6807"

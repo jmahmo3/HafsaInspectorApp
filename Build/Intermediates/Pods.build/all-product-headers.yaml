@@ -36,6 +36,38 @@
     },
     {
       'type': 'directory',
+      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "PDFGenerator-Swift.h",
+          'external-contents': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "PDFGenerator-umbrella.h",
+          'external-contents': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Target Support Files/PDFGenerator/PDFGenerator-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "PDFGenerator.h",
+          'external-contents': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/PDFGenerator/PDFGenerator/PDFGenerator.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/PDFGenerator.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/Pods_HafsaInspectorApp.framework/Headers",
       'contents': [
         {

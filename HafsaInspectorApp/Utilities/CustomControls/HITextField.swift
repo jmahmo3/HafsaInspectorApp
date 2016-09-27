@@ -58,31 +58,21 @@ class HITextField: TextField, UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func setupChapterPicker() {
-        let arr = HImanager.data
-        let chapterArr: NSMutableArray = []
-        for dict in arr {
-            let title = (dict as AnyObject).allKeys[0]
-            chapterArr.add(title)
-        }
-        data = chapterArr.copy() as! [NSArray] as NSArray
+
+        data = HImanager.chapters.copy() as! NSArray//chapterArr.copy() as! [NSArray] as NSArray
         self.setupPicker()
     }
     
     func setupEstablishmentPicker() {
         
-        let arr = HImanager.data
-        let establishments: NSMutableArray = []
-        for dict in arr {
-            let title = (dict as AnyObject).allKeys[0]
-            let trimmedString = HImanager.currentChapter.trimmingCharacters(in: .whitespaces)
-            if title as! String == trimmedString {
-                print((dict as AnyObject).object(forKey: title)!)
-                establishments.add((dict as AnyObject).object(forKey: title)!)
-            }
+        var currentChapterData: NSDictionary = [:]
+        var establishments: NSArray = []
+        if HImanager.chaptersData.allKeys.count > 0 {
+            currentChapterData =  HIManager.sharedClient().chaptersData.object(forKey: self.HImanager.currentChapter ) as! NSDictionary
+             establishments = currentChapterData.object(forKey: "establishments") as! NSArray
         }
         if establishments != [] {
-            let est: NSArray = establishments.object(at: 0) as! NSArray
-            data = est
+            data = establishments
         }
         else {
             data = []

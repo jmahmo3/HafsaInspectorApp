@@ -21,72 +21,72 @@ provides-member:
 - ["CSo16UIViewController", "pageTabBarItem"]
 - ["CSo16UIViewController", "pageTabBarController"]
 provides-dynamic-lookup:
-- "pageViewController"
-- "pageViewController"
-- "pageViewController"
-- "pageViewController"
-- "prepareRootViewController"
-- "pageTabBarItem"
-- "viewControllers"
-- "pageTabBarController"
-- "pageTabBarController"
-- "selectedIndex"
-- "pageTabBar"
-- "scrollViewDidScroll"
-- "delegate"
-- "setViewControllers"
-- "preparePageTabBarItems"
 - "isTabSelectedAnimation"
-- "prepare"
-- "prepare"
-- "prepare"
-- "layoutSubviews"
+- "preparePageTabBarItems"
+- "setViewControllers"
+- "pageViewController"
+- "pageViewController"
+- "pageViewController"
+- "pageViewController"
+- "viewControllers"
 - "pageTabBarAlignment"
 - "handlePageTabBarButton"
+- "scrollViewDidScroll"
+- "prepareRootViewController"
+- "pageTabBar"
+- "selectedIndex"
+- "delegate"
+- "layoutSubviews"
+- "pageTabBarItem"
+- "pageTabBarController"
+- "pageTabBarController"
+- "prepare"
+- "prepare"
+- "prepare"
 depends-top-level:
-- "FlatButton"
-- "PageTabBarItem"
-- !private "AssociateObject"
-- "UIPageViewControllerDelegate"
-- "NSCoder"
-- !private "Color"
+- !private "!"
 - !private "+"
-- !private "-"
 - "TernaryPrecedence"
 - !private "/"
-- !private "~="
+- !private "&&"
 - "PageTabBarController"
-- "UInt8"
-- "UIPageViewController"
-- "PageTabBarControllerDelegate"
-- "PageTabBar"
+- "UIPageViewControllerDelegate"
+- "TabBar"
 - "UIButton"
 - "UIViewController"
+- !private "~="
+- "UIPageViewControllerNavigationDirection"
+- "PageTabBarItem"
 - "CastingPrecedence"
+- "FlatButton"
 - "=="
-- !private "PageTabBarItemKey"
+- !private "AssociatedObject"
+- "AssignmentPrecedence"
+- "Void"
 - "UIPageViewControllerDataSource"
-- "Int"
-- "UIScrollViewDelegate"
-- !private "Array"
+- "PageTabBarAlignment"
+- "NSCoder"
+- !private "AssociateObject"
+- !private "Color"
 - "UIScrollView"
-- !private "!"
+- !private "StringLiteralType"
+- !private "Array"
+- "UIPageViewController"
 - "Bool"
 - "RootController"
-- !private ">"
-- "TabBar"
 - !private "<"
-- "AssignmentPrecedence"
-- !private "&&"
-- "Void"
-- !private "StringLiteralType"
+- "UIScrollViewDelegate"
+- !private ">"
 - !private "*"
-- "BooleanLiteralType"
-- !private "AssociatedObject"
-- !private "!="
-- "PageTabBarAlignment"
 - !private ">="
-- "UIPageViewControllerNavigationDirection"
+- !private "PageTabBarItemKey"
+- "BooleanLiteralType"
+- !private "-"
+- "UInt8"
+- "Int"
+- "PageTabBarControllerDelegate"
+- !private "!="
+- "PageTabBar"
 depends-member:
 - !private ["Ps9AnyObject", "AssociateObject"]
 - !private ["Ps9AnyObject", "AssociatedObject"]
@@ -1196,6 +1196,33 @@ depends-member:
 - !private ["Ps9OptionSet", "touchUpInside"]
 - ["Sq", "deinit"]
 - ["Sq", "some"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "addSubview"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "addTarget"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "buttons"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "center"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "contentOffset"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "contentSize"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "delegate"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "divider"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "grid"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "handleButton"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "height"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "init"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "intrinsicContentSize"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "isAnimating"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "isLineAnimated"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "line"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "lineAlignment"]
+- ["P12PDFGenerator17PDFPageRenderable", "prepare"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "pulseAnimation"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "removeTarget"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "select"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "selected"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "subviews"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "width"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "y"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "zPosition"]
+- ["P12PDFGenerator17PDFPageRenderable", ""]
 - !private ["C17HafsaInspectorApp10PageTabBar", "buttons"]
 - ["C17HafsaInspectorApp10PageTabBar", "deinit"]
 - !private ["C17HafsaInspectorApp10PageTabBar", "divider"]
@@ -2661,6 +2688,7 @@ depends-nominal:
 - "Os5Never"
 - !private "Ps9OptionSet"
 - "Sq"
+- "P12PDFGenerator17PDFPageRenderable"
 - "C17HafsaInspectorApp10PageTabBar"
 - "O17HafsaInspectorApp19PageTabBarAlignment"
 - "C17HafsaInspectorApp20PageTabBarController"
@@ -2749,8 +2777,46 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTaskSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageUploadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageMetadata.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageObservableTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageDownloadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRMutableData.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/Firebase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/PDFGenerator.swiftmodule/x86_64.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"

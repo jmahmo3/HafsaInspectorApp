@@ -7,12 +7,7 @@
 //
 
 import UIKit
-
-//enum RequestType {
-//    case get
-//    case post
-//}
-
+import Firebase
 
 
  enum HTTPRequestAuthType {
@@ -82,6 +77,41 @@ class WebService: NSObject {
             }
         } //as! (Data?, NSError?) -> Void
     }
+    
+    func getChaptersAndEstablishmentsFromDatabase(_ completion:@escaping CompletionHandler) {
+        let ref: FIRDatabaseReference =  FIRDatabase.database().reference()
+        
+        ref.child("chapters").observe(.value, with: { (snapshot) in
+            // Get user value
+            
+            let value = snapshot.value as? NSDictionary
+            if value != nil {
+                let chapters: NSArray = (value!.allKeys as NSArray)
+                DispatchQueue.main.async {
+                    HIManager.sharedClient().chapters = chapters.mutableCopy() as! NSMutableArray
+                    HIManager.sharedClient().chaptersData = value!
+                    completion(true, nil)
+                }
+    
+            print(value)
+            }
+            else {
+                let err = NSError(domain: "Could not retrieve user", code: 401, userInfo: nil)
+                completion(false, err)
+            }
+            
+            
+        }) { (error) in
+            completion(false, error as NSError?)
+            print(error.localizedDescription)
+        }
+        
+
+        
+        
+        
+    }
+
     
     
     func parseJSON(_ data: Data) -> [String: AnyObject]? {

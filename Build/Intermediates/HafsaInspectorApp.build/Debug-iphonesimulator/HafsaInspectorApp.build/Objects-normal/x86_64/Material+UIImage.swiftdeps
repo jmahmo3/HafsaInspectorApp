@@ -17,56 +17,56 @@ provides-member:
 - ["CSo7UIImage", "contentsOfURL"]
 - ["CSo7UIImage", "adjustOrientation"]
 provides-dynamic-lookup:
+- "tintWithColor"
+- "imageWithColor"
+- "contentsOfURL"
+- "adjustOrientation"
+- "resize"
+- "resize"
 - "clear"
 - "crop"
-- "resize"
-- "resize"
-- "tintWithColor"
-- "contentsOfURL"
-- "imageWithColor"
-- "adjustOrientation"
 - "height"
 - "width"
 depends-top-level:
-- "CGSize"
-- !private "!="
-- !private "M_PI"
+- !private "UIGraphicsGetCurrentContext"
 - "CGFloat"
 - "TernaryPrecedence"
-- !private "*"
-- !private "DispatchQueue"
-- !private "URLSession"
-- !private "CGAffineTransform"
+- !private "UIGraphicsBeginImageContextWithOptions"
+- "CGSize"
+- "UIColor"
 - !private "Bool"
-- !private "URLResponse"
+- !private "*"
+- !private "CGRect"
 - "Void"
 - !private "~="
-- !private "UIGraphicsEndImageContext"
 - !private "??"
-- !private "CGRect"
-- !private "M_PI_2"
-- !private "URLRequest"
-- !private "UIRectFill"
-- !private "CGContext"
-- !private "/"
-- "=="
-- "AssignmentPrecedence"
-- !private "UIGraphicsGetImageFromCurrentImageContext"
-- "Int"
-- !private "UIGraphicsBeginImageContextWithOptions"
-- "UIColor"
-- !private ">"
-- "UIImage"
-- "URL"
-- !private "Data"
-- !private "UIGraphicsGetCurrentContext"
-- !private "BooleanLiteralType"
-- !private "<"
-- !private "-"
-- "Error"
-- "ImageFormat"
+- !private "DispatchQueue"
 - !private "UIGraphicsBeginImageContext"
+- "AssignmentPrecedence"
+- "=="
+- !private "UIGraphicsGetImageFromCurrentImageContext"
+- !private "M_PI_2"
+- !private "/"
+- !private "UIRectFill"
+- "ImageFormat"
+- !private "M_PI"
+- !private "URLRequest"
+- !private "CGAffineTransform"
+- !private "URLSession"
+- "Error"
+- !private "!="
+- !private ">"
+- "Int"
+- !private "URLResponse"
+- !private "<"
+- !private "UIGraphicsEndImageContext"
+- !private "BooleanLiteralType"
+- !private "-"
+- !private "CGContext"
+- !private "Data"
 - !private "Device"
+- "URL"
+- "UIImage"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGContext"]
@@ -610,6 +610,32 @@ depends-member:
 - !private ["Ps9OptionSet", "rawValue"]
 - ["Sq", "deinit"]
 - ["Sq", "some"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "CGContext"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "CGFloat"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "CGRect"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "CGSize"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "Device"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "DispatchQueue"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "Int"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "M_PI"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "M_PI_2"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "UIGraphicsBeginImageContext"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "UIGraphicsEndImageContext"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "UIGraphicsGetCurrentContext"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "UIImage"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "UIRectFill"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "URLRequest"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "URLSession"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "cgImage"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "draw"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "height"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "imageOrientation"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "init"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "internalResize"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "size"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "width"]
 - !private ["Vs5Range", "deinit"]
 - ["Ps16RawRepresentable", "RawValue"]
 - ["Ps16RawRepresentable", "_toAnyHashable"]
@@ -708,6 +734,35 @@ depends-member:
 - !private ["CSo7UIImage", "size"]
 - ["CSo7UIImage", "tintWithColor"]
 - ["CSo7UIImage", "width"]
+- !private ["P12PDFGenerator18UIImageConvertible", "CGContext"]
+- !private ["P12PDFGenerator18UIImageConvertible", "CGFloat"]
+- !private ["P12PDFGenerator18UIImageConvertible", "CGRect"]
+- !private ["P12PDFGenerator18UIImageConvertible", "CGSize"]
+- !private ["P12PDFGenerator18UIImageConvertible", "Device"]
+- !private ["P12PDFGenerator18UIImageConvertible", "DispatchQueue"]
+- !private ["P12PDFGenerator18UIImageConvertible", "Int"]
+- !private ["P12PDFGenerator18UIImageConvertible", "M_PI"]
+- !private ["P12PDFGenerator18UIImageConvertible", "M_PI_2"]
+- !private ["P12PDFGenerator18UIImageConvertible", "UIGraphicsBeginImageContext"]
+- !private ["P12PDFGenerator18UIImageConvertible", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["P12PDFGenerator18UIImageConvertible", "UIGraphicsEndImageContext"]
+- !private ["P12PDFGenerator18UIImageConvertible", "UIGraphicsGetCurrentContext"]
+- !private ["P12PDFGenerator18UIImageConvertible", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["P12PDFGenerator18UIImageConvertible", "UIImage"]
+- !private ["P12PDFGenerator18UIImageConvertible", "UIRectFill"]
+- !private ["P12PDFGenerator18UIImageConvertible", "URLRequest"]
+- !private ["P12PDFGenerator18UIImageConvertible", "URLSession"]
+- !private ["P12PDFGenerator18UIImageConvertible", "bitmapInfo"]
+- !private ["P12PDFGenerator18UIImageConvertible", "bitsPerComponent"]
+- !private ["P12PDFGenerator18UIImageConvertible", "cgImage"]
+- !private ["P12PDFGenerator18UIImageConvertible", "colorSpace"]
+- !private ["P12PDFGenerator18UIImageConvertible", "draw"]
+- !private ["P12PDFGenerator18UIImageConvertible", "height"]
+- !private ["P12PDFGenerator18UIImageConvertible", "imageOrientation"]
+- !private ["P12PDFGenerator18UIImageConvertible", "init"]
+- !private ["P12PDFGenerator18UIImageConvertible", "internalResize"]
+- !private ["P12PDFGenerator18UIImageConvertible", "size"]
+- !private ["P12PDFGenerator18UIImageConvertible", "width"]
 - !private ["OSC18UIImageOrientation", "RawValue"]
 - ["OSC18UIImageOrientation", "deinit"]
 - ["OSC18UIImageOrientation", "down"]
@@ -890,6 +945,7 @@ depends-nominal:
 - !private "CSo9OS_object"
 - !private "Ps9OptionSet"
 - "Sq"
+- !private "P12PDFGenerator17PDFPageRenderable"
 - !private "Vs5Range"
 - "Ps16RawRepresentable"
 - !private "P10Foundation20ReferenceConvertible"
@@ -900,6 +956,7 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - "CSo7UIColor"
 - "CSo7UIImage"
+- !private "P12PDFGenerator18UIImageConvertible"
 - "OSC18UIImageOrientation"
 - "Vs6UInt32"
 - "V10Foundation3URL"
@@ -937,8 +994,46 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTaskSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageUploadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageMetadata.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageObservableTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageDownloadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRMutableData.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/Firebase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/PDFGenerator.swiftmodule/x86_64.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"

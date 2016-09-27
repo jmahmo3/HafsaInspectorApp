@@ -12,20 +12,16 @@ provides-dynamic-lookup:
 - "establishmentLabel"
 - "nameLabel"
 depends-top-level:
-- !private "Date"
 - "UITableViewCell"
-- !private "DateFormatter"
-- !private "UIColor"
-- "UILabel"
+- !private "UITableViewCellSelectionStyle"
+- !private "UIFont"
 - "AssignmentPrecedence"
 - "HIManager"
-- !private "UIFont"
+- !private "UIColor"
 - !private "StringLiteralType"
-- !private "UITableViewCellSelectionStyle"
+- "UILabel"
 - "NameTableViewCell"
 depends-member:
-- !private ["Ps9AnyObject", "Date"]
-- !private ["Ps9AnyObject", "DateFormatter"]
 - ["Ps9AnyObject", "HIManager"]
 - ["Ps9AnyObject", "HImanager"]
 - !private ["Ps9AnyObject", "UIColor"]
@@ -36,9 +32,9 @@ depends-member:
 - !private ["Ps9AnyObject", "clear"]
 - ["Ps9AnyObject", "configureNameCell"]
 - !private ["Ps9AnyObject", "currentChapter"]
+- !private ["Ps9AnyObject", "currentDate"]
 - !private ["Ps9AnyObject", "currentEstablishment"]
 - !private ["Ps9AnyObject", "darkGray"]
-- !private ["Ps9AnyObject", "dateFormat"]
 - ["Ps9AnyObject", "datelabel"]
 - ["Ps9AnyObject", "establishmentLabel"]
 - !private ["Ps9AnyObject", "font"]
@@ -46,13 +42,10 @@ depends-member:
 - ["Ps9AnyObject", "nameLabel"]
 - !private ["Ps9AnyObject", "selectionStyle"]
 - ["Ps9AnyObject", "sharedClient"]
-- !private ["Ps9AnyObject", "string"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "textColor"]
 - !private ["Ps9AnyObject", "userName"]
 - ["Ps9AnyObject", ""]
-- !private ["PSo15CALayerDelegate", "Date"]
-- !private ["PSo15CALayerDelegate", "DateFormatter"]
 - ["PSo15CALayerDelegate", "HIManager"]
 - ["PSo15CALayerDelegate", "HImanager"]
 - !private ["PSo15CALayerDelegate", "UIColor"]
@@ -71,8 +64,6 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "textColor"]
 - ["PSo15CALayerDelegate", ""]
 - ["V12CoreGraphics7CGFloat", "deinit"]
-- !private ["Ps7CVarArg", "Date"]
-- !private ["Ps7CVarArg", "DateFormatter"]
 - ["Ps7CVarArg", "HIManager"]
 - ["Ps7CVarArg", "HImanager"]
 - !private ["Ps7CVarArg", "UIColor"]
@@ -83,9 +74,9 @@ depends-member:
 - !private ["Ps7CVarArg", "clear"]
 - ["Ps7CVarArg", "configureNameCell"]
 - !private ["Ps7CVarArg", "currentChapter"]
+- !private ["Ps7CVarArg", "currentDate"]
 - !private ["Ps7CVarArg", "currentEstablishment"]
 - !private ["Ps7CVarArg", "darkGray"]
-- !private ["Ps7CVarArg", "dateFormat"]
 - ["Ps7CVarArg", "datelabel"]
 - ["Ps7CVarArg", "establishmentLabel"]
 - !private ["Ps7CVarArg", "font"]
@@ -93,14 +84,11 @@ depends-member:
 - ["Ps7CVarArg", "nameLabel"]
 - !private ["Ps7CVarArg", "selectionStyle"]
 - ["Ps7CVarArg", "sharedClient"]
-- !private ["Ps7CVarArg", "string"]
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "textColor"]
 - !private ["Ps7CVarArg", "userName"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Comparable", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "Date"]
-- !private ["Ps28CustomDebugStringConvertible", "DateFormatter"]
 - ["Ps28CustomDebugStringConvertible", "HIManager"]
 - ["Ps28CustomDebugStringConvertible", "HImanager"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
@@ -111,9 +99,9 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "clear"]
 - ["Ps28CustomDebugStringConvertible", "configureNameCell"]
 - !private ["Ps28CustomDebugStringConvertible", "currentChapter"]
+- !private ["Ps28CustomDebugStringConvertible", "currentDate"]
 - !private ["Ps28CustomDebugStringConvertible", "currentEstablishment"]
 - !private ["Ps28CustomDebugStringConvertible", "darkGray"]
-- !private ["Ps28CustomDebugStringConvertible", "dateFormat"]
 - ["Ps28CustomDebugStringConvertible", "datelabel"]
 - ["Ps28CustomDebugStringConvertible", "establishmentLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "font"]
@@ -121,15 +109,12 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "nameLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "selectionStyle"]
 - ["Ps28CustomDebugStringConvertible", "sharedClient"]
-- !private ["Ps28CustomDebugStringConvertible", "string"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "textColor"]
 - !private ["Ps28CustomDebugStringConvertible", "userName"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "init"]
-- !private ["Ps23CustomStringConvertible", "Date"]
-- !private ["Ps23CustomStringConvertible", "DateFormatter"]
 - ["Ps23CustomStringConvertible", "HIManager"]
 - ["Ps23CustomStringConvertible", "HImanager"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
@@ -140,9 +125,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "clear"]
 - ["Ps23CustomStringConvertible", "configureNameCell"]
 - !private ["Ps23CustomStringConvertible", "currentChapter"]
+- !private ["Ps23CustomStringConvertible", "currentDate"]
 - !private ["Ps23CustomStringConvertible", "currentEstablishment"]
 - !private ["Ps23CustomStringConvertible", "darkGray"]
-- !private ["Ps23CustomStringConvertible", "dateFormat"]
 - ["Ps23CustomStringConvertible", "datelabel"]
 - ["Ps23CustomStringConvertible", "establishmentLabel"]
 - !private ["Ps23CustomStringConvertible", "font"]
@@ -150,19 +135,10 @@ depends-member:
 - ["Ps23CustomStringConvertible", "nameLabel"]
 - !private ["Ps23CustomStringConvertible", "selectionStyle"]
 - ["Ps23CustomStringConvertible", "sharedClient"]
-- !private ["Ps23CustomStringConvertible", "string"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "textColor"]
 - !private ["Ps23CustomStringConvertible", "userName"]
 - ["Ps23CustomStringConvertible", ""]
-- ["V10Foundation4Date", "deinit"]
-- !private ["V10Foundation4Date", "init"]
-- !private ["CSo13DateFormatter", "dateFormat"]
-- ["CSo13DateFormatter", "deinit"]
-- !private ["CSo13DateFormatter", "init"]
-- !private ["CSo13DateFormatter", "string"]
-- !private ["Ps9Equatable", "Date"]
-- !private ["Ps9Equatable", "DateFormatter"]
 - ["Ps9Equatable", "HIManager"]
 - ["Ps9Equatable", "HImanager"]
 - !private ["Ps9Equatable", "UIColor"]
@@ -173,9 +149,9 @@ depends-member:
 - !private ["Ps9Equatable", "clear"]
 - ["Ps9Equatable", "configureNameCell"]
 - !private ["Ps9Equatable", "currentChapter"]
+- !private ["Ps9Equatable", "currentDate"]
 - !private ["Ps9Equatable", "currentEstablishment"]
 - !private ["Ps9Equatable", "darkGray"]
-- !private ["Ps9Equatable", "dateFormat"]
 - ["Ps9Equatable", "datelabel"]
 - ["Ps9Equatable", "establishmentLabel"]
 - !private ["Ps9Equatable", "font"]
@@ -184,7 +160,6 @@ depends-member:
 - !private ["Ps9Equatable", "none"]
 - !private ["Ps9Equatable", "selectionStyle"]
 - ["Ps9Equatable", "sharedClient"]
-- !private ["Ps9Equatable", "string"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "textColor"]
 - !private ["Ps9Equatable", "userName"]
@@ -193,16 +168,13 @@ depends-member:
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- !private ["CSo9Formatter", "dateFormat"]
-- !private ["CSo9Formatter", "init"]
-- !private ["CSo9Formatter", "string"]
+- !private ["P12PDFGenerator19FilePathConvertible", "init"]
 - !private ["C17HafsaInspectorApp9HIManager", "currentChapter"]
+- !private ["C17HafsaInspectorApp9HIManager", "currentDate"]
 - !private ["C17HafsaInspectorApp9HIManager", "currentEstablishment"]
 - ["C17HafsaInspectorApp9HIManager", "deinit"]
 - ["C17HafsaInspectorApp9HIManager", "sharedClient"]
 - !private ["C17HafsaInspectorApp9HIManager", "userName"]
-- !private ["Ps8Hashable", "Date"]
-- !private ["Ps8Hashable", "DateFormatter"]
 - ["Ps8Hashable", "HIManager"]
 - ["Ps8Hashable", "HImanager"]
 - !private ["Ps8Hashable", "UIColor"]
@@ -213,9 +185,9 @@ depends-member:
 - !private ["Ps8Hashable", "clear"]
 - ["Ps8Hashable", "configureNameCell"]
 - !private ["Ps8Hashable", "currentChapter"]
+- !private ["Ps8Hashable", "currentDate"]
 - !private ["Ps8Hashable", "currentEstablishment"]
 - !private ["Ps8Hashable", "darkGray"]
-- !private ["Ps8Hashable", "dateFormat"]
 - ["Ps8Hashable", "datelabel"]
 - ["Ps8Hashable", "establishmentLabel"]
 - !private ["Ps8Hashable", "font"]
@@ -224,7 +196,6 @@ depends-member:
 - !private ["Ps8Hashable", "none"]
 - !private ["Ps8Hashable", "selectionStyle"]
 - ["Ps8Hashable", "sharedClient"]
-- !private ["Ps8Hashable", "string"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "textColor"]
 - !private ["Ps8Hashable", "userName"]
@@ -233,8 +204,6 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
 - ["CSo7NSCoder", "deinit"]
-- !private ["PSo8NSCoding", "Date"]
-- !private ["PSo8NSCoding", "DateFormatter"]
 - ["PSo8NSCoding", "HIManager"]
 - ["PSo8NSCoding", "HImanager"]
 - !private ["PSo8NSCoding", "UIColor"]
@@ -245,25 +214,19 @@ depends-member:
 - !private ["PSo8NSCoding", "clear"]
 - ["PSo8NSCoding", "configureNameCell"]
 - !private ["PSo8NSCoding", "darkGray"]
-- !private ["PSo8NSCoding", "dateFormat"]
 - ["PSo8NSCoding", "datelabel"]
 - ["PSo8NSCoding", "establishmentLabel"]
 - !private ["PSo8NSCoding", "font"]
 - !private ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "nameLabel"]
 - !private ["PSo8NSCoding", "selectionStyle"]
-- !private ["PSo8NSCoding", "string"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textColor"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "clear"]
 - !private ["PSo9NSCopying", "darkGray"]
-- !private ["PSo9NSCopying", "dateFormat"]
 - !private ["PSo9NSCopying", "init"]
-- !private ["PSo9NSCopying", "string"]
 - !private ["PSo16NSMutableCopying", "init"]
-- !private ["CSo8NSObject", "Date"]
-- !private ["CSo8NSObject", "DateFormatter"]
 - ["CSo8NSObject", "HIManager"]
 - ["CSo8NSObject", "HImanager"]
 - !private ["CSo8NSObject", "UIColor"]
@@ -275,9 +238,9 @@ depends-member:
 - !private ["CSo8NSObject", "clear"]
 - ["CSo8NSObject", "configureNameCell"]
 - !private ["CSo8NSObject", "currentChapter"]
+- !private ["CSo8NSObject", "currentDate"]
 - !private ["CSo8NSObject", "currentEstablishment"]
 - !private ["CSo8NSObject", "darkGray"]
-- !private ["CSo8NSObject", "dateFormat"]
 - ["CSo8NSObject", "datelabel"]
 - ["CSo8NSObject", "establishmentLabel"]
 - !private ["CSo8NSObject", "font"]
@@ -285,12 +248,9 @@ depends-member:
 - ["CSo8NSObject", "nameLabel"]
 - !private ["CSo8NSObject", "selectionStyle"]
 - ["CSo8NSObject", "sharedClient"]
-- !private ["CSo8NSObject", "string"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textColor"]
 - !private ["CSo8NSObject", "userName"]
-- !private ["PSo16NSObjectProtocol", "Date"]
-- !private ["PSo16NSObjectProtocol", "DateFormatter"]
 - ["PSo16NSObjectProtocol", "HIManager"]
 - ["PSo16NSObjectProtocol", "HImanager"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
@@ -301,9 +261,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "clear"]
 - ["PSo16NSObjectProtocol", "configureNameCell"]
 - !private ["PSo16NSObjectProtocol", "currentChapter"]
+- !private ["PSo16NSObjectProtocol", "currentDate"]
 - !private ["PSo16NSObjectProtocol", "currentEstablishment"]
 - !private ["PSo16NSObjectProtocol", "darkGray"]
-- !private ["PSo16NSObjectProtocol", "dateFormat"]
 - ["PSo16NSObjectProtocol", "datelabel"]
 - ["PSo16NSObjectProtocol", "establishmentLabel"]
 - !private ["PSo16NSObjectProtocol", "font"]
@@ -311,7 +271,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "nameLabel"]
 - !private ["PSo16NSObjectProtocol", "selectionStyle"]
 - ["PSo16NSObjectProtocol", "sharedClient"]
-- !private ["PSo16NSObjectProtocol", "string"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textColor"]
 - !private ["PSo16NSObjectProtocol", "userName"]
@@ -320,8 +279,6 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "darkGray"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
-- !private ["C17HafsaInspectorApp17NameTableViewCell", "Date"]
-- !private ["C17HafsaInspectorApp17NameTableViewCell", "DateFormatter"]
 - ["C17HafsaInspectorApp17NameTableViewCell", "HIManager"]
 - !private ["C17HafsaInspectorApp17NameTableViewCell", "HImanager"]
 - !private ["C17HafsaInspectorApp17NameTableViewCell", "UIColor"]
@@ -338,14 +295,28 @@ depends-member:
 - ["C17HafsaInspectorApp17NameTableViewCell", "nameLabel"]
 - !private ["C17HafsaInspectorApp17NameTableViewCell", "selectionStyle"]
 - ["Sq", "deinit"]
+- ["P12PDFGenerator17PDFPageRenderable", "HIManager"]
+- ["P12PDFGenerator17PDFPageRenderable", "HImanager"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "UIColor"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "UIFont"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "UITableViewCellSelectionStyle"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "backgroundColor"]
+- ["P12PDFGenerator17PDFPageRenderable", "chapterLabel"]
+- ["P12PDFGenerator17PDFPageRenderable", "configureNameCell"]
+- ["P12PDFGenerator17PDFPageRenderable", "datelabel"]
+- ["P12PDFGenerator17PDFPageRenderable", "establishmentLabel"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "font"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "init"]
+- ["P12PDFGenerator17PDFPageRenderable", "nameLabel"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "selectionStyle"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "text"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "textColor"]
+- ["P12PDFGenerator17PDFPageRenderable", ""]
 - !private ["Ps16RawRepresentable", "none"]
-- !private ["P10Foundation20ReferenceConvertible", "init"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
-- !private ["PSo29UIAccessibilityIdentification", "Date"]
-- !private ["PSo29UIAccessibilityIdentification", "DateFormatter"]
 - ["PSo29UIAccessibilityIdentification", "HIManager"]
 - ["PSo29UIAccessibilityIdentification", "HImanager"]
 - !private ["PSo29UIAccessibilityIdentification", "UIColor"]
@@ -363,8 +334,6 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textColor"]
 - ["PSo29UIAccessibilityIdentification", ""]
-- !private ["PSo12UIAppearance", "Date"]
-- !private ["PSo12UIAppearance", "DateFormatter"]
 - ["PSo12UIAppearance", "HIManager"]
 - ["PSo12UIAppearance", "HImanager"]
 - !private ["PSo12UIAppearance", "UIColor"]
@@ -382,8 +351,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textColor"]
 - ["PSo12UIAppearance", ""]
-- !private ["PSo21UIAppearanceContainer", "Date"]
-- !private ["PSo21UIAppearanceContainer", "DateFormatter"]
 - ["PSo21UIAppearanceContainer", "HIManager"]
 - ["PSo21UIAppearanceContainer", "HImanager"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
@@ -407,8 +374,6 @@ depends-member:
 - !private ["PSo30UIContentSizeCategoryAdjusting", "font"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "textColor"]
-- !private ["PSo17UICoordinateSpace", "Date"]
-- !private ["PSo17UICoordinateSpace", "DateFormatter"]
 - ["PSo17UICoordinateSpace", "HIManager"]
 - ["PSo17UICoordinateSpace", "HImanager"]
 - !private ["PSo17UICoordinateSpace", "UIColor"]
@@ -426,8 +391,6 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textColor"]
 - ["PSo17UICoordinateSpace", ""]
-- !private ["PSo13UIDynamicItem", "Date"]
-- !private ["PSo13UIDynamicItem", "DateFormatter"]
 - ["PSo13UIDynamicItem", "HIManager"]
 - ["PSo13UIDynamicItem", "HImanager"]
 - !private ["PSo13UIDynamicItem", "UIColor"]
@@ -445,8 +408,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textColor"]
 - ["PSo13UIDynamicItem", ""]
-- !private ["PSo18UIFocusEnvironment", "Date"]
-- !private ["PSo18UIFocusEnvironment", "DateFormatter"]
 - ["PSo18UIFocusEnvironment", "HIManager"]
 - ["PSo18UIFocusEnvironment", "HImanager"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
@@ -464,8 +425,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "textColor"]
 - ["PSo18UIFocusEnvironment", ""]
-- !private ["PSo11UIFocusItem", "Date"]
-- !private ["PSo11UIFocusItem", "DateFormatter"]
 - ["PSo11UIFocusItem", "HIManager"]
 - ["PSo11UIFocusItem", "HImanager"]
 - !private ["PSo11UIFocusItem", "UIColor"]
@@ -484,8 +443,6 @@ depends-member:
 - !private ["PSo11UIFocusItem", "textColor"]
 - ["PSo11UIFocusItem", ""]
 - !private ["CSo6UIFont", "init"]
-- !private ["PSo27UIGestureRecognizerDelegate", "Date"]
-- !private ["PSo27UIGestureRecognizerDelegate", "DateFormatter"]
 - ["PSo27UIGestureRecognizerDelegate", "HIManager"]
 - ["PSo27UIGestureRecognizerDelegate", "HImanager"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIColor"]
@@ -500,11 +457,10 @@ depends-member:
 - ["PSo27UIGestureRecognizerDelegate", "nameLabel"]
 - !private ["PSo27UIGestureRecognizerDelegate", "selectionStyle"]
 - ["PSo27UIGestureRecognizerDelegate", ""]
+- !private ["P12PDFGenerator18UIImageConvertible", "init"]
 - !private ["CSo7UILabel", "font"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textColor"]
-- !private ["CSo11UIResponder", "Date"]
-- !private ["CSo11UIResponder", "DateFormatter"]
 - ["CSo11UIResponder", "HIManager"]
 - ["CSo11UIResponder", "HImanager"]
 - !private ["CSo11UIResponder", "UIColor"]
@@ -522,8 +478,6 @@ depends-member:
 - !private ["CSo11UIResponder", "selectionStyle"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textColor"]
-- !private ["PSo30UIResponderStandardEditActions", "Date"]
-- !private ["PSo30UIResponderStandardEditActions", "DateFormatter"]
 - ["PSo30UIResponderStandardEditActions", "HIManager"]
 - ["PSo30UIResponderStandardEditActions", "HImanager"]
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
@@ -541,8 +495,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "textColor"]
 - ["PSo30UIResponderStandardEditActions", ""]
-- !private ["CSo15UITableViewCell", "Date"]
-- !private ["CSo15UITableViewCell", "DateFormatter"]
 - ["CSo15UITableViewCell", "HIManager"]
 - ["CSo15UITableViewCell", "HImanager"]
 - !private ["CSo15UITableViewCell", "UIColor"]
@@ -562,8 +514,6 @@ depends-member:
 - ["OSC29UITableViewCellSelectionStyle", "deinit"]
 - !private ["OSC29UITableViewCellSelectionStyle", "none"]
 - ["OSC20UITableViewCellStyle", "deinit"]
-- !private ["PSo18UITraitEnvironment", "Date"]
-- !private ["PSo18UITraitEnvironment", "DateFormatter"]
 - ["PSo18UITraitEnvironment", "HIManager"]
 - ["PSo18UITraitEnvironment", "HImanager"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
@@ -581,8 +531,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textColor"]
 - ["PSo18UITraitEnvironment", ""]
-- !private ["CSo6UIView", "Date"]
-- !private ["CSo6UIView", "DateFormatter"]
 - ["CSo6UIView", "HIManager"]
 - ["CSo6UIView", "HImanager"]
 - !private ["CSo6UIView", "UIColor"]
@@ -600,8 +548,6 @@ depends-member:
 - !private ["CSo6UIView", "selectionStyle"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textColor"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "Date"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "DateFormatter"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "HIManager"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "HImanager"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIColor"]
@@ -626,8 +572,6 @@ depends-member:
 - !private ["Ps26_ExpressibleByColorLiteral", "clear"]
 - !private ["Ps26_ExpressibleByColorLiteral", "darkGray"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
-- !private ["Ps9_Hashable", "Date"]
-- !private ["Ps9_Hashable", "DateFormatter"]
 - ["Ps9_Hashable", "HIManager"]
 - ["Ps9_Hashable", "HImanager"]
 - !private ["Ps9_Hashable", "UIColor"]
@@ -638,9 +582,9 @@ depends-member:
 - !private ["Ps9_Hashable", "clear"]
 - ["Ps9_Hashable", "configureNameCell"]
 - !private ["Ps9_Hashable", "currentChapter"]
+- !private ["Ps9_Hashable", "currentDate"]
 - !private ["Ps9_Hashable", "currentEstablishment"]
 - !private ["Ps9_Hashable", "darkGray"]
-- !private ["Ps9_Hashable", "dateFormat"]
 - ["Ps9_Hashable", "datelabel"]
 - ["Ps9_Hashable", "establishmentLabel"]
 - !private ["Ps9_Hashable", "font"]
@@ -649,7 +593,6 @@ depends-member:
 - !private ["Ps9_Hashable", "none"]
 - !private ["Ps9_Hashable", "selectionStyle"]
 - ["Ps9_Hashable", "sharedClient"]
-- !private ["Ps9_Hashable", "string"]
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "textColor"]
 - !private ["Ps9_Hashable", "userName"]
@@ -665,14 +608,12 @@ depends-nominal:
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "V10Foundation4Date"
-- "CSo13DateFormatter"
 - "Ps9Equatable"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
-- !private "CSo9Formatter"
+- !private "P12PDFGenerator19FilePathConvertible"
 - "C17HafsaInspectorApp9HIManager"
 - "Ps8Hashable"
 - "SQ"
@@ -688,8 +629,8 @@ depends-nominal:
 - !private "CSo8NSString"
 - "C17HafsaInspectorApp17NameTableViewCell"
 - "Sq"
+- "P12PDFGenerator17PDFPageRenderable"
 - !private "Ps16RawRepresentable"
-- !private "P10Foundation20ReferenceConvertible"
 - "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
@@ -704,6 +645,7 @@ depends-nominal:
 - "PSo11UIFocusItem"
 - !private "CSo6UIFont"
 - "PSo27UIGestureRecognizerDelegate"
+- !private "P12PDFGenerator18UIImageConvertible"
 - !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
@@ -737,8 +679,46 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTaskSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageUploadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageMetadata.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageObservableTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageDownloadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRMutableData.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/Firebase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/PDFGenerator.swiftmodule/x86_64.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"

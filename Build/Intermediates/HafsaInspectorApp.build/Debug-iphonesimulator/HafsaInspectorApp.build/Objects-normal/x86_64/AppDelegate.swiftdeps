@@ -6,49 +6,57 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp11AppDelegate", ""]
 provides-dynamic-lookup:
-- "getData"
+- "application"
+- "application"
 - "applicationWillEnterForeground"
-- "application"
-- "application"
 - "applicationWillTerminate"
+- "vc"
 - "applicationDidBecomeActive"
 - "errorCount"
+- "ref"
 - "applicationWillResignActive"
+- "getData"
 - "window"
 - "applicationDidEnterBackground"
-- "vc"
 depends-top-level:
-- !private "UINavigationController"
-- !private "UIAlertControllerStyle"
-- !private "UserDefaults"
-- !private "TernaryPrecedence"
-- !private "UIAlertAction"
-- "Bool"
-- !private "UIAlertActionStyle"
-- !private "WebService"
-- "UIApplicationDelegate"
-- "UIApplication"
-- "AppDelegate"
 - "UIWindow"
-- !private "UIAlertController"
-- !private "CastingPrecedence"
+- "UIApplication"
 - !private "=="
 - "AssignmentPrecedence"
-- !private "MBProgressHUD"
-- !private "ChapterPickerViewController"
-- "EstablishmentPickerViewController"
-- !private "print"
-- !private "+="
-- !private "StringLiteralType"
-- !private "!="
-- "UIApplicationLaunchOptionsKey"
+- "FIRDatabaseReference"
+- !private "CastingPrecedence"
+- !private "TernaryPrecedence"
+- !private "UIAlertAction"
+- !private "WebService"
 - !private "HIManager"
-- "UIResponder"
-- !private "BooleanLiteralType"
+- !private "UIAlertControllerStyle"
+- !private "UIAlertController"
+- !private "FIRDatabase"
+- !private "UIAlertActionStyle"
 - !private "UIColor"
+- "Bool"
+- !private "UINavigationController"
+- !private "!"
+- !private "BooleanLiteralType"
+- "UIResponder"
+- "UIApplicationLaunchOptionsKey"
+- !private "MBProgressHUD"
+- !private "FIRApp"
+- !private "&&"
+- !private "UserDefaults"
+- "AppDelegate"
+- !private "ChapterPickerViewController"
+- !private "!="
+- !private "StringLiteralType"
+- "UIApplicationDelegate"
+- "EstablishmentPickerViewController"
+- !private "+="
+- !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "ChapterPickerViewController"]
 - ["Ps9AnyObject", "EstablishmentPickerViewController"]
+- !private ["Ps9AnyObject", "FIRApp"]
+- !private ["Ps9AnyObject", "FIRDatabase"]
 - !private ["Ps9AnyObject", "HIManager"]
 - !private ["Ps9AnyObject", "MBProgressHUD"]
 - !private ["Ps9AnyObject", "UIAlertAction"]
@@ -76,8 +84,10 @@ depends-member:
 - !private ["Ps9AnyObject", "black"]
 - !private ["Ps9AnyObject", "bool"]
 - !private ["Ps9AnyObject", "center"]
+- !private ["Ps9AnyObject", "configure"]
 - ["Ps9AnyObject", "create"]
 - !private ["Ps9AnyObject", "data"]
+- !private ["Ps9AnyObject", "database"]
 - !private ["Ps9AnyObject", "didGetChapterData"]
 - !private ["Ps9AnyObject", "didGetEstablishmentData"]
 - ["Ps9AnyObject", "errorCount"]
@@ -87,8 +97,10 @@ depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isKind"]
 - !private ["Ps9AnyObject", "label"]
+- !private ["Ps9AnyObject", "persistenceEnabled"]
 - !private ["Ps9AnyObject", "present"]
 - !private ["Ps9AnyObject", "print"]
+- ["Ps9AnyObject", "ref"]
 - !private ["Ps9AnyObject", "rootViewController"]
 - !private ["Ps9AnyObject", "sharedClient"]
 - !private ["Ps9AnyObject", "show"]
@@ -103,6 +115,9 @@ depends-member:
 - ["C17HafsaInspectorApp11AppDelegate", "Bool"]
 - !private ["C17HafsaInspectorApp11AppDelegate", "ChapterPickerViewController"]
 - ["C17HafsaInspectorApp11AppDelegate", "EstablishmentPickerViewController"]
+- !private ["C17HafsaInspectorApp11AppDelegate", "FIRApp"]
+- !private ["C17HafsaInspectorApp11AppDelegate", "FIRDatabase"]
+- ["C17HafsaInspectorApp11AppDelegate", "FIRDatabaseReference"]
 - !private ["C17HafsaInspectorApp11AppDelegate", "HIManager"]
 - !private ["C17HafsaInspectorApp11AppDelegate", "MBProgressHUD"]
 - !private ["C17HafsaInspectorApp11AppDelegate", "UIAlertAction"]
@@ -133,6 +148,7 @@ depends-member:
 - ["C17HafsaInspectorApp11AppDelegate", "getData"]
 - ["C17HafsaInspectorApp11AppDelegate", "init"]
 - !private ["C17HafsaInspectorApp11AppDelegate", "print"]
+- ["C17HafsaInspectorApp11AppDelegate", "ref"]
 - ["C17HafsaInspectorApp11AppDelegate", "vc"]
 - ["C17HafsaInspectorApp11AppDelegate", "window"]
 - !private ["Sb", "_getBuiltinLogicValue"]
@@ -149,6 +165,8 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "visibleViewController"]
 - !private ["Ps7CVarArg", "ChapterPickerViewController"]
 - ["Ps7CVarArg", "EstablishmentPickerViewController"]
+- !private ["Ps7CVarArg", "FIRApp"]
+- !private ["Ps7CVarArg", "FIRDatabase"]
 - !private ["Ps7CVarArg", "HIManager"]
 - !private ["Ps7CVarArg", "MBProgressHUD"]
 - !private ["Ps7CVarArg", "UIAlertAction"]
@@ -176,8 +194,10 @@ depends-member:
 - !private ["Ps7CVarArg", "black"]
 - !private ["Ps7CVarArg", "bool"]
 - !private ["Ps7CVarArg", "center"]
+- !private ["Ps7CVarArg", "configure"]
 - ["Ps7CVarArg", "create"]
 - !private ["Ps7CVarArg", "data"]
+- !private ["Ps7CVarArg", "database"]
 - !private ["Ps7CVarArg", "didGetChapterData"]
 - !private ["Ps7CVarArg", "didGetEstablishmentData"]
 - ["Ps7CVarArg", "errorCount"]
@@ -187,8 +207,10 @@ depends-member:
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "isKind"]
 - !private ["Ps7CVarArg", "label"]
+- !private ["Ps7CVarArg", "persistenceEnabled"]
 - !private ["Ps7CVarArg", "present"]
 - !private ["Ps7CVarArg", "print"]
+- ["Ps7CVarArg", "ref"]
 - !private ["Ps7CVarArg", "rootViewController"]
 - !private ["Ps7CVarArg", "sharedClient"]
 - !private ["Ps7CVarArg", "show"]
@@ -203,12 +225,15 @@ depends-member:
 - ["P17HafsaInspectorApp21ChapterPickerDelegate", "create"]
 - !private ["P17HafsaInspectorApp21ChapterPickerDelegate", "didGetEstablishmentData"]
 - !private ["P17HafsaInspectorApp21ChapterPickerDelegate", "present"]
-- !private ["C17HafsaInspectorApp27ChapterPickerViewController", "deinit"]
+- !private ["C17HafsaInspectorApp27ChapterPickerViewController", "create"]
+- ["C17HafsaInspectorApp27ChapterPickerViewController", "deinit"]
 - !private ["C17HafsaInspectorApp27ChapterPickerViewController", "didGetChapterData"]
 - !private ["C17HafsaInspectorApp27ChapterPickerViewController", "present"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "ChapterPickerViewController"]
 - ["Ps28CustomDebugStringConvertible", "EstablishmentPickerViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRApp"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRDatabase"]
 - !private ["Ps28CustomDebugStringConvertible", "HIManager"]
 - !private ["Ps28CustomDebugStringConvertible", "MBProgressHUD"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
@@ -236,8 +261,10 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "black"]
 - !private ["Ps28CustomDebugStringConvertible", "bool"]
 - !private ["Ps28CustomDebugStringConvertible", "center"]
+- !private ["Ps28CustomDebugStringConvertible", "configure"]
 - ["Ps28CustomDebugStringConvertible", "create"]
 - !private ["Ps28CustomDebugStringConvertible", "data"]
+- !private ["Ps28CustomDebugStringConvertible", "database"]
 - !private ["Ps28CustomDebugStringConvertible", "didGetChapterData"]
 - !private ["Ps28CustomDebugStringConvertible", "didGetEstablishmentData"]
 - ["Ps28CustomDebugStringConvertible", "errorCount"]
@@ -247,8 +274,10 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "isKind"]
 - !private ["Ps28CustomDebugStringConvertible", "label"]
+- !private ["Ps28CustomDebugStringConvertible", "persistenceEnabled"]
 - !private ["Ps28CustomDebugStringConvertible", "present"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
+- ["Ps28CustomDebugStringConvertible", "ref"]
 - !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "sharedClient"]
 - !private ["Ps28CustomDebugStringConvertible", "show"]
@@ -266,6 +295,8 @@ depends-member:
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps23CustomStringConvertible", "ChapterPickerViewController"]
 - ["Ps23CustomStringConvertible", "EstablishmentPickerViewController"]
+- !private ["Ps23CustomStringConvertible", "FIRApp"]
+- !private ["Ps23CustomStringConvertible", "FIRDatabase"]
 - !private ["Ps23CustomStringConvertible", "HIManager"]
 - !private ["Ps23CustomStringConvertible", "MBProgressHUD"]
 - !private ["Ps23CustomStringConvertible", "UIAlertAction"]
@@ -294,8 +325,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "black"]
 - !private ["Ps23CustomStringConvertible", "bool"]
 - !private ["Ps23CustomStringConvertible", "center"]
+- !private ["Ps23CustomStringConvertible", "configure"]
 - ["Ps23CustomStringConvertible", "create"]
 - !private ["Ps23CustomStringConvertible", "data"]
+- !private ["Ps23CustomStringConvertible", "database"]
 - !private ["Ps23CustomStringConvertible", "didGetChapterData"]
 - !private ["Ps23CustomStringConvertible", "didGetEstablishmentData"]
 - ["Ps23CustomStringConvertible", "errorCount"]
@@ -305,8 +338,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "isKind"]
 - !private ["Ps23CustomStringConvertible", "label"]
+- !private ["Ps23CustomStringConvertible", "persistenceEnabled"]
 - !private ["Ps23CustomStringConvertible", "present"]
 - !private ["Ps23CustomStringConvertible", "print"]
+- ["Ps23CustomStringConvertible", "ref"]
 - !private ["Ps23CustomStringConvertible", "rootViewController"]
 - !private ["Ps23CustomStringConvertible", "sharedClient"]
 - !private ["Ps23CustomStringConvertible", "show"]
@@ -320,6 +355,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "ChapterPickerViewController"]
 - ["Ps9Equatable", "EstablishmentPickerViewController"]
+- !private ["Ps9Equatable", "FIRApp"]
+- !private ["Ps9Equatable", "FIRDatabase"]
 - !private ["Ps9Equatable", "HIManager"]
 - !private ["Ps9Equatable", "MBProgressHUD"]
 - !private ["Ps9Equatable", "UIAlertAction"]
@@ -349,8 +386,10 @@ depends-member:
 - !private ["Ps9Equatable", "black"]
 - !private ["Ps9Equatable", "bool"]
 - !private ["Ps9Equatable", "center"]
+- !private ["Ps9Equatable", "configure"]
 - ["Ps9Equatable", "create"]
 - !private ["Ps9Equatable", "data"]
+- !private ["Ps9Equatable", "database"]
 - !private ["Ps9Equatable", "default"]
 - !private ["Ps9Equatable", "didGetChapterData"]
 - !private ["Ps9Equatable", "didGetEstablishmentData"]
@@ -361,8 +400,10 @@ depends-member:
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "isKind"]
 - !private ["Ps9Equatable", "label"]
+- !private ["Ps9Equatable", "persistenceEnabled"]
 - !private ["Ps9Equatable", "present"]
 - !private ["Ps9Equatable", "print"]
+- ["Ps9Equatable", "ref"]
 - !private ["Ps9Equatable", "rootViewController"]
 - !private ["Ps9Equatable", "sharedClient"]
 - !private ["Ps9Equatable", "show"]
@@ -383,11 +424,18 @@ depends-member:
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["CSo6FIRApp", "configure"]
+- !private ["CSo11FIRDatabase", "database"]
+- ["CSo11FIRDatabase", "deinit"]
+- !private ["CSo11FIRDatabase", "persistenceEnabled"]
+- !private ["P12PDFGenerator19FilePathConvertible", "init"]
 - !private ["C17HafsaInspectorApp9HIManager", "data"]
 - !private ["C17HafsaInspectorApp9HIManager", "deinit"]
 - !private ["C17HafsaInspectorApp9HIManager", "sharedClient"]
 - !private ["Ps8Hashable", "ChapterPickerViewController"]
 - ["Ps8Hashable", "EstablishmentPickerViewController"]
+- !private ["Ps8Hashable", "FIRApp"]
+- !private ["Ps8Hashable", "FIRDatabase"]
 - !private ["Ps8Hashable", "HIManager"]
 - !private ["Ps8Hashable", "MBProgressHUD"]
 - !private ["Ps8Hashable", "UIAlertAction"]
@@ -417,8 +465,10 @@ depends-member:
 - !private ["Ps8Hashable", "black"]
 - !private ["Ps8Hashable", "bool"]
 - !private ["Ps8Hashable", "center"]
+- !private ["Ps8Hashable", "configure"]
 - ["Ps8Hashable", "create"]
 - !private ["Ps8Hashable", "data"]
+- !private ["Ps8Hashable", "database"]
 - !private ["Ps8Hashable", "default"]
 - !private ["Ps8Hashable", "didGetChapterData"]
 - !private ["Ps8Hashable", "didGetEstablishmentData"]
@@ -429,8 +479,10 @@ depends-member:
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "isKind"]
 - !private ["Ps8Hashable", "label"]
+- !private ["Ps8Hashable", "persistenceEnabled"]
 - !private ["Ps8Hashable", "present"]
 - !private ["Ps8Hashable", "print"]
+- ["Ps8Hashable", "ref"]
 - !private ["Ps8Hashable", "rootViewController"]
 - !private ["Ps8Hashable", "sharedClient"]
 - !private ["Ps8Hashable", "show"]
@@ -442,6 +494,7 @@ depends-member:
 - !private ["Ps8Hashable", "visibleViewController"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
 - ["Si", "deinit"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
@@ -485,6 +538,9 @@ depends-member:
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "ChapterPickerViewController"]
 - ["CSo8NSObject", "EstablishmentPickerViewController"]
+- !private ["CSo8NSObject", "FIRApp"]
+- !private ["CSo8NSObject", "FIRDatabase"]
+- ["CSo8NSObject", "FIRDatabaseReference"]
 - !private ["CSo8NSObject", "HIManager"]
 - !private ["CSo8NSObject", "MBProgressHUD"]
 - !private ["CSo8NSObject", "UIAlertAction"]
@@ -515,8 +571,10 @@ depends-member:
 - !private ["CSo8NSObject", "black"]
 - !private ["CSo8NSObject", "bool"]
 - !private ["CSo8NSObject", "center"]
+- !private ["CSo8NSObject", "configure"]
 - ["CSo8NSObject", "create"]
 - !private ["CSo8NSObject", "data"]
+- !private ["CSo8NSObject", "database"]
 - !private ["CSo8NSObject", "didGetChapterData"]
 - !private ["CSo8NSObject", "didGetEstablishmentData"]
 - ["CSo8NSObject", "errorCount"]
@@ -526,8 +584,10 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "isKind"]
 - !private ["CSo8NSObject", "label"]
+- !private ["CSo8NSObject", "persistenceEnabled"]
 - !private ["CSo8NSObject", "present"]
 - !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "ref"]
 - !private ["CSo8NSObject", "rootViewController"]
 - !private ["CSo8NSObject", "sharedClient"]
 - !private ["CSo8NSObject", "show"]
@@ -540,6 +600,8 @@ depends-member:
 - ["CSo8NSObject", "window"]
 - !private ["PSo16NSObjectProtocol", "ChapterPickerViewController"]
 - ["PSo16NSObjectProtocol", "EstablishmentPickerViewController"]
+- !private ["PSo16NSObjectProtocol", "FIRApp"]
+- !private ["PSo16NSObjectProtocol", "FIRDatabase"]
 - !private ["PSo16NSObjectProtocol", "HIManager"]
 - !private ["PSo16NSObjectProtocol", "MBProgressHUD"]
 - !private ["PSo16NSObjectProtocol", "UIAlertAction"]
@@ -567,8 +629,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "black"]
 - !private ["PSo16NSObjectProtocol", "bool"]
 - !private ["PSo16NSObjectProtocol", "center"]
+- !private ["PSo16NSObjectProtocol", "configure"]
 - ["PSo16NSObjectProtocol", "create"]
 - !private ["PSo16NSObjectProtocol", "data"]
+- !private ["PSo16NSObjectProtocol", "database"]
 - !private ["PSo16NSObjectProtocol", "didGetChapterData"]
 - !private ["PSo16NSObjectProtocol", "didGetEstablishmentData"]
 - ["PSo16NSObjectProtocol", "errorCount"]
@@ -578,8 +642,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "isKind"]
 - !private ["PSo16NSObjectProtocol", "label"]
+- !private ["PSo16NSObjectProtocol", "persistenceEnabled"]
 - !private ["PSo16NSObjectProtocol", "present"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", "ref"]
 - !private ["PSo16NSObjectProtocol", "rootViewController"]
 - !private ["PSo16NSObjectProtocol", "sharedClient"]
 - !private ["PSo16NSObjectProtocol", "show"]
@@ -595,6 +661,16 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "addSubview"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "center"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "hide"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "init"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "label"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "rootViewController"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "show"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "text"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "tintColor"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "visibleViewController"]
 - !private ["Ps16RawRepresentable", "alert"]
 - !private ["Ps16RawRepresentable", "default"]
 - ["SS", "deinit"]
@@ -649,6 +725,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "visibleViewController"]
 - !private ["PSo21UIApplicationDelegate", "ChapterPickerViewController"]
 - ["PSo21UIApplicationDelegate", "EstablishmentPickerViewController"]
+- !private ["PSo21UIApplicationDelegate", "FIRApp"]
+- !private ["PSo21UIApplicationDelegate", "FIRDatabase"]
 - !private ["PSo21UIApplicationDelegate", "HIManager"]
 - !private ["PSo21UIApplicationDelegate", "MBProgressHUD"]
 - !private ["PSo21UIApplicationDelegate", "UIAlertAction"]
@@ -735,6 +813,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo11UIFocusItem", "tintColor"]
 - !private ["PSo11UIFocusItem", "visibleViewController"]
+- !private ["P12PDFGenerator18UIImageConvertible", "init"]
 - ["CSo7UILabel", "deinit"]
 - !private ["CSo7UILabel", "text"]
 - ["CSo22UINavigationController", "deinit"]
@@ -742,6 +821,9 @@ depends-member:
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "ChapterPickerViewController"]
 - ["CSo11UIResponder", "EstablishmentPickerViewController"]
+- !private ["CSo11UIResponder", "FIRApp"]
+- !private ["CSo11UIResponder", "FIRDatabase"]
+- ["CSo11UIResponder", "FIRDatabaseReference"]
 - !private ["CSo11UIResponder", "HIManager"]
 - !private ["CSo11UIResponder", "MBProgressHUD"]
 - !private ["CSo11UIResponder", "UIAlertAction"]
@@ -782,6 +864,7 @@ depends-member:
 - !private ["CSo11UIResponder", "label"]
 - !private ["CSo11UIResponder", "present"]
 - !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "ref"]
 - !private ["CSo11UIResponder", "rootViewController"]
 - !private ["CSo11UIResponder", "show"]
 - !private ["CSo11UIResponder", "text"]
@@ -793,6 +876,8 @@ depends-member:
 - ["CSo11UIResponder", ""]
 - !private ["PSo30UIResponderStandardEditActions", "ChapterPickerViewController"]
 - ["PSo30UIResponderStandardEditActions", "EstablishmentPickerViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "FIRApp"]
+- !private ["PSo30UIResponderStandardEditActions", "FIRDatabase"]
 - !private ["PSo30UIResponderStandardEditActions", "HIManager"]
 - !private ["PSo30UIResponderStandardEditActions", "MBProgressHUD"]
 - !private ["PSo30UIResponderStandardEditActions", "UIAlertAction"]
@@ -829,6 +914,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "label"]
 - !private ["PSo30UIResponderStandardEditActions", "present"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
+- ["PSo30UIResponderStandardEditActions", "ref"]
 - !private ["PSo30UIResponderStandardEditActions", "rootViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "show"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
@@ -924,6 +1010,8 @@ depends-member:
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "ChapterPickerViewController"]
 - ["Ps9_Hashable", "EstablishmentPickerViewController"]
+- !private ["Ps9_Hashable", "FIRApp"]
+- !private ["Ps9_Hashable", "FIRDatabase"]
 - !private ["Ps9_Hashable", "HIManager"]
 - !private ["Ps9_Hashable", "MBProgressHUD"]
 - !private ["Ps9_Hashable", "UIAlertAction"]
@@ -953,8 +1041,10 @@ depends-member:
 - !private ["Ps9_Hashable", "black"]
 - !private ["Ps9_Hashable", "bool"]
 - !private ["Ps9_Hashable", "center"]
+- !private ["Ps9_Hashable", "configure"]
 - ["Ps9_Hashable", "create"]
 - !private ["Ps9_Hashable", "data"]
+- !private ["Ps9_Hashable", "database"]
 - !private ["Ps9_Hashable", "default"]
 - !private ["Ps9_Hashable", "didGetChapterData"]
 - !private ["Ps9_Hashable", "didGetEstablishmentData"]
@@ -965,8 +1055,10 @@ depends-member:
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "isKind"]
 - !private ["Ps9_Hashable", "label"]
+- !private ["Ps9_Hashable", "persistenceEnabled"]
 - !private ["Ps9_Hashable", "present"]
 - !private ["Ps9_Hashable", "print"]
+- ["Ps9_Hashable", "ref"]
 - !private ["Ps9_Hashable", "rootViewController"]
 - !private ["Ps9_Hashable", "sharedClient"]
 - !private ["Ps9_Hashable", "show"]
@@ -987,7 +1079,7 @@ depends-nominal:
 - !private "PSo15CALayerDelegate"
 - "Ps7CVarArg"
 - "P17HafsaInspectorApp21ChapterPickerDelegate"
-- !private "C17HafsaInspectorApp27ChapterPickerViewController"
+- "C17HafsaInspectorApp27ChapterPickerViewController"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
@@ -1000,8 +1092,12 @@ depends-nominal:
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "CSo6FIRApp"
+- "CSo11FIRDatabase"
+- !private "P12PDFGenerator19FilePathConvertible"
 - !private "C17HafsaInspectorApp9HIManager"
 - "Ps8Hashable"
+- "SQ"
 - "Si"
 - !private "Ps25LosslessStringConvertible"
 - "CSo13MBProgressHUD"
@@ -1015,6 +1111,7 @@ depends-nominal:
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - "Sq"
+- !private "P12PDFGenerator17PDFPageRenderable"
 - !private "Ps16RawRepresentable"
 - "SS"
 - !private "Ps16TextOutputStream"
@@ -1034,6 +1131,7 @@ depends-nominal:
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - !private "PSo11UIFocusItem"
+- !private "P12PDFGenerator18UIImageConvertible"
 - "CSo7UILabel"
 - "CSo22UINavigationController"
 - "CSo11UIResponder"
@@ -1073,11 +1171,49 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTaskSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageUploadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageMetadata.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageObservableTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageDownloadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRMutableData.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/Firebase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/PDFGenerator.swiftmodule/x86_64.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "1c705cd653283ac5b628d718d34b68b9"
+interface-hash: "f790b85592c0de50e34c23bbea4d148c"

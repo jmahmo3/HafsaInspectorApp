@@ -26,6 +26,12 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
         self.view.backgroundColor = UIColor.HIBackground
         self.setNavBarWithBackButton()
         self.hideKeyboardWhenTappedAround()
+        
+        
+        
+        
+        
+        
     }
 
     override func backButtonPressed() {
@@ -167,11 +173,11 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
         // Create a reference to the file you want to upload
         let riversRef = storageRef.child("\(HImanager.currentChapter)/\(pdfname)")
         
-        // Upload the file to the path "images/rivers.jpg"
         let uploadTask = riversRef.putFile(dst, metadata: nil) { metadata, error in
             if (error != nil) {
                 // Uh-oh, an error occurred!
             } else {
+                print(metadata?.path)
                 // Metadata contains file metadata such as size, content-type, and download URL.
 //                let downloadURL = metadata!.downloadURL
             }

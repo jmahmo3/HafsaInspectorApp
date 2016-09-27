@@ -6,48 +6,49 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp18ImageTableViewCell", ""]
 provides-dynamic-lookup:
-- "imageSaved"
-- "imagesArr"
 - "layoutSubviews"
+- "addImageButtonPressed"
+- "imagesArr"
 - "addImageButton"
 - "deleteImage"
-- "addImageButtonPressed"
+- "imageSaved"
 - "collectionView"
 - "collectionView"
 - "collectionView"
 - "collectionView"
 - "collectionView"
 depends-top-level:
-- "SaveImageDelegate"
-- "CGSize"
-- !private "UIFont"
-- "UIImage"
-- !private "BooleanLiteralType"
-- "UICollectionViewLayout"
-- !private "StringLiteralType"
-- !private "IPDFView"
-- !private "DispatchQueue"
+- !private "HIManager"
 - "IndexPath"
-- "UICollectionViewDataSource"
+- "UICollectionView"
+- "Int"
 - "NSMutableArray"
 - "UICollectionViewDelegate"
-- "UICollectionViewCell"
-- !private "NSIndexPath"
-- !private "EditImageViewController"
-- "CastingPrecedence"
-- "UICollectionView"
-- "AssignmentPrecedence"
-- !private "=="
-- !private "AddImageCollectionViewCell"
-- "Int"
-- "ImageTableViewCell"
-- "EditedImageDelegate"
-- "AnyObject"
-- "UIButton"
-- "Array"
+- "UICollectionViewDataSource"
 - "UITableViewCell"
-- !private "UITableViewCellSelectionStyle"
+- "CastingPrecedence"
+- !private "EditImageViewController"
+- "AssignmentPrecedence"
+- "UIButton"
 - !private "UIColor"
+- !private "=="
+- "UIImage"
+- "AnyObject"
+- !private "IPDFView"
+- !private "NSIndexPath"
+- "SaveImageDelegate"
+- "ImageTableViewCell"
+- !private "StringLiteralType"
+- !private "AddImageCollectionViewCell"
+- "Array"
+- "EditedImageDelegate"
+- "UICollectionViewCell"
+- "CGSize"
+- !private "BooleanLiteralType"
+- !private "UIFont"
+- "UICollectionViewLayout"
+- !private "DispatchQueue"
+- !private "UITableViewCellSelectionStyle"
 depends-member:
 - ["C17HafsaInspectorApp26AddImageCollectionViewCell", "deinit"]
 - !private ["C17HafsaInspectorApp26AddImageCollectionViewCell", "takenImage"]
@@ -55,6 +56,7 @@ depends-member:
 - !private ["Ps9AnyObject", "DispatchQueue"]
 - !private ["Ps9AnyObject", "EditImageViewController"]
 - ["Ps9AnyObject", "Element"]
+- !private ["Ps9AnyObject", "HIManager"]
 - !private ["Ps9AnyObject", "IPDFView"]
 - !private ["Ps9AnyObject", "Iterator"]
 - !private ["Ps9AnyObject", "UIColor"]
@@ -82,6 +84,7 @@ depends-member:
 - !private ["Ps9AnyObject", "font"]
 - !private ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "imageSaved"]
+- !private ["Ps9AnyObject", "images"]
 - ["Ps9AnyObject", "imagesArr"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedView"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -89,6 +92,7 @@ depends-member:
 - !private ["Ps9AnyObject", "layer"]
 - ["Ps9AnyObject", "layoutSubviews"]
 - !private ["Ps9AnyObject", "main"]
+- !private ["Ps9AnyObject", "mutableCopy"]
 - !private ["Ps9AnyObject", "navigationController"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInCollectionView"]
@@ -112,6 +116,7 @@ depends-member:
 - ["Ps9AnyObject", "scrollViewWillBeginZooming"]
 - ["Ps9AnyObject", "scrollViewWillEndDragging"]
 - !private ["Ps9AnyObject", "selectionStyle"]
+- !private ["Ps9AnyObject", "sharedClient"]
 - !private ["Ps9AnyObject", "takenImage"]
 - !private ["Ps9AnyObject", "textColor"]
 - !private ["Ps9AnyObject", "tintColor"]
@@ -129,6 +134,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "CGSize"]
 - !private ["PSo15CALayerDelegate", "DispatchQueue"]
 - !private ["PSo15CALayerDelegate", "EditImageViewController"]
+- !private ["PSo15CALayerDelegate", "HIManager"]
 - !private ["PSo15CALayerDelegate", "IPDFView"]
 - !private ["PSo15CALayerDelegate", "UIColor"]
 - !private ["PSo15CALayerDelegate", "UIFont"]
@@ -187,6 +193,7 @@ depends-member:
 - !private ["Ps7CVarArg", "DispatchQueue"]
 - !private ["Ps7CVarArg", "EditImageViewController"]
 - ["Ps7CVarArg", "Element"]
+- !private ["Ps7CVarArg", "HIManager"]
 - !private ["Ps7CVarArg", "IPDFView"]
 - !private ["Ps7CVarArg", "Iterator"]
 - !private ["Ps7CVarArg", "UIColor"]
@@ -214,6 +221,7 @@ depends-member:
 - !private ["Ps7CVarArg", "font"]
 - !private ["Ps7CVarArg", "image"]
 - ["Ps7CVarArg", "imageSaved"]
+- !private ["Ps7CVarArg", "images"]
 - ["Ps7CVarArg", "imagesArr"]
 - ["Ps7CVarArg", "indexPathForPreferredFocusedView"]
 - ["Ps7CVarArg", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -221,6 +229,7 @@ depends-member:
 - !private ["Ps7CVarArg", "layer"]
 - ["Ps7CVarArg", "layoutSubviews"]
 - !private ["Ps7CVarArg", "main"]
+- !private ["Ps7CVarArg", "mutableCopy"]
 - !private ["Ps7CVarArg", "navigationController"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInCollectionView"]
@@ -244,6 +253,7 @@ depends-member:
 - ["Ps7CVarArg", "scrollViewWillBeginZooming"]
 - ["Ps7CVarArg", "scrollViewWillEndDragging"]
 - !private ["Ps7CVarArg", "selectionStyle"]
+- !private ["Ps7CVarArg", "sharedClient"]
 - !private ["Ps7CVarArg", "takenImage"]
 - !private ["Ps7CVarArg", "textColor"]
 - !private ["Ps7CVarArg", "tintColor"]
@@ -257,6 +267,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "DispatchQueue"]
 - !private ["Ps28CustomDebugStringConvertible", "EditImageViewController"]
 - ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "HIManager"]
 - !private ["Ps28CustomDebugStringConvertible", "IPDFView"]
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
@@ -284,6 +295,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "font"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "imageSaved"]
+- !private ["Ps28CustomDebugStringConvertible", "images"]
 - ["Ps28CustomDebugStringConvertible", "imagesArr"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedView"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -291,6 +303,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
 - ["Ps28CustomDebugStringConvertible", "layoutSubviews"]
 - !private ["Ps28CustomDebugStringConvertible", "main"]
+- !private ["Ps28CustomDebugStringConvertible", "mutableCopy"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInCollectionView"]
@@ -314,6 +327,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "scrollViewWillBeginZooming"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewWillEndDragging"]
 - !private ["Ps28CustomDebugStringConvertible", "selectionStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "sharedClient"]
 - !private ["Ps28CustomDebugStringConvertible", "takenImage"]
 - !private ["Ps28CustomDebugStringConvertible", "textColor"]
 - !private ["Ps28CustomDebugStringConvertible", "tintColor"]
@@ -330,12 +344,14 @@ depends-member:
 - !private ["Ps17CustomReflectable", "add"]
 - !private ["Ps17CustomReflectable", "count"]
 - !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "mutableCopy"]
 - !private ["Ps17CustomReflectable", "object"]
 - !private ["Ps17CustomReflectable", "remove"]
 - !private ["Ps23CustomStringConvertible", "CGSize"]
 - !private ["Ps23CustomStringConvertible", "DispatchQueue"]
 - !private ["Ps23CustomStringConvertible", "EditImageViewController"]
 - ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "HIManager"]
 - !private ["Ps23CustomStringConvertible", "IPDFView"]
 - !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
@@ -364,6 +380,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "font"]
 - !private ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "imageSaved"]
+- !private ["Ps23CustomStringConvertible", "images"]
 - ["Ps23CustomStringConvertible", "imagesArr"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedView"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -371,6 +388,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "layer"]
 - ["Ps23CustomStringConvertible", "layoutSubviews"]
 - !private ["Ps23CustomStringConvertible", "main"]
+- !private ["Ps23CustomStringConvertible", "mutableCopy"]
 - !private ["Ps23CustomStringConvertible", "navigationController"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInCollectionView"]
@@ -394,6 +412,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "scrollViewWillBeginZooming"]
 - ["Ps23CustomStringConvertible", "scrollViewWillEndDragging"]
 - !private ["Ps23CustomStringConvertible", "selectionStyle"]
+- !private ["Ps23CustomStringConvertible", "sharedClient"]
 - !private ["Ps23CustomStringConvertible", "takenImage"]
 - !private ["Ps23CustomStringConvertible", "textColor"]
 - !private ["Ps23CustomStringConvertible", "tintColor"]
@@ -414,6 +433,7 @@ depends-member:
 - !private ["P17HafsaInspectorApp19EditedImageDelegate", "CGSize"]
 - !private ["P17HafsaInspectorApp19EditedImageDelegate", "DispatchQueue"]
 - !private ["P17HafsaInspectorApp19EditedImageDelegate", "EditImageViewController"]
+- !private ["P17HafsaInspectorApp19EditedImageDelegate", "HIManager"]
 - !private ["P17HafsaInspectorApp19EditedImageDelegate", "IPDFView"]
 - !private ["P17HafsaInspectorApp19EditedImageDelegate", "UIColor"]
 - !private ["P17HafsaInspectorApp19EditedImageDelegate", "UIFont"]
@@ -450,6 +470,7 @@ depends-member:
 - !private ["Ps9Equatable", "DispatchQueue"]
 - !private ["Ps9Equatable", "EditImageViewController"]
 - ["Ps9Equatable", "Element"]
+- !private ["Ps9Equatable", "HIManager"]
 - !private ["Ps9Equatable", "IPDFView"]
 - !private ["Ps9Equatable", "Iterator"]
 - !private ["Ps9Equatable", "UIColor"]
@@ -478,6 +499,7 @@ depends-member:
 - !private ["Ps9Equatable", "font"]
 - !private ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "imageSaved"]
+- !private ["Ps9Equatable", "images"]
 - ["Ps9Equatable", "imagesArr"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedView"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -485,6 +507,7 @@ depends-member:
 - !private ["Ps9Equatable", "layer"]
 - ["Ps9Equatable", "layoutSubviews"]
 - !private ["Ps9Equatable", "main"]
+- !private ["Ps9Equatable", "mutableCopy"]
 - !private ["Ps9Equatable", "navigationController"]
 - !private ["Ps9Equatable", "none"]
 - ["Ps9Equatable", "numberOfSections"]
@@ -509,6 +532,7 @@ depends-member:
 - ["Ps9Equatable", "scrollViewWillBeginZooming"]
 - ["Ps9Equatable", "scrollViewWillEndDragging"]
 - !private ["Ps9Equatable", "selectionStyle"]
+- !private ["Ps9Equatable", "sharedClient"]
 - !private ["Ps9Equatable", "takenImage"]
 - !private ["Ps9Equatable", "textColor"]
 - !private ["Ps9Equatable", "tintColor"]
@@ -521,6 +545,7 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
 - !private ["Ps25ExpressibleByArrayLiteral", "add"]
 - !private ["Ps25ExpressibleByArrayLiteral", "count"]
+- !private ["Ps25ExpressibleByArrayLiteral", "mutableCopy"]
 - !private ["Ps25ExpressibleByArrayLiteral", "object"]
 - !private ["Ps25ExpressibleByArrayLiteral", "remove"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
@@ -528,10 +553,15 @@ depends-member:
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["P12PDFGenerator19FilePathConvertible", "init"]
+- ["C17HafsaInspectorApp9HIManager", "deinit"]
+- !private ["C17HafsaInspectorApp9HIManager", "images"]
+- !private ["C17HafsaInspectorApp9HIManager", "sharedClient"]
 - !private ["Ps8Hashable", "CGSize"]
 - !private ["Ps8Hashable", "DispatchQueue"]
 - !private ["Ps8Hashable", "EditImageViewController"]
 - ["Ps8Hashable", "Element"]
+- !private ["Ps8Hashable", "HIManager"]
 - !private ["Ps8Hashable", "IPDFView"]
 - !private ["Ps8Hashable", "Iterator"]
 - !private ["Ps8Hashable", "UIColor"]
@@ -560,6 +590,7 @@ depends-member:
 - !private ["Ps8Hashable", "font"]
 - !private ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "imageSaved"]
+- !private ["Ps8Hashable", "images"]
 - ["Ps8Hashable", "imagesArr"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -567,6 +598,7 @@ depends-member:
 - !private ["Ps8Hashable", "layer"]
 - ["Ps8Hashable", "layoutSubviews"]
 - !private ["Ps8Hashable", "main"]
+- !private ["Ps8Hashable", "mutableCopy"]
 - !private ["Ps8Hashable", "navigationController"]
 - !private ["Ps8Hashable", "none"]
 - ["Ps8Hashable", "numberOfSections"]
@@ -591,6 +623,7 @@ depends-member:
 - ["Ps8Hashable", "scrollViewWillBeginZooming"]
 - ["Ps8Hashable", "scrollViewWillEndDragging"]
 - !private ["Ps8Hashable", "selectionStyle"]
+- !private ["Ps8Hashable", "sharedClient"]
 - !private ["Ps8Hashable", "takenImage"]
 - !private ["Ps8Hashable", "textColor"]
 - !private ["Ps8Hashable", "tintColor"]
@@ -608,6 +641,7 @@ depends-member:
 - ["C17HafsaInspectorApp18ImageTableViewCell", "CGSize"]
 - !private ["C17HafsaInspectorApp18ImageTableViewCell", "DispatchQueue"]
 - !private ["C17HafsaInspectorApp18ImageTableViewCell", "EditImageViewController"]
+- !private ["C17HafsaInspectorApp18ImageTableViewCell", "HIManager"]
 - !private ["C17HafsaInspectorApp18ImageTableViewCell", "IPDFView"]
 - ["C17HafsaInspectorApp18ImageTableViewCell", "IndexPath"]
 - ["C17HafsaInspectorApp18ImageTableViewCell", "Int"]
@@ -663,6 +697,7 @@ depends-member:
 - !private ["CSo7NSArray", "Iterator"]
 - !private ["CSo7NSArray", "add"]
 - !private ["CSo7NSArray", "count"]
+- !private ["CSo7NSArray", "mutableCopy"]
 - !private ["CSo7NSArray", "object"]
 - !private ["CSo7NSArray", "remove"]
 - ["CSo7NSCoder", "deinit"]
@@ -670,6 +705,7 @@ depends-member:
 - !private ["PSo8NSCoding", "DispatchQueue"]
 - !private ["PSo8NSCoding", "EditImageViewController"]
 - ["PSo8NSCoding", "Element"]
+- !private ["PSo8NSCoding", "HIManager"]
 - !private ["PSo8NSCoding", "IPDFView"]
 - !private ["PSo8NSCoding", "Iterator"]
 - !private ["PSo8NSCoding", "UIColor"]
@@ -702,6 +738,7 @@ depends-member:
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "layer"]
 - ["PSo8NSCoding", "layoutSubviews"]
+- !private ["PSo8NSCoding", "mutableCopy"]
 - !private ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "numberOfSectionsInCollectionView"]
@@ -740,6 +777,7 @@ depends-member:
 - !private ["PSo9NSCopying", "cgColor"]
 - !private ["PSo9NSCopying", "count"]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "mutableCopy"]
 - !private ["PSo9NSCopying", "object"]
 - !private ["PSo9NSCopying", "remove"]
 - !private ["PSo9NSCopying", "row"]
@@ -755,6 +793,7 @@ depends-member:
 - !private ["PSo17NSFastEnumeration", "Iterator"]
 - !private ["PSo17NSFastEnumeration", "add"]
 - !private ["PSo17NSFastEnumeration", "count"]
+- !private ["PSo17NSFastEnumeration", "mutableCopy"]
 - !private ["PSo17NSFastEnumeration", "object"]
 - !private ["PSo17NSFastEnumeration", "remove"]
 - !private ["C10Foundation25NSFastEnumerationIterator", "Element"]
@@ -765,6 +804,7 @@ depends-member:
 - !private ["CSo14NSMutableArray", "add"]
 - !private ["CSo14NSMutableArray", "count"]
 - ["CSo14NSMutableArray", "deinit"]
+- !private ["CSo14NSMutableArray", "mutableCopy"]
 - !private ["CSo14NSMutableArray", "object"]
 - !private ["CSo14NSMutableArray", "remove"]
 - ["PSo16NSMutableCopying", "Element"]
@@ -772,6 +812,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "add"]
 - !private ["PSo16NSMutableCopying", "count"]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "mutableCopy"]
 - !private ["PSo16NSMutableCopying", "object"]
 - !private ["PSo16NSMutableCopying", "remove"]
 - !private ["CSo8NSObject", "AddImageCollectionViewCell"]
@@ -780,6 +821,7 @@ depends-member:
 - !private ["CSo8NSObject", "DispatchQueue"]
 - !private ["CSo8NSObject", "EditImageViewController"]
 - ["CSo8NSObject", "Element"]
+- !private ["CSo8NSObject", "HIManager"]
 - !private ["CSo8NSObject", "IPDFView"]
 - ["CSo8NSObject", "IndexPath"]
 - ["CSo8NSObject", "Int"]
@@ -816,6 +858,7 @@ depends-member:
 - !private ["CSo8NSObject", "font"]
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "imageSaved"]
+- !private ["CSo8NSObject", "images"]
 - ["CSo8NSObject", "imagesArr"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedView"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -823,6 +866,7 @@ depends-member:
 - !private ["CSo8NSObject", "layer"]
 - ["CSo8NSObject", "layoutSubviews"]
 - !private ["CSo8NSObject", "main"]
+- !private ["CSo8NSObject", "mutableCopy"]
 - !private ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInCollectionView"]
@@ -846,6 +890,7 @@ depends-member:
 - ["CSo8NSObject", "scrollViewWillBeginZooming"]
 - ["CSo8NSObject", "scrollViewWillEndDragging"]
 - !private ["CSo8NSObject", "selectionStyle"]
+- !private ["CSo8NSObject", "sharedClient"]
 - !private ["CSo8NSObject", "takenImage"]
 - !private ["CSo8NSObject", "textColor"]
 - !private ["CSo8NSObject", "tintColor"]
@@ -857,6 +902,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "DispatchQueue"]
 - !private ["PSo16NSObjectProtocol", "EditImageViewController"]
 - ["PSo16NSObjectProtocol", "Element"]
+- !private ["PSo16NSObjectProtocol", "HIManager"]
 - !private ["PSo16NSObjectProtocol", "IPDFView"]
 - !private ["PSo16NSObjectProtocol", "Iterator"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
@@ -884,6 +930,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "font"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "imageSaved"]
+- !private ["PSo16NSObjectProtocol", "images"]
 - ["PSo16NSObjectProtocol", "imagesArr"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedView"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -891,6 +938,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "layer"]
 - ["PSo16NSObjectProtocol", "layoutSubviews"]
 - !private ["PSo16NSObjectProtocol", "main"]
+- !private ["PSo16NSObjectProtocol", "mutableCopy"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInCollectionView"]
@@ -914,6 +962,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "scrollViewWillBeginZooming"]
 - ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
 - !private ["PSo16NSObjectProtocol", "selectionStyle"]
+- !private ["PSo16NSObjectProtocol", "sharedClient"]
 - !private ["PSo16NSObjectProtocol", "takenImage"]
 - !private ["PSo16NSObjectProtocol", "textColor"]
 - !private ["PSo16NSObjectProtocol", "tintColor"]
@@ -929,6 +978,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "cgColor"]
 - !private ["PSo14NSSecureCoding", "count"]
 - !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "mutableCopy"]
 - !private ["PSo14NSSecureCoding", "object"]
 - !private ["PSo14NSSecureCoding", "remove"]
 - !private ["PSo14NSSecureCoding", "row"]
@@ -937,10 +987,62 @@ depends-member:
 - !private ["CSo9OS_object", "async"]
 - !private ["CSo9OS_object", "main"]
 - ["Sq", "deinit"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "CGSize"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "DispatchQueue"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "EditImageViewController"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "HIManager"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "IPDFView"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "UIColor"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "UIFont"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "UITableViewCellSelectionStyle"]
+- ["P12PDFGenerator17PDFPageRenderable", "addImageButton"]
+- ["P12PDFGenerator17PDFPageRenderable", "addImageButtonPressed"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "backgroundColor"]
+- ["P12PDFGenerator17PDFPageRenderable", "collectionView"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "dataSource"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "delegate"]
+- ["P12PDFGenerator17PDFPageRenderable", "deleteImage"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "dequeueReusableCell"]
+- ["P12PDFGenerator17PDFPageRenderable", "didDiscardImage"]
+- ["P12PDFGenerator17PDFPageRenderable", "didSaveImage"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "font"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "image"]
+- ["P12PDFGenerator17PDFPageRenderable", "imageSaved"]
+- ["P12PDFGenerator17PDFPageRenderable", "imagesArr"]
+- ["P12PDFGenerator17PDFPageRenderable", "indexPathForPreferredFocusedView"]
+- ["P12PDFGenerator17PDFPageRenderable", "indexPathForPreferredFocusedViewInCollectionView"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "init"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "layer"]
+- ["P12PDFGenerator17PDFPageRenderable", "layoutSubviews"]
+- ["P12PDFGenerator17PDFPageRenderable", "numberOfSections"]
+- ["P12PDFGenerator17PDFPageRenderable", "numberOfSectionsInCollectionView"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "parentViewController"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "reloadData"]
+- ["P12PDFGenerator17PDFPageRenderable", "scrollViewDidEndDecelerating"]
+- ["P12PDFGenerator17PDFPageRenderable", "scrollViewDidEndDragging"]
+- ["P12PDFGenerator17PDFPageRenderable", "scrollViewDidEndScrollingAnimation"]
+- ["P12PDFGenerator17PDFPageRenderable", "scrollViewDidEndZooming"]
+- ["P12PDFGenerator17PDFPageRenderable", "scrollViewDidScroll"]
+- ["P12PDFGenerator17PDFPageRenderable", "scrollViewDidScrollToTop"]
+- ["P12PDFGenerator17PDFPageRenderable", "scrollViewDidZoom"]
+- ["P12PDFGenerator17PDFPageRenderable", "scrollViewShouldScrollToTop"]
+- ["P12PDFGenerator17PDFPageRenderable", "scrollViewWillBeginDecelerating"]
+- ["P12PDFGenerator17PDFPageRenderable", "scrollViewWillBeginDragging"]
+- ["P12PDFGenerator17PDFPageRenderable", "scrollViewWillBeginZooming"]
+- ["P12PDFGenerator17PDFPageRenderable", "scrollViewWillEndDragging"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "selectionStyle"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "takenImage"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "textColor"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "tintColor"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "titleLabel"]
+- ["P12PDFGenerator17PDFPageRenderable", "viewForZooming"]
+- ["P12PDFGenerator17PDFPageRenderable", "viewForZoomingInScrollView"]
+- ["P12PDFGenerator17PDFPageRenderable", ""]
 - !private ["Ps16RawRepresentable", "none"]
 - !private ["PSo17SaveImageDelegate", "CGSize"]
 - !private ["PSo17SaveImageDelegate", "DispatchQueue"]
 - !private ["PSo17SaveImageDelegate", "EditImageViewController"]
+- !private ["PSo17SaveImageDelegate", "HIManager"]
 - !private ["PSo17SaveImageDelegate", "IPDFView"]
 - !private ["PSo17SaveImageDelegate", "UIColor"]
 - !private ["PSo17SaveImageDelegate", "UIFont"]
@@ -977,6 +1079,7 @@ depends-member:
 - !private ["Ps8Sequence", "Iterator"]
 - !private ["Ps8Sequence", "add"]
 - !private ["Ps8Sequence", "count"]
+- !private ["Ps8Sequence", "mutableCopy"]
 - !private ["Ps8Sequence", "object"]
 - !private ["Ps8Sequence", "remove"]
 - ["SS", "deinit"]
@@ -986,6 +1089,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "CGSize"]
 - !private ["PSo29UIAccessibilityIdentification", "DispatchQueue"]
 - !private ["PSo29UIAccessibilityIdentification", "EditImageViewController"]
+- !private ["PSo29UIAccessibilityIdentification", "HIManager"]
 - !private ["PSo29UIAccessibilityIdentification", "IPDFView"]
 - !private ["PSo29UIAccessibilityIdentification", "UIColor"]
 - !private ["PSo29UIAccessibilityIdentification", "UIFont"]
@@ -1036,6 +1140,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "CGSize"]
 - !private ["PSo12UIAppearance", "DispatchQueue"]
 - !private ["PSo12UIAppearance", "EditImageViewController"]
+- !private ["PSo12UIAppearance", "HIManager"]
 - !private ["PSo12UIAppearance", "IPDFView"]
 - !private ["PSo12UIAppearance", "UIColor"]
 - !private ["PSo12UIAppearance", "UIFont"]
@@ -1086,6 +1191,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "CGSize"]
 - !private ["PSo21UIAppearanceContainer", "DispatchQueue"]
 - !private ["PSo21UIAppearanceContainer", "EditImageViewController"]
+- !private ["PSo21UIAppearanceContainer", "HIManager"]
 - !private ["PSo21UIAppearanceContainer", "IPDFView"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
@@ -1152,6 +1258,7 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "CGSize"]
 - !private ["PSo26UICollectionViewDataSource", "DispatchQueue"]
 - !private ["PSo26UICollectionViewDataSource", "EditImageViewController"]
+- !private ["PSo26UICollectionViewDataSource", "HIManager"]
 - !private ["PSo26UICollectionViewDataSource", "IPDFView"]
 - !private ["PSo26UICollectionViewDataSource", "UIColor"]
 - !private ["PSo26UICollectionViewDataSource", "UIFont"]
@@ -1187,6 +1294,7 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "CGSize"]
 - !private ["PSo24UICollectionViewDelegate", "DispatchQueue"]
 - !private ["PSo24UICollectionViewDelegate", "EditImageViewController"]
+- !private ["PSo24UICollectionViewDelegate", "HIManager"]
 - !private ["PSo24UICollectionViewDelegate", "IPDFView"]
 - !private ["PSo24UICollectionViewDelegate", "UIColor"]
 - !private ["PSo24UICollectionViewDelegate", "UIFont"]
@@ -1239,6 +1347,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "CGSize"]
 - !private ["PSo17UICoordinateSpace", "DispatchQueue"]
 - !private ["PSo17UICoordinateSpace", "EditImageViewController"]
+- !private ["PSo17UICoordinateSpace", "HIManager"]
 - !private ["PSo17UICoordinateSpace", "IPDFView"]
 - !private ["PSo17UICoordinateSpace", "UIColor"]
 - !private ["PSo17UICoordinateSpace", "UIFont"]
@@ -1289,6 +1398,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "CGSize"]
 - !private ["PSo13UIDynamicItem", "DispatchQueue"]
 - !private ["PSo13UIDynamicItem", "EditImageViewController"]
+- !private ["PSo13UIDynamicItem", "HIManager"]
 - !private ["PSo13UIDynamicItem", "IPDFView"]
 - !private ["PSo13UIDynamicItem", "UIColor"]
 - !private ["PSo13UIDynamicItem", "UIFont"]
@@ -1339,6 +1449,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "CGSize"]
 - !private ["PSo18UIFocusEnvironment", "DispatchQueue"]
 - !private ["PSo18UIFocusEnvironment", "EditImageViewController"]
+- !private ["PSo18UIFocusEnvironment", "HIManager"]
 - !private ["PSo18UIFocusEnvironment", "IPDFView"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
@@ -1393,6 +1504,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "CGSize"]
 - !private ["PSo11UIFocusItem", "DispatchQueue"]
 - !private ["PSo11UIFocusItem", "EditImageViewController"]
+- !private ["PSo11UIFocusItem", "HIManager"]
 - !private ["PSo11UIFocusItem", "IPDFView"]
 - !private ["PSo11UIFocusItem", "UIColor"]
 - !private ["PSo11UIFocusItem", "UIFont"]
@@ -1444,6 +1556,7 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "CGSize"]
 - !private ["PSo27UIGestureRecognizerDelegate", "DispatchQueue"]
 - !private ["PSo27UIGestureRecognizerDelegate", "EditImageViewController"]
+- !private ["PSo27UIGestureRecognizerDelegate", "HIManager"]
 - !private ["PSo27UIGestureRecognizerDelegate", "IPDFView"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIColor"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIFont"]
@@ -1480,6 +1593,7 @@ depends-member:
 - ["PSo27UIGestureRecognizerDelegate", "viewForZoomingInScrollView"]
 - ["PSo27UIGestureRecognizerDelegate", ""]
 - ["CSo7UIImage", "deinit"]
+- !private ["P12PDFGenerator18UIImageConvertible", "init"]
 - !private ["CSo11UIImageView", "image"]
 - ["CSo7UILabel", "deinit"]
 - !private ["CSo7UILabel", "font"]
@@ -1491,6 +1605,7 @@ depends-member:
 - ["CSo11UIResponder", "CGSize"]
 - !private ["CSo11UIResponder", "DispatchQueue"]
 - !private ["CSo11UIResponder", "EditImageViewController"]
+- !private ["CSo11UIResponder", "HIManager"]
 - !private ["CSo11UIResponder", "IPDFView"]
 - ["CSo11UIResponder", "IndexPath"]
 - ["CSo11UIResponder", "Int"]
@@ -1553,6 +1668,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "CGSize"]
 - !private ["PSo30UIResponderStandardEditActions", "DispatchQueue"]
 - !private ["PSo30UIResponderStandardEditActions", "EditImageViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "HIManager"]
 - !private ["PSo30UIResponderStandardEditActions", "IPDFView"]
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "UIFont"]
@@ -1611,6 +1727,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "CGSize"]
 - !private ["PSo20UIScrollViewDelegate", "DispatchQueue"]
 - !private ["PSo20UIScrollViewDelegate", "EditImageViewController"]
+- !private ["PSo20UIScrollViewDelegate", "HIManager"]
 - !private ["PSo20UIScrollViewDelegate", "IPDFView"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "UIFont"]
@@ -1655,6 +1772,7 @@ depends-member:
 - ["CSo15UITableViewCell", "CGSize"]
 - !private ["CSo15UITableViewCell", "DispatchQueue"]
 - !private ["CSo15UITableViewCell", "EditImageViewController"]
+- !private ["CSo15UITableViewCell", "HIManager"]
 - !private ["CSo15UITableViewCell", "IPDFView"]
 - ["CSo15UITableViewCell", "IndexPath"]
 - ["CSo15UITableViewCell", "Int"]
@@ -1706,6 +1824,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "CGSize"]
 - !private ["PSo18UITraitEnvironment", "DispatchQueue"]
 - !private ["PSo18UITraitEnvironment", "EditImageViewController"]
+- !private ["PSo18UITraitEnvironment", "HIManager"]
 - !private ["PSo18UITraitEnvironment", "IPDFView"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
@@ -1762,6 +1881,7 @@ depends-member:
 - ["CSo6UIView", "CGSize"]
 - !private ["CSo6UIView", "DispatchQueue"]
 - !private ["CSo6UIView", "EditImageViewController"]
+- !private ["CSo6UIView", "HIManager"]
 - !private ["CSo6UIView", "IPDFView"]
 - ["CSo6UIView", "IndexPath"]
 - ["CSo6UIView", "Int"]
@@ -1835,6 +1955,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CGSize"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "DispatchQueue"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "EditImageViewController"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "HIManager"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "IPDFView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIFont"]
@@ -1896,6 +2017,7 @@ depends-member:
 - !private ["Ps9_Hashable", "DispatchQueue"]
 - !private ["Ps9_Hashable", "EditImageViewController"]
 - ["Ps9_Hashable", "Element"]
+- !private ["Ps9_Hashable", "HIManager"]
 - !private ["Ps9_Hashable", "IPDFView"]
 - !private ["Ps9_Hashable", "Iterator"]
 - !private ["Ps9_Hashable", "UIColor"]
@@ -1924,6 +2046,7 @@ depends-member:
 - !private ["Ps9_Hashable", "font"]
 - !private ["Ps9_Hashable", "image"]
 - ["Ps9_Hashable", "imageSaved"]
+- !private ["Ps9_Hashable", "images"]
 - ["Ps9_Hashable", "imagesArr"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1931,6 +2054,7 @@ depends-member:
 - !private ["Ps9_Hashable", "layer"]
 - ["Ps9_Hashable", "layoutSubviews"]
 - !private ["Ps9_Hashable", "main"]
+- !private ["Ps9_Hashable", "mutableCopy"]
 - !private ["Ps9_Hashable", "navigationController"]
 - !private ["Ps9_Hashable", "none"]
 - ["Ps9_Hashable", "numberOfSections"]
@@ -1955,6 +2079,7 @@ depends-member:
 - ["Ps9_Hashable", "scrollViewWillBeginZooming"]
 - ["Ps9_Hashable", "scrollViewWillEndDragging"]
 - !private ["Ps9_Hashable", "selectionStyle"]
+- !private ["Ps9_Hashable", "sharedClient"]
 - !private ["Ps9_Hashable", "takenImage"]
 - !private ["Ps9_Hashable", "textColor"]
 - !private ["Ps9_Hashable", "tintColor"]
@@ -1992,6 +2117,8 @@ depends-nominal:
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "P12PDFGenerator19FilePathConvertible"
+- "C17HafsaInspectorApp9HIManager"
 - "Ps8Hashable"
 - "CSo8IPDFView"
 - "C17HafsaInspectorApp18ImageTableViewCell"
@@ -2017,6 +2144,7 @@ depends-nominal:
 - !private "CSo8NSString"
 - !private "CSo9OS_object"
 - "Sq"
+- "P12PDFGenerator17PDFPageRenderable"
 - !private "Ps16RawRepresentable"
 - "PSo17SaveImageDelegate"
 - "Ps8Sequence"
@@ -2043,6 +2171,7 @@ depends-nominal:
 - !private "CSo6UIFont"
 - "PSo27UIGestureRecognizerDelegate"
 - "CSo7UIImage"
+- !private "P12PDFGenerator18UIImageConvertible"
 - !private "CSo11UIImageView"
 - "CSo7UILabel"
 - "CSo22UINavigationController"
@@ -2084,8 +2213,46 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTaskSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageUploadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageMetadata.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageObservableTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageDownloadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRMutableData.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/Firebase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/PDFGenerator.swiftmodule/x86_64.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"

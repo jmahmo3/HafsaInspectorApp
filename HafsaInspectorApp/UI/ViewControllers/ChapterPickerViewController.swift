@@ -9,6 +9,7 @@
 import UIKit
 import MBProgressHUD
 //import Material
+import Firebase
 
 
 protocol ChapterPickerDelegate {
@@ -18,15 +19,15 @@ protocol ChapterPickerDelegate {
 class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
     
     @IBOutlet weak var nextButton: UIButton!
-    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var chapterTextField: HITextField!
-    @IBOutlet weak var nameTextField: HITextField!
 
+    @IBOutlet weak var chapterLabel: UILabel!
     
     var chapterData: [String] = [String]()
     fileprivate let HImanager = HIManager.sharedClient()
     let picker: UIPickerView = UIPickerView()
     var delegate: ChapterPickerDelegate! = nil
+
 
     //MARK: - Lifecycle
     
@@ -44,31 +45,24 @@ class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
     
     //MARK: Utils
     func setupView(){
-        
-        
-        
-        
-        if UIScreen.isiPhone(.iPhone5) {
-//            self.nameLabelToTopConstraint.constant = 150
-        }
-        
-        let firstUse = UserDefaults.standard.bool(forKey: "Registered")
-        if firstUse {
-            self.setNavBarWithBackButton()
-            self.imageView.isHidden = true
-            self.nextButton.isHidden = true
-            nameTextField.text = HImanager.userName
-            chapterTextField.text = HImanager.currentChapter
+        let registered = UserDefaults.standard.bool(forKey: "Registered")
+        let firstUseDone = UserDefaults.standard.bool(forKey: "FirstUseDone")
 
+        if (registered && !firstUseDone) {
+            self.chapterLabel.text = "Hello \(HIManager().userName)\nPlease select a chapter\nYou could change this later"
+        }
+        else {
+            self.chapterLabel.text = "Please edit your chapter"
+            self.chapterTextField.text = HImanager.currentChapter
+            self.nextButton.isHidden = true
+            self.setNavBarWithBackButton()
         }
         
         view.backgroundColor = UIColor.HIBackground
         self.hideKeyboardWhenTappedAround()
         
-        nameTextField.delegate = self
         chapterTextField.delegate = self
 
-        nameTextField.placeholder = "Name"
         chapterTextField.placeholder = "Chapter"
         chapterTextField.setupChapterPicker()
         
@@ -94,28 +88,24 @@ class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
     
     //MARK: Actions
     @IBAction func nextButtonPressed(_ sender: AnyObject) {
+        UserDefaults.standard.set(true, forKey: "FirstUseDone")
         self.saveData()
     }
     
     override func backButtonPressed() {
         self.saveData()
-        self.delegate.didChangeChapter()
+//        self.delegate.didChangeChapter()
         _ = self.navigationController?.popViewController(animated: true)
     }
     
     func saveData() {
-        if nameTextField.text!.isEmpty  {
-            createAlert("Please Enter a Name")
-        }
-        else if chapterTextField.text!.isEmpty{
+       
+         if chapterTextField.text!.isEmpty{
             createAlert("Please Select a Chapter")
         }
         else {
             
             UserDefaults.standard.set(true, forKey: "Registered")
-            //set name
-            UserDefaults.standard.setValue(nameTextField.text!, forKey: "userName")
-            HImanager.userName = nameTextField.text!
             
             //set chapter
             let selectedValue = chapterTextField.text!
@@ -124,6 +114,8 @@ class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
             
         }
     }
+    
+ 
     
     func didGetChapterData() {
         if self.isOnScreen {

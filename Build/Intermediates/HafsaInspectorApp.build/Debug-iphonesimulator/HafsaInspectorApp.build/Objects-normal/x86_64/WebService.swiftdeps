@@ -23,48 +23,51 @@ provides-member:
 provides-dynamic-lookup:
 - "parseJSON"
 depends-top-level:
-- "=="
-- "AssignmentPrecedence"
-- "CastingPrecedence"
-- "chaptersAndEstablishmentsEndpoint"
-- "NSString"
 - "AnyObject"
-- !private "URLResponse"
-- "WebService"
+- !private "FIRDatabase"
+- "NSString"
+- !private "HTTPURLResponse"
+- !private "JSONSerialization"
+- !private "NSMutableArray"
 - "HTTPRequestMethod"
+- !private "HIManager"
+- "chaptersAndEstablishmentsEndpoint"
+- "Bool"
+- "CastingPrecedence"
+- "URLRequest"
+- "AssignmentPrecedence"
+- "=="
+- "ExtendedGraphemeClusterType"
+- "NSObject"
+- !private "||"
+- "WebService"
+- "HTTPRequestContentType"
+- "StringLiteralType"
+- "Error"
+- "Void"
+- !private "NSDictionary"
 - !private "URLSession"
 - "NSError"
-- "UnicodeScalarType"
-- !private "DispatchQueue"
-- "HTTPRequestAuthType"
-- "Void"
-- !private "NSMutableURLRequest"
-- !private "HIManager"
-- "ExtendedGraphemeClusterType"
-- "URLRequest"
-- "NSObject"
-- "String"
-- !private "HTTPURLResponse"
-- !private "NSDictionary"
-- "Dictionary"
-- !private "||"
-- "BooleanLiteralType"
-- "Bool"
-- "Array"
-- "Error"
-- !private "NSMutableArray"
-- !private "NSArray"
-- "StringLiteralType"
-- "HTTPRequestContentType"
-- "Data"
-- !private "URL"
 - !private "print"
-- !private "JSONSerialization"
+- "Dictionary"
 - !private "!="
+- "String"
+- "Data"
+- "UnicodeScalarType"
+- "BooleanLiteralType"
+- !private "NSMutableURLRequest"
+- !private "NSArray"
+- "Array"
+- "HTTPRequestAuthType"
+- !private "FIRDatabaseReference"
+- !private "URL"
+- !private "URLResponse"
+- !private "DispatchQueue"
 depends-member:
 - !private ["Vs11AnyIterator", "Element"]
 - !private ["Ps9AnyObject", "DispatchQueue"]
 - !private ["Ps9AnyObject", "Element"]
+- !private ["Ps9AnyObject", "FIRDatabase"]
 - !private ["Ps9AnyObject", "HIManager"]
 - !private ["Ps9AnyObject", "HTTPHelper"]
 - !private ["Ps9AnyObject", "Iterator"]
@@ -80,19 +83,24 @@ depends-member:
 - !private ["Ps9AnyObject", "async"]
 - !private ["Ps9AnyObject", "chaptersAndEstablishmentsEndpoint"]
 - !private ["Ps9AnyObject", "characters"]
+- !private ["Ps9AnyObject", "child"]
 - !private ["Ps9AnyObject", "data"]
 - !private ["Ps9AnyObject", "dataTask"]
+- !private ["Ps9AnyObject", "database"]
 - !private ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "description"]
 - !private ["Ps9AnyObject", "domain"]
 - ["Ps9AnyObject", "getChaptersAndEstablishments"]
+- ["Ps9AnyObject", "getChaptersAndEstablishmentsFromDatabase"]
 - !private ["Ps9AnyObject", "httpMethod"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "jsonObject"]
 - !private ["Ps9AnyObject", "main"]
 - !private ["Ps9AnyObject", "object"]
+- !private ["Ps9AnyObject", "observe"]
 - ["Ps9AnyObject", "parseJSON"]
 - !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "reference"]
 - !private ["Ps9AnyObject", "replacingOccurrences"]
 - !private ["Ps9AnyObject", "resume"]
 - !private ["Ps9AnyObject", "shared"]
@@ -122,6 +130,7 @@ depends-member:
 - ["Sb", "deinit"]
 - !private ["Ps7CVarArg", "DispatchQueue"]
 - !private ["Ps7CVarArg", "Element"]
+- !private ["Ps7CVarArg", "FIRDatabase"]
 - !private ["Ps7CVarArg", "HIManager"]
 - !private ["Ps7CVarArg", "HTTPHelper"]
 - !private ["Ps7CVarArg", "Iterator"]
@@ -140,11 +149,14 @@ depends-member:
 - !private ["Ps7CVarArg", "async"]
 - !private ["Ps7CVarArg", "chaptersAndEstablishmentsEndpoint"]
 - !private ["Ps7CVarArg", "characters"]
+- !private ["Ps7CVarArg", "child"]
 - !private ["Ps7CVarArg", "data"]
 - !private ["Ps7CVarArg", "dataTask"]
+- !private ["Ps7CVarArg", "database"]
 - !private ["Ps7CVarArg", "description"]
 - !private ["Ps7CVarArg", "domain"]
 - ["Ps7CVarArg", "getChaptersAndEstablishments"]
+- ["Ps7CVarArg", "getChaptersAndEstablishmentsFromDatabase"]
 - !private ["Ps7CVarArg", "hashValue"]
 - !private ["Ps7CVarArg", "httpMethod"]
 - ["Ps7CVarArg", "init"]
@@ -152,8 +164,10 @@ depends-member:
 - !private ["Ps7CVarArg", "main"]
 - !private ["Ps7CVarArg", "map"]
 - !private ["Ps7CVarArg", "object"]
+- !private ["Ps7CVarArg", "observe"]
 - ["Ps7CVarArg", "parseJSON"]
 - !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "reference"]
 - !private ["Ps7CVarArg", "replacingOccurrences"]
 - !private ["Ps7CVarArg", "resume"]
 - !private ["Ps7CVarArg", "shared"]
@@ -181,6 +195,7 @@ depends-member:
 - ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "DispatchQueue"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRDatabase"]
 - !private ["Ps28CustomDebugStringConvertible", "HIManager"]
 - !private ["Ps28CustomDebugStringConvertible", "HTTPHelper"]
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
@@ -199,19 +214,24 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "async"]
 - !private ["Ps28CustomDebugStringConvertible", "chaptersAndEstablishmentsEndpoint"]
 - !private ["Ps28CustomDebugStringConvertible", "characters"]
+- !private ["Ps28CustomDebugStringConvertible", "child"]
 - !private ["Ps28CustomDebugStringConvertible", "data"]
 - !private ["Ps28CustomDebugStringConvertible", "dataTask"]
+- !private ["Ps28CustomDebugStringConvertible", "database"]
 - !private ["Ps28CustomDebugStringConvertible", "description"]
 - !private ["Ps28CustomDebugStringConvertible", "domain"]
 - ["Ps28CustomDebugStringConvertible", "getChaptersAndEstablishments"]
+- ["Ps28CustomDebugStringConvertible", "getChaptersAndEstablishmentsFromDatabase"]
 - !private ["Ps28CustomDebugStringConvertible", "httpMethod"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "jsonObject"]
 - !private ["Ps28CustomDebugStringConvertible", "main"]
 - !private ["Ps28CustomDebugStringConvertible", "map"]
 - !private ["Ps28CustomDebugStringConvertible", "object"]
+- !private ["Ps28CustomDebugStringConvertible", "observe"]
 - ["Ps28CustomDebugStringConvertible", "parseJSON"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "reference"]
 - !private ["Ps28CustomDebugStringConvertible", "replacingOccurrences"]
 - !private ["Ps28CustomDebugStringConvertible", "resume"]
 - !private ["Ps28CustomDebugStringConvertible", "shared"]
@@ -242,6 +262,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "value"]
 - !private ["Ps23CustomStringConvertible", "DispatchQueue"]
 - !private ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "FIRDatabase"]
 - !private ["Ps23CustomStringConvertible", "HIManager"]
 - !private ["Ps23CustomStringConvertible", "HTTPHelper"]
 - !private ["Ps23CustomStringConvertible", "Iterator"]
@@ -261,11 +282,14 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "async"]
 - !private ["Ps23CustomStringConvertible", "chaptersAndEstablishmentsEndpoint"]
 - !private ["Ps23CustomStringConvertible", "characters"]
+- !private ["Ps23CustomStringConvertible", "child"]
 - !private ["Ps23CustomStringConvertible", "data"]
 - !private ["Ps23CustomStringConvertible", "dataTask"]
+- !private ["Ps23CustomStringConvertible", "database"]
 - !private ["Ps23CustomStringConvertible", "description"]
 - !private ["Ps23CustomStringConvertible", "domain"]
 - ["Ps23CustomStringConvertible", "getChaptersAndEstablishments"]
+- ["Ps23CustomStringConvertible", "getChaptersAndEstablishmentsFromDatabase"]
 - !private ["Ps23CustomStringConvertible", "hashValue"]
 - !private ["Ps23CustomStringConvertible", "httpMethod"]
 - ["Ps23CustomStringConvertible", "init"]
@@ -273,8 +297,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "main"]
 - !private ["Ps23CustomStringConvertible", "map"]
 - !private ["Ps23CustomStringConvertible", "object"]
+- !private ["Ps23CustomStringConvertible", "observe"]
 - ["Ps23CustomStringConvertible", "parseJSON"]
 - !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "reference"]
 - !private ["Ps23CustomStringConvertible", "replacingOccurrences"]
 - !private ["Ps23CustomStringConvertible", "resume"]
 - !private ["Ps23CustomStringConvertible", "shared"]
@@ -295,6 +321,7 @@ depends-member:
 - !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "DispatchQueue"]
 - !private ["Ps9Equatable", "Element"]
+- !private ["Ps9Equatable", "FIRDatabase"]
 - !private ["Ps9Equatable", "HIManager"]
 - !private ["Ps9Equatable", "HTTPHelper"]
 - !private ["Ps9Equatable", "Iterator"]
@@ -312,19 +339,24 @@ depends-member:
 - !private ["Ps9Equatable", "async"]
 - !private ["Ps9Equatable", "chaptersAndEstablishmentsEndpoint"]
 - !private ["Ps9Equatable", "characters"]
+- !private ["Ps9Equatable", "child"]
 - !private ["Ps9Equatable", "data"]
 - !private ["Ps9Equatable", "dataTask"]
+- !private ["Ps9Equatable", "database"]
 - !private ["Ps9Equatable", "description"]
 - !private ["Ps9Equatable", "domain"]
 - ["Ps9Equatable", "getChaptersAndEstablishments"]
+- ["Ps9Equatable", "getChaptersAndEstablishmentsFromDatabase"]
 - ["Ps9Equatable", "hashValue"]
 - !private ["Ps9Equatable", "httpMethod"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "jsonObject"]
 - !private ["Ps9Equatable", "main"]
 - !private ["Ps9Equatable", "object"]
+- !private ["Ps9Equatable", "observe"]
 - ["Ps9Equatable", "parseJSON"]
 - !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "reference"]
 - !private ["Ps9Equatable", "replacingOccurrences"]
 - !private ["Ps9Equatable", "resume"]
 - !private ["Ps9Equatable", "shared"]
@@ -337,6 +369,7 @@ depends-member:
 - !private ["Ps5Error", "description"]
 - !private ["Ps5Error", "domain"]
 - !private ["Ps5Error", "init"]
+- !private ["Ps5Error", "localizedDescription"]
 - !private ["Ps5Error", "userInfo"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
@@ -362,6 +395,20 @@ depends-member:
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "characters"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "replacingOccurrences"]
+- ["OSC16FIRDataEventType", "deinit"]
+- !private ["OSC16FIRDataEventType", "value"]
+- !private ["CSo15FIRDataSnapshot", "deinit"]
+- !private ["CSo15FIRDataSnapshot", "value"]
+- !private ["CSo11FIRDatabase", "database"]
+- ["CSo11FIRDatabase", "deinit"]
+- !private ["CSo11FIRDatabase", "reference"]
+- !private ["CSo16FIRDatabaseQuery", "child"]
+- !private ["CSo16FIRDatabaseQuery", "observe"]
+- !private ["CSo20FIRDatabaseReference", "child"]
+- ["CSo20FIRDatabaseReference", "deinit"]
+- !private ["CSo20FIRDatabaseReference", "observe"]
+- !private ["P12PDFGenerator19FilePathConvertible", "characters"]
+- ["P12PDFGenerator19FilePathConvertible", "init"]
 - !private ["Sf", "deinit"]
 - !private ["C17HafsaInspectorApp9HIManager", "data"]
 - !private ["C17HafsaInspectorApp9HIManager", "deinit"]
@@ -406,6 +453,7 @@ depends-member:
 - !private ["CSo15HTTPURLResponse", "statusCode"]
 - !private ["Ps8Hashable", "DispatchQueue"]
 - !private ["Ps8Hashable", "Element"]
+- !private ["Ps8Hashable", "FIRDatabase"]
 - !private ["Ps8Hashable", "HIManager"]
 - !private ["Ps8Hashable", "HTTPHelper"]
 - !private ["Ps8Hashable", "Iterator"]
@@ -423,19 +471,24 @@ depends-member:
 - !private ["Ps8Hashable", "async"]
 - !private ["Ps8Hashable", "chaptersAndEstablishmentsEndpoint"]
 - !private ["Ps8Hashable", "characters"]
+- !private ["Ps8Hashable", "child"]
 - !private ["Ps8Hashable", "data"]
 - !private ["Ps8Hashable", "dataTask"]
+- !private ["Ps8Hashable", "database"]
 - !private ["Ps8Hashable", "description"]
 - !private ["Ps8Hashable", "domain"]
 - ["Ps8Hashable", "getChaptersAndEstablishments"]
+- ["Ps8Hashable", "getChaptersAndEstablishmentsFromDatabase"]
 - ["Ps8Hashable", "hashValue"]
 - !private ["Ps8Hashable", "httpMethod"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "jsonObject"]
 - !private ["Ps8Hashable", "main"]
 - !private ["Ps8Hashable", "object"]
+- !private ["Ps8Hashable", "observe"]
 - ["Ps8Hashable", "parseJSON"]
 - !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "reference"]
 - !private ["Ps8Hashable", "replacingOccurrences"]
 - !private ["Ps8Hashable", "resume"]
 - !private ["Ps8Hashable", "shared"]
@@ -556,6 +609,8 @@ depends-member:
 - !private ["CSo8NSObject", "DispatchQueue"]
 - !private ["CSo8NSObject", "Element"]
 - ["CSo8NSObject", "Error"]
+- !private ["CSo8NSObject", "FIRDatabase"]
+- !private ["CSo8NSObject", "FIRDatabaseReference"]
 - !private ["CSo8NSObject", "HIManager"]
 - !private ["CSo8NSObject", "HTTPHelper"]
 - !private ["CSo8NSObject", "HTTPURLResponse"]
@@ -579,19 +634,24 @@ depends-member:
 - !private ["CSo8NSObject", "async"]
 - !private ["CSo8NSObject", "chaptersAndEstablishmentsEndpoint"]
 - !private ["CSo8NSObject", "characters"]
+- !private ["CSo8NSObject", "child"]
 - !private ["CSo8NSObject", "data"]
 - !private ["CSo8NSObject", "dataTask"]
+- !private ["CSo8NSObject", "database"]
 - ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "description"]
 - !private ["CSo8NSObject", "domain"]
 - ["CSo8NSObject", "getChaptersAndEstablishments"]
+- ["CSo8NSObject", "getChaptersAndEstablishmentsFromDatabase"]
 - !private ["CSo8NSObject", "httpMethod"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "jsonObject"]
 - !private ["CSo8NSObject", "main"]
 - !private ["CSo8NSObject", "object"]
+- !private ["CSo8NSObject", "observe"]
 - ["CSo8NSObject", "parseJSON"]
 - !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "reference"]
 - !private ["CSo8NSObject", "replacingOccurrences"]
 - !private ["CSo8NSObject", "resume"]
 - !private ["CSo8NSObject", "shared"]
@@ -602,6 +662,7 @@ depends-member:
 - ["CSo8NSObject", ""]
 - !private ["PSo16NSObjectProtocol", "DispatchQueue"]
 - !private ["PSo16NSObjectProtocol", "Element"]
+- !private ["PSo16NSObjectProtocol", "FIRDatabase"]
 - !private ["PSo16NSObjectProtocol", "HIManager"]
 - !private ["PSo16NSObjectProtocol", "HTTPHelper"]
 - !private ["PSo16NSObjectProtocol", "Iterator"]
@@ -617,18 +678,23 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "async"]
 - !private ["PSo16NSObjectProtocol", "chaptersAndEstablishmentsEndpoint"]
 - !private ["PSo16NSObjectProtocol", "characters"]
+- !private ["PSo16NSObjectProtocol", "child"]
 - !private ["PSo16NSObjectProtocol", "data"]
 - !private ["PSo16NSObjectProtocol", "dataTask"]
+- !private ["PSo16NSObjectProtocol", "database"]
 - !private ["PSo16NSObjectProtocol", "description"]
 - !private ["PSo16NSObjectProtocol", "domain"]
 - ["PSo16NSObjectProtocol", "getChaptersAndEstablishments"]
+- ["PSo16NSObjectProtocol", "getChaptersAndEstablishmentsFromDatabase"]
 - !private ["PSo16NSObjectProtocol", "httpMethod"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "jsonObject"]
 - !private ["PSo16NSObjectProtocol", "main"]
 - !private ["PSo16NSObjectProtocol", "object"]
+- !private ["PSo16NSObjectProtocol", "observe"]
 - ["PSo16NSObjectProtocol", "parseJSON"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "reference"]
 - !private ["PSo16NSObjectProtocol", "replacingOccurrences"]
 - !private ["PSo16NSObjectProtocol", "resume"]
 - !private ["PSo16NSObjectProtocol", "shared"]
@@ -680,6 +746,7 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "map"]
 - !private ["Ps25RangeReplaceableIndexable", "split"]
 - !private ["Ps16RawRepresentable", "init"]
+- !private ["Ps16RawRepresentable", "value"]
 - ["VCSo17JSONSerialization14ReadingOptions", "deinit"]
 - !private ["VCSo17JSONSerialization14ReadingOptions", "init"]
 - !private ["P10Foundation20ReferenceConvertible", "init"]
@@ -705,6 +772,8 @@ depends-member:
 - ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "characters"]
 - ["Ps20TextOutputStreamable", "init"]
+- !private ["P12PDFGenerator18UIImageConvertible", "characters"]
+- ["P12PDFGenerator18UIImageConvertible", "init"]
 - ["Su", "deinit"]
 - !private ["Vs6UInt16", "deinit"]
 - !private ["Vs6UInt32", "deinit"]
@@ -727,6 +796,8 @@ depends-member:
 - ["C17HafsaInspectorApp10WebService", "Data"]
 - !private ["C17HafsaInspectorApp10WebService", "DispatchQueue"]
 - ["C17HafsaInspectorApp10WebService", "Error"]
+- !private ["C17HafsaInspectorApp10WebService", "FIRDatabase"]
+- !private ["C17HafsaInspectorApp10WebService", "FIRDatabaseReference"]
 - !private ["C17HafsaInspectorApp10WebService", "HIManager"]
 - ["C17HafsaInspectorApp10WebService", "HTTPHelper"]
 - !private ["C17HafsaInspectorApp10WebService", "HTTPURLResponse"]
@@ -746,6 +817,7 @@ depends-member:
 - !private ["C17HafsaInspectorApp10WebService", "chaptersAndEstablishmentsEndpoint"]
 - ["C17HafsaInspectorApp10WebService", "deinit"]
 - ["C17HafsaInspectorApp10WebService", "getChaptersAndEstablishments"]
+- ["C17HafsaInspectorApp10WebService", "getChaptersAndEstablishmentsFromDatabase"]
 - ["C17HafsaInspectorApp10WebService", "init"]
 - ["C17HafsaInspectorApp10WebService", "parseJSON"]
 - !private ["C17HafsaInspectorApp10WebService", "print"]
@@ -773,6 +845,7 @@ depends-member:
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "replacingOccurrences"]
 - !private ["Ps9_Hashable", "DispatchQueue"]
 - !private ["Ps9_Hashable", "Element"]
+- !private ["Ps9_Hashable", "FIRDatabase"]
 - !private ["Ps9_Hashable", "HIManager"]
 - !private ["Ps9_Hashable", "HTTPHelper"]
 - !private ["Ps9_Hashable", "Iterator"]
@@ -790,19 +863,24 @@ depends-member:
 - !private ["Ps9_Hashable", "async"]
 - !private ["Ps9_Hashable", "chaptersAndEstablishmentsEndpoint"]
 - !private ["Ps9_Hashable", "characters"]
+- !private ["Ps9_Hashable", "child"]
 - !private ["Ps9_Hashable", "data"]
 - !private ["Ps9_Hashable", "dataTask"]
+- !private ["Ps9_Hashable", "database"]
 - !private ["Ps9_Hashable", "description"]
 - !private ["Ps9_Hashable", "domain"]
 - ["Ps9_Hashable", "getChaptersAndEstablishments"]
+- ["Ps9_Hashable", "getChaptersAndEstablishmentsFromDatabase"]
 - ["Ps9_Hashable", "hashValue"]
 - !private ["Ps9_Hashable", "httpMethod"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "jsonObject"]
 - !private ["Ps9_Hashable", "main"]
 - !private ["Ps9_Hashable", "object"]
+- !private ["Ps9_Hashable", "observe"]
 - ["Ps9_Hashable", "parseJSON"]
 - !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "reference"]
 - !private ["Ps9_Hashable", "replacingOccurrences"]
 - !private ["Ps9_Hashable", "resume"]
 - !private ["Ps9_Hashable", "shared"]
@@ -860,6 +938,12 @@ depends-nominal:
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
+- "OSC16FIRDataEventType"
+- !private "CSo15FIRDataSnapshot"
+- "CSo11FIRDatabase"
+- !private "CSo16FIRDatabaseQuery"
+- "CSo20FIRDatabaseReference"
+- "P12PDFGenerator19FilePathConvertible"
 - !private "Sf"
 - !private "C17HafsaInspectorApp9HIManager"
 - "VC17HafsaInspectorApp10WebService10HTTPHelper"
@@ -919,6 +1003,7 @@ depends-nominal:
 - "SS"
 - "Ps16TextOutputStream"
 - "Ps20TextOutputStreamable"
+- "P12PDFGenerator18UIImageConvertible"
 - "Su"
 - !private "Vs6UInt16"
 - !private "Vs6UInt32"
@@ -967,11 +1052,49 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTaskSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageUploadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageMetadata.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageObservableTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageDownloadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRMutableData.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/Firebase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/PDFGenerator.swiftmodule/x86_64.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "44f32667133ced6ea24e00e2eca68b2f"
+interface-hash: "ed66a30833b5352b0ba2fdef8dca4ea0"

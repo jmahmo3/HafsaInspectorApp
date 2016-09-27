@@ -17,12 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var vc = EstablishmentPickerViewController.create()
     var errorCount = 0
+    var ref: FIRDatabaseReference!
+
 
 
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Usually this is not overridden. Using the "did finish launching" method is more typical
-
-        
         return true
     }
     
@@ -30,18 +30,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let registered = UserDefaults.standard.bool(forKey: "Registered")
-        if registered {
+        let firstUseDone = UserDefaults.standard.bool(forKey: "FirstUseDone")
+
+        if registered && firstUseDone {
             let nav = UINavigationController.init(rootViewController: vc)
             self.window?.rootViewController? = nav
-            
         }
-        
-        self.getData()
+        else if registered && !firstUseDone {
+            let vc = ChapterPickerViewController.create()
+            self.window?.rootViewController? = vc
+        }
         
         //Firebase
         FIRApp.configure()
+        FIRDatabase.database().persistenceEnabled = true
+        self.getData()
         
-
+       
+        
         return true
     }
 
@@ -76,10 +82,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         view.addSubview(progess)
         progess.center = view.center
         progess.show(animated: true)
-        WebService().getChaptersAndEstablishments { (success, error) in
+        WebService().getChaptersAndEstablishmentsFromDatabase{ (success, error) in
             progess.hide(animated: true)
             if success! {
-                print(HIManager.sharedClient().data)
+//                print(HIManager.sharedClient().data)
                 self.vc.didGetEstablishmentData()
                 
                 let myVC = self.window?.visibleViewController

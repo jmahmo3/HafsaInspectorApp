@@ -37,9 +37,15 @@ class HIManager: NSObject {
 
     var data: NSMutableArray = []
     
+    var chaptersData: NSDictionary = [:]
+    
+    var chapters: NSMutableArray = []
+    
     var images: NSMutableArray = []
     
     var supplierValues: NSMutableArray = []
+    
+    var password: String = "halal"
     
     //Data
     var chapterArray = ["","Chicago", "Detroit", "San Francisco"]

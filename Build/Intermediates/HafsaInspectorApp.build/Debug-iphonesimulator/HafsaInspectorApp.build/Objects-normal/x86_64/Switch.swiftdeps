@@ -18,70 +18,70 @@ provides-member:
 - ["P17HafsaInspectorApp14SwitchDelegate", ""]
 - ["C17HafsaInspectorApp6Switch", ""]
 provides-dynamic-lookup:
-- "toggle"
-- "setSwitchState"
-- "touchesBegan"
-- "switchDidChangeState"
-- "bounds"
-- "isEnabled"
-- "willMove"
-- "trackOnDisabledColor"
-- "trackOffColor"
 - "switchState"
-- "buttonOnColor"
-- "frame"
+- "bounceable"
+- "bounds"
 - "buttonOffColor"
-- "switchSize"
-- "button"
-- "handleTouchUpOutsideOrCanceled"
-- "delegate"
 - "trackOffDisabledColor"
-- "buttonOnDisabledColor"
-- "setOn"
-- "buttonOffDisabledColor"
+- "delegate"
+- "intrinsicContentSize"
+- "isEnabled"
+- "touchesBegan"
 - "trackLayer"
+- "trackOnDisabledColor"
+- "trackOnColor"
 - "on"
 - "handleTouchUpInside"
-- "trackOnColor"
-- "intrinsicContentSize"
-- "bounceable"
-- "switchStyle"
+- "switchSize"
+- "handleTouchUpOutsideOrCanceled"
+- "switchDidChangeState"
+- "buttonOnDisabledColor"
 - "handleTouchDragInside"
+- "setOn"
+- "toggle"
+- "button"
+- "setSwitchState"
+- "switchStyle"
+- "trackOffColor"
+- "frame"
+- "willMove"
+- "buttonOffDisabledColor"
+- "buttonOnColor"
 depends-top-level:
-- "FabButton"
-- !private "min"
+- "SwitchSize"
+- "Set"
 - "CGFloat"
 - "TernaryPrecedence"
-- "SwitchState"
-- "Int"
-- !private "-"
-- "Void"
-- "UITouch"
-- !private "~="
-- "Switch"
-- "Color"
-- !private "!="
-- !private "+"
-- "UIEvent"
-- "SwitchSize"
-- "CGRect"
-- !private "&&"
-- "=="
-- "AssignmentPrecedence"
-- "CGSize"
 - "SwitchDelegate"
-- "UIControl"
-- "CAShapeLayer"
+- "UIEvent"
+- "Int"
 - !private "max"
+- "NSCoder"
+- !private "!="
+- !private "~="
+- !private "-"
+- "Switch"
+- !private "+"
+- "AssignmentPrecedence"
+- "=="
+- !private "&&"
+- "CAShapeLayer"
+- "SwitchStyle"
+- !private "min"
+- "CGSize"
+- "UIControl"
 - "Bool"
 - "UIView"
-- !private ">"
+- "SwitchState"
+- "CGRect"
+- "Void"
+- "FabButton"
 - "BooleanLiteralType"
-- "Set"
-- "SwitchStyle"
-- !private "Array"
-- "NSCoder"
+- !private ">"
+- "Color"
+- "UITouch"
 - !private "/"
+- !private "Array"
 depends-member:
 - !private ["Ps9AnyObject", "CAShapeLayer"]
 - !private ["Ps9AnyObject", "CGRect"]
@@ -1017,6 +1017,71 @@ depends-member:
 - !private ["Ps9OptionSet", "valueChanged"]
 - ["Sq", "deinit"]
 - ["Sq", "some"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "CAShapeLayer"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "CGRect"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "CGSize"]
+- ["P12PDFGenerator17PDFPageRenderable", "Color"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "FabButton"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "UIView"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "addSubview"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "addTarget"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "animate"]
+- ["P12PDFGenerator17PDFPageRenderable", "animateToState"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "backgroundColor"]
+- ["P12PDFGenerator17PDFPageRenderable", "bounceOffset"]
+- ["P12PDFGenerator17PDFPageRenderable", "bounceable"]
+- ["P12PDFGenerator17PDFPageRenderable", "bounds"]
+- ["P12PDFGenerator17PDFPageRenderable", "button"]
+- ["P12PDFGenerator17PDFPageRenderable", "buttonDiameter"]
+- ["P12PDFGenerator17PDFPageRenderable", "buttonOffColor"]
+- ["P12PDFGenerator17PDFPageRenderable", "buttonOffDisabledColor"]
+- ["P12PDFGenerator17PDFPageRenderable", "buttonOnColor"]
+- ["P12PDFGenerator17PDFPageRenderable", "buttonOnDisabledColor"]
+- ["P12PDFGenerator17PDFPageRenderable", "delegate"]
+- ["P12PDFGenerator17PDFPageRenderable", "frame"]
+- ["P12PDFGenerator17PDFPageRenderable", "handleTouchDragInside"]
+- ["P12PDFGenerator17PDFPageRenderable", "handleTouchUpInside"]
+- ["P12PDFGenerator17PDFPageRenderable", "handleTouchUpOutsideOrCanceled"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "height"]
+- ["P12PDFGenerator17PDFPageRenderable", "init"]
+- ["P12PDFGenerator17PDFPageRenderable", "internalSwitchState"]
+- ["P12PDFGenerator17PDFPageRenderable", "intrinsicContentSize"]
+- ["P12PDFGenerator17PDFPageRenderable", "isEnabled"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "isUserInteractionEnabled"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "layer"]
+- ["P12PDFGenerator17PDFPageRenderable", "layoutSwitch"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "max"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "min"]
+- ["P12PDFGenerator17PDFPageRenderable", "offPosition"]
+- ["P12PDFGenerator17PDFPageRenderable", "on"]
+- ["P12PDFGenerator17PDFPageRenderable", "onPosition"]
+- ["P12PDFGenerator17PDFPageRenderable", "prepareButton"]
+- ["P12PDFGenerator17PDFPageRenderable", "prepareSwitchSize"]
+- ["P12PDFGenerator17PDFPageRenderable", "prepareSwitchState"]
+- ["P12PDFGenerator17PDFPageRenderable", "prepareSwitchStyle"]
+- ["P12PDFGenerator17PDFPageRenderable", "prepareTrack"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "pulseAnimation"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "sendActions"]
+- ["P12PDFGenerator17PDFPageRenderable", "setOn"]
+- ["P12PDFGenerator17PDFPageRenderable", "setSwitchState"]
+- ["P12PDFGenerator17PDFPageRenderable", "styleForState"]
+- ["P12PDFGenerator17PDFPageRenderable", "switchSize"]
+- ["P12PDFGenerator17PDFPageRenderable", "switchState"]
+- ["P12PDFGenerator17PDFPageRenderable", "switchStyle"]
+- ["P12PDFGenerator17PDFPageRenderable", "toggle"]
+- ["P12PDFGenerator17PDFPageRenderable", "touchesBegan"]
+- ["P12PDFGenerator17PDFPageRenderable", "trackLayer"]
+- ["P12PDFGenerator17PDFPageRenderable", "trackOffColor"]
+- ["P12PDFGenerator17PDFPageRenderable", "trackOffDisabledColor"]
+- ["P12PDFGenerator17PDFPageRenderable", "trackOnColor"]
+- ["P12PDFGenerator17PDFPageRenderable", "trackOnDisabledColor"]
+- ["P12PDFGenerator17PDFPageRenderable", "trackThickness"]
+- ["P12PDFGenerator17PDFPageRenderable", "updateColorForDisabledState"]
+- ["P12PDFGenerator17PDFPageRenderable", "updateColorForState"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "width"]
+- ["P12PDFGenerator17PDFPageRenderable", "willMove"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "x"]
+- ["P12PDFGenerator17PDFPageRenderable", ""]
 - !private ["O17HafsaInspectorApp14PulseAnimation", "deinit"]
 - !private ["O17HafsaInspectorApp14PulseAnimation", "none"]
 - !private ["Vs5Range", "deinit"]
@@ -2249,6 +2314,7 @@ depends-nominal:
 - !private "PSo14NSSecureCoding"
 - !private "Ps9OptionSet"
 - "Sq"
+- "P12PDFGenerator17PDFPageRenderable"
 - !private "O17HafsaInspectorApp14PulseAnimation"
 - !private "Vs5Range"
 - "Ps16RawRepresentable"
@@ -2319,8 +2385,46 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTaskSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageUploadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageMetadata.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageObservableTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageDownloadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRMutableData.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/Firebase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/PDFGenerator.swiftmodule/x86_64.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
