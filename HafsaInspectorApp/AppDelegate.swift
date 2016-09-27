@@ -44,8 +44,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Firebase
         FIRApp.configure()
         FIRDatabase.database().persistenceEnabled = true
-        
-
         self.getData()
         
        

@@ -177,6 +177,7 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
             if (error != nil) {
                 // Uh-oh, an error occurred!
             } else {
+                print(metadata?.path)
                 // Metadata contains file metadata such as size, content-type, and download URL.
 //                let downloadURL = metadata!.downloadURL
             }
