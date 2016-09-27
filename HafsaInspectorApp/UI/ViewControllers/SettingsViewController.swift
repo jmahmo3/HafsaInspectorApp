@@ -18,6 +18,10 @@ enum SettingsType {
     case ViewFiles
 }
 
+protocol settingsDelegate {
+    func backBeingPressed()
+}
+
 class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
@@ -28,6 +32,8 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     var isFromAdmin: Bool = false
     var selectedChapter: NSString = " "
     var filedata: NSDictionary = [:]
+    var delegate: settingsDelegate! = nil
+
     
     static func create(_ type: SettingsType) -> SettingsViewController {
         let frameworkBundle = Bundle.main
@@ -52,6 +58,16 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         self.view.addSubview(progess)
         progess.center = self.view.center
         
+        
+        
+    }
+    
+    override func backButtonPressed() {
+        if type == .Settings {
+            self.delegate.backBeingPressed()
+        }
+        _ = self.navigationController?.popViewController(animated: true)
+
     }
 
     // MARK: - Table view data source

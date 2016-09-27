@@ -6,29 +6,29 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp14CollectionView", ""]
 provides-dynamic-lookup:
-- "interimSpacePreset"
 - "contentEdgeInsetsPreset"
+- "interimSpacePreset"
+- "interimSpace"
 - "prepare"
 - "scrollDirection"
-- "interimSpace"
 - "contentInset"
 depends-top-level:
-- "UICollectionView"
-- "CastingPrecedence"
-- "EdgeInsets"
-- !private "InterimSpacePresetToValue"
-- "UICollectionViewScrollDirection"
-- "CollectionView"
-- !private "Color"
-- !private "Device"
-- !private "CollectionViewLayout"
-- "CGRect"
 - "NSCoder"
+- "InterimSpace"
+- "UICollectionViewLayout"
+- "EdgeInsets"
+- "UICollectionViewScrollDirection"
+- !private "Device"
 - "UIEdgeInsets"
 - "InterimSpacePreset"
-- "InterimSpace"
+- !private "InterimSpacePresetToValue"
+- "CollectionView"
+- !private "CollectionViewLayout"
+- "CGRect"
+- !private "Color"
+- "UICollectionView"
 - "AssignmentPrecedence"
-- "UICollectionViewLayout"
+- "CastingPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "CollectionViewLayout"]
 - !private ["Ps9AnyObject", "Color"]

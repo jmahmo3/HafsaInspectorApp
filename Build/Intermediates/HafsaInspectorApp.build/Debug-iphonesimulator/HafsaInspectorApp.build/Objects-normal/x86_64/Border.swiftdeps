@@ -8,11 +8,11 @@ provides-member:
 - ["O17HafsaInspectorApp17BorderWidthPreset", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "BorderWidthPreset"
-- "Int"
+- "BorderWidthPresetToValue"
 - "CGFloat"
 - !private "~="
-- "BorderWidthPresetToValue"
+- "BorderWidthPreset"
+- "Int"
 - "=="
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]

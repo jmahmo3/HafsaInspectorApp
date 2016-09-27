@@ -39,8 +39,6 @@ class SupplierTableViewCell: UITableViewCell {
         addPoundsButton.layer.cornerRadius = 4
         addPoundsButton.layer.borderWidth = 1
         addPoundsButton.layer.borderColor = UIColor.black.cgColor
-        
-        
     }
     
     func updatePounds(_ pounds: Double) {
@@ -48,14 +46,14 @@ class SupplierTableViewCell: UITableViewCell {
         DispatchQueue.main.async {
             self.poundLabel.text = "\(self.previousPounds) lbs"
         }
-
+        
         for supplier in HImanager.supplierValues {
             let sup = supplier as! NSDictionary
             if (sup.allKeys[0] as! String) == supplierNameLabel.text {
                 HImanager.supplierValues.remove(supplier)
             }
         }
-                HImanager.supplierValues.add([supplierNameLabel.text:"\(self.previousPounds) lbs"] as NSDictionary)
+        HImanager.supplierValues.add([supplierNameLabel.text:"\(self.previousPounds) lbs"] as NSDictionary)
     }
     
     @IBAction func addPoundsPressed(_ sender: AnyObject) {

@@ -2340,6 +2340,7 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp33EstablishmentPickerViewController")
 - (void)setupView;
 - (IBAction)nextButtonPressed:(id _Nonnull)sender;
 - (void)settingsButtonPressed;
+- (void)backBeingPressed;
 - (void)didChangeChapter;
 - (void)didGetEstablishmentData;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -4922,6 +4923,7 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp22SettingsViewController")
 @property (nonatomic, strong) NSString * _Nonnull selectedChapter;
 @property (nonatomic, strong) NSDictionary * _Nonnull filedata;
 - (void)viewDidLoad;
+- (void)backButtonPressed;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;

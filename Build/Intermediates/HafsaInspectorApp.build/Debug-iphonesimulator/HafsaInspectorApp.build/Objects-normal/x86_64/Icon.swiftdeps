@@ -9,12 +9,12 @@ provides-member:
 - ["VV17HafsaInspectorApp4Icon2cm", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Bundle"
-- !private "View"
 - "StringLiteralType"
-- "UIImage"
-- "Icon"
 - "String"
+- !private "View"
+- "Icon"
+- "UIImage"
+- "Bundle"
 - !private "=="
 - "AssignmentPrecedence"
 depends-member:

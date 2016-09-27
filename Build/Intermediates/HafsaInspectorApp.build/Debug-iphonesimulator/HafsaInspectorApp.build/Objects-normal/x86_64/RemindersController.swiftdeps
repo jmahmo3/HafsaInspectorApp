@@ -6,17 +6,17 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp19RemindersController", ""]
 provides-dynamic-lookup:
-- "reminders"
 - "prepare"
 - "viewDidLoad"
+- "reminders"
 depends-top-level:
-- !private "Device"
 - "RemindersDelegate"
-- "Reminders"
 - !private "BooleanLiteralType"
-- !private "Color"
 - "RemindersController"
+- !private "Device"
 - "UIViewController"
+- !private "Color"
+- "Reminders"
 - "AssignmentPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "Color"]

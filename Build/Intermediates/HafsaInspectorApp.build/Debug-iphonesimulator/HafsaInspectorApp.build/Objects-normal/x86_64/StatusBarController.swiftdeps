@@ -8,18 +8,18 @@ provides-member:
 - ["C17HafsaInspectorApp19StatusBarController", ""]
 - ["CSo16UIViewController", "statusBarController"]
 provides-dynamic-lookup:
-- "statusBarController"
-- "prepare"
-- "layoutSubviews"
 - "statusBar"
+- "statusBarController"
+- "layoutSubviews"
+- "prepare"
 depends-top-level:
-- !private "Device"
-- !private "Color"
-- !private "!="
-- "RootController"
-- !private "&&"
 - "UIViewController"
 - "StatusBarController"
+- !private "Color"
+- !private "Device"
+- "RootController"
+- !private "!="
+- !private "&&"
 - "View"
 - !private "=="
 - "AssignmentPrecedence"

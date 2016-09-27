@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
 options: "06a8ce79e55b390c7bc005cf95aa067d"
-build_time: [528327169, 321720000]
+build_time: [528330354, 267195000]
 inputs:
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/NavigationDrawerController.swift": [528304010, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/FlatButton.swift": [528304010, 0]
@@ -21,7 +21,7 @@ inputs:
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/MaterialGravity.swift": [528304010, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/RootController.swift": [528304010, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/CollectionViewLayout.swift": [528304010, 0]
-  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/EstablishmentPickerViewController.swift": [528311480, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/EstablishmentPickerViewController.swift": [528330224, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/Material+UIImage.swift": [528304010, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HIManager.swift": [528326350, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/ErrorTextField.swift": [528304010, 0]
@@ -43,7 +43,7 @@ inputs:
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/Material+String.swift": [528304010, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/RemindersController.swift": [528304010, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/Snackbar.swift": [528304010, 0]
-  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/SettingsViewController.swift": [528327169, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/SettingsViewController.swift": [528330354, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/JSON.swift": [528304010, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/Extensions/DeviceExtensions.swift": [528324303, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/BottomNavigationController.swift": [528304010, 0]
@@ -76,7 +76,7 @@ inputs:
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/DynamicFontType.swift": [528304010, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/PageTabBarController.swift": [528304010, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/Button.swift": [528304010, 0]
-  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/SupplierTableViewCell.swift": [528304034, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/SupplierTableViewCell.swift": [528330200, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/MenuItem.swift": [528304010, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/MenuController.swift": [528304010, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/Layer.swift": [528304010, 0]

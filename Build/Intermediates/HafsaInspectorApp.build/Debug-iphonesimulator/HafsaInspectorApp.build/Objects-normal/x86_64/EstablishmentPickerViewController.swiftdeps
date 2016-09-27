@@ -6,40 +6,42 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp33EstablishmentPickerViewController", ""]
 provides-dynamic-lookup:
-- "create"
-- "establishmentTextField"
-- "nextButtonPressed"
+- "viewDidLoad"
+- "nameLabel"
+- "didGetEstablishmentData"
+- "setupView"
+- "backBeingPressed"
+- "didChangeChapter"
+- "nextButton"
 - "settingsButtonPressed"
 - "establishmentLabel"
-- "nameLabel"
-- "setupView"
-- "didGetEstablishmentData"
-- "nextButton"
-- "didChangeChapter"
-- "viewDidLoad"
+- "nextButtonPressed"
+- "create"
+- "establishmentTextField"
 depends-top-level:
-- !private "UIStoryboard"
-- !private "AppDelegate"
-- !private "UIFont"
-- !private "SettingsViewController"
-- !private "Bundle"
-- "UILabel"
-- "HIManager"
-- "AssignmentPrecedence"
-- !private "FormTableViewController"
-- "CastingPrecedence"
-- "AnyObject"
 - !private "StringLiteralType"
-- !private "UserDefaults"
-- !private "!="
-- "UITextFieldDelegate"
-- "UIButton"
-- "HITextField"
+- !private "UIStoryboard"
 - !private "UIColor"
-- !private "BooleanLiteralType"
+- !private "FormTableViewController"
 - "UIViewController"
-- "ChapterPickerDelegate"
+- "HITextField"
+- !private "AppDelegate"
 - "EstablishmentPickerViewController"
+- "AnyObject"
+- !private "BooleanLiteralType"
+- "UIButton"
+- !private "Bundle"
+- !private "UserDefaults"
+- "HIManager"
+- "UILabel"
+- "ChapterPickerDelegate"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- !private "!="
+- !private "SettingsViewController"
+- "UITextFieldDelegate"
+- "settingsDelegate"
+- !private "UIFont"
 depends-member:
 - !private ["Ps9AnyObject", "AppDelegate"]
 - !private ["Ps9AnyObject", "Bundle"]
@@ -51,6 +53,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIFont"]
 - !private ["Ps9AnyObject", "UIStoryboard"]
 - !private ["Ps9AnyObject", "UserDefaults"]
+- ["Ps9AnyObject", "backBeingPressed"]
 - !private ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "black"]
 - !private ["Ps9AnyObject", "borderColor"]
@@ -62,6 +65,7 @@ depends-member:
 - !private ["Ps9AnyObject", "currentChapter"]
 - !private ["Ps9AnyObject", "currentEstablishment"]
 - !private ["Ps9AnyObject", "darkGray"]
+- !private ["Ps9AnyObject", "delegate"]
 - ["Ps9AnyObject", "didChangeChapter"]
 - ["Ps9AnyObject", "didGetEstablishmentData"]
 - ["Ps9AnyObject", "establishmentLabel"]
@@ -140,6 +144,7 @@ depends-member:
 - !private ["Ps7CVarArg", "UIFont"]
 - !private ["Ps7CVarArg", "UIStoryboard"]
 - !private ["Ps7CVarArg", "UserDefaults"]
+- ["Ps7CVarArg", "backBeingPressed"]
 - !private ["Ps7CVarArg", "backgroundColor"]
 - !private ["Ps7CVarArg", "black"]
 - !private ["Ps7CVarArg", "borderColor"]
@@ -151,6 +156,7 @@ depends-member:
 - !private ["Ps7CVarArg", "currentChapter"]
 - !private ["Ps7CVarArg", "currentEstablishment"]
 - !private ["Ps7CVarArg", "darkGray"]
+- !private ["Ps7CVarArg", "delegate"]
 - ["Ps7CVarArg", "didChangeChapter"]
 - ["Ps7CVarArg", "didGetEstablishmentData"]
 - ["Ps7CVarArg", "establishmentLabel"]
@@ -203,6 +209,7 @@ depends-member:
 - !private ["P17HafsaInspectorApp21ChapterPickerDelegate", "UIFont"]
 - !private ["P17HafsaInspectorApp21ChapterPickerDelegate", "UIStoryboard"]
 - !private ["P17HafsaInspectorApp21ChapterPickerDelegate", "UserDefaults"]
+- ["P17HafsaInspectorApp21ChapterPickerDelegate", "backBeingPressed"]
 - !private ["P17HafsaInspectorApp21ChapterPickerDelegate", "createAlert"]
 - ["P17HafsaInspectorApp21ChapterPickerDelegate", "didChangeChapter"]
 - !private ["P17HafsaInspectorApp21ChapterPickerDelegate", "establishmentLabel"]
@@ -234,6 +241,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
 - !private ["Ps28CustomDebugStringConvertible", "UserDefaults"]
+- ["Ps28CustomDebugStringConvertible", "backBeingPressed"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "black"]
 - !private ["Ps28CustomDebugStringConvertible", "borderColor"]
@@ -245,6 +253,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "currentChapter"]
 - !private ["Ps28CustomDebugStringConvertible", "currentEstablishment"]
 - !private ["Ps28CustomDebugStringConvertible", "darkGray"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - ["Ps28CustomDebugStringConvertible", "didChangeChapter"]
 - ["Ps28CustomDebugStringConvertible", "didGetEstablishmentData"]
 - ["Ps28CustomDebugStringConvertible", "establishmentLabel"]
@@ -304,6 +313,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIStoryboard"]
 - !private ["Ps23CustomStringConvertible", "UserDefaults"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "backBeingPressed"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "black"]
 - !private ["Ps23CustomStringConvertible", "borderColor"]
@@ -315,6 +325,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "currentChapter"]
 - !private ["Ps23CustomStringConvertible", "currentEstablishment"]
 - !private ["Ps23CustomStringConvertible", "darkGray"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
 - ["Ps23CustomStringConvertible", "didChangeChapter"]
 - ["Ps23CustomStringConvertible", "didGetEstablishmentData"]
 - ["Ps23CustomStringConvertible", "establishmentLabel"]
@@ -369,6 +380,7 @@ depends-member:
 - !private ["Ps9Equatable", "UIStoryboard"]
 - !private ["Ps9Equatable", "UserDefaults"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "backBeingPressed"]
 - !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "black"]
 - !private ["Ps9Equatable", "borderColor"]
@@ -380,6 +392,7 @@ depends-member:
 - !private ["Ps9Equatable", "currentChapter"]
 - !private ["Ps9Equatable", "currentEstablishment"]
 - !private ["Ps9Equatable", "darkGray"]
+- !private ["Ps9Equatable", "delegate"]
 - ["Ps9Equatable", "didChangeChapter"]
 - ["Ps9Equatable", "didGetEstablishmentData"]
 - ["Ps9Equatable", "establishmentLabel"]
@@ -437,6 +450,7 @@ depends-member:
 - ["C17HafsaInspectorApp33EstablishmentPickerViewController", "UILabel"]
 - !private ["C17HafsaInspectorApp33EstablishmentPickerViewController", "UIStoryboard"]
 - !private ["C17HafsaInspectorApp33EstablishmentPickerViewController", "UserDefaults"]
+- ["C17HafsaInspectorApp33EstablishmentPickerViewController", "backBeingPressed"]
 - ["C17HafsaInspectorApp33EstablishmentPickerViewController", "create"]
 - !private ["C17HafsaInspectorApp33EstablishmentPickerViewController", "createAlert"]
 - ["C17HafsaInspectorApp33EstablishmentPickerViewController", "deinit"]
@@ -497,6 +511,7 @@ depends-member:
 - !private ["Ps8Hashable", "UIStoryboard"]
 - !private ["Ps8Hashable", "UserDefaults"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "backBeingPressed"]
 - !private ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "black"]
 - !private ["Ps8Hashable", "borderColor"]
@@ -508,6 +523,7 @@ depends-member:
 - !private ["Ps8Hashable", "currentChapter"]
 - !private ["Ps8Hashable", "currentEstablishment"]
 - !private ["Ps8Hashable", "darkGray"]
+- !private ["Ps8Hashable", "delegate"]
 - ["Ps8Hashable", "didChangeChapter"]
 - ["Ps8Hashable", "didGetEstablishmentData"]
 - ["Ps8Hashable", "establishmentLabel"]
@@ -567,6 +583,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UIStoryboard"]
 - !private ["PSo8NSCoding", "UserDefaults"]
+- ["PSo8NSCoding", "backBeingPressed"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "black"]
 - !private ["PSo8NSCoding", "borderColor"]
@@ -576,6 +593,7 @@ depends-member:
 - ["PSo8NSCoding", "create"]
 - !private ["PSo8NSCoding", "createAlert"]
 - !private ["PSo8NSCoding", "darkGray"]
+- !private ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "didChangeChapter"]
 - ["PSo8NSCoding", "didGetEstablishmentData"]
 - ["PSo8NSCoding", "establishmentLabel"]
@@ -627,8 +645,10 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UIStoryboard"]
 - !private ["PSo26NSExtensionRequestHandling", "UserDefaults"]
+- ["PSo26NSExtensionRequestHandling", "backBeingPressed"]
 - ["PSo26NSExtensionRequestHandling", "create"]
 - !private ["PSo26NSExtensionRequestHandling", "createAlert"]
+- !private ["PSo26NSExtensionRequestHandling", "delegate"]
 - ["PSo26NSExtensionRequestHandling", "didChangeChapter"]
 - ["PSo26NSExtensionRequestHandling", "didGetEstablishmentData"]
 - ["PSo26NSExtensionRequestHandling", "establishmentLabel"]
@@ -670,6 +690,7 @@ depends-member:
 - ["CSo8NSObject", "UILabel"]
 - !private ["CSo8NSObject", "UIStoryboard"]
 - !private ["CSo8NSObject", "UserDefaults"]
+- ["CSo8NSObject", "backBeingPressed"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "black"]
 - !private ["CSo8NSObject", "borderColor"]
@@ -682,6 +703,7 @@ depends-member:
 - !private ["CSo8NSObject", "currentEstablishment"]
 - !private ["CSo8NSObject", "darkGray"]
 - !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "didChangeChapter"]
 - ["CSo8NSObject", "didGetEstablishmentData"]
 - ["CSo8NSObject", "establishmentLabel"]
@@ -733,6 +755,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UIStoryboard"]
 - !private ["PSo16NSObjectProtocol", "UserDefaults"]
+- ["PSo16NSObjectProtocol", "backBeingPressed"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "black"]
 - !private ["PSo16NSObjectProtocol", "borderColor"]
@@ -744,6 +767,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "currentChapter"]
 - !private ["PSo16NSObjectProtocol", "currentEstablishment"]
 - !private ["PSo16NSObjectProtocol", "darkGray"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "didChangeChapter"]
 - ["PSo16NSObjectProtocol", "didGetEstablishmentData"]
 - ["PSo16NSObjectProtocol", "establishmentLabel"]
@@ -809,6 +833,7 @@ depends-member:
 - ["O17HafsaInspectorApp12SettingsType", "deinit"]
 - !private ["C17HafsaInspectorApp22SettingsViewController", "create"]
 - ["C17HafsaInspectorApp22SettingsViewController", "deinit"]
+- !private ["C17HafsaInspectorApp22SettingsViewController", "delegate"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["SS", "isEmpty"]
@@ -850,9 +875,11 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UIStoryboard"]
 - !private ["PSo21UIAppearanceContainer", "UserDefaults"]
+- ["PSo21UIAppearanceContainer", "backBeingPressed"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - ["PSo21UIAppearanceContainer", "create"]
 - !private ["PSo21UIAppearanceContainer", "createAlert"]
+- !private ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "didChangeChapter"]
 - ["PSo21UIAppearanceContainer", "didGetEstablishmentData"]
 - ["PSo21UIAppearanceContainer", "establishmentLabel"]
@@ -908,8 +935,10 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UIStoryboard"]
 - !private ["PSo18UIContentContainer", "UserDefaults"]
+- ["PSo18UIContentContainer", "backBeingPressed"]
 - ["PSo18UIContentContainer", "create"]
 - !private ["PSo18UIContentContainer", "createAlert"]
+- !private ["PSo18UIContentContainer", "delegate"]
 - ["PSo18UIContentContainer", "didChangeChapter"]
 - ["PSo18UIContentContainer", "didGetEstablishmentData"]
 - ["PSo18UIContentContainer", "establishmentLabel"]
@@ -977,9 +1006,11 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "UIStoryboard"]
 - !private ["PSo18UIFocusEnvironment", "UserDefaults"]
+- ["PSo18UIFocusEnvironment", "backBeingPressed"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - ["PSo18UIFocusEnvironment", "create"]
 - !private ["PSo18UIFocusEnvironment", "createAlert"]
+- !private ["PSo18UIFocusEnvironment", "delegate"]
 - ["PSo18UIFocusEnvironment", "didChangeChapter"]
 - ["PSo18UIFocusEnvironment", "didGetEstablishmentData"]
 - ["PSo18UIFocusEnvironment", "establishmentLabel"]
@@ -1056,10 +1087,12 @@ depends-member:
 - ["CSo11UIResponder", "UILabel"]
 - !private ["CSo11UIResponder", "UIStoryboard"]
 - !private ["CSo11UIResponder", "UserDefaults"]
+- ["CSo11UIResponder", "backBeingPressed"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - ["CSo11UIResponder", "create"]
 - !private ["CSo11UIResponder", "createAlert"]
 - !private ["CSo11UIResponder", "deinit"]
+- !private ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "didChangeChapter"]
 - ["CSo11UIResponder", "didGetEstablishmentData"]
 - ["CSo11UIResponder", "establishmentLabel"]
@@ -1103,9 +1136,11 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIFont"]
 - !private ["PSo30UIResponderStandardEditActions", "UIStoryboard"]
 - !private ["PSo30UIResponderStandardEditActions", "UserDefaults"]
+- ["PSo30UIResponderStandardEditActions", "backBeingPressed"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
 - ["PSo30UIResponderStandardEditActions", "create"]
 - !private ["PSo30UIResponderStandardEditActions", "createAlert"]
+- !private ["PSo30UIResponderStandardEditActions", "delegate"]
 - ["PSo30UIResponderStandardEditActions", "didChangeChapter"]
 - ["PSo30UIResponderStandardEditActions", "didGetEstablishmentData"]
 - ["PSo30UIResponderStandardEditActions", "establishmentLabel"]
@@ -1141,6 +1176,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "window"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo20UIScrollViewDelegate", "create"]
+- !private ["PSo20UIScrollViewDelegate", "delegate"]
 - !private ["PSo16UIStateRestoring", "AppDelegate"]
 - !private ["PSo16UIStateRestoring", "Bundle"]
 - !private ["PSo16UIStateRestoring", "FormTableViewController"]
@@ -1151,8 +1187,10 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UIStoryboard"]
 - !private ["PSo16UIStateRestoring", "UserDefaults"]
+- ["PSo16UIStateRestoring", "backBeingPressed"]
 - ["PSo16UIStateRestoring", "create"]
 - !private ["PSo16UIStateRestoring", "createAlert"]
+- !private ["PSo16UIStateRestoring", "delegate"]
 - ["PSo16UIStateRestoring", "didChangeChapter"]
 - ["PSo16UIStateRestoring", "didGetEstablishmentData"]
 - ["PSo16UIStateRestoring", "establishmentLabel"]
@@ -1182,7 +1220,9 @@ depends-member:
 - !private ["CSo12UIStoryboard", "instantiateViewController"]
 - !private ["CSo21UITableViewController", "create"]
 - !private ["PSo21UITableViewDataSource", "create"]
+- !private ["PSo21UITableViewDataSource", "delegate"]
 - !private ["PSo19UITableViewDelegate", "create"]
+- !private ["PSo19UITableViewDelegate", "delegate"]
 - !private ["CSo11UITextField", "deinit"]
 - !private ["CSo11UITextField", "placeholder"]
 - !private ["CSo11UITextField", "setupEstablishmentPicker"]
@@ -1197,6 +1237,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "UIFont"]
 - !private ["PSo19UITextFieldDelegate", "UIStoryboard"]
 - !private ["PSo19UITextFieldDelegate", "UserDefaults"]
+- ["PSo19UITextFieldDelegate", "backBeingPressed"]
 - !private ["PSo19UITextFieldDelegate", "createAlert"]
 - ["PSo19UITextFieldDelegate", "didChangeChapter"]
 - !private ["PSo19UITextFieldDelegate", "establishmentLabel"]
@@ -1233,9 +1274,11 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UIStoryboard"]
 - !private ["PSo18UITraitEnvironment", "UserDefaults"]
+- ["PSo18UITraitEnvironment", "backBeingPressed"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - ["PSo18UITraitEnvironment", "create"]
 - !private ["PSo18UITraitEnvironment", "createAlert"]
+- !private ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "didChangeChapter"]
 - ["PSo18UITraitEnvironment", "didGetEstablishmentData"]
 - ["PSo18UITraitEnvironment", "establishmentLabel"]
@@ -1295,9 +1338,11 @@ depends-member:
 - ["CSo16UIViewController", "UILabel"]
 - !private ["CSo16UIViewController", "UIStoryboard"]
 - !private ["CSo16UIViewController", "UserDefaults"]
+- ["CSo16UIViewController", "backBeingPressed"]
 - ["CSo16UIViewController", "create"]
 - !private ["CSo16UIViewController", "createAlert"]
 - ["CSo16UIViewController", "deinit"]
+- !private ["CSo16UIViewController", "delegate"]
 - ["CSo16UIViewController", "didChangeChapter"]
 - ["CSo16UIViewController", "didGetEstablishmentData"]
 - ["CSo16UIViewController", "establishmentLabel"]
@@ -1336,8 +1381,10 @@ depends-member:
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "UIFont"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "UIStoryboard"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "UserDefaults"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "backBeingPressed"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "create"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "createAlert"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "delegate"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "didChangeChapter"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "didGetEstablishmentData"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "establishmentLabel"]
@@ -1401,6 +1448,7 @@ depends-member:
 - !private ["Ps9_Hashable", "UIStoryboard"]
 - !private ["Ps9_Hashable", "UserDefaults"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "backBeingPressed"]
 - !private ["Ps9_Hashable", "backgroundColor"]
 - !private ["Ps9_Hashable", "black"]
 - !private ["Ps9_Hashable", "borderColor"]
@@ -1412,6 +1460,7 @@ depends-member:
 - !private ["Ps9_Hashable", "currentChapter"]
 - !private ["Ps9_Hashable", "currentEstablishment"]
 - !private ["Ps9_Hashable", "darkGray"]
+- !private ["Ps9_Hashable", "delegate"]
 - ["Ps9_Hashable", "didChangeChapter"]
 - ["Ps9_Hashable", "didGetEstablishmentData"]
 - ["Ps9_Hashable", "establishmentLabel"]
@@ -1458,6 +1507,36 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "isEmpty"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["P17HafsaInspectorApp16settingsDelegate", "AppDelegate"]
+- !private ["P17HafsaInspectorApp16settingsDelegate", "Bundle"]
+- !private ["P17HafsaInspectorApp16settingsDelegate", "FormTableViewController"]
+- ["P17HafsaInspectorApp16settingsDelegate", "HIManager"]
+- !private ["P17HafsaInspectorApp16settingsDelegate", "HImanager"]
+- !private ["P17HafsaInspectorApp16settingsDelegate", "SettingsViewController"]
+- !private ["P17HafsaInspectorApp16settingsDelegate", "UIColor"]
+- !private ["P17HafsaInspectorApp16settingsDelegate", "UIFont"]
+- !private ["P17HafsaInspectorApp16settingsDelegate", "UIStoryboard"]
+- !private ["P17HafsaInspectorApp16settingsDelegate", "UserDefaults"]
+- ["P17HafsaInspectorApp16settingsDelegate", "backBeingPressed"]
+- !private ["P17HafsaInspectorApp16settingsDelegate", "createAlert"]
+- ["P17HafsaInspectorApp16settingsDelegate", "didChangeChapter"]
+- !private ["P17HafsaInspectorApp16settingsDelegate", "establishmentLabel"]
+- !private ["P17HafsaInspectorApp16settingsDelegate", "establishmentTextField"]
+- !private ["P17HafsaInspectorApp16settingsDelegate", "hideKeyboardWhenTappedAround"]
+- !private ["P17HafsaInspectorApp16settingsDelegate", "nameLabel"]
+- !private ["P17HafsaInspectorApp16settingsDelegate", "navigationController"]
+- !private ["P17HafsaInspectorApp16settingsDelegate", "nextButton"]
+- !private ["P17HafsaInspectorApp16settingsDelegate", "setNavBarWithSettingsIcon"]
+- !private ["P17HafsaInspectorApp16settingsDelegate", "setupView"]
+- ["P17HafsaInspectorApp16settingsDelegate", "textField"]
+- ["P17HafsaInspectorApp16settingsDelegate", "textFieldDidBeginEditing"]
+- ["P17HafsaInspectorApp16settingsDelegate", "textFieldDidEndEditing"]
+- ["P17HafsaInspectorApp16settingsDelegate", "textFieldShouldBeginEditing"]
+- ["P17HafsaInspectorApp16settingsDelegate", "textFieldShouldClear"]
+- ["P17HafsaInspectorApp16settingsDelegate", "textFieldShouldEndEditing"]
+- ["P17HafsaInspectorApp16settingsDelegate", "textFieldShouldReturn"]
+- !private ["P17HafsaInspectorApp16settingsDelegate", "view"]
+- ["P17HafsaInspectorApp16settingsDelegate", ""]
 depends-nominal:
 - "Ps9AnyObject"
 - "C17HafsaInspectorApp11AppDelegate"
@@ -1557,6 +1636,7 @@ depends-nominal:
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
+- "P17HafsaInspectorApp16settingsDelegate"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -1618,4 +1698,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "771b4da336c72abca6d5daa44befff9a"
+interface-hash: "6efc2a002ff800dac7fd270d439ca4a4"
