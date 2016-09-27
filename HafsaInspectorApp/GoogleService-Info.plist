@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>287064957689-p17g381s6vhcask9bfbc1m47kq5cjng0.apps.googleusercontent.com</string>
+	<string>287064957689-8uepi565kqakt2vmce444snn2kivrk47.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.287064957689-p17g381s6vhcask9bfbc1m47kq5cjng0</string>
+	<string>com.googleusercontent.apps.287064957689-8uepi565kqakt2vmce444snn2kivrk47</string>
 	<key>API_KEY</key>
 	<string>AIzaSyCPr1yOjSNrpVwxMTgvbu8QRC8mKmxy7-8</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.Junaid.HafsaInspectorApp</string>
+	<string>com.Hafsa.InspectorApp</string>
 	<key>PROJECT_ID</key>
 	<string>halal-advocates-inspection</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,11 +29,11 @@
 	<key>IS_APPINVITE_ENABLED</key>
 	<false/>
 	<key>IS_GCM_ENABLED</key>
-	<false/>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
 	<false/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:287064957689:ios:a5781fb1bd62e9c1</string>
+	<string>1:287064957689:ios:f9b36ea3a5d10306</string>
 	<key>DATABASE_URL</key>
 	<string>https://halal-advocates-inspection.firebaseio.com</string>
 </dict>
