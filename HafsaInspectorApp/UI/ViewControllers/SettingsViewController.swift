@@ -195,12 +195,21 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             // Get user value
             
             let value = snapshot.value as? NSDictionary
-            self.filedata = value!
-                print(value)
-            self.tableView.reloadData()
-            DispatchQueue.main.async {
-                self.progess.hide(animated: true)
+            if value == nil {
+                DispatchQueue.main.async {
+                    self.progess.hide(animated: true)
+                }
+                self.createAlert("Could not load data\nPlease try again")
             }
+            else {
+                self.filedata = value!
+                print(value)
+                self.tableView.reloadData()
+                DispatchQueue.main.async {
+                    self.progess.hide(animated: true)
+                }
+            }
+            
         }) { (error) in
             DispatchQueue.main.async {
                 

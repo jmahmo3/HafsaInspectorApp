@@ -175,7 +175,7 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
         
                 let dict: NSDictionary = [dateString:(metadata!.name)!]
                 let ref: FIRDatabaseReference =  FIRDatabase.database().reference()
-                ref.child("metadata").child(trimmedChapter).childByAutoId().setValue(dict, withCompletionBlock: { (error, databaseref) in
+                ref.child("metadata").child(self.HImanager.currentChapter).childByAutoId().setValue(dict, withCompletionBlock: { (error, databaseref) in
                 
                 })
                 print(metadata?.path)
