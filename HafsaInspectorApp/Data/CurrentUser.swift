@@ -30,34 +30,6 @@ class CurrentUser: NSObject {
     func signin(_ user: String, _ completion:@escaping CompletionHandler) {
         ref = FIRDatabase.database().reference()
         
-//        ref.child("users").child(user).observe(.value, with: { (snapshot) in
-//            // Get user value
-//            
-//            let value = snapshot.value as? NSDictionary
-//            if value != nil {
-//                let username = value?["name"] as! String
-//                let admin = value?["admin"] as! Bool
-//                print (username)
-//                self.username = username
-//                self.adminAccess = admin
-//                completion(self, nil)
-//                
-//                UserDefaults.standard.setValue(value, forKey: "userInfo")
-//                UserDefaults.standard.setValue(username, forKey: "userName")
-//                UserDefaults.standard.set(admin, forKey: "isAdmin")
-//            }
-//            else {
-//                let err = NSError(domain: "Could not retrieve user", code: 401, userInfo: nil)
-//                completion(nil, err)
-//            }
-//            
-//            
-//        }) { (error) in
-//            completion(nil, error as NSError?)
-//            print(error.localizedDescription)
-//        }
-        
-        
         ref.child("users").observe(.value, with: { (snapshot) in
             // Get user value
             
@@ -94,20 +66,6 @@ class CurrentUser: NSObject {
                     completion(nil, err)
 
                 }
-                
-                
-                //                let dict: NSDictionary = value?.object(at: 0) as! NSDictionary
-//
-//                let username = value?["name"] as! String
-//                let admin = value?["admin"] as! Bool
-//                print (username)
-//                self.username = username
-//                self.adminAccess = admin
-//                completion(self, nil)
-//                
-//                UserDefaults.standard.setValue(value, forKey: "userInfo")
-//                UserDefaults.standard.setValue(username, forKey: "userName")
-//                UserDefaults.standard.set(admin, forKey: "isAdmin")
             }
             
             

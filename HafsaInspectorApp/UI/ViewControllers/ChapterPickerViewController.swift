@@ -49,7 +49,7 @@ class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
         let firstUseDone = UserDefaults.standard.bool(forKey: "FirstUseDone")
 
         if (registered && !firstUseDone) {
-            self.chapterLabel.text = "Hello \(HImanager.userName)\nPlease select a chapter\nYou could change this later"
+            self.chapterLabel.text = "Hello \(HIManager().userName)\nPlease select a chapter\nYou could change this later"
         }
         else {
             self.chapterLabel.text = "Please edit your chapter"
@@ -94,7 +94,7 @@ class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
     
     override func backButtonPressed() {
         self.saveData()
-        self.delegate.didChangeChapter()
+//        self.delegate.didChangeChapter()
         _ = self.navigationController?.popViewController(animated: true)
     }
     

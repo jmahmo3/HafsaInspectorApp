@@ -78,8 +78,11 @@ class EstablishmentPickerViewController: UIViewController, UITextFieldDelegate, 
     }
     
     func settingsButtonPressed() {
-        let vc = ChapterPickerViewController.create()
-        vc.delegate = self
+//        let vc = ChapterPickerViewController.create()
+//        vc.delegate = self
+//        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = SettingsViewController.create(false)
+//        vc.delegate = self
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
