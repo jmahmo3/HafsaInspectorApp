@@ -9,13 +9,13 @@ provides-member:
 - ["O17HafsaInspectorApp16EdgeInsetsPreset", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "UIEdgeInsets"
 - "Int"
 - "EdgeInsetsPreset"
-- "EdgeInsetsPresetToValue"
-- !private "~="
 - "EdgeInsets"
+- !private "~="
 - "=="
-- "UIEdgeInsets"
+- "EdgeInsetsPresetToValue"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

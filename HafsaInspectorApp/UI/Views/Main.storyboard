@@ -545,7 +545,7 @@ next</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kH0-Tu-qaT" firstAttribute="top" secondItem="F6X-vc-gk3" secondAttribute="bottom" id="0oV-0Q-Rwx"/>
-                            <constraint firstItem="F6X-vc-gk3" firstAttribute="top" secondItem="awG-TL-Gbl" secondAttribute="top" constant="64" id="Ell-eC-SKW"/>
+                            <constraint firstItem="F6X-vc-gk3" firstAttribute="top" secondItem="awG-TL-Gbl" secondAttribute="top" id="Ell-eC-SKW"/>
                             <constraint firstAttribute="trailing" secondItem="F6X-vc-gk3" secondAttribute="trailing" id="ZSo-pl-ZxI"/>
                             <constraint firstItem="F6X-vc-gk3" firstAttribute="leading" secondItem="awG-TL-Gbl" secondAttribute="leading" id="a0R-Zt-qF2"/>
                         </constraints>

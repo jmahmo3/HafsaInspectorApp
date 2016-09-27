@@ -11,16 +11,16 @@ provides-member:
 - ["V17HafsaInspectorApp5Depth", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Depth"
-- "CGFloat"
-- "DepthPresetToValue"
-- "Offset"
 - "DepthPreset"
-- !private "~="
-- "AssignmentPrecedence"
-- "=="
+- "Offset"
+- "CGFloat"
+- "Depth"
 - "Float"
+- "DepthPresetToValue"
 - "Int"
+- !private "~="
+- "=="
+- "AssignmentPrecedence"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

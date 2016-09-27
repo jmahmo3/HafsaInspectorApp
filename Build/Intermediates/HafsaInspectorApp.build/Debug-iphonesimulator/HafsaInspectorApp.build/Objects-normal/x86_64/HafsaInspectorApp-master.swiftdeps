@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
 options: "06a8ce79e55b390c7bc005cf95aa067d"
-build_time: [528323167, 838723000]
+build_time: [528324303, 727724000]
 inputs:
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/NavigationDrawerController.swift": [528304010, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/FlatButton.swift": [528304010, 0]
@@ -43,9 +43,9 @@ inputs:
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/Material+String.swift": [528304010, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/RemindersController.swift": [528304010, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/Snackbar.swift": [528304010, 0]
-  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/SettingsViewController.swift": [528323167, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/UI/ViewControllers/SettingsViewController.swift": [528324303, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/JSON.swift": [528304010, 0]
-  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/Extensions/DeviceExtensions.swift": [528304010, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/Extensions/DeviceExtensions.swift": [528324303, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/BottomNavigationController.swift": [528304010, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/Depth.swift": [528304010, 0]
   "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/Material/NavigationItem.swift": [528304010, 0]

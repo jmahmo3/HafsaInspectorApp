@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import MBProgressHUD
+
 
 enum SettingsType {
     case Admin
@@ -20,6 +22,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
 
     @IBOutlet weak var tableView: UITableView!
     
+    var progess = MBProgressHUD()
     var type: SettingsType = .Settings
     var isAdmin: Bool = false
     var isFromAdmin: Bool = false
@@ -30,12 +33,10 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         let frameworkBundle = Bundle.main
         let storyboard = UIStoryboard(name: "Main", bundle: frameworkBundle)
         let main = storyboard.instantiateViewController(withIdentifier: "SettingsViewController") as! SettingsViewController
-//        main.isFromAdmin = admin
         main.type = type
         return main
     }
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate = self
@@ -47,10 +48,12 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         if type == .ViewFiles {
             self.getData()
         }
-
+        progess.tintColor = UIColor.black
+        self.view.addSubview(progess)
+        progess.center = self.view.center
+        
     }
 
-    
     // MARK: - Table view data source
     
      func numberOfSections(in tableView: UITableView) -> Int {
@@ -59,7 +62,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     }
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        // #warning Incomplete implementation, return the number of rows
         if type == .Admin {return 2}
         else if type == .Settings {return self.isAdmin ? 2 : 1}
         else if type == .Chapters {
@@ -75,12 +77,10 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         
         if type != .ViewFiles {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-            
-            
+          
             if type == .Admin {
                 if indexPath.row == 1{
                     cell.textLabel?.text = "Create new user"
-                    
                 }
                 else {
                     cell.textLabel?.text = "View uploads"
@@ -93,7 +93,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
                 }
                 else {
                     cell.textLabel?.text = "Change chapter"
-                    
                 }
             }
             else if type == .Chapters {
@@ -108,7 +107,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         }
         else {
             let cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "cell")
-            
             let childID: NSString = (filedata.allKeys[indexPath.row] as! NSString)
             let childDict: NSDictionary = filedata.object(forKey: childID) as! NSDictionary
             let key = childDict.allKeys[0] as! String
@@ -119,12 +117,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             cell.selectionStyle = .none
             
             return cell
-            
         }
-        
-        
-        
-        
     }
     
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -169,51 +162,51 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             let starsRef = storageRef.child("\(self.selectedChapter)/\(childDict.object(forKey: key) as! String)")
 
             // Fetch the download URL
+            progess.label.text = "Loading..."
+            progess.show(animated: true)
             starsRef.downloadURL { (URL, error) -> Void in
                 if (error != nil) {
                     // Handle any errors
+                    DispatchQueue.main.async {
+                        self.progess.hide(animated: true)
+                    }
                     self.createAlert("Could not open file\nPlease try again")
                 } else {
+                    DispatchQueue.main.async {
+                        self.progess.hide(animated: true)
+                    }
                     print(URL)
                     let vc = WebViewViewController.create((URL?.absoluteString)!)
                     self.navigationController?.pushViewController(vc, animated: true)
-                    
-                    // Get the download URL for 'images/stars.jpg'
                 }
             }
             
         }
     }
-
     
     //MARK: - Utils
     
     func getData(){
         let ref: FIRDatabaseReference =  FIRDatabase.database().reference()
         
+        progess.label.text = "Loading..."
+        progess.show(animated: true)
         ref.child("metadata").child(self.selectedChapter as String).observe(.value, with: { (snapshot) in
             // Get user value
             
             let value = snapshot.value as? NSDictionary
-//            if value != nil {
-//                let chapters: NSArray = (value!.allKeys as NSArray)
-//                DispatchQueue.main.async {
-//                    HIManager.sharedClient().chapters = chapters.mutableCopy() as! NSMutableArray
-//                    HIManager.sharedClient().chaptersData = value!
-////                    completion(true, nil)
-//                }
             self.filedata = value!
                 print(value)
             self.tableView.reloadData()
-//            }
-//            else {
-////                let err = NSError(domain: "Could not retrieve user", code: 401, userInfo: nil)
-////                completion(false, err)
-//            }
-            
-            
+            DispatchQueue.main.async {
+                self.progess.hide(animated: true)
+            }
         }) { (error) in
-//            completion(false, error as NSError?)
+            DispatchQueue.main.async {
+                
+                self.progess.hide(animated: true)
+            }
+            self.createAlert("Could not load data\nPlease try again")
             print(error.localizedDescription)
         }
 

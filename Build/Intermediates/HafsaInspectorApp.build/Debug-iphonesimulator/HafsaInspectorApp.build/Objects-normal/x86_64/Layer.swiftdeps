@@ -6,30 +6,30 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp5Layer", ""]
 provides-dynamic-lookup:
-- "visualLayer"
-- "contentsCenter"
-- "contentsGravity"
 - "layoutVisualLayer"
-- "contentsGravityPreset"
+- "contentsCenter"
 - "contentsScale"
-- "prepareVisualLayer"
-- "layoutSublayers"
 - "contentsRect"
 - "cornerRadius"
+- "layoutSublayers"
 - "image"
+- "visualLayer"
+- "prepareVisualLayer"
+- "contentsGravityPreset"
+- "contentsGravity"
 depends-top-level:
-- "CGRect"
+- "String"
+- "Layer"
+- !private "BooleanLiteralType"
+- "MaterialGravity"
 - "CGFloat"
 - "UIImage"
-- "Layer"
 - !private "MaterialGravityToValue"
-- "NSCoder"
+- "CGRect"
 - "CAShapeLayer"
-- "AssignmentPrecedence"
+- "NSCoder"
 - !private "=="
-- "MaterialGravity"
-- "String"
-- !private "BooleanLiteralType"
+- "AssignmentPrecedence"
 depends-member:
 - ["Ps9AnyObject", "CAShapeLayer"]
 - !private ["Ps9AnyObject", "MaterialGravityToValue"]

@@ -8,24 +8,24 @@ provides-member:
 - ["C17HafsaInspectorApp19SearchBarController", ""]
 - ["CSo16UIViewController", "searchBarController"]
 provides-dynamic-lookup:
-- "layoutSubviews"
-- "searchBar"
-- "prepare"
 - "searchBarController"
+- "layoutSubviews"
+- "prepare"
+- "searchBar"
 depends-top-level:
-- "CastingPrecedence"
-- !private "&&"
-- "UIViewController"
+- "SearchBarController"
 - !private "!="
-- !private "+"
+- "UIViewController"
+- "TernaryPrecedence"
 - !private "-"
+- !private "+"
+- !private "&&"
 - !private "Device"
 - "SearchBar"
-- "TernaryPrecedence"
-- "RootController"
 - !private "=="
+- "RootController"
 - "AssignmentPrecedence"
-- "SearchBarController"
+- "CastingPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "Device"]
 - !private ["Ps9AnyObject", "SearchBar"]

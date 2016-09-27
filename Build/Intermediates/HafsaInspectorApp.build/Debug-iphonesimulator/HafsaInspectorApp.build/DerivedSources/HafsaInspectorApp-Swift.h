@@ -4914,11 +4914,13 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp19SearchBarController")
 - (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class MBProgressHUD;
 @class NSString;
 
 SWIFT_CLASS("_TtC17HafsaInspectorApp22SettingsViewController")
 @interface SettingsViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, strong) MBProgressHUD * _Nonnull progess;
 @property (nonatomic) BOOL isAdmin;
 @property (nonatomic) BOOL isFromAdmin;
 @property (nonatomic, strong) NSString * _Nonnull selectedChapter;
@@ -6225,7 +6227,6 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp10WebService")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class MBProgressHUD;
 @class UIWebView;
 
 SWIFT_CLASS("_TtC17HafsaInspectorApp21WebViewViewController")

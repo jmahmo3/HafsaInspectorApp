@@ -8,24 +8,24 @@ provides-member:
 - ["C17HafsaInspectorApp14MenuController", ""]
 - ["CSo16UIViewController", "menuController"]
 provides-dynamic-lookup:
-- "layoutSubviews"
-- "menuController"
-- "menu"
 - "prepare"
+- "layoutSubviews"
+- "menu"
 - "closeMenu"
 - "openMenu"
+- "menuController"
 depends-top-level:
-- !private "!="
-- "UIView"
-- "MenuController"
-- "Menu"
 - "UIViewController"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
-- !private "=="
-- "Void"
+- "UIView"
 - "RootController"
+- !private "!="
+- "Menu"
+- "Void"
 - !private "BooleanLiteralType"
+- "MenuController"
+- !private "=="
+- "AssignmentPrecedence"
+- "CastingPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "Menu"]
 - !private ["Ps9AnyObject", "UIView"]

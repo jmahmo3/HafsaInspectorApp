@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 public extension UIColor {
     static var HIBackground: UIColor {
@@ -16,7 +17,7 @@ public extension UIColor {
 
 public extension UIViewController {
     
-    
+   
     
     
     func hideKeyboardWhenTappedAround() {

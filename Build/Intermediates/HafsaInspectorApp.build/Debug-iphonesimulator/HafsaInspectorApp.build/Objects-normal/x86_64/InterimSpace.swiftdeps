@@ -9,13 +9,13 @@ provides-member:
 - ["O17HafsaInspectorApp18InterimSpacePreset", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "CGFloat"
 - "InterimSpacePreset"
-- !private "~="
-- "InterimSpacePresetToValue"
-- "=="
-- "Int"
 - "InterimSpace"
+- "CGFloat"
+- "Int"
+- "InterimSpacePresetToValue"
+- !private "~="
+- "=="
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]
