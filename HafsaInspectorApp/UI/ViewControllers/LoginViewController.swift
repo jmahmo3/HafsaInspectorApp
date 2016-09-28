@@ -60,7 +60,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             progess.center = view.center
             progess.show(animated: true)
 
-            CurrentUser.sharedClient().signin(username.text!, { (user, error) in
+            CurrentUser.sharedClient().signin(username.text!.trimmingCharacters(in: .whitespaces), { (user, error) in
                 progess.hide(animated: true)
                 if !(error != nil) {
                     UserDefaults.standard.set(true, forKey: "Registered")

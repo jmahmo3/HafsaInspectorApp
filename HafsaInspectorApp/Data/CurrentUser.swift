@@ -52,6 +52,19 @@ class CurrentUser: NSObject {
                             print (username)
                             self.username = username
                             self.adminAccess = admin
+                        
+                            if admin {
+                                let keys = userdict.allKeys
+                                for key in keys {
+                                    for chapter in HIManager.sharedClient().chapters{
+                                        if (key as! NSString).contains((chapter as! NSString).lowercased) {
+                                            FIRMessaging.messaging().subscribe(toTopic: "/topics/\(chapter as! NSString)")
+                                        }
+                                    
+                                    }
+                                    
+                                }
+                            }
                             completion(self, nil)
                             DispatchQueue.main.async {
                                 UserDefaults.standard.setValue(value, forKey: "userInfo")

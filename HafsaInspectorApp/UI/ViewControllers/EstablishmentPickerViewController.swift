@@ -92,7 +92,7 @@ class EstablishmentPickerViewController: UIViewController, UITextFieldDelegate, 
     }
     
     func didChangeChapter() {
-        nameLabel.text = HImanager.userName
+        nameLabel.text = HIManager().userName
         establishmentLabel.text = HImanager.currentChapter
         establishmentTextField.text = ""
         establishmentTextField.setupEstablishmentPicker()

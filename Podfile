@@ -11,5 +11,7 @@ pod 'MBProgressHUD', '~> 1.0.0'
   pod 'PDFGenerator', '~> 2.0.1'
   pod 'Firebase/Storage'
   pod 'Firebase/Database'
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
 
 end

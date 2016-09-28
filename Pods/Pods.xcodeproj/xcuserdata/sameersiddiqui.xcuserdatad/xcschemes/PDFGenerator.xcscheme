@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'BA5895047BB309519B61E60C'
+               BlueprintIdentifier = '6A85D150B1CC9D063A981670'
                BlueprintName = 'PDFGenerator'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'PDFGenerator.framework'>
