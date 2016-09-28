@@ -9,12 +9,12 @@ provides-member:
 - ["VV17HafsaInspectorApp4Icon2cm", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "Bundle"
 - "StringLiteralType"
-- "String"
-- !private "View"
 - "Icon"
 - "UIImage"
-- "Bundle"
+- !private "View"
+- "String"
 - !private "=="
 - "AssignmentPrecedence"
 depends-member:
@@ -282,6 +282,8 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseMessaging/FirebaseMessaging/FIRMessaging.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseMessaging/FirebaseMessaging/FirebaseMessaging.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"

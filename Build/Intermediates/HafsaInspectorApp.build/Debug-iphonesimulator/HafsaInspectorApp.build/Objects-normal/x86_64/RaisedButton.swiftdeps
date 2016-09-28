@@ -8,10 +8,10 @@ provides-member:
 provides-dynamic-lookup:
 - "prepare"
 depends-top-level:
-- "AssignmentPrecedence"
 - "Button"
 - !private "Color"
 - "RaisedButton"
+- "AssignmentPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "Color"]
 - !private ["Ps9AnyObject", "backgroundColor"]
@@ -289,6 +289,8 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseMessaging/FirebaseMessaging/FIRMessaging.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseMessaging/FirebaseMessaging/FirebaseMessaging.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"

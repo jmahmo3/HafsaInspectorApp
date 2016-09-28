@@ -8,12 +8,12 @@ provides-member:
 - ["O17HafsaInspectorApp17BorderWidthPreset", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "BorderWidthPresetToValue"
-- "CGFloat"
 - !private "~="
-- "BorderWidthPreset"
-- "Int"
 - "=="
+- "CGFloat"
+- "Int"
+- "BorderWidthPresetToValue"
+- "BorderWidthPreset"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]
@@ -225,6 +225,8 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseMessaging/FirebaseMessaging/FIRMessaging.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseMessaging/FirebaseMessaging/FirebaseMessaging.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"

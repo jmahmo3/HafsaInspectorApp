@@ -12,6 +12,7 @@ import Firebase
 class FormTableViewController: UITableViewController, UITextViewDelegate {
     
     fileprivate let HImanager = HIManager.sharedClient()
+    var supplierData:NSArray = []
 
     static func create() -> FormTableViewController {
         let frameworkBundle = Bundle.main
@@ -25,6 +26,7 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
         self.view.backgroundColor = UIColor.HIBackground
         self.setNavBarWithBackButton()
         self.hideKeyboardWhenTappedAround()
+        self.setupSuppliers()
     }
 
     override func backButtonPressed() {
@@ -42,7 +44,7 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return HImanager.supplierArray.count + 3
+        return supplierData.count + 3
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -52,12 +54,12 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
             cell.configureNameCell()
             return cell
         }
-        if indexPath.row > 0 && indexPath.row <= HImanager.supplierArray.count{
+        if indexPath.row > 0 && indexPath.row <= supplierData.count{
             let cell = tableView.dequeueReusableCell(withIdentifier: "SupplierTableViewCell", for: indexPath) as! SupplierTableViewCell
-            cell.configureSupplierCell(indexPath.row-1)
+            cell.configureSupplierCell(indexPath.row-1, data: supplierData)
             return cell
         }
-        if indexPath.row == HImanager.supplierArray.count+1 {
+        if indexPath.row == supplierData.count+1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ImageTableViewCell", for: indexPath) as! ImageTableViewCell
             
             return cell
@@ -183,6 +185,19 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
         }
         uploadTask.resume()
 
+    }
+    
+    func setupSuppliers() {
+        var currentChapterData: NSDictionary = [:]
+        if HImanager.chaptersData.allKeys.count > 0 {
+            currentChapterData =  HIManager.sharedClient().chaptersData.object(forKey: self.HImanager.currentChapter ) as! NSDictionary
+            if (currentChapterData.allKeys as NSArray).contains("processors") {
+                supplierData = currentChapterData.object(forKey: "processors") as! NSArray
+            }
+            else {
+                supplierData = []
+            }
+        }
     }
     
 }

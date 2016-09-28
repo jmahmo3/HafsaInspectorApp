@@ -7,41 +7,41 @@ provides-member:
 - ["C17HafsaInspectorApp33EstablishmentPickerViewController", ""]
 provides-dynamic-lookup:
 - "viewDidLoad"
-- "nameLabel"
-- "didGetEstablishmentData"
+- "establishmentTextField"
 - "setupView"
-- "backBeingPressed"
-- "didChangeChapter"
-- "nextButton"
 - "settingsButtonPressed"
 - "establishmentLabel"
-- "nextButtonPressed"
+- "didGetEstablishmentData"
+- "didChangeChapter"
+- "nextButton"
 - "create"
-- "establishmentTextField"
+- "backBeingPressed"
+- "nextButtonPressed"
+- "nameLabel"
 depends-top-level:
-- !private "StringLiteralType"
 - !private "UIStoryboard"
 - !private "UIColor"
-- !private "FormTableViewController"
-- "UIViewController"
+- !private "!="
 - "HITextField"
-- !private "AppDelegate"
-- "EstablishmentPickerViewController"
-- "AnyObject"
-- !private "BooleanLiteralType"
 - "UIButton"
-- !private "Bundle"
+- !private "SettingsViewController"
+- "UIViewController"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "settingsDelegate"
+- !private "AppDelegate"
 - !private "UserDefaults"
 - "HIManager"
-- "UILabel"
+- "AnyObject"
+- !private "StringLiteralType"
 - "ChapterPickerDelegate"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
-- !private "!="
-- !private "SettingsViewController"
-- "UITextFieldDelegate"
-- "settingsDelegate"
+- !private "Bundle"
 - !private "UIFont"
+- !private "FormTableViewController"
+- "EstablishmentPickerViewController"
+- !private "BooleanLiteralType"
+- "UILabel"
+- "UITextFieldDelegate"
 depends-member:
 - !private ["Ps9AnyObject", "AppDelegate"]
 - !private ["Ps9AnyObject", "Bundle"]
@@ -485,6 +485,8 @@ depends-member:
 - !private ["Ps26ExpressibleByStringLiteral", "isEmpty"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "isEmpty"]
+- !private ["PSo20FIRMessagingDelegate", "init"]
+- !private ["PSo20FIRMessagingDelegate", "window"]
 - !private ["P12PDFGenerator19FilePathConvertible", "init"]
 - !private ["P12PDFGenerator19FilePathConvertible", "isEmpty"]
 - !private ["C17HafsaInspectorApp23FormTableViewController", "create"]
@@ -1368,6 +1370,8 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - !private ["CSo8UIWindow", "rootViewController"]
+- !private ["PSo32UNUserNotificationCenterDelegate", "init"]
+- !private ["PSo32UNUserNotificationCenterDelegate", "window"]
 - ["CSo12UserDefaults", "deinit"]
 - !private ["CSo12UserDefaults", "setValue"]
 - !private ["CSo12UserDefaults", "standard"]
@@ -1561,6 +1565,7 @@ depends-nominal:
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "PSo20FIRMessagingDelegate"
 - !private "P12PDFGenerator19FilePathConvertible"
 - "C17HafsaInspectorApp23FormTableViewController"
 - "C17HafsaInspectorApp9HIManager"
@@ -1623,6 +1628,7 @@ depends-nominal:
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - !private "CSo8UIWindow"
+- !private "PSo32UNUserNotificationCenterDelegate"
 - "CSo12UserDefaults"
 - "P17HafsaInspectorApp23ViewControllerContainer"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
@@ -1666,6 +1672,8 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseMessaging/FirebaseMessaging/FIRMessaging.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseMessaging/FirebaseMessaging/FirebaseMessaging.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"

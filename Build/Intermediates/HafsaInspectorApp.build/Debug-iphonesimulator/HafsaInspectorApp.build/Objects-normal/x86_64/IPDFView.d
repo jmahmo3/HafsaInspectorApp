@@ -4,6 +4,45 @@ dependencies: \
   /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap \
   /Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/IPDFCameraViewController.h \
   /Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Intermediates/HafsaInspectorApp.build/Debug-iphonesimulator/HafsaInspectorApp.build/DerivedSources/HafsaInspectorApp-Swift.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseMessaging/Frameworks/frameworks/FirebaseMessaging.framework/Modules/module.modulemap \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseMessaging/Frameworks/frameworks/FirebaseMessaging.framework/Headers/FIRMessaging.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseMessaging/Frameworks/frameworks/FirebaseMessaging.framework/Headers/FirebaseMessaging.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Modules/module.modulemap \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorage.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h \
+  /Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/Firebase.h \
   /Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HafsaInspectorApp-Bridging-Header.h \
   /Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderTextView.h \
   /Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h \

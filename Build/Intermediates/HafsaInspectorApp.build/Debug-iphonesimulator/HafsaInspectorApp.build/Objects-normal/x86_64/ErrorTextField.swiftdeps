@@ -6,14 +6,14 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp14ErrorTextField", ""]
 provides-dynamic-lookup:
-- "revealError"
 - "prepare"
+- "revealError"
 depends-top-level:
-- !private "!"
-- "BooleanLiteralType"
-- "TextField"
-- "Bool"
 - "ErrorTextField"
+- "TextField"
+- "BooleanLiteralType"
+- !private "!"
+- "Bool"
 - !private "Color"
 - "AssignmentPrecedence"
 depends-member:
@@ -352,6 +352,8 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseMessaging/FirebaseMessaging/FIRMessaging.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseMessaging/FirebaseMessaging/FirebaseMessaging.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"

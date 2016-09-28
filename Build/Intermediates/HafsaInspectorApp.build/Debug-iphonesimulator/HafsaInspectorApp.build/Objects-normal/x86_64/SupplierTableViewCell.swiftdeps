@@ -6,41 +6,43 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp21SupplierTableViewCell", ""]
 provides-dynamic-lookup:
-- "configureSupplierCell"
-- "supplierNameLabel"
-- "tField"
-- "addPoundsButton"
-- "updatePounds"
 - "previousPounds"
-- "addPoundsPressed"
+- "updatePounds"
 - "poundLabel"
 - "configurationTextField"
+- "tField"
+- "supplierNameLabel"
+- "configureSupplierCell"
+- "addPoundsPressed"
+- "addPoundsButton"
 depends-top-level:
-- "Double"
-- "Int"
-- "UITextField"
-- "HIManager"
-- !private "UIFont"
+- !private "UIKeyboardType"
 - "AnyObject"
+- !private "UITableViewCellSelectionStyle"
+- "UILabel"
+- "Int"
+- !private "Dictionary"
+- "UITextField"
+- !private "+"
+- "SupplierTableViewCell"
+- !private "UIColor"
+- !private "DispatchQueue"
 - !private "UIAlertController"
+- "AssignmentPrecedence"
+- !private "=="
+- "CastingPrecedence"
+- !private "!"
+- !private "UIFont"
+- "NSArray"
+- "HIManager"
+- !private "StringLiteralType"
+- !private "String"
+- !private "BooleanLiteralType"
+- "UIButton"
+- "UITableViewCell"
+- "Double"
 - !private "NSDictionary"
 - !private "UIAlertAction"
-- !private "BooleanLiteralType"
-- !private "+"
-- !private "UIKeyboardType"
-- "UITableViewCell"
-- "UILabel"
-- !private "!"
-- "UIButton"
-- "SupplierTableViewCell"
-- !private "Dictionary"
-- !private "UIColor"
-- !private "UITableViewCellSelectionStyle"
-- !private "String"
-- !private "=="
-- "AssignmentPrecedence"
-- !private "DispatchQueue"
-- "CastingPrecedence"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "DispatchQueue"]
@@ -88,7 +90,7 @@ depends-member:
 - !private ["Ps9AnyObject", "remove"]
 - !private ["Ps9AnyObject", "selectionStyle"]
 - ["Ps9AnyObject", "sharedClient"]
-- !private ["Ps9AnyObject", "supplierArray"]
+- !private ["Ps9AnyObject", "subscript"]
 - ["Ps9AnyObject", "supplierNameLabel"]
 - !private ["Ps9AnyObject", "supplierValues"]
 - ["Ps9AnyObject", "tField"]
@@ -224,7 +226,6 @@ depends-member:
 - !private ["Ps7CVarArg", "selectionStyle"]
 - ["Ps7CVarArg", "sharedClient"]
 - !private ["Ps7CVarArg", "subscript"]
-- !private ["Ps7CVarArg", "supplierArray"]
 - ["Ps7CVarArg", "supplierNameLabel"]
 - !private ["Ps7CVarArg", "supplierValues"]
 - ["Ps7CVarArg", "tField"]
@@ -300,7 +301,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "selectionStyle"]
 - ["Ps28CustomDebugStringConvertible", "sharedClient"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
-- !private ["Ps28CustomDebugStringConvertible", "supplierArray"]
 - ["Ps28CustomDebugStringConvertible", "supplierNameLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "supplierValues"]
 - ["Ps28CustomDebugStringConvertible", "tField"]
@@ -387,7 +387,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "selectionStyle"]
 - ["Ps23CustomStringConvertible", "sharedClient"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
-- !private ["Ps23CustomStringConvertible", "supplierArray"]
 - ["Ps23CustomStringConvertible", "supplierNameLabel"]
 - !private ["Ps23CustomStringConvertible", "supplierValues"]
 - ["Ps23CustomStringConvertible", "tField"]
@@ -468,7 +467,7 @@ depends-member:
 - !private ["Ps9Equatable", "remove"]
 - !private ["Ps9Equatable", "selectionStyle"]
 - ["Ps9Equatable", "sharedClient"]
-- !private ["Ps9Equatable", "supplierArray"]
+- !private ["Ps9Equatable", "subscript"]
 - ["Ps9Equatable", "supplierNameLabel"]
 - !private ["Ps9Equatable", "supplierValues"]
 - ["Ps9Equatable", "tField"]
@@ -510,7 +509,6 @@ depends-member:
 - !private ["Ps13FloatingPoint", "init"]
 - ["C17HafsaInspectorApp9HIManager", "deinit"]
 - ["C17HafsaInspectorApp9HIManager", "sharedClient"]
-- !private ["C17HafsaInspectorApp9HIManager", "supplierArray"]
 - !private ["C17HafsaInspectorApp9HIManager", "supplierValues"]
 - !private ["Ps8Hashable", "DispatchQueue"]
 - !private ["Ps8Hashable", "Double"]
@@ -565,7 +563,7 @@ depends-member:
 - !private ["Ps8Hashable", "remove"]
 - !private ["Ps8Hashable", "selectionStyle"]
 - ["Ps8Hashable", "sharedClient"]
-- !private ["Ps8Hashable", "supplierArray"]
+- !private ["Ps8Hashable", "subscript"]
 - ["Ps8Hashable", "supplierNameLabel"]
 - !private ["Ps8Hashable", "supplierValues"]
 - ["Ps8Hashable", "tField"]
@@ -627,7 +625,9 @@ depends-member:
 - !private ["Ps16MutableIndexable", "subscript"]
 - !private ["CSo7NSArray", "Iterator"]
 - !private ["CSo7NSArray", "add"]
+- ["CSo7NSArray", "deinit"]
 - !private ["CSo7NSArray", "remove"]
+- !private ["CSo7NSArray", "subscript"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "DispatchQueue"]
 - !private ["PSo8NSCoding", "Double"]
@@ -670,6 +670,7 @@ depends-member:
 - ["PSo8NSCoding", "previousPounds"]
 - !private ["PSo8NSCoding", "remove"]
 - !private ["PSo8NSCoding", "selectionStyle"]
+- !private ["PSo8NSCoding", "subscript"]
 - ["PSo8NSCoding", "supplierNameLabel"]
 - ["PSo8NSCoding", "tField"]
 - !private ["PSo8NSCoding", "text"]
@@ -691,6 +692,7 @@ depends-member:
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "isEmpty"]
 - !private ["PSo9NSCopying", "remove"]
+- !private ["PSo9NSCopying", "subscript"]
 - !private ["PSo9NSCopying", "white"]
 - !private ["CSo12NSDictionary", "Key"]
 - !private ["CSo12NSDictionary", "Value"]
@@ -706,6 +708,7 @@ depends-member:
 - !private ["PSo17NSFastEnumeration", "add"]
 - !private ["PSo17NSFastEnumeration", "allKeys"]
 - !private ["PSo17NSFastEnumeration", "remove"]
+- !private ["PSo17NSFastEnumeration", "subscript"]
 - !private ["C10Foundation25NSFastEnumerationIterator", "Element"]
 - !private ["CSo14NSMutableArray", "Iterator"]
 - !private ["CSo14NSMutableArray", "add"]
@@ -718,6 +721,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "isEmpty"]
 - !private ["PSo16NSMutableCopying", "remove"]
+- !private ["PSo16NSMutableCopying", "subscript"]
 - ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "DispatchQueue"]
 - ["CSo8NSObject", "Double"]
@@ -726,6 +730,7 @@ depends-member:
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "Iterator"]
 - !private ["CSo8NSObject", "Key"]
+- ["CSo8NSObject", "NSArray"]
 - !private ["CSo8NSObject", "NSDictionary"]
 - !private ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIAlertAction"]
@@ -769,7 +774,7 @@ depends-member:
 - !private ["CSo8NSObject", "remove"]
 - !private ["CSo8NSObject", "selectionStyle"]
 - ["CSo8NSObject", "sharedClient"]
-- !private ["CSo8NSObject", "supplierArray"]
+- !private ["CSo8NSObject", "subscript"]
 - ["CSo8NSObject", "supplierNameLabel"]
 - !private ["CSo8NSObject", "supplierValues"]
 - ["CSo8NSObject", "tField"]
@@ -823,7 +828,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "remove"]
 - !private ["PSo16NSObjectProtocol", "selectionStyle"]
 - ["PSo16NSObjectProtocol", "sharedClient"]
-- !private ["PSo16NSObjectProtocol", "supplierArray"]
+- !private ["PSo16NSObjectProtocol", "subscript"]
 - ["PSo16NSObjectProtocol", "supplierNameLabel"]
 - !private ["PSo16NSObjectProtocol", "supplierValues"]
 - ["PSo16NSObjectProtocol", "tField"]
@@ -846,6 +851,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "isEmpty"]
 - !private ["PSo14NSSecureCoding", "remove"]
+- !private ["PSo14NSSecureCoding", "subscript"]
 - !private ["PSo14NSSecureCoding", "white"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo8NSString", "isEmpty"]
@@ -957,6 +963,7 @@ depends-member:
 - ["C17HafsaInspectorApp21SupplierTableViewCell", "HIManager"]
 - !private ["C17HafsaInspectorApp21SupplierTableViewCell", "HImanager"]
 - ["C17HafsaInspectorApp21SupplierTableViewCell", "Int"]
+- ["C17HafsaInspectorApp21SupplierTableViewCell", "NSArray"]
 - !private ["C17HafsaInspectorApp21SupplierTableViewCell", "NSDictionary"]
 - !private ["C17HafsaInspectorApp21SupplierTableViewCell", "String"]
 - !private ["C17HafsaInspectorApp21SupplierTableViewCell", "UIAlertAction"]
@@ -1295,6 +1302,7 @@ depends-member:
 - ["CSo11UIResponder", "HIManager"]
 - ["CSo11UIResponder", "HImanager"]
 - ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "NSArray"]
 - !private ["CSo11UIResponder", "NSDictionary"]
 - !private ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIAlertAction"]
@@ -1375,6 +1383,7 @@ depends-member:
 - ["CSo15UITableViewCell", "HIManager"]
 - ["CSo15UITableViewCell", "HImanager"]
 - ["CSo15UITableViewCell", "Int"]
+- ["CSo15UITableViewCell", "NSArray"]
 - !private ["CSo15UITableViewCell", "NSDictionary"]
 - !private ["CSo15UITableViewCell", "String"]
 - !private ["CSo15UITableViewCell", "UIAlertAction"]
@@ -1454,6 +1463,7 @@ depends-member:
 - ["CSo6UIView", "HIManager"]
 - ["CSo6UIView", "HImanager"]
 - ["CSo6UIView", "Int"]
+- ["CSo6UIView", "NSArray"]
 - !private ["CSo6UIView", "NSDictionary"]
 - !private ["CSo6UIView", "String"]
 - !private ["CSo6UIView", "UIAlertAction"]
@@ -1619,7 +1629,7 @@ depends-member:
 - !private ["Ps9_Hashable", "remove"]
 - !private ["Ps9_Hashable", "selectionStyle"]
 - ["Ps9_Hashable", "sharedClient"]
-- !private ["Ps9_Hashable", "supplierArray"]
+- !private ["Ps9_Hashable", "subscript"]
 - ["Ps9_Hashable", "supplierNameLabel"]
 - !private ["Ps9_Hashable", "supplierValues"]
 - ["Ps9_Hashable", "tField"]
@@ -1719,7 +1729,7 @@ depends-nominal:
 - !private "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
 - !private "Ps16MutableIndexable"
-- !private "CSo7NSArray"
+- "CSo7NSArray"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
@@ -1843,6 +1853,8 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseMessaging/FirebaseMessaging/FIRMessaging.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseMessaging/FirebaseMessaging/FirebaseMessaging.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"
@@ -1875,4 +1887,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "a2f66575986814b8f7197865a98ba3bd"
+interface-hash: "515171003830468729e838c7724206eb"

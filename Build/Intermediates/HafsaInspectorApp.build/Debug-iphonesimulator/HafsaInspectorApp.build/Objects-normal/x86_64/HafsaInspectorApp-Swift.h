@@ -112,8 +112,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import CoreGraphics;
-@import ObjectiveC;
 @import Foundation;
+@import Firebase;
+@import UserNotifications;
+@import ObjectiveC;
 @import QuartzCore;
 @import AVFoundation;
 @import CoreMedia;
@@ -165,6 +167,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AnimationTransitionSubType, "AnimationTransi
 @class EstablishmentPickerViewController;
 @class FIRDatabaseReference;
 @class UIApplication;
+@class NSNotification;
 
 SWIFT_CLASS("_TtC17HafsaInspectorApp11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
@@ -179,8 +182,25 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp11AppDelegate")
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
+- (void)application:(UIApplication * _Nonnull)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData * _Nonnull)deviceToken;
+- (void)application:(UIApplication * _Nonnull)application didFailToRegisterForRemoteNotificationsWithError:(NSError * _Nonnull)error;
+- (void)tokenRefreshNotificationWithNotification:(NSNotification * _Nonnull)notification;
+- (void)connectToFcm;
 - (void)getData;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class FIRMessagingRemoteMessage;
+
+@interface AppDelegate (SWIFT_EXTENSION(HafsaInspectorApp)) <FIRMessagingDelegate>
+- (void)applicationReceivedRemoteMessage:(FIRMessagingRemoteMessage * _Nonnull)remoteMessage;
+@end
+
+@class UNUserNotificationCenter;
+@class UNNotification;
+
+@interface AppDelegate (SWIFT_EXTENSION(HafsaInspectorApp)) <UNUserNotificationCenterDelegate>
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
 @end
 
 @class CAShapeLayer;
@@ -2377,11 +2397,13 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp10FlatButton")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSArray;
 @class UITextView;
 @class UITableView;
 
 SWIFT_CLASS("_TtC17HafsaInspectorApp23FormTableViewController")
 @interface FormTableViewController : UITableViewController <UITextViewDelegate>
+@property (nonatomic, strong) NSArray * _Nonnull supplierData;
 + (FormTableViewController * _Nonnull)create;
 - (void)viewDidLoad;
 - (void)backButtonPressed;
@@ -2393,6 +2415,7 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp23FormTableViewController")
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)generatePDF;
+- (void)setupSuppliers;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -2427,7 +2450,6 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp9HIManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSArray;
 
 SWIFT_CLASS("_TtC17HafsaInspectorApp11HITextField")
 @interface HITextField : TextField <UIPickerViewDelegate, UIPickerViewDataSource>
@@ -4665,6 +4687,32 @@ SWIFT_CLASS_NAMED("Reminders")
 @end
 
 @class EKCalendar;
+
+@interface Reminders (SWIFT_EXTENSION(HafsaInspectorApp))
+/**
+  A method for creating new Reminder lists
+  \param list title the name of the list
+
+  \param completion optional completion call back
+
+*/
+- (void)createWithList:(NSString * _Nonnull)title completion:(void (^ _Nullable)(BOOL, NSError * _Nullable))completion;
+/**
+  A method for deleting existing Reminder lists
+  \param list identifier the name of the list
+
+  \param completion optional completion call back
+
+*/
+- (void)deleteWithList:(NSString * _Nonnull)identifier completion:(void (^ _Nullable)(BOOL, NSError * _Nullable))completion;
+/**
+  A method for retrieving reminder lists
+  \param completion completion call back
+
+*/
+- (void)fetchListsWithCompletion:(void (^ _Nonnull)(NSArray<EKCalendar *> * _Nonnull))completion;
+@end
+
 @class EKReminder;
 
 @interface Reminders (SWIFT_EXTENSION(HafsaInspectorApp))
@@ -4691,32 +4739,6 @@ SWIFT_CLASS_NAMED("Reminders")
 
 */
 - (void)deleteWithReminder:(EKReminder * _Nonnull)reminder completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-@end
-
-
-@interface Reminders (SWIFT_EXTENSION(HafsaInspectorApp))
-/**
-  A method for creating new Reminder lists
-  \param list title the name of the list
-
-  \param completion optional completion call back
-
-*/
-- (void)createWithList:(NSString * _Nonnull)title completion:(void (^ _Nullable)(BOOL, NSError * _Nullable))completion;
-/**
-  A method for deleting existing Reminder lists
-  \param list identifier the name of the list
-
-  \param completion optional completion call back
-
-*/
-- (void)deleteWithList:(NSString * _Nonnull)identifier completion:(void (^ _Nullable)(BOOL, NSError * _Nullable))completion;
-/**
-  A method for retrieving reminder lists
-  \param completion completion call back
-
-*/
-- (void)fetchListsWithCompletion:(void (^ _Nonnull)(NSArray<EKCalendar *> * _Nonnull))completion;
 @end
 
 typedef SWIFT_ENUM_NAMED(NSInteger, RemindersAuthorizationStatus, "RemindersAuthorizationStatus") {
@@ -5091,7 +5113,7 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp21SupplierTableViewCell")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified addPoundsButton;
 @property (nonatomic) double previousPounds;
 @property (nonatomic, strong) UITextField * _Null_unspecified tField;
-- (void)configureSupplierCell:(NSInteger)index;
+- (void)configureSupplierCell:(NSInteger)index data:(NSArray * _Nonnull)data;
 - (void)updatePounds:(double)pounds;
 - (IBAction)addPoundsPressed:(id _Nonnull)sender;
 - (void)configurationTextField:(UITextField * _Null_unspecified)textField;
@@ -5792,6 +5814,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
 
 @interface UIImage (SWIFT_EXTENSION(HafsaInspectorApp))
 /**
+  Adjusts the orientation of the image from the capture orientation.
+  This is an issue when taking images, the capture orientation is not set correctly
+  when using Portrait.
+
+  returns:
+  An optional UIImage if successful.
+*/
+- (UIImage * _Nullable)adjustOrientation;
+@end
+
+
+@interface UIImage (SWIFT_EXTENSION(HafsaInspectorApp))
+/**
   Asynchronously load images with a completion block.
   \param URL A URL destination to fetch the image from.
 
@@ -5800,17 +5835,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
 
 */
 + (void)contentsOfURLWithUrl:(NSURL * _Nonnull)url completion:(void (^ _Nonnull)(UIImage * _Nullable, NSError * _Nullable))completion;
-@end
-
-
-@interface UIImage (SWIFT_EXTENSION(HafsaInspectorApp))
-/**
-  Creates an clear image.
-
-  returns:
-  A UIImage that is clear.
-*/
-+ (UIImage * _Nullable)clearWithSize:(CGSize)size;
 @end
 
 
@@ -5859,14 +5883,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
 
 @interface UIImage (SWIFT_EXTENSION(HafsaInspectorApp))
 /**
-  Adjusts the orientation of the image from the capture orientation.
-  This is an issue when taking images, the capture orientation is not set correctly
-  when using Portrait.
+  Creates an clear image.
 
   returns:
-  An optional UIImage if successful.
+  A UIImage that is clear.
 */
-- (UIImage * _Nullable)adjustOrientation;
++ (UIImage * _Nullable)clearWithSize:(CGSize)size;
 @end
 
 
@@ -6111,31 +6133,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
 
 @interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
 /**
-  A convenience property that provides access to the PageTabBarController.
-  This is the recommended method of accessing the PageTabBarController
+  A convenience property that provides access to the NavigationDrawerController.
+  This is the recommended method of accessing the NavigationDrawerController
   through child UIViewControllers.
 */
-@property (nonatomic, readonly, strong) PageTabBarController * _Nullable pageTabBarController;
-@end
-
-
-@interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
-/**
-  A convenience property that provides access to the MenuController.
-  This is the recommended method of accessing the MenuController
-  through child UIViewControllers.
-*/
-@property (nonatomic, readonly, strong) MenuController * _Nullable menuController;
-@end
-
-
-@interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
-/**
-  A convenience property that provides access to the SearchBarController.
-  This is the recommended method of accessing the SearchBarController
-  through child UIViewControllers.
-*/
-@property (nonatomic, readonly, strong) SearchBarController * _Nullable searchBarController;
+@property (nonatomic, readonly, strong) NavigationDrawerController * _Nullable navigationDrawerController;
 @end
 
 
@@ -6151,11 +6153,21 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
 
 @interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
 /**
-  A convenience property that provides access to the NavigationDrawerController.
-  This is the recommended method of accessing the NavigationDrawerController
+  A convenience property that provides access to the PageTabBarController.
+  This is the recommended method of accessing the PageTabBarController
   through child UIViewControllers.
 */
-@property (nonatomic, readonly, strong) NavigationDrawerController * _Nullable navigationDrawerController;
+@property (nonatomic, readonly, strong) PageTabBarController * _Nullable pageTabBarController;
+@end
+
+
+@interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
+/**
+  A convenience property that provides access to the SearchBarController.
+  This is the recommended method of accessing the SearchBarController
+  through child UIViewControllers.
+*/
+@property (nonatomic, readonly, strong) SearchBarController * _Nullable searchBarController;
 @end
 
 
@@ -6166,6 +6178,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
   through child UIViewControllers.
 */
 @property (nonatomic, readonly, strong) SnackbarController * _Nullable snackbarController;
+@end
+
+
+@interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
+/**
+  A convenience property that provides access to the MenuController.
+  This is the recommended method of accessing the MenuController
+  through child UIViewControllers.
+*/
+@property (nonatomic, readonly, strong) MenuController * _Nullable menuController;
 @end
 
 

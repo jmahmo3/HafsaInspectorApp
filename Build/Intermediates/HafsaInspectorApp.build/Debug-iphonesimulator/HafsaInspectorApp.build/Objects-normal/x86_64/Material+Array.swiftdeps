@@ -6,21 +6,21 @@ provides-member:
 - ["Sa", "slice"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UnicodeScalarType"
-- !private ">="
-- !private "+"
-- !private ">"
-- !private "<"
-- !private "-="
-- "AssignmentPrecedence"
-- !private "-"
-- !private "fatalError"
-- "Equatable"
-- !private "StringLiteralType"
-- !private "??"
 - "Array"
+- !private ">"
+- !private "-="
+- "Equatable"
+- !private "??"
+- !private "StringLiteralType"
+- !private "UnicodeScalarType"
+- !private "<"
 - "Int"
+- !private "-"
+- !private "+"
 - !private "abs"
+- !private "fatalError"
+- "AssignmentPrecedence"
+- !private ">="
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Sa", "Element"]
@@ -587,6 +587,8 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseMessaging/FirebaseMessaging/FIRMessaging.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseMessaging/FirebaseMessaging/FirebaseMessaging.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"

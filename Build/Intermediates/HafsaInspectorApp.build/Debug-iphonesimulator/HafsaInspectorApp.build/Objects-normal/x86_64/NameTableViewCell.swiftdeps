@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp17NameTableViewCell", ""]
 provides-dynamic-lookup:
-- "chapterLabel"
 - "nameLabel"
 - "datelabel"
-- "configureNameCell"
 - "establishmentLabel"
+- "configureNameCell"
+- "chapterLabel"
 depends-top-level:
-- !private "UITableViewCellSelectionStyle"
-- "AssignmentPrecedence"
 - !private "UIColor"
-- "HIManager"
-- "UITableViewCell"
-- !private "UIFont"
-- "UILabel"
 - !private "StringLiteralType"
+- "UITableViewCell"
+- "UILabel"
+- "HIManager"
 - "NameTableViewCell"
+- !private "UITableViewCellSelectionStyle"
+- !private "UIFont"
+- "AssignmentPrecedence"
 depends-member:
 - ["Ps9AnyObject", "HIManager"]
 - ["Ps9AnyObject", "HImanager"]
@@ -693,6 +693,8 @@ depends-external:
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseMessaging/FirebaseMessaging/FIRMessaging.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseMessaging/FirebaseMessaging/FirebaseMessaging.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"
