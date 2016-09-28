@@ -11,7 +11,6 @@ import PDFGenerator
 import Firebase
 class FormTableViewController: UITableViewController, UITextViewDelegate {
     
-    
     fileprivate let HImanager = HIManager.sharedClient()
 
     static func create() -> FormTableViewController {
@@ -26,12 +25,6 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
         self.view.backgroundColor = UIColor.HIBackground
         self.setNavBarWithBackButton()
         self.hideKeyboardWhenTappedAround()
-        
-        
-        
-        
-        
-        
     }
 
     override func backButtonPressed() {
@@ -44,14 +37,11 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
     }
     
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return HImanager.supplierArray.count + 3
     }
 
@@ -152,9 +142,10 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
             pages.append(page)
         }
         
-        let trimmedChapter = HImanager.currentChapter.trimmingCharacters(in: .whitespaces)
-        let trimmedEstablishment = HImanager.currentEstablishment.trimmingCharacters(in: .whitespaces)
-        let pdfname = "\(trimmedChapter)_\(trimmedEstablishment)_\(HImanager.userName).pdf"
+        let trimmedChapter = (HIManager().currentChapter as NSString).replacingOccurrences(of: " ", with: "_")
+        let trimmedEstablishment = (HIManager().currentEstablishment as NSString).replacingOccurrences(of: " ", with: "_").replacingOccurrences(of: ".", with: "_")
+        let trimmedUserName = (HIManager().userName as NSString).replacingOccurrences(of: " ", with: "_")
+        let pdfname = "\(trimmedChapter)_\(trimmedEstablishment)_\(trimmedUserName).pdf"
         
         let dst = URL(fileURLWithPath: NSTemporaryDirectory().appending(pdfname))
         // outputs as Data
@@ -171,15 +162,23 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
         let storageRef = storage.reference()
 
         // Create a reference to the file you want to upload
-        let riversRef = storageRef.child("\(HImanager.currentChapter)/\(pdfname)")
+        let pdfRef = storageRef.child("\(HImanager.currentChapter)/\(pdfname)")
         
-        let uploadTask = riversRef.putFile(dst, metadata: nil) { metadata, error in
+        let uploadTask = pdfRef.putFile(dst, metadata: nil) { metadata, error in
             if (error != nil) {
                 // Uh-oh, an error occurred!
             } else {
+                let date = Date()
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "MM-dd-yyyy_hh_mm_ss"
+                let dateString: NSString = dateFormatter.string(from: date) as NSString
+        
+                let dict: NSDictionary = [dateString:(metadata!.name)!]
+                let ref: FIRDatabaseReference =  FIRDatabase.database().reference()
+                ref.child("metadata").child(self.HImanager.currentChapter).childByAutoId().setValue(dict, withCompletionBlock: { (error, databaseref) in
+                
+                })
                 print(metadata?.path)
-                // Metadata contains file metadata such as size, content-type, and download URL.
-//                let downloadURL = metadata!.downloadURL
             }
         }
         uploadTask.resume()

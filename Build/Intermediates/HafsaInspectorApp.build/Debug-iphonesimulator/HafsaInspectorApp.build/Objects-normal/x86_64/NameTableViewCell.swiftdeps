@@ -7,19 +7,19 @@ provides-member:
 - ["C17HafsaInspectorApp17NameTableViewCell", ""]
 provides-dynamic-lookup:
 - "chapterLabel"
-- "configureNameCell"
-- "datelabel"
-- "establishmentLabel"
 - "nameLabel"
+- "datelabel"
+- "configureNameCell"
+- "establishmentLabel"
 depends-top-level:
-- "UITableViewCell"
 - !private "UITableViewCellSelectionStyle"
-- !private "UIFont"
 - "AssignmentPrecedence"
-- "HIManager"
 - !private "UIColor"
-- !private "StringLiteralType"
+- "HIManager"
+- "UITableViewCell"
+- !private "UIFont"
 - "UILabel"
+- !private "StringLiteralType"
 - "NameTableViewCell"
 depends-member:
 - ["Ps9AnyObject", "HIManager"]
@@ -173,6 +173,7 @@ depends-member:
 - !private ["C17HafsaInspectorApp9HIManager", "currentDate"]
 - !private ["C17HafsaInspectorApp9HIManager", "currentEstablishment"]
 - ["C17HafsaInspectorApp9HIManager", "deinit"]
+- !private ["C17HafsaInspectorApp9HIManager", "init"]
 - ["C17HafsaInspectorApp9HIManager", "sharedClient"]
 - !private ["C17HafsaInspectorApp9HIManager", "userName"]
 - ["Ps8Hashable", "HIManager"]

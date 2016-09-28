@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EstablishmentPickerViewController: UIViewController, UITextFieldDelegate, ChapterPickerDelegate {
+class EstablishmentPickerViewController: UIViewController, UITextFieldDelegate, ChapterPickerDelegate, settingsDelegate {
     
     fileprivate let HImanager = HIManager.sharedClient()
 
@@ -71,6 +71,8 @@ class EstablishmentPickerViewController: UIViewController, UITextFieldDelegate, 
         else {
             //set establishment
             HImanager.currentEstablishment = establishmentTextField.text!
+            UserDefaults.standard.setValue(establishmentTextField.text!, forKey: "currentEstablishment")
+
             //segue
             let vc = FormTableViewController.create()
             self.navigationController?.pushViewController(vc, animated: true)
@@ -78,17 +80,19 @@ class EstablishmentPickerViewController: UIViewController, UITextFieldDelegate, 
     }
     
     func settingsButtonPressed() {
-//        let vc = ChapterPickerViewController.create()
-//        vc.delegate = self
-//        self.navigationController?.pushViewController(vc, animated: true)
-        let vc = SettingsViewController.create(false)
-//        vc.delegate = self
+        let vc = SettingsViewController.create(.Settings)
+        vc.delegate = self
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     //MARK: ChapterPickerDelegate
+    
+    func backBeingPressed() {
+        self.didChangeChapter()
+    }
+    
     func didChangeChapter() {
-        nameLabel.text = HImanager.userName
+        nameLabel.text = HIManager().userName
         establishmentLabel.text = HImanager.currentChapter
         establishmentTextField.text = ""
         establishmentTextField.setupEstablishmentPicker()

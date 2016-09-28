@@ -7,10 +7,10 @@ provides-member:
 - ["O17HafsaInspectorApp11ShapePreset", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Int"
-- !private "~="
-- "=="
 - "ShapePreset"
+- !private "~="
+- "Int"
+- "=="
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

@@ -8,24 +8,24 @@ provides-member:
 - ["C17HafsaInspectorApp4JSON", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Data"
+- "Float"
+- !private "Array"
+- "String"
+- "JSONSerialization"
+- !private "StringLiteralType"
 - "Double"
 - !private "??"
-- "JSONSerialization"
-- "Int"
-- !private "Array"
-- "Float"
-- !private "!="
 - "Equatable"
+- !private "NSString"
+- "CustomStringConvertible"
+- "Int"
 - "CastingPrecedence"
 - "AssignmentPrecedence"
-- "CustomStringConvertible"
 - "=="
-- !private "NSString"
-- "JSON"
-- !private "StringLiteralType"
+- "Data"
+- !private "!="
 - "Bool"
-- "String"
+- "JSON"
 depends-member:
 - !private ["Ps9AnyObject", "Encoding"]
 - !private ["Ps9AnyObject", "JSON"]

@@ -8,8 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "CollectionViewDataSource"
-- "CollectionDataSourceItem"
 - "UICollectionViewDataSource"
+- "CollectionDataSourceItem"
 depends-member:
 - ["P17HafsaInspectorApp24CollectionViewDataSource", "CollectionDataSourceItem"]
 - ["P17HafsaInspectorApp24CollectionViewDataSource", "items"]

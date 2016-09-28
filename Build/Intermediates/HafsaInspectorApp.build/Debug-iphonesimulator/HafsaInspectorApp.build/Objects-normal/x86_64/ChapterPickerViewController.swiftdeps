@@ -9,45 +9,45 @@ provides-member:
 - ["P17HafsaInspectorApp21ChapterPickerDelegate", ""]
 - ["C17HafsaInspectorApp27ChapterPickerViewController", ""]
 provides-dynamic-lookup:
+- "textFieldShouldReturn"
+- "didGetChapterData"
 - "backButtonPressed"
 - "chapterTextField"
-- "textFieldShouldReturn"
-- "picker"
-- "viewDidLoad"
 - "chapterData"
-- "textFieldDidBeginEditing"
+- "picker"
 - "saveData"
-- "setupView"
-- "chapterLabel"
-- "nextButtonPressed"
-- "didGetChapterData"
-- "create"
 - "nextButton"
+- "create"
+- "nextButtonPressed"
+- "setupView"
+- "textFieldDidBeginEditing"
+- "chapterLabel"
+- "viewDidLoad"
 depends-top-level:
-- "HITextField"
-- "String"
-- !private "&&"
-- "UIButton"
-- !private "UIStoryboard"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
-- !private "!"
 - "ChapterPickerViewController"
-- "UIViewController"
-- "Bool"
-- !private "UIColor"
-- !private "UserDefaults"
-- "UITextFieldDelegate"
-- "ChapterPickerDelegate"
 - !private "StringLiteralType"
-- "AnyObject"
-- !private "Bundle"
-- "UITextField"
-- !private "UIFont"
+- "HITextField"
+- "Bool"
+- "UIButton"
+- !private "&&"
 - !private "BooleanLiteralType"
-- "UIPickerView"
-- "UILabel"
+- "UIViewController"
+- !private "!"
+- !private "UIStoryboard"
+- "String"
+- !private "UIColor"
+- "AnyObject"
+- !private "UserDefaults"
+- !private "Bundle"
 - "HIManager"
+- !private "UIFont"
+- "UITextField"
+- "ChapterPickerDelegate"
+- "UIPickerView"
+- "UITextFieldDelegate"
+- "UILabel"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "Bundle"]
 - !private ["Ps9AnyObject", "HIBackground"]
@@ -483,6 +483,7 @@ depends-member:
 - !private ["Sf", "deinit"]
 - !private ["C17HafsaInspectorApp9HIManager", "currentChapter"]
 - ["C17HafsaInspectorApp9HIManager", "deinit"]
+- !private ["C17HafsaInspectorApp9HIManager", "init"]
 - ["C17HafsaInspectorApp9HIManager", "sharedClient"]
 - !private ["C17HafsaInspectorApp9HIManager", "userName"]
 - !private ["C17HafsaInspectorApp11HITextField", "deinit"]
@@ -1265,7 +1266,6 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "chapterLabel"]
 - !private ["PSo19UITextFieldDelegate", "chapterTextField"]
 - !private ["PSo19UITextFieldDelegate", "createAlert"]
-- !private ["PSo19UITextFieldDelegate", "delegate"]
 - !private ["PSo19UITextFieldDelegate", "hideKeyboardWhenTappedAround"]
 - !private ["PSo19UITextFieldDelegate", "isOnScreen"]
 - !private ["PSo19UITextFieldDelegate", "navigationController"]

@@ -8,12 +8,12 @@ provides-member:
 - ["O17HafsaInspectorApp18CornerRadiusPreset", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "CGFloat"
 - "Int"
+- "CGFloat"
+- "CornerRadiusPresetToValue"
 - "CornerRadiusPreset"
 - !private "~="
 - "=="
-- "CornerRadiusPresetToValue"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

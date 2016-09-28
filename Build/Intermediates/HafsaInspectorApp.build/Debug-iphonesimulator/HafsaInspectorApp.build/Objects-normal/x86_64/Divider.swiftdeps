@@ -12,15 +12,15 @@ provides-dynamic-lookup:
 depends-top-level:
 - "UIView"
 - !private "CGRect"
+- !private "-"
+- "Divider"
+- "UIColor"
 - "Int"
 - "CGFloat"
-- !private "-"
-- !private "~="
 - "DividerAlignment"
-- "UIColor"
+- !private "~="
 - "=="
 - "AssignmentPrecedence"
-- "Divider"
 depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - ["Ps9AnyObject", "DividerAlignment"]

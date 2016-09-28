@@ -6,44 +6,51 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp9HIManager", ""]
 provides-dynamic-lookup:
-- "supplierArray"
-- "establishmentArray"
-- "currentEstablishment"
-- "password"
-- "currentDate"
-- "comments"
-- "images"
-- "supplierValues"
-- "sharedClient"
 - "userName"
 - "currentChapter"
-- "chapterArray"
+- "chapters"
+- "currentDate"
+- "sharedClient"
+- "password"
 - "data"
+- "establishmentArray"
+- "comments"
+- "images"
+- "chapterArray"
+- "supplierValues"
+- "chaptersData"
+- "supplierArray"
+- "currentEstablishment"
 depends-top-level:
-- "AssignmentPrecedence"
-- "NSMutableArray"
-- "NSObject"
-- "DateFormatter"
-- "Date"
-- "String"
-- "StringLiteralType"
-- "!="
-- "HIManager"
-- "Array"
+- "Dictionary"
 - "UserDefaults"
+- "AssignmentPrecedence"
+- "HIManager"
+- "NSObject"
+- "Date"
+- "NSDictionary"
+- "String"
+- "!="
+- "NSMutableArray"
+- "DateFormatter"
+- "StringLiteralType"
+- "Array"
 depends-member:
 - ["Ps9AnyObject", "Date"]
 - ["Ps9AnyObject", "DateFormatter"]
 - ["Ps9AnyObject", "Element"]
 - ["Ps9AnyObject", "HIManager"]
+- ["Ps9AnyObject", "Key"]
 - ["Ps9AnyObject", "UserDefaults"]
+- ["Ps9AnyObject", "Value"]
 - ["Ps9AnyObject", "chapterArray"]
+- ["Ps9AnyObject", "chapters"]
+- ["Ps9AnyObject", "chaptersData"]
 - ["Ps9AnyObject", "comments"]
 - ["Ps9AnyObject", "comments.storage"]
 - ["Ps9AnyObject", "currentChapter"]
 - ["Ps9AnyObject", "currentDate"]
 - ["Ps9AnyObject", "currentEstablishment"]
-- ["Ps9AnyObject", "currentEstablishment.storage"]
 - ["Ps9AnyObject", "data"]
 - ["Ps9AnyObject", "dateFormat"]
 - ["Ps9AnyObject", "establishmentArray"]
@@ -68,14 +75,17 @@ depends-member:
 - ["Ps7CVarArg", "DateFormatter"]
 - ["Ps7CVarArg", "Element"]
 - ["Ps7CVarArg", "HIManager"]
+- ["Ps7CVarArg", "Key"]
 - ["Ps7CVarArg", "UserDefaults"]
+- ["Ps7CVarArg", "Value"]
 - ["Ps7CVarArg", "chapterArray"]
+- ["Ps7CVarArg", "chapters"]
+- ["Ps7CVarArg", "chaptersData"]
 - ["Ps7CVarArg", "comments"]
 - ["Ps7CVarArg", "comments.storage"]
 - ["Ps7CVarArg", "currentChapter"]
 - ["Ps7CVarArg", "currentDate"]
 - ["Ps7CVarArg", "currentEstablishment"]
-- ["Ps7CVarArg", "currentEstablishment.storage"]
 - ["Ps7CVarArg", "data"]
 - ["Ps7CVarArg", "dateFormat"]
 - ["Ps7CVarArg", "establishmentArray"]
@@ -96,14 +106,17 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "DateFormatter"]
 - ["Ps28CustomDebugStringConvertible", "Element"]
 - ["Ps28CustomDebugStringConvertible", "HIManager"]
+- ["Ps28CustomDebugStringConvertible", "Key"]
 - ["Ps28CustomDebugStringConvertible", "UserDefaults"]
+- ["Ps28CustomDebugStringConvertible", "Value"]
 - ["Ps28CustomDebugStringConvertible", "chapterArray"]
+- ["Ps28CustomDebugStringConvertible", "chapters"]
+- ["Ps28CustomDebugStringConvertible", "chaptersData"]
 - ["Ps28CustomDebugStringConvertible", "comments"]
 - ["Ps28CustomDebugStringConvertible", "comments.storage"]
 - ["Ps28CustomDebugStringConvertible", "currentChapter"]
 - ["Ps28CustomDebugStringConvertible", "currentDate"]
 - ["Ps28CustomDebugStringConvertible", "currentEstablishment"]
-- ["Ps28CustomDebugStringConvertible", "currentEstablishment.storage"]
 - ["Ps28CustomDebugStringConvertible", "data"]
 - ["Ps28CustomDebugStringConvertible", "dateFormat"]
 - ["Ps28CustomDebugStringConvertible", "establishmentArray"]
@@ -121,21 +134,26 @@ depends-member:
 - ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
 - ["Ps17CustomReflectable", "Element"]
+- ["Ps17CustomReflectable", "Key"]
+- ["Ps17CustomReflectable", "Value"]
 - ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - ["Ps17CustomReflectable", "init"]
 - ["Ps23CustomStringConvertible", "Date"]
 - ["Ps23CustomStringConvertible", "DateFormatter"]
 - ["Ps23CustomStringConvertible", "Element"]
 - ["Ps23CustomStringConvertible", "HIManager"]
+- ["Ps23CustomStringConvertible", "Key"]
 - ["Ps23CustomStringConvertible", "UserDefaults"]
+- ["Ps23CustomStringConvertible", "Value"]
 - ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps23CustomStringConvertible", "chapterArray"]
+- ["Ps23CustomStringConvertible", "chapters"]
+- ["Ps23CustomStringConvertible", "chaptersData"]
 - ["Ps23CustomStringConvertible", "comments"]
 - ["Ps23CustomStringConvertible", "comments.storage"]
 - ["Ps23CustomStringConvertible", "currentChapter"]
 - ["Ps23CustomStringConvertible", "currentDate"]
 - ["Ps23CustomStringConvertible", "currentEstablishment"]
-- ["Ps23CustomStringConvertible", "currentEstablishment.storage"]
 - ["Ps23CustomStringConvertible", "data"]
 - ["Ps23CustomStringConvertible", "dateFormat"]
 - ["Ps23CustomStringConvertible", "establishmentArray"]
@@ -160,15 +178,18 @@ depends-member:
 - ["Ps9Equatable", "DateFormatter"]
 - ["Ps9Equatable", "Element"]
 - ["Ps9Equatable", "HIManager"]
+- ["Ps9Equatable", "Key"]
 - ["Ps9Equatable", "UserDefaults"]
+- ["Ps9Equatable", "Value"]
 - ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "chapterArray"]
+- ["Ps9Equatable", "chapters"]
+- ["Ps9Equatable", "chaptersData"]
 - ["Ps9Equatable", "comments"]
 - ["Ps9Equatable", "comments.storage"]
 - ["Ps9Equatable", "currentChapter"]
 - ["Ps9Equatable", "currentDate"]
 - ["Ps9Equatable", "currentEstablishment"]
-- ["Ps9Equatable", "currentEstablishment.storage"]
 - ["Ps9Equatable", "data"]
 - ["Ps9Equatable", "dateFormat"]
 - ["Ps9Equatable", "establishmentArray"]
@@ -185,6 +206,8 @@ depends-member:
 - ["Ps9Equatable", ""]
 - ["Ps25ExpressibleByArrayLiteral", "Element"]
 - ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps30ExpressibleByDictionaryLiteral", "Key"]
+- ["Ps30ExpressibleByDictionaryLiteral", "Value"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
@@ -196,16 +219,18 @@ depends-member:
 - ["C17HafsaInspectorApp9HIManager", "Date"]
 - ["C17HafsaInspectorApp9HIManager", "DateFormatter"]
 - ["C17HafsaInspectorApp9HIManager", "HIManager"]
+- ["C17HafsaInspectorApp9HIManager", "NSDictionary"]
 - ["C17HafsaInspectorApp9HIManager", "NSMutableArray"]
 - ["C17HafsaInspectorApp9HIManager", "String"]
 - ["C17HafsaInspectorApp9HIManager", "UserDefaults"]
 - ["C17HafsaInspectorApp9HIManager", "chapterArray"]
+- ["C17HafsaInspectorApp9HIManager", "chapters"]
+- ["C17HafsaInspectorApp9HIManager", "chaptersData"]
 - ["C17HafsaInspectorApp9HIManager", "comments"]
 - !private ["C17HafsaInspectorApp9HIManager", "comments.storage"]
 - ["C17HafsaInspectorApp9HIManager", "currentChapter"]
 - ["C17HafsaInspectorApp9HIManager", "currentDate"]
 - ["C17HafsaInspectorApp9HIManager", "currentEstablishment"]
-- !private ["C17HafsaInspectorApp9HIManager", "currentEstablishment.storage"]
 - ["C17HafsaInspectorApp9HIManager", "data"]
 - ["C17HafsaInspectorApp9HIManager", "deinit"]
 - ["C17HafsaInspectorApp9HIManager", "establishmentArray"]
@@ -221,15 +246,18 @@ depends-member:
 - ["Ps8Hashable", "DateFormatter"]
 - ["Ps8Hashable", "Element"]
 - ["Ps8Hashable", "HIManager"]
+- ["Ps8Hashable", "Key"]
 - ["Ps8Hashable", "UserDefaults"]
+- ["Ps8Hashable", "Value"]
 - ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "chapterArray"]
+- ["Ps8Hashable", "chapters"]
+- ["Ps8Hashable", "chaptersData"]
 - ["Ps8Hashable", "comments"]
 - ["Ps8Hashable", "comments.storage"]
 - ["Ps8Hashable", "currentChapter"]
 - ["Ps8Hashable", "currentDate"]
 - ["Ps8Hashable", "currentEstablishment"]
-- ["Ps8Hashable", "currentEstablishment.storage"]
 - ["Ps8Hashable", "data"]
 - ["Ps8Hashable", "dateFormat"]
 - ["Ps8Hashable", "establishmentArray"]
@@ -254,32 +282,47 @@ depends-member:
 - ["Ps16MutableIndexable", "Element"]
 - ["CSo7NSArray", "Element"]
 - ["PSo8NSCoding", "Element"]
+- ["PSo8NSCoding", "Key"]
+- ["PSo8NSCoding", "Value"]
 - ["PSo8NSCoding", "dateFormat"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "string"]
 - ["PSo9NSCopying", "Element"]
+- ["PSo9NSCopying", "Key"]
+- ["PSo9NSCopying", "Value"]
 - ["PSo9NSCopying", "dateFormat"]
 - ["PSo9NSCopying", "init"]
 - ["PSo9NSCopying", "string"]
+- ["CSo12NSDictionary", "Key"]
+- ["CSo12NSDictionary", "Value"]
+- ["CSo12NSDictionary", "deinit"]
 - ["PSo17NSFastEnumeration", "Element"]
+- ["PSo17NSFastEnumeration", "Key"]
+- ["PSo17NSFastEnumeration", "Value"]
 - ["CSo14NSMutableArray", "Element"]
 - ["CSo14NSMutableArray", "deinit"]
 - ["PSo16NSMutableCopying", "Element"]
+- ["PSo16NSMutableCopying", "Key"]
+- ["PSo16NSMutableCopying", "Value"]
 - ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Date"]
 - ["CSo8NSObject", "DateFormatter"]
 - ["CSo8NSObject", "Element"]
 - ["CSo8NSObject", "HIManager"]
+- ["CSo8NSObject", "Key"]
+- ["CSo8NSObject", "NSDictionary"]
 - ["CSo8NSObject", "NSMutableArray"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UserDefaults"]
+- ["CSo8NSObject", "Value"]
 - ["CSo8NSObject", "chapterArray"]
+- ["CSo8NSObject", "chapters"]
+- ["CSo8NSObject", "chaptersData"]
 - ["CSo8NSObject", "comments"]
 - ["CSo8NSObject", "comments.storage"]
 - ["CSo8NSObject", "currentChapter"]
 - ["CSo8NSObject", "currentDate"]
 - ["CSo8NSObject", "currentEstablishment"]
-- ["CSo8NSObject", "currentEstablishment.storage"]
 - ["CSo8NSObject", "data"]
 - ["CSo8NSObject", "dateFormat"]
 - ["CSo8NSObject", "deinit"]
@@ -299,14 +342,17 @@ depends-member:
 - ["PSo16NSObjectProtocol", "DateFormatter"]
 - ["PSo16NSObjectProtocol", "Element"]
 - ["PSo16NSObjectProtocol", "HIManager"]
+- ["PSo16NSObjectProtocol", "Key"]
 - ["PSo16NSObjectProtocol", "UserDefaults"]
+- ["PSo16NSObjectProtocol", "Value"]
 - ["PSo16NSObjectProtocol", "chapterArray"]
+- ["PSo16NSObjectProtocol", "chapters"]
+- ["PSo16NSObjectProtocol", "chaptersData"]
 - ["PSo16NSObjectProtocol", "comments"]
 - ["PSo16NSObjectProtocol", "comments.storage"]
 - ["PSo16NSObjectProtocol", "currentChapter"]
 - ["PSo16NSObjectProtocol", "currentDate"]
 - ["PSo16NSObjectProtocol", "currentEstablishment"]
-- ["PSo16NSObjectProtocol", "currentEstablishment.storage"]
 - ["PSo16NSObjectProtocol", "data"]
 - ["PSo16NSObjectProtocol", "dateFormat"]
 - ["PSo16NSObjectProtocol", "establishmentArray"]
@@ -322,6 +368,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "userName"]
 - ["PSo16NSObjectProtocol", ""]
 - ["PSo14NSSecureCoding", "Element"]
+- ["PSo14NSSecureCoding", "Key"]
+- ["PSo14NSSecureCoding", "Value"]
 - ["PSo14NSSecureCoding", "init"]
 - ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
@@ -331,6 +379,8 @@ depends-member:
 - ["Ps25RangeReplaceableIndexable", "Element"]
 - ["P10Foundation20ReferenceConvertible", "init"]
 - ["Ps8Sequence", "Element"]
+- ["Ps8Sequence", "Key"]
+- ["Ps8Sequence", "Value"]
 - ["SS", "deinit"]
 - ["SS", "init"]
 - ["Ps16TextOutputStream", "init"]
@@ -351,15 +401,18 @@ depends-member:
 - ["Ps9_Hashable", "DateFormatter"]
 - ["Ps9_Hashable", "Element"]
 - ["Ps9_Hashable", "HIManager"]
+- ["Ps9_Hashable", "Key"]
 - ["Ps9_Hashable", "UserDefaults"]
+- ["Ps9_Hashable", "Value"]
 - ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "chapterArray"]
+- ["Ps9_Hashable", "chapters"]
+- ["Ps9_Hashable", "chaptersData"]
 - ["Ps9_Hashable", "comments"]
 - ["Ps9_Hashable", "comments.storage"]
 - ["Ps9_Hashable", "currentChapter"]
 - ["Ps9_Hashable", "currentDate"]
 - ["Ps9_Hashable", "currentEstablishment"]
-- ["Ps9_Hashable", "currentEstablishment.storage"]
 - ["Ps9_Hashable", "data"]
 - ["Ps9_Hashable", "dateFormat"]
 - ["Ps9_Hashable", "establishmentArray"]
@@ -396,6 +449,7 @@ depends-nominal:
 - "Ps9Equatable"
 - "Ps25ExpressibleByArrayLiteral"
 - "Ps27ExpressibleByBooleanLiteral"
+- "Ps30ExpressibleByDictionaryLiteral"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
@@ -414,6 +468,7 @@ depends-nominal:
 - "CSo7NSArray"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
+- "CSo12NSDictionary"
 - "PSo17NSFastEnumeration"
 - "CSo14NSMutableArray"
 - "PSo16NSMutableCopying"
@@ -505,4 +560,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "f0fc2378f2a229749532b78e4fdb6807"
+interface-hash: "6d13878517a457dcec55ba24adab9714"

@@ -6,27 +6,27 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp9PulseView", ""]
 provides-dynamic-lookup:
-- "touchesCancelled"
-- "touchesEnded"
-- "touchesBegan"
-- "pulseOpacity"
-- "pulseLayers"
 - "pulseColor"
+- "pulseOpacity"
+- "touchesCancelled"
+- "pulseLayers"
+- "touchesEnded"
 - "pulseAnimation"
+- "touchesBegan"
 depends-top-level:
+- !private "Animation"
+- "Set"
+- "UIEvent"
 - "CAShapeLayer"
+- !private "/"
 - "CGFloat"
 - "TernaryPrecedence"
-- !private "/"
-- "PulseAnimation"
-- !private "=="
 - "View"
-- !private "Animation"
+- "PulseAnimation"
 - "CGPoint"
-- "UIEvent"
 - "Color"
-- "Set"
 - "PulseView"
+- !private "=="
 - "UITouch"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]

@@ -7,9 +7,9 @@ provides-member:
 - ["V17HafsaInspectorApp24CollectionDataSourceItem", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "CollectionDataSourceItem"
 - "CGFloat"
 - "AssignmentPrecedence"
-- "CollectionDataSourceItem"
 depends-member:
 - ["V17HafsaInspectorApp24CollectionDataSourceItem", "CGFloat"]
 - ["V17HafsaInspectorApp24CollectionDataSourceItem", "data"]

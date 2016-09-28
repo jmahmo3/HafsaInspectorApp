@@ -22,9 +22,9 @@ class NameTableViewCell: UITableViewCell {
 
         self.backgroundColor = UIColor.clear
         
-        nameLabel.text = HImanager.userName
-        chapterLabel.text = HImanager.currentChapter
-        establishmentLabel.text = HImanager.currentEstablishment
+        nameLabel.text = HIManager().userName
+        chapterLabel.text = HIManager().currentChapter
+        establishmentLabel.text = HIManager().currentEstablishment
         
         datelabel.text = HImanager.currentDate
         

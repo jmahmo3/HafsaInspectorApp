@@ -9,13 +9,13 @@ provides-dynamic-lookup:
 - "revealError"
 - "prepare"
 depends-top-level:
-- "AssignmentPrecedence"
-- "Bool"
-- "TextField"
-- "ErrorTextField"
-- "BooleanLiteralType"
 - !private "!"
+- "BooleanLiteralType"
+- "TextField"
+- "Bool"
+- "ErrorTextField"
 - !private "Color"
+- "AssignmentPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "Color"]
 - !private ["Ps9AnyObject", "base"]

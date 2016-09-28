@@ -9,23 +9,23 @@ provides-member:
 - ["CSo16UIViewController", "menuController"]
 provides-dynamic-lookup:
 - "layoutSubviews"
-- "closeMenu"
-- "menu"
-- "openMenu"
 - "prepare"
+- "openMenu"
+- "menu"
+- "closeMenu"
 - "menuController"
 depends-top-level:
-- "MenuController"
 - "Void"
-- !private "BooleanLiteralType"
 - !private "!="
 - "RootController"
+- !private "BooleanLiteralType"
 - "Menu"
-- "CastingPrecedence"
+- "UIViewController"
+- "MenuController"
+- "UIView"
 - !private "=="
 - "AssignmentPrecedence"
-- "UIViewController"
-- "UIView"
+- "CastingPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "Menu"]
 - !private ["Ps9AnyObject", "UIView"]

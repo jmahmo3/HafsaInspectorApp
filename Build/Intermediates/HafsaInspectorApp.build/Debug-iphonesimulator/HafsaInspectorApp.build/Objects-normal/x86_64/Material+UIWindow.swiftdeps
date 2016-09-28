@@ -7,13 +7,13 @@ provides-member:
 provides-dynamic-lookup:
 - "capture"
 depends-top-level:
-- !private "UIGraphicsGetCurrentContext"
-- "UIWindow"
-- !private "UIGraphicsEndImageContext"
-- "UIImage"
 - !private "UIGraphicsGetImageFromCurrentImageContext"
-- !private "Device"
 - !private "UIGraphicsBeginImageContextWithOptions"
+- !private "Device"
+- "UIImage"
+- "UIWindow"
+- !private "UIGraphicsGetCurrentContext"
+- !private "UIGraphicsEndImageContext"
 depends-member:
 - !private ["Ps9AnyObject", "Device"]
 - !private ["Ps9AnyObject", "UIGraphicsBeginImageContextWithOptions"]

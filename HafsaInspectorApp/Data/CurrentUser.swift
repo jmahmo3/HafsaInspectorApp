@@ -47,10 +47,24 @@ class CurrentUser: NSObject {
                         if (x as! String).lowercased().isEqual(user.lowercased()) {
                             let userdict: NSDictionary = value?[x] as! NSDictionary
                             let username = userdict["name"] as! String
-                            let admin = userdict["admin"] as! Bool
+                            let admin = (userdict["admin"] as! NSString).boolValue
+//                            let b: Bool = admin == 1 ? true : false
                             print (username)
                             self.username = username
                             self.adminAccess = admin
+                        
+                            if admin {
+                                let keys = userdict.allKeys
+                                for key in keys {
+                                    for chapter in HIManager.sharedClient().chapters{
+                                        if (key as! NSString).contains((chapter as! NSString).lowercased) {
+                                            FIRMessaging.messaging().subscribe(toTopic: "/topics/\(chapter as! NSString)")
+                                        }
+                                    
+                                    }
+                                    
+                                }
+                            }
                             completion(self, nil)
                             DispatchQueue.main.async {
                                 UserDefaults.standard.setValue(value, forKey: "userInfo")

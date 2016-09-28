@@ -6,28 +6,28 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp8MenuItem", ""]
 provides-dynamic-lookup:
-- "showTitleLabel"
-- "prepare"
-- "button"
 - "titleLabel"
 - "title"
+- "prepare"
+- "button"
 - "hideTitleLabel"
+- "showTitleLabel"
 depends-top-level:
 - "MenuItem"
-- !private "Color"
-- !private "InterimSpacePresetToValue"
-- !private "RobotoFont"
-- "UILabel"
-- "AssignmentPrecedence"
-- !private "*"
-- "String"
-- !private "/"
 - !private "-"
-- !private "UIView"
+- "String"
+- !private "*"
+- !private "/"
+- !private "BooleanLiteralType"
 - "FabButton"
 - !private "+="
+- !private "RobotoFont"
 - "View"
-- !private "BooleanLiteralType"
+- "UILabel"
+- !private "Color"
+- !private "InterimSpacePresetToValue"
+- !private "UIView"
+- "AssignmentPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "Color"]
 - !private ["Ps9AnyObject", "FabButton"]

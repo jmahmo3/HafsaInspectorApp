@@ -8,24 +8,24 @@ provides-member:
 - ["O17HafsaInspectorApp15MaterialGravity", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "kCAGravityResizeAspectFill"
+- "Int"
+- "MaterialGravity"
+- !private "kCAGravityTop"
+- !private "kCAGravityTopRight"
+- !private "kCAGravityBottom"
+- !private "kCAGravityBottomLeft"
 - !private "kCAGravityLeft"
 - !private "kCAGravityCenter"
 - !private "kCAGravityBottomRight"
+- !private "kCAGravityResize"
+- "String"
+- !private "kCAGravityTopLeft"
 - !private "kCAGravityResizeAspect"
 - !private "~="
-- !private "kCAGravityBottom"
-- !private "kCAGravityBottomLeft"
-- "=="
-- "Int"
-- !private "kCAGravityTopRight"
-- !private "kCAGravityResizeAspectFill"
-- "String"
-- "MaterialGravity"
-- "MaterialGravityToValue"
-- !private "kCAGravityTop"
 - !private "kCAGravityRight"
-- !private "kCAGravityTopLeft"
-- !private "kCAGravityResize"
+- "MaterialGravityToValue"
+- "=="
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]
