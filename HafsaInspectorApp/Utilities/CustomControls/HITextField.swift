@@ -69,7 +69,11 @@ class HITextField: TextField, UIPickerViewDelegate, UIPickerViewDataSource {
         var establishments: NSArray = []
         if HImanager.chaptersData.allKeys.count > 0 {
             currentChapterData =  HIManager.sharedClient().chaptersData.object(forKey: self.HImanager.currentChapter ) as! NSDictionary
-             establishments = currentChapterData.object(forKey: "establishments") as! NSArray
+            if (currentChapterData.allKeys as NSArray).contains("establishments") {
+                establishments = currentChapterData.object(forKey: "establishments") as! NSArray
+            }
+         
+
         }
         if establishments != [] {
             data = establishments
