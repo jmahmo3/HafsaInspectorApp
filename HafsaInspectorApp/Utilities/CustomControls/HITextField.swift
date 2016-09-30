@@ -72,8 +72,6 @@ class HITextField: TextField, UIPickerViewDelegate, UIPickerViewDataSource {
             if (currentChapterData.allKeys as NSArray).contains("establishments") {
                 establishments = currentChapterData.object(forKey: "establishments") as! NSArray
             }
-         
-
         }
         if establishments != [] {
             data = establishments

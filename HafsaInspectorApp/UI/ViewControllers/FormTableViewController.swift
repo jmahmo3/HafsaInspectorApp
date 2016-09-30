@@ -173,11 +173,26 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
                 // Uh-oh, an error occurred!
             } else {
                 let date = Date()
-                let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "MM-dd-yyyy_hh_mm_ss"
-                let dateString: NSString = dateFormatter.string(from: date) as NSString
+                // : "May 10, 2016, 8:55 PM" - Local Date Time
+                let formatter = DateFormatter()
+//                formatter.dateFormat = "HH.mm yyyy-MM-dd"
+                formatter.calendar = Calendar(identifier: .iso8601)
+                formatter.locale = Locale(identifier: "en_US_POSIX")
+                formatter.timeZone = TimeZone(secondsFromGMT: 0)
+                formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSXXXXX"
+//                let defaultTimeZoneStr = formatter.string(from: date)
+                // : "2016-05-10 20:55:06 +0300" - Local (GMT +3)
+//                formatter.timeZone = NSTimeZone(abbreviation: "UTC") as TimeZone!
+                let utcTimeZoneStr = formatter.string(from: date)
+//                 : "2016-05-10 17:55:06 +0000" - UTC Time
+                
+                
+//                let date = Date()
+//                let dateFormatter = DateFormatter()
+//                dateFormatter.dateFormat = "MM-dd-yyyy_hh_mm_ss"
+//                let dateString: NSString = dateFormatter.string(from: date) as NSString
         
-                let dict: NSDictionary = [dateString:(metadata!.name)!]
+                let dict: NSDictionary = ["imageURL":(metadata!.name)!,"timestamp":utcTimeZoneStr,"filename":"\(HIManager().currentEstablishment)_\(HIManager().userName)"]
                 let ref: FIRDatabaseReference =  FIRDatabase.database().reference()
                 ref.child("metadata").child(self.HImanager.currentChapter).childByAutoId().setValue(dict, withCompletionBlock: { (error, databaseref) in
                 
