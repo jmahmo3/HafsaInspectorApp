@@ -7,40 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		031726A9E343E95D4122E9CBB5782C5E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF066FF331DAF505396EF194ED56FA83 /* CoreGraphics.framework */; };
-		14EDE6BC5B7C0D91461781863C6CB990 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2720DB65E9C8213030B563A9A9350D1 /* Foundation.framework */; };
-		193AA1A2920035869753B4EA41FA3D24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2720DB65E9C8213030B563A9A9350D1 /* Foundation.framework */; };
+		06B00B4443CDC5E4B3B4418E8BB3AE2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682F693A308F1E97D849660E2451CA01 /* Foundation.framework */; };
 		1C7E0676139A0FB8416DE771F7B47066 /* PDFPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6E3B58ADE5BED002948F923AE41A4D /* PDFPassword.swift */; };
 		1DC27568F9FD2E93B4A4AC3CDE3A0790 /* PDFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B583798194CE4412E300FE13EB4BCF51 /* PDFGenerator.swift */; };
-		1FBD05C9D1D623EA617EC8F473B148EB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E70E525AE50AEE2C5E8D126A6930900 /* WebKit.framework */; };
+		28765B10E7DCB9D8DF17F0F480743152 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0414B61535DD59944C5A008BE1B849A /* CoreGraphics.framework */; };
 		2CB14116A356AE9096E24DF70FC17C8E /* PDFPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635B9A907D2EA3954E71C71B6DBC0638 /* PDFPage.swift */; };
 		31FC94E0E7FE933E2219939A21633F42 /* PDFGenerator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAAE17FD0E49C562725AEF0024B879C /* PDFGenerator-dummy.m */; };
+		41637DA371D84C3DD6CE1A2BAD23DFE2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6355CF9869B313C0D92A8FFCBD7A49 /* QuartzCore.framework */; };
 		49DDA0471083C4907DBB165D227524C0 /* DPIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FE225A766D5F41309E0C05878A4D27 /* DPIType.swift */; };
+		5676F0887DFE9F8911ADF6572967B74C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682F693A308F1E97D849660E2451CA01 /* Foundation.framework */; };
+		5B32EA8AB19F49234A383200A5135921 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682F693A308F1E97D849660E2451CA01 /* Foundation.framework */; };
 		5C8AACF0073FD8116895480A52962E77 /* PDFGenerateError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4BEB959A2F19B8C39B291CA204C0CE /* PDFGenerateError.swift */; };
 		675C7AAA1F2639A855565A918937F92B /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = CA487DDD83E91B49F02D98D49A88B7EF /* Info.plist */; };
-		7740F6E53E3DF9DA7E28BFC58E5C24E6 /* Pods-HafsaInspectorApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8493934F38F8464E15811846B7EECCAE /* Pods-HafsaInspectorApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7942EC40A15E9BEA3FA939FBE86BB785 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924A187F50F1508E2A5868EDD2468333 /* QuartzCore.framework */; };
+		72D96C66D4A44DBD1ECC6D69A407AA85 /* Pods-HafsaInspectorApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8493934F38F8464E15811846B7EECCAE /* Pods-HafsaInspectorApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81AADA5ADE8535AD6F7678C6F3A06E89 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8661E81F796935D0A817ADE5DA6E63 /* MBProgressHUD.m */; };
+		A801372119F7F838BEE543EA68447DD0 /* Pods-HafsaInspectorApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27941B2728DC3079CE6C5C80518FF217 /* Pods-HafsaInspectorApp-dummy.m */; };
 		AE2590EB143BF38586CFABEC8351E926 /* PDFGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = DFDDE14E6D6C835CC806D747446BBA95 /* PDFGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5F8E87F5B794FDC2E56B0B086EDE216 /* Pods-HafsaInspectorApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27941B2728DC3079CE6C5C80518FF217 /* Pods-HafsaInspectorApp-dummy.m */; };
 		B9472F1817EBD7EC1CB42E290D0C2430 /* PDFPageRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD40D51EFC6C8B5476766801B9A473 /* PDFPageRenderable.swift */; };
 		BD2C73E54761A838D181F002A65FDC1A /* FilePathConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E713ED1BA45348D970618028C9CA448 /* FilePathConvertible.swift */; };
-		C5AC47826ED14DB9E88EB250DAAA4A80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2720DB65E9C8213030B563A9A9350D1 /* Foundation.framework */; };
 		D6ABDFF81E566FFECF367E42C6333D79 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1091E47B09451CF083E30B628A895AD8 /* MBProgressHUD-dummy.m */; };
 		D711EBBB664A6ED7779B62B8710FB875 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45C3038F061143CC9BB8A3C918306C6B /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAF4063C5D3C8C1AE3C7513759BA9D0B /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD552DB97DA8B429D157C19D21E2E2C /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9411216B5B463D14D072C177B8C3BC1 /* PDFGenerator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29572689481EAD910302EBF59FDDB9AA /* PDFGenerator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC6F80D91D1E1F9B5ECB4A13578A754 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC237669092BAA0F1059BA15A9C8BF21 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CB6696A843CDCDEDBA19A48E66A07D40 /* PBXContainerItemProxy */ = {
+		0CE0671B5794B9CE5C130E02A5267F99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D6372E9A14F373E0EDB6DE2320A42F8C;
 			remoteInfo = PDFGenerator;
 		};
-		CCF6943F811304AC4E06EE9EE817D53C /* PBXContainerItemProxy */ = {
+		8E9AF8345A8E15635A5043247BD5E4D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -57,11 +57,13 @@
 		247C67B6646BE42AD5EE87918F908525 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Analytics/Sources/Firebase.h; sourceTree = "<group>"; };
 		27941B2728DC3079CE6C5C80518FF217 /* Pods-HafsaInspectorApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HafsaInspectorApp-dummy.m"; sourceTree = "<group>"; };
 		29572689481EAD910302EBF59FDDB9AA /* PDFGenerator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDFGenerator-umbrella.h"; sourceTree = "<group>"; };
+		3C6355CF9869B313C0D92A8FFCBD7A49 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		3DAAE17FD0E49C562725AEF0024B879C /* PDFGenerator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PDFGenerator-dummy.m"; sourceTree = "<group>"; };
 		4052C39DCCE0C44DB81224232B3F131A /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
 		45C3038F061143CC9BB8A3C918306C6B /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		467754DFAA9D344DA78BB62FCD156D5A /* Pods-HafsaInspectorApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HafsaInspectorApp.modulemap"; sourceTree = "<group>"; };
 		46B78624D69A95009169DDAADA4EF227 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		470CB299898883DCF55DFC78B2E74AE1 /* Pods_HafsaInspectorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HafsaInspectorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4998E9FE45C8712B4C600D32A29F8E75 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
 		4EB3AA3E76A4B1D6417914D5B270CFD6 /* PDFGenerator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDFGenerator-prefix.pch"; sourceTree = "<group>"; };
 		57FD40D51EFC6C8B5476766801B9A473 /* PDFPageRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPageRenderable.swift; path = PDFGenerator/PDFPageRenderable.swift; sourceTree = "<group>"; };
@@ -71,39 +73,37 @@
 		613C9C7659CA1A6E84CA403FE84ED20D /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		635B9A907D2EA3954E71C71B6DBC0638 /* PDFPage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPage.swift; path = PDFGenerator/PDFPage.swift; sourceTree = "<group>"; };
 		6491E216752751A6C6A7B89BD681C705 /* Pods-HafsaInspectorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HafsaInspectorApp.release.xcconfig"; sourceTree = "<group>"; };
+		682F693A308F1E97D849660E2451CA01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6C69EB449CDC5D9167E7902AA55ACE59 /* FIRMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRMessaging.h; path = Sources/FIRMessaging.h; sourceTree = "<group>"; };
 		6E713ED1BA45348D970618028C9CA448 /* FilePathConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilePathConvertible.swift; path = PDFGenerator/FilePathConvertible.swift; sourceTree = "<group>"; };
-		6F85A9D5247A60D008B69FFAA9E4A2B4 /* PDFGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PDFGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD552DB97DA8B429D157C19D21E2E2C /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		75FE225A766D5F41309E0C05878A4D27 /* DPIType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPIType.swift; path = PDFGenerator/DPIType.swift; sourceTree = "<group>"; };
 		8004CC1CE47C12BFF9FDF224AF708165 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8493934F38F8464E15811846B7EECCAE /* Pods-HafsaInspectorApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HafsaInspectorApp-umbrella.h"; sourceTree = "<group>"; };
 		86DF377E8798295956F5ED9F3534EC98 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
-		889479E9B05CCAA4F90039887511F7F3 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8999C00459771EB799702B355F01DF19 /* Pods-HafsaInspectorApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HafsaInspectorApp-resources.sh"; sourceTree = "<group>"; };
 		8D6E3B58ADE5BED002948F923AE41A4D /* PDFPassword.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPassword.swift; path = PDFGenerator/PDFPassword.swift; sourceTree = "<group>"; };
-		8E70E525AE50AEE2C5E8D126A6930900 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		90F252B5EDDAF917BB3C0092AD75FB68 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
-		924A187F50F1508E2A5868EDD2468333 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9785D2540868029B67AA355BFB99122F /* GoogleIPhoneUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleIPhoneUtilities.framework; path = Frameworks/GoogleIPhoneUtilities.framework; sourceTree = "<group>"; };
 		9B0F513276F185D03EFDBF1000581DD4 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
 		A9F4A9F7000C35C6456C0AE331A8FF66 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC4BEB959A2F19B8C39B291CA204C0CE /* PDFGenerateError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFGenerateError.swift; path = PDFGenerator/PDFGenerateError.swift; sourceTree = "<group>"; };
 		B322D72E72561EF4532F1B38BA6C71BA /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		B43609D1099773CE75451819622EE234 /* PDFGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PDFGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B583798194CE4412E300FE13EB4BCF51 /* PDFGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFGenerator.swift; path = PDFGenerator/PDFGenerator.swift; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BA8B6EA0CEDC5D35506E5D94F0501C1B /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseMessaging.framework; path = Frameworks/frameworks/FirebaseMessaging.framework; sourceTree = "<group>"; };
+		BC237669092BAA0F1059BA15A9C8BF21 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		BF8661E81F796935D0A817ADE5DA6E63 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		C2720DB65E9C8213030B563A9A9350D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C0414B61535DD59944C5A008BE1B849A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		CA487DDD83E91B49F02D98D49A88B7EF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = PDFGenerator/Info.plist; sourceTree = "<group>"; };
 		CAEBAD1CA88CFB9E8F262E1095762039 /* Pods-HafsaInspectorApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HafsaInspectorApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		CF61D6D386F1DAF36E5FA4A58F7A06D7 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02C2BE59EA84E1C35424CB32C2C9BE3 /* PDFGenerator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDFGenerator.xcconfig; sourceTree = "<group>"; };
 		DFDDE14E6D6C835CC806D747446BBA95 /* PDFGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PDFGenerator.h; path = PDFGenerator/PDFGenerator.h; sourceTree = "<group>"; };
 		E1198C23E75C8FBACF16047EA37CBA35 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		E460D4EEAE79AD5B6C5E68ED534795FF /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
 		F6233019D72A9C2B88ED7B3FC5E13E73 /* Pods-HafsaInspectorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HafsaInspectorApp.debug.xcconfig"; sourceTree = "<group>"; };
-		FB4EB9D88DB1BDB22CADD06BD3963666 /* Pods_HafsaInspectorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HafsaInspectorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF066FF331DAF505396EF194ED56FA83 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +111,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5AC47826ED14DB9E88EB250DAAA4A80 /* Foundation.framework in Frameworks */,
-				1FBD05C9D1D623EA617EC8F473B148EB /* WebKit.framework in Frameworks */,
+				5676F0887DFE9F8911ADF6572967B74C /* Foundation.framework in Frameworks */,
+				FBC6F80D91D1E1F9B5ECB4A13578A754 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,17 +120,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				031726A9E343E95D4122E9CBB5782C5E /* CoreGraphics.framework in Frameworks */,
-				14EDE6BC5B7C0D91461781863C6CB990 /* Foundation.framework in Frameworks */,
-				7942EC40A15E9BEA3FA939FBE86BB785 /* QuartzCore.framework in Frameworks */,
+				28765B10E7DCB9D8DF17F0F480743152 /* CoreGraphics.framework in Frameworks */,
+				5B32EA8AB19F49234A383200A5135921 /* Foundation.framework in Frameworks */,
+				41637DA371D84C3DD6CE1A2BAD23DFE2 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93583A589E85D1867750FC78B81EDDAB /* Frameworks */ = {
+		D80700E9C570BA17AD8F57F7B03EA727 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				193AA1A2920035869753B4EA41FA3D24 /* Foundation.framework in Frameworks */,
+				06B00B4443CDC5E4B3B4418E8BB3AE2C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,16 +151,6 @@
 				8FDF92653A0F24E052CBAEAF081F2CDD /* Frameworks */,
 			);
 			path = GoogleNetworkingUtilities;
-			sourceTree = "<group>";
-		};
-		12C39C85BD869C30E83AA157603E18B5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				889479E9B05CCAA4F90039887511F7F3 /* MBProgressHUD.framework */,
-				6F85A9D5247A60D008B69FFAA9E4A2B4 /* PDFGenerator.framework */,
-				FB4EB9D88DB1BDB22CADD06BD3963666 /* Pods_HafsaInspectorApp.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		12C5A16A306E9991CDC2838C2E328B45 /* Targets Support Files */ = {
@@ -200,7 +190,7 @@
 		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CD302ECD3C7BEE1DA43255459B727C6F /* iOS */,
+				D09718FAFEE58060526DF8C09429FA1C /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -221,6 +211,16 @@
 				613C9C7659CA1A6E84CA403FE84ED20D /* FirebaseInstanceID.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D273EC1922E378D0A1122E64F499522 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF61D6D386F1DAF36E5FA4A58F7A06D7 /* MBProgressHUD.framework */,
+				B43609D1099773CE75451819622EE234 /* PDFGenerator.framework */,
+				470CB299898883DCF55DFC78B2E74AE1 /* Pods_HafsaInspectorApp.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		39AE5A21626D6DEBA4E64C814555C696 /* FirebaseAnalytics */ = {
@@ -325,10 +325,10 @@
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
 				430D4CDA5A56BEDAB0E928EC675FB94D /* Pods */,
-				12C39C85BD869C30E83AA157603E18B5 /* Products */,
+				2D273EC1922E378D0A1122E64F499522 /* Products */,
 				12C5A16A306E9991CDC2838C2E328B45 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -406,13 +406,13 @@
 			path = FirebaseDatabase;
 			sourceTree = "<group>";
 		};
-		CD302ECD3C7BEE1DA43255459B727C6F /* iOS */ = {
+		D09718FAFEE58060526DF8C09429FA1C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				FF066FF331DAF505396EF194ED56FA83 /* CoreGraphics.framework */,
-				C2720DB65E9C8213030B563A9A9350D1 /* Foundation.framework */,
-				924A187F50F1508E2A5868EDD2468333 /* QuartzCore.framework */,
-				8E70E525AE50AEE2C5E8D126A6930900 /* WebKit.framework */,
+				C0414B61535DD59944C5A008BE1B849A /* CoreGraphics.framework */,
+				682F693A308F1E97D849660E2451CA01 /* Foundation.framework */,
+				3C6355CF9869B313C0D92A8FFCBD7A49 /* QuartzCore.framework */,
+				BC237669092BAA0F1059BA15A9C8BF21 /* WebKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -477,34 +477,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4D6EC8C262BF1B7292BF774E80FFD87 /* Headers */ = {
+		950AF5153731114CA9DB1C71D7282217 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7740F6E53E3DF9DA7E28BFC58E5C24E6 /* Pods-HafsaInspectorApp-umbrella.h in Headers */,
+				72D96C66D4A44DBD1ECC6D69A407AA85 /* Pods-HafsaInspectorApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D301D28BAD88C5032542477007FC841B /* Pods-HafsaInspectorApp */ = {
+		5080D2FD6599AC332586D6DE36AE1699 /* Pods-HafsaInspectorApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFCB5621CEADD07F4586F88E2C453E8E /* Build configuration list for PBXNativeTarget "Pods-HafsaInspectorApp" */;
+			buildConfigurationList = F786BBC152EA922BE0BE56D9A525FC7A /* Build configuration list for PBXNativeTarget "Pods-HafsaInspectorApp" */;
 			buildPhases = (
-				1C5BF5B3927CE6064F014DFF3E3E8422 /* Sources */,
-				93583A589E85D1867750FC78B81EDDAB /* Frameworks */,
-				F4D6EC8C262BF1B7292BF774E80FFD87 /* Headers */,
+				4B057EC3B5DDB7C2E7CB5B9C006AF3B2 /* Sources */,
+				D80700E9C570BA17AD8F57F7B03EA727 /* Frameworks */,
+				950AF5153731114CA9DB1C71D7282217 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8BA23D6CCA2201946B927048F0190219 /* PBXTargetDependency */,
-				069818A56B5A87CD5D64D03E36C46E4E /* PBXTargetDependency */,
+				B7634DBEB929BCFCD355E520C50B3FF5 /* PBXTargetDependency */,
+				8832330B3E1FBA395E5E13235A1C7F3E /* PBXTargetDependency */,
 			);
 			name = "Pods-HafsaInspectorApp";
 			productName = "Pods-HafsaInspectorApp";
-			productReference = FB4EB9D88DB1BDB22CADD06BD3963666 /* Pods_HafsaInspectorApp.framework */;
+			productReference = 470CB299898883DCF55DFC78B2E74AE1 /* Pods_HafsaInspectorApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D6372E9A14F373E0EDB6DE2320A42F8C /* PDFGenerator */ = {
@@ -521,7 +521,7 @@
 			);
 			name = PDFGenerator;
 			productName = PDFGenerator;
-			productReference = 6F85A9D5247A60D008B69FFAA9E4A2B4 /* PDFGenerator.framework */;
+			productReference = B43609D1099773CE75451819622EE234 /* PDFGenerator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DBA6001481CEA0EBA031CC5C94508FAA /* MBProgressHUD */ = {
@@ -538,7 +538,7 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = 889479E9B05CCAA4F90039887511F7F3 /* MBProgressHUD.framework */;
+			productReference = CF61D6D386F1DAF36E5FA4A58F7A06D7 /* MBProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -547,7 +547,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -558,13 +558,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 12C39C85BD869C30E83AA157603E18B5 /* Products */;
+			productRefGroup = 2D273EC1922E378D0A1122E64F499522 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				DBA6001481CEA0EBA031CC5C94508FAA /* MBProgressHUD */,
 				D6372E9A14F373E0EDB6DE2320A42F8C /* PDFGenerator */,
-				D301D28BAD88C5032542477007FC841B /* Pods-HafsaInspectorApp */,
+				5080D2FD6599AC332586D6DE36AE1699 /* Pods-HafsaInspectorApp */,
 			);
 		};
 /* End PBXProject section */
@@ -579,11 +579,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1C5BF5B3927CE6064F014DFF3E3E8422 /* Sources */ = {
+		4B057EC3B5DDB7C2E7CB5B9C006AF3B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5F8E87F5B794FDC2E56B0B086EDE216 /* Pods-HafsaInspectorApp-dummy.m in Sources */,
+				A801372119F7F838BEE543EA68447DD0 /* Pods-HafsaInspectorApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,86 +606,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		069818A56B5A87CD5D64D03E36C46E4E /* PBXTargetDependency */ = {
+		8832330B3E1FBA395E5E13235A1C7F3E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PDFGenerator;
 			target = D6372E9A14F373E0EDB6DE2320A42F8C /* PDFGenerator */;
-			targetProxy = CB6696A843CDCDEDBA19A48E66A07D40 /* PBXContainerItemProxy */;
+			targetProxy = 0CE0671B5794B9CE5C130E02A5267F99 /* PBXContainerItemProxy */;
 		};
-		8BA23D6CCA2201946B927048F0190219 /* PBXTargetDependency */ = {
+		B7634DBEB929BCFCD355E520C50B3FF5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBProgressHUD;
 			target = DBA6001481CEA0EBA031CC5C94508FAA /* MBProgressHUD */;
-			targetProxy = CCF6943F811304AC4E06EE9EE817D53C /* PBXContainerItemProxy */;
+			targetProxy = 8E9AF8345A8E15635A5043247BD5E4D4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		006A19B4BA79E89EA564DCD2396668E4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6233019D72A9C2B88ED7B3FC5E13E73 /* Pods-HafsaInspectorApp.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HafsaInspectorApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_HafsaInspectorApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2802920CE45D6A613DE98560597C5512 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6491E216752751A6C6A7B89BD681C705 /* Pods-HafsaInspectorApp.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HafsaInspectorApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_HafsaInspectorApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		2B389FAB51F6EEA43F72CA7BDC8E8E28 /* Debug */ = {
+		13E96A645A77DAD1FD4F541F18F5DDBF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -699,11 +639,14 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -716,26 +659,238 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		341FBAA5D27612DAE899465B49A11403 /* Debug */ = {
+		35BC520334002D7298DC87B7400B7BA2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D02C2BE59EA84E1C35424CB32C2C9BE3 /* PDFGenerator.xcconfig */;
+			baseConfigurationReference = 90F252B5EDDAF917BB3C0092AD75FB68 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4488B7B43964BDB911C2FE369CF78AF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6491E216752751A6C6A7B89BD681C705 /* Pods-HafsaInspectorApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HafsaInspectorApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HafsaInspectorApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		56DB07182F3BBC763189F2A1DEFC62D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90F252B5EDDAF917BB3C0092AD75FB68 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7109970F6BA44DC35ABB0CFD76C73ABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6233019D72A9C2B88ED7B3FC5E13E73 /* Pods-HafsaInspectorApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HafsaInspectorApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HafsaInspectorApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		862AF3139CD84E18D34FAF2F43CD0DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C532489EA07FF44B6F6E930DEDE25F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D02C2BE59EA84E1C35424CB32C2C9BE3 /* PDFGenerator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/PDFGenerator/PDFGenerator-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/PDFGenerator/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PDFGenerator/PDFGenerator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PDFGenerator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9FF0A1660E610120AB38E87982FA487D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D02C2BE59EA84E1C35424CB32C2C9BE3 /* PDFGenerator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PDFGenerator/PDFGenerator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PDFGenerator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/PDFGenerator/PDFGenerator.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -750,130 +905,14 @@
 			};
 			name = Debug;
 		};
-		5A0C6FE968931D888F00C9EC18DDF5BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		71AD1A39201C6795966BB2977C419DC8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90F252B5EDDAF917BB3C0092AD75FB68 /* MBProgressHUD.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MBProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7A43E0EC919449F20A4E130E36BA70B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D02C2BE59EA84E1C35424CB32C2C9BE3 /* PDFGenerator.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PDFGenerator/PDFGenerator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PDFGenerator/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PDFGenerator/PDFGenerator.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PDFGenerator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9DACC23FA0A1D3380D52044D1FD43C60 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90F252B5EDDAF917BB3C0092AD75FB68 /* MBProgressHUD.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MBProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		1E2C012DEECFAAEF8B8A9CE1E8AAA03C /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DACC23FA0A1D3380D52044D1FD43C60 /* Debug */,
-				71AD1A39201C6795966BB2977C419DC8 /* Release */,
+				56DB07182F3BBC763189F2A1DEFC62D6 /* Debug */,
+				35BC520334002D7298DC87B7400B7BA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -881,8 +920,8 @@
 		254D035E26AF4617BE8C43FC2B85A945 /* Build configuration list for PBXNativeTarget "PDFGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				341FBAA5D27612DAE899465B49A11403 /* Debug */,
-				7A43E0EC919449F20A4E130E36BA70B3 /* Release */,
+				9FF0A1660E610120AB38E87982FA487D /* Debug */,
+				8C532489EA07FF44B6F6E930DEDE25F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -890,17 +929,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B389FAB51F6EEA43F72CA7BDC8E8E28 /* Debug */,
-				5A0C6FE968931D888F00C9EC18DDF5BC /* Release */,
+				13E96A645A77DAD1FD4F541F18F5DDBF /* Debug */,
+				862AF3139CD84E18D34FAF2F43CD0DA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFCB5621CEADD07F4586F88E2C453E8E /* Build configuration list for PBXNativeTarget "Pods-HafsaInspectorApp" */ = {
+		F786BBC152EA922BE0BE56D9A525FC7A /* Build configuration list for PBXNativeTarget "Pods-HafsaInspectorApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				006A19B4BA79E89EA564DCD2396668E4 /* Debug */,
-				2802920CE45D6A613DE98560597C5512 /* Release */,
+				7109970F6BA44DC35ABB0CFD76C73ABE /* Debug */,
+				4488B7B43964BDB911C2FE369CF78AF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

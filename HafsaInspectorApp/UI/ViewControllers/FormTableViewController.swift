@@ -42,7 +42,7 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return HImanager.supplierArray.count + 3
+        return HImanager.supplierArray.count + 4
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -58,16 +58,20 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
             return cell
         }
         if indexPath.row == HImanager.supplierArray.count+1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ImageTableViewCell", for: indexPath) as! ImageTableViewCell
-            
-            return cell
-        }
-        else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CommentTableViewCell", for: indexPath) as! CommentTableViewCell
             cell.configureCommentTableViewCell()
             cell.textView.delegate = self
             return cell
+        }
+        if indexPath.row == HImanager.supplierArray.count+2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ImageTableViewCell", for: indexPath) as! ImageTableViewCell
+            return cell
             
+        }
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SubmitTableViewCell", for: indexPath) as! SubmitTableViewCell
+            cell.configureCell()
+            return cell
         }
     }
     
