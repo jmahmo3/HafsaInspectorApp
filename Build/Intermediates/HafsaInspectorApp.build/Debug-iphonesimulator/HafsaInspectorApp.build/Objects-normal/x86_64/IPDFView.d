@@ -10,7 +10,6 @@ dependencies: \
   /Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HafsaInspectorApp-Bridging-Header.h \
   /Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderTextView.h \
   /Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h \
-  /Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/OrderedDictionary.h \
   /Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Modules/module.modulemap \
   /Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD.h \
   /Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h

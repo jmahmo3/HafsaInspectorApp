@@ -2411,10 +2411,12 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp23FormTableViewController")
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)generatePDF;
+- (void)submitForm;
+- (void)sendToGooleForms;
+- (void)saveMetaData:(NSString * _Nonnull)metadata;
 - (void)setupSuppliers;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -4952,7 +4954,6 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp22SettingsViewController")
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)getData;
-- (NSString * _Null_unspecified)convertFormatOfDateWithDate:(NSString * _Nonnull)date originalFormat:(NSString * _Nonnull)originalFormat destinationFormat:(NSString * _Nonnull)destinationFormat;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -6257,6 +6258,7 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp10WebService")
 @interface WebService : NSObject
 - (void)sendToGoogleFormsWithName:(NSString * _Nonnull)name year:(NSString * _Nonnull)year month:(NSString * _Nonnull)month day:(NSString * _Nonnull)day hour:(NSString * _Nonnull)hour minute:(NSString * _Nonnull)minute establishment:(NSString * _Nonnull)establishment zHProcessors:(NSString * _Nonnull)zHProcessors crescent:(NSString * _Nonnull)crescent halalFarms:(NSString * _Nonnull)halalFarms hibaTraders:(NSString * _Nonnull)hibaTraders miscellaneous:(NSString * _Nonnull)miscellaneous notes:(NSString * _Nonnull)notes;
 - (void)upload_requestWithPostData:(NSString * _Nonnull)postData;
+- (void)postNotification;
 - (NSDictionary<NSString *, id> * _Nullable)parseJSON:(NSData * _Nonnull)data;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

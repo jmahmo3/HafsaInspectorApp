@@ -11,16 +11,16 @@ provides-member:
 - ["V17HafsaInspectorApp5Depth", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "CGFloat"
-- !private "~="
 - "Offset"
-- "Depth"
-- "AssignmentPrecedence"
-- "=="
 - "DepthPreset"
 - "Int"
-- "DepthPresetToValue"
+- "Depth"
+- "=="
+- "AssignmentPrecedence"
+- !private "~="
 - "Float"
+- "CGFloat"
+- "DepthPresetToValue"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]
@@ -218,7 +218,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderTextView.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/OrderedDictionary.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"

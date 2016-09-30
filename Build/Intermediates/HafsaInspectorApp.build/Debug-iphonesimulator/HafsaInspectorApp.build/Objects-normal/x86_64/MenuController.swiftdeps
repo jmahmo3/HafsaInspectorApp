@@ -8,24 +8,24 @@ provides-member:
 - ["C17HafsaInspectorApp14MenuController", ""]
 - ["CSo16UIViewController", "menuController"]
 provides-dynamic-lookup:
+- "closeMenu"
+- "menu"
 - "prepare"
+- "layoutSubviews"
 - "openMenu"
 - "menuController"
-- "closeMenu"
-- "layoutSubviews"
-- "menu"
 depends-top-level:
-- "UIView"
-- "Void"
-- !private "!="
-- "MenuController"
 - "UIViewController"
+- "MenuController"
+- "UIView"
 - "RootController"
+- "Menu"
 - "AssignmentPrecedence"
 - !private "=="
 - "CastingPrecedence"
+- !private "!="
+- "Void"
 - !private "BooleanLiteralType"
-- "Menu"
 depends-member:
 - !private ["Ps9AnyObject", "Menu"]
 - !private ["Ps9AnyObject", "UIView"]
@@ -782,7 +782,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderTextView.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/OrderedDictionary.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"

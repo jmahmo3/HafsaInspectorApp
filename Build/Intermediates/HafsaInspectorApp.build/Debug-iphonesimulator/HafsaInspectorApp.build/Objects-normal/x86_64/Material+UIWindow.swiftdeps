@@ -8,11 +8,11 @@ provides-dynamic-lookup:
 - "capture"
 depends-top-level:
 - !private "UIGraphicsEndImageContext"
-- "UIImage"
+- !private "Device"
+- "UIWindow"
 - !private "UIGraphicsGetCurrentContext"
 - !private "UIGraphicsBeginImageContextWithOptions"
-- "UIWindow"
-- !private "Device"
+- "UIImage"
 - !private "UIGraphicsGetImageFromCurrentImageContext"
 depends-member:
 - !private ["Ps9AnyObject", "Device"]
@@ -325,7 +325,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderTextView.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/OrderedDictionary.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"

@@ -9,23 +9,22 @@
 import UIKit
 
 class SubmitTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var submitButton: UIButton!
     
     func configureCell() {
         submitButton.backgroundColor = UIColor.white
         submitButton.tintColor = UIColor.black
         submitButton.titleLabel?.textColor = UIColor.black
-        submitButton.titleLabel?.font = UIFont(name: "AvenirNext-Medium", size: 16)
+        submitButton.titleLabel?.font = UIFont(name: "AvenirNext-Medium", size: 24)
         submitButton.layer.cornerRadius = 4
         submitButton.layer.borderWidth = 1
-        submitButton.layer.borderColor = UIColor.black.cgColor
-
-        
+        submitButton.layer.borderColor = UIColor.white.cgColor
     }
     
     @IBAction func submitButtonPressed(_ sender: AnyObject) {
         let vc = self.parentViewController as! FormTableViewController
-        vc.generatePDF()
+        vc.submitForm()
 
     }
 }

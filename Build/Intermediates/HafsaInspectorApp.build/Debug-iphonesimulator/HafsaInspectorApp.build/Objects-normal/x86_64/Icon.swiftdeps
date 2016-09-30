@@ -9,13 +9,13 @@ provides-member:
 - ["VV17HafsaInspectorApp4Icon2cm", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "View"
-- "String"
+- "UIImage"
 - "AssignmentPrecedence"
+- "String"
 - !private "=="
 - "Bundle"
+- !private "View"
 - "StringLiteralType"
-- "UIImage"
 - "Icon"
 depends-member:
 - ["Ps9AnyObject", "init"]
@@ -267,7 +267,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderTextView.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/OrderedDictionary.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"

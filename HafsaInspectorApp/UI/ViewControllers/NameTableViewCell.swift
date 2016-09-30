@@ -8,8 +8,8 @@
 
 import UIKit
 
-// MARK: - NameTableViewCell: UITableViewCell
 class NameTableViewCell: UITableViewCell {
+   
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var chapterLabel: UILabel!
     @IBOutlet weak var establishmentLabel: UILabel!
@@ -19,7 +19,6 @@ class NameTableViewCell: UITableViewCell {
 
     func configureNameCell() {
         self.selectionStyle = UITableViewCellSelectionStyle.none
-
         self.backgroundColor = UIColor.clear
         
         nameLabel.text = HIManager().userName
@@ -27,8 +26,6 @@ class NameTableViewCell: UITableViewCell {
         establishmentLabel.text = HIManager().currentEstablishment
         
         datelabel.text = HImanager.currentDate
-        
-        
         nameLabel.font = UIFont(name: "AvenirNext-Medium", size: 16)
         nameLabel.textColor = UIColor.darkGray
         establishmentLabel.font = UIFont(name: "AvenirNext-Medium", size: 16)

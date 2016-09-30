@@ -25,7 +25,6 @@ class EditImageViewController: UIViewController {
     var delegate: EditedImageDelegate! = nil
 
     
-    
     static func create(_ fromCamera: Bool) -> EditImageViewController {
         let frameworkBundle = Bundle.main
         let storyboard = UIStoryboard(name: "Main", bundle: frameworkBundle)

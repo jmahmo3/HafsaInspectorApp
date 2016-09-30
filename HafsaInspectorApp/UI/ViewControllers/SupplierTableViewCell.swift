@@ -10,7 +10,6 @@ import UIKit
 
 class SupplierTableViewCell: UITableViewCell {
     
-    
     @IBOutlet weak var supplierNameLabel: UILabel!
     @IBOutlet weak var poundLabel: UILabel!
     @IBOutlet weak var addPoundsButton: UIButton!
@@ -18,7 +17,6 @@ class SupplierTableViewCell: UITableViewCell {
     fileprivate let HImanager = HIManager.sharedClient()
     var previousPounds: Double = 0.0
     var tField: UITextField!
-
 
     func configureSupplierCell(_ index: Int, data: NSArray) {
         self.selectionStyle = UITableViewCellSelectionStyle.none

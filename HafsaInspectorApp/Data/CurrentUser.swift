@@ -16,9 +16,7 @@ class CurrentUser: NSObject {
     var ref: FIRDatabaseReference!
     var username: String = ""
     var adminAccess: Bool = false
-   
-    
-    
+        
     override init() {
         super.init()
     }
@@ -48,11 +46,9 @@ class CurrentUser: NSObject {
                             let userdict: NSDictionary = value?[x] as! NSDictionary
                             let username = userdict["name"] as! String
                             let admin = (userdict["admin"] as! NSString).boolValue
-//                            let b: Bool = admin == 1 ? true : false
                             print (username)
                             self.username = username
                             self.adminAccess = admin
-                        
                             if admin {
                                 let keys = userdict.allKeys
                                 for key in keys {
@@ -60,9 +56,7 @@ class CurrentUser: NSObject {
                                         if (key as! NSString).contains((chapter as! NSString).lowercased) {
                                             FIRMessaging.messaging().subscribe(toTopic: "/topics/\(chapter as! NSString)")
                                         }
-                                    
                                     }
-                                    
                                 }
                             }
                             completion(self, nil)
@@ -78,17 +72,11 @@ class CurrentUser: NSObject {
                 else {
                     let err = NSError(domain: "Could not retrieve user", code: 401, userInfo: nil)
                     completion(nil, err)
-
                 }
             }
-            
-            
         }) { (error) in
             completion(nil, error as NSError?)
             print(error.localizedDescription)
         }
-
-        
     }
-    
 }

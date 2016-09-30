@@ -9,6 +9,8 @@
 import UIKit
 import PDFGenerator
 import Firebase
+import MBProgressHUD
+
 class FormTableViewController: UITableViewController, UITextViewDelegate {
     
     fileprivate let HImanager = HIManager.sharedClient()
@@ -77,12 +79,6 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
             cell.configureCell()
             return cell
         }
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if indexPath.row == 4{
-//            self.generatePDF()
-//        }
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -164,57 +160,65 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
             print(error)
         }
         
-        
-//        let zh = (HIManager.sharedClient().supplierArray[0] )
-        
-        WebService().sendToGoogleForms(name: "Junaid", year: "2016", month: "09", day: "29", hour: "10", minute: "05", establishment: "BBQ Tonight", zHProcessors: "22", crescent: "33", halalFarms: "44", hibaTraders: "55", miscellaneous: "55", notes: "testing")
-        
-        
-        
-        
+        let progess = MBProgressHUD()
+        progess.tintColor = UIColor.black
+        self.view.addSubview(progess)
+        progess.center = self.tableView.center
+        progess.label.text = "Uploading..."
+        DispatchQueue.main.async {
+            progess.show(animated: true)
+        }
         
         let storage = FIRStorage.storage()
-
-        // File located on disk
         let storageRef = storage.reference()
-
-        // Create a reference to the file you want to upload
         let pdfRef = storageRef.child("\(HImanager.currentChapter)/\(pdfname)")
-        
         let uploadTask = pdfRef.putFile(dst, metadata: nil) { metadata, error in
             if (error != nil) {
-                // Uh-oh, an error occurred!
+                DispatchQueue.main.async {
+                    progess.hide(animated: true)
+                }// Uh-oh, an error occurred!
+                self.createAlert("There was an error while uploading\nPLease try again.")
             } else {
-                let date = Date()
-                // : "May 10, 2016, 8:55 PM" - Local Date Time
-                let formatter = DateFormatter()
-//                formatter.dateFormat = "HH.mm yyyy-MM-dd"
-                formatter.calendar = Calendar(identifier: .iso8601)
-                formatter.locale = Locale(identifier: "en_US_POSIX")
-                formatter.timeZone = TimeZone(secondsFromGMT: 0)
-                formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSXXXXX"
-//                let defaultTimeZoneStr = formatter.string(from: date)
-                // : "2016-05-10 20:55:06 +0300" - Local (GMT +3)
-//                formatter.timeZone = NSTimeZone(abbreviation: "UTC") as TimeZone!
-                let utcTimeZoneStr = formatter.string(from: date)
-//                 : "2016-05-10 17:55:06 +0000" - UTC Time
+                self.saveMetaData(metadata!.name!)
+                self.sendToGooleForms()
+                WebService().postNotification()
                 
-                
-//                let date = Date()
-//                let dateFormatter = DateFormatter()
-//                dateFormatter.dateFormat = "MM-dd-yyyy_hh_mm_ss"
-//                let dateString: NSString = dateFormatter.string(from: date) as NSString
-        
-                let dict: NSDictionary = ["imageURL":(metadata!.name)!,"timestamp":utcTimeZoneStr,"filename":"\(HIManager().currentEstablishment)_\(HIManager().userName)"]
-                let ref: FIRDatabaseReference =  FIRDatabase.database().reference()
-                ref.child("metadata").child(self.HImanager.currentChapter).childByAutoId().setValue(dict, withCompletionBlock: { (error, databaseref) in
-                
-                })
-                print(metadata?.path)
+                let alert = UIAlertController(title: "Success", message: "Your inspection was uploaded\nand your Admin was notified.", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction((UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
+                    (alert: UIAlertAction!) in self.backButtonPressed()
+                    })))
+                DispatchQueue.main.async {
+                    progess.hide(animated: true)
+                    self.present(alert, animated: true, completion: nil)
+                }
             }
         }
         uploadTask.resume()
-
+    }
+    
+    //MARK: - Utils
+    
+    func submitForm(){
+        self.generatePDF()
+       
+    }
+    
+    func sendToGooleForms() {
+       WebService().sendToGoogleForms(name: "Junaid", year: "2016", month: "09", day: "29", hour: "10", minute: "05", establishment: "BBQ Tonight", zHProcessors: "22", crescent: "33", halalFarms: "44", hibaTraders: "55", miscellaneous: "55", notes: "testing")
+    }
+    
+    func saveMetaData(_ metadata: String) {
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.calendar = Calendar(identifier: .iso8601)
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSXXXXX"
+        let utcTimeZoneStr = formatter.string(from: date)
+        let dict: NSDictionary = ["imageURL":metadata,"timestamp":utcTimeZoneStr,"filename":"\(HIManager().currentEstablishment)_\(HIManager().userName)"]
+        let ref: FIRDatabaseReference =  FIRDatabase.database().reference()
+        ref.child("metadata").child(self.HImanager.currentChapter).childByAutoId().setValue(dict, withCompletionBlock: { (error, databaseref) in
+        })
     }
     
     func setupSuppliers() {
