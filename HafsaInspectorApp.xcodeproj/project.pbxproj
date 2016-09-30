@@ -120,11 +120,12 @@
 		B328CE991D78F44F007075B9 /* IPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = B328CE971D78F44F007075B9 /* IPDFView.m */; };
 		B328CE9B1D7BB350007075B9 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328CE9A1D7BB350007075B9 /* ImageTableViewCell.swift */; };
 		B367E1B91D73F8E6008078DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367E1B81D73F8E6008078DF /* AppDelegate.swift */; };
-		CBBBFC73DE0B9DDDA18A8576 /* Pods_HafsaInspectorApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB17AB959B7618DD629350D6 /* Pods_HafsaInspectorApp.framework */; };
+		B3DE094C1D9E0251005EEFF4 /* SubmitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE094B1D9E0251005EEFF4 /* SubmitTableViewCell.swift */; };
+		CD3FB337ADBB8F8B7A11A4F0 /* Pods_HafsaInspectorApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B4ADDDBD054ED3CF2AF2C1 /* Pods_HafsaInspectorApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		664B7478F436B1FE0A598A46 /* Pods-HafsaInspectorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HafsaInspectorApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp.release.xcconfig"; sourceTree = "<group>"; };
+		0C7A27D0A2ED082559286BC3 /* Pods-HafsaInspectorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HafsaInspectorApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp.release.xcconfig"; sourceTree = "<group>"; };
 		9C0D44AD1D94A51C00DF0FC3 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		9C0D44B01D94A53800DF0FC3 /* RPFloatingPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderTextView.h; sourceTree = "<group>"; };
 		9C0D44B11D94A53800DF0FC3 /* RPFloatingPlaceholderConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderConstants.h; sourceTree = "<group>"; };
@@ -247,8 +248,9 @@
 		B367E1B51D73F8E6008078DF /* HafsaInspectorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HafsaInspectorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B367E1B81D73F8E6008078DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B367E1C41D73F8E6008078DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EAD07BCF679C3DB174AC45F3 /* Pods-HafsaInspectorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HafsaInspectorApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp.debug.xcconfig"; sourceTree = "<group>"; };
-		EB17AB959B7618DD629350D6 /* Pods_HafsaInspectorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HafsaInspectorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3DE094B1D9E0251005EEFF4 /* SubmitTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitTableViewCell.swift; sourceTree = "<group>"; };
+		E2F953DD59D1C585672580A8 /* Pods-HafsaInspectorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HafsaInspectorApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E9B4ADDDBD054ED3CF2AF2C1 /* Pods_HafsaInspectorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HafsaInspectorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,18 +258,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBBBFC73DE0B9DDDA18A8576 /* Pods_HafsaInspectorApp.framework in Frameworks */,
+				CD3FB337ADBB8F8B7A11A4F0 /* Pods_HafsaInspectorApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7DE487148E48F359F8A476F3 /* Pods */ = {
+		739C343C013095B0F309EEC5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EAD07BCF679C3DB174AC45F3 /* Pods-HafsaInspectorApp.debug.xcconfig */,
-				664B7478F436B1FE0A598A46 /* Pods-HafsaInspectorApp.release.xcconfig */,
+				E2F953DD59D1C585672580A8 /* Pods-HafsaInspectorApp.debug.xcconfig */,
+				0C7A27D0A2ED082559286BC3 /* Pods-HafsaInspectorApp.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -380,6 +382,7 @@
 			children = (
 				9C0D44AD1D94A51C00DF0FC3 /* CommentTableViewCell.swift */,
 				9C718EC51D7A8167009F9D79 /* NameTableViewCell.swift */,
+				B3DE094B1D9E0251005EEFF4 /* SubmitTableViewCell.swift */,
 				9C718EC61D7A8167009F9D79 /* SupplierTableViewCell.swift */,
 				B328CE9A1D7BB350007075B9 /* ImageTableViewCell.swift */,
 				9CA9E4101D7F939B00886963 /* AddImageCollectionViewCell.swift */,
@@ -412,8 +415,8 @@
 			children = (
 				B367E1B71D73F8E6008078DF /* HafsaInspectorApp */,
 				B367E1B61D73F8E6008078DF /* Products */,
-				7DE487148E48F359F8A476F3 /* Pods */,
-				F84EDB083BDC52E2386F6382 /* Frameworks */,
+				739C343C013095B0F309EEC5 /* Pods */,
+				DC0B1B4F59FA9226B7F8B29C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -514,10 +517,10 @@
 			path = ThirdParty;
 			sourceTree = "<group>";
 		};
-		F84EDB083BDC52E2386F6382 /* Frameworks */ = {
+		DC0B1B4F59FA9226B7F8B29C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EB17AB959B7618DD629350D6 /* Pods_HafsaInspectorApp.framework */,
+				E9B4ADDDBD054ED3CF2AF2C1 /* Pods_HafsaInspectorApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -529,13 +532,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B367E1C71D73F8E6008078DF /* Build configuration list for PBXNativeTarget "HafsaInspectorApp" */;
 			buildPhases = (
-				281CAF7DAF5374FD91BCFA6B /* [CP] Check Pods Manifest.lock */,
+				E3ED2A2150EB1169E441B989 /* [CP] Check Pods Manifest.lock */,
 				B367E1B11D73F8E6008078DF /* Sources */,
 				B367E1B21D73F8E6008078DF /* Frameworks */,
 				B367E1B31D73F8E6008078DF /* Resources */,
-				FAA6B6DFEC4F6168E2059D3E /* [CP] Embed Pods Frameworks */,
-				E2B85EC3200B03B06D6BC903 /* [CP] Copy Pods Resources */,
-				C8CAE1767C034B22ACBC8680 /* Embed Pods Frameworks */,
+				8C61299322603E713E8D703C /* [CP] Embed Pods Frameworks */,
+				070E95AD618F48FE44C06174 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -605,37 +607,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		281CAF7DAF5374FD91BCFA6B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C8CAE1767C034B22ACBC8680 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E2B85EC3200B03B06D6BC903 /* [CP] Copy Pods Resources */ = {
+		070E95AD618F48FE44C06174 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -650,7 +622,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FAA6B6DFEC4F6168E2059D3E /* [CP] Embed Pods Frameworks */ = {
+		8C61299322603E713E8D703C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -663,6 +635,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HafsaInspectorApp/Pods-HafsaInspectorApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3ED2A2150EB1169E441B989 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -775,6 +762,7 @@
 				9CF8EC061D95C45F00639E91 /* ToolbarController.swift in Sources */,
 				9CF8EBD11D95C45F00639E91 /* Font.swift in Sources */,
 				9CF8EBC41D95C45F00639E91 /* CollectionViewDelegate.swift in Sources */,
+				B3DE094C1D9E0251005EEFF4 /* SubmitTableViewCell.swift in Sources */,
 				9CF8EBDB1D95C45F00639E91 /* Layout.swift in Sources */,
 				9CF8EBD41D95C45F00639E91 /* IconButton.swift in Sources */,
 				9CF8EBBC1D95C45F00639E91 /* CaptureSession.swift in Sources */,
@@ -877,7 +865,7 @@
 		};
 		B367E1C81D73F8E6008078DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAD07BCF679C3DB174AC45F3 /* Pods-HafsaInspectorApp.debug.xcconfig */;
+			baseConfigurationReference = E2F953DD59D1C585672580A8 /* Pods-HafsaInspectorApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -900,7 +888,7 @@
 		};
 		B367E1C91D73F8E6008078DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 664B7478F436B1FE0A598A46 /* Pods-HafsaInspectorApp.release.xcconfig */;
+			baseConfigurationReference = 0C7A27D0A2ED082559286BC3 /* Pods-HafsaInspectorApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

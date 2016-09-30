@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "42D93C2099513D27A404A280A3BED909"
+               BlueprintIdentifier = "5080D2FD6599AC332586D6DE36AE1699"
                BuildableName = "Pods_HafsaInspectorApp.framework"
                BlueprintName = "Pods-HafsaInspectorApp"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "42D93C2099513D27A404A280A3BED909"
+            BlueprintIdentifier = "5080D2FD6599AC332586D6DE36AE1699"
             BuildableName = "Pods_HafsaInspectorApp.framework"
             BlueprintName = "Pods-HafsaInspectorApp"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -1,0 +1,696 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SubmitTableViewCell"
+provides-nominal:
+- "C17HafsaInspectorApp19SubmitTableViewCell"
+provides-member:
+- ["C17HafsaInspectorApp19SubmitTableViewCell", ""]
+provides-dynamic-lookup:
+- "submitButtonPressed"
+- "configureCell"
+- "submitButton"
+depends-top-level:
+- !private "FormTableViewController"
+- "UITableViewCell"
+- "UIButton"
+- !private "UIColor"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "SubmitTableViewCell"
+- !private "UIFont"
+- "AnyObject"
+- !private "StringLiteralType"
+depends-member:
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UIFont"]
+- !private ["Ps9AnyObject", "backgroundColor"]
+- !private ["Ps9AnyObject", "black"]
+- !private ["Ps9AnyObject", "borderColor"]
+- !private ["Ps9AnyObject", "borderWidth"]
+- !private ["Ps9AnyObject", "cgColor"]
+- ["Ps9AnyObject", "configureCell"]
+- !private ["Ps9AnyObject", "cornerRadius"]
+- !private ["Ps9AnyObject", "font"]
+- !private ["Ps9AnyObject", "generatePDF"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "layer"]
+- !private ["Ps9AnyObject", "parentViewController"]
+- ["Ps9AnyObject", "submitButton"]
+- ["Ps9AnyObject", "submitButtonPressed"]
+- !private ["Ps9AnyObject", "textColor"]
+- !private ["Ps9AnyObject", "tintColor"]
+- !private ["Ps9AnyObject", "titleLabel"]
+- !private ["Ps9AnyObject", "white"]
+- ["Ps9AnyObject", ""]
+- !private ["CSo7CALayer", "borderColor"]
+- !private ["CSo7CALayer", "borderWidth"]
+- !private ["CSo7CALayer", "cornerRadius"]
+- ["CSo7CALayer", "deinit"]
+- !private ["PSo15CALayerDelegate", "UIColor"]
+- !private ["PSo15CALayerDelegate", "UIFont"]
+- !private ["PSo15CALayerDelegate", "backgroundColor"]
+- ["PSo15CALayerDelegate", "configureCell"]
+- !private ["PSo15CALayerDelegate", "font"]
+- !private ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "layer"]
+- !private ["PSo15CALayerDelegate", "parentViewController"]
+- ["PSo15CALayerDelegate", "submitButton"]
+- ["PSo15CALayerDelegate", "submitButtonPressed"]
+- !private ["PSo15CALayerDelegate", "textColor"]
+- !private ["PSo15CALayerDelegate", "tintColor"]
+- !private ["PSo15CALayerDelegate", "titleLabel"]
+- ["PSo15CALayerDelegate", ""]
+- !private ["PSo13CAMediaTiming", "borderColor"]
+- !private ["PSo13CAMediaTiming", "borderWidth"]
+- !private ["PSo13CAMediaTiming", "cornerRadius"]
+- ["CSo7CGColor", "deinit"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["Ps7CVarArg", "UIColor"]
+- !private ["Ps7CVarArg", "UIFont"]
+- !private ["Ps7CVarArg", "backgroundColor"]
+- !private ["Ps7CVarArg", "black"]
+- !private ["Ps7CVarArg", "borderColor"]
+- !private ["Ps7CVarArg", "borderWidth"]
+- !private ["Ps7CVarArg", "cgColor"]
+- ["Ps7CVarArg", "configureCell"]
+- !private ["Ps7CVarArg", "cornerRadius"]
+- !private ["Ps7CVarArg", "font"]
+- !private ["Ps7CVarArg", "generatePDF"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "layer"]
+- !private ["Ps7CVarArg", "parentViewController"]
+- ["Ps7CVarArg", "submitButton"]
+- ["Ps7CVarArg", "submitButtonPressed"]
+- !private ["Ps7CVarArg", "textColor"]
+- !private ["Ps7CVarArg", "tintColor"]
+- !private ["Ps7CVarArg", "titleLabel"]
+- !private ["Ps7CVarArg", "white"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "UIFont"]
+- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
+- !private ["Ps28CustomDebugStringConvertible", "black"]
+- !private ["Ps28CustomDebugStringConvertible", "borderColor"]
+- !private ["Ps28CustomDebugStringConvertible", "borderWidth"]
+- !private ["Ps28CustomDebugStringConvertible", "cgColor"]
+- ["Ps28CustomDebugStringConvertible", "configureCell"]
+- !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
+- !private ["Ps28CustomDebugStringConvertible", "font"]
+- !private ["Ps28CustomDebugStringConvertible", "generatePDF"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "layer"]
+- !private ["Ps28CustomDebugStringConvertible", "parentViewController"]
+- ["Ps28CustomDebugStringConvertible", "submitButton"]
+- ["Ps28CustomDebugStringConvertible", "submitButtonPressed"]
+- !private ["Ps28CustomDebugStringConvertible", "textColor"]
+- !private ["Ps28CustomDebugStringConvertible", "tintColor"]
+- !private ["Ps28CustomDebugStringConvertible", "titleLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "white"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "UIFont"]
+- !private ["Ps23CustomStringConvertible", "backgroundColor"]
+- !private ["Ps23CustomStringConvertible", "black"]
+- !private ["Ps23CustomStringConvertible", "borderColor"]
+- !private ["Ps23CustomStringConvertible", "borderWidth"]
+- !private ["Ps23CustomStringConvertible", "cgColor"]
+- ["Ps23CustomStringConvertible", "configureCell"]
+- !private ["Ps23CustomStringConvertible", "cornerRadius"]
+- !private ["Ps23CustomStringConvertible", "font"]
+- !private ["Ps23CustomStringConvertible", "generatePDF"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "layer"]
+- !private ["Ps23CustomStringConvertible", "parentViewController"]
+- ["Ps23CustomStringConvertible", "submitButton"]
+- ["Ps23CustomStringConvertible", "submitButtonPressed"]
+- !private ["Ps23CustomStringConvertible", "textColor"]
+- !private ["Ps23CustomStringConvertible", "tintColor"]
+- !private ["Ps23CustomStringConvertible", "titleLabel"]
+- !private ["Ps23CustomStringConvertible", "white"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "UIFont"]
+- !private ["Ps9Equatable", "backgroundColor"]
+- !private ["Ps9Equatable", "black"]
+- !private ["Ps9Equatable", "borderColor"]
+- !private ["Ps9Equatable", "borderWidth"]
+- !private ["Ps9Equatable", "cgColor"]
+- ["Ps9Equatable", "configureCell"]
+- !private ["Ps9Equatable", "cornerRadius"]
+- !private ["Ps9Equatable", "font"]
+- !private ["Ps9Equatable", "generatePDF"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "layer"]
+- !private ["Ps9Equatable", "parentViewController"]
+- ["Ps9Equatable", "submitButton"]
+- ["Ps9Equatable", "submitButtonPressed"]
+- !private ["Ps9Equatable", "textColor"]
+- !private ["Ps9Equatable", "tintColor"]
+- !private ["Ps9Equatable", "titleLabel"]
+- !private ["Ps9Equatable", "white"]
+- ["Ps9Equatable", ""]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["P12PDFGenerator19FilePathConvertible", "init"]
+- ["C17HafsaInspectorApp23FormTableViewController", "deinit"]
+- !private ["C17HafsaInspectorApp23FormTableViewController", "generatePDF"]
+- !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "UIFont"]
+- !private ["Ps8Hashable", "backgroundColor"]
+- !private ["Ps8Hashable", "black"]
+- !private ["Ps8Hashable", "borderColor"]
+- !private ["Ps8Hashable", "borderWidth"]
+- !private ["Ps8Hashable", "cgColor"]
+- ["Ps8Hashable", "configureCell"]
+- !private ["Ps8Hashable", "cornerRadius"]
+- !private ["Ps8Hashable", "font"]
+- !private ["Ps8Hashable", "generatePDF"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "layer"]
+- !private ["Ps8Hashable", "parentViewController"]
+- ["Ps8Hashable", "submitButton"]
+- ["Ps8Hashable", "submitButtonPressed"]
+- !private ["Ps8Hashable", "textColor"]
+- !private ["Ps8Hashable", "tintColor"]
+- !private ["Ps8Hashable", "titleLabel"]
+- !private ["Ps8Hashable", "white"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIFont"]
+- !private ["PSo8NSCoding", "backgroundColor"]
+- !private ["PSo8NSCoding", "black"]
+- !private ["PSo8NSCoding", "borderColor"]
+- !private ["PSo8NSCoding", "borderWidth"]
+- !private ["PSo8NSCoding", "cgColor"]
+- ["PSo8NSCoding", "configureCell"]
+- !private ["PSo8NSCoding", "cornerRadius"]
+- !private ["PSo8NSCoding", "font"]
+- !private ["PSo8NSCoding", "generatePDF"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "layer"]
+- !private ["PSo8NSCoding", "parentViewController"]
+- ["PSo8NSCoding", "submitButton"]
+- ["PSo8NSCoding", "submitButtonPressed"]
+- !private ["PSo8NSCoding", "textColor"]
+- !private ["PSo8NSCoding", "tintColor"]
+- !private ["PSo8NSCoding", "titleLabel"]
+- !private ["PSo8NSCoding", "white"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "black"]
+- !private ["PSo9NSCopying", "cgColor"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "white"]
+- !private ["PSo26NSExtensionRequestHandling", "generatePDF"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "FormTableViewController"]
+- ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UIFont"]
+- !private ["CSo8NSObject", "backgroundColor"]
+- !private ["CSo8NSObject", "black"]
+- !private ["CSo8NSObject", "borderColor"]
+- !private ["CSo8NSObject", "borderWidth"]
+- !private ["CSo8NSObject", "cgColor"]
+- ["CSo8NSObject", "configureCell"]
+- !private ["CSo8NSObject", "cornerRadius"]
+- !private ["CSo8NSObject", "font"]
+- !private ["CSo8NSObject", "generatePDF"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "layer"]
+- !private ["CSo8NSObject", "parentViewController"]
+- ["CSo8NSObject", "submitButton"]
+- ["CSo8NSObject", "submitButtonPressed"]
+- !private ["CSo8NSObject", "textColor"]
+- !private ["CSo8NSObject", "tintColor"]
+- !private ["CSo8NSObject", "titleLabel"]
+- !private ["CSo8NSObject", "white"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIFont"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- !private ["PSo16NSObjectProtocol", "black"]
+- !private ["PSo16NSObjectProtocol", "borderColor"]
+- !private ["PSo16NSObjectProtocol", "borderWidth"]
+- !private ["PSo16NSObjectProtocol", "cgColor"]
+- ["PSo16NSObjectProtocol", "configureCell"]
+- !private ["PSo16NSObjectProtocol", "cornerRadius"]
+- !private ["PSo16NSObjectProtocol", "font"]
+- !private ["PSo16NSObjectProtocol", "generatePDF"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "layer"]
+- !private ["PSo16NSObjectProtocol", "parentViewController"]
+- ["PSo16NSObjectProtocol", "submitButton"]
+- ["PSo16NSObjectProtocol", "submitButtonPressed"]
+- !private ["PSo16NSObjectProtocol", "textColor"]
+- !private ["PSo16NSObjectProtocol", "tintColor"]
+- !private ["PSo16NSObjectProtocol", "titleLabel"]
+- !private ["PSo16NSObjectProtocol", "white"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "black"]
+- !private ["PSo14NSSecureCoding", "cgColor"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "white"]
+- !private ["CSo8NSString", "init"]
+- ["Sq", "deinit"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "UIColor"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "UIFont"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "backgroundColor"]
+- ["P12PDFGenerator17PDFPageRenderable", "configureCell"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "font"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "init"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "layer"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "parentViewController"]
+- ["P12PDFGenerator17PDFPageRenderable", "submitButton"]
+- ["P12PDFGenerator17PDFPageRenderable", "submitButtonPressed"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "textColor"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "tintColor"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "titleLabel"]
+- ["P12PDFGenerator17PDFPageRenderable", ""]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- ["C17HafsaInspectorApp19SubmitTableViewCell", "AnyObject"]
+- !private ["C17HafsaInspectorApp19SubmitTableViewCell", "FormTableViewController"]
+- ["C17HafsaInspectorApp19SubmitTableViewCell", "UIButton"]
+- !private ["C17HafsaInspectorApp19SubmitTableViewCell", "UIColor"]
+- !private ["C17HafsaInspectorApp19SubmitTableViewCell", "UIFont"]
+- ["C17HafsaInspectorApp19SubmitTableViewCell", "configureCell"]
+- ["C17HafsaInspectorApp19SubmitTableViewCell", "deinit"]
+- ["C17HafsaInspectorApp19SubmitTableViewCell", "init"]
+- !private ["C17HafsaInspectorApp19SubmitTableViewCell", "parentViewController"]
+- ["C17HafsaInspectorApp19SubmitTableViewCell", "submitButton"]
+- ["C17HafsaInspectorApp19SubmitTableViewCell", "submitButtonPressed"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "UIColor"]
+- !private ["PSo29UIAccessibilityIdentification", "UIFont"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- ["PSo29UIAccessibilityIdentification", "configureCell"]
+- !private ["PSo29UIAccessibilityIdentification", "font"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- !private ["PSo29UIAccessibilityIdentification", "parentViewController"]
+- ["PSo29UIAccessibilityIdentification", "submitButton"]
+- ["PSo29UIAccessibilityIdentification", "submitButtonPressed"]
+- !private ["PSo29UIAccessibilityIdentification", "textColor"]
+- !private ["PSo29UIAccessibilityIdentification", "tintColor"]
+- !private ["PSo29UIAccessibilityIdentification", "titleLabel"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "UIColor"]
+- !private ["PSo12UIAppearance", "UIFont"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
+- ["PSo12UIAppearance", "configureCell"]
+- !private ["PSo12UIAppearance", "font"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "layer"]
+- !private ["PSo12UIAppearance", "parentViewController"]
+- ["PSo12UIAppearance", "submitButton"]
+- ["PSo12UIAppearance", "submitButtonPressed"]
+- !private ["PSo12UIAppearance", "textColor"]
+- !private ["PSo12UIAppearance", "tintColor"]
+- !private ["PSo12UIAppearance", "titleLabel"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UIFont"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- ["PSo21UIAppearanceContainer", "configureCell"]
+- !private ["PSo21UIAppearanceContainer", "font"]
+- !private ["PSo21UIAppearanceContainer", "generatePDF"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
+- !private ["PSo21UIAppearanceContainer", "parentViewController"]
+- ["PSo21UIAppearanceContainer", "submitButton"]
+- ["PSo21UIAppearanceContainer", "submitButtonPressed"]
+- !private ["PSo21UIAppearanceContainer", "textColor"]
+- !private ["PSo21UIAppearanceContainer", "tintColor"]
+- !private ["PSo21UIAppearanceContainer", "titleLabel"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "backgroundColor"]
+- !private ["CSo8UIButton", "layer"]
+- !private ["CSo8UIButton", "tintColor"]
+- !private ["CSo8UIButton", "titleLabel"]
+- !private ["CSo7UIColor", "black"]
+- !private ["CSo7UIColor", "cgColor"]
+- ["CSo7UIColor", "deinit"]
+- !private ["CSo7UIColor", "white"]
+- !private ["PSo18UIContentContainer", "generatePDF"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "font"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "textColor"]
+- !private ["CSo9UIControl", "backgroundColor"]
+- !private ["CSo9UIControl", "layer"]
+- !private ["CSo9UIControl", "tintColor"]
+- !private ["CSo9UIControl", "titleLabel"]
+- !private ["PSo17UICoordinateSpace", "UIColor"]
+- !private ["PSo17UICoordinateSpace", "UIFont"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- ["PSo17UICoordinateSpace", "configureCell"]
+- !private ["PSo17UICoordinateSpace", "font"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- !private ["PSo17UICoordinateSpace", "parentViewController"]
+- ["PSo17UICoordinateSpace", "submitButton"]
+- ["PSo17UICoordinateSpace", "submitButtonPressed"]
+- !private ["PSo17UICoordinateSpace", "textColor"]
+- !private ["PSo17UICoordinateSpace", "tintColor"]
+- !private ["PSo17UICoordinateSpace", "titleLabel"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "UIColor"]
+- !private ["PSo13UIDynamicItem", "UIFont"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
+- ["PSo13UIDynamicItem", "configureCell"]
+- !private ["PSo13UIDynamicItem", "font"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "layer"]
+- !private ["PSo13UIDynamicItem", "parentViewController"]
+- ["PSo13UIDynamicItem", "submitButton"]
+- ["PSo13UIDynamicItem", "submitButtonPressed"]
+- !private ["PSo13UIDynamicItem", "textColor"]
+- !private ["PSo13UIDynamicItem", "tintColor"]
+- !private ["PSo13UIDynamicItem", "titleLabel"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "UIFont"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
+- ["PSo18UIFocusEnvironment", "configureCell"]
+- !private ["PSo18UIFocusEnvironment", "font"]
+- !private ["PSo18UIFocusEnvironment", "generatePDF"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
+- !private ["PSo18UIFocusEnvironment", "parentViewController"]
+- ["PSo18UIFocusEnvironment", "submitButton"]
+- ["PSo18UIFocusEnvironment", "submitButtonPressed"]
+- !private ["PSo18UIFocusEnvironment", "textColor"]
+- !private ["PSo18UIFocusEnvironment", "tintColor"]
+- !private ["PSo18UIFocusEnvironment", "titleLabel"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "UIColor"]
+- !private ["PSo11UIFocusItem", "UIFont"]
+- !private ["PSo11UIFocusItem", "backgroundColor"]
+- ["PSo11UIFocusItem", "configureCell"]
+- !private ["PSo11UIFocusItem", "font"]
+- !private ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "layer"]
+- !private ["PSo11UIFocusItem", "parentViewController"]
+- ["PSo11UIFocusItem", "submitButton"]
+- ["PSo11UIFocusItem", "submitButtonPressed"]
+- !private ["PSo11UIFocusItem", "textColor"]
+- !private ["PSo11UIFocusItem", "tintColor"]
+- !private ["PSo11UIFocusItem", "titleLabel"]
+- ["PSo11UIFocusItem", ""]
+- !private ["CSo6UIFont", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "UIColor"]
+- !private ["PSo27UIGestureRecognizerDelegate", "UIFont"]
+- ["PSo27UIGestureRecognizerDelegate", "configureCell"]
+- !private ["PSo27UIGestureRecognizerDelegate", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "parentViewController"]
+- ["PSo27UIGestureRecognizerDelegate", "submitButton"]
+- ["PSo27UIGestureRecognizerDelegate", "submitButtonPressed"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- !private ["P12PDFGenerator18UIImageConvertible", "init"]
+- ["CSo7UILabel", "deinit"]
+- !private ["CSo7UILabel", "font"]
+- !private ["CSo7UILabel", "textColor"]
+- ["CSo11UIResponder", "AnyObject"]
+- !private ["CSo11UIResponder", "FormTableViewController"]
+- ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UIFont"]
+- !private ["CSo11UIResponder", "backgroundColor"]
+- ["CSo11UIResponder", "configureCell"]
+- !private ["CSo11UIResponder", "font"]
+- !private ["CSo11UIResponder", "generatePDF"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "layer"]
+- !private ["CSo11UIResponder", "parentViewController"]
+- ["CSo11UIResponder", "submitButton"]
+- ["CSo11UIResponder", "submitButtonPressed"]
+- !private ["CSo11UIResponder", "textColor"]
+- !private ["CSo11UIResponder", "tintColor"]
+- !private ["CSo11UIResponder", "titleLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "UIColor"]
+- !private ["PSo30UIResponderStandardEditActions", "UIFont"]
+- !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
+- ["PSo30UIResponderStandardEditActions", "configureCell"]
+- !private ["PSo30UIResponderStandardEditActions", "font"]
+- !private ["PSo30UIResponderStandardEditActions", "generatePDF"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "layer"]
+- !private ["PSo30UIResponderStandardEditActions", "parentViewController"]
+- ["PSo30UIResponderStandardEditActions", "submitButton"]
+- ["PSo30UIResponderStandardEditActions", "submitButtonPressed"]
+- !private ["PSo30UIResponderStandardEditActions", "textColor"]
+- !private ["PSo30UIResponderStandardEditActions", "tintColor"]
+- !private ["PSo30UIResponderStandardEditActions", "titleLabel"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo20UIScrollViewDelegate", "generatePDF"]
+- !private ["PSo16UIStateRestoring", "generatePDF"]
+- ["CSo15UITableViewCell", "AnyObject"]
+- !private ["CSo15UITableViewCell", "FormTableViewController"]
+- ["CSo15UITableViewCell", "UIButton"]
+- !private ["CSo15UITableViewCell", "UIColor"]
+- !private ["CSo15UITableViewCell", "UIFont"]
+- ["CSo15UITableViewCell", "configureCell"]
+- ["CSo15UITableViewCell", "deinit"]
+- ["CSo15UITableViewCell", "init"]
+- !private ["CSo15UITableViewCell", "parentViewController"]
+- ["CSo15UITableViewCell", "submitButton"]
+- ["CSo15UITableViewCell", "submitButtonPressed"]
+- ["CSo15UITableViewCell", ""]
+- ["OSC20UITableViewCellStyle", "deinit"]
+- !private ["CSo21UITableViewController", "generatePDF"]
+- !private ["PSo21UITableViewDataSource", "generatePDF"]
+- !private ["PSo19UITableViewDelegate", "generatePDF"]
+- !private ["PSo18UITextViewDelegate", "generatePDF"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UIFont"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- ["PSo18UITraitEnvironment", "configureCell"]
+- !private ["PSo18UITraitEnvironment", "font"]
+- !private ["PSo18UITraitEnvironment", "generatePDF"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "layer"]
+- !private ["PSo18UITraitEnvironment", "parentViewController"]
+- ["PSo18UITraitEnvironment", "submitButton"]
+- ["PSo18UITraitEnvironment", "submitButtonPressed"]
+- !private ["PSo18UITraitEnvironment", "textColor"]
+- !private ["PSo18UITraitEnvironment", "tintColor"]
+- !private ["PSo18UITraitEnvironment", "titleLabel"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "AnyObject"]
+- !private ["CSo6UIView", "FormTableViewController"]
+- ["CSo6UIView", "UIButton"]
+- !private ["CSo6UIView", "UIColor"]
+- !private ["CSo6UIView", "UIFont"]
+- !private ["CSo6UIView", "backgroundColor"]
+- ["CSo6UIView", "configureCell"]
+- !private ["CSo6UIView", "font"]
+- ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "layer"]
+- !private ["CSo6UIView", "parentViewController"]
+- ["CSo6UIView", "submitButton"]
+- ["CSo6UIView", "submitButtonPressed"]
+- !private ["CSo6UIView", "textColor"]
+- !private ["CSo6UIView", "tintColor"]
+- !private ["CSo6UIView", "titleLabel"]
+- !private ["CSo16UIViewController", "generatePDF"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "generatePDF"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIFont"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "configureCell"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "font"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "parentViewController"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "submitButton"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "submitButtonPressed"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "tintColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "titleLabel"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps26_ExpressibleByColorLiteral", "black"]
+- !private ["Ps26_ExpressibleByColorLiteral", "cgColor"]
+- !private ["Ps26_ExpressibleByColorLiteral", "white"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "UIColor"]
+- !private ["Ps9_Hashable", "UIFont"]
+- !private ["Ps9_Hashable", "backgroundColor"]
+- !private ["Ps9_Hashable", "black"]
+- !private ["Ps9_Hashable", "borderColor"]
+- !private ["Ps9_Hashable", "borderWidth"]
+- !private ["Ps9_Hashable", "cgColor"]
+- ["Ps9_Hashable", "configureCell"]
+- !private ["Ps9_Hashable", "cornerRadius"]
+- !private ["Ps9_Hashable", "font"]
+- !private ["Ps9_Hashable", "generatePDF"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "layer"]
+- !private ["Ps9_Hashable", "parentViewController"]
+- ["Ps9_Hashable", "submitButton"]
+- ["Ps9_Hashable", "submitButtonPressed"]
+- !private ["Ps9_Hashable", "textColor"]
+- !private ["Ps9_Hashable", "tintColor"]
+- !private ["Ps9_Hashable", "titleLabel"]
+- !private ["Ps9_Hashable", "white"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "CSo7CALayer"
+- "PSo15CALayerDelegate"
+- !private "PSo13CAMediaTiming"
+- "CSo7CGColor"
+- "V12CoreGraphics7CGFloat"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "P12PDFGenerator19FilePathConvertible"
+- "C17HafsaInspectorApp23FormTableViewController"
+- "Ps8Hashable"
+- "SQ"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Sq"
+- "P12PDFGenerator17PDFPageRenderable"
+- "SS"
+- "C17HafsaInspectorApp19SubmitTableViewCell"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo8UIButton"
+- "CSo7UIColor"
+- !private "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "CSo9UIControl"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- !private "CSo6UIFont"
+- "PSo27UIGestureRecognizerDelegate"
+- !private "P12PDFGenerator18UIImageConvertible"
+- "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "PSo20UIScrollViewDelegate"
+- !private "PSo16UIStateRestoring"
+- "CSo15UITableViewCell"
+- "OSC20UITableViewCellStyle"
+- !private "CSo21UITableViewController"
+- !private "PSo21UITableViewDataSource"
+- !private "PSo19UITableViewDelegate"
+- !private "PSo18UITextViewDelegate"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "CSo16UIViewController"
+- !private "P17HafsaInspectorApp23ViewControllerContainer"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps26_ExpressibleByColorLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/HafsaInspectorApp-Bridging-Header.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/IPDFView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderTextView.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/OrderedDictionary.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseMessaging/Frameworks/frameworks/FirebaseMessaging.framework/Headers/FIRMessaging.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseMessaging/Frameworks/frameworks/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseMessaging/Frameworks/frameworks/FirebaseMessaging.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/Firebase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator/PDFGenerator.framework/Modules/PDFGenerator.swiftmodule/x86_64.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator/PDFGenerator.framework/Headers/PDFGenerator.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator/PDFGenerator.framework/Headers/PDFGenerator-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator/PDFGenerator.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "5646a69ec3810c6d70eef0e1c1855cb8"

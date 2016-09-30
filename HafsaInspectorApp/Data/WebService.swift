@@ -29,6 +29,21 @@ import Firebase
 
 let chaptersAndEstablishmentsEndpoint = "https://spreadsheets.google.com/feeds/list/1j1-OsdS5av9WFLswdm23s0bkHyv8e73UmKlbT31Eddw/od6/public/basic?alt=json"
 
+let googleFormLink = "https://docs.google.com/forms/d/e/1FAIpQLSeP4Rzd8ZWS-MFO8rCBUqRP_QQzLvMSMNK3t2s9YktcGmBXSA/formResponse"
+let googleFormNameField = "entry.1968549434"
+
+let googleFormYearField = "entry.1897376566_year"
+let googleFormMonthField = "entry.1897376566_month"
+let googleFormDayField = "entry.1897376566_day"
+let googleFormHourField = "entry.1897376566_hour"
+let googleFormMinuteField = "entry.1897376566_minute"
+let googleFormEstablishmentField = "entry.975256468"
+let googleFormZHMeatProcessorsField = "entry.1855455257"
+let googleFormCrescentField = "entry.1054144217"
+let googleFormHalalFarmsField = "entry.1678112188"
+let googleFormHibaTradersField = "entry.784678828"
+let googleFormMiscellaneousField = "entry.1965697433"
+let googleFormNotesField = "entry.795200750"
 
 class WebService: NSObject {
     typealias CompletionHandler = (Bool?, NSError?) -> Void
@@ -106,11 +121,70 @@ class WebService: NSObject {
             print(error.localizedDescription)
         }
         
-
+    }
+    
+    func sendToGoogleForms(name: String, year:String, month:String, day: String, hour: String, minute: String,establishment: String, zHProcessors:String, crescent: String, halalFarms: String, hibaTraders:String, miscellaneous:String, notes:String) {
+        
+        var postData = googleFormNameField + "=" + name
+        postData += "&" + googleFormYearField + "=" + year
+        postData += "&" + googleFormMonthField + "=" + month
+        postData += "&" + googleFormDayField + "=" + day
+        postData += "&" + googleFormHourField + "=" + hour
+        postData += "&" + googleFormMinuteField + "=" + minute
+        postData += "&" + googleFormEstablishmentField + "=" + establishment
+        postData += "&" + googleFormZHMeatProcessorsField + "=" + zHProcessors
+        postData += "&" + googleFormCrescentField + "=" + crescent
+        postData += "&" + googleFormHalalFarmsField + "=" + halalFarms
+        postData += "&" + googleFormHibaTradersField + "=" + hibaTraders
+        postData += "&" + googleFormMiscellaneousField + "=" + miscellaneous
+        postData += "&" + googleFormNotesField + "=" + notes
+        
+        
+        
+        self.upload_request(postData: postData)
         
         
         
     }
+
+    func upload_request(postData: String) {
+        
+        let url = NSURL(string: googleFormLink)
+        
+        let session = URLSession.shared
+        
+        let request = NSMutableURLRequest(url: url! as URL)
+        
+        request.httpMethod = "POST"
+        
+        request.cachePolicy = .reloadIgnoringCacheData
+        
+        request.setValue("application/x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
+        
+        request.httpBody = postData.data(using: String.Encoding.utf8)
+        
+        
+        let task = session.dataTask(with: request as URLRequest) {
+            
+            ( data, response, error) in
+            
+            guard let _:NSData = data as NSData?, let _:URLResponse = response  , error == nil else {
+                
+                print("error")
+                
+                return
+                
+            }
+                        print(data)
+                        print(response)
+            
+        }
+        
+        task.resume()
+        
+    }
+    
+    
 
     
     

@@ -1,0 +1,11 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "c88fcd1340910945eda8e267c6e1f9cc"
+build_time: [528567450, 166855000]
+inputs:
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/PDFGenerator/PDFGenerator/DPIType.swift": [528567426, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/PDFGenerator/PDFGenerator/FilePathConvertible.swift": [528567426, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/PDFGenerator/PDFGenerator/PDFGenerateError.swift": [528567426, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/PDFGenerator/PDFGenerator/PDFGenerator.swift": [528567426, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/PDFGenerator/PDFGenerator/PDFPage.swift": [528567426, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/PDFGenerator/PDFGenerator/PDFPageRenderable.swift": [528567426, 0]
+  "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/PDFGenerator/PDFGenerator/PDFPassword.swift": [528567426, 0]

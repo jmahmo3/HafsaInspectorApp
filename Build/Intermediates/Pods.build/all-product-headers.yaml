@@ -4,12 +4,12 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers",
+      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "MBProgressHUD-Swift.h",
-          'external-contents': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-Swift.h"
+          'external-contents': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD-Swift.h"
         },
         {
           'type': 'file',
@@ -25,7 +25,7 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules",
+      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Modules",
       'contents': [
         {
           'type': 'file',
@@ -36,12 +36,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers",
+      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator/PDFGenerator.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "PDFGenerator-Swift.h",
-          'external-contents': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
+          'external-contents': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
         },
         {
           'type': 'file',
@@ -57,7 +57,7 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules",
+      'name': "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator/PDFGenerator.framework/Modules",
       'contents': [
         {
           'type': 'file',

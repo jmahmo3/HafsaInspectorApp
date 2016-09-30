@@ -46,7 +46,7 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return supplierData.count + 3
+        return supplierData.count + 4
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -62,23 +62,27 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
             return cell
         }
         if indexPath.row == supplierData.count+1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ImageTableViewCell", for: indexPath) as! ImageTableViewCell
-            
-            return cell
-        }
-        else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CommentTableViewCell", for: indexPath) as! CommentTableViewCell
             cell.configureCommentTableViewCell()
             cell.textView.delegate = self
             return cell
+        }
+        if indexPath.row == supplierData.count+2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ImageTableViewCell", for: indexPath) as! ImageTableViewCell
+            return cell
             
+        }
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SubmitTableViewCell", for: indexPath) as! SubmitTableViewCell
+            cell.configureCell()
+            return cell
         }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 4{
-            self.generatePDF()
-        }
+//        if indexPath.row == 4{
+//            self.generatePDF()
+//        }
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -159,6 +163,15 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
         } catch (let error) {
             print(error)
         }
+        
+        
+//        let zh = (HIManager.sharedClient().supplierArray[0] )
+        
+        WebService().sendToGoogleForms(name: "Junaid", year: "2016", month: "09", day: "29", hour: "10", minute: "05", establishment: "BBQ Tonight", zHProcessors: "22", crescent: "33", halalFarms: "44", hibaTraders: "55", miscellaneous: "55", notes: "testing")
+        
+        
+        
+        
         
         let storage = FIRStorage.storage()
 

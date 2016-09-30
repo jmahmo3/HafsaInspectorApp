@@ -10,56 +10,57 @@ provides-member:
 - ["O17HafsaInspectorApp15HITextFieldType", ""]
 - ["C17HafsaInspectorApp11HITextField", ""]
 provides-dynamic-lookup:
-- "setupChapterPicker"
-- "donePicker"
-- "picker"
 - "setupPicker"
-- "numberOfComponents"
 - "data"
 - "setupEstablishmentPicker"
-- "pickerView"
-- "pickerView"
-- "pickerView"
+- "numberOfComponents"
 - "setup"
+- "donePicker"
+- "picker"
+- "pickerView"
+- "pickerView"
+- "pickerView"
+- "setupChapterPicker"
 depends-top-level:
-- !private "NSDictionary"
-- "TextField"
-- !private "Dictionary"
-- !private "UIFont"
-- !private ">"
-- !private "StringLiteralType"
-- !private "UIBarButtonSystemItem"
-- "Int"
 - !private "UIColor"
-- "HITextFieldType"
-- !private "UIBarStyle"
-- !private "!="
-- !private "UIScreen"
-- "UIPickerViewDelegate"
-- !private "UIBarButtonItemStyle"
-- !private "BooleanLiteralType"
-- "UIPickerViewDataSource"
-- "NSCoder"
 - !private "CGFloat"
-- "HITextField"
-- "NSArray"
-- !private "UIBarButtonItem"
-- "Array"
-- !private "UIToolbar"
+- "Int"
+- !private "UIScreen"
 - "TernaryPrecedence"
-- "UIPickerView"
+- !private ">"
+- "HITextFieldType"
 - "HIManager"
-- "String"
-- !private "/"
-- "=="
+- !private "UIBarStyle"
+- !private "UIBarButtonSystemItem"
+- !private "UIBarButtonItem"
+- "TextField"
 - "AssignmentPrecedence"
-- !private "CGRect"
+- "=="
+- !private "UIToolbar"
 - "CastingPrecedence"
+- "UIPickerView"
+- "NSArray"
+- !private "UIBarButtonItemStyle"
+- "Array"
+- !private "CGRect"
+- !private "StringLiteralType"
+- !private "Dictionary"
+- "UIPickerViewDataSource"
+- !private "UIFont"
+- !private "BooleanLiteralType"
+- "HITextField"
+- !private "!="
+- "NSCoder"
+- !private "/"
+- "UIPickerViewDelegate"
+- "String"
+- !private "NSDictionary"
 depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - ["Ps9AnyObject", "Element"]
 - ["Ps9AnyObject", "HIManager"]
 - ["Ps9AnyObject", "HImanager"]
+- !private ["Ps9AnyObject", "Iterator"]
 - !private ["Ps9AnyObject", "Key"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
 - !private ["Ps9AnyObject", "UIBarButtonItemStyle"]
@@ -77,6 +78,7 @@ depends-member:
 - !private ["Ps9AnyObject", "bounds"]
 - !private ["Ps9AnyObject", "chapters"]
 - !private ["Ps9AnyObject", "chaptersData"]
+- !private ["Ps9AnyObject", "contains"]
 - !private ["Ps9AnyObject", "copy"]
 - !private ["Ps9AnyObject", "count"]
 - !private ["Ps9AnyObject", "currentChapter"]
@@ -182,6 +184,7 @@ depends-member:
 - ["Ps7CVarArg", "HIManager"]
 - ["Ps7CVarArg", "HImanager"]
 - !private ["Ps7CVarArg", "IndexDistance"]
+- !private ["Ps7CVarArg", "Iterator"]
 - !private ["Ps7CVarArg", "Key"]
 - !private ["Ps7CVarArg", "UIBarButtonItem"]
 - !private ["Ps7CVarArg", "UIBarButtonItemStyle"]
@@ -199,6 +202,7 @@ depends-member:
 - !private ["Ps7CVarArg", "bounds"]
 - !private ["Ps7CVarArg", "chapters"]
 - !private ["Ps7CVarArg", "chaptersData"]
+- !private ["Ps7CVarArg", "contains"]
 - !private ["Ps7CVarArg", "copy"]
 - !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "currentChapter"]
@@ -248,6 +252,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "HIManager"]
 - ["Ps28CustomDebugStringConvertible", "HImanager"]
 - !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItem"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItemStyle"]
@@ -265,6 +270,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "bounds"]
 - !private ["Ps28CustomDebugStringConvertible", "chapters"]
 - !private ["Ps28CustomDebugStringConvertible", "chaptersData"]
+- !private ["Ps28CustomDebugStringConvertible", "contains"]
 - !private ["Ps28CustomDebugStringConvertible", "copy"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "currentChapter"]
@@ -312,10 +318,12 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "width"]
 - ["Ps17CustomReflectable", "Element"]
 - !private ["Ps17CustomReflectable", "IndexDistance"]
+- !private ["Ps17CustomReflectable", "Iterator"]
 - !private ["Ps17CustomReflectable", "Key"]
 - !private ["Ps17CustomReflectable", "Value"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "allKeys"]
+- !private ["Ps17CustomReflectable", "contains"]
 - !private ["Ps17CustomReflectable", "copy"]
 - !private ["Ps17CustomReflectable", "count"]
 - !private ["Ps17CustomReflectable", "hashValue"]
@@ -329,6 +337,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "HIManager"]
 - ["Ps23CustomStringConvertible", "HImanager"]
 - !private ["Ps23CustomStringConvertible", "IndexDistance"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "UIBarButtonItem"]
 - !private ["Ps23CustomStringConvertible", "UIBarButtonItemStyle"]
@@ -347,6 +356,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "bounds"]
 - !private ["Ps23CustomStringConvertible", "chapters"]
 - !private ["Ps23CustomStringConvertible", "chaptersData"]
+- !private ["Ps23CustomStringConvertible", "contains"]
 - !private ["Ps23CustomStringConvertible", "copy"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "currentChapter"]
@@ -390,6 +400,7 @@ depends-member:
 - ["Ps9Equatable", "Element"]
 - ["Ps9Equatable", "HIManager"]
 - ["Ps9Equatable", "HImanager"]
+- !private ["Ps9Equatable", "Iterator"]
 - !private ["Ps9Equatable", "Key"]
 - !private ["Ps9Equatable", "UIBarButtonItem"]
 - !private ["Ps9Equatable", "UIBarButtonItemStyle"]
@@ -409,6 +420,7 @@ depends-member:
 - !private ["Ps9Equatable", "bounds"]
 - !private ["Ps9Equatable", "chapters"]
 - !private ["Ps9Equatable", "chaptersData"]
+- !private ["Ps9Equatable", "contains"]
 - !private ["Ps9Equatable", "copy"]
 - !private ["Ps9Equatable", "count"]
 - !private ["Ps9Equatable", "currentChapter"]
@@ -456,6 +468,8 @@ depends-member:
 - ["Ps9Equatable", ""]
 - ["Ps25ExpressibleByArrayLiteral", "Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "IndexDistance"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "contains"]
 - !private ["Ps25ExpressibleByArrayLiteral", "copy"]
 - !private ["Ps25ExpressibleByArrayLiteral", "count"]
 - !private ["Ps25ExpressibleByArrayLiteral", "object"]
@@ -527,6 +541,7 @@ depends-member:
 - ["Ps8Hashable", "Element"]
 - ["Ps8Hashable", "HIManager"]
 - ["Ps8Hashable", "HImanager"]
+- !private ["Ps8Hashable", "Iterator"]
 - !private ["Ps8Hashable", "Key"]
 - !private ["Ps8Hashable", "UIBarButtonItem"]
 - !private ["Ps8Hashable", "UIBarButtonItemStyle"]
@@ -546,6 +561,7 @@ depends-member:
 - !private ["Ps8Hashable", "bounds"]
 - !private ["Ps8Hashable", "chapters"]
 - !private ["Ps8Hashable", "chaptersData"]
+- !private ["Ps8Hashable", "contains"]
 - !private ["Ps8Hashable", "copy"]
 - !private ["Ps8Hashable", "count"]
 - !private ["Ps8Hashable", "currentChapter"]
@@ -599,6 +615,7 @@ depends-member:
 - !private ["Si", "hashValue"]
 - !private ["Ps7Integer", "hashValue"]
 - !private ["Ps17IntegerArithmetic", "hashValue"]
+- !private ["Ps16IteratorProtocol", "Element"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "hashValue"]
@@ -610,6 +627,8 @@ depends-member:
 - !private ["Ps16MutableIndexable", "IndexDistance"]
 - !private ["Ps16MutableIndexable", "count"]
 - ["CSo7NSArray", "Element"]
+- !private ["CSo7NSArray", "Iterator"]
+- !private ["CSo7NSArray", "contains"]
 - !private ["CSo7NSArray", "copy"]
 - !private ["CSo7NSArray", "count"]
 - ["CSo7NSArray", "deinit"]
@@ -620,6 +639,7 @@ depends-member:
 - ["PSo8NSCoding", "Element"]
 - ["PSo8NSCoding", "HIManager"]
 - ["PSo8NSCoding", "HImanager"]
+- !private ["PSo8NSCoding", "Iterator"]
 - !private ["PSo8NSCoding", "Key"]
 - !private ["PSo8NSCoding", "UIBarButtonItem"]
 - !private ["PSo8NSCoding", "UIBarButtonItemStyle"]
@@ -634,6 +654,7 @@ depends-member:
 - !private ["PSo8NSCoding", "allKeys"]
 - !private ["PSo8NSCoding", "barStyle"]
 - !private ["PSo8NSCoding", "black"]
+- !private ["PSo8NSCoding", "contains"]
 - !private ["PSo8NSCoding", "copy"]
 - !private ["PSo8NSCoding", "count"]
 - ["PSo8NSCoding", "data"]
@@ -669,10 +690,12 @@ depends-member:
 - !private ["PSo8NSCoding", "tintColor"]
 - ["PSo8NSCoding", ""]
 - ["PSo9NSCopying", "Element"]
+- !private ["PSo9NSCopying", "Iterator"]
 - !private ["PSo9NSCopying", "Key"]
 - !private ["PSo9NSCopying", "Value"]
 - !private ["PSo9NSCopying", "allKeys"]
 - !private ["PSo9NSCopying", "black"]
+- !private ["PSo9NSCopying", "contains"]
 - !private ["PSo9NSCopying", "copy"]
 - !private ["PSo9NSCopying", "count"]
 - !private ["PSo9NSCopying", "init"]
@@ -684,18 +707,23 @@ depends-member:
 - ["CSo12NSDictionary", "deinit"]
 - !private ["CSo12NSDictionary", "object"]
 - ["PSo17NSFastEnumeration", "Element"]
+- !private ["PSo17NSFastEnumeration", "Iterator"]
 - !private ["PSo17NSFastEnumeration", "Key"]
 - !private ["PSo17NSFastEnumeration", "Value"]
 - !private ["PSo17NSFastEnumeration", "allKeys"]
+- !private ["PSo17NSFastEnumeration", "contains"]
 - !private ["PSo17NSFastEnumeration", "copy"]
 - !private ["PSo17NSFastEnumeration", "count"]
 - !private ["PSo17NSFastEnumeration", "object"]
 - !private ["PSo17NSFastEnumeration", "subscript"]
+- !private ["C10Foundation25NSFastEnumerationIterator", "Element"]
 - !private ["CSo14NSMutableArray", "copy"]
 - ["PSo16NSMutableCopying", "Element"]
+- !private ["PSo16NSMutableCopying", "Iterator"]
 - !private ["PSo16NSMutableCopying", "Key"]
 - !private ["PSo16NSMutableCopying", "Value"]
 - !private ["PSo16NSMutableCopying", "allKeys"]
+- !private ["PSo16NSMutableCopying", "contains"]
 - !private ["PSo16NSMutableCopying", "copy"]
 - !private ["PSo16NSMutableCopying", "count"]
 - !private ["PSo16NSMutableCopying", "init"]
@@ -707,6 +735,7 @@ depends-member:
 - ["CSo8NSObject", "HIManager"]
 - ["CSo8NSObject", "HImanager"]
 - ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "Iterator"]
 - !private ["CSo8NSObject", "Key"]
 - ["CSo8NSObject", "NSArray"]
 - ["CSo8NSObject", "NSCoder"]
@@ -728,6 +757,7 @@ depends-member:
 - !private ["CSo8NSObject", "bounds"]
 - !private ["CSo8NSObject", "chapters"]
 - !private ["CSo8NSObject", "chaptersData"]
+- !private ["CSo8NSObject", "contains"]
 - !private ["CSo8NSObject", "copy"]
 - !private ["CSo8NSObject", "count"]
 - !private ["CSo8NSObject", "currentChapter"]
@@ -770,6 +800,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "Element"]
 - ["PSo16NSObjectProtocol", "HIManager"]
 - ["PSo16NSObjectProtocol", "HImanager"]
+- !private ["PSo16NSObjectProtocol", "Iterator"]
 - !private ["PSo16NSObjectProtocol", "Key"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItemStyle"]
@@ -787,6 +818,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "bounds"]
 - !private ["PSo16NSObjectProtocol", "chapters"]
 - !private ["PSo16NSObjectProtocol", "chaptersData"]
+- !private ["PSo16NSObjectProtocol", "contains"]
 - !private ["PSo16NSObjectProtocol", "copy"]
 - !private ["PSo16NSObjectProtocol", "count"]
 - !private ["PSo16NSObjectProtocol", "currentChapter"]
@@ -826,10 +858,12 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "tintColor"]
 - ["PSo16NSObjectProtocol", ""]
 - ["PSo14NSSecureCoding", "Element"]
+- !private ["PSo14NSSecureCoding", "Iterator"]
 - !private ["PSo14NSSecureCoding", "Key"]
 - !private ["PSo14NSSecureCoding", "Value"]
 - !private ["PSo14NSSecureCoding", "allKeys"]
 - !private ["PSo14NSSecureCoding", "black"]
+- !private ["PSo14NSSecureCoding", "contains"]
 - !private ["PSo14NSSecureCoding", "copy"]
 - !private ["PSo14NSSecureCoding", "count"]
 - !private ["PSo14NSSecureCoding", "init"]
@@ -899,9 +933,11 @@ depends-member:
 - ["V10ObjectiveC8Selector", "deinit"]
 - ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "IndexDistance"]
+- !private ["Ps8Sequence", "Iterator"]
 - !private ["Ps8Sequence", "Key"]
 - !private ["Ps8Sequence", "Value"]
 - !private ["Ps8Sequence", "allKeys"]
+- !private ["Ps8Sequence", "contains"]
 - !private ["Ps8Sequence", "copy"]
 - !private ["Ps8Sequence", "count"]
 - !private ["Ps8Sequence", "object"]
@@ -1811,6 +1847,7 @@ depends-member:
 - ["Ps9_Hashable", "Element"]
 - ["Ps9_Hashable", "HIManager"]
 - ["Ps9_Hashable", "HImanager"]
+- !private ["Ps9_Hashable", "Iterator"]
 - !private ["Ps9_Hashable", "Key"]
 - !private ["Ps9_Hashable", "UIBarButtonItem"]
 - !private ["Ps9_Hashable", "UIBarButtonItemStyle"]
@@ -1830,6 +1867,7 @@ depends-member:
 - !private ["Ps9_Hashable", "bounds"]
 - !private ["Ps9_Hashable", "chapters"]
 - !private ["Ps9_Hashable", "chaptersData"]
+- !private ["Ps9_Hashable", "contains"]
 - !private ["Ps9_Hashable", "copy"]
 - !private ["Ps9_Hashable", "count"]
 - !private ["Ps9_Hashable", "currentChapter"]
@@ -1926,6 +1964,7 @@ depends-nominal:
 - "Si"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
+- !private "Ps16IteratorProtocol"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
@@ -1936,6 +1975,7 @@ depends-nominal:
 - "PSo9NSCopying"
 - "CSo12NSDictionary"
 - "PSo17NSFastEnumeration"
+- !private "C10Foundation25NSFastEnumerationIterator"
 - !private "CSo14NSMutableArray"
 - "PSo16NSMutableCopying"
 - "CSo8NSObject"
@@ -2026,48 +2066,56 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderTextView.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/OrderedDictionary.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTaskSnapshot.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageUploadTask.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageReference.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageMetadata.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTask.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageObservableTask.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageDownloadTask.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRTransactionResult.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRMutableData.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataSnapshot.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataEventType.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseQuery.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseReference.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabase.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FirebaseDatabase.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseMessaging/Frameworks/frameworks/FirebaseMessaging.framework/Headers/FIRMessaging.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseMessaging/Frameworks/frameworks/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseMessaging/Frameworks/frameworks/FirebaseMessaging.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/Firebase.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/PDFGenerator.swiftmodule/x86_64.swiftmodule"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-umbrella.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator/PDFGenerator.framework/Modules/PDFGenerator.swiftmodule/x86_64.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator/PDFGenerator.framework/Headers/PDFGenerator.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator/PDFGenerator.framework/Headers/PDFGenerator-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator/PDFGenerator.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
