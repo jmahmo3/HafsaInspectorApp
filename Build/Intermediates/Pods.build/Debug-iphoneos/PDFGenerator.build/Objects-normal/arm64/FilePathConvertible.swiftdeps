@@ -1,0 +1,208 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FilePathConvertible"
+provides-nominal:
+- "P12PDFGenerator19FilePathConvertible"
+- "SS"
+- "V10Foundation3URL"
+provides-member:
+- ["P12PDFGenerator19FilePathConvertible", ""]
+- ["SS", ""]
+- ["V10Foundation3URL", ""]
+- ["P12PDFGenerator19FilePathConvertible", "isEmptyPath"]
+provides-dynamic-lookup:
+depends-top-level:
+- "FilePathConvertible"
+- "String"
+- "URL"
+- "Bool"
+depends-member:
+- !private ["Ps9AnyObject", "isEmpty"]
+- ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "URL"]
+- !private ["Ps7CVarArg", "isEmpty"]
+- ["Ps7CVarArg", "path"]
+- ["Ps7CVarArg", "url"]
+- !private ["Ps10Comparable", "URL"]
+- !private ["Ps10Comparable", "isEmpty"]
+- ["Ps10Comparable", "path"]
+- ["Ps10Comparable", "url"]
+- !private ["Ps28CustomDebugStringConvertible", "URL"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isEmpty"]
+- ["Ps28CustomDebugStringConvertible", "path"]
+- ["Ps28CustomDebugStringConvertible", "url"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "URL"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "isEmpty"]
+- ["Ps29CustomPlaygroundQuickLookable", "path"]
+- ["Ps29CustomPlaygroundQuickLookable", "url"]
+- !private ["Ps17CustomReflectable", "URL"]
+- !private ["Ps17CustomReflectable", "isEmpty"]
+- ["Ps17CustomReflectable", "path"]
+- ["Ps17CustomReflectable", "url"]
+- !private ["Ps23CustomStringConvertible", "URL"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isEmpty"]
+- ["Ps23CustomStringConvertible", "path"]
+- ["Ps23CustomStringConvertible", "url"]
+- !private ["Ps9Equatable", "URL"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isEmpty"]
+- ["Ps9Equatable", "path"]
+- ["Ps9Equatable", "url"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "URL"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "isEmpty"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "path"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "url"]
+- !private ["Ps32ExpressibleByStringInterpolation", "URL"]
+- !private ["Ps32ExpressibleByStringInterpolation", "isEmpty"]
+- ["Ps32ExpressibleByStringInterpolation", "path"]
+- ["Ps32ExpressibleByStringInterpolation", "url"]
+- !private ["Ps26ExpressibleByStringLiteral", "URL"]
+- !private ["Ps26ExpressibleByStringLiteral", "isEmpty"]
+- ["Ps26ExpressibleByStringLiteral", "path"]
+- ["Ps26ExpressibleByStringLiteral", "url"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "URL"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "isEmpty"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "path"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "url"]
+- ["P12PDFGenerator19FilePathConvertible", "Bool"]
+- ["P12PDFGenerator19FilePathConvertible", "String"]
+- ["P12PDFGenerator19FilePathConvertible", "URL"]
+- !private ["P12PDFGenerator19FilePathConvertible", "init"]
+- !private ["P12PDFGenerator19FilePathConvertible", "isEmpty"]
+- ["P12PDFGenerator19FilePathConvertible", "isEmptyPath"]
+- ["P12PDFGenerator19FilePathConvertible", "path"]
+- ["P12PDFGenerator19FilePathConvertible", "url"]
+- ["P12PDFGenerator19FilePathConvertible", ""]
+- !private ["Ps8Hashable", "URL"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isEmpty"]
+- ["Ps8Hashable", "path"]
+- ["Ps8Hashable", "url"]
+- !private ["Ps25LosslessStringConvertible", "URL"]
+- !private ["Ps25LosslessStringConvertible", "isEmpty"]
+- ["Ps25LosslessStringConvertible", "path"]
+- ["Ps25LosslessStringConvertible", "url"]
+- !private ["Ps10MirrorPath", "URL"]
+- !private ["Ps10MirrorPath", "isEmpty"]
+- ["Ps10MirrorPath", "path"]
+- ["Ps10MirrorPath", "url"]
+- !private ["PSo8NSCoding", "isEmpty"]
+- !private ["PSo9NSCopying", "isEmpty"]
+- !private ["PSo16NSMutableCopying", "isEmpty"]
+- !private ["CSo8NSObject", "isEmpty"]
+- !private ["PSo16NSObjectProtocol", "isEmpty"]
+- !private ["PSo14NSSecureCoding", "isEmpty"]
+- !private ["CSo8NSString", "isEmpty"]
+- !private ["P10Foundation20ReferenceConvertible", "init"]
+- ["P10Foundation20ReferenceConvertible", "path"]
+- ["P10Foundation20ReferenceConvertible", "url"]
+- ["SS", "String"]
+- ["SS", "URL"]
+- ["SS", "deinit"]
+- !private ["SS", "isEmpty"]
+- ["SS", "path"]
+- ["SS", "url"]
+- !private ["Ps16TextOutputStream", "URL"]
+- !private ["Ps16TextOutputStream", "isEmpty"]
+- ["Ps16TextOutputStream", "path"]
+- ["Ps16TextOutputStream", "url"]
+- !private ["Ps20TextOutputStreamable", "URL"]
+- !private ["Ps20TextOutputStreamable", "isEmpty"]
+- ["Ps20TextOutputStreamable", "path"]
+- ["Ps20TextOutputStreamable", "url"]
+- !private ["P12PDFGenerator18UIImageConvertible", "URL"]
+- !private ["P12PDFGenerator18UIImageConvertible", "isEmpty"]
+- ["P12PDFGenerator18UIImageConvertible", "path"]
+- ["P12PDFGenerator18UIImageConvertible", "url"]
+- ["V10Foundation3URL", "URL"]
+- ["V10Foundation3URL", "deinit"]
+- !private ["V10Foundation3URL", "init"]
+- ["V10Foundation3URL", "path"]
+- ["V10Foundation3URL", "url"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "URL"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "isEmpty"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "path"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "url"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "URL"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "isEmpty"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "path"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "url"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "URL"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "isEmpty"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "path"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "url"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "URL"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "isEmpty"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "path"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "url"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "init"]
+- ["Ps34_ExpressibleByFileReferenceLiteral", "path"]
+- ["Ps34_ExpressibleByFileReferenceLiteral", "url"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "isEmpty"]
+- !private ["Ps9_Hashable", "URL"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isEmpty"]
+- ["Ps9_Hashable", "path"]
+- ["Ps9_Hashable", "url"]
+- !private ["Ps21_ObjectiveCBridgeable", "URL"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "isEmpty"]
+- ["Ps21_ObjectiveCBridgeable", "path"]
+- ["Ps21_ObjectiveCBridgeable", "url"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- "Sb"
+- "Ps7CVarArg"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "P12PDFGenerator19FilePathConvertible"
+- "Ps8Hashable"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "P10Foundation20ReferenceConvertible"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- "P12PDFGenerator18UIImageConvertible"
+- "V10Foundation3URL"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps34_ExpressibleByFileReferenceLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/PDFGenerator/PDFGenerator/PDFGenerator.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Target Support Files/PDFGenerator/PDFGenerator-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Intermediates/Pods.build/Debug-iphoneos/PDFGenerator.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "e75b2042a90abae5df6947675c302c9f"

@@ -6,79 +6,88 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp23FormTableViewController", ""]
 provides-dynamic-lookup:
-- "backButtonPressed"
-- "numberOfSections"
-- "textViewDidEndEditing"
-- "create"
+- "setupSuppliers"
+- "viewDidLoad"
 - "generatePDF"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
-- "viewDidLoad"
+- "supplierData"
+- "backButtonPressed"
+- "textViewDidEndEditing"
+- "create"
+- "numberOfSections"
 depends-top-level:
+- "CGFloat"
+- !private "ImageTableViewCell"
+- !private "DateFormatter"
+- "FormTableViewController"
+- !private "FIRStorage"
+- !private "CommentTableViewCell"
+- "Array"
+- "UITableViewController"
+- !private "SupplierTableViewCell"
+- !private "<="
+- "NSArray"
+- "IndexPath"
+- !private "UIView"
+- !private "NameTableViewCell"
+- !private "PDFGenerator"
+- !private "WebService"
+- !private "NSString"
+- !private "FIRDatabase"
+- !private "UILabel"
+- !private "/"
+- !private "StringLiteralType"
+- !private "&&"
+- !private "!="
+- !private "UIStoryboard"
+- !private "BooleanLiteralType"
+- !private "UIColor"
+- !private "UIImage"
+- !private "Calendar"
+- !private ">"
+- "HIManager"
+- "UITextViewDelegate"
+- !private "Bundle"
+- !private "SubmitTableViewCell"
+- !private "*"
+- !private "UIFont"
+- !private "-"
+- !private "String"
+- !private "NSDictionary"
+- "UITableView"
+- !private "Locale"
+- !private "FIRDatabaseReference"
+- !private "..<"
+- "AssignmentPrecedence"
+- !private "=="
+- "CastingPrecedence"
+- "UITableViewCell"
+- !private "UIImageView"
+- !private "URL"
+- !private "+"
+- !private "TimeZone"
+- "Dictionary"
+- !private "Date"
 - !private "print"
 - !private "UITableViewAutomaticDimension"
-- "UITextViewDelegate"
-- !private "NSTemporaryDirectory"
-- !private ">"
-- !private "DateFormatter"
-- "UITextView"
-- !private "<="
-- !private "CommentTableViewCell"
-- !private "FIRDatabaseReference"
-- !private "String"
-- !private "URL"
-- !private "/"
-- !private "UIColor"
-- "CGFloat"
-- !private "PDFPage"
 - !private "CGRect"
-- "IndexPath"
-- !private "..<"
-- !private "NSString"
-- !private "PDFGenerator"
-- !private "UnicodeScalarType"
-- !private "-"
-- !private "FIRStorage"
-- !private "UIFont"
-- !private "UIImage"
-- !private "Date"
-- "FormTableViewController"
-- !private "Array"
-- "UITableView"
-- !private "NSDictionary"
-- !private "*"
-- !private "+"
-- "UITableViewController"
-- !private "UILabel"
-- !private "SupplierTableViewCell"
-- !private "StringLiteralType"
-- !private "NameTableViewCell"
-- !private "UIView"
-- !private "ImageTableViewCell"
-- "UITableViewCell"
-- !private "BooleanLiteralType"
-- !private "UIStoryboard"
-- "Dictionary"
-- !private "Bundle"
 - "Int"
-- "HIManager"
-- !private "FIRDatabase"
-- !private "!="
-- !private "&&"
-- !private "=="
-- "AssignmentPrecedence"
-- !private "UIImageView"
-- "CastingPrecedence"
+- !private "PDFPage"
+- !private "UnicodeScalarType"
+- "UITextView"
+- !private "NSTemporaryDirectory"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps9AnyObject", "Bundle"]
 - !private ["Ps9AnyObject", "CGRect"]
+- !private ["Ps9AnyObject", "Calendar"]
 - !private ["Ps9AnyObject", "Date"]
 - !private ["Ps9AnyObject", "DateFormatter"]
-- !private ["Ps9AnyObject", "Element"]
+- ["Ps9AnyObject", "Element"]
 - !private ["Ps9AnyObject", "FIRDatabase"]
 - !private ["Ps9AnyObject", "FIRStorage"]
 - !private ["Ps9AnyObject", "HIBackground"]
@@ -86,9 +95,11 @@ depends-member:
 - ["Ps9AnyObject", "HImanager"]
 - !private ["Ps9AnyObject", "Iterator"]
 - !private ["Ps9AnyObject", "Key"]
+- !private ["Ps9AnyObject", "Locale"]
 - !private ["Ps9AnyObject", "NSTemporaryDirectory"]
 - !private ["Ps9AnyObject", "PDFGenerator"]
 - !private ["Ps9AnyObject", "PDFPage"]
+- !private ["Ps9AnyObject", "TimeZone"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIFont"]
 - !private ["Ps9AnyObject", "UIImage"]
@@ -99,18 +110,23 @@ depends-member:
 - !private ["Ps9AnyObject", "UIView"]
 - !private ["Ps9AnyObject", "URL"]
 - !private ["Ps9AnyObject", "Value"]
+- !private ["Ps9AnyObject", "WebService"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "allKeys"]
 - !private ["Ps9AnyObject", "allValues"]
 - !private ["Ps9AnyObject", "appending"]
 - ["Ps9AnyObject", "backButtonPressed"]
 - !private ["Ps9AnyObject", "backgroundColor"]
+- !private ["Ps9AnyObject", "calendar"]
+- !private ["Ps9AnyObject", "chaptersData"]
 - !private ["Ps9AnyObject", "child"]
 - !private ["Ps9AnyObject", "childByAutoId"]
 - !private ["Ps9AnyObject", "comments"]
+- !private ["Ps9AnyObject", "configureCell"]
 - !private ["Ps9AnyObject", "configureCommentTableViewCell"]
 - !private ["Ps9AnyObject", "configureNameCell"]
 - !private ["Ps9AnyObject", "configureSupplierCell"]
+- !private ["Ps9AnyObject", "contains"]
 - !private ["Ps9AnyObject", "contentMode"]
 - !private ["Ps9AnyObject", "count"]
 - ["Ps9AnyObject", "create"]
@@ -129,6 +145,7 @@ depends-member:
 - !private ["Ps9AnyObject", "images"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instantiateViewController"]
+- !private ["Ps9AnyObject", "locale"]
 - !private ["Ps9AnyObject", "main"]
 - !private ["Ps9AnyObject", "name"]
 - !private ["Ps9AnyObject", "navigationController"]
@@ -142,12 +159,14 @@ depends-member:
 - !private ["Ps9AnyObject", "reference"]
 - !private ["Ps9AnyObject", "replacingOccurrences"]
 - !private ["Ps9AnyObject", "resume"]
+- !private ["Ps9AnyObject", "sendToGoogleForms"]
 - !private ["Ps9AnyObject", "setNavBarWithBackButton"]
 - !private ["Ps9AnyObject", "setValue"]
+- ["Ps9AnyObject", "setupSuppliers"]
 - ["Ps9AnyObject", "sharedClient"]
 - !private ["Ps9AnyObject", "storage"]
 - !private ["Ps9AnyObject", "string"]
-- !private ["Ps9AnyObject", "supplierArray"]
+- ["Ps9AnyObject", "supplierData"]
 - !private ["Ps9AnyObject", "supplierValues"]
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
@@ -159,6 +178,7 @@ depends-member:
 - ["Ps9AnyObject", "textViewDidEndEditing"]
 - ["Ps9AnyObject", "textViewShouldBeginEditing"]
 - ["Ps9AnyObject", "textViewShouldEndEditing"]
+- !private ["Ps9AnyObject", "timeZone"]
 - !private ["Ps9AnyObject", "userName"]
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
@@ -214,6 +234,7 @@ depends-member:
 - !private ["CSo6Bundle", "main"]
 - !private ["PSo15CALayerDelegate", "addSubview"]
 - !private ["PSo15CALayerDelegate", "backgroundColor"]
+- !private ["PSo15CALayerDelegate", "configureCell"]
 - !private ["PSo15CALayerDelegate", "configureCommentTableViewCell"]
 - !private ["PSo15CALayerDelegate", "configureNameCell"]
 - !private ["PSo15CALayerDelegate", "configureSupplierCell"]
@@ -233,9 +254,10 @@ depends-member:
 - !private ["VSC6CGRect", "init"]
 - !private ["Ps7CVarArg", "Bundle"]
 - !private ["Ps7CVarArg", "CGRect"]
+- !private ["Ps7CVarArg", "Calendar"]
 - !private ["Ps7CVarArg", "Date"]
 - !private ["Ps7CVarArg", "DateFormatter"]
-- !private ["Ps7CVarArg", "Element"]
+- ["Ps7CVarArg", "Element"]
 - !private ["Ps7CVarArg", "FIRDatabase"]
 - !private ["Ps7CVarArg", "FIRStorage"]
 - !private ["Ps7CVarArg", "HIBackground"]
@@ -246,11 +268,13 @@ depends-member:
 - !private ["Ps7CVarArg", "IntegerLiteralType"]
 - !private ["Ps7CVarArg", "Iterator"]
 - !private ["Ps7CVarArg", "Key"]
+- !private ["Ps7CVarArg", "Locale"]
 - !private ["Ps7CVarArg", "NSTemporaryDirectory"]
 - !private ["Ps7CVarArg", "PDFGenerator"]
 - !private ["Ps7CVarArg", "PDFPage"]
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "SubSequence"]
+- !private ["Ps7CVarArg", "TimeZone"]
 - !private ["Ps7CVarArg", "UIColor"]
 - !private ["Ps7CVarArg", "UIFont"]
 - !private ["Ps7CVarArg", "UIImage"]
@@ -261,6 +285,7 @@ depends-member:
 - !private ["Ps7CVarArg", "UIView"]
 - !private ["Ps7CVarArg", "URL"]
 - !private ["Ps7CVarArg", "Value"]
+- !private ["Ps7CVarArg", "WebService"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_DisallowMixedSignArithmetic"]
 - !private ["Ps7CVarArg", "_Element"]
@@ -271,12 +296,16 @@ depends-member:
 - !private ["Ps7CVarArg", "appending"]
 - ["Ps7CVarArg", "backButtonPressed"]
 - !private ["Ps7CVarArg", "backgroundColor"]
+- !private ["Ps7CVarArg", "calendar"]
+- !private ["Ps7CVarArg", "chaptersData"]
 - !private ["Ps7CVarArg", "child"]
 - !private ["Ps7CVarArg", "childByAutoId"]
 - !private ["Ps7CVarArg", "comments"]
+- !private ["Ps7CVarArg", "configureCell"]
 - !private ["Ps7CVarArg", "configureCommentTableViewCell"]
 - !private ["Ps7CVarArg", "configureNameCell"]
 - !private ["Ps7CVarArg", "configureSupplierCell"]
+- !private ["Ps7CVarArg", "contains"]
 - !private ["Ps7CVarArg", "contentMode"]
 - !private ["Ps7CVarArg", "count"]
 - ["Ps7CVarArg", "create"]
@@ -294,6 +323,7 @@ depends-member:
 - !private ["Ps7CVarArg", "images"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "instantiateViewController"]
+- !private ["Ps7CVarArg", "locale"]
 - !private ["Ps7CVarArg", "main"]
 - !private ["Ps7CVarArg", "name"]
 - !private ["Ps7CVarArg", "navigationController"]
@@ -307,13 +337,15 @@ depends-member:
 - !private ["Ps7CVarArg", "reference"]
 - !private ["Ps7CVarArg", "replacingOccurrences"]
 - !private ["Ps7CVarArg", "resume"]
+- !private ["Ps7CVarArg", "sendToGoogleForms"]
 - !private ["Ps7CVarArg", "setNavBarWithBackButton"]
 - !private ["Ps7CVarArg", "setValue"]
+- ["Ps7CVarArg", "setupSuppliers"]
 - ["Ps7CVarArg", "sharedClient"]
 - !private ["Ps7CVarArg", "storage"]
 - !private ["Ps7CVarArg", "string"]
 - !private ["Ps7CVarArg", "subscript"]
-- !private ["Ps7CVarArg", "supplierArray"]
+- ["Ps7CVarArg", "supplierData"]
 - !private ["Ps7CVarArg", "supplierValues"]
 - ["Ps7CVarArg", "tableView"]
 - !private ["Ps7CVarArg", "text"]
@@ -325,10 +357,13 @@ depends-member:
 - ["Ps7CVarArg", "textViewDidEndEditing"]
 - ["Ps7CVarArg", "textViewShouldBeginEditing"]
 - ["Ps7CVarArg", "textViewShouldEndEditing"]
+- !private ["Ps7CVarArg", "timeZone"]
 - !private ["Ps7CVarArg", "userName"]
 - !private ["Ps7CVarArg", "view"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
+- !private ["V10Foundation8Calendar", "deinit"]
+- !private ["V10Foundation8Calendar", "init"]
 - !private ["Vs9Character", "deinit"]
 - !private ["Vs11ClosedRange", "deinit"]
 - !private ["Ps10Collection", "Element"]
@@ -360,9 +395,10 @@ depends-member:
 - ["Vs14CountableRange", "deinit"]
 - !private ["Ps28CustomDebugStringConvertible", "Bundle"]
 - !private ["Ps28CustomDebugStringConvertible", "CGRect"]
+- !private ["Ps28CustomDebugStringConvertible", "Calendar"]
 - !private ["Ps28CustomDebugStringConvertible", "Date"]
 - !private ["Ps28CustomDebugStringConvertible", "DateFormatter"]
-- !private ["Ps28CustomDebugStringConvertible", "Element"]
+- ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "FIRDatabase"]
 - !private ["Ps28CustomDebugStringConvertible", "FIRStorage"]
 - !private ["Ps28CustomDebugStringConvertible", "HIBackground"]
@@ -372,11 +408,13 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "Locale"]
 - !private ["Ps28CustomDebugStringConvertible", "NSTemporaryDirectory"]
 - !private ["Ps28CustomDebugStringConvertible", "PDFGenerator"]
 - !private ["Ps28CustomDebugStringConvertible", "PDFPage"]
 - !private ["Ps28CustomDebugStringConvertible", "Stride"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "TimeZone"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
@@ -387,6 +425,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - !private ["Ps28CustomDebugStringConvertible", "URL"]
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "WebService"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "allKeys"]
@@ -395,12 +434,16 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "appending"]
 - ["Ps28CustomDebugStringConvertible", "backButtonPressed"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
+- !private ["Ps28CustomDebugStringConvertible", "calendar"]
+- !private ["Ps28CustomDebugStringConvertible", "chaptersData"]
 - !private ["Ps28CustomDebugStringConvertible", "child"]
 - !private ["Ps28CustomDebugStringConvertible", "childByAutoId"]
 - !private ["Ps28CustomDebugStringConvertible", "comments"]
+- !private ["Ps28CustomDebugStringConvertible", "configureCell"]
 - !private ["Ps28CustomDebugStringConvertible", "configureCommentTableViewCell"]
 - !private ["Ps28CustomDebugStringConvertible", "configureNameCell"]
 - !private ["Ps28CustomDebugStringConvertible", "configureSupplierCell"]
+- !private ["Ps28CustomDebugStringConvertible", "contains"]
 - !private ["Ps28CustomDebugStringConvertible", "contentMode"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - ["Ps28CustomDebugStringConvertible", "create"]
@@ -418,6 +461,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "images"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "locale"]
 - !private ["Ps28CustomDebugStringConvertible", "main"]
 - !private ["Ps28CustomDebugStringConvertible", "name"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
@@ -432,13 +476,15 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "replacingOccurrences"]
 - !private ["Ps28CustomDebugStringConvertible", "resume"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
+- !private ["Ps28CustomDebugStringConvertible", "sendToGoogleForms"]
 - !private ["Ps28CustomDebugStringConvertible", "setNavBarWithBackButton"]
 - !private ["Ps28CustomDebugStringConvertible", "setValue"]
+- ["Ps28CustomDebugStringConvertible", "setupSuppliers"]
 - ["Ps28CustomDebugStringConvertible", "sharedClient"]
 - !private ["Ps28CustomDebugStringConvertible", "storage"]
 - !private ["Ps28CustomDebugStringConvertible", "string"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
-- !private ["Ps28CustomDebugStringConvertible", "supplierArray"]
+- ["Ps28CustomDebugStringConvertible", "supplierData"]
 - !private ["Ps28CustomDebugStringConvertible", "supplierValues"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
@@ -450,6 +496,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "textViewDidEndEditing"]
 - ["Ps28CustomDebugStringConvertible", "textViewShouldBeginEditing"]
 - ["Ps28CustomDebugStringConvertible", "textViewShouldEndEditing"]
+- !private ["Ps28CustomDebugStringConvertible", "timeZone"]
 - !private ["Ps28CustomDebugStringConvertible", "userName"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
@@ -463,7 +510,7 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "appending"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "replacingOccurrences"]
-- !private ["Ps17CustomReflectable", "Element"]
+- ["Ps17CustomReflectable", "Element"]
 - !private ["Ps17CustomReflectable", "Index"]
 - !private ["Ps17CustomReflectable", "IndexDistance"]
 - !private ["Ps17CustomReflectable", "IntegerLiteralType"]
@@ -480,6 +527,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "allValues"]
 - !private ["Ps17CustomReflectable", "append"]
 - !private ["Ps17CustomReflectable", "appending"]
+- !private ["Ps17CustomReflectable", "contains"]
 - !private ["Ps17CustomReflectable", "count"]
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "object"]
@@ -489,9 +537,10 @@ depends-member:
 - !private ["Ps17CustomReflectable", "write"]
 - !private ["Ps23CustomStringConvertible", "Bundle"]
 - !private ["Ps23CustomStringConvertible", "CGRect"]
+- !private ["Ps23CustomStringConvertible", "Calendar"]
 - !private ["Ps23CustomStringConvertible", "Date"]
 - !private ["Ps23CustomStringConvertible", "DateFormatter"]
-- !private ["Ps23CustomStringConvertible", "Element"]
+- ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "FIRDatabase"]
 - !private ["Ps23CustomStringConvertible", "FIRStorage"]
 - !private ["Ps23CustomStringConvertible", "HIBackground"]
@@ -502,11 +551,13 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "Locale"]
 - !private ["Ps23CustomStringConvertible", "NSTemporaryDirectory"]
 - !private ["Ps23CustomStringConvertible", "PDFGenerator"]
 - !private ["Ps23CustomStringConvertible", "PDFPage"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "TimeZone"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIFont"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
@@ -517,6 +568,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIView"]
 - !private ["Ps23CustomStringConvertible", "URL"]
 - !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "WebService"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_DisallowMixedSignArithmetic"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
@@ -528,12 +580,16 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "appending"]
 - ["Ps23CustomStringConvertible", "backButtonPressed"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
+- !private ["Ps23CustomStringConvertible", "calendar"]
+- !private ["Ps23CustomStringConvertible", "chaptersData"]
 - !private ["Ps23CustomStringConvertible", "child"]
 - !private ["Ps23CustomStringConvertible", "childByAutoId"]
 - !private ["Ps23CustomStringConvertible", "comments"]
+- !private ["Ps23CustomStringConvertible", "configureCell"]
 - !private ["Ps23CustomStringConvertible", "configureCommentTableViewCell"]
 - !private ["Ps23CustomStringConvertible", "configureNameCell"]
 - !private ["Ps23CustomStringConvertible", "configureSupplierCell"]
+- !private ["Ps23CustomStringConvertible", "contains"]
 - !private ["Ps23CustomStringConvertible", "contentMode"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - ["Ps23CustomStringConvertible", "create"]
@@ -551,6 +607,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "images"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instantiateViewController"]
+- !private ["Ps23CustomStringConvertible", "locale"]
 - !private ["Ps23CustomStringConvertible", "main"]
 - !private ["Ps23CustomStringConvertible", "name"]
 - !private ["Ps23CustomStringConvertible", "navigationController"]
@@ -565,13 +622,15 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "replacingOccurrences"]
 - !private ["Ps23CustomStringConvertible", "resume"]
 - !private ["Ps23CustomStringConvertible", "row"]
+- !private ["Ps23CustomStringConvertible", "sendToGoogleForms"]
 - !private ["Ps23CustomStringConvertible", "setNavBarWithBackButton"]
 - !private ["Ps23CustomStringConvertible", "setValue"]
+- ["Ps23CustomStringConvertible", "setupSuppliers"]
 - ["Ps23CustomStringConvertible", "sharedClient"]
 - !private ["Ps23CustomStringConvertible", "storage"]
 - !private ["Ps23CustomStringConvertible", "string"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
-- !private ["Ps23CustomStringConvertible", "supplierArray"]
+- ["Ps23CustomStringConvertible", "supplierData"]
 - !private ["Ps23CustomStringConvertible", "supplierValues"]
 - ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "text"]
@@ -583,6 +642,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "textViewDidEndEditing"]
 - ["Ps23CustomStringConvertible", "textViewShouldBeginEditing"]
 - ["Ps23CustomStringConvertible", "textViewShouldEndEditing"]
+- !private ["Ps23CustomStringConvertible", "timeZone"]
 - !private ["Ps23CustomStringConvertible", "userName"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
@@ -592,10 +652,13 @@ depends-member:
 - !private ["V10Foundation4Data", "write"]
 - !private ["V10Foundation4Date", "deinit"]
 - !private ["V10Foundation4Date", "init"]
+- !private ["CSo13DateFormatter", "calendar"]
 - !private ["CSo13DateFormatter", "dateFormat"]
 - !private ["CSo13DateFormatter", "deinit"]
 - !private ["CSo13DateFormatter", "init"]
+- !private ["CSo13DateFormatter", "locale"]
 - !private ["CSo13DateFormatter", "string"]
+- !private ["CSo13DateFormatter", "timeZone"]
 - !private ["VSC7Decimal", "Stride"]
 - !private ["VSC7Decimal", "deinit"]
 - !private ["Vs27DefaultBidirectionalIndices", "Index"]
@@ -612,9 +675,10 @@ depends-member:
 - ["Sd", "deinit"]
 - !private ["Ps9Equatable", "Bundle"]
 - !private ["Ps9Equatable", "CGRect"]
+- !private ["Ps9Equatable", "Calendar"]
 - !private ["Ps9Equatable", "Date"]
 - !private ["Ps9Equatable", "DateFormatter"]
-- !private ["Ps9Equatable", "Element"]
+- ["Ps9Equatable", "Element"]
 - !private ["Ps9Equatable", "FIRDatabase"]
 - !private ["Ps9Equatable", "FIRStorage"]
 - !private ["Ps9Equatable", "HIBackground"]
@@ -623,10 +687,12 @@ depends-member:
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "Iterator"]
 - !private ["Ps9Equatable", "Key"]
+- !private ["Ps9Equatable", "Locale"]
 - !private ["Ps9Equatable", "NSTemporaryDirectory"]
 - !private ["Ps9Equatable", "PDFGenerator"]
 - !private ["Ps9Equatable", "PDFPage"]
 - !private ["Ps9Equatable", "Stride"]
+- !private ["Ps9Equatable", "TimeZone"]
 - !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIFont"]
 - !private ["Ps9Equatable", "UIImage"]
@@ -637,6 +703,7 @@ depends-member:
 - !private ["Ps9Equatable", "UIView"]
 - !private ["Ps9Equatable", "URL"]
 - !private ["Ps9Equatable", "Value"]
+- !private ["Ps9Equatable", "WebService"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps9Equatable", "_Element"]
@@ -648,13 +715,17 @@ depends-member:
 - !private ["Ps9Equatable", "atomic"]
 - ["Ps9Equatable", "backButtonPressed"]
 - !private ["Ps9Equatable", "backgroundColor"]
+- !private ["Ps9Equatable", "calendar"]
 - !private ["Ps9Equatable", "center"]
+- !private ["Ps9Equatable", "chaptersData"]
 - !private ["Ps9Equatable", "child"]
 - !private ["Ps9Equatable", "childByAutoId"]
 - !private ["Ps9Equatable", "comments"]
+- !private ["Ps9Equatable", "configureCell"]
 - !private ["Ps9Equatable", "configureCommentTableViewCell"]
 - !private ["Ps9Equatable", "configureNameCell"]
 - !private ["Ps9Equatable", "configureSupplierCell"]
+- !private ["Ps9Equatable", "contains"]
 - !private ["Ps9Equatable", "contentMode"]
 - !private ["Ps9Equatable", "count"]
 - ["Ps9Equatable", "create"]
@@ -672,6 +743,8 @@ depends-member:
 - !private ["Ps9Equatable", "images"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instantiateViewController"]
+- !private ["Ps9Equatable", "iso8601"]
+- !private ["Ps9Equatable", "locale"]
 - !private ["Ps9Equatable", "main"]
 - !private ["Ps9Equatable", "name"]
 - !private ["Ps9Equatable", "navigationController"]
@@ -688,12 +761,14 @@ depends-member:
 - !private ["Ps9Equatable", "right"]
 - !private ["Ps9Equatable", "row"]
 - !private ["Ps9Equatable", "scaleAspectFit"]
+- !private ["Ps9Equatable", "sendToGoogleForms"]
 - !private ["Ps9Equatable", "setNavBarWithBackButton"]
 - !private ["Ps9Equatable", "setValue"]
+- ["Ps9Equatable", "setupSuppliers"]
 - ["Ps9Equatable", "sharedClient"]
 - !private ["Ps9Equatable", "storage"]
 - !private ["Ps9Equatable", "string"]
-- !private ["Ps9Equatable", "supplierArray"]
+- ["Ps9Equatable", "supplierData"]
 - !private ["Ps9Equatable", "supplierValues"]
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
@@ -705,13 +780,14 @@ depends-member:
 - ["Ps9Equatable", "textViewDidEndEditing"]
 - ["Ps9Equatable", "textViewShouldBeginEditing"]
 - ["Ps9Equatable", "textViewShouldEndEditing"]
+- !private ["Ps9Equatable", "timeZone"]
 - !private ["Ps9Equatable", "userName"]
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
 - !private ["Ps9Equatable", "write"]
 - ["Ps9Equatable", ""]
 - ["Ps5Error", "deinit"]
-- !private ["Ps25ExpressibleByArrayLiteral", "Element"]
+- ["Ps25ExpressibleByArrayLiteral", "Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Index"]
 - !private ["Ps25ExpressibleByArrayLiteral", "IndexDistance"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
@@ -719,6 +795,7 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "append"]
 - !private ["Ps25ExpressibleByArrayLiteral", "atomic"]
+- !private ["Ps25ExpressibleByArrayLiteral", "contains"]
 - !private ["Ps25ExpressibleByArrayLiteral", "count"]
 - !private ["Ps25ExpressibleByArrayLiteral", "object"]
 - !private ["Ps25ExpressibleByArrayLiteral", "row"]
@@ -728,6 +805,7 @@ depends-member:
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "allKeys"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "allValues"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "object"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "appending"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "replacingOccurrences"]
@@ -780,6 +858,7 @@ depends-member:
 - !private ["C17HafsaInspectorApp23FormTableViewController", "Bundle"]
 - ["C17HafsaInspectorApp23FormTableViewController", "CGFloat"]
 - !private ["C17HafsaInspectorApp23FormTableViewController", "CGRect"]
+- !private ["C17HafsaInspectorApp23FormTableViewController", "Calendar"]
 - !private ["C17HafsaInspectorApp23FormTableViewController", "CommentTableViewCell"]
 - !private ["C17HafsaInspectorApp23FormTableViewController", "Date"]
 - !private ["C17HafsaInspectorApp23FormTableViewController", "DateFormatter"]
@@ -792,6 +871,8 @@ depends-member:
 - !private ["C17HafsaInspectorApp23FormTableViewController", "ImageTableViewCell"]
 - ["C17HafsaInspectorApp23FormTableViewController", "IndexPath"]
 - ["C17HafsaInspectorApp23FormTableViewController", "Int"]
+- !private ["C17HafsaInspectorApp23FormTableViewController", "Locale"]
+- ["C17HafsaInspectorApp23FormTableViewController", "NSArray"]
 - !private ["C17HafsaInspectorApp23FormTableViewController", "NSDictionary"]
 - !private ["C17HafsaInspectorApp23FormTableViewController", "NSString"]
 - !private ["C17HafsaInspectorApp23FormTableViewController", "NSTemporaryDirectory"]
@@ -799,7 +880,9 @@ depends-member:
 - !private ["C17HafsaInspectorApp23FormTableViewController", "PDFGenerator"]
 - !private ["C17HafsaInspectorApp23FormTableViewController", "PDFPage"]
 - !private ["C17HafsaInspectorApp23FormTableViewController", "String"]
+- !private ["C17HafsaInspectorApp23FormTableViewController", "SubmitTableViewCell"]
 - !private ["C17HafsaInspectorApp23FormTableViewController", "SupplierTableViewCell"]
+- !private ["C17HafsaInspectorApp23FormTableViewController", "TimeZone"]
 - !private ["C17HafsaInspectorApp23FormTableViewController", "UIColor"]
 - !private ["C17HafsaInspectorApp23FormTableViewController", "UIFont"]
 - !private ["C17HafsaInspectorApp23FormTableViewController", "UIImage"]
@@ -812,6 +895,7 @@ depends-member:
 - ["C17HafsaInspectorApp23FormTableViewController", "UITextView"]
 - !private ["C17HafsaInspectorApp23FormTableViewController", "UIView"]
 - !private ["C17HafsaInspectorApp23FormTableViewController", "URL"]
+- !private ["C17HafsaInspectorApp23FormTableViewController", "WebService"]
 - ["C17HafsaInspectorApp23FormTableViewController", "backButtonPressed"]
 - ["C17HafsaInspectorApp23FormTableViewController", "create"]
 - ["C17HafsaInspectorApp23FormTableViewController", "deinit"]
@@ -822,6 +906,8 @@ depends-member:
 - ["C17HafsaInspectorApp23FormTableViewController", "numberOfSections"]
 - !private ["C17HafsaInspectorApp23FormTableViewController", "print"]
 - !private ["C17HafsaInspectorApp23FormTableViewController", "setNavBarWithBackButton"]
+- ["C17HafsaInspectorApp23FormTableViewController", "setupSuppliers"]
+- ["C17HafsaInspectorApp23FormTableViewController", "supplierData"]
 - ["C17HafsaInspectorApp23FormTableViewController", "tableView"]
 - ["C17HafsaInspectorApp23FormTableViewController", "textView"]
 - ["C17HafsaInspectorApp23FormTableViewController", "textViewDidBeginEditing"]
@@ -832,9 +918,13 @@ depends-member:
 - ["C17HafsaInspectorApp23FormTableViewController", "textViewShouldEndEditing"]
 - !private ["C17HafsaInspectorApp23FormTableViewController", "view"]
 - ["C17HafsaInspectorApp23FormTableViewController", "viewDidLoad"]
+- !private ["CSo9Formatter", "calendar"]
 - !private ["CSo9Formatter", "dateFormat"]
 - !private ["CSo9Formatter", "init"]
+- !private ["CSo9Formatter", "locale"]
 - !private ["CSo9Formatter", "string"]
+- !private ["CSo9Formatter", "timeZone"]
+- !private ["C17HafsaInspectorApp9HIManager", "chaptersData"]
 - !private ["C17HafsaInspectorApp9HIManager", "comments"]
 - !private ["C17HafsaInspectorApp9HIManager", "currentChapter"]
 - !private ["C17HafsaInspectorApp9HIManager", "currentDate"]
@@ -843,14 +933,14 @@ depends-member:
 - !private ["C17HafsaInspectorApp9HIManager", "images"]
 - !private ["C17HafsaInspectorApp9HIManager", "init"]
 - ["C17HafsaInspectorApp9HIManager", "sharedClient"]
-- !private ["C17HafsaInspectorApp9HIManager", "supplierArray"]
 - !private ["C17HafsaInspectorApp9HIManager", "supplierValues"]
 - !private ["C17HafsaInspectorApp9HIManager", "userName"]
 - !private ["Ps8Hashable", "Bundle"]
 - !private ["Ps8Hashable", "CGRect"]
+- !private ["Ps8Hashable", "Calendar"]
 - !private ["Ps8Hashable", "Date"]
 - !private ["Ps8Hashable", "DateFormatter"]
-- !private ["Ps8Hashable", "Element"]
+- ["Ps8Hashable", "Element"]
 - !private ["Ps8Hashable", "FIRDatabase"]
 - !private ["Ps8Hashable", "FIRStorage"]
 - !private ["Ps8Hashable", "HIBackground"]
@@ -859,10 +949,12 @@ depends-member:
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "Iterator"]
 - !private ["Ps8Hashable", "Key"]
+- !private ["Ps8Hashable", "Locale"]
 - !private ["Ps8Hashable", "NSTemporaryDirectory"]
 - !private ["Ps8Hashable", "PDFGenerator"]
 - !private ["Ps8Hashable", "PDFPage"]
 - !private ["Ps8Hashable", "Stride"]
+- !private ["Ps8Hashable", "TimeZone"]
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIFont"]
 - !private ["Ps8Hashable", "UIImage"]
@@ -873,6 +965,7 @@ depends-member:
 - !private ["Ps8Hashable", "UIView"]
 - !private ["Ps8Hashable", "URL"]
 - !private ["Ps8Hashable", "Value"]
+- !private ["Ps8Hashable", "WebService"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
@@ -882,13 +975,17 @@ depends-member:
 - !private ["Ps8Hashable", "appending"]
 - ["Ps8Hashable", "backButtonPressed"]
 - !private ["Ps8Hashable", "backgroundColor"]
+- !private ["Ps8Hashable", "calendar"]
 - !private ["Ps8Hashable", "center"]
+- !private ["Ps8Hashable", "chaptersData"]
 - !private ["Ps8Hashable", "child"]
 - !private ["Ps8Hashable", "childByAutoId"]
 - !private ["Ps8Hashable", "comments"]
+- !private ["Ps8Hashable", "configureCell"]
 - !private ["Ps8Hashable", "configureCommentTableViewCell"]
 - !private ["Ps8Hashable", "configureNameCell"]
 - !private ["Ps8Hashable", "configureSupplierCell"]
+- !private ["Ps8Hashable", "contains"]
 - !private ["Ps8Hashable", "contentMode"]
 - !private ["Ps8Hashable", "count"]
 - ["Ps8Hashable", "create"]
@@ -906,6 +1003,8 @@ depends-member:
 - !private ["Ps8Hashable", "images"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instantiateViewController"]
+- !private ["Ps8Hashable", "iso8601"]
+- !private ["Ps8Hashable", "locale"]
 - !private ["Ps8Hashable", "main"]
 - !private ["Ps8Hashable", "name"]
 - !private ["Ps8Hashable", "navigationController"]
@@ -922,12 +1021,14 @@ depends-member:
 - !private ["Ps8Hashable", "right"]
 - !private ["Ps8Hashable", "row"]
 - !private ["Ps8Hashable", "scaleAspectFit"]
+- !private ["Ps8Hashable", "sendToGoogleForms"]
 - !private ["Ps8Hashable", "setNavBarWithBackButton"]
 - !private ["Ps8Hashable", "setValue"]
+- ["Ps8Hashable", "setupSuppliers"]
 - ["Ps8Hashable", "sharedClient"]
 - !private ["Ps8Hashable", "storage"]
 - !private ["Ps8Hashable", "string"]
-- !private ["Ps8Hashable", "supplierArray"]
+- ["Ps8Hashable", "supplierData"]
 - !private ["Ps8Hashable", "supplierValues"]
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
@@ -939,11 +1040,14 @@ depends-member:
 - ["Ps8Hashable", "textViewDidEndEditing"]
 - ["Ps8Hashable", "textViewShouldBeginEditing"]
 - ["Ps8Hashable", "textViewShouldEndEditing"]
+- !private ["Ps8Hashable", "timeZone"]
 - !private ["Ps8Hashable", "userName"]
 - !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
 - !private ["Ps8Hashable", "write"]
 - ["Ps8Hashable", ""]
+- !private ["OV10Foundation8Calendar10Identifier", "deinit"]
+- !private ["OV10Foundation8Calendar10Identifier", "iso8601"]
 - ["C17HafsaInspectorApp18ImageTableViewCell", "deinit"]
 - !private ["SQ", "deinit"]
 - ["V10Foundation9IndexPath", "deinit"]
@@ -994,6 +1098,8 @@ depends-member:
 - !private ["Ps17IntegerArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps17IntegerArithmetic", "_DisallowMixedSignArithmetic"]
 - !private ["Ps16IteratorProtocol", "Element"]
+- !private ["V10Foundation6Locale", "deinit"]
+- !private ["V10Foundation6Locale", "init"]
 - !private ["Ps25LosslessStringConvertible", "Stride"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "appending"]
@@ -1027,16 +1133,19 @@ depends-member:
 - !private ["Ps16MutableIndexable", "row"]
 - !private ["Ps16MutableIndexable", "subscript"]
 - !private ["Ps16MutableIndexable", "write"]
-- !private ["CSo7NSArray", "Element"]
+- ["CSo7NSArray", "Element"]
 - !private ["CSo7NSArray", "Iterator"]
+- !private ["CSo7NSArray", "contains"]
 - !private ["CSo7NSArray", "count"]
+- ["CSo7NSArray", "deinit"]
 - !private ["CSo7NSArray", "object"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "Bundle"]
 - !private ["PSo8NSCoding", "CGRect"]
+- !private ["PSo8NSCoding", "Calendar"]
 - !private ["PSo8NSCoding", "Date"]
 - !private ["PSo8NSCoding", "DateFormatter"]
-- !private ["PSo8NSCoding", "Element"]
+- ["PSo8NSCoding", "Element"]
 - !private ["PSo8NSCoding", "FIRDatabase"]
 - !private ["PSo8NSCoding", "FIRStorage"]
 - !private ["PSo8NSCoding", "HIBackground"]
@@ -1044,9 +1153,11 @@ depends-member:
 - ["PSo8NSCoding", "HImanager"]
 - !private ["PSo8NSCoding", "Iterator"]
 - !private ["PSo8NSCoding", "Key"]
+- !private ["PSo8NSCoding", "Locale"]
 - !private ["PSo8NSCoding", "NSTemporaryDirectory"]
 - !private ["PSo8NSCoding", "PDFGenerator"]
 - !private ["PSo8NSCoding", "PDFPage"]
+- !private ["PSo8NSCoding", "TimeZone"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UIImage"]
@@ -1057,15 +1168,19 @@ depends-member:
 - !private ["PSo8NSCoding", "UIView"]
 - !private ["PSo8NSCoding", "URL"]
 - !private ["PSo8NSCoding", "Value"]
+- !private ["PSo8NSCoding", "WebService"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "allKeys"]
 - !private ["PSo8NSCoding", "allValues"]
 - !private ["PSo8NSCoding", "appending"]
 - ["PSo8NSCoding", "backButtonPressed"]
 - !private ["PSo8NSCoding", "backgroundColor"]
+- !private ["PSo8NSCoding", "calendar"]
+- !private ["PSo8NSCoding", "configureCell"]
 - !private ["PSo8NSCoding", "configureCommentTableViewCell"]
 - !private ["PSo8NSCoding", "configureNameCell"]
 - !private ["PSo8NSCoding", "configureSupplierCell"]
+- !private ["PSo8NSCoding", "contains"]
 - !private ["PSo8NSCoding", "contentMode"]
 - !private ["PSo8NSCoding", "count"]
 - ["PSo8NSCoding", "create"]
@@ -1077,6 +1192,7 @@ depends-member:
 - !private ["PSo8NSCoding", "hideKeyboardWhenTappedAround"]
 - !private ["PSo8NSCoding", "image"]
 - !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "locale"]
 - !private ["PSo8NSCoding", "navigationController"]
 - !private ["PSo8NSCoding", "numberOfLines"]
 - ["PSo8NSCoding", "numberOfSections"]
@@ -1085,7 +1201,9 @@ depends-member:
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "replacingOccurrences"]
 - !private ["PSo8NSCoding", "setNavBarWithBackButton"]
+- ["PSo8NSCoding", "setupSuppliers"]
 - !private ["PSo8NSCoding", "string"]
+- ["PSo8NSCoding", "supplierData"]
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textAlignment"]
@@ -1096,10 +1214,11 @@ depends-member:
 - ["PSo8NSCoding", "textViewDidEndEditing"]
 - ["PSo8NSCoding", "textViewShouldBeginEditing"]
 - ["PSo8NSCoding", "textViewShouldEndEditing"]
+- !private ["PSo8NSCoding", "timeZone"]
 - !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "Element"]
+- ["PSo9NSCopying", "Element"]
 - !private ["PSo9NSCopying", "HIBackground"]
 - !private ["PSo9NSCopying", "Iterator"]
 - !private ["PSo9NSCopying", "Key"]
@@ -1107,30 +1226,38 @@ depends-member:
 - !private ["PSo9NSCopying", "allKeys"]
 - !private ["PSo9NSCopying", "allValues"]
 - !private ["PSo9NSCopying", "appending"]
+- !private ["PSo9NSCopying", "calendar"]
+- !private ["PSo9NSCopying", "contains"]
 - !private ["PSo9NSCopying", "count"]
 - !private ["PSo9NSCopying", "dateFormat"]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "locale"]
 - !private ["PSo9NSCopying", "name"]
 - !private ["PSo9NSCopying", "object"]
 - !private ["PSo9NSCopying", "path"]
 - !private ["PSo9NSCopying", "replacingOccurrences"]
 - !private ["PSo9NSCopying", "string"]
+- !private ["PSo9NSCopying", "timeZone"]
 - !private ["CSo12NSDictionary", "Key"]
 - !private ["CSo12NSDictionary", "Value"]
 - !private ["CSo12NSDictionary", "allKeys"]
 - !private ["CSo12NSDictionary", "allValues"]
 - ["CSo12NSDictionary", "deinit"]
+- !private ["CSo12NSDictionary", "object"]
 - !private ["PSo26NSExtensionRequestHandling", "Bundle"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRect"]
+- !private ["PSo26NSExtensionRequestHandling", "Calendar"]
 - !private ["PSo26NSExtensionRequestHandling", "Date"]
 - !private ["PSo26NSExtensionRequestHandling", "DateFormatter"]
 - !private ["PSo26NSExtensionRequestHandling", "FIRDatabase"]
 - !private ["PSo26NSExtensionRequestHandling", "FIRStorage"]
 - ["PSo26NSExtensionRequestHandling", "HIManager"]
 - ["PSo26NSExtensionRequestHandling", "HImanager"]
+- !private ["PSo26NSExtensionRequestHandling", "Locale"]
 - !private ["PSo26NSExtensionRequestHandling", "NSTemporaryDirectory"]
 - !private ["PSo26NSExtensionRequestHandling", "PDFGenerator"]
 - !private ["PSo26NSExtensionRequestHandling", "PDFPage"]
+- !private ["PSo26NSExtensionRequestHandling", "TimeZone"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
@@ -1140,6 +1267,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UITableViewAutomaticDimension"]
 - !private ["PSo26NSExtensionRequestHandling", "UIView"]
 - !private ["PSo26NSExtensionRequestHandling", "URL"]
+- !private ["PSo26NSExtensionRequestHandling", "WebService"]
 - ["PSo26NSExtensionRequestHandling", "backButtonPressed"]
 - ["PSo26NSExtensionRequestHandling", "create"]
 - ["PSo26NSExtensionRequestHandling", "generatePDF"]
@@ -1150,6 +1278,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "popViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "setNavBarWithBackButton"]
+- ["PSo26NSExtensionRequestHandling", "setupSuppliers"]
+- ["PSo26NSExtensionRequestHandling", "supplierData"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
 - ["PSo26NSExtensionRequestHandling", "textView"]
 - ["PSo26NSExtensionRequestHandling", "textViewDidBeginEditing"]
@@ -1161,12 +1291,13 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
-- !private ["PSo17NSFastEnumeration", "Element"]
+- ["PSo17NSFastEnumeration", "Element"]
 - !private ["PSo17NSFastEnumeration", "Iterator"]
 - !private ["PSo17NSFastEnumeration", "Key"]
 - !private ["PSo17NSFastEnumeration", "Value"]
 - !private ["PSo17NSFastEnumeration", "allKeys"]
 - !private ["PSo17NSFastEnumeration", "allValues"]
+- !private ["PSo17NSFastEnumeration", "contains"]
 - !private ["PSo17NSFastEnumeration", "count"]
 - !private ["PSo17NSFastEnumeration", "object"]
 - !private ["C10Foundation25NSFastEnumerationIterator", "Element"]
@@ -1175,13 +1306,14 @@ depends-member:
 - !private ["CSo14NSMutableArray", "count"]
 - ["CSo14NSMutableArray", "deinit"]
 - !private ["CSo14NSMutableArray", "object"]
-- !private ["PSo16NSMutableCopying", "Element"]
+- ["PSo16NSMutableCopying", "Element"]
 - !private ["PSo16NSMutableCopying", "Iterator"]
 - !private ["PSo16NSMutableCopying", "Key"]
 - !private ["PSo16NSMutableCopying", "Value"]
 - !private ["PSo16NSMutableCopying", "allKeys"]
 - !private ["PSo16NSMutableCopying", "allValues"]
 - !private ["PSo16NSMutableCopying", "appending"]
+- !private ["PSo16NSMutableCopying", "contains"]
 - !private ["PSo16NSMutableCopying", "count"]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "object"]
@@ -1189,10 +1321,11 @@ depends-member:
 - !private ["CSo8NSObject", "Bundle"]
 - ["CSo8NSObject", "CGFloat"]
 - !private ["CSo8NSObject", "CGRect"]
+- !private ["CSo8NSObject", "Calendar"]
 - !private ["CSo8NSObject", "CommentTableViewCell"]
 - !private ["CSo8NSObject", "Date"]
 - !private ["CSo8NSObject", "DateFormatter"]
-- !private ["CSo8NSObject", "Element"]
+- ["CSo8NSObject", "Element"]
 - !private ["CSo8NSObject", "FIRDatabase"]
 - !private ["CSo8NSObject", "FIRDatabaseReference"]
 - !private ["CSo8NSObject", "FIRStorage"]
@@ -1205,6 +1338,8 @@ depends-member:
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "Iterator"]
 - !private ["CSo8NSObject", "Key"]
+- !private ["CSo8NSObject", "Locale"]
+- ["CSo8NSObject", "NSArray"]
 - !private ["CSo8NSObject", "NSDictionary"]
 - !private ["CSo8NSObject", "NSString"]
 - !private ["CSo8NSObject", "NSTemporaryDirectory"]
@@ -1212,7 +1347,9 @@ depends-member:
 - !private ["CSo8NSObject", "PDFGenerator"]
 - !private ["CSo8NSObject", "PDFPage"]
 - !private ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "SubmitTableViewCell"]
 - !private ["CSo8NSObject", "SupplierTableViewCell"]
+- !private ["CSo8NSObject", "TimeZone"]
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIFont"]
 - !private ["CSo8NSObject", "UIImage"]
@@ -1226,18 +1363,23 @@ depends-member:
 - !private ["CSo8NSObject", "UIView"]
 - !private ["CSo8NSObject", "URL"]
 - !private ["CSo8NSObject", "Value"]
+- !private ["CSo8NSObject", "WebService"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "allKeys"]
 - !private ["CSo8NSObject", "allValues"]
 - !private ["CSo8NSObject", "appending"]
 - ["CSo8NSObject", "backButtonPressed"]
 - !private ["CSo8NSObject", "backgroundColor"]
+- !private ["CSo8NSObject", "calendar"]
+- !private ["CSo8NSObject", "chaptersData"]
 - !private ["CSo8NSObject", "child"]
 - !private ["CSo8NSObject", "childByAutoId"]
 - !private ["CSo8NSObject", "comments"]
+- !private ["CSo8NSObject", "configureCell"]
 - !private ["CSo8NSObject", "configureCommentTableViewCell"]
 - !private ["CSo8NSObject", "configureNameCell"]
 - !private ["CSo8NSObject", "configureSupplierCell"]
+- !private ["CSo8NSObject", "contains"]
 - !private ["CSo8NSObject", "contentMode"]
 - !private ["CSo8NSObject", "count"]
 - ["CSo8NSObject", "create"]
@@ -1255,6 +1397,7 @@ depends-member:
 - !private ["CSo8NSObject", "images"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiateViewController"]
+- !private ["CSo8NSObject", "locale"]
 - !private ["CSo8NSObject", "main"]
 - !private ["CSo8NSObject", "name"]
 - !private ["CSo8NSObject", "navigationController"]
@@ -1268,12 +1411,14 @@ depends-member:
 - !private ["CSo8NSObject", "reference"]
 - !private ["CSo8NSObject", "replacingOccurrences"]
 - !private ["CSo8NSObject", "resume"]
+- !private ["CSo8NSObject", "sendToGoogleForms"]
 - !private ["CSo8NSObject", "setNavBarWithBackButton"]
 - !private ["CSo8NSObject", "setValue"]
+- ["CSo8NSObject", "setupSuppliers"]
 - ["CSo8NSObject", "sharedClient"]
 - !private ["CSo8NSObject", "storage"]
 - !private ["CSo8NSObject", "string"]
-- !private ["CSo8NSObject", "supplierArray"]
+- ["CSo8NSObject", "supplierData"]
 - !private ["CSo8NSObject", "supplierValues"]
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
@@ -1285,14 +1430,16 @@ depends-member:
 - ["CSo8NSObject", "textViewDidEndEditing"]
 - ["CSo8NSObject", "textViewShouldBeginEditing"]
 - ["CSo8NSObject", "textViewShouldEndEditing"]
+- !private ["CSo8NSObject", "timeZone"]
 - !private ["CSo8NSObject", "userName"]
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "Bundle"]
 - !private ["PSo16NSObjectProtocol", "CGRect"]
+- !private ["PSo16NSObjectProtocol", "Calendar"]
 - !private ["PSo16NSObjectProtocol", "Date"]
 - !private ["PSo16NSObjectProtocol", "DateFormatter"]
-- !private ["PSo16NSObjectProtocol", "Element"]
+- ["PSo16NSObjectProtocol", "Element"]
 - !private ["PSo16NSObjectProtocol", "FIRDatabase"]
 - !private ["PSo16NSObjectProtocol", "FIRStorage"]
 - !private ["PSo16NSObjectProtocol", "HIBackground"]
@@ -1300,9 +1447,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "HImanager"]
 - !private ["PSo16NSObjectProtocol", "Iterator"]
 - !private ["PSo16NSObjectProtocol", "Key"]
+- !private ["PSo16NSObjectProtocol", "Locale"]
 - !private ["PSo16NSObjectProtocol", "NSTemporaryDirectory"]
 - !private ["PSo16NSObjectProtocol", "PDFGenerator"]
 - !private ["PSo16NSObjectProtocol", "PDFPage"]
+- !private ["PSo16NSObjectProtocol", "TimeZone"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
@@ -1313,18 +1462,23 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - !private ["PSo16NSObjectProtocol", "URL"]
 - !private ["PSo16NSObjectProtocol", "Value"]
+- !private ["PSo16NSObjectProtocol", "WebService"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "allKeys"]
 - !private ["PSo16NSObjectProtocol", "allValues"]
 - !private ["PSo16NSObjectProtocol", "appending"]
 - ["PSo16NSObjectProtocol", "backButtonPressed"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- !private ["PSo16NSObjectProtocol", "calendar"]
+- !private ["PSo16NSObjectProtocol", "chaptersData"]
 - !private ["PSo16NSObjectProtocol", "child"]
 - !private ["PSo16NSObjectProtocol", "childByAutoId"]
 - !private ["PSo16NSObjectProtocol", "comments"]
+- !private ["PSo16NSObjectProtocol", "configureCell"]
 - !private ["PSo16NSObjectProtocol", "configureCommentTableViewCell"]
 - !private ["PSo16NSObjectProtocol", "configureNameCell"]
 - !private ["PSo16NSObjectProtocol", "configureSupplierCell"]
+- !private ["PSo16NSObjectProtocol", "contains"]
 - !private ["PSo16NSObjectProtocol", "contentMode"]
 - !private ["PSo16NSObjectProtocol", "count"]
 - ["PSo16NSObjectProtocol", "create"]
@@ -1342,6 +1496,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "images"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instantiateViewController"]
+- !private ["PSo16NSObjectProtocol", "locale"]
 - !private ["PSo16NSObjectProtocol", "main"]
 - !private ["PSo16NSObjectProtocol", "name"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
@@ -1355,12 +1510,14 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "reference"]
 - !private ["PSo16NSObjectProtocol", "replacingOccurrences"]
 - !private ["PSo16NSObjectProtocol", "resume"]
+- !private ["PSo16NSObjectProtocol", "sendToGoogleForms"]
 - !private ["PSo16NSObjectProtocol", "setNavBarWithBackButton"]
 - !private ["PSo16NSObjectProtocol", "setValue"]
+- ["PSo16NSObjectProtocol", "setupSuppliers"]
 - ["PSo16NSObjectProtocol", "sharedClient"]
 - !private ["PSo16NSObjectProtocol", "storage"]
 - !private ["PSo16NSObjectProtocol", "string"]
-- !private ["PSo16NSObjectProtocol", "supplierArray"]
+- ["PSo16NSObjectProtocol", "supplierData"]
 - !private ["PSo16NSObjectProtocol", "supplierValues"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
@@ -1372,11 +1529,12 @@ depends-member:
 - ["PSo16NSObjectProtocol", "textViewDidEndEditing"]
 - ["PSo16NSObjectProtocol", "textViewShouldBeginEditing"]
 - ["PSo16NSObjectProtocol", "textViewShouldEndEditing"]
+- !private ["PSo16NSObjectProtocol", "timeZone"]
 - !private ["PSo16NSObjectProtocol", "userName"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "Element"]
+- ["PSo14NSSecureCoding", "Element"]
 - !private ["PSo14NSSecureCoding", "HIBackground"]
 - !private ["PSo14NSSecureCoding", "Iterator"]
 - !private ["PSo14NSSecureCoding", "Key"]
@@ -1384,6 +1542,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "allKeys"]
 - !private ["PSo14NSSecureCoding", "allValues"]
 - !private ["PSo14NSSecureCoding", "appending"]
+- !private ["PSo14NSSecureCoding", "contains"]
 - !private ["PSo14NSSecureCoding", "count"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "object"]
@@ -1404,6 +1563,7 @@ depends-member:
 - !private ["O12PDFGenerator7PDFPage", "view"]
 - !private ["P12PDFGenerator17PDFPageRenderable", "addSubview"]
 - !private ["P12PDFGenerator17PDFPageRenderable", "backgroundColor"]
+- !private ["P12PDFGenerator17PDFPageRenderable", "configureCell"]
 - !private ["P12PDFGenerator17PDFPageRenderable", "configureCommentTableViewCell"]
 - !private ["P12PDFGenerator17PDFPageRenderable", "configureNameCell"]
 - !private ["P12PDFGenerator17PDFPageRenderable", "configureSupplierCell"]
@@ -1476,7 +1636,7 @@ depends-member:
 - !private ["P10Foundation20ReferenceConvertible", "init"]
 - !private ["P10Foundation20ReferenceConvertible", "row"]
 - !private ["P10Foundation20ReferenceConvertible", "write"]
-- !private ["Ps8Sequence", "Element"]
+- ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Index"]
 - !private ["Ps8Sequence", "IndexDistance"]
 - !private ["Ps8Sequence", "Indices"]
@@ -1488,6 +1648,7 @@ depends-member:
 - !private ["Ps8Sequence", "allKeys"]
 - !private ["Ps8Sequence", "allValues"]
 - !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "contains"]
 - !private ["Ps8Sequence", "count"]
 - !private ["Ps8Sequence", "object"]
 - !private ["Ps8Sequence", "row"]
@@ -1512,6 +1673,8 @@ depends-member:
 - ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["SS", "replacingOccurrences"]
+- !private ["C17HafsaInspectorApp19SubmitTableViewCell", "configureCell"]
+- ["C17HafsaInspectorApp19SubmitTableViewCell", "deinit"]
 - !private ["C17HafsaInspectorApp21SupplierTableViewCell", "configureSupplierCell"]
 - ["C17HafsaInspectorApp21SupplierTableViewCell", "deinit"]
 - !private ["Ps16TextOutputStream", "appending"]
@@ -1520,8 +1683,10 @@ depends-member:
 - !private ["Ps20TextOutputStreamable", "appending"]
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["Ps20TextOutputStreamable", "replacingOccurrences"]
+- !private ["V10Foundation8TimeZone", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- !private ["PSo29UIAccessibilityIdentification", "configureCell"]
 - !private ["PSo29UIAccessibilityIdentification", "configureCommentTableViewCell"]
 - !private ["PSo29UIAccessibilityIdentification", "configureNameCell"]
 - !private ["PSo29UIAccessibilityIdentification", "configureSupplierCell"]
@@ -1537,6 +1702,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "textView"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
+- !private ["PSo12UIAppearance", "configureCell"]
 - !private ["PSo12UIAppearance", "configureCommentTableViewCell"]
 - !private ["PSo12UIAppearance", "configureNameCell"]
 - !private ["PSo12UIAppearance", "configureSupplierCell"]
@@ -1552,15 +1718,18 @@ depends-member:
 - !private ["PSo12UIAppearance", "textView"]
 - !private ["PSo21UIAppearanceContainer", "Bundle"]
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
+- !private ["PSo21UIAppearanceContainer", "Calendar"]
 - !private ["PSo21UIAppearanceContainer", "Date"]
 - !private ["PSo21UIAppearanceContainer", "DateFormatter"]
 - !private ["PSo21UIAppearanceContainer", "FIRDatabase"]
 - !private ["PSo21UIAppearanceContainer", "FIRStorage"]
 - ["PSo21UIAppearanceContainer", "HIManager"]
 - ["PSo21UIAppearanceContainer", "HImanager"]
+- !private ["PSo21UIAppearanceContainer", "Locale"]
 - !private ["PSo21UIAppearanceContainer", "NSTemporaryDirectory"]
 - !private ["PSo21UIAppearanceContainer", "PDFGenerator"]
 - !private ["PSo21UIAppearanceContainer", "PDFPage"]
+- !private ["PSo21UIAppearanceContainer", "TimeZone"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
@@ -1570,9 +1739,11 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UITableViewAutomaticDimension"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - !private ["PSo21UIAppearanceContainer", "URL"]
+- !private ["PSo21UIAppearanceContainer", "WebService"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - ["PSo21UIAppearanceContainer", "backButtonPressed"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- !private ["PSo21UIAppearanceContainer", "configureCell"]
 - !private ["PSo21UIAppearanceContainer", "configureCommentTableViewCell"]
 - !private ["PSo21UIAppearanceContainer", "configureNameCell"]
 - !private ["PSo21UIAppearanceContainer", "configureSupplierCell"]
@@ -1591,6 +1762,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "popViewController"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "setNavBarWithBackButton"]
+- ["PSo21UIAppearanceContainer", "setupSuppliers"]
+- ["PSo21UIAppearanceContainer", "supplierData"]
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textAlignment"]
@@ -1608,15 +1781,18 @@ depends-member:
 - ["CSo7UIColor", "deinit"]
 - !private ["PSo18UIContentContainer", "Bundle"]
 - !private ["PSo18UIContentContainer", "CGRect"]
+- !private ["PSo18UIContentContainer", "Calendar"]
 - !private ["PSo18UIContentContainer", "Date"]
 - !private ["PSo18UIContentContainer", "DateFormatter"]
 - !private ["PSo18UIContentContainer", "FIRDatabase"]
 - !private ["PSo18UIContentContainer", "FIRStorage"]
 - ["PSo18UIContentContainer", "HIManager"]
 - ["PSo18UIContentContainer", "HImanager"]
+- !private ["PSo18UIContentContainer", "Locale"]
 - !private ["PSo18UIContentContainer", "NSTemporaryDirectory"]
 - !private ["PSo18UIContentContainer", "PDFGenerator"]
 - !private ["PSo18UIContentContainer", "PDFPage"]
+- !private ["PSo18UIContentContainer", "TimeZone"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UIImage"]
@@ -1626,6 +1802,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UITableViewAutomaticDimension"]
 - !private ["PSo18UIContentContainer", "UIView"]
 - !private ["PSo18UIContentContainer", "URL"]
+- !private ["PSo18UIContentContainer", "WebService"]
 - ["PSo18UIContentContainer", "backButtonPressed"]
 - ["PSo18UIContentContainer", "create"]
 - ["PSo18UIContentContainer", "generatePDF"]
@@ -1636,6 +1813,8 @@ depends-member:
 - !private ["PSo18UIContentContainer", "popViewController"]
 - !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "setNavBarWithBackButton"]
+- ["PSo18UIContentContainer", "setupSuppliers"]
+- ["PSo18UIContentContainer", "supplierData"]
 - ["PSo18UIContentContainer", "tableView"]
 - ["PSo18UIContentContainer", "textView"]
 - ["PSo18UIContentContainer", "textViewDidBeginEditing"]
@@ -1655,6 +1834,7 @@ depends-member:
 - !private ["PSo30UIContentSizeCategoryAdjusting", "textAlignment"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- !private ["PSo17UICoordinateSpace", "configureCell"]
 - !private ["PSo17UICoordinateSpace", "configureCommentTableViewCell"]
 - !private ["PSo17UICoordinateSpace", "configureNameCell"]
 - !private ["PSo17UICoordinateSpace", "configureSupplierCell"]
@@ -1670,6 +1850,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "textView"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
+- !private ["PSo13UIDynamicItem", "configureCell"]
 - !private ["PSo13UIDynamicItem", "configureCommentTableViewCell"]
 - !private ["PSo13UIDynamicItem", "configureNameCell"]
 - !private ["PSo13UIDynamicItem", "configureSupplierCell"]
@@ -1685,15 +1866,18 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "textView"]
 - !private ["PSo18UIFocusEnvironment", "Bundle"]
 - !private ["PSo18UIFocusEnvironment", "CGRect"]
+- !private ["PSo18UIFocusEnvironment", "Calendar"]
 - !private ["PSo18UIFocusEnvironment", "Date"]
 - !private ["PSo18UIFocusEnvironment", "DateFormatter"]
 - !private ["PSo18UIFocusEnvironment", "FIRDatabase"]
 - !private ["PSo18UIFocusEnvironment", "FIRStorage"]
 - ["PSo18UIFocusEnvironment", "HIManager"]
 - ["PSo18UIFocusEnvironment", "HImanager"]
+- !private ["PSo18UIFocusEnvironment", "Locale"]
 - !private ["PSo18UIFocusEnvironment", "NSTemporaryDirectory"]
 - !private ["PSo18UIFocusEnvironment", "PDFGenerator"]
 - !private ["PSo18UIFocusEnvironment", "PDFPage"]
+- !private ["PSo18UIFocusEnvironment", "TimeZone"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
@@ -1703,9 +1887,11 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UITableViewAutomaticDimension"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
 - !private ["PSo18UIFocusEnvironment", "URL"]
+- !private ["PSo18UIFocusEnvironment", "WebService"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - ["PSo18UIFocusEnvironment", "backButtonPressed"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
+- !private ["PSo18UIFocusEnvironment", "configureCell"]
 - !private ["PSo18UIFocusEnvironment", "configureCommentTableViewCell"]
 - !private ["PSo18UIFocusEnvironment", "configureNameCell"]
 - !private ["PSo18UIFocusEnvironment", "configureSupplierCell"]
@@ -1724,6 +1910,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "popViewController"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "setNavBarWithBackButton"]
+- ["PSo18UIFocusEnvironment", "setupSuppliers"]
+- ["PSo18UIFocusEnvironment", "supplierData"]
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "textAlignment"]
@@ -1739,6 +1927,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "addSubview"]
 - !private ["PSo11UIFocusItem", "backgroundColor"]
+- !private ["PSo11UIFocusItem", "configureCell"]
 - !private ["PSo11UIFocusItem", "configureCommentTableViewCell"]
 - !private ["PSo11UIFocusItem", "configureNameCell"]
 - !private ["PSo11UIFocusItem", "configureSupplierCell"]
@@ -1753,6 +1942,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "textAlignment"]
 - !private ["PSo11UIFocusItem", "textView"]
 - !private ["CSo6UIFont", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "configureCell"]
 - !private ["PSo27UIGestureRecognizerDelegate", "configureCommentTableViewCell"]
 - !private ["PSo27UIGestureRecognizerDelegate", "configureNameCell"]
 - !private ["PSo27UIGestureRecognizerDelegate", "configureSupplierCell"]
@@ -1780,6 +1970,7 @@ depends-member:
 - !private ["CSo11UIResponder", "Bundle"]
 - ["CSo11UIResponder", "CGFloat"]
 - !private ["CSo11UIResponder", "CGRect"]
+- !private ["CSo11UIResponder", "Calendar"]
 - !private ["CSo11UIResponder", "CommentTableViewCell"]
 - !private ["CSo11UIResponder", "Date"]
 - !private ["CSo11UIResponder", "DateFormatter"]
@@ -1792,6 +1983,8 @@ depends-member:
 - !private ["CSo11UIResponder", "ImageTableViewCell"]
 - ["CSo11UIResponder", "IndexPath"]
 - ["CSo11UIResponder", "Int"]
+- !private ["CSo11UIResponder", "Locale"]
+- ["CSo11UIResponder", "NSArray"]
 - !private ["CSo11UIResponder", "NSDictionary"]
 - !private ["CSo11UIResponder", "NSString"]
 - !private ["CSo11UIResponder", "NSTemporaryDirectory"]
@@ -1799,7 +1992,9 @@ depends-member:
 - !private ["CSo11UIResponder", "PDFGenerator"]
 - !private ["CSo11UIResponder", "PDFPage"]
 - !private ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "SubmitTableViewCell"]
 - !private ["CSo11UIResponder", "SupplierTableViewCell"]
+- !private ["CSo11UIResponder", "TimeZone"]
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIFont"]
 - !private ["CSo11UIResponder", "UIImage"]
@@ -1812,9 +2007,11 @@ depends-member:
 - ["CSo11UIResponder", "UITextView"]
 - !private ["CSo11UIResponder", "UIView"]
 - !private ["CSo11UIResponder", "URL"]
+- !private ["CSo11UIResponder", "WebService"]
 - !private ["CSo11UIResponder", "addSubview"]
 - ["CSo11UIResponder", "backButtonPressed"]
 - !private ["CSo11UIResponder", "backgroundColor"]
+- !private ["CSo11UIResponder", "configureCell"]
 - !private ["CSo11UIResponder", "configureCommentTableViewCell"]
 - !private ["CSo11UIResponder", "configureNameCell"]
 - !private ["CSo11UIResponder", "configureSupplierCell"]
@@ -1833,6 +2030,8 @@ depends-member:
 - !private ["CSo11UIResponder", "popViewController"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "setNavBarWithBackButton"]
+- ["CSo11UIResponder", "setupSuppliers"]
+- ["CSo11UIResponder", "supplierData"]
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textAlignment"]
@@ -1847,15 +2046,18 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "Bundle"]
 - !private ["PSo30UIResponderStandardEditActions", "CGRect"]
+- !private ["PSo30UIResponderStandardEditActions", "Calendar"]
 - !private ["PSo30UIResponderStandardEditActions", "Date"]
 - !private ["PSo30UIResponderStandardEditActions", "DateFormatter"]
 - !private ["PSo30UIResponderStandardEditActions", "FIRDatabase"]
 - !private ["PSo30UIResponderStandardEditActions", "FIRStorage"]
 - ["PSo30UIResponderStandardEditActions", "HIManager"]
 - ["PSo30UIResponderStandardEditActions", "HImanager"]
+- !private ["PSo30UIResponderStandardEditActions", "Locale"]
 - !private ["PSo30UIResponderStandardEditActions", "NSTemporaryDirectory"]
 - !private ["PSo30UIResponderStandardEditActions", "PDFGenerator"]
 - !private ["PSo30UIResponderStandardEditActions", "PDFPage"]
+- !private ["PSo30UIResponderStandardEditActions", "TimeZone"]
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "UIFont"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
@@ -1865,9 +2067,11 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UITableViewAutomaticDimension"]
 - !private ["PSo30UIResponderStandardEditActions", "UIView"]
 - !private ["PSo30UIResponderStandardEditActions", "URL"]
+- !private ["PSo30UIResponderStandardEditActions", "WebService"]
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
 - ["PSo30UIResponderStandardEditActions", "backButtonPressed"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
+- !private ["PSo30UIResponderStandardEditActions", "configureCell"]
 - !private ["PSo30UIResponderStandardEditActions", "configureCommentTableViewCell"]
 - !private ["PSo30UIResponderStandardEditActions", "configureNameCell"]
 - !private ["PSo30UIResponderStandardEditActions", "configureSupplierCell"]
@@ -1886,6 +2090,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "popViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "setNavBarWithBackButton"]
+- ["PSo30UIResponderStandardEditActions", "setupSuppliers"]
+- ["PSo30UIResponderStandardEditActions", "supplierData"]
 - ["PSo30UIResponderStandardEditActions", "tableView"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "textAlignment"]
@@ -1904,15 +2110,18 @@ depends-member:
 - !private ["CSo12UIScrollView", "text"]
 - !private ["PSo20UIScrollViewDelegate", "Bundle"]
 - !private ["PSo20UIScrollViewDelegate", "CGRect"]
+- !private ["PSo20UIScrollViewDelegate", "Calendar"]
 - !private ["PSo20UIScrollViewDelegate", "Date"]
 - !private ["PSo20UIScrollViewDelegate", "DateFormatter"]
 - !private ["PSo20UIScrollViewDelegate", "FIRDatabase"]
 - !private ["PSo20UIScrollViewDelegate", "FIRStorage"]
 - ["PSo20UIScrollViewDelegate", "HIManager"]
 - ["PSo20UIScrollViewDelegate", "HImanager"]
+- !private ["PSo20UIScrollViewDelegate", "Locale"]
 - !private ["PSo20UIScrollViewDelegate", "NSTemporaryDirectory"]
 - !private ["PSo20UIScrollViewDelegate", "PDFGenerator"]
 - !private ["PSo20UIScrollViewDelegate", "PDFPage"]
+- !private ["PSo20UIScrollViewDelegate", "TimeZone"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "UIFont"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
@@ -1922,6 +2131,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UITableViewAutomaticDimension"]
 - !private ["PSo20UIScrollViewDelegate", "UIView"]
 - !private ["PSo20UIScrollViewDelegate", "URL"]
+- !private ["PSo20UIScrollViewDelegate", "WebService"]
 - ["PSo20UIScrollViewDelegate", "backButtonPressed"]
 - ["PSo20UIScrollViewDelegate", "create"]
 - ["PSo20UIScrollViewDelegate", "generatePDF"]
@@ -1931,6 +2141,8 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "numberOfSections"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
 - !private ["PSo20UIScrollViewDelegate", "setNavBarWithBackButton"]
+- ["PSo20UIScrollViewDelegate", "setupSuppliers"]
+- ["PSo20UIScrollViewDelegate", "supplierData"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - ["PSo20UIScrollViewDelegate", "textView"]
 - ["PSo20UIScrollViewDelegate", "textViewDidBeginEditing"]
@@ -1944,15 +2156,18 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["PSo16UIStateRestoring", "Bundle"]
 - !private ["PSo16UIStateRestoring", "CGRect"]
+- !private ["PSo16UIStateRestoring", "Calendar"]
 - !private ["PSo16UIStateRestoring", "Date"]
 - !private ["PSo16UIStateRestoring", "DateFormatter"]
 - !private ["PSo16UIStateRestoring", "FIRDatabase"]
 - !private ["PSo16UIStateRestoring", "FIRStorage"]
 - ["PSo16UIStateRestoring", "HIManager"]
 - ["PSo16UIStateRestoring", "HImanager"]
+- !private ["PSo16UIStateRestoring", "Locale"]
 - !private ["PSo16UIStateRestoring", "NSTemporaryDirectory"]
 - !private ["PSo16UIStateRestoring", "PDFGenerator"]
 - !private ["PSo16UIStateRestoring", "PDFPage"]
+- !private ["PSo16UIStateRestoring", "TimeZone"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
@@ -1962,6 +2177,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UITableViewAutomaticDimension"]
 - !private ["PSo16UIStateRestoring", "UIView"]
 - !private ["PSo16UIStateRestoring", "URL"]
+- !private ["PSo16UIStateRestoring", "WebService"]
 - ["PSo16UIStateRestoring", "backButtonPressed"]
 - ["PSo16UIStateRestoring", "create"]
 - ["PSo16UIStateRestoring", "generatePDF"]
@@ -1972,6 +2188,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "popViewController"]
 - !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "setNavBarWithBackButton"]
+- ["PSo16UIStateRestoring", "setupSuppliers"]
+- ["PSo16UIStateRestoring", "supplierData"]
 - ["PSo16UIStateRestoring", "tableView"]
 - ["PSo16UIStateRestoring", "textView"]
 - ["PSo16UIStateRestoring", "textViewDidBeginEditing"]
@@ -1988,6 +2206,7 @@ depends-member:
 - !private ["CSo12UIStoryboard", "instantiateViewController"]
 - ["CSo11UITableView", "deinit"]
 - !private ["CSo11UITableView", "dequeueReusableCell"]
+- !private ["CSo15UITableViewCell", "configureCell"]
 - !private ["CSo15UITableViewCell", "configureCommentTableViewCell"]
 - !private ["CSo15UITableViewCell", "configureNameCell"]
 - !private ["CSo15UITableViewCell", "configureSupplierCell"]
@@ -1996,6 +2215,7 @@ depends-member:
 - !private ["CSo21UITableViewController", "Bundle"]
 - ["CSo21UITableViewController", "CGFloat"]
 - !private ["CSo21UITableViewController", "CGRect"]
+- !private ["CSo21UITableViewController", "Calendar"]
 - !private ["CSo21UITableViewController", "CommentTableViewCell"]
 - !private ["CSo21UITableViewController", "Date"]
 - !private ["CSo21UITableViewController", "DateFormatter"]
@@ -2008,6 +2228,8 @@ depends-member:
 - !private ["CSo21UITableViewController", "ImageTableViewCell"]
 - ["CSo21UITableViewController", "IndexPath"]
 - ["CSo21UITableViewController", "Int"]
+- !private ["CSo21UITableViewController", "Locale"]
+- ["CSo21UITableViewController", "NSArray"]
 - !private ["CSo21UITableViewController", "NSDictionary"]
 - !private ["CSo21UITableViewController", "NSString"]
 - !private ["CSo21UITableViewController", "NSTemporaryDirectory"]
@@ -2015,7 +2237,9 @@ depends-member:
 - !private ["CSo21UITableViewController", "PDFGenerator"]
 - !private ["CSo21UITableViewController", "PDFPage"]
 - !private ["CSo21UITableViewController", "String"]
+- !private ["CSo21UITableViewController", "SubmitTableViewCell"]
 - !private ["CSo21UITableViewController", "SupplierTableViewCell"]
+- !private ["CSo21UITableViewController", "TimeZone"]
 - !private ["CSo21UITableViewController", "UIColor"]
 - !private ["CSo21UITableViewController", "UIFont"]
 - !private ["CSo21UITableViewController", "UIImage"]
@@ -2028,6 +2252,7 @@ depends-member:
 - ["CSo21UITableViewController", "UITextView"]
 - !private ["CSo21UITableViewController", "UIView"]
 - !private ["CSo21UITableViewController", "URL"]
+- !private ["CSo21UITableViewController", "WebService"]
 - ["CSo21UITableViewController", "backButtonPressed"]
 - ["CSo21UITableViewController", "create"]
 - ["CSo21UITableViewController", "deinit"]
@@ -2038,6 +2263,8 @@ depends-member:
 - ["CSo21UITableViewController", "numberOfSections"]
 - !private ["CSo21UITableViewController", "print"]
 - !private ["CSo21UITableViewController", "setNavBarWithBackButton"]
+- ["CSo21UITableViewController", "setupSuppliers"]
+- ["CSo21UITableViewController", "supplierData"]
 - ["CSo21UITableViewController", "tableView"]
 - ["CSo21UITableViewController", "textView"]
 - ["CSo21UITableViewController", "textViewDidBeginEditing"]
@@ -2051,15 +2278,18 @@ depends-member:
 - ["CSo21UITableViewController", ""]
 - !private ["PSo21UITableViewDataSource", "Bundle"]
 - !private ["PSo21UITableViewDataSource", "CGRect"]
+- !private ["PSo21UITableViewDataSource", "Calendar"]
 - !private ["PSo21UITableViewDataSource", "Date"]
 - !private ["PSo21UITableViewDataSource", "DateFormatter"]
 - !private ["PSo21UITableViewDataSource", "FIRDatabase"]
 - !private ["PSo21UITableViewDataSource", "FIRStorage"]
 - ["PSo21UITableViewDataSource", "HIManager"]
 - ["PSo21UITableViewDataSource", "HImanager"]
+- !private ["PSo21UITableViewDataSource", "Locale"]
 - !private ["PSo21UITableViewDataSource", "NSTemporaryDirectory"]
 - !private ["PSo21UITableViewDataSource", "PDFGenerator"]
 - !private ["PSo21UITableViewDataSource", "PDFPage"]
+- !private ["PSo21UITableViewDataSource", "TimeZone"]
 - !private ["PSo21UITableViewDataSource", "UIColor"]
 - !private ["PSo21UITableViewDataSource", "UIFont"]
 - !private ["PSo21UITableViewDataSource", "UIImage"]
@@ -2069,6 +2299,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "UITableViewAutomaticDimension"]
 - !private ["PSo21UITableViewDataSource", "UIView"]
 - !private ["PSo21UITableViewDataSource", "URL"]
+- !private ["PSo21UITableViewDataSource", "WebService"]
 - ["PSo21UITableViewDataSource", "backButtonPressed"]
 - ["PSo21UITableViewDataSource", "create"]
 - ["PSo21UITableViewDataSource", "generatePDF"]
@@ -2078,6 +2309,8 @@ depends-member:
 - ["PSo21UITableViewDataSource", "numberOfSections"]
 - !private ["PSo21UITableViewDataSource", "print"]
 - !private ["PSo21UITableViewDataSource", "setNavBarWithBackButton"]
+- ["PSo21UITableViewDataSource", "setupSuppliers"]
+- ["PSo21UITableViewDataSource", "supplierData"]
 - ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", "textView"]
 - ["PSo21UITableViewDataSource", "textViewDidBeginEditing"]
@@ -2091,15 +2324,18 @@ depends-member:
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "Bundle"]
 - !private ["PSo19UITableViewDelegate", "CGRect"]
+- !private ["PSo19UITableViewDelegate", "Calendar"]
 - !private ["PSo19UITableViewDelegate", "Date"]
 - !private ["PSo19UITableViewDelegate", "DateFormatter"]
 - !private ["PSo19UITableViewDelegate", "FIRDatabase"]
 - !private ["PSo19UITableViewDelegate", "FIRStorage"]
 - ["PSo19UITableViewDelegate", "HIManager"]
 - ["PSo19UITableViewDelegate", "HImanager"]
+- !private ["PSo19UITableViewDelegate", "Locale"]
 - !private ["PSo19UITableViewDelegate", "NSTemporaryDirectory"]
 - !private ["PSo19UITableViewDelegate", "PDFGenerator"]
 - !private ["PSo19UITableViewDelegate", "PDFPage"]
+- !private ["PSo19UITableViewDelegate", "TimeZone"]
 - !private ["PSo19UITableViewDelegate", "UIColor"]
 - !private ["PSo19UITableViewDelegate", "UIFont"]
 - !private ["PSo19UITableViewDelegate", "UIImage"]
@@ -2109,6 +2345,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UITableViewAutomaticDimension"]
 - !private ["PSo19UITableViewDelegate", "UIView"]
 - !private ["PSo19UITableViewDelegate", "URL"]
+- !private ["PSo19UITableViewDelegate", "WebService"]
 - ["PSo19UITableViewDelegate", "backButtonPressed"]
 - ["PSo19UITableViewDelegate", "create"]
 - ["PSo19UITableViewDelegate", "generatePDF"]
@@ -2118,6 +2355,8 @@ depends-member:
 - ["PSo19UITableViewDelegate", "numberOfSections"]
 - !private ["PSo19UITableViewDelegate", "print"]
 - !private ["PSo19UITableViewDelegate", "setNavBarWithBackButton"]
+- ["PSo19UITableViewDelegate", "setupSuppliers"]
+- ["PSo19UITableViewDelegate", "supplierData"]
 - ["PSo19UITableViewDelegate", "tableView"]
 - ["PSo19UITableViewDelegate", "textView"]
 - ["PSo19UITableViewDelegate", "textViewDidBeginEditing"]
@@ -2139,15 +2378,18 @@ depends-member:
 - !private ["CSo10UITextView", "text"]
 - !private ["PSo18UITextViewDelegate", "Bundle"]
 - !private ["PSo18UITextViewDelegate", "CGRect"]
+- !private ["PSo18UITextViewDelegate", "Calendar"]
 - !private ["PSo18UITextViewDelegate", "Date"]
 - !private ["PSo18UITextViewDelegate", "DateFormatter"]
 - !private ["PSo18UITextViewDelegate", "FIRDatabase"]
 - !private ["PSo18UITextViewDelegate", "FIRStorage"]
 - ["PSo18UITextViewDelegate", "HIManager"]
 - !private ["PSo18UITextViewDelegate", "HImanager"]
+- !private ["PSo18UITextViewDelegate", "Locale"]
 - !private ["PSo18UITextViewDelegate", "NSTemporaryDirectory"]
 - !private ["PSo18UITextViewDelegate", "PDFGenerator"]
 - !private ["PSo18UITextViewDelegate", "PDFPage"]
+- !private ["PSo18UITextViewDelegate", "TimeZone"]
 - !private ["PSo18UITextViewDelegate", "UIColor"]
 - !private ["PSo18UITextViewDelegate", "UIFont"]
 - !private ["PSo18UITextViewDelegate", "UIImage"]
@@ -2157,11 +2399,13 @@ depends-member:
 - !private ["PSo18UITextViewDelegate", "UITableViewAutomaticDimension"]
 - !private ["PSo18UITextViewDelegate", "UIView"]
 - !private ["PSo18UITextViewDelegate", "URL"]
-- !private ["PSo18UITextViewDelegate", "generatePDF"]
+- !private ["PSo18UITextViewDelegate", "WebService"]
 - !private ["PSo18UITextViewDelegate", "hideKeyboardWhenTappedAround"]
 - !private ["PSo18UITextViewDelegate", "navigationController"]
 - !private ["PSo18UITextViewDelegate", "print"]
 - !private ["PSo18UITextViewDelegate", "setNavBarWithBackButton"]
+- !private ["PSo18UITextViewDelegate", "setupSuppliers"]
+- !private ["PSo18UITextViewDelegate", "supplierData"]
 - ["PSo18UITextViewDelegate", "textView"]
 - ["PSo18UITextViewDelegate", "textViewDidBeginEditing"]
 - ["PSo18UITextViewDelegate", "textViewDidChange"]
@@ -2173,15 +2417,18 @@ depends-member:
 - ["PSo18UITextViewDelegate", ""]
 - !private ["PSo18UITraitEnvironment", "Bundle"]
 - !private ["PSo18UITraitEnvironment", "CGRect"]
+- !private ["PSo18UITraitEnvironment", "Calendar"]
 - !private ["PSo18UITraitEnvironment", "Date"]
 - !private ["PSo18UITraitEnvironment", "DateFormatter"]
 - !private ["PSo18UITraitEnvironment", "FIRDatabase"]
 - !private ["PSo18UITraitEnvironment", "FIRStorage"]
 - ["PSo18UITraitEnvironment", "HIManager"]
 - ["PSo18UITraitEnvironment", "HImanager"]
+- !private ["PSo18UITraitEnvironment", "Locale"]
 - !private ["PSo18UITraitEnvironment", "NSTemporaryDirectory"]
 - !private ["PSo18UITraitEnvironment", "PDFGenerator"]
 - !private ["PSo18UITraitEnvironment", "PDFPage"]
+- !private ["PSo18UITraitEnvironment", "TimeZone"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
@@ -2191,9 +2438,11 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UITableViewAutomaticDimension"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - !private ["PSo18UITraitEnvironment", "URL"]
+- !private ["PSo18UITraitEnvironment", "WebService"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - ["PSo18UITraitEnvironment", "backButtonPressed"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- !private ["PSo18UITraitEnvironment", "configureCell"]
 - !private ["PSo18UITraitEnvironment", "configureCommentTableViewCell"]
 - !private ["PSo18UITraitEnvironment", "configureNameCell"]
 - !private ["PSo18UITraitEnvironment", "configureSupplierCell"]
@@ -2212,6 +2461,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "popViewController"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "setNavBarWithBackButton"]
+- ["PSo18UITraitEnvironment", "setupSuppliers"]
+- ["PSo18UITraitEnvironment", "supplierData"]
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textAlignment"]
@@ -2227,6 +2478,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "backgroundColor"]
+- !private ["CSo6UIView", "configureCell"]
 - !private ["CSo6UIView", "configureCommentTableViewCell"]
 - !private ["CSo6UIView", "configureNameCell"]
 - !private ["CSo6UIView", "configureSupplierCell"]
@@ -2246,6 +2498,7 @@ depends-member:
 - !private ["CSo16UIViewController", "Bundle"]
 - ["CSo16UIViewController", "CGFloat"]
 - !private ["CSo16UIViewController", "CGRect"]
+- !private ["CSo16UIViewController", "Calendar"]
 - !private ["CSo16UIViewController", "CommentTableViewCell"]
 - !private ["CSo16UIViewController", "Date"]
 - !private ["CSo16UIViewController", "DateFormatter"]
@@ -2258,6 +2511,8 @@ depends-member:
 - !private ["CSo16UIViewController", "ImageTableViewCell"]
 - ["CSo16UIViewController", "IndexPath"]
 - ["CSo16UIViewController", "Int"]
+- !private ["CSo16UIViewController", "Locale"]
+- ["CSo16UIViewController", "NSArray"]
 - !private ["CSo16UIViewController", "NSDictionary"]
 - !private ["CSo16UIViewController", "NSString"]
 - !private ["CSo16UIViewController", "NSTemporaryDirectory"]
@@ -2265,7 +2520,9 @@ depends-member:
 - !private ["CSo16UIViewController", "PDFGenerator"]
 - !private ["CSo16UIViewController", "PDFPage"]
 - !private ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "SubmitTableViewCell"]
 - !private ["CSo16UIViewController", "SupplierTableViewCell"]
+- !private ["CSo16UIViewController", "TimeZone"]
 - !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIFont"]
 - !private ["CSo16UIViewController", "UIImage"]
@@ -2278,6 +2535,7 @@ depends-member:
 - ["CSo16UIViewController", "UITextView"]
 - !private ["CSo16UIViewController", "UIView"]
 - !private ["CSo16UIViewController", "URL"]
+- !private ["CSo16UIViewController", "WebService"]
 - ["CSo16UIViewController", "backButtonPressed"]
 - ["CSo16UIViewController", "create"]
 - ["CSo16UIViewController", "deinit"]
@@ -2289,6 +2547,8 @@ depends-member:
 - !private ["CSo16UIViewController", "popViewController"]
 - !private ["CSo16UIViewController", "print"]
 - !private ["CSo16UIViewController", "setNavBarWithBackButton"]
+- ["CSo16UIViewController", "setupSuppliers"]
+- ["CSo16UIViewController", "supplierData"]
 - ["CSo16UIViewController", "tableView"]
 - ["CSo16UIViewController", "textView"]
 - ["CSo16UIViewController", "textViewDidBeginEditing"]
@@ -2321,15 +2581,18 @@ depends-member:
 - !private ["Ps15UnsignedInteger", "_DisallowMixedSignArithmetic"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "Bundle"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "CGRect"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "Calendar"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "Date"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "DateFormatter"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "FIRDatabase"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "FIRStorage"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "HIManager"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "HImanager"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "Locale"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "NSTemporaryDirectory"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "PDFGenerator"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "PDFPage"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "TimeZone"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "UIColor"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "UIFont"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "UIImage"]
@@ -2339,6 +2602,7 @@ depends-member:
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "UITableViewAutomaticDimension"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "UIView"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "URL"]
+- !private ["P17HafsaInspectorApp23ViewControllerContainer", "WebService"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "backButtonPressed"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "create"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "generatePDF"]
@@ -2349,6 +2613,8 @@ depends-member:
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "popViewController"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "print"]
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "setNavBarWithBackButton"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "setupSuppliers"]
+- ["P17HafsaInspectorApp23ViewControllerContainer", "supplierData"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "tableView"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "textView"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "textViewDidBeginEditing"]
@@ -2360,6 +2626,9 @@ depends-member:
 - !private ["P17HafsaInspectorApp23ViewControllerContainer", "view"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", "viewDidLoad"]
 - ["P17HafsaInspectorApp23ViewControllerContainer", ""]
+- ["C17HafsaInspectorApp10WebService", "deinit"]
+- !private ["C17HafsaInspectorApp10WebService", "init"]
+- !private ["C17HafsaInspectorApp10WebService", "sendToGoogleForms"]
 - !private ["VCSo6NSData14WritingOptions", "atomic"]
 - ["VCSo6NSData14WritingOptions", "deinit"]
 - !private ["Ps14_ArrayProtocol", "Element"]
@@ -2376,6 +2645,7 @@ depends-member:
 - !private ["Ps22_CVarArgPassedAsDouble", "Stride"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "configureCell"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "configureCommentTableViewCell"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "configureNameCell"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "configureSupplierCell"]
@@ -2426,9 +2696,10 @@ depends-member:
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "replacingOccurrences"]
 - !private ["Ps9_Hashable", "Bundle"]
 - !private ["Ps9_Hashable", "CGRect"]
+- !private ["Ps9_Hashable", "Calendar"]
 - !private ["Ps9_Hashable", "Date"]
 - !private ["Ps9_Hashable", "DateFormatter"]
-- !private ["Ps9_Hashable", "Element"]
+- ["Ps9_Hashable", "Element"]
 - !private ["Ps9_Hashable", "FIRDatabase"]
 - !private ["Ps9_Hashable", "FIRStorage"]
 - !private ["Ps9_Hashable", "HIBackground"]
@@ -2437,10 +2708,12 @@ depends-member:
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
 - !private ["Ps9_Hashable", "Iterator"]
 - !private ["Ps9_Hashable", "Key"]
+- !private ["Ps9_Hashable", "Locale"]
 - !private ["Ps9_Hashable", "NSTemporaryDirectory"]
 - !private ["Ps9_Hashable", "PDFGenerator"]
 - !private ["Ps9_Hashable", "PDFPage"]
 - !private ["Ps9_Hashable", "Stride"]
+- !private ["Ps9_Hashable", "TimeZone"]
 - !private ["Ps9_Hashable", "UIColor"]
 - !private ["Ps9_Hashable", "UIFont"]
 - !private ["Ps9_Hashable", "UIImage"]
@@ -2451,6 +2724,7 @@ depends-member:
 - !private ["Ps9_Hashable", "UIView"]
 - !private ["Ps9_Hashable", "URL"]
 - !private ["Ps9_Hashable", "Value"]
+- !private ["Ps9_Hashable", "WebService"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
@@ -2460,13 +2734,17 @@ depends-member:
 - !private ["Ps9_Hashable", "appending"]
 - ["Ps9_Hashable", "backButtonPressed"]
 - !private ["Ps9_Hashable", "backgroundColor"]
+- !private ["Ps9_Hashable", "calendar"]
 - !private ["Ps9_Hashable", "center"]
+- !private ["Ps9_Hashable", "chaptersData"]
 - !private ["Ps9_Hashable", "child"]
 - !private ["Ps9_Hashable", "childByAutoId"]
 - !private ["Ps9_Hashable", "comments"]
+- !private ["Ps9_Hashable", "configureCell"]
 - !private ["Ps9_Hashable", "configureCommentTableViewCell"]
 - !private ["Ps9_Hashable", "configureNameCell"]
 - !private ["Ps9_Hashable", "configureSupplierCell"]
+- !private ["Ps9_Hashable", "contains"]
 - !private ["Ps9_Hashable", "contentMode"]
 - !private ["Ps9_Hashable", "count"]
 - ["Ps9_Hashable", "create"]
@@ -2484,6 +2762,8 @@ depends-member:
 - !private ["Ps9_Hashable", "images"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "instantiateViewController"]
+- !private ["Ps9_Hashable", "iso8601"]
+- !private ["Ps9_Hashable", "locale"]
 - !private ["Ps9_Hashable", "main"]
 - !private ["Ps9_Hashable", "name"]
 - !private ["Ps9_Hashable", "navigationController"]
@@ -2500,12 +2780,14 @@ depends-member:
 - !private ["Ps9_Hashable", "right"]
 - !private ["Ps9_Hashable", "row"]
 - !private ["Ps9_Hashable", "scaleAspectFit"]
+- !private ["Ps9_Hashable", "sendToGoogleForms"]
 - !private ["Ps9_Hashable", "setNavBarWithBackButton"]
 - !private ["Ps9_Hashable", "setValue"]
+- ["Ps9_Hashable", "setupSuppliers"]
 - ["Ps9_Hashable", "sharedClient"]
 - !private ["Ps9_Hashable", "storage"]
 - !private ["Ps9_Hashable", "string"]
-- !private ["Ps9_Hashable", "supplierArray"]
+- ["Ps9_Hashable", "supplierData"]
 - !private ["Ps9_Hashable", "supplierValues"]
 - ["Ps9_Hashable", "tableView"]
 - !private ["Ps9_Hashable", "text"]
@@ -2517,6 +2799,7 @@ depends-member:
 - ["Ps9_Hashable", "textViewDidEndEditing"]
 - ["Ps9_Hashable", "textViewShouldBeginEditing"]
 - ["Ps9_Hashable", "textViewShouldEndEditing"]
+- !private ["Ps9_Hashable", "timeZone"]
 - !private ["Ps9_Hashable", "userName"]
 - !private ["Ps9_Hashable", "view"]
 - ["Ps9_Hashable", "viewDidLoad"]
@@ -2534,6 +2817,7 @@ depends-member:
 - !private ["Ps18_IntegerArithmetic", "Stride"]
 - !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps18_IntegerArithmetic", "_DisallowMixedSignArithmetic"]
+- !private ["P10Foundation14_MutableBoxing", "init"]
 - !private ["P10Foundation18_MutablePairBoxing", "write"]
 - !private ["Ps21_ObjectiveCBridgeable", "Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
@@ -2579,6 +2863,7 @@ depends-nominal:
 - "V12CoreGraphics7CGFloat"
 - "VSC6CGRect"
 - "Ps7CVarArg"
+- !private "V10Foundation8Calendar"
 - !private "Vs9Character"
 - !private "Vs11ClosedRange"
 - !private "Ps10Collection"
@@ -2588,7 +2873,7 @@ depends-nominal:
 - "Vs14CountableRange"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
-- !private "Ps17CustomReflectable"
+- "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "V10Foundation4Data"
 - !private "V10Foundation4Date"
@@ -2599,7 +2884,7 @@ depends-nominal:
 - "Sd"
 - "Ps9Equatable"
 - "Ps5Error"
-- !private "Ps25ExpressibleByArrayLiteral"
+- "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
@@ -2626,6 +2911,7 @@ depends-nominal:
 - !private "CSo9Formatter"
 - "C17HafsaInspectorApp9HIManager"
 - "Ps8Hashable"
+- !private "OV10Foundation8Calendar10Identifier"
 - "C17HafsaInspectorApp18ImageTableViewCell"
 - !private "SQ"
 - "V10Foundation9IndexPath"
@@ -2640,23 +2926,24 @@ depends-nominal:
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - !private "Ps16IteratorProtocol"
+- !private "V10Foundation6Locale"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
 - !private "Ps16MutableIndexable"
-- !private "CSo7NSArray"
+- "CSo7NSArray"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
-- !private "PSo9NSCopying"
+- "PSo9NSCopying"
 - "CSo12NSDictionary"
 - "PSo26NSExtensionRequestHandling"
-- !private "PSo17NSFastEnumeration"
+- "PSo17NSFastEnumeration"
 - !private "C10Foundation25NSFastEnumerationIterator"
 - "CSo14NSMutableArray"
-- !private "PSo16NSMutableCopying"
+- "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- !private "PSo14NSSecureCoding"
+- "PSo14NSSecureCoding"
 - "CSo8NSString"
 - "OSC15NSTextAlignment"
 - "C17HafsaInspectorApp17NameTableViewCell"
@@ -2674,16 +2961,18 @@ depends-nominal:
 - !private "Ps25RangeReplaceableIndexable"
 - !private "Ps16RawRepresentable"
 - !private "P10Foundation20ReferenceConvertible"
-- !private "Ps8Sequence"
+- "Ps8Sequence"
 - !private "Ps10SetAlgebra"
 - !private "Ps13SignedInteger"
 - !private "Ps12SignedNumber"
 - !private "Vs5Slice"
 - !private "Ps10Strideable"
 - "SS"
+- "C17HafsaInspectorApp19SubmitTableViewCell"
 - "C17HafsaInspectorApp21SupplierTableViewCell"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
+- !private "V10Foundation8TimeZone"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -2731,6 +3020,7 @@ depends-nominal:
 - !private "Sc"
 - !private "Ps15UnsignedInteger"
 - "P17HafsaInspectorApp23ViewControllerContainer"
+- "C17HafsaInspectorApp10WebService"
 - "VCSo6NSData14WritingOptions"
 - !private "Ps14_ArrayProtocol"
 - !private "Ps15_CVarArgAligned"
@@ -2753,6 +3043,7 @@ depends-nominal:
 - !private "Ps14_Incrementable"
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
+- !private "P10Foundation14_MutableBoxing"
 - !private "P10Foundation18_MutablePairBoxing"
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
@@ -2773,51 +3064,59 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderTextView.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/OrderedDictionary.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTaskSnapshot.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageUploadTask.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageReference.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageMetadata.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageTask.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageObservableTask.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageDownloadTask.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorageConstants.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FIRStorage.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseStorage/FirebaseStorage/FirebaseStorage.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRTransactionResult.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRMutableData.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataSnapshot.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataEventType.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseQuery.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseReference.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabase.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FirebaseDatabase.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseMessaging/Frameworks/frameworks/FirebaseMessaging.framework/Headers/FIRMessaging.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseMessaging/Frameworks/frameworks/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseMessaging/Frameworks/frameworks/FirebaseMessaging.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/Firebase.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/PDFGenerator.swiftmodule/x86_64.swiftmodule"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Headers/PDFGenerator-umbrella.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator.framework/Modules/module.modulemap"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator/PDFGenerator.framework/Modules/PDFGenerator.swiftmodule/x86_64.swiftmodule"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator/PDFGenerator.framework/Headers/PDFGenerator-Swift.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator/PDFGenerator.framework/Headers/PDFGenerator.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator/PDFGenerator.framework/Headers/PDFGenerator-umbrella.h"
+- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/PDFGenerator/PDFGenerator.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "b0e87fe162ccaed00561510bafa4c549"
+interface-hash: "6cfa2bec3466ffea81ee47b5440e4c7c"

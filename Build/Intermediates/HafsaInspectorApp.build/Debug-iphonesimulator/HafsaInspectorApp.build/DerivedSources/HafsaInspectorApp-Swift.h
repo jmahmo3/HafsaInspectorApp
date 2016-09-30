@@ -112,8 +112,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import CoreGraphics;
-@import ObjectiveC;
 @import Foundation;
+@import FirebaseMessaging;
+@import UserNotifications;
+@import ObjectiveC;
 @import QuartzCore;
 @import AVFoundation;
 @import CoreMedia;
@@ -165,6 +167,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AnimationTransitionSubType, "AnimationTransi
 @class EstablishmentPickerViewController;
 @class FIRDatabaseReference;
 @class UIApplication;
+@class NSNotification;
 
 SWIFT_CLASS("_TtC17HafsaInspectorApp11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
@@ -179,8 +182,25 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp11AppDelegate")
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
+- (void)application:(UIApplication * _Nonnull)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData * _Nonnull)deviceToken;
+- (void)application:(UIApplication * _Nonnull)application didFailToRegisterForRemoteNotificationsWithError:(NSError * _Nonnull)error;
+- (void)tokenRefreshNotificationWithNotification:(NSNotification * _Nonnull)notification;
+- (void)connectToFcm;
 - (void)getData;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class FIRMessagingRemoteMessage;
+
+@interface AppDelegate (SWIFT_EXTENSION(HafsaInspectorApp)) <FIRMessagingDelegate>
+- (void)applicationReceivedRemoteMessage:(FIRMessagingRemoteMessage * _Nonnull)remoteMessage;
+@end
+
+@class UNUserNotificationCenter;
+@class UNNotification;
+
+@interface AppDelegate (SWIFT_EXTENSION(HafsaInspectorApp)) <UNUserNotificationCenterDelegate>
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
 @end
 
 @class CAShapeLayer;
@@ -2377,11 +2397,13 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp10FlatButton")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSArray;
 @class UITextView;
 @class UITableView;
 
 SWIFT_CLASS("_TtC17HafsaInspectorApp23FormTableViewController")
 @interface FormTableViewController : UITableViewController <UITextViewDelegate>
+@property (nonatomic, strong) NSArray * _Nonnull supplierData;
 + (FormTableViewController * _Nonnull)create;
 - (void)viewDidLoad;
 - (void)backButtonPressed;
@@ -2393,6 +2415,7 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp23FormTableViewController")
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)generatePDF;
+- (void)setupSuppliers;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -2427,7 +2450,6 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp9HIManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSArray;
 
 SWIFT_CLASS("_TtC17HafsaInspectorApp11HITextField")
 @interface HITextField : TextField <UIPickerViewDelegate, UIPickerViewDataSource>
@@ -4101,6 +4123,77 @@ SWIFT_CLASS_NAMED("PhotoLibrary")
 @end
 
 @class PHAssetCollection;
+@class PHAsset;
+
+@interface PhotoLibrary (SWIFT_EXTENSION(HafsaInspectorApp))
+/**
+  Fetch asset collections of a single type matching the provided
+  local identifiers (type is inferred from the local identifiers).
+  \param withLocalIdentifiers identifiers An Array of Strings.
+
+  \param options An optional PHFetchOptions object.
+
+  \param completion A completion block.
+
+*/
+- (NSArray<PHAssetCollection *> * _Nonnull)fetchAssetCollectionsWithLocalIdentifiers:(NSArray<NSString *> * _Nonnull)identifiers options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
+/**
+  Fetch asset collections of a single type and subtype provided
+  (use PHAssetCollectionSubtypeAny to match all subtypes).
+  \param with type A PHAssetCollectionType.
+
+  \param subtype A PHAssetCollectionSubtype.
+
+  \param options An optional PHFetchOptions object.
+
+  \param completion A completion block.
+
+*/
+- (NSArray<PHAssetCollection *> * _Nonnull)fetchAssetCollectionsWith:(PHAssetCollectionType)type subtype:(PHAssetCollectionSubtype)subtype options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
+/**
+  Smart Albums are not supported, only Albums and Moments.
+  \param asset A PHAsset.
+
+  \param with type A PHAssetCollectionType.
+
+  \param options An optional PHFetchOptions object.
+
+  \param completion A completion block.
+
+*/
+- (NSArray<PHAssetCollection *> * _Nonnull)fetchAssetCollectionsContaining:(PHAsset * _Nonnull)asset with:(PHAssetCollectionType)type options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
+/**
+  AssetGroupURLs are URLs retrieved from ALAssetGroup’s
+  ALAssetsGroupPropertyURL.
+  \param withALAssetGroupURLs assetGroupURLs An Array
+  of URLs.
+
+  \param options An optional PHFetchOptions object.
+
+  \param completion A completion block.
+
+*/
+- (NSArray<PHAssetCollection *> * _Nonnull)fetchAssetCollectionsWithALAssetGroupURLs:(NSArray<NSURL *> * _Nonnull)assetGroupURLs options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
+/**
+  Fetches moments in a given moment list.
+  \param inMomentList momentList A PHCollectionList.
+
+  \param options An optional PHFetchOptions object.
+
+  \param completion A completion block.
+
+*/
+- (NSArray<PHAssetCollection *> * _Nonnull)fetchMomentsInMomentList:(PHCollectionList * _Nonnull)momentList options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
+/**
+  Fetches moments.
+  \param with options An optional PHFetchOptions object.
+
+  \param completion A completion block.
+
+*/
+- (NSArray<PHAssetCollection *> * _Nonnull)fetchMomentsWith:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
+@end
+
 
 @interface PhotoLibrary (SWIFT_EXTENSION(HafsaInspectorApp))
 /**
@@ -4180,77 +4273,6 @@ SWIFT_CLASS_NAMED("PhotoLibrary")
 
 */
 - (NSArray<PHCollectionList *> * _Nonnull)fetchMomentListsWith:(PHCollectionListSubtype)momentListSubtype options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHCollectionList *> * _Nonnull, PHFetchResult<PHCollectionList *> * _Nonnull))completion;
-@end
-
-@class PHAsset;
-
-@interface PhotoLibrary (SWIFT_EXTENSION(HafsaInspectorApp))
-/**
-  Fetch asset collections of a single type matching the provided
-  local identifiers (type is inferred from the local identifiers).
-  \param withLocalIdentifiers identifiers An Array of Strings.
-
-  \param options An optional PHFetchOptions object.
-
-  \param completion A completion block.
-
-*/
-- (NSArray<PHAssetCollection *> * _Nonnull)fetchAssetCollectionsWithLocalIdentifiers:(NSArray<NSString *> * _Nonnull)identifiers options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
-/**
-  Fetch asset collections of a single type and subtype provided
-  (use PHAssetCollectionSubtypeAny to match all subtypes).
-  \param with type A PHAssetCollectionType.
-
-  \param subtype A PHAssetCollectionSubtype.
-
-  \param options An optional PHFetchOptions object.
-
-  \param completion A completion block.
-
-*/
-- (NSArray<PHAssetCollection *> * _Nonnull)fetchAssetCollectionsWith:(PHAssetCollectionType)type subtype:(PHAssetCollectionSubtype)subtype options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
-/**
-  Smart Albums are not supported, only Albums and Moments.
-  \param asset A PHAsset.
-
-  \param with type A PHAssetCollectionType.
-
-  \param options An optional PHFetchOptions object.
-
-  \param completion A completion block.
-
-*/
-- (NSArray<PHAssetCollection *> * _Nonnull)fetchAssetCollectionsContaining:(PHAsset * _Nonnull)asset with:(PHAssetCollectionType)type options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
-/**
-  AssetGroupURLs are URLs retrieved from ALAssetGroup’s
-  ALAssetsGroupPropertyURL.
-  \param withALAssetGroupURLs assetGroupURLs An Array
-  of URLs.
-
-  \param options An optional PHFetchOptions object.
-
-  \param completion A completion block.
-
-*/
-- (NSArray<PHAssetCollection *> * _Nonnull)fetchAssetCollectionsWithALAssetGroupURLs:(NSArray<NSURL *> * _Nonnull)assetGroupURLs options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
-/**
-  Fetches moments in a given moment list.
-  \param inMomentList momentList A PHCollectionList.
-
-  \param options An optional PHFetchOptions object.
-
-  \param completion A completion block.
-
-*/
-- (NSArray<PHAssetCollection *> * _Nonnull)fetchMomentsInMomentList:(PHCollectionList * _Nonnull)momentList options:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
-/**
-  Fetches moments.
-  \param with options An optional PHFetchOptions object.
-
-  \param completion A completion block.
-
-*/
-- (NSArray<PHAssetCollection *> * _Nonnull)fetchMomentsWith:(PHFetchOptions * _Nullable)options completion:(void (^ _Nullable)(NSArray<PHAssetCollection *> * _Nonnull, PHFetchResult<PHAssetCollection *> * _Nonnull))completion;
 @end
 
 
@@ -4922,6 +4944,7 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp22SettingsViewController")
 @property (nonatomic) BOOL isFromAdmin;
 @property (nonatomic, strong) NSString * _Nonnull selectedChapter;
 @property (nonatomic, strong) NSDictionary * _Nonnull filedata;
+@property (nonatomic, strong) NSMutableArray * _Nonnull filedataArr;
 - (void)viewDidLoad;
 - (void)backButtonPressed;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
@@ -4929,6 +4952,7 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp22SettingsViewController")
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)getData;
+- (NSString * _Null_unspecified)convertFormatOfDateWithDate:(NSString * _Nonnull)date originalFormat:(NSString * _Nonnull)originalFormat destinationFormat:(NSString * _Nonnull)destinationFormat;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -5084,6 +5108,16 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp19StatusBarController")
 @end
 
 
+SWIFT_CLASS("_TtC17HafsaInspectorApp19SubmitTableViewCell")
+@interface SubmitTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified submitButton;
+- (void)configureCell;
+- (IBAction)submitButtonPressed:(id _Nonnull)sender;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC17HafsaInspectorApp21SupplierTableViewCell")
 @interface SupplierTableViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified supplierNameLabel;
@@ -5091,7 +5125,7 @@ SWIFT_CLASS("_TtC17HafsaInspectorApp21SupplierTableViewCell")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified addPoundsButton;
 @property (nonatomic) double previousPounds;
 @property (nonatomic, strong) UITextField * _Null_unspecified tField;
-- (void)configureSupplierCell:(NSInteger)index;
+- (void)configureSupplierCell:(NSInteger)index data:(NSArray * _Nonnull)data;
 - (void)updatePounds:(double)pounds;
 - (IBAction)addPoundsPressed:(id _Nonnull)sender;
 - (void)configurationTextField:(UITextField * _Null_unspecified)textField;
@@ -6101,31 +6135,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
 
 @interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
 /**
-  A convenience property that provides access to the StatusBarController.
-  This is the recommended method of accessing the StatusBarController
-  through child UIViewControllers.
-*/
-@property (nonatomic, readonly, strong) StatusBarController * _Nullable statusBarController;
-@end
-
-
-@interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
-/**
   A convenience property that provides access to the PageTabBarController.
   This is the recommended method of accessing the PageTabBarController
   through child UIViewControllers.
 */
 @property (nonatomic, readonly, strong) PageTabBarController * _Nullable pageTabBarController;
-@end
-
-
-@interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
-/**
-  A convenience property that provides access to the MenuController.
-  This is the recommended method of accessing the MenuController
-  through child UIViewControllers.
-*/
-@property (nonatomic, readonly, strong) MenuController * _Nullable menuController;
 @end
 
 
@@ -6151,6 +6165,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
 
 @interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
 /**
+  A convenience property that provides access to the SnackbarController.
+  This is the recommended method of accessing the SnackbarController
+  through child UIViewControllers.
+*/
+@property (nonatomic, readonly, strong) SnackbarController * _Nullable snackbarController;
+@end
+
+
+@interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
+/**
   A convenience property that provides access to the NavigationDrawerController.
   This is the recommended method of accessing the NavigationDrawerController
   through child UIViewControllers.
@@ -6161,11 +6185,21 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
 
 @interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
 /**
-  A convenience property that provides access to the SnackbarController.
-  This is the recommended method of accessing the SnackbarController
+  A convenience property that provides access to the StatusBarController.
+  This is the recommended method of accessing the StatusBarController
   through child UIViewControllers.
 */
-@property (nonatomic, readonly, strong) SnackbarController * _Nullable snackbarController;
+@property (nonatomic, readonly, strong) StatusBarController * _Nullable statusBarController;
+@end
+
+
+@interface UIViewController (SWIFT_EXTENSION(HafsaInspectorApp))
+/**
+  A convenience property that provides access to the MenuController.
+  This is the recommended method of accessing the MenuController
+  through child UIViewControllers.
+*/
+@property (nonatomic, readonly, strong) MenuController * _Nullable menuController;
 @end
 
 
@@ -6221,6 +6255,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
 
 SWIFT_CLASS("_TtC17HafsaInspectorApp10WebService")
 @interface WebService : NSObject
+- (void)sendToGoogleFormsWithName:(NSString * _Nonnull)name year:(NSString * _Nonnull)year month:(NSString * _Nonnull)month day:(NSString * _Nonnull)day hour:(NSString * _Nonnull)hour minute:(NSString * _Nonnull)minute establishment:(NSString * _Nonnull)establishment zHProcessors:(NSString * _Nonnull)zHProcessors crescent:(NSString * _Nonnull)crescent halalFarms:(NSString * _Nonnull)halalFarms hibaTraders:(NSString * _Nonnull)hibaTraders miscellaneous:(NSString * _Nonnull)miscellaneous notes:(NSString * _Nonnull)notes;
+- (void)upload_requestWithPostData:(NSString * _Nonnull)postData;
 - (NSDictionary<NSString *, id> * _Nullable)parseJSON:(NSData * _Nonnull)data;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

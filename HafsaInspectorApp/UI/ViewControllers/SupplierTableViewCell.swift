@@ -20,10 +20,10 @@ class SupplierTableViewCell: UITableViewCell {
     var tField: UITextField!
 
 
-    func configureSupplierCell(_ index: Int) {
+    func configureSupplierCell(_ index: Int, data: NSArray) {
         self.selectionStyle = UITableViewCellSelectionStyle.none
 
-        supplierNameLabel.text = HImanager.supplierArray[index]
+        supplierNameLabel.text = data[index] as? String
         poundLabel.text = "\(previousPounds) lbs"
         self.backgroundColor = UIColor.clear
         
