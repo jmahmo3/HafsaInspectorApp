@@ -6,28 +6,28 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp9PulseView", ""]
 provides-dynamic-lookup:
-- "pulseAnimation"
-- "touchesBegan"
-- "pulseLayers"
 - "pulseOpacity"
-- "touchesEnded"
+- "pulseLayers"
+- "touchesBegan"
 - "pulseColor"
+- "touchesEnded"
 - "touchesCancelled"
+- "pulseAnimation"
 depends-top-level:
+- "PulseView"
 - "CGFloat"
 - "TernaryPrecedence"
+- !private "Animation"
+- "UIEvent"
+- !private "=="
+- "Color"
 - "PulseAnimation"
 - !private "/"
-- "PulseView"
-- "View"
-- !private "=="
-- "UIEvent"
-- "Set"
 - "UITouch"
-- "Color"
-- "CGPoint"
-- !private "Animation"
+- "View"
 - "CAShapeLayer"
+- "CGPoint"
+- "Set"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["V17HafsaInspectorApp9Animation", "delay"]
@@ -816,7 +816,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderTextView.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/OrderedDictionary.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"

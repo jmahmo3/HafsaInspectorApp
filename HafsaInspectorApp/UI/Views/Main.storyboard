@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zbu-XV-4ia">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zbu-XV-4ia">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -288,14 +288,17 @@ next</string>
                                     <outlet property="textView" destination="nK4-wQ-8Kf" id="zcM-Ej-eQI"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SubmitTableViewCell" rowHeight="127" id="NvR-gp-Kyz" customClass="SubmitTableViewCell" customModule="HafsaInspectorApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="508" width="375" height="127"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SubmitTableViewCell" rowHeight="94" id="NvR-gp-Kyz" customClass="SubmitTableViewCell" customModule="HafsaInspectorApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="508" width="375" height="94"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NvR-gp-Kyz" id="iRY-Yf-sw5">
-                                    <frame key="frameInset" width="375" height="126"/>
+                                    <frame key="frameInset" width="375" height="93"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqo-9J-jJE">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="U3W-4J-82v"/>
+                                            </constraints>
                                             <state key="normal" title="Submit"/>
                                             <connections>
                                                 <action selector="submitButtonPressed:" destination="NvR-gp-Kyz" eventType="touchUpInside" id="wDG-cu-E8W"/>
@@ -303,10 +306,10 @@ next</string>
                                         </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="Xqo-9J-jJE" secondAttribute="trailing" constant="138" id="99j-Dg-te2"/>
-                                        <constraint firstItem="Xqo-9J-jJE" firstAttribute="leading" secondItem="iRY-Yf-sw5" secondAttribute="leadingMargin" constant="137" id="De4-xH-U0q"/>
-                                        <constraint firstItem="Xqo-9J-jJE" firstAttribute="top" secondItem="iRY-Yf-sw5" secondAttribute="topMargin" constant="40" id="XSy-Pi-mNC"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Xqo-9J-jJE" secondAttribute="bottom" constant="40" id="oUG-P7-noe"/>
+                                        <constraint firstItem="Xqo-9J-jJE" firstAttribute="top" secondItem="iRY-Yf-sw5" secondAttribute="topMargin" priority="999" constant="13" id="DJ4-LS-y1i"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Xqo-9J-jJE" secondAttribute="trailing" constant="8" id="Ngv-9z-k5q"/>
+                                        <constraint firstItem="Xqo-9J-jJE" firstAttribute="leading" secondItem="iRY-Yf-sw5" secondAttribute="leadingMargin" constant="8" id="PM1-K8-m6B"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Xqo-9J-jJE" secondAttribute="bottom" constant="14" id="qJB-Ou-eXg"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>

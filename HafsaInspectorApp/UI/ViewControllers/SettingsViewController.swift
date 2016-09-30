@@ -59,9 +59,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         progess.tintColor = UIColor.black
         self.view.addSubview(progess)
         progess.center = self.view.center
-        
-        
-        
     }
     
     override func backButtonPressed() {
@@ -75,7 +72,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     // MARK: - Table view data source
     
      func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -92,7 +88,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         if type != .ViewFiles {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
           
@@ -119,7 +114,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             cell.backgroundColor = UIColor.clear
             cell.textLabel?.font = UIFont(name: "AvenirNext-Medium", size: 16)
             cell.selectionStyle = .none
-            
             return cell
             
         }
@@ -130,12 +124,10 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             let timestamp = childDict.object(forKey: "timestamp") as! String
             let formatter = DateFormatter()
             formatter.calendar = Calendar(identifier: .iso8601)
-            
             formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSXXXXX"
             let date = formatter.date(from: timestamp)
             formatter.dateFormat = "MMM dd, yyyy hh:mm a"
             let keyDate = formatter.string(from: date!)
-            
             
             cell.textLabel?.text = childDict.object(forKey: "filename") as! String?
             cell.detailTextLabel?.text = keyDate
@@ -231,117 +223,15 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             }
             else {
                 
-                
-//                let arr : NSMutableArray = []
-//                arr.add(value!)
-                
                 self.filedataArr.add(value!)
-//                let t:OrderedDictionary = OrderedDictionary(dictionary:(snapshot.value as? NSDictionary)!)
-//                print(t)
-//                
-//                
-//                
-////                let mut: OrderedDictionary = [:]
-//                let mutArr: NSMutableArray = []
-//                
-//                var i = 0
-//                while i < value!.count {
-////                    let dict: NSDictionary = value!.allValues[i] as! NSDictionary
-////                    mut.insert(dict.allValues[0], forKey: dict.allKeys[0], at: UInt(i))
-//                    mutArr.add(value!.allValues[i])
-//                    print(mutArr.count)
-//                    i += 1
-//                }
-//
-//                let datesArr: NSMutableArray = []
-//                for dict in mutArr {
-//                    let dictionary: NSMutableDictionary = dict as! NSMutableDictionary
-//                    let key = dictionary.allKeys[0] as! String
-//                    let dateformatter = DateFormatter()
-//                    dateformatter.dateFormat = "MM-dd-yyyy_HH_mm_ss"
-//                    let date = dateformatter.date(from: key)
-//                    let valueForDate: String = dictionary.allValues[0] as! String
-//                    let dict: NSDictionary = [date:valueForDate]
-//                    datesArr.add(dict)
-//                }
-//                
-//                let keyDatesArr: NSMutableArray = []
-//                for dict in datesArr {
-//                    let dictionary: NSDictionary = dict as! NSDictionary
-//                    let key = dictionary.allKeys[0] as! Date
-//                    keyDatesArr.add(key)
-//                }
-//                let date = NSDate()
-//                let sortedArr = keyDatesArr.sortedArray(using: #selector(date.compare))//keyDatesArr.sort({ $0.date.compare($1.date) == ComparisonResult.orderedAscending })
-//                print(sortedArr)
-//
-//                
-//                
-//                let orderedDictionary: OrderedDictionary = [:]
-//                
-//                for dict in mutArr {
-//                    let dictionary: NSMutableDictionary = dict as! NSMutableDictionary
-//                    for key in sortedArr {
-//                        let dateformatter = DateFormatter()
-//                        dateformatter.dateFormat = "MM-dd-yyyy_HH_mm_ss"
-//                        let date = dateformatter.string(from: key as! Date)
-//                        if (dictionary.allKeys[0] as! NSString).contains(date) {
-//                            orderedDictionary.setValue(dictionary.allValues[0], forKey: date)
-//                        }
-//                    }
-//
-//                }
-//                
-//                
-////                for index in 0...sortedArr.count {
-////                    for dict in mutArr {
-////                        let dictionary: NSDictionary = dict as! NSDictionary
-////                        let key: NSDate = sortedArr[index] as! NSDate
-////                        let dateformatter = DateFormatter()
-////                        dateformatter.dateFormat = "MM-dd-yyyy_HH_mm_ss"
-////                        let date = dateformatter.string(from: key as Date)
-////                        orderedDictionary.setValue(dictionary.object(forKey: date), forKey: date)
-////                    }
-////                }
-                
-                
-                
-                
-//                let sortedArray = value!.sort//sort(value!, {$0.0 < $1.0})
-//                print(sortedArray)
-//                
-//                let keys = sortedArray.map {return $0.0 }
-//                print(keys)
-//                
-//                let values = sortedArray.map {return $0.1 }
-//                print(values)
-//
-                
-//                let sorted = value!.keysSortedByValue(comparator: { (obj1, obj2) -> ComparisonResult in
-//                    let dateformatter = DateFormatter()
-//                    dateformatter.dateFormat = "HH.mm yyyy-MM-dd"
-//                    let x = obj1 as! String
-//                    let y = obj2 as! String
-//                    let x1 = dateformatter.date(from: x)
-//                    let y1 = dateformatter.date(from: y)
-//
-//
-//                    return x1!.compare(y1!)
-//                })
-                
-//                print(sorted)
-//                self.filedata = value!
-
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
-
                     self.progess.hide(animated: true)
                 }
             }
             
         }) { (error) in
             DispatchQueue.main.async {
-                
                 self.progess.hide(animated: true)
             }
             self.createAlert("Could not load data\nPlease try again")
@@ -349,43 +239,4 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         }
 
     }
-    
-    func convertFormatOfDate(date: String, originalFormat: String, destinationFormat: String) -> String! {
-        
-        
-        
-        // Orginal format :
-        
-        let dateOriginalFormat = DateFormatter()
-        
-        dateOriginalFormat.dateFormat = originalFormat      // in the example it'll take "yy MM dd" (from our call)
-        
-        
-        
-        // Destination format :
-        
-        let dateDestinationFormat = DateFormatter()
-        
-        dateDestinationFormat.dateFormat = destinationFormat // in the example it'll take "EEEE dd MMMM yyyy" (from our call)
-        
-        
-        
-        // Convert current String Date to NSDate
-        
-        let dateFromString = dateOriginalFormat.date(from: date)
-        
-        
-        
-        // Convert new NSDate created above to String with the good format
-        
-        let dateFormated = dateDestinationFormat.string(from: dateFromString!)
-        
-        
-        
-        return dateFormated
-        
-        
-        
-    }
-    
 }

@@ -10,16 +10,6 @@ import UIKit
 import Firebase
 
 
- enum HTTPRequestAuthType {
-    case httpBasicAuth
-    case httpTokenAuth
-}
-
- enum HTTPRequestContentType {
-    case httpJsonContent
-    case httpMultipartContent
-}
-
  enum HTTPRequestMethod {
     case get
     case post
@@ -27,11 +17,13 @@ import Firebase
     case upload
 }
 
+let googleFCMEndpoint = "https://fcm.googleapis.com/fcm/send"
+let fcmAuthKey = "key=AIzaSyD53S4O97D1YYYxRb9t35geIgP8DR76IlA"
+
 let chaptersAndEstablishmentsEndpoint = "https://spreadsheets.google.com/feeds/list/1j1-OsdS5av9WFLswdm23s0bkHyv8e73UmKlbT31Eddw/od6/public/basic?alt=json"
 
 let googleFormLink = "https://docs.google.com/forms/d/e/1FAIpQLSeP4Rzd8ZWS-MFO8rCBUqRP_QQzLvMSMNK3t2s9YktcGmBXSA/formResponse"
 let googleFormNameField = "entry.1968549434"
-
 let googleFormYearField = "entry.1897376566_year"
 let googleFormMonthField = "entry.1897376566_month"
 let googleFormDayField = "entry.1897376566_day"
@@ -54,14 +46,11 @@ class WebService: NSObject {
         request.httpMethod = "GET"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        
         HTTPHelper().sendRequest(request as URLRequest) { (data:Data?, error:Error?) in
             if let error = error {
-                print("error \(error)")
-//                if error.code == -999 { return }
                 completion(false,error as NSError?)
-                
-            } else if let resData = data {
+            }
+            else if let resData = data {
                 
                let result = self.parseJSON(resData)
                 let object = result as NSDictionary!
@@ -90,15 +79,13 @@ class WebService: NSObject {
                     completion(true, nil)
                 }
             }
-        } //as! (Data?, NSError?) -> Void
+        }
     }
     
     func getChaptersAndEstablishmentsFromDatabase(_ completion:@escaping CompletionHandler) {
         let ref: FIRDatabaseReference =  FIRDatabase.database().reference()
         
         ref.child("chapters").observe(.value, with: { (snapshot) in
-            // Get user value
-            
             let value = snapshot.value as? NSDictionary
             if value != nil {
                 let chapters: NSArray = (value!.allKeys as NSArray)
@@ -139,64 +126,80 @@ class WebService: NSObject {
         postData += "&" + googleFormMiscellaneousField + "=" + miscellaneous
         postData += "&" + googleFormNotesField + "=" + notes
         
-        
-        
         self.upload_request(postData: postData)
-        
-        
-        
     }
 
     func upload_request(postData: String) {
         
         let url = NSURL(string: googleFormLink)
-        
         let session = URLSession.shared
-        
         let request = NSMutableURLRequest(url: url! as URL)
-        
         request.httpMethod = "POST"
-        
         request.cachePolicy = .reloadIgnoringCacheData
-        
         request.setValue("application/x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
-        
         request.httpBody = postData.data(using: String.Encoding.utf8)
-        
-        
         let task = session.dataTask(with: request as URLRequest) {
-            
             ( data, response, error) in
-            
             guard let _:NSData = data as NSData?, let _:URLResponse = response  , error == nil else {
-                
                 print("error")
-                
                 return
-                
             }
-                        print(data)
-                        print(response)
+            print(data)
+            print(response)
             
         }
-        
         task.resume()
-        
     }
     
-    
-
-    
-    
-    func parseJSON(_ data: Data) -> [String: AnyObject]? {
+    func postNotification(){
+        let url = NSURL(string: googleFCMEndpoint)
+        let session = URLSession.shared
+        let request = NSMutableURLRequest(url: url! as URL)
+        request.httpMethod = "POST"
+//        request.cachePolicy = .reloadIgnoringCacheData
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue(fcmAuthKey, forHTTPHeaderField: "Authorization")
         
+        
+//        {
+//            "notification": {
+//                "title": "File Uploaded",
+//                "text": "IDOF Belmont from Sameer Siddiqui"
+//            },
+//            "project_id": "halal-advocates-inspection",
+//            "to":"/topics/Chicago"
+//        }
+        
+        let dict: NSDictionary = ["notification":["title":"File Uploaded","text":"\(HIManager.sharedClient().currentEstablishment) from \(HIManager().userName)"],"project_id":"halal-advocates-inspection","to":"/topics/\(HIManager().currentChapter)"]
         do {
-            // Try parsing some valid JSON
+        let dat = try JSONSerialization.data(withJSONObject: dict, options:JSONSerialization.WritingOptions(rawValue: UInt(0)))
+            request.httpBody = dat
+
+        }
+        catch let error as NSError {
+            print (error.localizedDescription)
+        }
+
+        let task = session.dataTask(with: request as URLRequest) {
+            ( data, response, error) in
+            guard let _:NSData = data as NSData?, let _:URLResponse = response  , error == nil else {
+                print("error")
+                return
+            }
+            print(data)
+            print(response)
+            
+        }
+        task.resume()
+
+    }
+
+    func parseJSON(_ data: Data) -> [String: AnyObject]? {
+        do {
             let json = try JSONSerialization.jsonObject(with: data, options:JSONSerialization.ReadingOptions(rawValue: 0)) as? [String: AnyObject]
             return json
         }
         catch let error as NSError {
-            // Catch fires here, with an NSErrro being thrown from the JSONObjectWithData method
             print("A JSON parsing error occurred, here are the details:\n \(error)")
         }
         
@@ -204,30 +207,9 @@ class WebService: NSObject {
     }
     
 
-    
-
-
-  
-    
-    /**
-     *   Convenience wrapper class of Http requests.  Handles errors and notifies handlers
-     */
-    
      struct HTTPHelper {
-        
          init() {
-            
         }
-        
-        /**
-         
-         Handle an NSURLRequest
-         
-         - Parameter request: Pass in an NSUR
-         - Parameter completion: Completion handler that will pass back data and error tuple
-         
-         */
-        
          func sendRequest(_ request: URLRequest, completion:@escaping (Data?, Error?) -> Void) -> () {
             // Create a NSURLSession task
             let session = URLSession.shared

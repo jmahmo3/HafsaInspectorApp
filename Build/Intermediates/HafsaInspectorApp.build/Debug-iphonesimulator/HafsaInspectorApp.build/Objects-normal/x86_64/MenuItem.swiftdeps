@@ -6,28 +6,28 @@ provides-nominal:
 provides-member:
 - ["C17HafsaInspectorApp8MenuItem", ""]
 provides-dynamic-lookup:
-- "showTitleLabel"
 - "button"
 - "title"
-- "hideTitleLabel"
 - "titleLabel"
+- "hideTitleLabel"
 - "prepare"
+- "showTitleLabel"
 depends-top-level:
-- "String"
+- "FabButton"
+- "View"
 - !private "-"
 - !private "Color"
-- "View"
-- !private "InterimSpacePresetToValue"
-- "UILabel"
-- !private "RobotoFont"
+- !private "*"
 - "AssignmentPrecedence"
 - "MenuItem"
-- !private "+="
-- !private "/"
 - !private "UIView"
-- "FabButton"
+- !private "RobotoFont"
+- !private "+="
+- "UILabel"
 - !private "BooleanLiteralType"
-- !private "*"
+- !private "InterimSpacePresetToValue"
+- "String"
+- !private "/"
 depends-member:
 - !private ["Ps9AnyObject", "Color"]
 - !private ["Ps9AnyObject", "FabButton"]
@@ -1107,7 +1107,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderTextView.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/OrderedDictionary.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"

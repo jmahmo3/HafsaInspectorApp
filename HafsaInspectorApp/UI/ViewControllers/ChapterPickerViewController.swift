@@ -115,8 +115,6 @@ class ChapterPickerViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
- 
-    
     func didGetChapterData() {
         if self.isOnScreen {
             self.chapterTextField.setupChapterPicker()

@@ -1,8 +1,8 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "HTTPRequestAuthType"
-- "HTTPRequestContentType"
 - "HTTPRequestMethod"
+- "googleFCMEndpoint"
+- "fcmAuthKey"
 - "chaptersAndEstablishmentsEndpoint"
 - "googleFormLink"
 - "googleFormNameField"
@@ -20,83 +20,79 @@ provides-top-level:
 - "googleFormNotesField"
 - "WebService"
 - "=="
-- "=="
-- "=="
 provides-nominal:
-- "O17HafsaInspectorApp19HTTPRequestAuthType"
-- "O17HafsaInspectorApp22HTTPRequestContentType"
 - "O17HafsaInspectorApp17HTTPRequestMethod"
 - "C17HafsaInspectorApp10WebService"
 - "VC17HafsaInspectorApp10WebService10HTTPHelper"
 provides-member:
-- ["O17HafsaInspectorApp19HTTPRequestAuthType", ""]
-- ["O17HafsaInspectorApp22HTTPRequestContentType", ""]
 - ["O17HafsaInspectorApp17HTTPRequestMethod", ""]
 - ["C17HafsaInspectorApp10WebService", ""]
 - ["VC17HafsaInspectorApp10WebService10HTTPHelper", ""]
 provides-dynamic-lookup:
 - "sendToGoogleForms"
+- "postNotification"
 - "parseJSON"
 - "upload_request"
 depends-top-level:
-- !private "HIManager"
-- !private "FIRDatabase"
-- !private "NSMutableArray"
-- "googleFormDayField"
-- "googleFormHalalFarmsField"
-- "Data"
 - "googleFormCrescentField"
-- "HTTPRequestAuthType"
-- "googleFormMonthField"
-- "NSObject"
-- !private "NSMutableURLRequest"
-- !private "URL"
-- !private "URLResponse"
-- !private "NSDictionary"
-- !private "print"
-- "googleFormHourField"
-- "googleFormHibaTradersField"
-- "UnicodeScalarType"
-- "StringLiteralType"
-- !private "JSONSerialization"
-- !private "NSURL"
+- !private "HTTPURLResponse"
 - "AnyObject"
-- "Bool"
-- "BooleanLiteralType"
-- "chaptersAndEstablishmentsEndpoint"
-- !private "||"
-- "Array"
-- "googleFormNotesField"
-- "ExtendedGraphemeClusterType"
-- "HTTPRequestContentType"
-- "WebService"
-- "googleFormEstablishmentField"
-- !private "NSArray"
-- !private "!="
-- !private "NSData"
-- !private "+="
-- "Error"
-- "NSError"
-- "googleFormMinuteField"
-- "googleFormMiscellaneousField"
-- "googleFormLink"
+- !private "UInt"
 - "AssignmentPrecedence"
 - "=="
 - "CastingPrecedence"
-- !private "+"
-- !private "URLSession"
-- "Dictionary"
-- "googleFormYearField"
-- "googleFormZHMeatProcessorsField"
-- !private "HTTPURLResponse"
+- "UnicodeScalarType"
+- !private "HIManager"
 - "NSString"
-- "googleFormNameField"
+- !private "NSMutableURLRequest"
+- "googleFormMonthField"
 - !private "FIRDatabaseReference"
-- "URLRequest"
-- "Void"
+- "Array"
+- "googleFCMEndpoint"
+- "ExtendedGraphemeClusterType"
+- "NSError"
+- "googleFormNameField"
+- !private "NSArray"
+- "WebService"
+- !private "NSMutableArray"
+- !private "||"
+- "googleFormEstablishmentField"
+- !private "!="
+- "Dictionary"
+- !private "URLResponse"
+- "googleFormNotesField"
+- "googleFormZHMeatProcessorsField"
+- "googleFormYearField"
+- !private "+="
+- "Data"
+- "googleFormMiscellaneousField"
+- !private "URL"
+- "chaptersAndEstablishmentsEndpoint"
+- !private "URLSession"
+- "googleFormLink"
 - "HTTPRequestMethod"
-- "String"
+- "googleFormMinuteField"
+- "URLRequest"
+- !private "+"
+- !private "JSONSerialization"
+- !private "NSURL"
+- "googleFormDayField"
+- "StringLiteralType"
+- "googleFormHalalFarmsField"
+- "fcmAuthKey"
 - !private "DispatchQueue"
+- "Error"
+- "Bool"
+- "NSObject"
+- !private "print"
+- "googleFormHourField"
+- "googleFormHibaTradersField"
+- !private "NSDictionary"
+- "Void"
+- !private "NSData"
+- !private "FIRDatabase"
+- "String"
+- "BooleanLiteralType"
 depends-member:
 - !private ["Vs11AnyIterator", "Element"]
 - !private ["Ps9AnyObject", "DispatchQueue"]
@@ -107,13 +103,17 @@ depends-member:
 - !private ["Ps9AnyObject", "HTTPHelper"]
 - !private ["Ps9AnyObject", "Iterator"]
 - !private ["Ps9AnyObject", "JSONSerialization"]
+- !private ["Ps9AnyObject", "Key"]
 - !private ["Ps9AnyObject", "NSError"]
 - !private ["Ps9AnyObject", "NSMutableURLRequest"]
 - !private ["Ps9AnyObject", "NSURL"]
 - !private ["Ps9AnyObject", "ReadingOptions"]
 - !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "UInt"]
 - !private ["Ps9AnyObject", "URL"]
 - !private ["Ps9AnyObject", "URLSession"]
+- !private ["Ps9AnyObject", "Value"]
+- !private ["Ps9AnyObject", "WritingOptions"]
 - !private ["Ps9AnyObject", "add"]
 - !private ["Ps9AnyObject", "addValue"]
 - !private ["Ps9AnyObject", "allKeys"]
@@ -124,14 +124,18 @@ depends-member:
 - !private ["Ps9AnyObject", "chaptersData"]
 - !private ["Ps9AnyObject", "characters"]
 - !private ["Ps9AnyObject", "child"]
+- !private ["Ps9AnyObject", "currentChapter"]
+- !private ["Ps9AnyObject", "currentEstablishment"]
 - !private ["Ps9AnyObject", "data"]
 - !private ["Ps9AnyObject", "dataTask"]
 - !private ["Ps9AnyObject", "database"]
 - !private ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "description"]
 - !private ["Ps9AnyObject", "domain"]
+- !private ["Ps9AnyObject", "fcmAuthKey"]
 - ["Ps9AnyObject", "getChaptersAndEstablishments"]
 - ["Ps9AnyObject", "getChaptersAndEstablishmentsFromDatabase"]
+- !private ["Ps9AnyObject", "googleFCMEndpoint"]
 - !private ["Ps9AnyObject", "googleFormCrescentField"]
 - !private ["Ps9AnyObject", "googleFormDayField"]
 - !private ["Ps9AnyObject", "googleFormEstablishmentField"]
@@ -150,11 +154,13 @@ depends-member:
 - !private ["Ps9AnyObject", "httpMethod"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "jsonObject"]
+- !private ["Ps9AnyObject", "localizedDescription"]
 - !private ["Ps9AnyObject", "main"]
 - !private ["Ps9AnyObject", "mutableCopy"]
 - !private ["Ps9AnyObject", "object"]
 - !private ["Ps9AnyObject", "observe"]
 - ["Ps9AnyObject", "parseJSON"]
+- ["Ps9AnyObject", "postNotification"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "reference"]
 - !private ["Ps9AnyObject", "replacingOccurrences"]
@@ -166,6 +172,7 @@ depends-member:
 - !private ["Ps9AnyObject", "statusCode"]
 - ["Ps9AnyObject", "upload_request"]
 - !private ["Ps9AnyObject", "userInfo"]
+- !private ["Ps9AnyObject", "userName"]
 - !private ["Ps9AnyObject", "value"]
 - ["Ps9AnyObject", ""]
 - !private ["Vs11AnySequence", "Iterator"]
@@ -185,6 +192,7 @@ depends-member:
 - !private ["Ps22BidirectionalIndexable", "map"]
 - !private ["Ps22BidirectionalIndexable", "split"]
 - !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Ps17BitwiseOperations", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["Ps7CVarArg", "DispatchQueue"]
@@ -201,9 +209,11 @@ depends-member:
 - !private ["Ps7CVarArg", "NSURL"]
 - !private ["Ps7CVarArg", "ReadingOptions"]
 - !private ["Ps7CVarArg", "String"]
+- !private ["Ps7CVarArg", "UInt"]
 - !private ["Ps7CVarArg", "URL"]
 - !private ["Ps7CVarArg", "URLSession"]
 - !private ["Ps7CVarArg", "Value"]
+- !private ["Ps7CVarArg", "WritingOptions"]
 - !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "add"]
 - !private ["Ps7CVarArg", "addValue"]
@@ -215,13 +225,17 @@ depends-member:
 - !private ["Ps7CVarArg", "chaptersData"]
 - !private ["Ps7CVarArg", "characters"]
 - !private ["Ps7CVarArg", "child"]
+- !private ["Ps7CVarArg", "currentChapter"]
+- !private ["Ps7CVarArg", "currentEstablishment"]
 - !private ["Ps7CVarArg", "data"]
 - !private ["Ps7CVarArg", "dataTask"]
 - !private ["Ps7CVarArg", "database"]
 - !private ["Ps7CVarArg", "description"]
 - !private ["Ps7CVarArg", "domain"]
+- !private ["Ps7CVarArg", "fcmAuthKey"]
 - ["Ps7CVarArg", "getChaptersAndEstablishments"]
 - ["Ps7CVarArg", "getChaptersAndEstablishmentsFromDatabase"]
+- !private ["Ps7CVarArg", "googleFCMEndpoint"]
 - !private ["Ps7CVarArg", "googleFormCrescentField"]
 - !private ["Ps7CVarArg", "googleFormDayField"]
 - !private ["Ps7CVarArg", "googleFormEstablishmentField"]
@@ -241,12 +255,14 @@ depends-member:
 - !private ["Ps7CVarArg", "httpMethod"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "jsonObject"]
+- !private ["Ps7CVarArg", "localizedDescription"]
 - !private ["Ps7CVarArg", "main"]
 - !private ["Ps7CVarArg", "map"]
 - !private ["Ps7CVarArg", "mutableCopy"]
 - !private ["Ps7CVarArg", "object"]
 - !private ["Ps7CVarArg", "observe"]
 - ["Ps7CVarArg", "parseJSON"]
+- ["Ps7CVarArg", "postNotification"]
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "reference"]
 - !private ["Ps7CVarArg", "replacingOccurrences"]
@@ -258,6 +274,7 @@ depends-member:
 - !private ["Ps7CVarArg", "statusCode"]
 - ["Ps7CVarArg", "upload_request"]
 - !private ["Ps7CVarArg", "userInfo"]
+- !private ["Ps7CVarArg", "userName"]
 - !private ["Ps7CVarArg", "value"]
 - ["Ps7CVarArg", ""]
 - ["OCSo12NSURLRequest11CachePolicy", "deinit"]
@@ -295,9 +312,11 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSURL"]
 - !private ["Ps28CustomDebugStringConvertible", "ReadingOptions"]
 - !private ["Ps28CustomDebugStringConvertible", "String"]
+- !private ["Ps28CustomDebugStringConvertible", "UInt"]
 - !private ["Ps28CustomDebugStringConvertible", "URL"]
 - !private ["Ps28CustomDebugStringConvertible", "URLSession"]
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "WritingOptions"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "add"]
 - !private ["Ps28CustomDebugStringConvertible", "addValue"]
@@ -309,13 +328,17 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "chaptersData"]
 - !private ["Ps28CustomDebugStringConvertible", "characters"]
 - !private ["Ps28CustomDebugStringConvertible", "child"]
+- !private ["Ps28CustomDebugStringConvertible", "currentChapter"]
+- !private ["Ps28CustomDebugStringConvertible", "currentEstablishment"]
 - !private ["Ps28CustomDebugStringConvertible", "data"]
 - !private ["Ps28CustomDebugStringConvertible", "dataTask"]
 - !private ["Ps28CustomDebugStringConvertible", "database"]
 - !private ["Ps28CustomDebugStringConvertible", "description"]
 - !private ["Ps28CustomDebugStringConvertible", "domain"]
+- !private ["Ps28CustomDebugStringConvertible", "fcmAuthKey"]
 - ["Ps28CustomDebugStringConvertible", "getChaptersAndEstablishments"]
 - ["Ps28CustomDebugStringConvertible", "getChaptersAndEstablishmentsFromDatabase"]
+- !private ["Ps28CustomDebugStringConvertible", "googleFCMEndpoint"]
 - !private ["Ps28CustomDebugStringConvertible", "googleFormCrescentField"]
 - !private ["Ps28CustomDebugStringConvertible", "googleFormDayField"]
 - !private ["Ps28CustomDebugStringConvertible", "googleFormEstablishmentField"]
@@ -334,12 +357,14 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "httpMethod"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "jsonObject"]
+- !private ["Ps28CustomDebugStringConvertible", "localizedDescription"]
 - !private ["Ps28CustomDebugStringConvertible", "main"]
 - !private ["Ps28CustomDebugStringConvertible", "map"]
 - !private ["Ps28CustomDebugStringConvertible", "mutableCopy"]
 - !private ["Ps28CustomDebugStringConvertible", "object"]
 - !private ["Ps28CustomDebugStringConvertible", "observe"]
 - ["Ps28CustomDebugStringConvertible", "parseJSON"]
+- ["Ps28CustomDebugStringConvertible", "postNotification"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "reference"]
 - !private ["Ps28CustomDebugStringConvertible", "replacingOccurrences"]
@@ -352,6 +377,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "statusCode"]
 - ["Ps28CustomDebugStringConvertible", "upload_request"]
 - !private ["Ps28CustomDebugStringConvertible", "userInfo"]
+- !private ["Ps28CustomDebugStringConvertible", "userName"]
 - !private ["Ps28CustomDebugStringConvertible", "value"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "Encoding"]
@@ -393,9 +419,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "NSURL"]
 - !private ["Ps23CustomStringConvertible", "ReadingOptions"]
 - !private ["Ps23CustomStringConvertible", "String"]
+- !private ["Ps23CustomStringConvertible", "UInt"]
 - !private ["Ps23CustomStringConvertible", "URL"]
 - !private ["Ps23CustomStringConvertible", "URLSession"]
 - !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "WritingOptions"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "add"]
@@ -408,13 +436,17 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "chaptersData"]
 - !private ["Ps23CustomStringConvertible", "characters"]
 - !private ["Ps23CustomStringConvertible", "child"]
+- !private ["Ps23CustomStringConvertible", "currentChapter"]
+- !private ["Ps23CustomStringConvertible", "currentEstablishment"]
 - !private ["Ps23CustomStringConvertible", "data"]
 - !private ["Ps23CustomStringConvertible", "dataTask"]
 - !private ["Ps23CustomStringConvertible", "database"]
 - !private ["Ps23CustomStringConvertible", "description"]
 - !private ["Ps23CustomStringConvertible", "domain"]
+- !private ["Ps23CustomStringConvertible", "fcmAuthKey"]
 - ["Ps23CustomStringConvertible", "getChaptersAndEstablishments"]
 - ["Ps23CustomStringConvertible", "getChaptersAndEstablishmentsFromDatabase"]
+- !private ["Ps23CustomStringConvertible", "googleFCMEndpoint"]
 - !private ["Ps23CustomStringConvertible", "googleFormCrescentField"]
 - !private ["Ps23CustomStringConvertible", "googleFormDayField"]
 - !private ["Ps23CustomStringConvertible", "googleFormEstablishmentField"]
@@ -434,12 +466,14 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "httpMethod"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "jsonObject"]
+- !private ["Ps23CustomStringConvertible", "localizedDescription"]
 - !private ["Ps23CustomStringConvertible", "main"]
 - !private ["Ps23CustomStringConvertible", "map"]
 - !private ["Ps23CustomStringConvertible", "mutableCopy"]
 - !private ["Ps23CustomStringConvertible", "object"]
 - !private ["Ps23CustomStringConvertible", "observe"]
 - ["Ps23CustomStringConvertible", "parseJSON"]
+- ["Ps23CustomStringConvertible", "postNotification"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "reference"]
 - !private ["Ps23CustomStringConvertible", "replacingOccurrences"]
@@ -451,6 +485,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "statusCode"]
 - ["Ps23CustomStringConvertible", "upload_request"]
 - !private ["Ps23CustomStringConvertible", "userInfo"]
+- !private ["Ps23CustomStringConvertible", "userName"]
 - !private ["Ps23CustomStringConvertible", "utf8"]
 - !private ["Ps23CustomStringConvertible", "value"]
 - ["Ps23CustomStringConvertible", ""]
@@ -474,13 +509,17 @@ depends-member:
 - !private ["Ps9Equatable", "HTTPHelper"]
 - !private ["Ps9Equatable", "Iterator"]
 - !private ["Ps9Equatable", "JSONSerialization"]
+- !private ["Ps9Equatable", "Key"]
 - !private ["Ps9Equatable", "NSError"]
 - !private ["Ps9Equatable", "NSMutableURLRequest"]
 - !private ["Ps9Equatable", "NSURL"]
 - !private ["Ps9Equatable", "ReadingOptions"]
 - !private ["Ps9Equatable", "String"]
+- !private ["Ps9Equatable", "UInt"]
 - !private ["Ps9Equatable", "URL"]
 - !private ["Ps9Equatable", "URLSession"]
+- !private ["Ps9Equatable", "Value"]
+- !private ["Ps9Equatable", "WritingOptions"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "_toAnyHashable"]
 - !private ["Ps9Equatable", "add"]
@@ -493,13 +532,17 @@ depends-member:
 - !private ["Ps9Equatable", "chaptersData"]
 - !private ["Ps9Equatable", "characters"]
 - !private ["Ps9Equatable", "child"]
+- !private ["Ps9Equatable", "currentChapter"]
+- !private ["Ps9Equatable", "currentEstablishment"]
 - !private ["Ps9Equatable", "data"]
 - !private ["Ps9Equatable", "dataTask"]
 - !private ["Ps9Equatable", "database"]
 - !private ["Ps9Equatable", "description"]
 - !private ["Ps9Equatable", "domain"]
+- !private ["Ps9Equatable", "fcmAuthKey"]
 - ["Ps9Equatable", "getChaptersAndEstablishments"]
 - ["Ps9Equatable", "getChaptersAndEstablishmentsFromDatabase"]
+- !private ["Ps9Equatable", "googleFCMEndpoint"]
 - !private ["Ps9Equatable", "googleFormCrescentField"]
 - !private ["Ps9Equatable", "googleFormDayField"]
 - !private ["Ps9Equatable", "googleFormEstablishmentField"]
@@ -519,11 +562,13 @@ depends-member:
 - !private ["Ps9Equatable", "httpMethod"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "jsonObject"]
+- !private ["Ps9Equatable", "localizedDescription"]
 - !private ["Ps9Equatable", "main"]
 - !private ["Ps9Equatable", "mutableCopy"]
 - !private ["Ps9Equatable", "object"]
 - !private ["Ps9Equatable", "observe"]
 - ["Ps9Equatable", "parseJSON"]
+- ["Ps9Equatable", "postNotification"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "reference"]
 - !private ["Ps9Equatable", "reloadIgnoringCacheData"]
@@ -536,6 +581,7 @@ depends-member:
 - !private ["Ps9Equatable", "statusCode"]
 - ["Ps9Equatable", "upload_request"]
 - !private ["Ps9Equatable", "userInfo"]
+- !private ["Ps9Equatable", "userName"]
 - !private ["Ps9Equatable", "utf8"]
 - !private ["Ps9Equatable", "value"]
 - ["Ps9Equatable", ""]
@@ -564,6 +610,7 @@ depends-member:
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "replacingOccurrences"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
 - !private ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "Encoding"]
 - !private ["Ps32ExpressibleByStringInterpolation", "characters"]
@@ -598,9 +645,13 @@ depends-member:
 - !private ["Sf", "deinit"]
 - !private ["C17HafsaInspectorApp9HIManager", "chapters"]
 - !private ["C17HafsaInspectorApp9HIManager", "chaptersData"]
+- !private ["C17HafsaInspectorApp9HIManager", "currentChapter"]
+- !private ["C17HafsaInspectorApp9HIManager", "currentEstablishment"]
 - !private ["C17HafsaInspectorApp9HIManager", "data"]
-- !private ["C17HafsaInspectorApp9HIManager", "deinit"]
+- ["C17HafsaInspectorApp9HIManager", "deinit"]
+- !private ["C17HafsaInspectorApp9HIManager", "init"]
 - !private ["C17HafsaInspectorApp9HIManager", "sharedClient"]
+- !private ["C17HafsaInspectorApp9HIManager", "userName"]
 - ["VC17HafsaInspectorApp10WebService10HTTPHelper", "Data"]
 - !private ["VC17HafsaInspectorApp10WebService10HTTPHelper", "DispatchQueue"]
 - ["VC17HafsaInspectorApp10WebService10HTTPHelper", "Error"]
@@ -617,18 +668,6 @@ depends-member:
 - ["VC17HafsaInspectorApp10WebService10HTTPHelper", "init"]
 - !private ["VC17HafsaInspectorApp10WebService10HTTPHelper", "print"]
 - ["VC17HafsaInspectorApp10WebService10HTTPHelper", "sendRequest"]
-- ["O17HafsaInspectorApp19HTTPRequestAuthType", "=="]
-- ["O17HafsaInspectorApp19HTTPRequestAuthType", "_toAnyHashable"]
-- ["O17HafsaInspectorApp19HTTPRequestAuthType", "deinit"]
-- ["O17HafsaInspectorApp19HTTPRequestAuthType", "hashValue"]
-- ["O17HafsaInspectorApp19HTTPRequestAuthType", "httpBasicAuth"]
-- ["O17HafsaInspectorApp19HTTPRequestAuthType", "httpTokenAuth"]
-- ["O17HafsaInspectorApp22HTTPRequestContentType", "=="]
-- ["O17HafsaInspectorApp22HTTPRequestContentType", "_toAnyHashable"]
-- ["O17HafsaInspectorApp22HTTPRequestContentType", "deinit"]
-- ["O17HafsaInspectorApp22HTTPRequestContentType", "hashValue"]
-- ["O17HafsaInspectorApp22HTTPRequestContentType", "httpJsonContent"]
-- ["O17HafsaInspectorApp22HTTPRequestContentType", "httpMultipartContent"]
 - ["O17HafsaInspectorApp17HTTPRequestMethod", "=="]
 - ["O17HafsaInspectorApp17HTTPRequestMethod", "_toAnyHashable"]
 - ["O17HafsaInspectorApp17HTTPRequestMethod", "deinit"]
@@ -647,13 +686,17 @@ depends-member:
 - !private ["Ps8Hashable", "HTTPHelper"]
 - !private ["Ps8Hashable", "Iterator"]
 - !private ["Ps8Hashable", "JSONSerialization"]
+- !private ["Ps8Hashable", "Key"]
 - !private ["Ps8Hashable", "NSError"]
 - !private ["Ps8Hashable", "NSMutableURLRequest"]
 - !private ["Ps8Hashable", "NSURL"]
 - !private ["Ps8Hashable", "ReadingOptions"]
 - !private ["Ps8Hashable", "String"]
+- !private ["Ps8Hashable", "UInt"]
 - !private ["Ps8Hashable", "URL"]
 - !private ["Ps8Hashable", "URLSession"]
+- !private ["Ps8Hashable", "Value"]
+- !private ["Ps8Hashable", "WritingOptions"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "_toAnyHashable"]
 - !private ["Ps8Hashable", "add"]
@@ -666,13 +709,17 @@ depends-member:
 - !private ["Ps8Hashable", "chaptersData"]
 - !private ["Ps8Hashable", "characters"]
 - !private ["Ps8Hashable", "child"]
+- !private ["Ps8Hashable", "currentChapter"]
+- !private ["Ps8Hashable", "currentEstablishment"]
 - !private ["Ps8Hashable", "data"]
 - !private ["Ps8Hashable", "dataTask"]
 - !private ["Ps8Hashable", "database"]
 - !private ["Ps8Hashable", "description"]
 - !private ["Ps8Hashable", "domain"]
+- !private ["Ps8Hashable", "fcmAuthKey"]
 - ["Ps8Hashable", "getChaptersAndEstablishments"]
 - ["Ps8Hashable", "getChaptersAndEstablishmentsFromDatabase"]
+- !private ["Ps8Hashable", "googleFCMEndpoint"]
 - !private ["Ps8Hashable", "googleFormCrescentField"]
 - !private ["Ps8Hashable", "googleFormDayField"]
 - !private ["Ps8Hashable", "googleFormEstablishmentField"]
@@ -692,11 +739,13 @@ depends-member:
 - !private ["Ps8Hashable", "httpMethod"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "jsonObject"]
+- !private ["Ps8Hashable", "localizedDescription"]
 - !private ["Ps8Hashable", "main"]
 - !private ["Ps8Hashable", "mutableCopy"]
 - !private ["Ps8Hashable", "object"]
 - !private ["Ps8Hashable", "observe"]
 - ["Ps8Hashable", "parseJSON"]
+- ["Ps8Hashable", "postNotification"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "reference"]
 - !private ["Ps8Hashable", "reloadIgnoringCacheData"]
@@ -709,6 +758,7 @@ depends-member:
 - !private ["Ps8Hashable", "statusCode"]
 - ["Ps8Hashable", "upload_request"]
 - !private ["Ps8Hashable", "userInfo"]
+- !private ["Ps8Hashable", "userName"]
 - !private ["Ps8Hashable", "utf8"]
 - !private ["Ps8Hashable", "value"]
 - ["Ps8Hashable", ""]
@@ -735,9 +785,13 @@ depends-member:
 - !private ["Vs5Int64", "deinit"]
 - !private ["Vs4Int8", "deinit"]
 - !private ["Ps7Integer", "hashValue"]
+- !private ["Ps7Integer", "init"]
 - !private ["Ps17IntegerArithmetic", "hashValue"]
+- !private ["Ps17IntegerArithmetic", "init"]
 - !private ["Ps16IteratorProtocol", "Element"]
 - !private ["CSo17JSONSerialization", "ReadingOptions"]
+- !private ["CSo17JSONSerialization", "WritingOptions"]
+- !private ["CSo17JSONSerialization", "data"]
 - !private ["CSo17JSONSerialization", "jsonObject"]
 - !private ["VCSo8NSLocale3Key", "deinit"]
 - !private ["Ps25LosslessStringConvertible", "Encoding"]
@@ -764,6 +818,8 @@ depends-member:
 - !private ["PSo8NSCoding", "Element"]
 - !private ["PSo8NSCoding", "Encoding"]
 - !private ["PSo8NSCoding", "Iterator"]
+- !private ["PSo8NSCoding", "Key"]
+- !private ["PSo8NSCoding", "Value"]
 - !private ["PSo8NSCoding", "add"]
 - !private ["PSo8NSCoding", "addValue"]
 - !private ["PSo8NSCoding", "allKeys"]
@@ -775,6 +831,7 @@ depends-member:
 - !private ["PSo8NSCoding", "httpBody"]
 - !private ["PSo8NSCoding", "httpMethod"]
 - ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "localizedDescription"]
 - !private ["PSo8NSCoding", "mutableCopy"]
 - !private ["PSo8NSCoding", "object"]
 - !private ["PSo8NSCoding", "replacingOccurrences"]
@@ -785,6 +842,8 @@ depends-member:
 - !private ["PSo9NSCopying", "Element"]
 - !private ["PSo9NSCopying", "Encoding"]
 - !private ["PSo9NSCopying", "Iterator"]
+- !private ["PSo9NSCopying", "Key"]
+- !private ["PSo9NSCopying", "Value"]
 - !private ["PSo9NSCopying", "add"]
 - !private ["PSo9NSCopying", "addValue"]
 - !private ["PSo9NSCopying", "allKeys"]
@@ -796,6 +855,7 @@ depends-member:
 - !private ["PSo9NSCopying", "httpBody"]
 - !private ["PSo9NSCopying", "httpMethod"]
 - ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "localizedDescription"]
 - !private ["PSo9NSCopying", "mutableCopy"]
 - !private ["PSo9NSCopying", "object"]
 - !private ["PSo9NSCopying", "replacingOccurrences"]
@@ -804,6 +864,8 @@ depends-member:
 - !private ["PSo9NSCopying", "statusCode"]
 - !private ["PSo9NSCopying", "userInfo"]
 - !private ["PSo9NSCopying", "value"]
+- !private ["CSo12NSDictionary", "Key"]
+- !private ["CSo12NSDictionary", "Value"]
 - !private ["CSo12NSDictionary", "allKeys"]
 - ["CSo12NSDictionary", "deinit"]
 - !private ["CSo12NSDictionary", "object"]
@@ -812,9 +874,12 @@ depends-member:
 - !private ["CSo7NSError", "description"]
 - !private ["CSo7NSError", "domain"]
 - !private ["CSo7NSError", "init"]
+- !private ["CSo7NSError", "localizedDescription"]
 - !private ["CSo7NSError", "userInfo"]
 - !private ["PSo17NSFastEnumeration", "Element"]
 - !private ["PSo17NSFastEnumeration", "Iterator"]
+- !private ["PSo17NSFastEnumeration", "Key"]
+- !private ["PSo17NSFastEnumeration", "Value"]
 - !private ["PSo17NSFastEnumeration", "add"]
 - !private ["PSo17NSFastEnumeration", "allKeys"]
 - !private ["PSo17NSFastEnumeration", "mutableCopy"]
@@ -828,6 +893,8 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "Element"]
 - !private ["PSo16NSMutableCopying", "Encoding"]
 - !private ["PSo16NSMutableCopying", "Iterator"]
+- !private ["PSo16NSMutableCopying", "Key"]
+- !private ["PSo16NSMutableCopying", "Value"]
 - !private ["PSo16NSMutableCopying", "add"]
 - !private ["PSo16NSMutableCopying", "addValue"]
 - !private ["PSo16NSMutableCopying", "allKeys"]
@@ -864,6 +931,7 @@ depends-member:
 - !private ["CSo8NSObject", "HTTPURLResponse"]
 - !private ["CSo8NSObject", "Iterator"]
 - !private ["CSo8NSObject", "JSONSerialization"]
+- !private ["CSo8NSObject", "Key"]
 - !private ["CSo8NSObject", "NSArray"]
 - !private ["CSo8NSObject", "NSData"]
 - !private ["CSo8NSObject", "NSDictionary"]
@@ -874,11 +942,14 @@ depends-member:
 - !private ["CSo8NSObject", "NSURL"]
 - !private ["CSo8NSObject", "ReadingOptions"]
 - ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UInt"]
 - !private ["CSo8NSObject", "URL"]
 - ["CSo8NSObject", "URLRequest"]
 - !private ["CSo8NSObject", "URLResponse"]
 - !private ["CSo8NSObject", "URLSession"]
+- !private ["CSo8NSObject", "Value"]
 - ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "WritingOptions"]
 - !private ["CSo8NSObject", "add"]
 - !private ["CSo8NSObject", "addValue"]
 - !private ["CSo8NSObject", "allKeys"]
@@ -889,14 +960,18 @@ depends-member:
 - !private ["CSo8NSObject", "chaptersData"]
 - !private ["CSo8NSObject", "characters"]
 - !private ["CSo8NSObject", "child"]
+- !private ["CSo8NSObject", "currentChapter"]
+- !private ["CSo8NSObject", "currentEstablishment"]
 - !private ["CSo8NSObject", "data"]
 - !private ["CSo8NSObject", "dataTask"]
 - !private ["CSo8NSObject", "database"]
 - ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "description"]
 - !private ["CSo8NSObject", "domain"]
+- !private ["CSo8NSObject", "fcmAuthKey"]
 - ["CSo8NSObject", "getChaptersAndEstablishments"]
 - ["CSo8NSObject", "getChaptersAndEstablishmentsFromDatabase"]
+- !private ["CSo8NSObject", "googleFCMEndpoint"]
 - !private ["CSo8NSObject", "googleFormCrescentField"]
 - !private ["CSo8NSObject", "googleFormDayField"]
 - !private ["CSo8NSObject", "googleFormEstablishmentField"]
@@ -915,11 +990,13 @@ depends-member:
 - !private ["CSo8NSObject", "httpMethod"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "jsonObject"]
+- !private ["CSo8NSObject", "localizedDescription"]
 - !private ["CSo8NSObject", "main"]
 - !private ["CSo8NSObject", "mutableCopy"]
 - !private ["CSo8NSObject", "object"]
 - !private ["CSo8NSObject", "observe"]
 - ["CSo8NSObject", "parseJSON"]
+- ["CSo8NSObject", "postNotification"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "reference"]
 - !private ["CSo8NSObject", "replacingOccurrences"]
@@ -931,6 +1008,7 @@ depends-member:
 - !private ["CSo8NSObject", "statusCode"]
 - ["CSo8NSObject", "upload_request"]
 - !private ["CSo8NSObject", "userInfo"]
+- !private ["CSo8NSObject", "userName"]
 - !private ["CSo8NSObject", "value"]
 - ["CSo8NSObject", ""]
 - !private ["PSo16NSObjectProtocol", "DispatchQueue"]
@@ -941,13 +1019,17 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "HTTPHelper"]
 - !private ["PSo16NSObjectProtocol", "Iterator"]
 - !private ["PSo16NSObjectProtocol", "JSONSerialization"]
+- !private ["PSo16NSObjectProtocol", "Key"]
 - !private ["PSo16NSObjectProtocol", "NSError"]
 - !private ["PSo16NSObjectProtocol", "NSMutableURLRequest"]
 - !private ["PSo16NSObjectProtocol", "NSURL"]
 - !private ["PSo16NSObjectProtocol", "ReadingOptions"]
 - !private ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "UInt"]
 - !private ["PSo16NSObjectProtocol", "URL"]
 - !private ["PSo16NSObjectProtocol", "URLSession"]
+- !private ["PSo16NSObjectProtocol", "Value"]
+- !private ["PSo16NSObjectProtocol", "WritingOptions"]
 - !private ["PSo16NSObjectProtocol", "add"]
 - !private ["PSo16NSObjectProtocol", "addValue"]
 - !private ["PSo16NSObjectProtocol", "allKeys"]
@@ -958,13 +1040,17 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "chaptersData"]
 - !private ["PSo16NSObjectProtocol", "characters"]
 - !private ["PSo16NSObjectProtocol", "child"]
+- !private ["PSo16NSObjectProtocol", "currentChapter"]
+- !private ["PSo16NSObjectProtocol", "currentEstablishment"]
 - !private ["PSo16NSObjectProtocol", "data"]
 - !private ["PSo16NSObjectProtocol", "dataTask"]
 - !private ["PSo16NSObjectProtocol", "database"]
 - !private ["PSo16NSObjectProtocol", "description"]
 - !private ["PSo16NSObjectProtocol", "domain"]
+- !private ["PSo16NSObjectProtocol", "fcmAuthKey"]
 - ["PSo16NSObjectProtocol", "getChaptersAndEstablishments"]
 - ["PSo16NSObjectProtocol", "getChaptersAndEstablishmentsFromDatabase"]
+- !private ["PSo16NSObjectProtocol", "googleFCMEndpoint"]
 - !private ["PSo16NSObjectProtocol", "googleFormCrescentField"]
 - !private ["PSo16NSObjectProtocol", "googleFormDayField"]
 - !private ["PSo16NSObjectProtocol", "googleFormEstablishmentField"]
@@ -983,11 +1069,13 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "httpMethod"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "jsonObject"]
+- !private ["PSo16NSObjectProtocol", "localizedDescription"]
 - !private ["PSo16NSObjectProtocol", "main"]
 - !private ["PSo16NSObjectProtocol", "mutableCopy"]
 - !private ["PSo16NSObjectProtocol", "object"]
 - !private ["PSo16NSObjectProtocol", "observe"]
 - ["PSo16NSObjectProtocol", "parseJSON"]
+- ["PSo16NSObjectProtocol", "postNotification"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "reference"]
 - !private ["PSo16NSObjectProtocol", "replacingOccurrences"]
@@ -999,11 +1087,14 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "statusCode"]
 - ["PSo16NSObjectProtocol", "upload_request"]
 - !private ["PSo16NSObjectProtocol", "userInfo"]
+- !private ["PSo16NSObjectProtocol", "userName"]
 - !private ["PSo16NSObjectProtocol", "value"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "Element"]
 - !private ["PSo14NSSecureCoding", "Encoding"]
 - !private ["PSo14NSSecureCoding", "Iterator"]
+- !private ["PSo14NSSecureCoding", "Key"]
+- !private ["PSo14NSSecureCoding", "Value"]
 - !private ["PSo14NSSecureCoding", "add"]
 - !private ["PSo14NSSecureCoding", "addValue"]
 - !private ["PSo14NSSecureCoding", "allKeys"]
@@ -1015,6 +1106,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "httpBody"]
 - !private ["PSo14NSSecureCoding", "httpMethod"]
 - ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "localizedDescription"]
 - !private ["PSo14NSSecureCoding", "mutableCopy"]
 - !private ["PSo14NSSecureCoding", "object"]
 - !private ["PSo14NSSecureCoding", "replacingOccurrences"]
@@ -1081,6 +1173,7 @@ depends-member:
 - !private ["Ps13SignedInteger", "hashValue"]
 - !private ["Ps12SignedNumber", "hashValue"]
 - !private ["Ps10Strideable", "hashValue"]
+- !private ["Ps10Strideable", "init"]
 - !private ["SS", "Encoding"]
 - !private ["SS", "characters"]
 - !private ["SS", "data"]
@@ -1099,6 +1192,7 @@ depends-member:
 - !private ["P12PDFGenerator18UIImageConvertible", "data"]
 - ["P12PDFGenerator18UIImageConvertible", "init"]
 - ["Su", "deinit"]
+- !private ["Su", "init"]
 - !private ["Vs6UInt16", "deinit"]
 - !private ["Vs6UInt32", "deinit"]
 - !private ["Vs6UInt64", "deinit"]
@@ -1114,6 +1208,7 @@ depends-member:
 - !private ["CSo18URLSessionDataTask", "resume"]
 - !private ["CSo14URLSessionTask", "resume"]
 - !private ["Sc", "deinit"]
+- !private ["Ps15UnsignedInteger", "init"]
 - ["C17HafsaInspectorApp10WebService", "AnyObject"]
 - ["C17HafsaInspectorApp10WebService", "Bool"]
 - ["C17HafsaInspectorApp10WebService", "CompletionHandler"]
@@ -1135,6 +1230,7 @@ depends-member:
 - ["C17HafsaInspectorApp10WebService", "NSString"]
 - !private ["C17HafsaInspectorApp10WebService", "NSURL"]
 - ["C17HafsaInspectorApp10WebService", "String"]
+- !private ["C17HafsaInspectorApp10WebService", "UInt"]
 - !private ["C17HafsaInspectorApp10WebService", "URL"]
 - ["C17HafsaInspectorApp10WebService", "URLRequest"]
 - !private ["C17HafsaInspectorApp10WebService", "URLResponse"]
@@ -1142,8 +1238,10 @@ depends-member:
 - ["C17HafsaInspectorApp10WebService", "Void"]
 - !private ["C17HafsaInspectorApp10WebService", "chaptersAndEstablishmentsEndpoint"]
 - ["C17HafsaInspectorApp10WebService", "deinit"]
+- !private ["C17HafsaInspectorApp10WebService", "fcmAuthKey"]
 - ["C17HafsaInspectorApp10WebService", "getChaptersAndEstablishments"]
 - ["C17HafsaInspectorApp10WebService", "getChaptersAndEstablishmentsFromDatabase"]
+- !private ["C17HafsaInspectorApp10WebService", "googleFCMEndpoint"]
 - !private ["C17HafsaInspectorApp10WebService", "googleFormCrescentField"]
 - !private ["C17HafsaInspectorApp10WebService", "googleFormDayField"]
 - !private ["C17HafsaInspectorApp10WebService", "googleFormEstablishmentField"]
@@ -1160,21 +1258,26 @@ depends-member:
 - !private ["C17HafsaInspectorApp10WebService", "googleFormZHMeatProcessorsField"]
 - ["C17HafsaInspectorApp10WebService", "init"]
 - ["C17HafsaInspectorApp10WebService", "parseJSON"]
+- ["C17HafsaInspectorApp10WebService", "postNotification"]
 - !private ["C17HafsaInspectorApp10WebService", "print"]
 - ["C17HafsaInspectorApp10WebService", "sendToGoogleForms"]
 - ["C17HafsaInspectorApp10WebService", "upload_request"]
+- ["VCSo17JSONSerialization14WritingOptions", "deinit"]
+- !private ["VCSo17JSONSerialization14WritingOptions", "init"]
 - !private ["Ps14_ArrayProtocol", "Iterator"]
 - !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "map"]
 - !private ["Ps24_DestructorSafeContainer", "Iterator"]
 - !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_DestructorSafeContainer", "map"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "init"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "Encoding"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "characters"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "data"]
 - ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "Encoding"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "characters"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "data"]
@@ -1206,13 +1309,17 @@ depends-member:
 - !private ["Ps9_Hashable", "HTTPHelper"]
 - !private ["Ps9_Hashable", "Iterator"]
 - !private ["Ps9_Hashable", "JSONSerialization"]
+- !private ["Ps9_Hashable", "Key"]
 - !private ["Ps9_Hashable", "NSError"]
 - !private ["Ps9_Hashable", "NSMutableURLRequest"]
 - !private ["Ps9_Hashable", "NSURL"]
 - !private ["Ps9_Hashable", "ReadingOptions"]
 - !private ["Ps9_Hashable", "String"]
+- !private ["Ps9_Hashable", "UInt"]
 - !private ["Ps9_Hashable", "URL"]
 - !private ["Ps9_Hashable", "URLSession"]
+- !private ["Ps9_Hashable", "Value"]
+- !private ["Ps9_Hashable", "WritingOptions"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "_toAnyHashable"]
 - !private ["Ps9_Hashable", "add"]
@@ -1225,13 +1332,17 @@ depends-member:
 - !private ["Ps9_Hashable", "chaptersData"]
 - !private ["Ps9_Hashable", "characters"]
 - !private ["Ps9_Hashable", "child"]
+- !private ["Ps9_Hashable", "currentChapter"]
+- !private ["Ps9_Hashable", "currentEstablishment"]
 - !private ["Ps9_Hashable", "data"]
 - !private ["Ps9_Hashable", "dataTask"]
 - !private ["Ps9_Hashable", "database"]
 - !private ["Ps9_Hashable", "description"]
 - !private ["Ps9_Hashable", "domain"]
+- !private ["Ps9_Hashable", "fcmAuthKey"]
 - ["Ps9_Hashable", "getChaptersAndEstablishments"]
 - ["Ps9_Hashable", "getChaptersAndEstablishmentsFromDatabase"]
+- !private ["Ps9_Hashable", "googleFCMEndpoint"]
 - !private ["Ps9_Hashable", "googleFormCrescentField"]
 - !private ["Ps9_Hashable", "googleFormDayField"]
 - !private ["Ps9_Hashable", "googleFormEstablishmentField"]
@@ -1251,11 +1362,13 @@ depends-member:
 - !private ["Ps9_Hashable", "httpMethod"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "jsonObject"]
+- !private ["Ps9_Hashable", "localizedDescription"]
 - !private ["Ps9_Hashable", "main"]
 - !private ["Ps9_Hashable", "mutableCopy"]
 - !private ["Ps9_Hashable", "object"]
 - !private ["Ps9_Hashable", "observe"]
 - ["Ps9_Hashable", "parseJSON"]
+- ["Ps9_Hashable", "postNotification"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "reference"]
 - !private ["Ps9_Hashable", "reloadIgnoringCacheData"]
@@ -1268,12 +1381,16 @@ depends-member:
 - !private ["Ps9_Hashable", "statusCode"]
 - ["Ps9_Hashable", "upload_request"]
 - !private ["Ps9_Hashable", "userInfo"]
+- !private ["Ps9_Hashable", "userName"]
 - !private ["Ps9_Hashable", "utf8"]
 - !private ["Ps9_Hashable", "value"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps14_Incrementable", "init"]
 - !private ["Ps8_Integer", "hashValue"]
+- !private ["Ps8_Integer", "init"]
 - !private ["Ps18_IntegerArithmetic", "hashValue"]
+- !private ["Ps18_IntegerArithmetic", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "Encoding"]
 - !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Key"]
@@ -1288,6 +1405,7 @@ depends-member:
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps14_SignedInteger", "hashValue"]
 - !private ["Ps11_Strideable", "hashValue"]
+- !private ["Ps11_Strideable", "init"]
 depends-nominal:
 - !private "Vs11AnyIterator"
 - "Ps9AnyObject"
@@ -1331,10 +1449,8 @@ depends-nominal:
 - "CSo20FIRDatabaseReference"
 - "P12PDFGenerator19FilePathConvertible"
 - !private "Sf"
-- !private "C17HafsaInspectorApp9HIManager"
+- "C17HafsaInspectorApp9HIManager"
 - "VC17HafsaInspectorApp10WebService10HTTPHelper"
-- "O17HafsaInspectorApp19HTTPRequestAuthType"
-- "O17HafsaInspectorApp22HTTPRequestContentType"
 - "O17HafsaInspectorApp17HTTPRequestMethod"
 - !private "CSo15HTTPURLResponse"
 - "Ps8Hashable"
@@ -1403,9 +1519,12 @@ depends-nominal:
 - "CSo18URLSessionDataTask"
 - !private "CSo14URLSessionTask"
 - !private "Sc"
+- !private "Ps15UnsignedInteger"
 - "C17HafsaInspectorApp10WebService"
+- "VCSo17JSONSerialization14WritingOptions"
 - !private "Ps14_ArrayProtocol"
 - !private "Ps24_DestructorSafeContainer"
+- !private "Ps28_DisallowMixedSignArithmetic"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
@@ -1437,7 +1556,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderTextView.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/CustomControls/RPFloatingPlaceholderConstants.h"
-- "/Users/sameersiddiqui/Projects/HafsaInspectorApp/HafsaInspectorApp/Utilities/ThirdParty/OrderedDictionary.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD.h"
 - "/Users/sameersiddiqui/Projects/HafsaInspectorApp/Pods/Firebase/Analytics/Sources/module.modulemap"
@@ -1492,4 +1610,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "a4df8ceb47226817eeb1ae2444a9eeb5"
+interface-hash: "2d29be71582016b2272f02d5414517b7"
