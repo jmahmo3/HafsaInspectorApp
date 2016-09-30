@@ -297,6 +297,9 @@ next</string>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqo-9J-jJE">
                                             <state key="normal" title="Submit"/>
+                                            <connections>
+                                                <action selector="submitButtonPressed:" destination="NvR-gp-Kyz" eventType="touchUpInside" id="wDG-cu-E8W"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>

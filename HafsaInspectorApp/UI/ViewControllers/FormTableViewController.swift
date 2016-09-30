@@ -76,9 +76,9 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 4{
-            self.generatePDF()
-        }
+//        if indexPath.row == 4{
+//            self.generatePDF()
+//        }
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -159,6 +159,15 @@ class FormTableViewController: UITableViewController, UITextViewDelegate {
         } catch (let error) {
             print(error)
         }
+        
+        
+//        let zh = (HIManager.sharedClient().supplierArray[0] )
+        
+        WebService().sendToGoogleForms(name: "Junaid", year: "2016", month: "09", day: "29", hour: "10", minute: "05", establishment: "BBQ Tonight", zHProcessors: "22", crescent: "33", halalFarms: "44", hibaTraders: "55", miscellaneous: "55", notes: "testing")
+        
+        
+        
+        
         
         let storage = FIRStorage.storage()
 

@@ -23,4 +23,9 @@ class SubmitTableViewCell: UITableViewCell {
         
     }
     
+    @IBAction func submitButtonPressed(_ sender: AnyObject) {
+        let vc = self.parentViewController as! FormTableViewController
+        vc.generatePDF()
+
+    }
 }
